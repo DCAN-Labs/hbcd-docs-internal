@@ -1,0 +1,65 @@
+site_name: Internal HBCD Data Release Docs
+
+theme:
+  name: readthedocs
+  custom_dir: docs/overrides # for template overrides, used in this case for addition of "Page Last Updated: <DATE>" to pages
+  features:
+    - toc.integrate
+    - navigation.expand
+    - toc.follow
+    - navigation.sections
+    - header.autohide
+    - content.code.annotate  
+
+markdown_extensions:
+  - toc:
+      permalink: '🔗'  
+  
+extra_javascript:
+  - js/extra.js
+
+extra_css:
+  - css/custom.css
+  - css/banners.css
+  - css/legends.css
+  - css/headers.css
+  - css/tables.css
+  - overrides/styles.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: date
+
+docs_dir: docs
+
+nav: 
+  - ABOUT: index.md
+  - Report Issues: internal/reportissues.md
+  - Review Beta Data Release Site: internal/beta_release_site_review.md
+  - Slides: slides.md
+  - CHANGE LOG: 
+    - Pending & Upcoming Updates: changelog/pending.md
+    - Version History:    
+        - Beta Release 15: changelog/versions/BR15.md   
+        - Beta Release 14.5: changelog/versions/BR14.5.md  
+        - Beta Release 14: changelog/versions/BR14.md    
+        - Beta Release 13: changelog/versions/BR13.md
+        - Beta Release 12: changelog/versions/BR12.md
+        - Beta Release 11: changelog/versions/BR11.md
+        - Beta Release 10: changelog/versions/BR10.md
+        - Beta Release 9: changelog/versions/BR9.md
+        - Beta Release 8: changelog/versions/BR8.md
+        - Beta Release 7.5: changelog/versions/BR7.5.md
+        - Beta Release 7: changelog/versions/BR7.md      
+        - Beta Release 6.5: changelog/versions/BR6.5.md    
+        - Beta Release 6: changelog/versions/BR6.md          
+        - Beta Release 5: changelog/versions/v1.4.md
+        - Beta Release 4: changelog/versions/v1.3.md
+        - Beta Release 3: changelog/versions/v1.2.md
+        - Beta Release 2: changelog/versions/v1.1.md
+        - Beta Release 1: changelog/versions/v1.0.md
+
+  
+
