@@ -4,7 +4,7 @@
 EEG files were ingested and disappeared from the bucket post ingestion, resulting in 404 errors when users try to download all the EEG data (HBCD).
 
 **Impact on Users**: Any download including EEG files will fail.       
-**Target Release for Fix**: Next one if no files are deleted after the ingestion. 
+**Target Release for Fix**: BR 14.6. 
 
 ### ⚠️ #2 - Partial EEG Sessions in Buckets
 Some EEG sessions were skipped because they do not contain an acquisition file (set) but only impedance, electrodes, and coordsystem. Those sessions correspond to the ones that failed MADE processing. Electrodes, coordystems, and impedance files were also recently added in the release (HBCD).
