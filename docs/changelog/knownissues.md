@@ -30,6 +30,15 @@ M-CRIB-S and FreeSurfer do not follow the BIDS subdirectory convention of other 
 **Impact on Users**: These files are temporarily not available for download.       
 **Target Release for Fix**: TBD - ETA needed from HDCC.
 
+### ⚠️ #6 - Globus Defaults to User's Home Directory on Windows
+For Mac users, Globus displays all the directories available on their system, but for Windows, it defaults to the path to the user's home directory. This is a known bug. Robust error handling will be added to handle paths that either Globus Connect doesn't have access to or paths that don't exist in the user's file system.
+
+**Impact on Users**: Only home directory available via Globus on Windows.       
+**Target Release for Fix**: BR14.6.
+
+
+
+
 
 
 
