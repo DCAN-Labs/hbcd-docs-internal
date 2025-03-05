@@ -1,5 +1,4 @@
 # Pending & Upcoming Updates
-
 ## Pending Field Filters
 
 * Brain Rating associated fields  
@@ -10,25 +9,12 @@
 
 * Data Dictionary:  
     * Unexpected value for 'type_var' ('score' and 'admin') - Review  
-    * Checkbox fields with no 'value' for 'levels'  
 * ‘Parquet’ files - Parquet files for TLFB  
-* Add ‘Unit’ information - Audit of 'Unit' fields & include 'Unit' information (Ongoing - case by case basis review)
-* Remove 'user_completion' from TLFB (precise name: 'ph_ch_tlfb_tlfb_user_completion') 
-* BR14 [Issue #1 - Incorrect Data: Height/Weight/Head Circumference (`ph_ch_anthro`)](versions/BR14.md#1-incorrect-data-heightweighthead-circumference-ph_ch_anthro) - is expected to be resolved 
-
-### Pregnancy & Exposure
-Instruments to be added:
-
-- `pex_bm_psych`
-- `sed_bm_bfy`
-
-### EEG  
- * Exclude additional BIDS and derivative data for subjects flagged by EEG team
+* Add ‘Unit’ information - Audit of 'Unit' fields & include 'Unit' information (Ongoing - case by case basis review)   
+* PEX Medication breakdown - Incorporate breakdown of medication labels
 
 ## Upcoming - Post-Release
-
-* Shadow Matrix:  
-  * Add logic to populate Shadow Matrix for:   
+* Shadow Matrix - Add logic to populate Shadow Matrix for:   
     * 'Blank' fields related to 'QC Flagged' cases (fields with validations)  
     * Blank' fields related to other 'QC Flagged' cases  
 * Demographics:   

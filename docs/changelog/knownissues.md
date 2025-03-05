@@ -1,4 +1,4 @@
-# Known Issues [🚧 UNDER CONSTRUCTION 🚧]
+# Known Issues
 
 ### ⚠️ #1 - Deleted EEG Data
 EEG files were ingested and disappeared from the bucket post ingestion, resulting in 404 errors when users try to download all the EEG data (HBCD).
