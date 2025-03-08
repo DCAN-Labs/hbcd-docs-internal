@@ -30,8 +30,18 @@ There are some unresolved issues with the conversion of multi-select fields to c
 **Impact on Users**: Missing labels for 'levels' on multi-select to checkbox items in `sed_basic_demographics`.       
 **Target Release for Fix**: BR14.7.
 
+### ⚠️ #6 -  Missing Administrative Variables (Gestational and Candidate Age) for BioSpecimen, MRI/EEG & Derived categories
+**Target Release for Fix**: BR14.7.
 
+### ⚠️ #7 - BrainSwipes Erroneously Included
+BrainSwipes should have not been included, and this was an oversight on removing the files generated from the S3 bucket before de-identification.
+     
+**Target Release for Fix**: TBD
 
+### ⚠️ #8 - Missing Shadow Matrices
+Shadow matrices are missing for BrainSwipes (should not be considered yet) and the BioSpecimen data, which follows a different process and for which we currently do not have a clear way to populate blank fields.
+   
+**Target Release for Fix**: TBD
 
 
 
