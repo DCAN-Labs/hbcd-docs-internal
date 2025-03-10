@@ -7,7 +7,7 @@ The V03 acquisitions for 5 participants errored in MADE and had various issues, 
 **Target Release for Fix**: TDB - ETA required from HDCC.  
 
 ### ⚠️ #2 - Empty Label Column in HBCD Data Dictionary
-The field dictionary "label" has been renamed "Description," diverging from ABCD convention. To fix this, in Lasso, the DD column will be renamed to Description (and save the ABCD Label DD field as ‘Description.’) 
+The field dictionary "label" has been renamed "Description," diverging from ABCD convention. To fix this, Lasso will change the UI to read “DESCRIPTION” (instead of label); so wherever the user goes they will see the same thing (JSON or DD). Lasso will populate DESCRIPTION with DESCRIPTION in the JSON from HBCD (Lasso used to look for “LABEL” in the JSON, which is no longer present). For ABCD: “‘label” in their data dictionary csv will populate the DESCRIPTION column in the DD. 
 
 **Impact on Users**: In the HBCD DD, the Label column is empty.         
 **Target Release for Fix**: BR15. 
