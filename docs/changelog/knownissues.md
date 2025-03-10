@@ -19,7 +19,7 @@ Lasso bug: FE import with duplicated ID impacting the Nibabies file type `bids/d
 **Target Release for Fix**: Lasso ETA is March 10.
 
 ### ⚠️ #4 - Incompatible Format of M-CRIB-S and FreeSurfer Data
-M-CRIB-S and FreeSurfer do not follow the BIDS subdirectory convention of other derivatives, using `sub-<label>_ses-<label>` instead of `sub-<label>/ses-<label>`. As a result, import failed because we cannot extract the subject/session.   
+M-CRIB-S and FreeSurfer do not follow the BIDS subdirectory convention of other derivatives, using `sub-<label>_ses-<label>` instead of `sub-<label>/ses-<label>`. As a result, import failed because we cannot extract the subject/session. To address this issue, the data will be reorganized in the prerelease bucket to follow the BIDS convention.  
 
 **Impact on Users**: These files are temporarily not available for download.       
 **Target Release for Fix**: BR14.6.
