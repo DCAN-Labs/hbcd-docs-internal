@@ -36,7 +36,7 @@ There are some unresolved issues with the conversion of multi-select fields to c
 ### ⚠️ #7 - BrainSwipes Erroneously Included
 BrainSwipes should have not been included, and this was an oversight on removing the files generated from the S3 bucket before de-identification.
      
-**Target Release for Fix**: TBD.
+**Target Release for Fix**: BR15.
 
 ### ⚠️ #8 - Missing Shadow Matrices
 Shadow matrices are missing for BrainSwipes (should not be considered yet) and the BioSpecimen data, which follows a different process and for which we currently do not have a clear way to populate blank fields.
