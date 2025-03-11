@@ -36,10 +36,11 @@
 **Target Release for Fix**: TBD.       
 **Details**: This was hacked by the Lasso team to not block ingestion, but in a real scenario, ingestion would not be possible.
 
-
-
-
-
+### ⚠️ #8 - Gestational Age Erroneously Includes Negative Values
+**Impact on Users**: Users may see negative values for `gestational_age` columns.       
+**How to Fix**: Check to see why these were not re-scored.     
+**Target Release for Fix**: BR14.7.         
+**Details**: Gestational age should be based on the LMP (EDD+280 days) and therefore none of the values should be negative.
 
 
 
