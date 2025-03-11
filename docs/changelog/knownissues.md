@@ -30,7 +30,7 @@
 **Target Release for Fix**: TBD (Review required from LORIS).       
 **Details**: Shadow matrices are missing for BrainSwipes (should not be considered yet) and the BioSpecimen data, which follows a different process and for which we currently do not have a clear way to populate blank fields.
 
-### ⚠️ #7 - Missing `par-visit-dat`a` file For sub-858XXXXXXX
+### ⚠️ #7 - Missing `par-visit-dat` file For sub-858XXXXXXX
 **Impact on Users**: This participant is absent from the database (DW queries), but is present in phenotype files.
 **How to Fix**: Lasso needs the proper entry to be added in par-visit-data.tsv.     
 **Target Release for Fix**: TBD.       
