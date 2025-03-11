@@ -43,6 +43,7 @@ nav:
     - Pending & Upcoming Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md
     - Version History:    
+        - Beta Release 14.7: changelog/versions/BR14.7.md 
         - Beta Release 14.6: changelog/versions/BR14.6.md   
         - Beta Release 14.5: changelog/versions/BR14.5.md  
         - Beta Release 14: changelog/versions/BR14.md    

@@ -22,7 +22,7 @@ Lasso bug: FE import with duplicated ID impacting the Nibabies file type `bids/d
 M-CRIB-S and FreeSurfer do not follow the BIDS subdirectory convention of other derivatives, using `sub-<label>_ses-<label>` instead of `sub-<label>/ses-<label>`. As a result, import failed because we cannot extract the subject/session. To address this issue, the data will be reorganized in the prerelease bucket to follow the BIDS convention.  
 
 **Impact on Users**: These files are temporarily not available for download.       
-**Target Release for Fix**: BR14.6.
+**Target Release for Fix**: BR14.7.
 
 ### ⚠️ #5 - Missing Labels For 'Levels' On Multi-Select To Checkbox Items
 There are some unresolved issues with the conversion of multi-select fields to checkboxes for values derived from the Ripple Pregnancy Check up and pushed to the derived Basic Demographics (`sed_basic_demographics`) directly. The values for the checkbox 'levels' are missing, and only the expected labels (TRUE/FALSE) are available in the Data Dictionary.
@@ -36,12 +36,12 @@ There are some unresolved issues with the conversion of multi-select fields to c
 ### ⚠️ #7 - BrainSwipes Erroneously Included
 BrainSwipes should have not been included, and this was an oversight on removing the files generated from the S3 bucket before de-identification.
      
-**Target Release for Fix**: TBD
+**Target Release for Fix**: TBD.
 
 ### ⚠️ #8 - Missing Shadow Matrices
 Shadow matrices are missing for BrainSwipes (should not be considered yet) and the BioSpecimen data, which follows a different process and for which we currently do not have a clear way to populate blank fields.
    
-**Target Release for Fix**: TBD
+**Target Release for Fix**: TBD (Review required from LORIS).
 
 
 
