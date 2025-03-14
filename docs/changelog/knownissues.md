@@ -14,11 +14,6 @@ On toggling between file-based and tabular data tabs in the Dictionary Query Too
 **How to Fix**: Reorganize the data in the prerelease bucket to follow the BIDS convention for folder substructure and contact developers to add a flag to Nibabies to output these folders in this structure.      
 **Details**: M-CRIB-S and FreeSurfer do not follow the BIDS subdirectory convention of other derivatives, using `sub-<label>_ses-<label>` instead of `sub-<label>/ses-<label>`. As a result, import failed because we cannot extract the subject/session.
 
-### ⚠️ Missing Labels For 'Levels' On Multi-Select To Checkbox Items
-**Impact on Users**: Missing labels for 'levels' on multi-select to checkbox items in `sed_basic_demographics`.  
-**How to Fix**: TBD.             
-**Details**: There are some unresolved issues with the conversion of multi-select fields to checkboxes for values derived from the Ripple Pregnancy Check up and pushed to the derived Basic Demographics (`sed_basic_demographics`) directly. The values for the checkbox 'levels' are missing, and only the expected labels (TRUE/FALSE) are available in the Data Dictionary.
-
 ### ⚠️ Missing Administrative Variables (Gestational and Candidate Age) for BioSpecimen, MRI/EEG & Derived categories
 
 ### ⚠️ Gestational Age Erroneously Includes Negative Values
@@ -50,6 +45,11 @@ On toggling between file-based and tabular data tabs in the Dictionary Query Too
 **How to Fix**: Lasso needs the proper entry to be added in par-visit-data.tsv.         
 **Details**: This was hacked by the Lasso team to not block ingestion, but in a real scenario, ingestion would not be possible.
 
+### ⚠️ Biospecimen Data: 2 Fields for Nail Weight Available   
+**Details**: Two fields exist for ‘nail weight’ for the biospecimens data. LORIS and the WG are looking into these and will make a decision as to which one to keep, or keep both (but explain in detail the difference between the 2 reported nail weights).
+
+### ⚠️ Biospecimen Data: Missing Shadow Matrix
+**Details**: Shadow matrix is not currently available for biospecimen data. LORIS will populate the shadow matrix with a place holder for the next release and work with the WG to discern reasons for missingness. The target release for fix is TBD until the reason for missingness is assessed. In the meantime, for BR14.7, placeholder text will be added to populate the shadow matrix.
 
 
 
