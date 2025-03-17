@@ -7,20 +7,6 @@ The Help Center is down for maintenance until next week - please email Aarushi C
 ### ⚠️ Query Tool: No Rows Displayed on Toggling Between File-Based and Tabular Data Tabs
 On toggling between file-based and tabular data tabs in the Dictionary Query Tool, users can expect to see an error where no rows are displayed. Please reload the page to populate the tabular data. We will fix this very soon.
 
-
-## BR14.7 Target Release for Fix
-### ⚠️ Incompatible Format of M-CRIB-S and FreeSurfer Data
-**Impact on Users**: These files are temporarily not available for download.        
-**How to Fix**: Reorganize the data in the prerelease bucket to follow the BIDS convention for folder substructure and contact developers to add a flag to Nibabies to output these folders in this structure.      
-**Details**: M-CRIB-S and FreeSurfer do not follow the BIDS subdirectory convention of other derivatives, using `sub-<label>_ses-<label>` instead of `sub-<label>/ses-<label>`. As a result, import failed because we cannot extract the subject/session.
-
-### ⚠️ Missing Administrative Variables (Gestational and Candidate Age) for BioSpecimen, MRI/EEG & Derived categories
-
-### ⚠️ Gestational Age Erroneously Includes Negative Values
-**Impact on Users**: Users may see negative values for `gestational_age` columns.       
-**How to Fix**: Check to see why these were not re-scored.     
-**Details**: Gestational age should be based on the LMP (EDD+280 days) and therefore none of the values should be negative.
-
 ---------------
 
 ## BR15 Target Release for Fix
