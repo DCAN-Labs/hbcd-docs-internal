@@ -10,8 +10,8 @@ On toggling between file-based and tabular data tabs in the Dictionary Query Too
 ---------------
 
 ## BR15 Target Release for Fix
-### ⚠️ BrainSwipes Erroneously Included        
-**Details**: BrainSwipes should have not been included, and this was an oversight on removing the files generated from the S3 bucket before de-identification. The BrainSwipes data is not ready for release and should not be considered yet.   
+
+NONE
 
 
 -------
@@ -30,9 +30,6 @@ On toggling between file-based and tabular data tabs in the Dictionary Query Too
 **Impact on Users**: This participant is absent from the database (DW queries), but is present in phenotype files.      
 **How to Fix**: Lasso needs the proper entry to be added in par-visit-data.tsv.         
 **Details**: This was hacked by the Lasso team to not block ingestion, but in a real scenario, ingestion would not be possible.
-
-### ⚠️ Biospecimen Data: 2 Fields for Nail Weight Available   
-**Details**: Two fields exist for ‘nail weight’ for the biospecimens data. LORIS and the WG are looking into these and will make a decision as to which one to keep, or keep both (but explain in detail the difference between the 2 reported nail weights).
 
 ### ⚠️ Biospecimen Data: Missing Shadow Matrix
 **Details**: Shadow matrix is not currently available for biospecimen data. LORIS will populate the shadow matrix with a place holder for the next release and work with the WG to discern reasons for missingness. The target release for fix is TBD until the reason for missingness is assessed. In the meantime, for BR14.7, placeholder text will be added to populate the shadow matrix.
