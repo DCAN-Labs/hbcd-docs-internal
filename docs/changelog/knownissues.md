@@ -1,9 +1,6 @@
 # Known Issues
 
 ## Lasso Interface
-### ⚠️ Lasso Pre-Release HBCD Data System Maintenance
-Lasso Pre-Release HBCD Data System will undergo maintenance between 2 and 6pm EST today, March 27th. Operations will resume thereafter.
-
 ### ⚠️ Help Center Down for Maintenance
 The Help Center is down for maintenance until next week - please email Aarushi Chaudhry (achaudhry@lassoinformatics.com) if you run into issues.
 
