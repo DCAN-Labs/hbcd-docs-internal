@@ -9,10 +9,12 @@ On toggling between file-based and tabular data tabs in the Dictionary Query Too
 
 ---------------
 
-## BR15 Target Release for Fix
+## BR14.8 Target Release for Fix
 
-NONE
-
+### ⚠️ Duplicated Rows in Basic Demographics
+**Impact on Users**: Data can still be queried, but the number of sessions cannot be accurately tallied from this table.
+**How to Fix**: Remove duplicate entries
+**Details**: The number of rows/sessions included in Basic Demographics ()`sed_basic_demographics`) are duplicated, which increases the number of reported V02 and V03 sessions in the Basic Demographics. The data can still be consistently queried by using the first entry for a given participant, so the only issue is that the number of sessions should not be tallied from this table. We will be addressing this as soon as possible for BR14.8 or earlier if possible.
 
 -------
 
