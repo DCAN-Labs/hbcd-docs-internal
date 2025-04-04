@@ -16,6 +16,14 @@ On toggling between file-based and tabular data tabs in the Dictionary Query Too
 **How to Fix**: Remove duplicate entries
 **Details**: The number of rows/sessions included in Basic Demographics (`sed_basic_demographics`) are duplicated, which increases the number of reported V02 and V03 sessions in the Basic Demographics. The data can still be consistently queried by using the first entry for a given participant, so the only issue is that the number of sessions should not be tallied from this table. We will be addressing this as soon as possible for BR14.8 or earlier if possible.
 
+### ⚠️ Missing `par-visit-dat` File (sub-858XXXXXXX)
+**Impact on Users**: This participant is absent from the database (DW queries), but is present in phenotype files.      
+**How to Fix**: Lasso needs the proper entry to be added in par-visit-data.tsv.         
+**Details**: This was hacked by the Lasso team to not block ingestion, but in a real scenario, ingestion would not be possible.
+
+### ⚠️ Biospecimen Data: Missing Shadow Matrix
+**Details**: Shadow matrix is not currently available for biospecimen data. LORIS will populate the shadow matrix with a place holder for the next release and work with the WG to discern reasons for missingness. The target release for fix is TBD until the reason for missingness is assessed. In the meantime, for BR14.7, placeholder text will be added to populate the shadow matrix.
+
 -------
 
 ## TBD Target Release for Fix
@@ -28,13 +36,7 @@ On toggling between file-based and tabular data tabs in the Dictionary Query Too
 **How to Fix**: TBD (Review required from LORIS).       
 **Details**: Shadow matrices are missing for BrainSwipes (should not be considered yet) and the BioSpecimen data, which follows a different process and for which we currently do not have a clear way to populate blank fields.
 
-### ⚠️ Missing `par-visit-dat` File (sub-858XXXXXXX)
-**Impact on Users**: This participant is absent from the database (DW queries), but is present in phenotype files.      
-**How to Fix**: Lasso needs the proper entry to be added in par-visit-data.tsv.         
-**Details**: This was hacked by the Lasso team to not block ingestion, but in a real scenario, ingestion would not be possible.
 
-### ⚠️ Biospecimen Data: Missing Shadow Matrix
-**Details**: Shadow matrix is not currently available for biospecimen data. LORIS will populate the shadow matrix with a place holder for the next release and work with the WG to discern reasons for missingness. The target release for fix is TBD until the reason for missingness is assessed. In the meantime, for BR14.7, placeholder text will be added to populate the shadow matrix.
 
 
 
