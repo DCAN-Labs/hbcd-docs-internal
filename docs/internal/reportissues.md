@@ -2,9 +2,6 @@
 
 ## Lasso Help Center
 
-<p style="text-align: center; font-size: 1.2em">
-<b>🚧 🚧 NOTE 🚧 🚧<br>The Help Center is down for maintenance until next week - please email Aarushi Chaudhry (achaudhry@lassoinformatics.com) if you run into issues</b></p>
-
 Please use the Lasso Help Center to report: 
 
 - Any issues with your data.
