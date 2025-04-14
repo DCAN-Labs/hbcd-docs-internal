@@ -10,8 +10,16 @@ On toggling between file-based and tabular data tabs in the Dictionary Query Too
 ---------------
 
 ## BR15 Target Release for Fix
+### ⚠️ BioSpecimens: Transform '-999' 
+The -999 code needs to be transformed to a note in shadow matrices. Relevant shadow matrices include: `bio_biosample_nails_results`, `bio_biosample_nails_type`, and `bio_biosample_urine`.
 
-*None*
+### ⚠️ Duplicate Rows for BioSpecimens
+Flagged cases have two visits (V01 & V02). Flagged duplicates are labeled as 'ses-V02'. Team will need to verify with MSI on de-identified files to confirm if both visits are incorrectly labeled as 'ses-V02' during de-identification.
+
+### ⚠️ Height/Weight/Head Circumference missing 'Date of Administration' (~6 cases)
+
+
+
 
 
 
