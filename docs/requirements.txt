@@ -3,4 +3,4 @@ pymdown-extensions
 mkdocs-macros-plugin
 mkdocs-git-revision-date-localized-plugin
 mkdocs-markdownextradata-plugin
-mkdocs-mermaid2-plugin
+mkdocs-mermaid2-plugin>=1.1.0

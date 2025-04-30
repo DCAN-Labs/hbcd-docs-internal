@@ -10,11 +10,6 @@ theme:
     - navigation.sections
     - header.autohide
     - content.code.annotate  
-
-markdown_extensions:
-  - pymdownx.superfences
-  - toc:
-      permalink: '🔗'
   
 extra_javascript:
   - js/extra.js
@@ -34,12 +29,14 @@ extra_css:
 plugins:
   - search
   - mermaid2:
-      version: "11.6.0"
-      arguments:
-        startOnLoad: true
       javascript_url: https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js
   - git-revision-date-localized:
       type: date
+
+markdown_extensions:
+  - pymdownx.superfences
+  - toc:
+      permalink: '🔗'
 
 docs_dir: docs
 
