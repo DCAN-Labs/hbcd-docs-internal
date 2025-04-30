@@ -74,6 +74,11 @@ style M fill:#FFE0B2,stroke:#000000
 </table>
 </div>
 
+- Ensure regulatory compliance between LORIS, McGill and affiliated institutions.
+- Engage with stakeholders to ensure the study's relevance and applicability.
+- Secure funding and resources for the study.
+
+
 ## LIBR
 ### Organization Chart
 (ADD ORG CHART DIAGRAM HERE)

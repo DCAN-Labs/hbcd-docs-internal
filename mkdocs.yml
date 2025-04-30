@@ -33,7 +33,11 @@ extra_css:
 
 plugins:
   - search
-  - mermaid2
+  - mermaid2:
+      version: "10.9.1"
+      arguments:
+        startOnLoad: true
+      javascript_url: "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"
   - git-revision-date-localized:
       type: date
 
