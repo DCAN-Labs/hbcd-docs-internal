@@ -21,14 +21,6 @@ J --o K
 G --o L["Cecile Madjar"]
 H --o M["Laetitia Faeselier"]
 
-A@{ shape: text}
-D@{ shape: text}
-E@{ shape: text}
-I@{ shape: text}
-J@{ shape: text}
-K@{ shape: text}
-L@{ shape: text}
-M@{ shape: text}
 style A stroke:#000000,fill:#BBDEFB
 style nl stroke:#000000,fill:#BBDEFB
 style n9 stroke:#000000,fill:#E1BEE7,stroke-width:1px,stroke-dasharray: 0
