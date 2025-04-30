@@ -10,16 +10,16 @@ graph TD
 
 ```mermaid
 flowchart TB
-A["Alen Evans"] --o nl("Samir Das")
-nl --o n9(["Study Coordination"]) & C(["CBRAIN/Computing"]) & B(["Development"])
-C --o D["Pierrre Rioux"]
-n9 --o E["Santiago Torres"]
-B --o F(["BHV/Database"]) & H(["EEG/Biosamples"]) & G(["MRI"])
-F --o I["Regis Ongaro-Carcy"] & J["Sruthy Matthew"]
-I --o K["George Murad"]
-J --o K
-G --o L["Cecile Madjar"]
-H --o M["Laetitia Faeselier"]
+  A["Alen Evans"] --o nl("Samir Das")
+  nl --o n9(["Study Coordination"]) & C(["CBRAIN/Computing"]) & B(["Development"])
+  C --o D["Pierrre Rioux"]
+  n9 --o E["Santiago Torres"]
+  B --o F(["BHV/Database"]) & H(["EEG/Biosamples"]) & G(["MRI"])
+  F --o I["Regis Ongaro-Carcy"] & J["Sruthy Matthew"]
+  I --o K["George Murad"]
+  J --o K
+  G --o L["Cecile Madjar"]
+  H --o M["Laetitia Faeselier"]
 
 style A stroke:#000000,fill:#BBDEFB
 style nl stroke:#000000,fill:#BBDEFB
@@ -37,7 +37,6 @@ style K stroke:#333,fill:#C8E6C9
 style L stroke:#000000,fill:#FFF9C4
 style M fill:#FFE0B2,stroke:#000000
 ```
-
 
 (ADD DETAILS OF FOLKS IN ORG CHART HERE)
 
