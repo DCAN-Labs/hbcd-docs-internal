@@ -2,6 +2,7 @@
 
 ## Overview
 The larger organizational structure of the HDCC is as follows - ***click on individual groups to be directed to their asssociated organizational charts***.
+
 ```mermaid
 ---
 config:
@@ -75,7 +76,7 @@ flowchart TD
     style n14 fill:#C8E6C9,stroke:none
     style n15 fill:#C8E6C9,stroke:none
     click E "#loris"
-  ```
+```
 
 ## LORIS
 ```mermaid
