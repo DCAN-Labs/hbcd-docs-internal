@@ -4,17 +4,17 @@
 ### Organizational Chart
 ```mermaid
 flowchart TB
-    Z["LORIS"] --o A["Alan Evans"]
-    A --o nl["Samir Das"]
-    nl --o n9(["Study Coordination"]) & C(["CBRAIN/Computing"]) & B(["Development"])
-    C --o D["Pierre Rioux"]
-    n9 --o E["Santiago Torres"]
-    B --o F["BHV/Database"] & H["EEG/Biosamples"] & G["MRI"]
-    F --o I["Regis Ongaro-Carcy"] & J["Sruthy Matthew"]
-    I --o K["George Murad"]
+    Z["<b>LORIS</b>"] --o A@{ label: "<b>Alan Evans</b><br>Principal Investigator" }
+    A --o nl["<b>Samir Das</b><br>Associate Director of Software Development"] 
+    nl --o n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"]) & B(["<b>Development</b>"])
+    C --o D["Pierre Rioux<br>Senior HPC developer"]
+    n9 --o E["<b>Santiago Torres</b><br>Study Officer (Research Administration)"]
+    B --o F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
+    F --o I["<b>Regis Ongaro-Carcy</b><br>Lead BHV Developer"] & J["<b>Sruthy Matthew</b><br>Senior Backend Developer "]
+    I --o K["<b>George Murad</b><br>Junior BHV Developer"]
     J --o K
-    G --o L["Cecile Madjar"]
-    H --o M["Laetitia Faeselier"]
+    G --o L["<b>Cecile Madjar</b><br>Lead MRI developer"]
+    H --o M["<b>Laetitia Faeselier</b><br>Lead BioSamples/EEG Developer"]
 
     Z@{ shape: rounded}
     A@{ shape: text}
@@ -47,36 +47,15 @@ flowchart TB
     style M fill:#FFE0B2,stroke:#000000
 ```
 
-### Roles and Responsibilities
+### Responsibilities
 
-<div id="table-banner" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="table-text">Responsibilities</span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-open-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
-    <thead>
-      <tr>
-        <th style="width: 15%; border: 1px solid #ddd; padding: 5px; text-align: center;">Name</th>
-        <th style="width: 15%; border: 1px solid #ddd; padding: 5px; text-align: center;">Title</th>
-        <th style="width: 70%; border: 1px solid #ddd; padding: 5px; text-align: center;">Responsibilities</th>
-    </thead>
-    <tbody>
-    <tr>
-        <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;">Alan Evans</td>
-        <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;">Principal Investigator</td>
-        <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;">
-        Oversight and management of MCIN and LORIS operations:
-        <ul>
-          <li>Ensure regulatory compliance between LORIS, McGill and affiliated institutions.</li>
-          <li>Engage with stakeholders to ensure the study's relevance and applicability.</li>
-          <li>Secure funding and resources for the study.</li>
-        </ul>
-        </td>
-    </tr>
-</tbody>
-</table>
-</div>
+##### Alan Evans
+<ul>
+Oversight and management of MCIN and LORIS operations:
+  <li>Ensure regulatory compliance between LORIS, McGill and affiliated institutions.</li>
+  <li>Engage with stakeholders to ensure the study's relevance and applicability.</li>
+  <li>Secure funding and resources for the study.</li>
+</ul>
 
 ## LIBR
 ### Organizational Chart
@@ -93,15 +72,9 @@ flowchart TB
     <thead>
       <tr>
         <th style="width: 15%; border: 1px solid #ddd; padding: 5px; text-align: center;">Name</th>
-        <th style="width: 15%; border: 1px solid #ddd; padding: 5px; text-align: center;">Title</th>
         <th style="width: 70%; border: 1px solid #ddd; padding: 5px; text-align: center;">Responsibilities</th>
     </thead>
     <tbody>
-    <tr>
-        <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;">Wesley K. Thompson</td>
-        <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;">Associate Director</td>
-        <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;">TBD</td>
-    </tr>
 </tbody>
 </table>
 </div>
@@ -111,7 +84,6 @@ flowchart TB
 (ADD ORG CHART DIAGRAM HERE)
 
 ### Roles and Responsibilities
-
 <div id="table-banner" class="table-banner" onclick="toggleCollapse(this)">
   <span class="table-text">Responsibilities</span>
   <span class="arrow">▸</span>
@@ -121,7 +93,6 @@ flowchart TB
     <thead>
       <tr>
         <th style="width: 15%; border: 1px solid #ddd; padding: 5px; text-align: center;">Name</th>
-        <th style="width: 15%; border: 1px solid #ddd; padding: 5px; text-align: center;">Title</th>
         <th style="width: 70%; border: 1px solid #ddd; padding: 5px; text-align: center;">Responsibilities</th>
     </thead>
     <tbody>
