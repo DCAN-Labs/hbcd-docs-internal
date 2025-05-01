@@ -1,5 +1,7 @@
 # HBCD Data Coordinating Center (HDCC) Organizational Charts
 
+
+
 ## LORIS
 ### Organizational Chart
 <p>
@@ -17,7 +19,7 @@ config:
 flowchart TB
     A["<b>Alan Evans</b><br>Principal Investigator"] --o nl["<b>Samir Das</b><br>Associate Director of Software Development"]
     nl --o n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"]) & B(["<b>Development</b>"])
-    C --o D["Pierre Rioux<br>Senior HPC developer"]
+    C --o D["<b>Pierre Rioux</b><br>Senior HPC developer"]
     n9 --o E["<b>Santiago Torres</b><br>Study Officer (Research Administration)"]
     B --o F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
     F --o I["<b>Regis Ongaro-Carcy</b><br>Lead BHV Developer"] & J["<b>Sruthy Matthew</b><br>Senior Backend Developer"]
@@ -53,17 +55,26 @@ flowchart TB
     style L stroke:#000000,fill:#FFF9C4
     style M fill:#FFE0B2,stroke:#000000
     click A "#alan-evans-principal-investigator"
+    click nl "#samir-das-associate-director-of-software-development"
 ```
 
 ### Roles & Responsibilities
 
 ##### Alan Evans, Principal Investigator
-<ul>
-Oversight and management of MCIN and LORIS operations:
-  <li>Ensure regulatory compliance between LORIS, McGill and affiliated institutions.</li>
-  <li>Engage with stakeholders to ensure the study's relevance and applicability.</li>
-  <li>Secure funding and resources for the study.</li>
-</ul>
+<p style="margin: 0;"><i>Oversight and management of MCIN and LORIS operations:</i></p>
+- Ensure regulatory compliance between LORIS, McGill and affiliated institutions.
+- Engage with stakeholders to ensure the study's relevance and applicability.
+- Secure funding and resources for the study.
+
+##### Samir Das, Associate Director of Software Development
+<p style="margin: 0;"><i>General planning and oversight of LORIS operations for the HBCD study including:</i></p>
+- Administration of LORIS operations.
+- Overseeing and managing allocated study budget.
+- Provide guidance, and mentorship to the research and development team.
+- Conceptualization, establishment and planning of standardized workflow procedures and experimental protocols with the aim of maintaining data consistency and integrity across study.
+- Establish project plans, outlining tasks, timelines, and dependencies for the development of the HBCD project.
+- Attend workgroup meetings with SMEs and workgroup leads to gather requirements and periodic feedback crucial for aligning project outcomes with expectations throughout the project duration.
+- General oversight of structural functionality and new features and tools in LORIS.
 
 ## University of Minnesota (UMN)
 ### Organizational Chart
