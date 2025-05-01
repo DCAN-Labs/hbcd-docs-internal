@@ -4,8 +4,9 @@
 ### Organizational Chart
 ```mermaid
 flowchart TB
-    A["Alen Evans"] --o nl["Samir Das"]
-    nl --o n9["Study Coordination"] & C["CBRAIN/Computing"] & B["Development"]
+    Z["LORIS"] --o A["Alan Evans"]
+    A --o nl["Samir Das"]
+    nl --o n9(["Study Coordination"]) & C(["CBRAIN/Computing"]) & B(["Development"])
     C --o D["Pierrre Rioux"]
     n9 --o E["Santiago Torres"]
     B --o F["BHV/Database"] & H["EEG/Biosamples"] & G["MRI"]
@@ -15,11 +16,9 @@ flowchart TB
     G --o L["Cecile Madjar"]
     H --o M["Laetitia Faeselier"]
 
+    Z@{ shape: rounded}
     A@{ shape: text}
     nl@{ shape: text}
-    n9@{ shape: rounded}
-    C@{ shape: rounded}
-    B@{ shape: rounded}
     D@{ shape: text}
     E@{ shape: text}
     F@{ shape: rounded}
@@ -30,6 +29,7 @@ flowchart TB
     K@{ shape: text}
     L@{ shape: text}
     M@{ shape: text}
+    style Z stroke:#000000,fill:#BBDEFB,color:#000000
     style A stroke:#000000,fill:#BBDEFB
     style nl stroke:#000000,fill:#BBDEFB
     style n9 stroke:#000000,fill:#E1BEE7,stroke-width:1px,stroke-dasharray: 0
