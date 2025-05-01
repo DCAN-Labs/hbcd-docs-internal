@@ -6,9 +6,12 @@
 ***Click on names to be directed to information on responsibilities.***
 
 ```mermaid
+---
+config:
+  layout: dagre
+---
 flowchart TB
-    Z["<b>LORIS</b>"] --o A["<b>Alan Evans🔗</b><br>Principal Investigator"]
-    A --o nl["<b>Samir Das</b><br>Associate Director of Software Development"]
+    A["<b>Alan Evans🔗</b><br>Principal Investigator"] --o nl["<b>Samir Das</b><br>Associate Director of Software Development"]
     nl --o n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"]) & B(["<b>Development</b>"])
     C --o D["Pierre Rioux<br>Senior HPC developer"]
     n9 --o E["<b>Santiago Torres</b><br>Study Officer (Research Administration)"]
@@ -18,8 +21,6 @@ flowchart TB
     J --o K
     G --o L["<b>Cecile Madjar</b><br>Lead MRI developer"]
     H --o M["<b>Laetitia Faeselier</b><br>Lead BioSamples/EEG Developer"]
-
-    Z@{ shape: rounded}
     A@{ shape: text}
     nl@{ shape: text}
     D@{ shape: text}
@@ -32,7 +33,6 @@ flowchart TB
     K@{ shape: text}
     L@{ shape: text}
     M@{ shape: text}
-    style Z stroke:#000000,fill:#BBDEFB,color:#000000
     style A stroke:#000000,fill:#BBDEFB
     style nl stroke:#000000,fill:#BBDEFB
     style n9 stroke:#000000,fill:#E1BEE7,stroke-width:1px,stroke-dasharray: 0
@@ -61,50 +61,38 @@ Oversight and management of MCIN and LORIS operations:
   <li>Secure funding and resources for the study.</li>
 </ul>
 
+## University of Minnesota (UMN)
+### Organizational Chart
+(ADD ORG CHART DIAGRAM HERE)
+
+### Roles and Responsibilities
+***Alternative format - list info in table:***
+
+<div id="table-banner" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="table-text">Responsibilities</span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-open-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
+    <thead>
+      <tr>
+        <th style="width: 15%; border: 1px solid #ddd; padding: 5px; text-align: center;">Name</th>
+        <th style="width: 70%; border: 1px solid #ddd; padding: 5px; text-align: center;">Responsibilities</th>
+    </thead>
+    <tbody>
+</tbody>
+</table>
+</div>
+
 ## LIBR
 ### Organizational Chart
 (ADD ORG CHART DIAGRAM HERE)
 
 ### Roles and Responsibilities
 
-<div id="table-banner" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="table-text">Responsibilities</span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-open-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
-    <thead>
-      <tr>
-        <th style="width: 15%; border: 1px solid #ddd; padding: 5px; text-align: center;">Name</th>
-        <th style="width: 70%; border: 1px solid #ddd; padding: 5px; text-align: center;">Responsibilities</th>
-    </thead>
-    <tbody>
-</tbody>
-</table>
-</div>
 
 ## Columbia
 ### Organizational Chart
 (ADD ORG CHART DIAGRAM HERE)
 
 ### Roles and Responsibilities
-<div id="table-banner" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="table-text">Responsibilities</span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-open-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
-    <thead>
-      <tr>
-        <th style="width: 15%; border: 1px solid #ddd; padding: 5px; text-align: center;">Name</th>
-        <th style="width: 70%; border: 1px solid #ddd; padding: 5px; text-align: center;">Responsibilities</th>
-    </thead>
-    <tbody>
-    <tr>
-        <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;"></td>
-        <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;"></td>
-        <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;"></td>
-    </tr>
-</tbody>
-</table>
-</div>
