@@ -7,7 +7,7 @@ flowchart TB
     Z["LORIS"] --o A["Alan Evans"]
     A --o nl["Samir Das"]
     nl --o n9(["Study Coordination"]) & C(["CBRAIN/Computing"]) & B(["Development"])
-    C --o D["Pierrre Rioux"]
+    C --o D["Pierre Rioux"]
     n9 --o E["Santiago Torres"]
     B --o F["BHV/Database"] & H["EEG/Biosamples"] & G["MRI"]
     F --o I["Regis Ongaro-Carcy"] & J["Sruthy Matthew"]
