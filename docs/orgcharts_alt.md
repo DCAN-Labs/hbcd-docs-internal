@@ -72,82 +72,12 @@ flowchart TB
 - General oversight of structural functionality and new features and tools in LORIS.
 
 ## University of Minnesota (UMN)
-```mermaid
----
-config:
-  theme: redux
-  layout: fixed
----
-flowchart TB
-    A["<b>Damien Fair</b><br>Professor UMN<br>HBCD DCC MPI"] --> A1["<b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"]
-    A1 --> HST["<b>Health Sciences Technology</b><br>Data shelter, PHI, Ripple interface, Overall Data Management, QC Dashboards, Ancillary Studies, Third party integration"] & MIDB["<b>MIDB Informatics Hub</b><br><i>Minnesota Supercomputing Institute (MSI)</i><br>System Administration, Loris Hosting, Computing, Processing, Data sharing"] & DCAN["<b>DCAN Lab</b><br>Processing, Software Development &amp; Deployment"]
-    HST --> HST1["<b>Karen Athy-Penrose</b><br>Data Shelter PM<br>
-        <b>Dan Duhon</b><br>DevOps/ETL<br>
-        <b>Haley Hutala</b><br>Tableau Engineer/QC Dashboards"] & HST2["<b>Constantine Aliferis</b><br>Director Insitute Health Informatics"]
-    HST2 --> HST2a["<b>Steve Johnson</b><br>Director Informatics Innovation"]
-    HST2a --> HST2b["<b>Tim Meyers</b><br>Senior Informatics Engineer/EHR"]
-    MIDB --> M1["<b>Jim Wilgenbusch</b><br>Research Computing"]
-    M1 --> M2["<b>Thomas Pengo</b><br>Co-Director Research Informatics"]
-    M2 --> M3["<b>Maren Macgregor-Hannah</b><br>HDCC PM<br>
-    <b>Kimberleigh Breen</b><br>Data Manager/Version Control<br>
-    <b>Borgne Raasch</b><br>Data Steward/Access Controls<br>
-    <b>Naomi Hospodarsky-Sutherland</b><br>Security Compliance"] & M4["<b>Jesse Erdman</b><br>Senior System Operations"] & M5["<b>Timothy Hendrickson</b><br>Neuroimaging/EEG/MRS/Biosensor Informatics Lead"]
-    M4 --> M4a["<b>Devin Willis</b><br>DevOps Engineer<br>
-    <b>Jesus Garcia</b><br>DevOps Engineer"]
-    M5 --> M5a["<b>Erik Lee</b><br>Pipeline Integration/Processing"]
-    M5a --> M5b["<b>Monalisa Biles</b><br>Analysis Data Processing"]
-    DCAN --> D1["<b>Eric Feczko</b><br>Neuroscience/Informatics<br>Software Engineer<br>
-    <b>Lucille Moore</b><br>PM &amp; Software Engineer<br>
-    <b>Mathias Goncalves</b><br>Software Engineer (Infant fMRIPrep)"] & D2["<b>Steve Nelson</b><br>Director Neuroimaging Hub MIDB/CMRR"]
-    D2 --> D2a["<b>Kim Weldon</b><br>PM, Data Acquisition Seimens Engineer"]
-    D2a --> D2b["<b>Thomas Madison</b><br>Software Engineer<br>
-    <b>Matthew Cieslack</b><br>Software Engineer (QSIPrep/Diffusion)"]
-    A@{ shape: text}
-    A1@{ shape: text}
-    HST@{ shape: rounded}
-    MIDB@{ shape: rounded}
-    DCAN@{ shape: rounded}
-    HST2@{ shape: text}
-    HST2a@{ shape: text}
-    HST2b@{ shape: text}
-    M1@{ shape: text}
-    M2@{ shape: text}
-    M3@{ shape: text}
-    M4@{ shape: text}
-    M5@{ shape: text}
-    M4a@{ shape: text}
-    M5a@{ shape: text}
-    M5b@{ shape: text}
-    D1@{ shape: text}
-    D2@{ shape: text}
-    D2a@{ shape: text}
-    D2b@{ shape: text}
-    style A fill:#BBDEFB
-    style A1 fill:#C8E6C9
-    style HST fill:#C8E6C9
-    style MIDB fill:#FFF9C4
-    style DCAN fill:#FFE0B2
-    style HST1 fill:#C8E6C9,stroke:none
-    style HST2 fill:#C8E6C9
-    style HST2a stroke:#C8E6C9,fill:#C8E6C9
-    style HST2b fill:#C8E6C9
-    style M1 fill:#FFF9C4
-    style M2 fill:#FFF9C4
-    style M3 fill:#FFF9C4
-    style M4 fill:#FFF9C4
-    style M5 fill:#FFF9C4
-    style M4a fill:#FFF9C4
-    style M5a fill:#FFF9C4
-    style M5b fill:#FFF9C4
-    style D1 fill:#FFE0B2
-    style D2 fill:#FFE0B2
-    style D2a fill:#FFE0B2
-    style D2b fill:#FFE0B2
-```
+![](https://www.mermaidchart.com/raw/3d9fad4e-04e4-4be5-9450-5fb3c34f68a4?theme=light&version=v0.1&format=svg)
+
 
 ## LIBR
 ### Organizational Chart
-(ADD ORG CHART DIAGRAM HERE)
+[ADD ORG CHART]
 
 ### Roles and Responsibilities
 
