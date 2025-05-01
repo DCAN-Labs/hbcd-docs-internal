@@ -45,7 +45,7 @@ flowchart TB
     style K stroke:#333,fill:#C8E6C9
     style L stroke:#000000,fill:#FFF9C4
     style M fill:#FFE0B2,stroke:#000000
-    click A "#alan-evans"
+    click A "#alan-evans-principal-investigator"
 ```
 
 ### Roles & Responsibilities
