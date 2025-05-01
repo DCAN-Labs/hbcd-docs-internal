@@ -2,9 +2,12 @@
 
 ## LORIS
 ### Organizational Chart
+
+***Click on names to be directed to information on responsibilities.***
+
 ```mermaid
 flowchart TB
-    Z["<b>LORIS</b>"] --o A["<b>Alan Evans</b><br>Principal Investigator"]
+    Z["<b>LORIS</b>"] --o A["<b>Alan Evans🔗</b><br>Principal Investigator"]
     A --o nl["<b>Samir Das</b><br>Associate Director of Software Development"]
     nl --o n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"]) & B(["<b>Development</b>"])
     C --o D["Pierre Rioux<br>Senior HPC developer"]
