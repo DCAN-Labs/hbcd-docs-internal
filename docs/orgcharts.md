@@ -4,13 +4,13 @@
 ### Organizational Chart
 ```mermaid
 flowchart TB
-    Z["<b>LORIS</b>"] --o A@{ label: "<b>Alan Evans</b><br>Principal Investigator" }
-    A --o nl["<b>Samir Das</b><br>Associate Director of Software Development"] 
+    Z["<b>LORIS</b>"] --o A["<b>Alan Evans</b><br>Principal Investigator"]
+    A --o nl["<b>Samir Das</b><br>Associate Director of Software Development"]
     nl --o n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"]) & B(["<b>Development</b>"])
     C --o D["Pierre Rioux<br>Senior HPC developer"]
     n9 --o E["<b>Santiago Torres</b><br>Study Officer (Research Administration)"]
     B --o F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
-    F --o I["<b>Regis Ongaro-Carcy</b><br>Lead BHV Developer"] & J["<b>Sruthy Matthew</b><br>Senior Backend Developer "]
+    F --o I["<b>Regis Ongaro-Carcy</b><br>Lead BHV Developer"] & J["<b>Sruthy Matthew</b><br>Senior Backend Developer"]
     I --o K["<b>George Murad</b><br>Junior BHV Developer"]
     J --o K
     G --o L["<b>Cecile Madjar</b><br>Lead MRI developer"]
@@ -45,6 +45,7 @@ flowchart TB
     style K stroke:#333,fill:#C8E6C9
     style L stroke:#000000,fill:#FFF9C4
     style M fill:#FFE0B2,stroke:#000000
+    click A "#alan-evans"
 ```
 
 ### Responsibilities
