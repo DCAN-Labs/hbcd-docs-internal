@@ -78,11 +78,6 @@ flowchart TB
 </table>
 </div>
 
-- Ensure regulatory compliance between LORIS, McGill and affiliated institutions.
-- Engage with stakeholders to ensure the study's relevance and applicability.
-- Secure funding and resources for the study.
-
-
 ## LIBR
 ### Organizational Chart
 (ADD ORG CHART DIAGRAM HERE)
