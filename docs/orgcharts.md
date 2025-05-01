@@ -48,9 +48,9 @@ flowchart TB
     click A "#alan-evans"
 ```
 
-### Responsibilities
+### Roles & Responsibilities
 
-##### Alan Evans
+##### Alan Evans, Principal Investigator
 <ul>
 Oversight and management of MCIN and LORIS operations:
   <li>Ensure regulatory compliance between LORIS, McGill and affiliated institutions.</li>
