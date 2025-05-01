@@ -1,7 +1,7 @@
 # HBCD Data Coordinating Center (HDCC) Organizational Charts
 
 ## LORIS
-### Organization Chart
+### Organizational Chart
 ```mermaid
 flowchart TB
     A["Alen Evans"] --o nl["Samir Das"]
@@ -65,7 +65,14 @@ flowchart TB
     <tr>
         <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;">Alan Evans</td>
         <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;">Principal Investigator</td>
-        <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;">Oversight and management of MCIN and LORIS operations</td>
+        <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;">
+        Oversight and management of MCIN and LORIS operations:
+        <ul>
+          <li>Ensure regulatory compliance between LORIS, McGill and affiliated institutions.</li>
+          <li>Engage with stakeholders to ensure the study's relevance and applicability.</li>
+          <li>Secure funding and resources for the study.</li>
+        </ul>
+        </td>
     </tr>
 </tbody>
 </table>
@@ -77,7 +84,7 @@ flowchart TB
 
 
 ## LIBR
-### Organization Chart
+### Organizational Chart
 (ADD ORG CHART DIAGRAM HERE)
 
 ### Roles and Responsibilities
@@ -105,7 +112,7 @@ flowchart TB
 </div>
 
 ## Columbia
-### Organization Chart
+### Organizational Chart
 (ADD ORG CHART DIAGRAM HERE)
 
 ### Roles and Responsibilities
