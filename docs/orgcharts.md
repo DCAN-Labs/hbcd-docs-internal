@@ -3,7 +3,10 @@
 ## LORIS
 ### Organizational Chart
 
-***Click on names to be directed to information on responsibilities.***
+<div class="notification-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+    <span class="text">Click on names to be directed to information on responsibilities</span>
+</div>
 
 ```mermaid
 ---
@@ -11,7 +14,7 @@ config:
   layout: dagre
 ---
 flowchart TB
-    A["<b>Alan Evans🔗</b><br>Principal Investigator"] --o nl["<b>Samir Das</b><br>Associate Director of Software Development"]
+    A["<b>Alan Evans</b><br>Principal Investigator"] --o nl["<b>Samir Das</b><br>Associate Director of Software Development"]
     nl --o n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"]) & B(["<b>Development</b>"])
     C --o D["Pierre Rioux<br>Senior HPC developer"]
     n9 --o E["<b>Santiago Torres</b><br>Study Officer (Research Administration)"]
