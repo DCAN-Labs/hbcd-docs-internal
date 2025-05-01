@@ -1,16 +1,45 @@
 # HBCD Data Coordinating Center (HDCC) Organizational Charts
 
-
+## Overview
+The larger organizational structure of the HDCC is as follows - ***click on individual groups to be directed to their asssociated organizational charts***.
+```mermaid
+---
+config:
+  theme: redux
+  layout: dagre
+---
+flowchart LR
+    A["<b>HDCC</b>"] --> E["<b>LORIS</b><br>Alan Evans, <i>PI</i><br>Samir Das, <i>AD Software Dev</i>"] & F["<b>UMN</b><br>Damien Fair, <i>HBCD DCC MPI</i><br>Reed McKewan, <i>HDCC Architect &amp; Data Manager</i>"] & G["<b>UCSD</b><br>Anders Dale, <i>PI/Director</i>"] & H["<b>LIBR</b><br>"] & n1["<b>Columbia</b><br>William P. Fifer,  <i>PI</i>"] & n16["<b>University of Maryland</b><br>Nathan Fox, <i>AD Data Core</i>"]
+    F --> n6["<b>Health Sciences Technology (HST)</b><br>Reed McKewan"] & n7["<b>MIDB Informatics Hub</b><br>Jim Wilgenbusch, <i>Research Computing</i><br>Thomas Pengo, <i>Co-Director Research Informatics</i>"] & n8["<b>DCAN Lab</b><br>Eric Feczko &amp; Steven Nelson, <i>PIs</i>"]
+    H --> n14["<b>Biostatistics Workgroup</b><br>Wesley K. Thompson, <i>Associate Director</i>"] & n15["<b>Geolocation Workgroup</b><br>Chun Chieh Fan, <i>Co-PI</i>"]
+    A@{ shape: rect}
+    E@{ shape: rounded}
+    F@{ shape: rounded}
+    G@{ shape: rounded}
+    H@{ shape: rounded}
+    n1@{ shape: rounded}
+    n16@{ shape: rounded}
+    n6@{ shape: rounded}
+    n7@{ shape: rounded}
+    n8@{ shape: rounded}
+    n14@{ shape: rounded}
+    n15@{ shape: rounded}
+    style A fill:transparent,color:#000000
+    style E fill:#FFCDD2
+    style F fill:#E1BEE7
+    style G fill:#FFF9C4
+    style H fill:#C8E6C9
+    style n1 fill:#BBDEFB
+    style n16 fill:#FFE0B2
+    style n6 fill:#E1BEE7,stroke:none
+    style n7 fill:#E1BEE7,stroke:none
+    style n8 fill:#E1BEE7,stroke:none
+    style n14 fill:#C8E6C9,stroke:none
+    style n15 fill:#C8E6C9,stroke:none
+    click E "#loris"
+```
 
 ## LORIS
-### Organizational Chart
-<p>
-<div class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text">Tip: Click on names to be directed to information on responsibilities</span>
-</div>
-</p>
-
 ```mermaid
 ---
 config:
@@ -77,7 +106,6 @@ flowchart TB
 - General oversight of structural functionality and new features and tools in LORIS.
 
 ## University of Minnesota (UMN)
-### Organizational Chart
 (ADD ORG CHART DIAGRAM HERE)
 
 ### Roles and Responsibilities
@@ -100,14 +128,12 @@ flowchart TB
 </div>
 
 ## LIBR
-### Organizational Chart
 (ADD ORG CHART DIAGRAM HERE)
 
 ### Roles and Responsibilities
 
 
 ## Columbia
-### Organizational Chart
 (ADD ORG CHART DIAGRAM HERE)
 
 ### Roles and Responsibilities
