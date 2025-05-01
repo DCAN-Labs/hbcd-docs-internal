@@ -2,11 +2,12 @@
 
 ## LORIS
 ### Organizational Chart
-
+<p>
 <div class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text">Click on names to be directed to information on responsibilities</span>
+    <span class="text">Tip: Click on names to be directed to information on responsibilities</span>
 </div>
+</p>
 
 ```mermaid
 ---
