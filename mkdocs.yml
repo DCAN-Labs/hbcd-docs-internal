@@ -47,7 +47,6 @@ nav:
   - ABOUT: index.md
   - Report Issues: internal/reportissues.md
   - Review Beta Data Release Site: internal/beta_release_site_review.md
-  - Slides: slides.md
   - Workflows:
     - S3 Buckets: workflows/s3.md
   - CHANGE LOG: 
@@ -75,6 +74,9 @@ nav:
         - Beta Release 3: changelog/versions/v1.2.md
         - Beta Release 2: changelog/versions/v1.1.md
         - Beta Release 1: changelog/versions/v1.0.md
+  - Resources:
+    - Slides: slides.md
+    - Org Charts: orgcharts.md
 
   
 
