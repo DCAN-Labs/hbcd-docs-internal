@@ -27,10 +27,10 @@ flowchart LR
     n14@{ shape: rounded}
     n15@{ shape: rounded}
     style A fill:transparent,color:#000000,stroke-width:4px,stroke-dasharray: 0
-    style E fill:#FFCDD2,stroke:#FF6D00
-    style F fill:#E1BEE7,stroke:#AA00FF
-    style G fill:#FFF9C4,stroke:#FFD600
-    style H fill:#C8E6C9,stroke:#00C853
+    style E fill:#e6e6fa,stroke:#FF6D00
+    style F fill:#e6e6fa,stroke:#AA00FF
+    style G fill:#e6e6fa,stroke:#FFD600
+    style H fill:#e6e6fa,stroke:#00C853
     style n1 fill:#BBDEFB,stroke:#2962FF
     style n16 fill:#FFE0B2,stroke:#FF6D00
     style n6 fill:#E1BEE7,stroke:none
