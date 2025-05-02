@@ -7,6 +7,41 @@ The larger organizational structure of the HDCC is as follows - ***click on indi
 ```mermaid
 ---
 config:
+  theme: base
+  layout: dagre
+  look: neo
+---
+flowchart LR
+    A["<strong>HDCC</strong>"] --> E["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & F["<b>UMN</b><br>Damien Fair<br>Reed McKewan"] & G["<b>UCSD</b><br>Anders Dale"] & H["<b>LIBR</b><br>"] & n1["<b>Columbia</b><br>William P. Fifer"] & n16["<b>University of Maryland</b><br>Nathan Fox"]
+    F --> n6["<b>Health Sciences Technology</b><br>Reed McKewan"] & n7["<b>MIDB Informatics Hub</b><br>Jim Wilgenbusch"] & n8["<b>DCAN Lab</b><br>Eric Feczko &amp; Steven Nelson"]
+    H --> n14["<b>Biostatistics Workgroup</b><br>Wesley K. Thompson"] & n15["<b>Geolocation Workgroup</b><br>Chun Chieh Fan"]
+     A:::team
+     E:::team
+     F:::team
+     G:::team
+     H:::team
+     n1:::team
+     n16:::team
+     n6:::project
+     n7:::project
+     n8:::project
+     n14:::project
+     n15:::project
+    classDef organization fill:#d3d3d3,stroke:#333,stroke-width:2px
+    classDef team fill:#e6e6fa,stroke:none
+    classDef project fill:#dcdcdc,stroke:none
+    classDef linkLine stroke-width:2px
+    style n6 stroke:none
+    style n7 stroke:none
+    style n8 stroke:none
+    linkStyle 0 stroke:#000000,fill:none
+```
+</div>
+
+<div style="width: 450px;">
+```mermaid
+---
+config:
   theme: redux
   layout: fixed
 ---
