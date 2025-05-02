@@ -92,6 +92,7 @@ flowchart TB
     click A "#alan-evans-principal-investigator"
     click nl "#samir-das-associate-director-of-software-development"
 ```
+<br>
 
 ```mermaid
 ---
@@ -105,8 +106,9 @@ flowchart LR
     n9 --o E["<b>Santiago Torres</b><br>Study Officer (Research Administration)"]
     B --o F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
     F --o I["<b>Regis Ongaro-Carcy</b><br>Lead BHV Developer<br>
-    <b>Sruthy Matthew</b><br>Senior Backend Developer"]
-    I --o K["<b>George Murad</b><br>Junior BHV Developer"]
+    <b>Sruthy Matthew</b><br>Senior Backend Developer<br>
+     ↓ <br>
+     <b>George Murad</b><br>Junior BHV Developer"]
     G --o L["<b>Cecile Madjar</b><br>Lead MRI developer"]
     H --o M["<b>Laetitia Faeselier</b><br>Lead BioSamples/EEG Developer"]
     A@{ shape: text}
@@ -117,7 +119,6 @@ flowchart LR
     H@{ shape: rounded}
     G@{ shape: rounded}
     I@{ shape: text}
-    K@{ shape: text}
     L@{ shape: text}
     M@{ shape: text}
     style A stroke:#000000,fill:#BBDEFB
@@ -131,7 +132,6 @@ flowchart LR
     style H stroke:#333,fill:#FFE0B2
     style G stroke:#333,fill:#FFF9C4
     style I stroke:#333,fill:#C8E6C9
-    style K stroke:#333,fill:#C8E6C9
     style L stroke:#000000,fill:#FFF9C4
     style M fill:#FFE0B2,stroke:#000000
     click A "#alan-evans-principal-investigator"
