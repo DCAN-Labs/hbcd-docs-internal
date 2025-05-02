@@ -354,7 +354,6 @@ flowchart TB
     n4@{ shape: text}
     n6@{ shape: text}
     n7@{ shape: text}
-    style C stroke:#000000,fill:#FFF9C4
     style K fill:#FFF9C4
     style L fill:#FFF9C4
     style M fill:#FFD600,stroke:#000000
