@@ -1,7 +1,7 @@
 # HBCD Data Coordinating Center (HDCC) Organizational Charts
 
 
-<div style="transform: scale(0.75); transform-origin: top left;">
+<div style="width: 400px;">
 ```mermaid
 ---
 config:
@@ -37,7 +37,8 @@ flowchart LR
     style n14 fill:#C8E6C9,stroke:none
     style n15 fill:#C8E6C9,stroke:none
     click E "#loris"
-</div>```
+```
+</div>
 
 ## LORIS
 <p>
