@@ -104,6 +104,7 @@ flowchart TB
 <br>
 
 ### LORIS ALT
+<div style="width: 450px;">
 ```mermaid
 ---
 config:
@@ -145,6 +146,7 @@ flowchart TB
     click G "#madjar"
     click H "#faeselier"
 ```
+</div>
 
 ### Roles & Responsibilities
 
