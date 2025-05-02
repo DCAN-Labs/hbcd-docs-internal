@@ -1,6 +1,7 @@
 # HBCD Data Coordinating Center (HDCC) Organizational Charts
 
 ## Overview
+
 The larger organizational structure of the HDCC is as follows - ***click on individual groups to be directed to their asssociated organizational charts***.
 
 <div style="width: 500px;">
@@ -27,17 +28,17 @@ flowchart LR
     n14@{ shape: rounded}
     n15@{ shape: rounded}
     style A fill:transparent,color:#000000,stroke-width:4px,stroke-dasharray: 0
-    style E fill:#e6e6fa
-    style F fill:#e6e6fa
-    style G fill:#e6e6fa
-    style H fill:#e6e6fa
-    style n1 fill:#e6e6fa
-    style n16 fill:#e6e6fa
-    style n6 fill:#dcdcdc
-    style n7 fill:#dcdcdc
-    style n8 fill:#dcdcdc
-    style n14 fill:#dcdcdc
-    style n15 fill:#dcdcdc
+    style E fill:#FFCDD2,stroke:#FF6D00
+    style F fill:#E1BEE7,stroke:#AA00FF
+    style G fill:#FFF9C4,stroke:#FFD600
+    style H fill:#C8E6C9,stroke:#00C853
+    style n1 fill:#BBDEFB,stroke:#2962FF
+    style n16 fill:#FFE0B2,stroke:#FF6D00
+    style n6 fill:#E1BEE7,stroke:none
+    style n7 fill:#E1BEE7,stroke:none
+    style n8 fill:#E1BEE7,stroke:none
+    style n14 fill:#C8E6C9,stroke:none
+    style n15 fill:#C8E6C9,stroke:none
     click E "#loris"
     click F "#university-of-minnesota-umn"
     click G "#ucsd"
@@ -46,7 +47,6 @@ flowchart LR
     click n16 "#university-of-maryland"
 ```
 </div>
-
 
 ## LORIS
 ```mermaid
