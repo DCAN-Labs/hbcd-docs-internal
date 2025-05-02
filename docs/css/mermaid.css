@@ -5,7 +5,7 @@
   }
   
   /* Highlight effect on hover */
-  .mermaid a:hover rect {
+  .mermaid a:hover rounded {
     stroke: #ff4500 !important;        /* bright orange border */
     stroke-width: 4px !important;      /* thicker border */
     fill: #fff3cd !important;          /* vivid yellow background */
