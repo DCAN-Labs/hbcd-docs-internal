@@ -1,51 +1,8 @@
 # HBCD Data Coordinating Center (HDCC) Organizational Charts
 
 ## Overview
-The larger organizational structure of the HDCC is as follows - ***click on individual groups to be directed to their asssociated organizational charts***.
 
-<div style="width: 500px;">
-```mermaid
----
-config:
-  theme: redux
-  layout: dagre
----
-flowchart LR
-    A["<b>HDCC</b>"] --> E["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & F["<b>UMN</b><br>Damien Fair<br>Reed McKewan"] & G["<b>UCSD</b><br>Anders Dale"] & H["<b>LIBR</b><br>"] & n1["<b>Columbia</b><br>William P. Fifer"] & n16["<b>University of Maryland</b><br>Nathan Fox"]
-    F --> n6["<b>Health Sciences Technology (HST)</b><br>Reed McKewan"] & n7["<b>MIDB Informatics Hub</b><br>Jim Wilgenbusch<br>Thomas Pengo"] & n8["<b>DCAN Lab</b><br>Eric Feczko &amp; Steven Nelson"]
-    H --> n14["<b>Biostatistics Workgroup</b><br>Wesley K. Thompson"] & n15["<b>Geolocation Workgroup</b><br>Chun Chieh Fan"]
-    A@{ shape: rect}
-    E@{ shape: rounded}
-    F@{ shape: rounded}
-    G@{ shape: rounded}
-    H@{ shape: rounded}
-    n1@{ shape: rounded}
-    n16@{ shape: rounded}
-    n6@{ shape: rounded}
-    n7@{ shape: rounded}
-    n8@{ shape: rounded}
-    n14@{ shape: rounded}
-    n15@{ shape: rounded}
-    style A fill:transparent,color:#000000
-    style E fill:#FFCDD2
-    style F fill:#E1BEE7
-    style G fill:#FFF9C4
-    style H fill:#C8E6C9
-    style n1 fill:#BBDEFB
-    style n16 fill:#FFE0B2
-    style n6 fill:#E1BEE7,stroke:none
-    style n7 fill:#E1BEE7,stroke:none
-    style n8 fill:#E1BEE7,stroke:none
-    style n14 fill:#C8E6C9,stroke:none
-    style n15 fill:#C8E6C9,stroke:none
-    click E "#loris"
-    click F "#university-of-minnesota-umn"
-    click G "#ucsd"
-    click H "#libr"
-    click n1 "#columbia"
-    click n16 "#university-of-maryland"
-```
-</div>
+The larger organizational structure of the HDCC is as follows - ***click on individual groups to be directed to their asssociated organizational charts***.
 
 <div style="width: 500px;">
 ```mermaid
