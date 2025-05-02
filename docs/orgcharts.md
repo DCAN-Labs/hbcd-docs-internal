@@ -3,7 +3,7 @@
 ## Overview
 The larger organizational structure of the HDCC is as follows - ***click on individual groups to be directed to their asssociated organizational charts***.
 
-<div style="width: 400px;">
+<div style="width: 500px;">
 ```mermaid
 ---
 config:
