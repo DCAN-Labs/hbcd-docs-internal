@@ -9,7 +9,6 @@ The larger organizational structure of the HDCC is as follows - ***click on indi
 config:
   theme: base
   layout: dagre
-  look: neo
 ---
 flowchart LR
     A["<strong>HDCC</strong>"] --> E["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & F["<b>UMN</b><br>Damien Fair<br>Reed McKewan"] & G["<b>UCSD</b><br>Anders Dale"] & H["<b>LIBR</b><br>"] & n1["<b>Columbia</b><br>William P. Fifer"] & n16["<b>University of Maryland</b><br>Nathan Fox"]
