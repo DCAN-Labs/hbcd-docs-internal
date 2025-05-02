@@ -58,13 +58,13 @@ config:
 ---
 flowchart TB
     A["<b>Alan Evans</b><br>Principal Investigator"] --> nl["<b>Samir Das</b><br>Associate Director of Software Development"]
-    nl --> n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"]) & B(["<b>Development</b>"])
+    nl --> n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b><br>"]) & B(["<b>Development</b>"])
     C --> D["<b>Pierre Rioux</b><br>Senior HPC developer"]
     n9 --> E["<b>Santiago Torres</b><br>Study Officer (Research Administration)"]
     B --> F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
     F --> I["<b>Regis Ongaro-Carcy</b><br>Lead BHV Developer<br>
-    <b>Sruthy Matthew</b><br>Senior Backend Developer"]
-    I --> K["<b>George Murad</b><br>Junior BHV Developer"]
+    <b>Sruthy Matthew</b><br>Senior Backend Developer<br>
+    <b>George Murad</b><br>Junior BHV Developer"]
     G --> L["<b>Cecile Madjar</b><br>Lead MRI developer"]
     H --> M["<b>Laetitia Faeselier</b><br>Lead BioSamples/EEG Developer"]
     A@{ shape: text}
@@ -75,7 +75,6 @@ flowchart TB
     H@{ shape: rounded}
     G@{ shape: rounded}
     I@{ shape: text}
-    K@{ shape: text}
     L@{ shape: text}
     M@{ shape: text}
     style A stroke:#000000,fill:#BBDEFB
@@ -85,19 +84,17 @@ flowchart TB
     style B stroke:#333,fill:#E1BEE7
     style D stroke:#333,fill:#BBDEFB
     style E stroke:#333,fill:#BBDEFB
-    style F stroke:#333,fill:#C8E6C9
-    style H stroke:#333,fill:#FFE0B2
-    style G stroke:#333,fill:#FFF9C4
-    style I stroke:#333,fill:#C8E6C9
-    style K stroke:#333,fill:#C8E6C9
-    style L stroke:#000000,fill:#FFF9C4
-    style M fill:#FFE0B2,stroke:#000000
+    style F stroke:#333,fill:#E1BEE7
+    style H stroke:#333,fill:#E1BEE7
+    style G stroke:#333,fill:#E1BEE7
+    style I stroke:#333,fill:#BBDEFB
+    style L stroke:#000000,fill:#BBDEFB
+    style M fill:#BBDEFB,stroke:#000000
     click A "#evans"
     click nl "#das"
     click D "#rioux"
     click E "#torres"
     click I "#bhv-database"
-    click K "#bhv-database"
     click L "#madjar"
     click M "#faeselier"
 ```
