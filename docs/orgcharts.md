@@ -54,16 +54,16 @@ config:
   layout: dagre
 ---
 flowchart TB
-    A["<b>Alan Evans</b><br>Principal Investigator"] --o nl["<b>Samir Das</b><br>Associate Director of Software Development"]
-    nl --o n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"]) & B(["<b>Development</b>"])
-    C --o D["<b>Pierre Rioux</b><br>Senior HPC developer"]
-    n9 --o E["<b>Santiago Torres</b><br>Study Officer (Research Administration)"]
-    B --o F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
-    F --o I["<b>Regis Ongaro-Carcy</b><br>Lead BHV Developer<br>
+    A["<b>Alan Evans</b><br>Principal Investigator"] --> nl["<b>Samir Das</b><br>Associate Director of Software Development"]
+    nl --> n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"]) & B(["<b>Development</b>"])
+    C --> D["<b>Pierre Rioux</b><br>Senior HPC developer"]
+    n9 --> E["<b>Santiago Torres</b><br>Study Officer (Research Administration)"]
+    B --> F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
+    F --> I["<b>Regis Ongaro-Carcy</b><br>Lead BHV Developer<br>
     <b>Sruthy Matthew</b><br>Senior Backend Developer"]
-    I --o K["<b>George Murad</b><br>Junior BHV Developer"]
-    G --o L["<b>Cecile Madjar</b><br>Lead MRI developer"]
-    H --o M["<b>Laetitia Faeselier</b><br>Lead BioSamples/EEG Developer"]
+    I --> K["<b>George Murad</b><br>Junior BHV Developer"]
+    G --> L["<b>Cecile Madjar</b><br>Lead MRI developer"]
+    H --> M["<b>Laetitia Faeselier</b><br>Lead BioSamples/EEG Developer"]
     A@{ shape: text}
     nl@{ shape: text}
     D@{ shape: text}
@@ -94,23 +94,26 @@ flowchart TB
 ```
 <br>
 
+#### Style: LR
+
 ```mermaid
 ---
 config:
   layout: dagre
 ---
 flowchart LR
-    A["<b>Alan Evans</b><br>Principal Investigator"] --o nl["<b>Samir Das</b><br>Associate Director of Software Development"]
-    nl --o n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"]) & B(["<b>Development</b>"])
-    C --o D["<b>Pierre Rioux</b><br>Senior HPC developer"]
-    n9 --o E["<b>Santiago Torres</b><br>Study Officer (Research Administration)"]
-    B --o F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
-    F --o I["<b>Regis Ongaro-Carcy</b><br>Lead BHV Developer<br>
-    <b>Sruthy Matthew</b><br>Senior Backend Developer<br>
-     ↓ <br>
+    A["<b>Alan Evans</b><br>Principal Investigator"] --> nl["<b>Samir Das</b><br>Associate Director of Software Development"]
+    nl --> n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"]) & B(["<b>Development</b>"])
+    C --> D["<b>Pierre Rioux</b><br>Senior HPC developer"]
+    n9 --> E["<b>Santiago Torres</b><br>Study Officer (Research Administration)"]
+    B --> F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
+    F --> I["<b>Regis Ongaro-Carcy</b><br>Lead BHV Developer<br>
+    <b>Sruthy Matthew</b><br>Senior Backend Developer
+     -------------------------------
+     ⬇
      <b>George Murad</b><br>Junior BHV Developer"]
-    G --o L["<b>Cecile Madjar</b><br>Lead MRI developer"]
-    H --o M["<b>Laetitia Faeselier</b><br>Lead BioSamples/EEG Developer"]
+    G --> L["<b>Cecile Madjar</b><br>Lead MRI developer"]
+    H --> M["<b>Laetitia Faeselier</b><br>Lead BioSamples/EEG Developer"]
     A@{ shape: text}
     nl@{ shape: text}
     D@{ shape: text}
