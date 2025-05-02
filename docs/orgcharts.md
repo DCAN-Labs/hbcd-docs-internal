@@ -7,34 +7,37 @@ The larger organizational structure of the HDCC is as follows - ***click on indi
 ```mermaid
 ---
 config:
-  theme: base
+  theme: redux
   layout: dagre
-  look: neo
 ---
 flowchart LR
     A["<strong>HDCC</strong>"] --> E["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & F["<b>UMN</b><br>Damien Fair<br>Reed McKewan"] & G["<b>UCSD</b><br>Anders Dale"] & H["<b>LIBR</b><br>"] & n1["<b>Columbia</b><br>William P. Fifer"] & n16["<b>University of Maryland</b><br>Nathan Fox"]
-    F --> n6["<b>Health Sciences Technology</b><br>Reed McKewan"] & n7["<b>MIDB Informatics Hub</b><br>Jim Wilgenbusch"] & n8["<b>DCAN Lab</b><br>Eric Feczko &amp; Steven Nelson"]
+    F --> n6["<b>Health Sciences Technology (HST)</b><br>Reed McKewan"] & n7["<b>MIDB Informatics Hub</b><br>Jim Wilgenbusch<br>Thomas Pengo"] & n8["<b>DCAN Lab</b><br>Eric Feczko &amp; Steven Nelson"]
     H --> n14["<b>Biostatistics Workgroup</b><br>Wesley K. Thompson"] & n15["<b>Geolocation Workgroup</b><br>Chun Chieh Fan"]
-     A:::team
-     E:::team
-     F:::team
-     G:::team
-     H:::team
-     n1:::team
-     n16:::team
-     n6:::project
-     n7:::project
-     n8:::project
-     n14:::project
-     n15:::project
-    classDef organization fill:#d3d3d3,stroke:#333,stroke-width:2px
-    classDef team fill:#e6e6fa,stroke:none
-    classDef project fill:#dcdcdc,stroke:none
-    classDef linkLine stroke-width:2px
-    style n6 stroke:none
-    style n7 stroke:none
-    style n8 stroke:none
-    linkStyle 0 stroke:#000000,fill:none
+    A@{ shape: rect}
+    E@{ shape: rounded}
+    F@{ shape: rounded}
+    G@{ shape: rounded}
+    H@{ shape: rounded}
+    n1@{ shape: rounded}
+    n16@{ shape: rounded}
+    n6@{ shape: rounded}
+    n7@{ shape: rounded}
+    n8@{ shape: rounded}
+    n14@{ shape: rounded}
+    n15@{ shape: rounded}
+    style A fill:transparent,color:#000000,stroke-width:4px,stroke-dasharray: 0
+    style E fill:#e6e6fa
+    style F fill:#e6e6fa
+    style G fill:#e6e6fa
+    style H fill:#e6e6fa
+    style n1 fill:#e6e6fa
+    style n16 fill:#e6e6fa
+    style n6 fill:#dcdcdc
+    style n7 fill:#dcdcdc
+    style n8 fill:#dcdcdc
+    style n14 fill:#dcdcdc
+    style n15 fill:#dcdcdc
     click E "#loris"
     click F "#university-of-minnesota-umn"
     click G "#ucsd"

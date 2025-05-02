@@ -1,18 +1,16 @@
-/* General hover effect for clickable nodes in Mermaid (nodes with links) */
-.mermaid svg a:hover rect,
-.mermaid svg a:hover polygon,
-.mermaid svg a:hover path {
-  stroke: #ff4500 !important;        /* vivid border */
-  stroke-width: 3px !important;      /* thicker stroke */
-  fill: #fff8dc !important;          /* light yellow background */
-  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4));
-  transition: all 0.2s ease;
-}
+/* Base link style inside Mermaid diagrams */
+.mermaid a {
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  /* Highlight effect on hover */
+  .mermaid a:hover rounded {
+    stroke: #ff4500 !important;        /* bright orange border */
+    stroke-width: 4px !important;      /* thicker border */
+    fill: #fff3cd !important;          /* vivid yellow background */
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4)); /* subtle shadow */
+  }
 
-/* Optional: change text color on hover for better feedback */
-.mermaid svg a:hover text {
-  fill: #000000 !important;
-  font-weight: bold;
-}
 
   
