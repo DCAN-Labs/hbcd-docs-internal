@@ -1,14 +1,14 @@
-/* Target links inside Mermaid diagrams */
+/* Base link style inside Mermaid diagrams */
 .mermaid a {
-    fill: #d1eaff !important;  /* background fill on hover */
     cursor: pointer;
-    transition: fill 0.2s;
+    transition: all 0.2s ease;
   }
   
-  /* Only apply when hovering */
+  /* Highlight effect on hover */
   .mermaid a:hover rect {
-    stroke: #007acc !important;
-    stroke-width: 4px !important;
-    fill: #a5dfff !important;
+    stroke: #ff4500 !important;        /* bright orange border */
+    stroke-width: 4px !important;      /* thicker border */
+    fill: #fff3cd !important;          /* vivid yellow background */
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4)); /* subtle shadow */
   }
   
