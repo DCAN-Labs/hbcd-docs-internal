@@ -1,16 +1,18 @@
-/* Base link style inside Mermaid diagrams */
-.mermaid a {
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-  
-  /* Highlight effect on hover */
-  .mermaid a:hover rounded {
-    stroke: #ff4500 !important;        /* bright orange border */
-    stroke-width: 4px !important;      /* thicker border */
-    fill: #fff3cd !important;          /* vivid yellow background */
-    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4)); /* subtle shadow */
-  }
+/* Highlight clickable Mermaid nodes on hover */
+.mermaid svg a:hover rect,
+.mermaid svg a:hover path,
+.mermaid svg a:hover polygon {
+  stroke: #ff4500 !important;        /* Bright orange border */
+  stroke-width: 3px !important;      /* Thicker border */
+  fill: #fff3cd !important;          /* Warm yellow background */
+  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.3)); /* Subtle shadow */
+  transition: all 0.2s ease-in-out;
+}
 
+/* Optionally bold the label text on hover */
+.mermaid svg a:hover text {
+  fill: #000 !important;
+  font-weight: bold;
+}
 
   
