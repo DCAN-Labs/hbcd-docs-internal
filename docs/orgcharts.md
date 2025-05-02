@@ -302,16 +302,15 @@ flowchart TB
     click DCAN "#dcan-lab"
 ```
 ### Health Sciences Technology (HST)
+***ROLE:*** Data shelter, PHI, Ripple interface, Overall Data Management, QC Dashboards, Ancillary Studies, & Third party integration
 ```mermaid
 ---
 config:
   layout: dagre
 ---
 flowchart TB
-    A["<b>Health Sciences Technology</b><br>Data shelter, PHI, Ripple interface, Overall Data Management, QC Dashboards, Ancillary Studies, Third party integration"] --o B["<b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"]
-    B --o E["<b>Karen Athy-Penrose</b><br>Data Shelter PM"] & F["<b>Dan Duhon</b><br>DevOps/ETl"] & G["<b>Haley Hutala</b><br>Tableau Engineer/QC Dashboards"] & H["<b>Constantine Aliferis</b><br>Director Insitute Health Informatics"]
+    B["<b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"] --o E["<b>Karen Athy-Penrose</b><br>Data Shelter PM"] & F["<b>Dan Duhon</b><br>DevOps/ETl"] & G["<b>Haley Hutala</b><br>Tableau Engineer/QC Dashboards"] & H["<b>Constantine Aliferis</b><br>Director Insitute Health Informatics"]
     H --o I["<b>Steve Johnson</b><br>Director Informatics Innovation"] & J["<b>Tim Meyers</b><br>Senior Informatics Engineer/EHR"]
-    A@{ shape: rounded}
     B@{ shape: text}
     E@{ shape: text}
     F@{ shape: text}
@@ -319,7 +318,6 @@ flowchart TB
     H@{ shape: text}
     I@{ shape: text}
     J@{ shape: text}
-    style A fill:#C8E6C9,stroke:#000000
     style B fill:#C8E6C9,stroke-width:2px,stroke-dasharray: 0,stroke:none
     style E fill:#C8E6C9
     style F fill:#C8E6C9
@@ -370,13 +368,14 @@ flowchart TB
 ```
 
 ### DCAN Lab
+***ROLE:*** Processing, Software Development, & Deployment
 ```mermaid
 ---
 config:
   layout: dagre
 ---
 flowchart LR
-    D["<b>DCAN Lab</b><br>Processing, Software Development &amp; Deployment"] --> S["<b>Eric Feczko</b><br>Neuroscience/Informatics<br>Software Engineer"] & T["<b>Steve Nelson</b><br>Director Neuroimaging Hub MIDB/CMRR"]
+    D["<b>Damien Fair</b><br>Professor UMN<br>HBCD DCC MPI"] --> S["<b>Eric Feczko</b><br>Neuroscience/Informatics<br>Software Engineer"] & T["<b>Steve Nelson</b><br>Director Neuroimaging Hub MIDB/CMRR"]
     S --> s1["<b>Lucille Moore</b><br>PM &amp; Software Engineer<br>
     <b>Mathias Goncalves</b><br>Software Engineer (Infant fMRIPrep)"]
     T --> t1["<b>Kim Weldon</b><br>PM, Data Acquisition Seimens Engineer"]
@@ -388,7 +387,7 @@ flowchart LR
     s1@{ shape: text}
     t1@{ shape: text}
     t2@{ shape: text}
-    style D stroke:#000000,fill:#FFE0B2
+    style D stroke:#000000,fill:#BBDEFB
     style S stroke:#000000,fill:#FFE0B2
     style T stroke:#000000,fill:#FFE0B2
     style s1 fill:#FFE0B2
