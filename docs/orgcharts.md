@@ -104,52 +104,7 @@ flowchart TB
 <br>
 
 ### LORIS ALT
-<div style="width: 450px;">
-```mermaid
----
-config:
-  layout: dagre
----
-flowchart TB
-    A["<b>Alan Evans</b><br>Principal Investigator"] --> nl["<b>Samir Das</b><br>Associate Director of Software Development"]
-    nl --> n9["<b><u>Study Coordination</u></b><br>
-    <b>Santiago Torres</b><br>Study Officer (Research Administration)"] & C["<b><u>CBRAIN/Computing</u></b><br>
-    <b>Pierre Rioux</b>
-    Senior HPC developer"] & B["<b>Development</b>"]
-    B --> F["<b><u>BHV/Database</u></b><br>
-    <b>Regis Ongaro-Carcy</b><br>Lead BHV Developer<br>
-    <b>Sruthy Matthew</b><br>Senior Backend Developer<br>
-    <b>George Murad</b><br>Junior BHV Developer"] & H["<b><u>EEG/Biosamples</u></b><br>
-    <b>Laetitia Faeselier</b><br>Lead BioSamples/EEG Developer"] & G["<b><u>MRI</u></b><br>
-    <b>Cecile Madjar</b><br>Lead MRI developer"]
-    A@{ shape: text}
-    nl@{ shape: text}
-    n9@{ shape: rounded}
-    C@{ shape: rounded}
-    B@{ shape: rounded}
-    F@{ shape: rounded}
-    H@{ shape: rounded}
-    G@{ shape: rounded}
-    style A stroke:#000000,fill:#BBDEFB
-    style nl stroke:#000000,fill:#BBDEFB
-    style n9 stroke:#000000,fill:#C8E6C9,stroke-width:1px,stroke-dasharray: 0
-    style C stroke:#333,fill:#FFF9C4
-    style B stroke:#333,fill:#FFE0B2
-    style F stroke:#333,fill:#FFE0B2
-    style H stroke:#333,fill:#FFE0B2
-    style G stroke:#333,fill:#FFE0B2
-    click A "#evans"
-    click nl "#das"
-    click C "#rioux"
-    click n9 "#torres"
-    click F "#bhv-database"
-    click G "#madjar"
-    click H "#faeselier"
-```
-</div>
-
-### LORIS LR
-
+<div style="width: 80%; align-items: center;">
 ```mermaid
 ---
 config:
@@ -191,6 +146,7 @@ flowchart LR
     click G "#madjar"
     click H "#faeselier"
 ```
+</div>
 
 ### Roles & Responsibilities
 
