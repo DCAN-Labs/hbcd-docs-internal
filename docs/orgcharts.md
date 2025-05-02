@@ -380,9 +380,7 @@ config:
   layout: dagre
 ---
 flowchart TB
-    A0["<b>Damien Fair</b><br>Professor UMN<br>HBCD DCC MPI"] --> A["<b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"]
-    A --> C["<b>MIDB Informatics Hub</b><br><i>Minnesota Supercomputing Institute (MSI)</i><br>System Administration, Loris Hosting, Computing, Processing, Data sharing"]
-    C --> K["<b>Jim Wilgenbusch</b><br>Research Computing"]
+    C["<b>MIDB Informatics Hub</b><br><i>Minnesota Supercomputing Institute (MSI)</i><br>System Administration, Loris Hosting, Computing, Processing, Data sharing"] --> K["<b>Jim Wilgenbusch</b><br>Research Computing"]
     K --> L["<b>Thomas Pengo</b><br>Co-Director Research Informatics"]
     L --> M(["<b>Project Management</b>"]) & N(["<b>System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Management</b>"])
     N --> Q["<b>Jesse Erdman</b><br>Senior System Operations<br>
@@ -395,8 +393,6 @@ flowchart TB
     P --> n7["<b>Kimberleigh Breen</b><br>Data Manager/Version Control<br>
     <b>Borgne Raasch</b><br>Data Steward/Access Controls<br>
     <b>Naomi Hospodarsky-Sutherland</b><br>Security Compliance"]
-    A0@{ shape: text}
-    A@{ shape: text}
     C@{ shape: rounded}
     K@{ shape: text}
     L@{ shape: text}
@@ -404,8 +400,6 @@ flowchart TB
     n4@{ shape: text}
     n6@{ shape: text}
     n7@{ shape: text}
-    style A0 fill:#BBDEFB
-    style A fill:#C8E6C9
     style C stroke:#000000,fill:#FFF9C4
     style K fill:#FFF9C4
     style L fill:#FFF9C4
