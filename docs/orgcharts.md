@@ -343,7 +343,35 @@ flowchart TB
     style D2b fill:#FFE0B2
 ```
 ### Health Sciences Technology (HST)
-
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    A0["<b>Damien Fair</b><br>Professor UMN<br>HBCD DCC MPI"] --o A["<b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"]
+    A --o B["<b>Health Sciences Technology</b><br>Role: Data shelter, PHI, Ripple interface, Overall Data Management, QC Dashboards, Ancillary Studies, Third party integration"]
+    B --o E["<b>Karen Athy-Penrose</b><br>Data Shelter PM"] & F["<b>Dan Duhon</b><br>DevOps/ETl"] & G["<b>Haley Hutala</b><br>Tableau Engineer/QC Dashboards"] & H["<b>Constantine Aliferis</b><br>Director Insitute Health Informatics"]
+    H --o I["<b>Steve Johnson</b><br>Director Informatics Innovation"] & J["<b>Tim Meyers</b><br>Senior Informatics Engineer/EHR"]
+    A0@{ shape: text}
+    A@{ shape: text}
+    B@{ shape: rounded}
+    E@{ shape: text}
+    F@{ shape: text}
+    G@{ shape: text}
+    H@{ shape: text}
+    I@{ shape: text}
+    J@{ shape: text}
+    style A0 fill:#BBDEFB
+    style A fill:#C8E6C9
+    style B fill:#C8E6C9,stroke-width:2px,stroke-dasharray: 0,stroke:#000000
+    style E fill:#C8E6C9
+    style F fill:#C8E6C9
+    style G fill:#C8E6C9
+    style H fill:#C8E6C9
+    style I fill:#C8E6C9
+    style J fill:#C8E6C9
+```
 
 ### Masonic Institute for the Developing Brain (MIDB) Informatics Hub
 ```mermaid
