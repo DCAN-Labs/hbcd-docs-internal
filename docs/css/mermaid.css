@@ -1,0 +1,14 @@
+/* Target links inside Mermaid diagrams */
+.mermaid a {
+    fill: #d1eaff !important;  /* background fill on hover */
+    cursor: pointer;
+    transition: fill 0.2s;
+  }
+  
+  /* Only apply when hovering */
+  .mermaid a:hover rect {
+    stroke: #007acc !important;
+    stroke-width: 2px !important;
+    fill: #a5dfff !important;
+  }
+  

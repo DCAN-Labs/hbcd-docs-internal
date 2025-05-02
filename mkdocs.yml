@@ -25,6 +25,7 @@ extra_css:
   - css/banners.css
   - css/hoverable_elements.css
   - css/legends.css
+  - css/mermaid.css
   - css/headers.css
   - css/tables.css
   - overrides/styles.css
