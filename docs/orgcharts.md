@@ -3,8 +3,7 @@
 ## Overview
 The larger organizational structure of the HDCC is as follows - ***click on individual groups to be directed to their asssociated organizational charts***.
 
-<div style="width: 600px;">
-
+<div style="width: 400px;">
 ```mermaid
 ---
 config:
@@ -143,6 +142,11 @@ flowchart TB
 
 
 ## Columbia
+(ADD ORG CHART DIAGRAM HERE)
+
+### Roles and Responsibilities
+
+## University of Maryland
 (ADD ORG CHART DIAGRAM HERE)
 
 ### Roles and Responsibilities
