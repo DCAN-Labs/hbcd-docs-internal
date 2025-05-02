@@ -398,53 +398,6 @@ config:
   layout: dagre
 ---
 flowchart TB
-    A["<b>Anders Dale</b><br>PI/Director"] --> n1["<b><u>Informatics</u></b><br>
-    <b>Rongguang Yang</b><br>Supervisor<br>
-    <b>Chris Blazej</b>
-    Fiona Software Development"] & n2["<b><u>MR Capture/QC</u></b><br>
-    <b>Donald Hagler</b><br>Supervisor<br>
-    <b>Amanda Plesa</b> (Tracking,QC)
-    <b>David Zimmermann</b> (QC)
-    <b>Tyler Berkness</b> (Protocol Violations)
-    <b>Sejal Shanbhag</b> (Issue Handling)"] & n3["<b><u>Imaging</u></b><br>
-    <b>Josh Kuperman</b><br>R&amp;D Engineer"] & n4["<b>Janosch Linkersdörfer</b><br>Supervisor"]
-    n4 --> n5["<b><u>Data Science</u></b><br>
-    <b>Biplabendu Das</b><br>Dashboard Backend<br>
-    <b>Olivier Celhay</b>
-    Dashboard Frontend"] & n6["<b><u>REDCap</u></b><br>
-    <b>Joseph Baligh</b><br>Server Administration<br>
-    <b>Erika Bolden</b>
-    Form Development<br>
-    <b>Laura Ziemer</b>
-    Form Development"] & n7["<b><u>Other</u></b><br>
-    <b>Amanda (Lin) Li</b><br>Biostats support; supervised
-by Wes Thompson<br>
-    <b>Wenjie Zheng</b>
-    DEAP Development"]
-    A@{ shape: text}
-    n1@{ shape: rounded}
-    n2@{ shape: rounded}
-    n3@{ shape: rounded}
-    n4@{ shape: text}
-    n5@{ shape: rounded}
-    n6@{ shape: rounded}
-    style A fill:#BBDEFB
-    style n1 fill:#E1BEE7,stroke:#000000
-    style n2 stroke:#000000,fill:#E1BEE7
-    style n3 stroke:#000000,fill:#E1BEE7
-    style n4 fill:#BBDEFB
-    style n5 stroke:#000000,fill:#E1BEE7
-    style n6 stroke:#000000,fill:#E1BEE7
-    style n7 stroke:#000000,fill:#E1BEE7
-```
-
-## UCSD Alt
-```mermaid
----
-config:
-  layout: dagre
----
-flowchart TB
     A["<b>Anders Dale</b><br>PI/Director"] --> n1(["<b>Informatics</b>"]) & n2(["<b>MR Capture/QC</b>"]) & n3(["<b>Imaging</b>"]) & n4["<b>Janosch Linkersdörfer</b><br>Supervisor"]
     n4 --> n5(["<b>Data Science</b>"]) & n6(["<b>REDCap</b>"]) & n7(["<b>Other</b>"])
     n1 --> n8["<b>Rongguang Yang</b><br>Supervisor<br>
@@ -477,13 +430,13 @@ by Wes Thompson<br>
     n12@{ shape: text}
     n13@{ shape: text}
     style A fill:#BBDEFB
-    style n1 fill:#2962FF,stroke:none
-    style n2 stroke:#000000,fill:#2962FF
-    style n3 stroke:#000000,fill:#2962FF
+    style n1 fill:#E1BEE7,stroke:none
+    style n2 stroke:#000000,fill:#E1BEE7
+    style n3 stroke:#000000,fill:#E1BEE7
     style n4 fill:#BBDEFB
-    style n5 stroke:#000000,fill:#2962FF
-    style n6 stroke:#000000,fill:#2962FF
-    style n7 stroke:#000000,fill:#2962FF
+    style n5 stroke:#000000,fill:#E1BEE7
+    style n6 stroke:#000000,fill:#E1BEE7
+    style n7 stroke:#000000,fill:#E1BEE7
     style n8 fill:#BBDEFB
     style n9 fill:#BBDEFB
     style n10 fill:#BBDEFB
@@ -491,6 +444,7 @@ by Wes Thompson<br>
     style n12 fill:#BBDEFB
     style n13 fill:#BBDEFB
 ```
+
 ## LIBR
 NOTE: org chart is small, perhaps can just be integrated into larger org chart?
 
