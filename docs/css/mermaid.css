@@ -8,7 +8,7 @@
   /* Only apply when hovering */
   .mermaid a:hover rect {
     stroke: #007acc !important;
-    stroke-width: 2px !important;
+    stroke-width: 4px !important;
     fill: #a5dfff !important;
   }
   
