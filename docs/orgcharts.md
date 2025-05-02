@@ -224,12 +224,7 @@ flowchart TB
 <li>Creation of automated queries for study progression and quality control monitoring..</li>
 <li>Development and implementation of new Endpoint and APIs for HBCD.</li>
 </ul>
-
-
-
 </div>
-
-
 
 <div id="madjar" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -275,8 +270,6 @@ flowchart TB
 <li>Monitoring of radiological reports.</li>
 </ul>
 </div>
-
-
 
 
 
@@ -349,9 +342,56 @@ flowchart TB
     style D2a fill:#FFE0B2
     style D2b fill:#FFE0B2
 ```
+### Health Sciences Technology (HST)
 
-### Roles and Responsibilities
 
+### Masonic Institute for the Developing Brain (MIDB) Informatics Hub
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    A0["<b>Damien Fair</b><br>Professor UMN<br>HBCD DCC MPI"] --> A["<b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"]
+    A --> C["<b>MIDB Informatics Hub</b><br><i>Minnesota Supercomputing Institute (MSI)</i><br>System Administration, Loris Hosting, Computing, Processing, Data sharing"]
+    C --> K["<b>Jim Wilgenbusch</b><br>Research Computing"]
+    K --> L["<b>Thomas Pengo</b><br>Co-Director Research Informatics"]
+    L --> M(["<b>Project Management</b>"]) & N(["<b>System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Management</b>"])
+    N --> Q["<b>Jesse Erdman</b><br>Senior System Operations<br>
+    <b>Devin Willis</b><br>DevOps Engineer<br>
+    <b>Jesus Garcia</b><br>DevOps Engineer"]
+    O --> n4["<b>Timothy Hendrickson</b><br>Neuroimaging/EEG/MRS/Biosensor Informatics Lead<br>
+    <b>Erik Lee</b><br>Pipeline Integration/Processing<br>
+    <b>Monalisa Biles</b><br>Analysis Data Processing"]
+    M --> n6@{ label: "<span style=\"--tw-scale-x:\"><b>Maren Macgregor-Hannah</b><br>HDCC PM</span><br style=\"--tw-scale-x:\">" }
+    P --> n7["<b>Kimberleigh Breen</b><br>Data Manager/Version Control<br>
+    <b>Borgne Raasch</b><br>Data Steward/Access Controls<br>
+    <b>Naomi Hospodarsky-Sutherland</b><br>Security Compliance"]
+    A0@{ shape: text}
+    A@{ shape: text}
+    C@{ shape: rounded}
+    K@{ shape: text}
+    L@{ shape: text}
+    Q@{ shape: text}
+    n4@{ shape: text}
+    n6@{ shape: text}
+    n7@{ shape: text}
+    style A0 fill:#BBDEFB
+    style A fill:#C8E6C9
+    style C stroke:#000000,fill:#FFF9C4
+    style K fill:#FFF9C4
+    style L fill:#FFF9C4
+    style M fill:#FFD600,stroke:#000000
+    style N fill:#FFD600,stroke:#000000
+    style O color:#000000,fill:#FFD600,stroke:#000000
+    style P fill:#FFD600,stroke:#000000
+    style Q fill:#FFF9C4
+    style n4 fill:#FFF9C4
+    style n6 fill:#FFF9C4
+    style n7 fill:#FFF9C4
+```
+
+### DCAN Lab
 
 ## UCSD
 (ADD ORG CHART DIAGRAM HERE)
