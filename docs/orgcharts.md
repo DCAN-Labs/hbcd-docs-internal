@@ -43,6 +43,9 @@ flowchart LR
     click H "#libr"
     click n1 "#columbia"
     click n16 "#university-of-maryland"
+    click n6 "#health-sciences-technology-hst"
+    click n7 "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
+    click n8 "#dcan-lab"
 ```
 </div>
 
@@ -349,7 +352,7 @@ config:
   layout: dagre
 ---
 flowchart TB
-    A["<b>Health Sciences Technology</b><br>Role: Data shelter, PHI, Ripple interface, Overall Data Management, QC Dashboards, Ancillary Studies, Third party integration"] --o B["<b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"]
+    A["<b>Health Sciences Technology</b><br>Data shelter, PHI, Ripple interface, Overall Data Management, QC Dashboards, Ancillary Studies, Third party integration"] --o B["<b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"]
     B --o E["<b>Karen Athy-Penrose</b><br>Data Shelter PM"] & F["<b>Dan Duhon</b><br>DevOps/ETl"] & G["<b>Haley Hutala</b><br>Tableau Engineer/QC Dashboards"] & H["<b>Constantine Aliferis</b><br>Director Insitute Health Informatics"]
     H --o I["<b>Steve Johnson</b><br>Director Informatics Innovation"] & J["<b>Tim Meyers</b><br>Senior Informatics Engineer/EHR"]
     A@{ shape: rounded}
