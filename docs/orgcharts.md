@@ -328,14 +328,15 @@ flowchart TB
 ```
 
 ### Masonic Institute for the Developing Brain (MIDB) Informatics Hub
+***ROLE:*** Utilizing the Minnesota Supercomputing Institute (MSI), MIDB performs: System Administration, Loris Hosting, Computing, Processing, and Data sharing
+
 ```mermaid
 ---
 config:
   layout: dagre
 ---
 flowchart TB
-    C["<b>MIDB Informatics Hub</b><br><i>Minnesota Supercomputing Institute (MSI)</i><br>System Administration, Loris Hosting, Computing, Processing, Data sharing"] --> K["<b>Jim Wilgenbusch</b><br>Research Computing"]
-    K --> L["<b>Thomas Pengo</b><br>Co-Director Research Informatics"]
+  K["<b>Jim Wilgenbusch</b><br>Research Computing"] --> L["<b>Thomas Pengo</b><br>Co-Director Research Informatics"]
     L --> M(["<b>Project Management</b>"]) & N(["<b>System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Management</b>"])
     N --> Q["<b>Jesse Erdman</b><br>Senior System Operations<br>
     <b>Devin Willis</b><br>DevOps Engineer<br>
