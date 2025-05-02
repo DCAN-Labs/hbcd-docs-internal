@@ -113,26 +113,76 @@ flowchart TB
 - General oversight of structural functionality and new features and tools in LORIS.
 
 ## University of Minnesota (UMN)
-(ADD ORG CHART DIAGRAM HERE)
+```mermaid
+---
+config:
+  theme: redux
+  layout: dagre
+---
+flowchart TB
+    A["<b>Damien Fair</b><br>Professor UMN<br>HBCD DCC MPI"] --> A1["<b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"]
+    A1 --> HST["<b>Health Sciences Technology</b><br>Data shelter, PHI, Ripple interface, Overall Data Management, QC Dashboards, Ancillary Studies, Third party integration"] & MIDB["<b>MIDB Informatics Hub</b><br><i>Minnesota Supercomputing Institute (MSI)</i><br>System Administration, Loris Hosting, Computing, Processing, Data sharing"] & DCAN["<b>DCAN Lab</b><br>Processing, Software Development &amp; Deployment"]
+    HST --> HST1["<b>Karen Athy-Penrose</b><br>Data Shelter PM<br>
+        <b>Dan Duhon</b><br>DevOps/ETL<br>
+        <b>Haley Hutala</b><br>Tableau Engineer/QC Dashboards"] & HST2["<b>Constantine Aliferis</b><br>Director Insitute Health Informatics"]
+    HST2 --> HST2a["<b>Steve Johnson</b><br>Director Informatics Innovation"]
+    HST2a --> HST2b["<b>Tim Meyers</b><br>Senior Informatics Engineer/EHR"]
+    MIDB --> M1["<b>Jim Wilgenbusch</b><br>Research Computing"]
+    M1 --> M2["<b>Thomas Pengo</b><br>Co-Director Research Informatics"]
+    M2 --> M3["<b>Maren Macgregor-Hannah</b><br>HDCC PM<br>
+    <b>Kimberleigh Breen</b><br>Data Manager/Version Control<br>
+    <b>Borgne Raasch</b><br>Data Steward/Access Controls<br>
+    <b>Naomi Hospodarsky-Sutherland</b><br>Security Compliance"] & M4["<b>Jesse Erdman</b><br>Sr. SysOps<br>
+    <b>Devin Willis</b><br>DevOps<br>
+    <b>Jesus Garcia</b><br>DevOps"] & M5["<b>Timothy Hendrickson</b>
+    MR/EEG/Biosensor Informatics Lead<br>
+    <b>Erik Lee</b><br>Pipelines/Processing<br>
+    <b>Monalisa Biles</b><br>Analyst"]
+    DCAN --> D1["<b>Eric Feczko</b><br>Neuroscience/Informatics<br>Software Engineer<br>
+    <b>Lucille Moore</b><br>PM &amp; Software Engineer<br>
+    <b>Mathias Goncalves</b><br>Software Engineer (Infant fMRIPrep)"] & D2["<b>Steve Nelson</b><br>Director Neuroimaging Hub MIDB/CMRR"]
+    D2 --> D2a["<b>Kim Weldon</b><br>PM, Data Acquisition Seimens Engineer"]
+    D2a --> D2b["<b>Thomas Madison</b><br>Software Engineer<br>
+    <b>Matthew Cieslack</b><br>Software Engineer (QSIPrep/Diffusion)"]
+    A@{ shape: text}
+    A1@{ shape: text}
+    HST@{ shape: rounded}
+    MIDB@{ shape: rounded}
+    DCAN@{ shape: rounded}
+    HST2@{ shape: text}
+    HST2a@{ shape: text}
+    HST2b@{ shape: text}
+    M1@{ shape: text}
+    M2@{ shape: text}
+    M3@{ shape: text}
+    M4@{ shape: text}
+    M5@{ shape: text}
+    D1@{ shape: text}
+    D2@{ shape: text}
+    D2a@{ shape: text}
+    D2b@{ shape: text}
+    style A fill:#BBDEFB
+    style A1 fill:#C8E6C9
+    style HST fill:#C8E6C9
+    style MIDB fill:#FFF9C4
+    style DCAN fill:#FFE0B2
+    style HST1 fill:#C8E6C9,stroke:none
+    style HST2 fill:#C8E6C9
+    style HST2a stroke:#C8E6C9,fill:#C8E6C9
+    style HST2b fill:#C8E6C9
+    style M1 fill:#FFF9C4
+    style M2 fill:#FFF9C4
+    style M3 fill:#FFF9C4
+    style M4 fill:#FFF9C4
+    style M5 fill:#FFF9C4
+    style D1 fill:#FFE0B2
+    style D2 fill:#FFE0B2
+    style D2a fill:#FFE0B2
+    style D2b fill:#FFE0B2
+```
 
 ### Roles and Responsibilities
-***Alternative format - list info in table:***
 
-<div id="table-banner" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="table-text">Responsibilities</span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-open-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
-    <thead>
-      <tr>
-        <th style="width: 15%; border: 1px solid #ddd; padding: 5px; text-align: center;">Name</th>
-        <th style="width: 70%; border: 1px solid #ddd; padding: 5px; text-align: center;">Responsibilities</th>
-    </thead>
-    <tbody>
-</tbody>
-</table>
-</div>
 
 ## UCSD
 (ADD ORG CHART DIAGRAM HERE)
