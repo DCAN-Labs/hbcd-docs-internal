@@ -93,7 +93,8 @@ flowchart TB
     click nl "#das"
     click D "#rioux"
     click E "#torres"
-    click K "#murad"
+    click I "#bhv-database"
+    click K "#bhv-database"
     click L "#madjar"
     click M "#faeselier"
 ```
@@ -183,6 +184,53 @@ flowchart TB
 </ul>
 </div>
 
+<div id="bhv-database" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">BHV/Database Team</span>
+  <a class="anchor-link" href="#bhv-database" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="table-arrow">▸</span>
+</div>
+<div class="closed-collapsible-content">
+<br>
+<b>Regis Ongaro-Carcy, Lead BHV Developer</b>
+<ul>
+<i>Development of LORIS BHV features for HBCD:</i>
+<li>Integrate data exchange protocols to enable interoperability between LORIS software and collaborating external platforms (e.g. REDCap, Ripple, MSI).</li>
+<li>Establishment and overview of the various data collection streams such as surveys, questionnaires or 3rd party sources.</li>
+<li>Conduct interoperability testing via data exchange simulations with external systems or platforms to ensure seamless integration and compatibility.</li>
+<li>Implementation of CRF alert and escalation procedures and notification system.</li>
+<li>Conception and design of alternative processing pathways to optimize current code functionalities in LORIS and improve system functionality and user satisfaction.</li>
+<li>Implementation of new features and functionalities to maintain database integrity across LORIS.</li>
+</ul>
+
+<b>Sruthy Matthew, Senior Backend Developer</b>
+<ul>
+<i>Development of LORIS LaunchPad and Backend features for HBCD:</i>
+<li>Set up and oversight of deployment procedures for execution and implementation of LORIS updates.</li>
+<li>Formulation and execution of database upkeep and maintenance requests.</li>
+<li>Design and implement new LaunchPad features to enhance user experience.</li>
+<li>Monitor the quality and integrity of data collected, ensuring adherence to the study protocol.</li>
+<li>Ensure proper data storage, confidentiality, and security measures are in place across the database.</li>
+<li>Implementation of new features and functionalities to maintain database integrity across LORIS.</li>
+</ul>
+
+<b>George Murad, Junior BHV Developer</b>
+<ul>
+<i>Development of LORIS BHV features specific to HBCD:</i>
+<li>Coding of new instruments and their corresponding scoring algorithms.</li>
+<li>Creation of automated queries for study progression and quality control monitoring..</li>
+<li>Development and implementation of new Endpoint and APIs for HBCD.</li>
+</ul>
+
+
+
+</div>
+
+
+
 <div id="madjar" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Cecile Madjar, Lead MRI developer</span>
@@ -228,65 +276,10 @@ flowchart TB
 </ul>
 </div>
 
-<div id="ongaro-carcy" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="text">Regis Ongaro-Carcy, Lead BHV Developer</span>
-  <a class="anchor-link" href="#ongaro-carcy" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="table-arrow">▸</span>
-</div>
-<div class="closed-collapsible-content">
-<p>Development of LORIS BHV features specific to HBCD:</p>
-<ul>
-<li>Integrate data exchange protocols to enable interoperability between LORIS software and collaborating external platforms (e.g. REDCap, Ripple, MSI).</li>
-<li>Establishment and overview of the various data collection streams such as surveys, questionnaires or 3rd party sources.</li>
-<li>Conduct interoperability testing via data exchange simulations with external systems or platforms to ensure seamless integration and compatibility.</li>
-<li>Implementation of CRF alert and escalation procedures and notification system.</li>
-<li>Conception and design of alternative processing pathways to optimize current code functionalities in LORIS and improve system functionality and user satisfaction.</li>
-<li>Implementation of new features and functionalities to maintain database integrity across LORIS.</li>
-</ul>
-</div>
 
-<div id="matthew" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="text">Sruthy Matthew, Senior Backend Developer</span>
-  <a class="anchor-link" href="#matthew" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="table-arrow">▸</span>
-</div>
-<div class="closed-collapsible-content">
-<p>Development of LORIS LaunchPad and Backend features specific to HBCD:</p>
-<ul>
-<li>Set up and oversight of deployment procedures for execution and implementation of LORIS updates.</li>
-<li>Formulation and execution of database upkeep and maintenance requests.</li>
-<li>Design and implement new LaunchPad features to enhance user experience.</li>
-<li>Monitor the quality and integrity of data collected, ensuring adherence to the study protocol.</li>
-<li>Ensure proper data storage, confidentiality, and security measures are in place across the database.</li>
-<li>Implementation of new features and functionalities to maintain database integrity across LORIS.</li>
-</ul>
-</div>
 
-<div id="murad" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="text">George Murad, Junior BHV Developer</span>
-  <a class="anchor-link" href="#murad" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="table-arrow">▸</span>
-</div>
-<div class="closed-collapsible-content">
-<p>Development of LORIS BHV features specific to HBCD:</p>
-<ul>
-<li>Coding of new instruments and their corresponding scoring algorithms.</li>
-<li>Creation of automated queries for study progression and quality control monitoring..</li>
-<li>Development and implementation of new Endpoint and APIs for HBCD.</li>
-</ul>
-</div>
+
+
 
 ## University of Minnesota (UMN)
 ```mermaid
