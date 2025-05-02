@@ -411,6 +411,31 @@ flowchart TB
 ```
 
 ### DCAN Lab
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    D["<b>DCAN Lab</b><br>Processing, Software Development &amp; Deployment"] --> S["<b>Eric Feczko</b><br>Neuroscience/Informatics<br>Software Engineer"] & T["<b>Steve Nelson</b><br>Director Neuroimaging Hub MIDB/CMRR"]
+    S --> s1["<b>Lucille Moore</b><br>PM &amp; Software Engineer<br>
+    <b>Mathias Goncalves</b><br>Software Engineer (Infant fMRIPrep)"]
+    T --> t1["<b>Kim Weldon</b><br>PM, Data Acquisition Seimens Engineer"]
+    t1 --> t2["<b>Thomas Madison</b><br>Software Engineer<br>
+    <b>Matthew Cieslack</b><br>Software Engineer (QSIPrep/Diffusion)"]
+    D@{ shape: rounded}
+    S@{ shape: text}
+    T@{ shape: text}
+    s1@{ shape: text}
+    t1@{ shape: text}
+    t2@{ shape: text}
+    style D stroke:#000000,fill:#FFE0B2
+    style S stroke:#000000,fill:#FFE0B2
+    style T stroke:#000000,fill:#FFE0B2
+    style s1 fill:#FFE0B2
+    style t1 fill:#FFE0B2
+    style t2 fill:#FFE0B2
+```
 
 ## UCSD
 (ADD ORG CHART DIAGRAM HERE)
