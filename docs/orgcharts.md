@@ -348,7 +348,6 @@ flowchart TB
     P --> n7["<b>Kimberleigh Breen</b><br>Data Manager/Version Control<br>
     <b>Borgne Raasch</b><br>Data Steward/Access Controls<br>
     <b>Naomi Hospodarsky-Sutherland</b><br>Security Compliance"]
-    C@{ shape: rounded}
     K@{ shape: text}
     L@{ shape: text}
     Q@{ shape: text}
