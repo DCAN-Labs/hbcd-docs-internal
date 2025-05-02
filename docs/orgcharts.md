@@ -486,6 +486,59 @@ by Wes Thompson<br>
     style n7 stroke:#000000,fill:#E1BEE7
 ```
 
+## UCSD Alt
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    A["<b>Anders Dale</b><br>PI/Director"] --> n1(["<b>Informatics</b>"]) & n2(["<b>MR Capture/QC</b>"]) & n3(["<b>Imaging</b>"]) & n4["<b>Janosch Linkersdörfer</b><br>Supervisor"]
+    n4 --> n5(["<b>Data Science</b>"]) & n6(["<b>REDCap</b>"]) & n7(["<b>Other</b>"])
+    n1 --> n8["<b>Rongguang Yang</b><br>Supervisor<br>
+    <b>Chris Blazej</b>
+    Fiona Software Development"]
+    n2 --> n9["<b>Donald Hagler</b><br>Supervisor<br>
+    <b>Amanda Plesa</b> (Tracking,QC)
+    <b>David Zimmermann</b> (QC)
+    <b>Tyler Berkness</b> (Protocol Violations)
+    <b>Sejal Shanbhag</b> (Issue Handling)"]
+    n3 --> n10["<b>Josh Kuperman</b><br>R&amp;D Engineer"]
+    n5 --> n11["<b>Biplabendu Das</b><br>Dashboard Backend<br>
+    <b>Olivier Celhay</b>
+    Dashboard Frontend"]
+    n6 --> n12["<b>Joseph Baligh</b><br>Server Administration<br>
+    <b>Erika Bolden</b>
+    Form Development<br>
+    <b>Laura Ziemer</b>
+    Form Development"]
+    n7 --> n13["<b>Amanda (Lin) Li</b><br>Biostats support; supervised
+by Wes Thompson<br>
+    <b>Wenjie Zheng</b>
+    DEAP Development"]
+    A@{ shape: text}
+    n4@{ shape: text}
+    n8@{ shape: text}
+    n9@{ shape: text}
+    n10@{ shape: text}
+    n11@{ shape: text}
+    n12@{ shape: text}
+    n13@{ shape: text}
+    style A fill:#BBDEFB
+    style n1 fill:#2962FF,stroke:none
+    style n2 stroke:#000000,fill:#2962FF
+    style n3 stroke:#000000,fill:#2962FF
+    style n4 fill:#BBDEFB
+    style n5 stroke:#000000,fill:#2962FF
+    style n6 stroke:#000000,fill:#2962FF
+    style n7 stroke:#000000,fill:#2962FF
+    style n8 fill:#BBDEFB
+    style n9 fill:#BBDEFB
+    style n10 fill:#BBDEFB
+    style n11 fill:#BBDEFB
+    style n12 fill:#BBDEFB
+    style n13 fill:#BBDEFB
+```
 ## LIBR
 NOTE: org chart is small, perhaps can just be integrated into larger org chart?
 
