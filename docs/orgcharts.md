@@ -8,7 +8,6 @@ The larger organizational structure of the HDCC is as follows - ***click on indi
 ```mermaid
 ---
 config:
-  theme: redux
   layout: dagre
 ---
 flowchart LR
