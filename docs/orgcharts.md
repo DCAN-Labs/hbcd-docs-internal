@@ -104,7 +104,7 @@ flowchart TB
 <br>
 
 ### LORIS ALT
-<div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+<div style="display: flex; align-items: center; justify-content: center;">
 ```mermaid
 ---
 config:
