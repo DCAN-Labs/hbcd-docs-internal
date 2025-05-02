@@ -487,15 +487,11 @@ by Wes Thompson<br>
 ```
 
 ## LIBR
-(ADD ORG CHART DIAGRAM HERE)
-
-### Roles and Responsibilities
-
+NOTE: org chart is small, perhaps can just be integrated into larger org chart?
 
 ## Columbia University
 NOTE: org chart is small, perhaps can just be integrated into larger org chart?
 
 ## University of Maryland
-(ADD ORG CHART DIAGRAM HERE)
+NOTE: org chart is small, perhaps can just be integrated into larger org chart?
 
-### Roles and Responsibilities
