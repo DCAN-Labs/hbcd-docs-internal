@@ -419,7 +419,7 @@ flowchart TB
 config:
   layout: dagre
 ---
-flowchart TB
+flowchart LR
     D["<b>DCAN Lab</b><br>Processing, Software Development &amp; Deployment"] --> S["<b>Eric Feczko</b><br>Neuroscience/Informatics<br>Software Engineer"] & T["<b>Steve Nelson</b><br>Director Neuroimaging Hub MIDB/CMRR"]
     S --> s1["<b>Lucille Moore</b><br>PM &amp; Software Engineer<br>
     <b>Mathias Goncalves</b><br>Software Engineer (Infant fMRIPrep)"]
