@@ -333,7 +333,7 @@ config:
   layout: dagre
 ---
 flowchart TB
-  K["<b>Jim Wilgenbusch</b><br>Research Computing"] --> L["<b>Thomas Pengo</b><br>Co-Director Research Informatics"]
+    K["<b>Jim Wilgenbusch</b><br>Research Computing"] --> L["<b>Thomas Pengo</b><br>Co-Director Research Informatics"]
     L --> M(["<b>Project Management</b>"]) & N(["<b>System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Management</b>"])
     N --> Q["<b>Jesse Erdman</b><br>Senior System Operations<br>
     <b>Devin Willis</b><br>DevOps Engineer<br>
@@ -351,16 +351,16 @@ flowchart TB
     n4@{ shape: text}
     n6@{ shape: text}
     n7@{ shape: text}
-    style K fill:#FFF9C4
-    style L fill:#FFF9C4
-    style M fill:#FFD600,stroke:#000000
-    style N fill:#FFD600,stroke:#000000
-    style O color:#000000,fill:#FFD600,stroke:#000000
-    style P fill:#FFD600,stroke:#000000
-    style Q fill:#FFF9C4
-    style n4 fill:#FFF9C4
-    style n6 fill:#FFF9C4
-    style n7 fill:#FFF9C4
+    style K fill:#BBDEFB
+    style L fill:#BBDEFB
+    style M fill:#E1BEE7,stroke:#000000
+    style N fill:#E1BEE7,stroke:#000000
+    style O color:#000000,fill:#E1BEE7,stroke:#000000
+    style P fill:#E1BEE7,stroke:#000000
+    style Q fill:#BBDEFB
+    style n4 fill:#BBDEFB
+    style n6 fill:#BBDEFB
+    style n7 fill:#BBDEFB
 ```
 
 ### DCAN Lab
