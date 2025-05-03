@@ -453,7 +453,7 @@ The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.
 config:
   layout: dagre
 ---
-flowchart TB
+flowchart LR
     D["<b>Damien Fair, PA-C, PhD</b><br>Professor UMN<br>HBCD DCC MPI"] --> S["<b>Eric Feczko, PhD</b><br>Neuroscience/Informatics<br>Software Engineer<br>
     <b>Lucille A. Moore, PhD</b><br>PM &amp; Software Engineer<br>
     <b>Mathias Goncalves</b><br>Software Engineer (Infant fMRIPrep)"] & T["<b>Steve Nelson, PhD</b><br>Director Neuroimaging Hub MIDB/CMRR"]
