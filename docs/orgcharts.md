@@ -377,18 +377,18 @@ flowchart LR
     T --> t1["<b>Kim Weldon</b><br>PM, Data Acquisition Seimens Engineer"]
     t1 --> t2["<b>Thomas Madison</b><br>Software Engineer<br>
     <b>Matthew Cieslack</b><br>Software Engineer (QSIPrep/Diffusion)"]
-    D@{ shape: rounded}
+    D@{ shape: text}
     S@{ shape: text}
     T@{ shape: text}
     s1@{ shape: text}
     t1@{ shape: text}
     t2@{ shape: text}
     style D stroke:#000000,fill:#BBDEFB
-    style S stroke:#000000,fill:#FFE0B2
-    style T stroke:#000000,fill:#FFE0B2
-    style s1 fill:#FFE0B2
-    style t1 fill:#FFE0B2
-    style t2 fill:#FFE0B2
+    style S stroke:#000000,fill:#BBDEFB
+    style T stroke:#000000,fill:#BBDEFB
+    style s1 fill:#BBDEFB
+    style t1 fill:#BBDEFB
+    style t2 fill:#BBDEFB
 ```
 
 ## UCSD
