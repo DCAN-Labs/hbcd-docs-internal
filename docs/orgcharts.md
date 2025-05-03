@@ -290,10 +290,10 @@ flowchart TB
     MIDB@{ shape: rounded}
     DCAN@{ shape: rounded}
     style A fill:#BBDEFB
-    style A1 fill:#C8E6C9
-    style HST fill:#C8E6C9
-    style MIDB fill:#FFF9C4
-    style DCAN fill:#FFE0B2
+    style A1 fill:#BBDEFB
+    style HST fill:#E1BEE7
+    style MIDB fill:#E1BEE7
+    style DCAN fill:#E1BEE7
     click HST "#health-sciences-technology-hst"
     click MIDB "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
     click DCAN "#dcan-lab"
@@ -315,13 +315,13 @@ flowchart TB
     H@{ shape: text}
     I@{ shape: text}
     J@{ shape: text}
-    style B fill:#C8E6C9,stroke-width:2px,stroke-dasharray: 0,stroke:none
-    style E fill:#C8E6C9
-    style F fill:#C8E6C9
-    style G fill:#C8E6C9
-    style H fill:#C8E6C9
-    style I fill:#C8E6C9
-    style J fill:#C8E6C9
+    style B fill:#BBDEFB,stroke-width:2px,stroke-dasharray: 0,stroke:none
+    style E fill:#BBDEFB
+    style F fill:#BBDEFB
+    style G fill:#BBDEFB
+    style H fill:#BBDEFB
+    style I fill:#BBDEFB
+    style J fill:#BBDEFB
 ```
 
 ### Masonic Institute for the Developing Brain (MIDB) Informatics Hub
