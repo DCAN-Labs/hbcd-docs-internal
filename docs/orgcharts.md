@@ -484,6 +484,7 @@ by Wes Thompson<br>
 </div>
 
 ## Columbia University
+<div style="width: 450px;">
 ```mermaid
 ---
 config:
@@ -508,6 +509,7 @@ flowchart TB
     click n1 "#amso"
     click n3 "#eisler"
 ```
+</div>
 
 ### Roles & Responsibilities
 
