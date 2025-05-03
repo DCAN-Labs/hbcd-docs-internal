@@ -43,7 +43,7 @@ flowchart LR
     click F "#university-of-minnesota-umn"
     click G "#ucsd"
     click H "#libr"
-    click n1 "#columbia"
+    click n1 "#columbia-university"
     click n16 "#university-of-maryland"
     click n6 "#health-sciences-technology-hst"
     click n7 "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
@@ -484,6 +484,31 @@ by Wes Thompson<br>
 </div>
 
 ## Columbia University
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    columbia["<b>William P. Fifer</b><br>Subaward Principal Investigator"] --> columbia2["<b>Nicolo Pini</b><br>Co-Investigator"]
+    columbia2 --> n3["<b>Liana Eisler</b>
+    Technician Research Assistant"]
+    n1["<b>Dima Amso</b>
+    Co-Investigator<br>"]
+    columbia@{ shape: text}
+    columbia2@{ shape: text}
+    n3@{ shape: text}
+    n1@{ shape: text}
+    style columbia fill:#BBDEFB,stroke:#424242
+    style columbia2 fill:#BBDEFB
+    style n3 fill:#BBDEFB
+    style n1 fill:#BBDEFB
+    click columbia "#fifer"
+    click columbia2 "#pini"
+    click n1 "#amso"
+    click n3 "#eisler"
+```
+
 <div id="fifer" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">William P. Fifer, Co-chair: Novel Technologies/Wearables</span>
@@ -501,6 +526,52 @@ by Wes Thompson<br>
 </ul>
 </div>
 
+<div id="anso" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Dimo Anso, Co-Investigator</span>
+  <a class="anchor-link" href="#anso" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="table-arrow">▸</span>
+</div>
+<div class="closed-collapsible-content">
+<ul>
+<li>Lead development of best practices, particularly the adapted Family Culture Matters (FCM) task.</li>
+<li>Ensure coding is minimally evaluative to support unbiased measurement and minimize errors of inference.</li> 
+</ul>
+</div>
+
+<div id="pini" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Nicolo Pini, Co-Investigator</span>
+  <a class="anchor-link" href="#pini" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="table-arrow">▸</span>
+</div>
+<div class="closed-collapsible-content">
+<ul>
+<li>Serve as a leading member of the Novel Technologies/Wearables Workgroup.</li>
+<li>Develop pipelines necessary for extraction of derivatives, data upload, storage, and maintenance of the EKG data collected during EEG and the heart rate wearable sensor data.</li>
+<li>Coordinate the recurring training at the HBCD sites in these two modalities.</li> 
+<li>Supervise quality control performed by Research Technician.</li>
+</ul>
+</div>
+
+<div id="eisler" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Liana Eisler, Technician Research Assistant</span>
+  <a class="anchor-link" href="#eisler" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="table-arrow">▸</span>
+</div>
+<div class="closed-collapsible-content">
+<p>Quality control of outputs produced by automated pipelines.</p>
+</div>
 
 ## University of Maryland
 NOTE: org chart is small, perhaps can just be integrated into larger org chart?
