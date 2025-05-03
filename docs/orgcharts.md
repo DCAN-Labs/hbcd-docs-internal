@@ -301,7 +301,7 @@ flowchart TB
     click DCAN "#dcan-lab"
 ```
 ### Health Sciences Technology (HST)
-***ROLE:*** Data shelter, PHI, Ripple interface, Overall Data Management, QC Dashboards, Ancillary Studies, & Third party integration
+[HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*
 ```mermaid
 ---
 config:
@@ -309,7 +309,7 @@ config:
 ---
 flowchart TB
     B["<b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"] --> E["<b>Karen Athy-Penrose</b><br>Data Shelter PM"] & F["<b>Dan Duhon</b><br>DevOps/ETl"] & G["<b>Haley Hutala</b><br>Tableau Engineer/QC Dashboards"] & H["<b>Constantine Aliferis</b><br>Director Insitute Health Informatics"]
-    H --> I["<b>Steve Johnson</b><br>Director Informatics Innovation"] & J["<b>Tim Meyers</b><br>Senior Informatics Engineer/EHR"]
+    H --> I["<b>Steve Johnson</b><br>Director Informatics Innovation"] & J["<b>Tim Meyer</b><br>Senior Informatics Engineer/EHR"]
     B@{ shape: text}
     E@{ shape: text}
     F@{ shape: text}
@@ -445,7 +445,7 @@ flowchart TB
 
 
 ### DCAN Lab
-***ROLE:*** Processing, Software Development, & Deployment
+The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
 ```mermaid
 ---
 config:
