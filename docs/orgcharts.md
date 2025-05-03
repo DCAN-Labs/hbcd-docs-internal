@@ -528,10 +528,10 @@ flowchart TB
 </ul>
 </div>
 
-<div id="anso" class="table-banner" onclick="toggleCollapse(this)">
+<div id="amso" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="text">Dimo Anso, Co-Investigator</span>
-  <a class="anchor-link" href="#anso" title="Copy link">
+  <span class="text">Dimo Amso, Co-Investigator</span>
+  <a class="anchor-link" href="#amso" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
