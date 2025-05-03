@@ -430,7 +430,7 @@ by Wes Thompson<br>
     n12@{ shape: text}
     n13@{ shape: text}
     style A fill:#BBDEFB
-    style n1 fill:#E1BEE7,stroke:none
+    style n1 fill:#E1BEE7,stroke:#000000
     style n2 stroke:#000000,fill:#E1BEE7
     style n3 stroke:#000000,fill:#E1BEE7
     style n4 fill:#BBDEFB
