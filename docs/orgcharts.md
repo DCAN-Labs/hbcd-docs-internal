@@ -49,6 +49,8 @@ flowchart LR
     click n7 "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
     click n8 "#dcan-lab"
     click washu "#washington-university-in-st-louis-washu"
+    click n14 "#thompson"
+    click n15 "#fan"
 ```
 </div>
 
@@ -446,23 +448,6 @@ by Wes Thompson<br>
 ```
 
 ## LIBR
-```mermaid
----
-config:
-  layout: dagre
----
-flowchart LR
-    H["<b>LIBR</b><br>"] --> n14["<b>Biostatistics Workgroup</b><br>Wesley K. Thompson"] & n15["<b>Geolocation Workgroup</b><br>Chun Chieh Fan"]
-    H@{ shape: rounded}
-    n14@{ shape: rounded}
-    n15@{ shape: rounded}
-    style H fill:#e6e6fa,stroke:#616161
-    style n14 fill:#dcdcdc,stroke:#757575
-    style n15 fill:#dcdcdc,stroke:#757575
-    click n14 "#thompson"
-    click n15 "#fan"
-```
-### Roles & Responsibilities
 <div id="thompson" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Wesley K. Thompson, HDCC Associate Director & BioStatistics Work Group Chair</span>
