@@ -46,7 +46,7 @@ flowchart LR
     click n1 "#columbia-university"
     click n16 "#university-of-maryland"
     click n6 "#health-sciences-technology-hst"
-    click n7 "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
+    click n7 "#midb-informatics-hub-msi"
     click n8 "#dcan-lab"
     click washu "#washington-university-in-st-louis-washu"
     click n14 "#thompson"
@@ -285,7 +285,7 @@ config:
 ---
 flowchart TB
     A["<b>Damien Fair</b><br>Professor UMN<br>HBCD DCC MPI"] --> A1["<b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"]
-    A1 --> HST["<b>Health Sciences Technology</b><br>Data shelter, PHI, Ripple interface, Overall Data Management, QC Dashboards, Ancillary Studies, Third party integration"] & MIDB["<b>MIDB Informatics Hub</b><br><i>Minnesota Supercomputing Institute (MSI)</i><br>System Administration, Loris Hosting, Computing, Processing, Data sharing"] & DCAN["<b>DCAN Lab</b><br>Processing, Software Development &amp; Deployment"]
+    A1 --> HST["<b>Health Sciences Technology</b><br>Data shelter, PHI, Ripple interface, Overall Data Management, QC Dashboards, Ancillary Studies, Third party integration"] & MIDB["<b>MIDB Informatics Hub</b> & <b>Minnesota Supercomputing Institute (MSI)</b><br>System Administration, Loris Hosting, Computing, Processing, Data sharing"] & DCAN["<b>DCAN Lab</b><br>Processing, Software Development &amp; Deployment"]
     A@{ shape: text}
     A1@{ shape: text}
     HST@{ shape: rounded}
@@ -297,7 +297,7 @@ flowchart TB
     style MIDB fill:#E1BEE7
     style DCAN fill:#E1BEE7
     click HST "#health-sciences-technology-hst"
-    click MIDB "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
+    click MIDB "#midb-informatics-hub-msi"
     click DCAN "#dcan-lab"
 ```
 ### Health Sciences Technology (HST)
@@ -326,8 +326,8 @@ flowchart TB
     style J fill:#BBDEFB
 ```
 
-### Masonic Institute for the Developing Brain (MIDB) Informatics Hub
-***ROLE:*** Utilizing the Minnesota Supercomputing Institute (MSI), MIDB performs: System Administration, Loris Hosting, Computing, Processing, and Data sharing
+### MIDB Informatics Hub & MSI
+The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://midb.umn.edu/research/informatics) and [Minnesota Supercomputing Institute (MSI)](https://msi.umn.edu/) provide the following services to the HBCD study: *System Administration*, *Loris Hosting*, *Computing*, *Processing*, and *Data Sharing*.
 
 ```mermaid
 ---
