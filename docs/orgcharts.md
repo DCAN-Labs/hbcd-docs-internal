@@ -453,23 +453,21 @@ The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.
 config:
   layout: dagre
 ---
-flowchart LR
-    D["<b>Damien Fair</b><br>Professor UMN<br>HBCD DCC MPI"] --> S["<b>Eric Feczko</b><br>Neuroscience/Informatics<br>Software Engineer"] & T["<b>Steve Nelson</b><br>Director Neuroimaging Hub MIDB/CMRR"]
-    S --> s1["<b>Lucille Moore</b><br>PM &amp; Software Engineer<br>
-    <b>Mathias Goncalves</b><br>Software Engineer (Infant fMRIPrep)"]
-    T --> t1["<b>Kim Weldon</b><br>PM, Data Acquisition Seimens Engineer"]
+flowchart TB
+    D["<b>Damien Fair, PA-C, PhD</b><br>Professor UMN<br>HBCD DCC MPI"] --> S["<b>Eric Feczko, PhD</b><br>Neuroscience/Informatics<br>Software Engineer<br>
+    <b>Lucille A. Moore, PhD</b><br>PM &amp; Software Engineer<br>
+    <b>Mathias Goncalves</b><br>Software Engineer (Infant fMRIPrep)"] & T["<b>Steve Nelson, PhD</b><br>Director Neuroimaging Hub MIDB/CMRR"]
+    T --> t1["<b>Kim Weldon, PhD</b><br>PM, Data Acquisition Seimens Engineer"]
     t1 --> t2["<b>Thomas Madison</b><br>Software Engineer<br>
-    <b>Matthew Cieslack</b><br>Software Engineer (QSIPrep/Diffusion)"]
+    <b>Matthew Cieslack, PhD</b><br>Software Engineer (QSIPrep/Diffusion)"]
     D@{ shape: text}
     S@{ shape: text}
     T@{ shape: text}
-    s1@{ shape: text}
     t1@{ shape: text}
     t2@{ shape: text}
     style D stroke:#000000,fill:#BBDEFB
     style S stroke:#000000,fill:#BBDEFB
     style T stroke:#000000,fill:#BBDEFB
-    style s1 fill:#BBDEFB
     style t1 fill:#BBDEFB
     style t2 fill:#BBDEFB
 ```
