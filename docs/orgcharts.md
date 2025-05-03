@@ -275,8 +275,6 @@ flowchart TB
 </div>
 
 
-
-
 ## University of Minnesota (UMN)
 ```mermaid
 ---
@@ -578,7 +576,24 @@ flowchart LR
 </div>
 
 ## University of Maryland
-NOTE: org chart is small, perhaps can just be integrated into larger org chart?
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart LR
+    n16["<b>University of Maryland EEG Core</b><br>Nathan Fox<br>Associate Director, Data Core"] --> UMD2["<b>Santiago Morales</b><br>Co-Investigator<br>
+    <b>Jamie Listokin</b><br>EEG Core Research Coordinator"]
+    UMD2 --> UMD3["<b>Marco McSweeney</b><br>Pre-processing &amp; Derivatives<br>
+    <b>Whitney Kasenetz</b><br>EEG pre-processing in CBRAIN<br>
+    <b>Savannah McNair</b><br><b>Jessica Norris</b><br>QC, EEG training, &amp; troubleshooting"]
+    n16@{ shape: rounded}
+    UMD2@{ shape: text}
+    UMD3@{ shape: text}
+    style n16 fill:#e6e6fa,stroke:#616161
+    style UMD2 fill:#BBDEFB
+    style UMD3 fill:#BBDEFB
+```
 
 ## Washington University in St. Louis (WashU)
 ```mermaid
