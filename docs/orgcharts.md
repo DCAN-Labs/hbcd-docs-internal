@@ -490,7 +490,7 @@ by Wes Thompson<br>
 config:
   layout: dagre
 ---
-flowchart TB
+flowchart LR
     columbia["<b>William P. Fifer</b><br>Subaward Principal Investigator"] --> columbia2["<b>Nicolo Pini</b><br>Co-Investigator"]
     columbia2 --> n3["<b>Liana Eisler</b>
     Technician Research Assistant"]
