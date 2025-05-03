@@ -22,12 +22,26 @@ flowchart TD
 
 ## LIBR
 
+<div id="table-banner" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="table-text">Data Dictionary Column Definitions</span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-open-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
+    <thead>
+      <tr>
+        <th style="width: 15%; border: 1px solid #ddd; padding: 5px; text-align: center;">Name</th>
+        <th style="width: 5%; border: 1px solid #ddd; padding: 5px; text-align: center;">Title</th>
+        <th style="width: 30%; border: 1px solid #ddd; padding: 5px; text-align: center;">Role on HDCC</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;">Jim Wilgenbusch</td>
+        <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;">Director of Research Computing in the Research & Innovation Office, UMN</td>
+        <td style="border: 1px solid #ddd; padding: 4px; word-wrap: break-word; white-space: normal;">Administration</td>
+    </tr>
+</tbody>
+</table>
+</div>
 
-#### Wesley K Thompson, HDCC Associate Director
-<p style="margin: 0;"><i>Role:</i> BioStatistics Work Group Chair</p> 
-
-Provides guidance on statistical analysis, study design, novel methods development, for large, longitudinal, multi-site studies:
-
-- Direction of statistical analyses for HBCD design and assessments
-- Co-supervise and lead the development and maintenance of the statistical aspects of the Data Exploration and Analysis Portal 2.0 (DEAP 2.0)
-- Assist in the geolocation of residences of HBCD participants, and linking these geolocated addresses with external databases
