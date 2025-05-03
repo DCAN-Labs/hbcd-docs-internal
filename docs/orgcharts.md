@@ -509,6 +509,8 @@ flowchart TB
     click n3 "#eisler"
 ```
 
+### Roles & Responsibilities
+
 <div id="fifer" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">William P. Fifer, Co-chair: Novel Technologies/Wearables</span>
