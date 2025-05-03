@@ -46,6 +46,9 @@ flowchart LR
     click n6 "#health-sciences-technology-hst"
     click n7 "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
     click n8 "#dcan-lab"
+    click n14 "#thompson"
+    click n15 "#fan"
+    click n1 "#fifer"
 ```
 </div>
 
@@ -446,11 +449,102 @@ by Wes Thompson<br>
 ```
 
 ## LIBR
-NOTE: org chart is small, perhaps can just be integrated into larger org chart?
+<div id="thompson" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Wesley K. Thompson, HDCC Associate Director & BioStatistics Work Group Chair</span>
+  <a class="anchor-link" href="#thompson" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="table-arrow">▸</span>
+</div>
+<div class="closed-collapsible-content">
+<p>Provides guidance on statistical analysis, study design, novel methods development, for large, longitudinal, multi-site studies, including:</p>
+<ul>
+<li>Direction of statistical analyses for HBCD design and assessments.</li>
+<li>Co-supervise and lead the development and maintenance of the statistical aspects of the Data Exploration and Analysis Portal 2.0 (DEAP 2.0).</li>
+<li>Assist in the geolocation of residences of HBCD participants, and linking these geolocated addresses with external databases.</li>
+</ul>
+</div>
+
+<div id="fan" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Chun Chieh Fan, Co-Investigator & Geolocation Work Group Chair</span>
+  <a class="anchor-link" href="#fan" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="table-arrow">▸</span>
+</div>
+<div class="closed-collapsible-content">
+<ul>
+<li>Guide curation and analysis of imaging, genomic, and geolocation exposure data.</li>
+<li>Co-supervise expanding DEAP 2.0 to include exploration and analysis of high-dimensional genomic, imaging, and exposure data, and to develop DEAP 2.0 tools to harmonize HBCD data and analyses with external studies, including the creation of a probabilistic ontology to compare measures across studies.</li>
+</ul>
+</div>
 
 ## Columbia University
-NOTE: org chart is small, perhaps can just be integrated into larger org chart?
+<div id="fifer" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">William P. Fifer, Co-chair: Novel Technologies/Wearables</span>
+  <a class="anchor-link" href="#fifer" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="table-arrow">▸</span>
+</div>
+<div class="closed-collapsible-content">
+<ul>
+<li>Overall management.</li>
+<li>Supervise automation of sleep stage scoring and data analysis.</li> 
+<li>Data analytics, writing, and review of manuscripts.</li>
+</ul>
+</div>
+
 
 ## University of Maryland
 NOTE: org chart is small, perhaps can just be integrated into larger org chart?
+
+## Washington University in St. Louis (WashU)
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart LR
+    A["<b>Chris Smyser</b><br>Principal Investigator<br>
+    <b>Chad Sylvester</b><br>Co-Investigator"] --> neurology(["<b>Neurology</b>"]) & C(["<b>EHR</b><br>"]) & B["<b>Sauren Ravencroft</b><br><i>Project Manager</i>
+    Oversight of WashU activities including Ripple, Ambra, AirTable, HCAC coordination"]
+    neurology --> n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Investigators &amp; Study Neuroradiologists"]
+    n1 --> n2["<b>Dimitrios Alexopoulos</b>
+    Data Manager, Ambra"]
+    C --> n3["<b>Philip Payne</b><br><b>Albert Lai</b>
+    Co-Investigators, EHR oversight"]
+    n3 --> n4["<b>Nicole Venteris</b><br>Project Manager, EHR"]
+    B --> n5["<b>Lily Mueller</b>
+    <i>Programmer</i>
+    Ripple programming/ form management<br>
+    <b>Lynn Menchaca</b>
+    <i>Data Analyst</i>
+    Ancillary studies, AirTable management<br>
+    <b>Madison Gardner</b>
+    <i>Research Assistant</i>
+    U01 site beta testing/piloting"]
+    A@{ shape: text}
+    B@{ shape: text}
+    n1@{ shape: text}
+    n2@{ shape: text}
+    n3@{ shape: text}
+    n4@{ shape: text}
+    n5@{ shape: text}
+    style A fill:#BBDEFB
+    style neurology fill:#E1BEE7,stroke:#000000
+    style C stroke:#000000,fill:#E1BEE7
+    style B fill:#BBDEFB
+    style n1 fill:#BBDEFB
+    style n2 fill:#BBDEFB
+    style n3 fill:#BBDEFB
+    style n4 fill:#BBDEFB
+    style n5 fill:#BBDEFB
+```
 
