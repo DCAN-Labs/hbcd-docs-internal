@@ -126,6 +126,59 @@ flowchart TB
 </ul>
 </div>
 
+
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    A["<b>Alan Evans</b>, PI"] --> nl["<b>Samir Das</b><br>Associate Director of Software Development"]
+    nl --> n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b><br>"]) & B(["<b>Development</b>"])
+    C --> D["<b>Pierre Rioux</b><br>Senior HPC developer"]
+    n9 --> E["<b>Santiago Torres</b><br>Study Officer (Research Admin)"]
+    B --> F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
+    F --> I["<b>Regis Ongaro-Carcy</b><br>Lead Developer"] & n10["<b>Sruthy Matthew</b><br>Sr. Backend Dev"]
+    G --> L["<b>Cecile Madjar</b><br>Lead developer"]
+    H --> M["<b>Laetitia Faeselier</b><br>Lead Developer"]
+    n10 --> n11["<b>George Murad</b>, Jr. Dev"]
+    I --> n11
+    A@{ shape: text}
+    nl@{ shape: text}
+    D@{ shape: text}
+    E@{ shape: text}
+    F@{ shape: rounded}
+    H@{ shape: rounded}
+    G@{ shape: rounded}
+    I@{ shape: text}
+    n10@{ shape: text}
+    L@{ shape: text}
+    M@{ shape: text}
+    n11@{ shape: text}
+    style A stroke:#000000,fill:#BBDEFB
+    style nl stroke:#000000,fill:#BBDEFB
+    style n9 stroke:#000000,fill:#E1BEE7,stroke-width:2px,stroke-dasharray: 0
+    style C stroke:#333,fill:#E1BEE7
+    style B stroke:#333,fill:#E1BEE7
+    style D stroke:#333,fill:#BBDEFB
+    style E stroke:#333,fill:#BBDEFB
+    style F stroke:#333,fill:#E1BEE7
+    style H stroke:#333,fill:#E1BEE7
+    style G stroke:#333,fill:#E1BEE7
+    style I stroke:#333,fill:#BBDEFB
+    style n10 fill:#BBDEFB
+    style L stroke:#000000,fill:#BBDEFB
+    style M fill:#BBDEFB,stroke:#000000
+    style n11 fill:#BBDEFB
+    click A "#evans"
+    click nl "#das"
+    click D "#rioux"
+    click E "#torres"
+    click I "#bhv-database"
+    click L "#madjar"
+    click M "#faeselier"
+```
+
 <div id="das" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Samir Das, Associate Director of Software Development</span>
