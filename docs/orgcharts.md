@@ -10,7 +10,8 @@ config:
 ---
 flowchart TB
     A["<strong>HDCC</strong>"] --> E["<b>Damien Fair, PA-C, PhD</b><br>UMN, HDCC MPI"] & n1["<b>Chris Smyser</b><br>WashU"] & n2["<b>Anders Dale</b><br>UCSD"]
-    E --> umn["<b>UMN</b><br>Reed McKewan"] & n7["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & n8["<b>UMD<br>EEG Core</b><br>Nathan Fox"] & n11["<b>Columbia<br>Novel Tech WG</b><br>William P. Fifer"] & n15["Lasso"]
+    E --> umn["<b>UMN</b><br>Reed McKewan"] & n7["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & n8["<b>UMD<br>EEG Core</b><br>Nathan Fox"] & n11["<b>Columbia<br>Novel Tech WG</b><br>William P. Fifer"]
+    E --> n15["<b>Lasso</b><br>Leigh MacIntyre"]
     n1 --> n10["<b>WashU</b><br>Chad Sylvester"] & n12["<b>LIBR</b>"] & n15
     n12 --> n13["<b>Biostatistics WG<br></b>Wesley K. Thompson<br>
     <b>Gelocation WG</b><br>Chun Chieh Fan"]
@@ -319,6 +320,25 @@ flowchart TB
 
 
 ## Lasso
+```mermaid
+---
+config:
+  theme: redux
+---
+flowchart TD
+    A@{ label: "<b>Leigh MacIntyre</b><br>Associate Director, Project Management- MCIN" } --> B["Jennifer Zink"]
+    B --> C["<b>Aarushi Chadhury</b><br>LORIS PM"] & D["Jordan Stirling"] & n1["Fraser Glen"]
+    A@{ shape: text}
+    B@{ shape: text}
+    C@{ shape: text}
+    D@{ shape: text}
+    n1@{ shape: text}
+    style A fill:#BBDEFB
+    style B fill:#BBDEFB
+    style C fill:#BBDEFB
+    style D fill:#BBDEFB
+    style n1 fill:#BBDEFB
+```
 
 ## University of Minnesota
 ```mermaid
