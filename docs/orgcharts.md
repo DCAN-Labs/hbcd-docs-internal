@@ -48,7 +48,7 @@ flowchart TB
     click n10 "#washu"
     click n13 "#libr"
 ```
-<br>
+
 <div id="columbia-university" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Columbia Novel Technologies & Wearables Workgroup</span>
@@ -76,7 +76,7 @@ flowchart TB
 <b>Nicolo Pini, Co-Investigator</b> 
 <ul>
 <li>Serve as a leading member of the Novel Technologies/Wearables Workgroup.</li>
-<li>Develop pipelines necessary for extraction of derivatives, data upload, storage, and maintenance of EKG data collected during EEG and heart rate wearable sensor data.</li>
+<li>Develop pipelines necessary for extraction of derivatives, data upload, storage, and maintenance of EKG data collected during EEG and the heart rate wearable sensor data.</li>
 <li>Coordinate recurring training at the HBCD sites.</li>
 <li>Supervise quality control performed by Research Technician.</li>
 </ul>
@@ -548,100 +548,6 @@ flowchart TB
     style n11 fill:#BBDEFB
     style n12 fill:#BBDEFB
 ```
-
-## Columbia University
-<div style="width: 450px;">
-```mermaid
----
-config:
-  layout: dagre
----
-flowchart LR
-    columbia["<b>William P. Fifer</b><br>Subaward Principal Investigator"] --> columbia2["<b>Nicolo Pini</b><br>Co-Investigator"]
-    columbia2 --> n3["<b>Liana Eisler</b>
-    Technician Research Assistant"]
-    n1["<b>Dima Amso</b>
-    Co-Investigator<br>"]
-    columbia@{ shape: text}
-    columbia2@{ shape: text}
-    n3@{ shape: text}
-    n1@{ shape: text}
-    style columbia fill:#BBDEFB,stroke:#424242
-    style columbia2 fill:#BBDEFB
-    style n3 fill:#BBDEFB
-    style n1 fill:#BBDEFB
-    click columbia "#fifer"
-    click columbia2 "#pini"
-    click n1 "#amso"
-    click n3 "#eisler"
-```
-</div>
-
-### Roles & Responsibilities
-
-<div id="fifer" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="text">William P. Fifer, Co-chair: Novel Technologies/Wearables</span>
-  <a class="anchor-link" href="#fifer" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="table-arrow">▸</span>
-</div>
-<div class="closed-collapsible-content">
-<ul>
-<li>Overall management.</li>
-<li>Supervise automation of sleep stage scoring and data analysis.</li> 
-<li>Data analytics, writing, and review of manuscripts.</li>
-</ul>
-</div>
-
-<div id="amso" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="text">Dimo Amso, Co-Investigator</span>
-  <a class="anchor-link" href="#amso" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="table-arrow">▸</span>
-</div>
-<div class="closed-collapsible-content">
-<ul>
-<li>Lead development of best practices, particularly the adapted Family Culture Matters (FCM) task.</li>
-<li>Ensure coding is minimally evaluative to support unbiased measurement and minimize errors of inference.</li> 
-</ul>
-</div>
-
-<div id="pini" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="text">Nicolo Pini, Co-Investigator</span>
-  <a class="anchor-link" href="#pini" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="table-arrow">▸</span>
-</div>
-<div class="closed-collapsible-content">
-<ul>
-<li>Serve as a leading member of the Novel Technologies/Wearables Workgroup.</li>
-<li>Develop pipelines necessary for extraction of derivatives, data upload, storage, and maintenance of the EKG data collected during EEG and the heart rate wearable sensor data.</li>
-<li>Coordinate the recurring training at the HBCD sites in these two modalities.</li> 
-<li>Supervise quality control performed by Research Technician.</li>
-</ul>
-</div>
-
-<div id="eisler" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="text">Liana Eisler, Technician Research Assistant</span>
-  <a class="anchor-link" href="#eisler" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="table-arrow">▸</span>
-</div>
-<div class="closed-collapsible-content">
-<p>Quality control of outputs produced by automated pipelines.</p>
-</div>
 
 ## UMD EEG Core
 ```mermaid
