@@ -327,7 +327,7 @@ flowchart TB
     click DCAN "#dcan-lab"
 ```
 ### Health Sciences Technology (HST)
-[HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*
+[HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
 ```mermaid
 ---
 config:
@@ -399,22 +399,26 @@ config:
   layout: dagre
 ---
 flowchart LR
-    D["<b>Damien Fair, PA-C, PhD</b><br>Professor UMN<br>HBCD DCC MPI"] --> S["<b>Eric Feczko, PhD</b><br>Neuroscience/Informatics<br>Software Engineer<br>
-    <b>Lucille A. Moore, PhD</b><br>PM &amp; Software Engineer<br>
-    <b>Mathias Goncalves</b><br>Software Engineer (Infant fMRIPrep)"] & T["<b>Steve Nelson, PhD</b><br>Director Neuroimaging Hub MIDB/CMRR"]
-    T --> t1["<b>Kim Weldon, PhD</b><br>PM, Data Acquisition Seimens Engineer"]
+    D["<b>Damien Fair, PA-C, PhD</b><br>Professor UMN<br>HBCD DCC MPI"] --> S["<b>Eric Feczko, PhD</b><br>Neuroscience/Informatics<br>Software Engineer"] & T["<b>Steve Nelson, PhD</b><br>Director Neuroimaging Hub MIDB/CMRR"]
+    T --> t1["<b>Kim Weldon, PhD</b><br>PM & Data Acquisition Seimens Engineer"]
     t1 --> t2["<b>Thomas Madison</b><br>Software Engineer<br>
     <b>Matthew Cieslack, PhD</b><br>Software Engineer (QSIPrep/Diffusion)"]
+    S --> n1["<b>Lucille A. Moore, PhD</b><br>PM &amp; Software Engineer"]
+    n1 --> n2["<b>Mathias Goncalves</b><br>Software Engineer (Infant fMRIPrep)"]
     D@{ shape: text}
     S@{ shape: text}
     T@{ shape: text}
     t1@{ shape: text}
     t2@{ shape: text}
+    n1@{ shape: text}
+    n2@{ shape: text}
     style D stroke:#000000,fill:#BBDEFB
     style S stroke:#000000,fill:#BBDEFB
     style T stroke:#000000,fill:#BBDEFB
     style t1 fill:#BBDEFB
     style t2 fill:#BBDEFB
+    style n1 fill:#BBDEFB
+    style n2 fill:#BBDEFB
 ```
 
 ## UCSD
