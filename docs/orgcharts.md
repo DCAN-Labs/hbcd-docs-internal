@@ -106,7 +106,7 @@ flowchart TB
     click D "#rioux"
     click E "#torres"
     click n10 "#matthew"
-    click I "#ontaro-carcy"
+    click I "#ongaro-carcy"
     click n11 "#murad"
     click L "#madjar"
     click M "#faeselier"
@@ -196,10 +196,10 @@ flowchart TB
 </ul>
 </div>
 
-<div id="ongary-carcy" class="table-banner" onclick="toggleCollapse(this)">
+<div id="ongaro-carcy" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Regis Ongaro-Carcy, Lead BHV Developer</span>
-  <a class="anchor-link" href="#ongary-carcy" title="Copy link">
+  <a class="anchor-link" href="#ongaro-carcy" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
