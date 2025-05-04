@@ -438,9 +438,7 @@ config:
 ---
 flowchart TB
     L["<b>Thomas Pengo</b><br>Co-Director, Informatics Group"] --> M(["<b>Project Management</b>"]) & N(["<b>System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Management</b>"])
-    N --> Q["<b>Jesse Erdman</b><br>Sr. SysOps<br>
-    <b>Devin Willis</b>
-    <b>Jesus Garcia</b><br>DevOps Engineers"]
+    N --> Q["<b>Jesse Erdman</b><br>Senior SysOps<br>"]
     O --> n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead<br>
     <b>Erik Lee</b><br>Pipeline Lead<br>
     <b>Monalisa Biles</b><br>Analyst"]
@@ -471,27 +469,16 @@ The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.
 config:
   layout: dagre
 ---
-flowchart LR
-    D["<b>Damien Fair, PA-C, PhD</b><br>Professor UMN<br>HDCC MPI"] --> S["<b>Eric Feczko, PhD</b><br>Neuroscience/Informatics<br>Software Engineer"] & T["<b>Steve Nelson, PhD</b><br>Director Neuroimaging Hub MIDB/CMRR"]
-    T --> t1["<b>Kim Weldon, PhD</b><br>PM & Data Acquisition Seimens Engineer"]
-    t1 --> t2["<b>Thomas Madison</b><br>Software Engineer<br>
-    <b>Matthew Cieslack, PhD</b><br>Software Engineer (QSIPrep/Diffusion)"]
-    S --> n1["<b>Lucille A. Moore, PhD</b><br>PM &amp; Software Engineer"]
-    n1 --> n2["<b>Mathias Goncalves</b><br>Software Engineer (Infant fMRIPrep)"]
+flowchart TB
+    D["<b>Damien Fair, PA-C, PhD</b><br>Professor UMN<br>HDCC MPI"] --> S["<b>Eric Feczko, PhD</b><br>Neuroscience/Informatics<br>Software Engineer"] & t1["<b>Kim Weldon, PhD</b><br>PM &amp; Data Acquisition Seimens Engineer"] & n1["<b>Lucille A. Moore, PhD</b><br>PM &amp; Software Engineer"]
     D@{ shape: text}
     S@{ shape: text}
-    T@{ shape: text}
     t1@{ shape: text}
-    t2@{ shape: text}
     n1@{ shape: text}
-    n2@{ shape: text}
     style D stroke:#000000,fill:#BBDEFB
     style S stroke:#000000,fill:#BBDEFB
-    style T stroke:#000000,fill:#BBDEFB
     style t1 fill:#BBDEFB
-    style t2 fill:#BBDEFB
     style n1 fill:#BBDEFB
-    style n2 fill:#BBDEFB
 ```
 
 ## UCSD
