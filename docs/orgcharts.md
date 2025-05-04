@@ -57,7 +57,7 @@ flowchart TB
     click n9 "#ucsd"
     click n10 "#washu"
     click n13 "#thompson"
-    click n14 "#fun"
+    click n14 "#fan"
 ```
 
 
