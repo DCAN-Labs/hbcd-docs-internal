@@ -50,7 +50,7 @@ flowchart TB
     click umn "#university-of-minnesota"
     click n7 "#loris"
     click n8 "#umd-eeg-core"
-    click n11 "#columbia"
+    click n11 "#columbia-university"
     click hst "#health-sciences-technology"
     click midb "#midb-informatics-hub-msi"
     click n6 "#dcan-lab"
