@@ -1,7 +1,7 @@
 # HBCD Data Coordinating Center (HDCC) Organizational Charts
 
 ## Overview
-The larger organizational structure of the HDCC is as follows - ***click on individual groups to be directed to their asssociated organizational charts***.
+The larger organizational structure of the HDCC is as follows - ***click on individual groups to be directed to their asssociated organizational charts***. Please visit the [HDCC page](https://hbcdstudy.org/hbcd-data-coordinating-center/) of the HBCD Study website for a full list of all HDCC members.
 
 ```mermaid
 ---
