@@ -47,7 +47,7 @@ flowchart TB
     style n12 fill:#E1BEE7,stroke:#000000
     style n13 fill:#E1BEE7,stroke:none
     style n14 fill:#E1BEE7,stroke:none
-    click umn "#university"
+    click umn "#university-of-minnesota"
     click n7 "#loris"
     click n8 "#umd-eeg-core"
     click n11 "#columbia"
