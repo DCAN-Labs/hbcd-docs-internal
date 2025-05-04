@@ -48,6 +48,41 @@ flowchart TB
     click n10 "#washu"
     click n13 "#libr"
 ```
+<br>
+<div id="columbia-university" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Columbia Novel Technologies & Wearables Workgroup</span>
+  <a class="anchor-link" href="#columbia-university" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="table-arrow">▸</span>
+</div>
+<div class="closed-collapsible-content">
+<br>
+<b>William P. Fifer, Co-chair</b>
+<ul>
+<li>Overall management.</li>
+<li>Supervise automation of sleep stage scoring and data analysis.</li>
+<li>Data analytics, writing, and review of manuscripts.</li>
+</ul>
+
+<b>Dimo Amso, Co-Investigator</b> 
+<ul>
+<li>Lead development of best practices, particularly the adapted Family Culture Matters (FCM) task.</li>
+<li>Ensure coding is minimally evaluative to support unbiased measurement and minimize errors of inference.</li>
+</ul>
+
+<b>Nicolo Pini, Co-Investigator</b> 
+<ul>
+<li>Serve as a leading member of the Novel Technologies/Wearables Workgroup.</li>
+<li>Develop pipelines necessary for extraction of derivatives, data upload, storage, and maintenance of EKG data collected during EEG and heart rate wearable sensor data.</li>
+<li>Coordinate recurring training at the HBCD sites.</li>
+<li>Supervise quality control performed by Research Technician.</li>
+</ul>
+
+<b>Liana Eisler, Technician Research Assistant</b>: Perform quality control of pipeline outputs.
+</div>
 
 <div id="libr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
