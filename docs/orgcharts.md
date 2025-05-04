@@ -641,7 +641,8 @@ config:
   layout: dagre
 ---
 flowchart TB
-    A["<b>Chris Smyser</b><br>Principal Investigator<br>"] --> neurology(["<b>Neurology</b>"]) & C(["<b>EHR</b><br>"]) & B["<b>Sauren Ravencroft</b><br>Project Manager"] & n11["<b>Chad Sylvester</b><br>Co-Investigator"]
+    A["<b>Chris Smyser</b><br>Principal Investigator<br>
+    <b>Chad Sylvester</b><br>Co-Investigator"] --> neurology(["<b>Neurology</b>"]) & C(["<b>EHR</b><br>"]) & B["<b>Sauren Ravencroft</b><br>Project Manager"]
     neurology --> n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Investigators &amp; Study Neuroradiologists"]
     n1 --> n2["<b>Dimitrios (Jim) Alexopoulos</b>
     Data Manager, Ambra"]
@@ -656,7 +657,6 @@ flowchart TB
     U01 Site Piloting"]
     A@{ shape: text}
     B@{ shape: text}
-    n11@{ shape: text}
     n1@{ shape: text}
     n2@{ shape: text}
     n3@{ shape: text}
@@ -668,7 +668,6 @@ flowchart TB
     style neurology fill:#E1BEE7,stroke:#000000
     style C stroke:#000000,fill:#E1BEE7
     style B fill:#BBDEFB
-    style n11 fill:#BBDEFB
     style n1 fill:#BBDEFB
     style n2 fill:#BBDEFB
     style n3 fill:#BBDEFB
