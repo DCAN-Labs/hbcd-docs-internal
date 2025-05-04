@@ -9,12 +9,12 @@ config:
   layout: dagre
 ---
 flowchart TB
-    A["<strong>HDCC</strong>"] --> E["<b>Damien Fair</b>"] & n1["<b>Chris Smyser</b>"] & n2["<b>Anders Dale</b>"]
+    A["<strong>HDCC</strong>"] --> E["<b>Damien Fair, PA-C, PhD</b><br>UMN, HDCC MPI"] & n1["<b>Chris Smyser</b><br>WashU"] & n2["<b>Anders Dale</b><br>UCSD"]
     E --> umn["<b>UMN</b><br>Reed McKewan"] & n7["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & n8["<b>UMD EEG Core</b><br>Nathan Fox"] & n11["<b>Columbia</b><br>William P. Fifer"]
     umn --> hst["<b>HST</b>"] & midb["<b>MIDB</b><br>Jim Wilgenbusch<br>Thomas Pengo"] & n6["<b>DCAN Lab</b>"]
     n2 --> n9["<b>UCSD</b>"]
     n1 --> n10["<b>WashU</b><br>Chad Sylvester"] & n12["<b>LIBR</b>"]
-    n12 --> n13["<b>Biostatistics WG<br></b>Wesley K. Thompson"] & n14["<b>Gelocation WG</b><br>Chun Chieh Fun"]
+    n12 --> n13["<b>Biostatistics WG<br></b>Wesley K. Thompson"] & n14["<b>Gelocation WG</b><br>Chun Chieh Fan"]
     A@{ shape: rect}
     E@{ shape: rect}
     n1@{ shape: rect}
