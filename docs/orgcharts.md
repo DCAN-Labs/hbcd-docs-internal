@@ -475,7 +475,7 @@ config:
   layout: dagre
 ---
 flowchart LR
-    D["<b>Damien Fair, PA-C, PhD</b><br>Professor UMN<br>HBCD DCC MPI"] --> S["<b>Eric Feczko, PhD</b><br>Neuroscience/Informatics<br>Software Engineer"] & T["<b>Steve Nelson, PhD</b><br>Director Neuroimaging Hub MIDB/CMRR"]
+    D["<b>Damien Fair, PA-C, PhD</b><br>Professor UMN<br>HDCC MPI"] --> S["<b>Eric Feczko, PhD</b><br>Neuroscience/Informatics<br>Software Engineer"] & T["<b>Steve Nelson, PhD</b><br>Director Neuroimaging Hub MIDB/CMRR"]
     T --> t1["<b>Kim Weldon, PhD</b><br>PM & Data Acquisition Seimens Engineer"]
     t1 --> t2["<b>Thomas Madison</b><br>Software Engineer<br>
     <b>Matthew Cieslack, PhD</b><br>Software Engineer (QSIPrep/Diffusion)"]
