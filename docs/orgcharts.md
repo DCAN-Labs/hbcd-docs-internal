@@ -9,10 +9,10 @@ config:
   layout: dagre
 ---
 flowchart TB
-    A["<strong>HDCC</strong>"] --> E["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & F["<b>UMN</b><br>Damien Fair<br>Reed McKewan"] & G["<b>UCSD</b><br>Anders Dale"] & H["<b>LIBR</b><br>"] & n1["<b>Columbia</b><br>William P. Fifer"] & n16["<b>University of Maryland</b>"] & washu["<b>WashU</b><br>Chris Smyser<br>Chad Sylvester"]
-    F --> n6["<b>Health Sciences Technology (HST)</b><br>Reed McKewan"] & n7["<b>MIDB Informatics Hub</b><br>Jim Wilgenbusch<br>Thomas Pengo"] & n8["<b>DCAN Lab</b><br>Eric Feczko &amp; Steven Nelson"]
-    H --> n14["<b>Biostatistics Workgroup</b><br>Wesley K. Thompson"] & n15["<b>Geolocation Workgroup</b><br>Chun Chieh Fan"]
-    n16 --> n17["<b>EEG Core</b><br>Nathan Fox"]
+    A["<strong>HDCC</strong>"] --> E["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & F["<b>UMN</b><br>Damien Fair<br>Reed McKewan"] & G["<b>UCSD</b><br>Anders Dale"] & H["<b>LIBR</b><br>"] & n1["<b>Columbia</b><br>William P. Fifer"] & n16["<b>UMD EEG Core</b><br>Nathan Fox"] & washu["<b>WashU</b><br>Chris Smyser<br>Chad Sylvester"]
+    F --> n6["<b>Health Sciences Technology</b><br>Reed McKewan"] & n7["<b>MIDB Informatics Hub</b><br>Jim Wilgenbusch<br>Thomas Pengo"] 
+    F --> n8["<b>DCAN Lab</b>"]
+    H --> n14["<b>Biostatistics WG</b><br>Wesley K. Thompson"] & n15["<b>Geolocation WG</b><br>Chun Chieh Fan"]
     A@{ shape: rect}
     E@{ shape: rounded}
     F@{ shape: rounded}
@@ -39,17 +39,16 @@ flowchart TB
     style n8 fill:#dcdcdc,stroke:#757575
     style n14 fill:#dcdcdc,stroke:#757575
     style n15 fill:#dcdcdc,stroke:#757575
-    style n17 fill:#dcdcdc,stroke:#757575
     click E "#loris"
     click F "#university-of-minnesota"
     click G "#ucsd"
     click H "#libr"
     click n1 "#columbia-university"
+    click n16 "#umd-eeg-core"
     click washu "#washu"
     click n6 "#health-sciences-technology-hst"
     click n7 "#midb-informatics-hub-msi"
     click n8 "#dcan-lab"
-    click n17 "#umd-eeg-core"
     click n14 "#thompson"
     click n15 "#fan"
 ```
