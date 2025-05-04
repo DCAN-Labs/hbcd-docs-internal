@@ -42,7 +42,7 @@ flowchart LR
     style n15 fill:#dcdcdc,stroke:#757575
     style n17 fill:#dcdcdc,stroke:#757575
     click E "#loris"
-    click F "#university-of-minnesota-umn"
+    click F "#university-of-minnesota"
     click G "#ucsd"
     click H "#libr"
     click n1 "#columbia-university"
@@ -302,7 +302,7 @@ flowchart TB
 </div>
 
 
-## University of Minnesota (UMN)
+## University of Minnesota
 ```mermaid
 ---
 config:
@@ -311,7 +311,12 @@ config:
 ---
 flowchart TB
     A["<b>Damien Fair</b><br>Professor UMN<br>HBCD DCC MPI"] --> A1["<b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"]
-    A1 --> HST["<b>Health Sciences Technology</b><br>Data shelter, PHI, Ripple interface, Overall Data Management, QC Dashboards, Ancillary Studies, Third party integration"] & MIDB["<b>MIDB Informatics Hub</b> & <b>Minnesota Supercomputing Institute (MSI)</b><br>System Administration, Loris Hosting, Computing, Processing, Data sharing"] & DCAN["<b>DCAN Lab</b><br>Processing, Software Development &amp; Deployment"]
+    A1 --> HST["<b>Health Sciences Technology</b><br>
+    <i>Data shelter, PHI, Ripple Interface, Overall Data Management, QC Dashboards, Ancillary Studies, Third Party Integration</i>"]
+    A1 --> MIDB["<b>MIDB Informatics Hub & MSI</b><br>
+    <i>System Administration, Loris Hosting, Computing, Processing, Data sharing</i>"] 
+    A1 --> DCAN["<b>DCAN Lab</b><br>
+    <i>Processing, Software Development &amp; Deployment</i>"]
     A@{ shape: text}
     A1@{ shape: text}
     HST@{ shape: rounded}
@@ -323,7 +328,7 @@ flowchart TB
     style MIDB fill:#E1BEE7
     style DCAN fill:#E1BEE7
     click HST "#health-sciences-technology-hst"
-    click MIDB "#midb-informatics-hub-msi"
+    click MIDB "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
     click DCAN "#dcan-lab"
 ```
 ### Health Sciences Technology (HST)
@@ -624,7 +629,7 @@ flowchart LR
 
 ## WashU
 
-The Washington University in St. Louis (WashU) group has oversight of: *Neurology*, *EHR*, *Ripple*, *Ambra*, *AirTable*, and *HCAC coordination*.
+The Washington University in St. Louis (WashU) group has oversight of: *Neurology*, *Electronic Health Records (EHR)*, *Ripple*, *Ambra*, *AirTable*, and *HCAC coordination*.
 
 ```mermaid
 ---
