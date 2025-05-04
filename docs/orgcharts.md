@@ -67,76 +67,7 @@ flowchart TB
     A["<b>Alan Evans</b><br>Principal Investigator"] --> nl["<b>Samir Das</b><br>Associate Director of Software Development"]
     nl --> n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b><br>"]) & B(["<b>Development</b>"])
     C --> D["<b>Pierre Rioux</b><br>Senior HPC developer"]
-    n9 --> E["<b>Santiago Torres</b><br>Study Officer (Research Administration)"]
-    B --> F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
-    F --> I["<b>Regis Ongaro-Carcy</b><br>Lead BHV Developer<br>
-    <b>Sruthy Matthew</b><br>Senior Backend Developer<br>
-    <b>George Murad</b><br>Junior BHV Developer"]
-    G --> L["<b>Cecile Madjar</b><br>Lead MRI developer"]
-    H --> M["<b>Laetitia Faeselier</b><br>Lead BioSamples/EEG Developer"]
-    A@{ shape: text}
-    nl@{ shape: text}
-    D@{ shape: text}
-    E@{ shape: text}
-    F@{ shape: rounded}
-    H@{ shape: rounded}
-    G@{ shape: rounded}
-    I@{ shape: text}
-    L@{ shape: text}
-    M@{ shape: text}
-    style A stroke:#000000,fill:#BBDEFB
-    style nl stroke:#000000,fill:#BBDEFB
-    style n9 stroke:#000000,fill:#E1BEE7,stroke-width:1px,stroke-dasharray: 0
-    style C stroke:#333,fill:#E1BEE7
-    style B stroke:#333,fill:#E1BEE7
-    style D stroke:#333,fill:#BBDEFB
-    style E stroke:#333,fill:#BBDEFB
-    style F stroke:#333,fill:#E1BEE7
-    style H stroke:#333,fill:#E1BEE7
-    style G stroke:#333,fill:#E1BEE7
-    style I stroke:#333,fill:#BBDEFB
-    style L stroke:#000000,fill:#BBDEFB
-    style M fill:#BBDEFB,stroke:#000000
-    click A "#evans"
-    click nl "#das"
-    click D "#rioux"
-    click E "#torres"
-    click I "#bhv-database"
-    click L "#madjar"
-    click M "#faeselier"
-```
-<br>
-
-### Roles & Responsibilities
-<div id="evans" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="text">Alan Evans, Principal Investigator</span>
-  <a class="anchor-link" href="#evans" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="table-arrow">▸</span>
-</div>
-<div class="closed-collapsible-content">
-<p>Oversight and management of MCIN and LORIS operations:</p>
-<ul>
-<li>Ensure regulatory compliance between LORIS, McGill and affiliated institutions.</li>
-<li>Engage with stakeholders to ensure the study's relevance and applicability.</li>
-<li>Secure funding and resources for the study.</li>
-</ul>
-</div>
-
-
-```mermaid
----
-config:
-  layout: dagre
----
-flowchart TB
-    A["<b>Alan Evans</b>, PI"] --> nl["<b>Samir Das</b><br>Associate Director of Software Development"]
-    nl --> n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b><br>"]) & B(["<b>Development</b>"])
-    C --> D["<b>Pierre Rioux</b><br>Senior HPC developer"]
-    n9 --> E["<b>Santiago Torres</b><br>Study Officer (Research Admin)"]
+    n9 --> E["<b>Santiago Torres</b><br>Study Officer"]
     B --> F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
     F --> I["<b>Regis Ongaro-Carcy</b><br>Lead Developer"] & n10["<b>Sruthy Matthew</b><br>Sr. Backend Dev"]
     G --> L["<b>Cecile Madjar</b><br>Lead developer"]
@@ -174,10 +105,32 @@ flowchart TB
     click nl "#das"
     click D "#rioux"
     click E "#torres"
-    click I "#bhv-database"
+    click n10 "#matthew"
+    click I "#ontaro-carcy"
+    click n10 "#murad"
     click L "#madjar"
     click M "#faeselier"
 ```
+<br>
+
+### Roles & Responsibilities
+<div id="evans" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Alan Evans, Principal Investigator</span>
+  <a class="anchor-link" href="#evans" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="table-arrow">▸</span>
+</div>
+<div class="closed-collapsible-content">
+<p>Oversight and management of MCIN and LORIS operations:</p>
+<ul>
+<li>Ensure regulatory compliance between LORIS, McGill and affiliated institutions.</li>
+<li>Engage with stakeholders to ensure the study's relevance and applicability.</li>
+<li>Secure funding and resources for the study.</li>
+</ul>
+</div>
 
 <div id="das" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
