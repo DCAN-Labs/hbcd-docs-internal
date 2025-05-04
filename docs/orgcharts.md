@@ -10,7 +10,7 @@ config:
 ---
 flowchart TB
     A["<strong>HDCC</strong>"] --> E["<b>Damien Fair, PA-C, PhD</b><br>UMN, HDCC MPI"] & n1["<b>Chris Smyser</b><br>WashU"] & n2["<b>Anders Dale</b><br>UCSD"]
-    E --> umn["<b>UMN</b><br>Reed McKewan"] & n7["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & n8["<b>UMD EEG Core</b><br>Nathan Fox"] & n11["<b>Columbia</b><br>William P. Fifer"]
+    E --> umn["<b>UMN</b><br>Reed McKewan"] & n7["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & n8["<b>UMD EEG Core</b><br>Nathan Fox"] & n11["<b>Novel Tech WG (Columbia)</b><br>William P. Fifer"]
     umn --> hst["<b>HST</b>"] & midb["<b>MIDB</b><br>Jim Wilgenbusch<br>Thomas Pengo"] & n6["<b>DCAN Lab</b>"]
     n2 --> n9["<b>UCSD</b>"]
     n1 --> n10["<b>WashU</b><br>Chad Sylvester"] & n12["<b>LIBR</b>"]
@@ -37,16 +37,16 @@ flowchart TB
     style n2 fill:#BBDEFB,stroke:#000000
     style umn fill:#E1BEE7,stroke:#000000
     style n7 fill:#E1BEE7,stroke:#000000
-    style n8 fill:#E1BEE7,stroke:#000000
-    style n11 fill:#E1BEE7,stroke:#000000
+    style n8 fill:#C8E6C9,stroke:#757575
+    style n11 fill:#C8E6C9,stroke:#757575
     style hst stroke:none,fill:#E1BEE7
     style midb fill:#E1BEE7,stroke:none
     style n6 fill:#E1BEE7,stroke:none
     style n9 fill:#E1BEE7,stroke:#000000
     style n10 fill:#E1BEE7,stroke:#000000
     style n12 fill:#E1BEE7,stroke:#000000
-    style n13 fill:#E1BEE7,stroke:none
-    style n14 fill:#E1BEE7,stroke:none
+    style n13 fill:#C8E6C9,stroke:#757575
+    style n14 fill:#C8E6C9,stroke:#757575
     click umn "#university-of-minnesota"
     click n7 "#loris"
     click n8 "#umd-eeg-core"
