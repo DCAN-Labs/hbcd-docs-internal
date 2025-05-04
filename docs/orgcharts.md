@@ -360,10 +360,6 @@ The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://
 config:
   layout: dagre
 ---
----
-config:
-  layout: dagre
----
 flowchart TB
     K["<b>Jim Wilgenbusch</b><br>Director of Research Computing"] --> L["<b>Thomas Pengo</b><br>Co-Director of MIDB Informatics Group"]
     L --> M(["<b>Project Management</b>"]) & N(["<b>System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Management</b>"])
