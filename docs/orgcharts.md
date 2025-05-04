@@ -437,8 +437,7 @@ config:
   layout: dagre
 ---
 flowchart TB
-    K["<b>Jim Wilgenbusch</b><br>Director of Research Computing"] --> L["<b>Thomas Pengo</b><br>Co-Director of MIDB Informatics Group"]
-    L --> M(["<b>Project Management</b>"]) & N(["<b>System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Management</b>"])
+    L["<b>Thomas Pengo</b><br>Co-Director, Informatics Group"] --> M(["<b>Project Management</b>"]) & N(["<b>System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Management</b>"])
     N --> Q["<b>Jesse Erdman</b><br>Sr. SysOps<br>
     <b>Devin Willis</b>
     <b>Jesus Garcia</b><br>DevOps Engineers"]
@@ -449,13 +448,11 @@ flowchart TB
     P --> n7["<b>Kimberleigh Breen</b><br>Data Manager<br>
     <b>Borgne Raasch</b><br>Data Steward<br>
     <b>Naomi Hospodarsky-Sutherland</b><br>Security/Compliance"]
-    K@{ shape: text}
     L@{ shape: text}
     Q@{ shape: text}
     n4@{ shape: text}
     n6@{ shape: text}
     n7@{ shape: text}
-    style K fill:#BBDEFB
     style L fill:#BBDEFB
     style M fill:#E1BEE7,stroke:#000000
     style N fill:#E1BEE7,stroke:#000000
