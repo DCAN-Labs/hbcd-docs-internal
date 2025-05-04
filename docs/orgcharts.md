@@ -196,18 +196,16 @@ flowchart TB
 </ul>
 </div>
 
-<div id="bhv-database" class="table-banner" onclick="toggleCollapse(this)">
+<div id="ongary-carcy" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="text">BHV/Database Team</span>
-  <a class="anchor-link" href="#bhv-database" title="Copy link">
+  <span class="text">Regis Ongaro-Carcy, Lead BHV Developer</span>
+  <a class="anchor-link" href="#ongary-carcy" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="table-arrow">▸</span>
 </div>
 <div class="closed-collapsible-content">
-<br>
-<b>Regis Ongaro-Carcy, Lead BHV Developer</b>
 <ul>
 <i>Development of LORIS BHV features for HBCD:</i>
 <li>Integrate data exchange protocols to enable interoperability between LORIS software and collaborating external platforms (e.g. REDCap, Ripple, MSI).</li>
@@ -217,8 +215,18 @@ flowchart TB
 <li>Conception and design of alternative processing pathways to optimize current code functionalities in LORIS and improve system functionality and user satisfaction.</li>
 <li>Implementation of new features and functionalities to maintain database integrity across LORIS.</li>
 </ul>
+</div>
 
-<b>Sruthy Matthew, Senior Backend Developer</b>
+<div id="matthew" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Sruthy Matthew, Senior Backend Developer</span>
+  <a class="anchor-link" href="#matthew" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="table-arrow">▸</span>
+</div>
+<div class="closed-collapsible-content">
 <ul>
 <i>Development of LORIS LaunchPad and Backend features for HBCD:</i>
 <li>Set up and oversight of deployment procedures for execution and implementation of LORIS updates.</li>
@@ -228,8 +236,18 @@ flowchart TB
 <li>Ensure proper data storage, confidentiality, and security measures are in place across the database.</li>
 <li>Implementation of new features and functionalities to maintain database integrity across LORIS.</li>
 </ul>
+</div>
 
-<b>George Murad, Junior BHV Developer</b>
+<div id="murad" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">George Murad, Junior BHV Developer</span>
+  <a class="anchor-link" href="#murad" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="table-arrow">▸</span>
+</div>
+<div class="closed-collapsible-content">
 <ul>
 <i>Development of LORIS BHV features specific to HBCD:</i>
 <li>Coding of new instruments and their corresponding scoring algorithms.</li>
