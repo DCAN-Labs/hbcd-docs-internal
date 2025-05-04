@@ -9,48 +9,55 @@ config:
   layout: dagre
 ---
 flowchart TB
-    A["<strong>HDCC</strong>"] --> E["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & F["<b>UMN</b><br>Damien Fair<br>Reed McKewan"] & G["<b>UCSD</b><br>Anders Dale"] & H["<b>LIBR</b><br>"] & n1["<b>Columbia</b><br>William P. Fifer"] & n16["<b>UMD EEG Core</b><br>Nathan Fox"] & washu["<b>WashU</b><br>Chris Smyser<br>Chad Sylvester"]
-    F --> n6["<b>Health Sciences Technology</b><br>Reed McKewan"] & n7["<b>MIDB Informatics Hub</b><br>Jim Wilgenbusch<br>Thomas Pengo"] 
-    F --> n8["<b>DCAN Lab</b>"]
-    H --> n14["<b>Biostatistics WG</b><br>Wesley K. Thompson"] & n15["<b>Geolocation WG</b><br>Chun Chieh Fan"]
+    A["<strong>HDCC</strong>"] --> E["<b>Damien Fair</b>"] & n1["<b>Chris Smyser</b>"] & n2["<b>Anders Dale</b>"]
+    E --> umn["<b>UMN</b><br>Reed McKewan"] & n7["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & n8["<b>UMD EEG Core</b><br>Nathan Fox"] & n11["<b>Columbia</b><br>William P. Fifer"]
+    umn --> hst["<b>HST</b>"] & midb["<b>MIDB</b><br>Jim Wilgenbusch<br>Thomas Pengo"] & n6["<b>DCAN Lab</b>"]
+    n2 --> n9["<b>UCSD</b>"]
+    n1 --> n10["<b>WashU</b><br>Chad Sylvester"] & n12["<b>LIBR</b>"]
+    n12 --> n13["<b>Biostatistics WG<br></b>Wesley K. Thompson"] & n14["<b>Gelocation WG</b><br>Chun Chieh Fun"]
     A@{ shape: rect}
-    E@{ shape: rounded}
-    F@{ shape: rounded}
-    G@{ shape: rounded}
-    H@{ shape: rounded}
-    n1@{ shape: rounded}
-    n16@{ shape: rounded}
-    washu@{ shape: rounded}
-    n6@{ shape: rounded}
+    E@{ shape: rect}
+    n1@{ shape: rect}
+    n2@{ shape: rect}
+    umn@{ shape: rounded}
     n7@{ shape: rounded}
     n8@{ shape: rounded}
+    n11@{ shape: rounded}
+    hst@{ shape: rounded}
+    midb@{ shape: rounded}
+    n6@{ shape: rounded}
+    n9@{ shape: rounded}
+    n10@{ shape: rounded}
+    n12@{ shape: rounded}
+    n13@{ shape: rounded}
     n14@{ shape: rounded}
-    n15@{ shape: rounded}
-    style A fill:#e6e6fa,stroke:#424242
-    style E fill:#e6e6fa,stroke:#616161
-    style F fill:#e6e6fa,stroke:#616161
-    style G fill:#e6e6fa,stroke:#616161
-    style H fill:#e6e6fa,stroke:#616161
-    style n1 fill:#e6e6fa,stroke:#616161
-    style n16 fill:#e6e6fa,stroke:#616161
-    style washu fill:#e6e6fa,stroke:#616161
-    style n6 fill:#dcdcdc,stroke:#757575
-    style n7 fill:#dcdcdc,stroke:#757575
-    style n8 fill:#dcdcdc,stroke:#757575
-    style n14 fill:#dcdcdc,stroke:#757575
-    style n15 fill:#dcdcdc,stroke:#757575
-    click E "#loris"
-    click F "#university-of-minnesota"
-    click G "#ucsd"
-    click H "#libr"
-    click n1 "#columbia-university"
-    click n16 "#umd-eeg-core"
-    click washu "#washu"
-    click n6 "#health-sciences-technology-hst"
-    click n7 "#midb-informatics-hub-msi"
-    click n8 "#dcan-lab"
-    click n14 "#thompson"
-    click n15 "#fan"
+    style A fill:#FFD600,stroke:#424242
+    style E fill:#BBDEFB,stroke:#616161
+    style n1 fill:#BBDEFB,stroke:#000000
+    style n2 fill:#BBDEFB,stroke:#000000
+    style umn fill:#E1BEE7,stroke:#000000
+    style n7 fill:#E1BEE7,stroke:#000000
+    style n8 fill:#E1BEE7,stroke:#000000
+    style n11 fill:#E1BEE7,stroke:#000000
+    style hst stroke:none,fill:#E1BEE7
+    style midb fill:#E1BEE7,stroke:none
+    style n6 fill:#E1BEE7,stroke:none
+    style n9 fill:#E1BEE7,stroke:#000000
+    style n10 fill:#E1BEE7,stroke:#000000
+    style n12 fill:#E1BEE7,stroke:#000000
+    style n13 fill:#E1BEE7,stroke:none
+    style n14 fill:#E1BEE7,stroke:none
+    click umn "#university"
+    click n7 "#loris"
+    click n8 "#umd-eeg-core"
+    click n11 "#columbia"
+    click hst "#health-sciences-technology"
+    click midb "#midb-informatics-hub-msi"
+    click n6 "#dcan-lab"
+    click n9 "#ucsd"
+    click n10 "#washu"
+    click n13 "#thompson"
+    click n14 "#fun"
 ```
 
 
@@ -328,7 +335,7 @@ flowchart TB
     click MIDB "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
     click DCAN "#dcan-lab"
 ```
-### Health Sciences Technology (HST)
+### Health Sciences Technology
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
 ```mermaid
 ---
