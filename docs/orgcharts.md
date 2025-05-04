@@ -336,19 +336,23 @@ The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://
 config:
   layout: dagre
 ---
+---
+config:
+  layout: dagre
+---
 flowchart TB
-    K["<b>Jim Wilgenbusch</b><br>Research Computing"] --> L["<b>Thomas Pengo</b><br>Co-Director Research Informatics"]
+    K["<b>Jim Wilgenbusch</b><br>Director of Research Computing"] --> L["<b>Thomas Pengo</b><br>Co-Director of MIDB Informatics Group"]
     L --> M(["<b>Project Management</b>"]) & N(["<b>System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Management</b>"])
-    N --> Q["<b>Jesse Erdman</b><br>Senior System Operations<br>
-    <b>Devin Willis</b><br>DevOps Engineer<br>
-    <b>Jesus Garcia</b><br>DevOps Engineer"]
-    O --> n4["<b>Timothy Hendrickson</b><br>Neuroimaging/EEG/MRS/Biosensor Informatics Lead<br>
-    <b>Erik Lee</b><br>Pipeline Integration/Processing<br>
-    <b>Monalisa Biles</b><br>Analysis Data Processing"]
+    N --> Q["<b>Jesse Erdman</b><br>Sr. SysOps<br>
+    <b>Devin Willis</b>
+    <b>Jesus Garcia</b><br>DevOps Engineers"]
+    O --> n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead<br>
+    <b>Erik Lee</b><br>Pipeline Lead<br>
+    <b>Monalisa Biles</b><br>Analyst"]
     M --> n6@{ label: "<span style=\"--tw-scale-x:\"><b>Maren Macgregor-Hannah</b><br>HDCC PM</span><br style=\"--tw-scale-x:\">" }
-    P --> n7["<b>Kimberleigh Breen</b><br>Data Manager/Version Control<br>
-    <b>Borgne Raasch</b><br>Data Steward/Access Controls<br>
-    <b>Naomi Hospodarsky-Sutherland</b><br>Security Compliance"]
+    P --> n7["<b>Kimberleigh Breen</b><br>Data Manager<br>
+    <b>Borgne Raasch</b><br>Data Steward<br>
+    <b>Naomi Hospodarsky-Sutherland</b><br>Security/Compliance"]
     K@{ shape: text}
     L@{ shape: text}
     Q@{ shape: text}
@@ -366,85 +370,6 @@ flowchart TB
     style n6 fill:#BBDEFB
     style n7 fill:#BBDEFB
 ```
-
-<div id="midb-msi" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="table-text">Roles & Responsibilities</span>
-  <span class="notification-arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
-    <thead>
-      <tr>
-        <th style="width: 25%;">Name</th>
-        <th style="width: 25%;">Role on HDCC</th>
-        <th style="width: 50%;">Title</th>
-      </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Jim Wilgenbusch</td>
-        <td style="word-wrap: break-word; white-space: normal;">Administration</td>
-        <td style="word-wrap: break-word; white-space: normal;">Director of Research Computing in the Research & Innovation Office, UMN</td>
-    </tr>
-    <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Thomas Pengo, PhD</td>
-        <td style="word-wrap: break-word; white-space: normal;">IG Lead</td>
-        <td style="word-wrap: break-word; white-space: normal;">Co-Director, MIDB Informatics Group</td>
-    </tr>
-    <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Maren Macgregor-Hannah</td>
-        <td style="word-wrap: break-word; white-space: normal;">HDCC Project Manager</td>
-        <td style="word-wrap: break-word; white-space: normal;">Project Manager</td>
-    </tr>
-    <tr>
-    <td>Jesse Erdmann</td>
-    <td>ASO oversight</td>
-    <td>Systems Operations</td>
-    </tr>
-    <tr>
-    <td>Devin Willis</td>
-    <td>Dev Ops</td>
-    <td>DevOps Engineer</td>
-    </tr>
-    <tr>
-    <td>Jesus Garcia</td>
-    <td>Dev Ops</td>
-    <td>DevOps Engineer</td>
-    </tr>
-    <tr>
-    <td>Timothy Hendrickson</td>
-    <td>Neuroimaging lead</td>
-    <td>MIDB-IG Neuroimaging Informatics Manager</td>
-    </tr>
-    <tr>
-    <td>Erik Lee</td>
-    <td>Pipeline lead</td>
-    <td>Neuroimaging Analyst</td>
-    </tr>
-    <tr>
-    <td>Monalisa Biles</td>
-    <td>Analyst</td>
-    <td>&nbsp;</td>
-    </tr>
-    <tr>
-    <td>Kimberleigh Breen</td>
-    <td>Data Manager</td>
-    <td>Data Manager</td>
-    </tr>
-    <tr>
-  <td>Borgne Raasch</td>
-  <td>Data Steward</td>
-  <td>Data Steward</td>
-  </tr>
-  <tr>
-  <td>Naomi Hospodarsky-Sutherland</td>
-  <td>Security/Compliance</td>
-  <td>Research Security and Compliance Analyst</td>
-  </tr>
-</tbody>
-</table>
-</div>
-
 
 ### DCAN Lab
 The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
