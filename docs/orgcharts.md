@@ -470,7 +470,7 @@ config:
   layout: dagre
 ---
 flowchart TB
-    D["<b>Damien Fair, PA-C, PhD</b><br>Professor UMN<br>HDCC MPI"] --> S["<b>Eric Feczko, PhD</b><br>Neuroscience/Informatics<br>Software Engineer"] & t1["<b>Kim Weldon, PhD</b><br>PM &amp; Data Acquisition Seimens Engineer"] & n1["<b>Lucille A. Moore, PhD</b><br>PM &amp; Software Engineer"]
+    D["<b>Damien Fair, PA-C, PhD</b><br>Professor UMN<br>HDCC MPI"] --> S["<b>Eric Feczko, PhD</b><br>Neuroscience/Informatics<br>Software Engineer"] & t1["<b>Kim Weldon, PhD</b><br>Data Acquisition Seimens Engineer"] & n1["<b>Lucille A. Moore, PhD</b><br>Software Engineer"]
     D@{ shape: text}
     S@{ shape: text}
     t1@{ shape: text}
