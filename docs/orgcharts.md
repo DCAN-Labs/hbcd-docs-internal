@@ -464,6 +464,7 @@ flowchart TB
 
 ### DCAN Lab
 The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
+<div style="width: 450px;">
 ```mermaid
 ---
 config:
@@ -480,6 +481,7 @@ flowchart TB
     style t1 fill:#BBDEFB
     style n1 fill:#BBDEFB
 ```
+</div>
 
 ## UCSD
 ```mermaid
