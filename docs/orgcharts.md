@@ -1,61 +1,13 @@
 #  HDCC Organizational Charts <br> 🚧 UNDER CONSTRUCTION 🚧
 
 ## Overview
-The larger organizational structure of the HBCD Data Coordinating Center (HDCC) is as follows - ***click on individual groups to be directed to their asssociated organizational charts***. Please visit the [HDCC page](https://hbcdstudy.org/hbcd-data-coordinating-center/) of the HBCD Study website for a full list of all HDCC members.
-
-```mermaid
----
-config:
-  layout: dagre
----
-flowchart TB
-    A["<strong>HDCC</strong>"] --> E["<b>Damien Fair, PA-C, PhD</b><br>UMN, HDCC MPI"] & n1["<b>Chris Smyser</b><br>WashU"] & n2["<b>Anders Dale</b><br>UCSD"]
-    E --> umn["<b>UMN</b><br>Reed McKewan"] & n7["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & n8["<b>UMD EEG Core</b><br>Nathan Fox<br>Associate HDCC Director"] & n11["<b>Columbia</b><br><b>William P. Fifer</b><br>Novel Tech Work Group Chair"] & n15["<b>Lasso</b><br>Leigh MacIntyre"]
-    n1 --> n10["<b>WashU</b><br>Chad Sylvester"] & n12["<b>LIBR</b>"] & n15
-    n16@{ label: "<span style=\"--tw-scale-x:\"><b>Wesley K. Thompson<br></b>HDCC Associate Director & BioStatistics Work Group Chair</span><br>" } --> n17@{ label: "<span style=\"color:\"><b>Chun Fan<br></b></span><span style=\"--tw-scale-x:\">Geolocation Work Group Chair</span><br style=\"--tw-scale-x:\">" }
-    n12 --> n16
-    A@{ shape: rect}
-    E@{ shape: rect}
-    n1@{ shape: rect}
-    n2@{ shape: rect}
-    umn@{ shape: rounded}
-    n7@{ shape: rounded}
-    n8@{ shape: rounded}
-    n11@{ shape: rounded}
-    n15@{ shape: rounded}
-    n10@{ shape: rounded}
-    n12@{ shape: rounded}
-    n16@{ shape: text}
-    n17@{ shape: text}
-    style A fill:#FFD600,stroke:#424242
-    style E fill:#BBDEFB,stroke:#616161
-    style n1 fill:#BBDEFB,stroke:#000000
-    style n2 fill:#BBDEFB,stroke:#000000
-    style umn fill:#E1BEE7,stroke:#000000
-    style n7 fill:#E1BEE7,stroke:#000000
-    style n8 fill:#E1BEE7,stroke:#757575
-    style n11 fill:#E1BEE7,stroke:#757575
-    style n15 fill:#E1BEE7,stroke:#000000
-    style n10 fill:#E1BEE7,stroke:#000000
-    style n12 fill:#E1BEE7,stroke:#000000
-    style n16 fill:#BBDEFB
-    style n17 fill:#BBDEFB
-    click n2 "#ucsd"
-    click umn "#university-of-minnesota"
-    click n7 "#loris"
-    click n8 "#umd-eeg-core"
-    click n11 "#columbia"
-    click n15 "#lasso"
-    click n10 "#washu"
-```
-
-## Alt overview option
+The larger organizational structure of the HBCD Data Coordinating Center (HDCC) is as follows, with the HDCC Co-Directors listed at the top and the institutions/organizations listed below- ***click on individual institutions to be directed to their organizational charts***. Please visit the [HDCC page](https://hbcdstudy.org/hbcd-data-coordinating-center/) of the HBCD Study website for a full list of all HDCC members.
 
 ```mermaid
 flowchart TB
     hdcc["<strong>HDCC</strong>"] --> n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] & E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] & n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>UCSD"]
-    n2 --> ucsd["UCSD"]
-    E --> lasso["<b>Lasso</b>"] & umn["UMN"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
+    n2 --> ucsd["<b>UCSD</b>"]
+    E --> lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
     lasso --> lasso1["<b>Leigh MacIntyre</b><br>Assoc Dir, PM - MCIN"]
     n1 --> n10["<b>WashU</b><br>"] & n12["<b>LIBR</b>"] & lasso
     n16@{ label: "<span style=\"--tw-scale-x:\"><b>Wesley K.<br>Thompson, PhD<br></b>HDCC Assoc Dir,<br>BioStatistics Chair</span><br>" } --> n17@{ label: "<span style=\"color:\"><b>Chun Fan, PhD<br></b></span><span style=\"--tw-scale-x:\">Geolocation Chair</span><br style=\"--tw-scale-x:\">" }
