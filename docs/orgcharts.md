@@ -10,11 +10,10 @@ config:
 ---
 flowchart TB
     A["<strong>HDCC</strong>"] --> E["<b>Damien Fair, PA-C, PhD</b><br>UMN, HDCC MPI"] & n1["<b>Chris Smyser</b><br>WashU"] & n2["<b>Anders Dale</b><br>UCSD"]
-    E --> umn["<b>UMN</b><br>Reed McKewan"] & n7["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & n8["<b>UMD<br>EEG Core</b><br>Nathan Fox"] & n11["<b>Columbia<br>Novel Tech WG</b><br>William P. Fifer"]
-    E --> n15["<b>Lasso</b><br>Leigh MacIntyre"]
+    E --> umn["<b>UMN</b><br>Reed McKewan"] & n7["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & n8["<b>UMD<br>EEG Core</b><br>Nathan Fox"] & n11["<b>Columbia<br>Novel Tech WG</b><br>William P. Fifer"] & n15["<b>Lasso</b><br>Leigh MacIntyre"]
     n1 --> n10["<b>WashU</b><br>Chad Sylvester"] & n12["<b>LIBR</b>"] & n15
-    n12 --> n13["<b>Biostatistics WG<br></b>Wesley K. Thompson<br>
-    <b>Gelocation WG</b><br>Chun Chieh Fan"]
+    n16@{ label: "<span style=\"--tw-scale-x:\"><b>Wesley K. Thompson<br></b>HDCC Associate Director & BioStatistics Work Group Chair</span><br>" } --> n17@{ label: "<span style=\"color:\"><b>Chun Fan<br></b></span><span style=\"--tw-scale-x:\">Gelocation Work Group Chair</span><br style=\"--tw-scale-x:\">" }
+    n12 --> n16
     A@{ shape: rect}
     E@{ shape: rect}
     n1@{ shape: rect}
@@ -26,19 +25,21 @@ flowchart TB
     n15@{ shape: rounded}
     n10@{ shape: rounded}
     n12@{ shape: rounded}
-    n13@{ shape: rounded}
+    n16@{ shape: text}
+    n17@{ shape: text}
     style A fill:#FFD600,stroke:#424242
     style E fill:#BBDEFB,stroke:#616161
     style n1 fill:#BBDEFB,stroke:#000000
     style n2 fill:#BBDEFB,stroke:#000000
     style umn fill:#E1BEE7,stroke:#000000
     style n7 fill:#E1BEE7,stroke:#000000
-    style n8 fill:#C8E6C9,stroke:#757575
-    style n11 fill:#C8E6C9,stroke:#757575
+    style n8 fill:#E1BEE7,stroke:#757575
+    style n11 fill:#E1BEE7,stroke:#757575
     style n15 fill:#E1BEE7,stroke:#000000
     style n10 fill:#E1BEE7,stroke:#000000
     style n12 fill:#E1BEE7,stroke:#000000
-    style n13 fill:#C8E6C9,stroke:#757575
+    style n16 fill:#BBDEFB
+    style n17 fill:#BBDEFB
     click n2 "#ucsd"
     click umn "#university-of-minnesota"
     click n7 "#loris"
@@ -46,7 +47,6 @@ flowchart TB
     click n11 "#columbia-university"
     click n15 "#lasso"
     click n10 "#washu"
-    click n13 "#libr"
 ```
 
 ## HBCD Working Groups
@@ -105,31 +105,6 @@ Jessica Norris: <i>QC, EEG training, & troubleshooting</i><br>
 <br>
 </div>
 
-
-<div id="libr" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="text">LIBR</span>
-  <a class="anchor-link" href="#libr" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="table-arrow">▸</span>
-</div>
-<div class="closed-collapsible-content">
-<br>
-<b>Wesley K. Thompson, HDCC Associate Director & BioStatistics Work Group Chair</b>
-<p>Provides guidance on statistical analysis, study design, novel methods development, for large, longitudinal, multi-site studies, including:</p>
-<ul>
-<li>Direction of statistical analyses for HBCD design and assessments.</li>
-<li>Co-supervise and lead the development and maintenance of the statistical aspects of the Data Exploration and Analysis Portal 2.0 (DEAP 2.0).</li>
-<li>Assist in the geolocation of residences of HBCD participants, and linking these geolocated addresses with external databases.</li>
-</ul>
-<b>Chun Chieh Fan, Co-Investigator & Geolocation Work Group Chair</b>
-<ul>
-<li>Guide curation and analysis of imaging, genomic, and geolocation exposure data.</li>
-<li>Co-supervise expanding DEAP 2.0 to include exploration and analysis of high-dimensional genomic, imaging, and exposure data, and to develop DEAP 2.0 tools to harmonize HBCD data and analyses with external studies, including the creation of a probabilistic ontology to compare measures across studies.</li>
-</ul>
-</div>
 
 ## LORIS
 ```mermaid
