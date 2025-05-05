@@ -48,8 +48,8 @@ flowchart TB
     click n10 "#washu"
     click n13 "#libr"
 ```
-<br>
 
+## HBCD Working Groups
 <div id="columbia-university" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Columbia Novel Technologies & Wearables Workgroup</span>
@@ -60,30 +60,51 @@ flowchart TB
   <span class="table-arrow">▸</span>
 </div>
 <div class="closed-collapsible-content">
-<br>
-<b>William P. Fifer, Co-chair</b>
 <ul>
+<b>William P. Fifer, Co-chair</b>
 <li>Overall management.</li>
 <li>Supervise automation of sleep stage scoring and data analysis.</li>
 <li>Data analytics, writing, and review of manuscripts.</li>
 </ul>
-
-<b>Dimo Amso, Co-Investigator</b> 
 <ul>
+<b>Dimo Amso, Co-Investigator</b> 
 <li>Lead development of best practices, particularly the adapted Family Culture Matters (FCM) task.</li>
 <li>Ensure coding is minimally evaluative to support unbiased measurement and minimize errors of inference.</li>
 </ul>
-
-<b>Nicolo Pini, Co-Investigator</b> 
 <ul>
+<b>Nicolo Pini, Co-Investigator</b> 
 <li>Serve as a leading member of the Novel Technologies/Wearables Workgroup.</li>
 <li>Develop pipelines necessary for extraction of derivatives, data upload, storage, and maintenance of EKG data collected during EEG and the heart rate wearable sensor data.</li>
 <li>Coordinate recurring training at the HBCD sites.</li>
 <li>Supervise quality control performed by Research Technician.</li>
 </ul>
-
 <b>Liana Eisler, Technician Research Assistant</b>: Perform quality control of pipeline outputs.
 </div>
+
+<div id="umd-eeg-core" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">UMD EEG Core</span>
+  <a class="anchor-link" href="#umd-eeg-core" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="table-arrow">▸</span>
+</div>
+<div class="closed-collapsible-content">
+<br>
+<b>Leadership</b><br>
+Nathan Fox, <i>Associate Director, Data Core</i><br>
+Santiago Morales, <i>Co-Investigator</i><br>
+Jamie Listokin, <i>EEG Core Research Coordinator</i><br>
+<br>
+<b>Research Team</b><br>
+Marco McSweeney: <i>Pre-processing & Derivatives</i><br>
+Whitney Kasenetz: <i>EEG pre-processing in CBRAIN</i><br>
+Savannah McNair: <i>QC, EEG training, & troubleshooting</i><br>
+Jessica Norris: <i>QC, EEG training, & troubleshooting</i><br>
+<br>
+</div>
+
 
 <div id="libr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -537,28 +558,7 @@ flowchart TB
     style n12 fill:#BBDEFB
 ```
 
-## UMD EEG Core
-```mermaid
----
-config:
-  layout: dagre
----
-flowchart LR
-    n16["<b>Nathan Fox</b><br>Associate Director, Data Core"] --> UMD2["<b>Santiago Morales</b><br>Co-Investigator<br>
-    <b>Jamie Listokin</b><br>EEG Core Research Coordinator"]
-    UMD2 --> UMD3["<b>Marco McSweeney</b><br>Pre-processing &amp; Derivatives<br>
-    <b>Whitney Kasenetz</b><br>EEG pre-processing in CBRAIN<br>
-    <b>Savannah McNair</b><br><b>Jessica Norris</b><br>QC, EEG training, &amp; troubleshooting"]
-    n16@{ shape: rounded}
-    UMD2@{ shape: text}
-    UMD3@{ shape: text}
-    style n16 fill:#BBDEFB,stroke:none
-    style UMD2 fill:#BBDEFB
-    style UMD3 fill:#BBDEFB
-```
-
 ## WashU
-
 The Washington University in St. Louis (WashU) group has oversight of: *Neurology*, *Electronic Health Records (EHR)*, *Ripple*, *Ambra*, *AirTable*, and *HCAC coordination*.
 
 ```mermaid
