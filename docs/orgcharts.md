@@ -64,53 +64,6 @@ flowchart TB
     click n10 "#washu"
 ```
 
-## HBCD Working Groups
-<div id="columbia" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="text">Columbia (Novel Technologies & Wearables Work Group)</span>
-  <a class="anchor-link" href="#columbia" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="table-arrow">▸</span>
-</div>
-<div class="closed-collapsible-content">
-<br>
-<b>Leadership</b><br>
-William P. Fifer, <i>Co-chair</i><br>
-Dimo Amso, <i>Co-Investigator</i><br>
-Nicolo Pini, <i>Co-Investigator & Pipeline Developer</i><br>
-<br>
-<b>Research Team</b><br>
-Liana Eisler, <i>Technician</i><br>
-<br>
-</div>
-
-<div id="umd-eeg-core" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="text">UMD EEG Core</span>
-  <a class="anchor-link" href="#umd-eeg-core" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="table-arrow">▸</span>
-</div>
-<div class="closed-collapsible-content">
-<br>
-<b>Leadership</b><br>
-Nathan Fox, <i>Associate Director, Data Core</i><br>
-Santiago Morales, <i>Co-Investigator</i><br>
-Jamie Listokin, <i>EEG Core Research Coordinator</i><br>
-<br>
-<b>Research Team</b><br>
-Marco McSweeney: <i>Pre-processing & Derivatives</i><br>
-Whitney Kasenetz: <i>EEG pre-processing in CBRAIN</i><br>
-Savannah McNair: <i>QC, EEG training, & troubleshooting</i><br>
-Jessica Norris: <i>QC, EEG training, & troubleshooting</i><br>
-<br>
-</div>
-
-
 ## LORIS
 ```mermaid
 ---
@@ -585,3 +538,49 @@ flowchart TB
     style n10 fill:#BBDEFB
 ```
 
+## Columbia University
+<div id="columbia" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Columbia (Novel Technologies & Wearables Work Group)</span>
+  <a class="anchor-link" href="#columbia" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="table-arrow">▸</span>
+</div>
+<div class="closed-collapsible-content">
+<br>
+<b>Leadership</b><br>
+William P. Fifer, <i>Co-chair</i><br>
+Dimo Amso, <i>Co-Investigator</i><br>
+Nicolo Pini, <i>Co-Investigator & Pipeline Developer</i><br>
+<br>
+<b>Research Team</b><br>
+Liana Eisler, <i>Technician</i><br>
+<br>
+</div>
+
+## University of Maryland EEG Core
+<div id="umd-eeg-core" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">UMD EEG Core</span>
+  <a class="anchor-link" href="#umd-eeg-core" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="table-arrow">▸</span>
+</div>
+<div class="closed-collapsible-content">
+<br>
+<b>Leadership</b><br>
+Nathan Fox, <i>Associate Director, Data Core</i><br>
+Santiago Morales, <i>Co-Investigator</i><br>
+Jamie Listokin, <i>EEG Core Research Coordinator</i><br>
+<br>
+<b>Research Team</b><br>
+Marco McSweeney: <i>Pre-processing & Derivatives</i><br>
+Whitney Kasenetz: <i>EEG pre-processing in CBRAIN</i><br>
+Savannah McNair: <i>QC, EEG training, & troubleshooting</i><br>
+Jessica Norris: <i>QC, EEG training, & troubleshooting</i><br>
+<br>
+</div>
