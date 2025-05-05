@@ -379,6 +379,7 @@ flowchart TD
 ## University of Minnesota
 UMN has three main cores that support the HBCD study: 
 
+<div style="width: 600px; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -401,6 +402,7 @@ flowchart TB
     click MIDB "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
     click DCAN "#dcan-lab"
 ```
+</div>
 
 ### Health Sciences Technology
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
