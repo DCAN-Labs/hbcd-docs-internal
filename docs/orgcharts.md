@@ -63,7 +63,7 @@ flowchart TB
     n7 --> n20@{ label: "<b><span style=\"color:\">Alan Evans</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">PI</span><br style=\"--tw-scale-x:\"><b><span style=\"color:\">Samir Das</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">AD Softw Dev</span>" }
     umn --> reed["<b>Reed McKewan, MS</b><br>Sr Research Dev"]
     n10 --> n22@{ label: "<b><span style=\"color:\">Chad Sylvester, PhD</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">Co-Investigator</span>" }
-    n23["<b>HDCC</b>"] --> n1 & n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>UCSD"] & E
+    n23["<h3>HDCC</h3>"] --> n1 & n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>UCSD"] & E
 
     E@{ shape: rect}
     lasso@{ shape: rounded}
