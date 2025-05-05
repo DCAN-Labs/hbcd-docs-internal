@@ -384,7 +384,7 @@ config:
 ---
 flowchart TD
     A@{ label: "<b>Leigh MacIntyre</b><br>Associate Director, Project Management- MCIN" } --> B["Jennifer Zink"]
-    B --> C["<b>Aarushi Chadhury</b><br>LORIS PM"] & D["Jordan Stirling"] & n1["Fraser Glen"]
+    B --> C["<b>Aarushi Chadhury</b><br>LORIS Project Coordinator"] & D["Jordan Stirling"] & n1["Fraser Glen"]
     A@{ shape: text}
     B@{ shape: text}
     C@{ shape: text}
