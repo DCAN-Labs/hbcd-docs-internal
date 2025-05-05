@@ -60,25 +60,15 @@ flowchart TB
   <span class="table-arrow">▸</span>
 </div>
 <div class="closed-collapsible-content">
-<ul>
-<b>William P. Fifer, Co-chair</b>
-<li>Overall management.</li>
-<li>Supervise automation of sleep stage scoring and data analysis.</li>
-<li>Data analytics, writing, and review of manuscripts.</li>
-</ul>
-<ul>
-<b>Dimo Amso, Co-Investigator</b> 
-<li>Lead development of best practices, particularly the adapted Family Culture Matters (FCM) task.</li>
-<li>Ensure coding is minimally evaluative to support unbiased measurement and minimize errors of inference.</li>
-</ul>
-<ul>
-<b>Nicolo Pini, Co-Investigator</b> 
-<li>Serve as a leading member of the Novel Technologies/Wearables Workgroup.</li>
-<li>Develop pipelines necessary for extraction of derivatives, data upload, storage, and maintenance of EKG data collected during EEG and the heart rate wearable sensor data.</li>
-<li>Coordinate recurring training at the HBCD sites.</li>
-<li>Supervise quality control performed by Research Technician.</li>
-</ul>
-<b>Liana Eisler, Technician Research Assistant</b>: Perform quality control of pipeline outputs.
+<br>
+<b>Leadership</b><br>
+William P. Fifer, <i>Co-chair</i><br>
+Dimo Amso, <i>Co-Investigator</i><br>
+Nicolo Pini, <i>Co-Investigator & Pipeline Developer</i><br>
+<br>
+<b>Research Team</b><br>
+Liana Eisler, <i>Technician</i><br>
+<br>
 </div>
 
 <div id="umd-eeg-core" class="table-banner" onclick="toggleCollapse(this)">
