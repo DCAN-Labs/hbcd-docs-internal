@@ -12,7 +12,7 @@ flowchart TB
     A["<strong>HDCC</strong>"] --> E["<b>Damien Fair, PA-C, PhD</b><br>UMN, HDCC MPI"] & n1["<b>Chris Smyser</b><br>WashU"] & n2["<b>Anders Dale</b><br>UCSD"]
     E --> umn["<b>UMN</b><br>Reed McKewan"] & n7["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & n8["<b>UMD EEG Core</b><br>Nathan Fox<br>Associate HDCC Director"] & n11["<b>Columbia</b><br><b>William P. Fifer</b><br>Novel Tech Work Group Chair"] & n15["<b>Lasso</b><br>Leigh MacIntyre"]
     n1 --> n10["<b>WashU</b><br>Chad Sylvester"] & n12["<b>LIBR</b>"] & n15
-    n16@{ label: "<span style=\"--tw-scale-x:\"><b>Wesley K. Thompson<br></b>HDCC Associate Director & BioStatistics Work Group Chair</span><br>" } --> n17@{ label: "<span style=\"color:\"><b>Chun Fan<br></b></span><span style=\"--tw-scale-x:\">Gelocation Work Group Chair</span><br style=\"--tw-scale-x:\">" }
+    n16@{ label: "<span style=\"--tw-scale-x:\"><b>Wesley K. Thompson<br></b>HDCC Associate Director & BioStatistics Work Group Chair</span><br>" } --> n17@{ label: "<span style=\"color:\"><b>Chun Fan<br></b></span><span style=\"--tw-scale-x:\">Geolocation Work Group Chair</span><br style=\"--tw-scale-x:\">" }
     n12 --> n16
     A@{ shape: rect}
     E@{ shape: rect}
