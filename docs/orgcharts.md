@@ -44,16 +44,79 @@ flowchart TB
     click umn "#university-of-minnesota"
     click n7 "#loris"
     click n8 "#umd-eeg-core"
-    click n11 "#columbia-university"
+    click n11 "#columbia"
     click n15 "#lasso"
     click n10 "#washu"
 ```
 
+## Alt overview option
+
+```mermaid
+flowchart TB
+    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --> lasso["<b>Lasso</b>"] & umn["UMN"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
+    lasso --> lasso1["<b>Leigh MacIntyre</b><br>Assoc. Dir, PM - MCIN"]
+    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --> n10["<b>WashU</b><br>"] & n12["<b>LIBR</b>"] & lasso
+    n16@{ label: "<span style=\"--tw-scale-x:\"><b>Wesley K. Thompson, PhD<br></b>HDCC Assoc. Dir.<br>&amp; BioStatistics Chair</span><br>" } --> n17@{ label: "<span style=\"color:\"><b>Chun Fan, PhD<br></b></span><span style=\"--tw-scale-x:\">Geolocation Chair</span><br style=\"--tw-scale-x:\">" }
+    n12 --> n16
+    n11 --> n18@{ label: "<b>William P. Fifer, PhD<br></b><span style=\"--tw-scale-x:\">Novel Tech Chair</span>" }
+    n8 --> n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc. Dir."]
+    n7 --> n20@{ label: "<b><span style=\"color:\">Alan Evans</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">PI</span><br style=\"--tw-scale-x:\"><b><span style=\"color:\">Samir Das</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">AD Softw Dev</span>" }
+    umn --> n21@{ label: "<b><font color=\"#0038ea\" style=\"--tw-scale-x:\">Reed McKewan, MS</font><br style=\"--tw-scale-x:\"></b><font color=\"#0038ea\" style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\">Sr. Research Dev</span></font>" }
+    n10 --> n22@{ label: "<b><span style=\"color:\">Chad Sylvester, PhD</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">Co-Investigator</span>" }
+    n23["<b>HDCC</b>"] --> n1 & n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>UCSD"] & E
+
+    E@{ shape: rect}
+    lasso@{ shape: rounded}
+    umn@{ shape: rounded}
+    n7@{ shape: rounded}
+    n8@{ shape: rounded}
+    n11@{ shape: rounded}
+    lasso1@{ shape: text}
+    n1@{ shape: rect}
+    n10@{ shape: rounded}
+    n12@{ shape: rounded}
+    n16@{ shape: text}
+    n17@{ shape: text}
+    n18@{ shape: text}
+    n19@{ shape: text}
+    n20@{ shape: text}
+    n21@{ shape: text}
+    n22@{ shape: text}
+    n23@{ shape: rounded}
+    n2@{ shape: rect}
+    style E fill:#BBDEFB,stroke:#757575
+    style lasso fill:#E1BEE7,stroke:#000000
+    style umn fill:#E1BEE7,stroke:#000000
+    style n7 fill:#E1BEE7,stroke:#000000
+    style n8 fill:#E1BEE7,stroke:#000000
+    style n11 fill:#E1BEE7,stroke:#000000
+    style lasso1 fill:#BBDEFB
+    style n1 fill:#BBDEFB,stroke:#757575
+    style n10 fill:#E1BEE7,stroke:#000000
+    style n12 fill:#E1BEE7,stroke:#000000
+    style n16 fill:#BBDEFB
+    style n17 fill:#BBDEFB
+    style n18 fill:#BBDEFB
+    style n19 fill:#BBDEFB
+    style n20 fill:#BBDEFB
+    style n21 fill:#BBDEFB
+    style n22 fill:#BBDEFB
+    style n23 stroke:#000000,fill:#E1BEE7,color:#000000
+    style n2 fill:#BBDEFB,stroke:#757575
+    click lasso "#lasso"
+    click umn "#university-of-minnesota"
+    click n7 "#loris"
+    click n8 "#umd-eeg-core"
+    click n11 "#columbia"
+    click n10 "#washu"
+    click n2 "#ucsd"
+```
+
 ## HBCD Working Groups
-<div id="columbia-university" class="table-banner" onclick="toggleCollapse(this)">
+<div id="columbia" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="text">Columbia Novel Technologies & Wearables Workgroup</span>
-  <a class="anchor-link" href="#columbia-university" title="Copy link">
+  <span class="text">Columbia (Novel Technologies & Wearables Work Group)</span>
+  <a class="anchor-link" href="#columbia" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
