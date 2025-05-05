@@ -10,7 +10,7 @@ config:
 ---
 flowchart TB
     A["<strong>HDCC</strong>"] --> E["<b>Damien Fair, PA-C, PhD</b><br>UMN, HDCC MPI"] & n1["<b>Chris Smyser</b><br>WashU"] & n2["<b>Anders Dale</b><br>UCSD"]
-    E --> umn["<b>UMN</b><br>Reed McKewan"] & n7["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & n8["<b>UMD<br>EEG Core</b><br>Nathan Fox"] & n11["<b>Columbia<br>Novel Tech WG</b><br>William P. Fifer"] & n15["<b>Lasso</b><br>Leigh MacIntyre"]
+    E --> umn["<b>UMN</b><br>Reed McKewan"] & n7["<b>LORIS</b><br>Alan Evans<br>Samir Das"] & n8["<b>UMD<br>EEG Core</b><br>Nathan Fox"] & n11["<b>Columbia<br>Novel Tech Work Group</b><br>William P. Fifer"] & n15["<b>Lasso</b><br>Leigh MacIntyre"]
     n1 --> n10["<b>WashU</b><br>Chad Sylvester"] & n12["<b>LIBR</b>"] & n15
     n16@{ label: "<span style=\"--tw-scale-x:\"><b>Wesley K. Thompson<br></b>HDCC Associate Director & BioStatistics Work Group Chair</span><br>" } --> n17@{ label: "<span style=\"color:\"><b>Chun Fan<br></b></span><span style=\"--tw-scale-x:\">Gelocation Work Group Chair</span><br style=\"--tw-scale-x:\">" }
     n12 --> n16
