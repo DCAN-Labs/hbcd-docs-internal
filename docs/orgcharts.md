@@ -61,7 +61,7 @@ flowchart TB
     n11 --> n18@{ label: "<b>William P. Fifer, PhD<br></b><span style=\"--tw-scale-x:\">Novel Tech Chair</span>" }
     n8 --> n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc. Dir."]
     n7 --> n20@{ label: "<b><span style=\"color:\">Alan Evans</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">PI</span><br style=\"--tw-scale-x:\"><b><span style=\"color:\">Samir Das</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">AD Softw Dev</span>" }
-    umn --> n21@{ label: "<b><font color=\"#0038ea\" style=\"--tw-scale-x:\">Reed McKewan, MS</font><br style=\"--tw-scale-x:\"></b><font color=\"#0038ea\" style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\">Sr. Research Dev</span></font>" }
+    umn --> reed["<b>Reed McKewan, MS</b><br>Sr Research Dev"]
     n10 --> n22@{ label: "<b><span style=\"color:\">Chad Sylvester, PhD</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">Co-Investigator</span>" }
     n23["<b>HDCC</b>"] --> n1 & n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>UCSD"] & E
 
@@ -80,7 +80,7 @@ flowchart TB
     n18@{ shape: text}
     n19@{ shape: text}
     n20@{ shape: text}
-    n21@{ shape: text}
+    reed@{ shape: text}
     n22@{ shape: text}
     n23@{ shape: rounded}
     n2@{ shape: rect}
@@ -99,7 +99,7 @@ flowchart TB
     style n18 fill:#BBDEFB
     style n19 fill:#BBDEFB
     style n20 fill:#BBDEFB
-    style n21 fill:#BBDEFB
+    style reed fill:#BBDEFB
     style n22 fill:#BBDEFB
     style n23 stroke:#000000,fill:#E1BEE7,color:#000000
     style n2 fill:#BBDEFB,stroke:#757575
