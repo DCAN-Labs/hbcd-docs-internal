@@ -400,7 +400,7 @@ flowchart TD
 ## University of Minnesota
 UMN has three main cores that support the HBCD study: 
 
-<div style="width: 600px; margin: 0 auto;">
+<div style="width: 80%; margin: 0 auto;">
 ```mermaid
 ---
 config:
