@@ -48,6 +48,7 @@ flowchart TB
     click n10 "#washu"
     click n13 "#libr"
 ```
+<br>
 
 <div id="columbia-university" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -376,6 +377,8 @@ flowchart TD
 ```
 
 ## University of Minnesota
+UMN has three main cores that support the HBCD study: 
+
 ```mermaid
 ---
 config:
@@ -383,17 +386,13 @@ config:
   layout: dagre
 ---
 flowchart TB
-    A["<b>Damien Fair</b><br>HDCC MPI"] --> A1["<b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"]
-    A1 --> HST["<b>Health Sciences Technology</b><br>
-    <i>Data shelter, PHI, Ripple Interface, Overall Data Management, QC Dashboards, Ancillary Studies, Third Party Integration</i>"] & MIDB["<b>MIDB Informatics Hub &amp; MSI</b><br>
-    <i>System Administration, Loris Hosting, Computing, Processing, Data sharing</i>"] & DCAN["<b>DCAN Lab</b><br>
-    <i>Processing, Software Development &amp; Deployment</i>"]
-    A@{ shape: text}
+    A1["<b>Damien Fair</b><br>HDCC MPI<br>
+    <b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"] --> HST["<b>Health Sciences Technology (HST)</b><br>"]
+    A1 --> MIDB["<b>Masonic Institute for the Developing Brain (MIDB) Informatics Hub & Minnesota Supercomputing Institute (MSI)</b><br>"] & DCAN["<b>Developmental Cognition and Neuroimaging Lab (DCAN)</b>"]
     A1@{ shape: text}
     HST@{ shape: rounded}
     MIDB@{ shape: rounded}
     DCAN@{ shape: rounded}
-    style A fill:#BBDEFB
     style A1 fill:#BBDEFB
     style HST fill:#E1BEE7
     style MIDB fill:#E1BEE7
@@ -402,6 +401,7 @@ flowchart TB
     click MIDB "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
     click DCAN "#dcan-lab"
 ```
+
 ### Health Sciences Technology
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
 ```mermaid
