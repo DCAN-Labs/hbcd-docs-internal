@@ -388,7 +388,7 @@ config:
 flowchart TB
     A1["<b>Damien Fair</b><br>HDCC MPI<br>
     <b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"] --> HST["<b>Health Sciences Technology (HST)</b><br>"]
-    A1 --> MIDB["<b>Masonic Institute for the Developing Brain (MIDB) Informatics Hub & Minnesota Supercomputing Institute (MSI)</b><br>"] & DCAN["<b>Developmental Cognition and Neuroimaging Lab (DCAN)</b>"]
+    A1 --> MIDB["<b>MIDB Informatics Hub & Minnesota Supercomputing Institute (MSI)</b><br>"] & DCAN["<b>Developmental Cognition and Neuroimaging Lab (DCAN)</b>"]
     A1@{ shape: text}
     HST@{ shape: rounded}
     MIDB@{ shape: rounded}
