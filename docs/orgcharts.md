@@ -375,24 +375,8 @@ The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://
 
 ### DCAN Lab
 The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
-<div style="width: 80%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: dagre
----
-flowchart TB
-    D["<b>Damien Fair, PA-C, PhD</b><br>Professor UMN<br>HDCC MPI"] --> S["<b>Eric Feczko, PhD</b><br>Neuroscience/Informatics<br>Software Engineer"] & t1["<b>Kim Weldon, PhD</b><br>Data Acquisition Seimens Engineer"] & n1["<b>Lucille A. Moore, PhD</b><br>Software Engineer"]
-    D@{ shape: text}
-    S@{ shape: text}
-    t1@{ shape: text}
-    n1@{ shape: text}
-    style D stroke:#000000,fill:#BBDEFB
-    style S stroke:#000000,fill:#BBDEFB
-    style t1 fill:#BBDEFB
-    style n1 fill:#BBDEFB
-```
-</div>
+
+<img src="https://www.mermaidchart.com/raw/deb324cd-c386-477d-8b46-f842362da3c8?theme=light&version=v0.1&format=svg" width="80%" height="auto" class="center">
 
 ## J. Craig Venter Institute
 
