@@ -514,7 +514,50 @@ flowchart TB
 ## WashU
 The Washington University in St. Louis (WashU) group has oversight of: *Neurology*, *Electronic Health Records (EHR)*, *Ripple*, *Ambra*, *AirTable*, and *HCAC coordination*.
 
-![](https://www.mermaidchart.com/raw/1a26c247-6f63-4ac1-83c9-3607e79beb4a?theme=light&version=v0.1&format=svg)
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    A["<b>Chris Smyser</b><br>Principal Investigator<br>
+    <b>Chad Sylvester</b><br>Co-Investigator"] --> neurology(["<b>Neurology</b>"]) & C(["<b>EHR</b><br>"]) & B["<b>Sauren Ravencroft</b><br>Project Manager"] & n11(["<b>OMOR</b>"])
+    neurology --> n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Investigators &amp; Study Neuroradiologists"]
+    n1 --> n2["<b>Dimitrios (Jim) Alexopoulos</b>
+    Data Manager, Ambra"]
+    C --> n3["<b>Philip Payne</b><br><b>Albert Lai</b>
+    Co-Investigators"]
+    n3 --> n4["<b>Nicole Venteris</b><br>Project Manager"]
+    B --> n5(["<b>Ripple</b>"]) & n6(["<b>AirTable &amp; Ancillary Studies</b>"])
+    n5 --> n8["<b>Liliana Mueller</b>
+    Programming &amp; Management"]
+    n6 --> n9["<b>Lynn Menchaca</b>
+    AirTable Management<br>"] & n10["<b>Madison Gardner</b>
+    U01 Site Piloting"]
+    A@{ shape: text}
+    B@{ shape: text}
+    n1@{ shape: text}
+    n2@{ shape: text}
+    n3@{ shape: text}
+    n4@{ shape: text}
+    n8@{ shape: text}
+    n9@{ shape: text}
+    n10@{ shape: text}
+    style A fill:#BBDEFB
+    style neurology fill:#E1BEE7,stroke:#000000
+    style C stroke:#000000,fill:#E1BEE7
+    style B fill:#BBDEFB
+    style n11 stroke:#000000,fill:#E1BEE7
+    style n1 fill:#BBDEFB
+    style n2 fill:#BBDEFB
+    style n3 fill:#BBDEFB
+    style n4 fill:#BBDEFB
+    style n5 fill:#E1BEE7,stroke:#000000
+    style n6 fill:#E1BEE7,stroke:#000000
+    style n8 fill:#BBDEFB,stroke:none
+    style n9 fill:#BBDEFB
+    style n10 fill:#BBDEFB
+```
 
 ## Columbia University
 <div id="columbia" class="table-banner" onclick="toggleCollapse(this)">
@@ -539,26 +582,30 @@ Liana Eisler, <i>Technician</i><br>
 </div>
 
 ## University of Maryland EEG Core
-<div id="umd-eeg-core" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="text">UMD EEG Core</span>
-  <a class="anchor-link" href="#umd-eeg-core" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="table-arrow">▸</span>
-</div>
-<div class="closed-collapsible-content">
-<br>
-<b>Leadership</b><br>
-Nathan Fox, <i>Associate Director, Data Core</i><br>
-Santiago Morales, <i>Co-Investigator</i><br>
-Jamie Listokin, <i>EEG Core Research Coordinator</i><br>
-<br>
-<b>Research Team</b><br>
-Marco McSweeney: <i>Pre-processing & Derivatives</i><br>
-Whitney Kasenetz: <i>EEG pre-processing in CBRAIN</i><br>
-Savannah McNair: <i>QC, EEG training, & troubleshooting</i><br>
-Jessica Norris: <i>QC, EEG training, & troubleshooting</i><br>
-<br>
-</div>
+
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    n16["<b>Nathan Fox</b><br>Associate Director, Data Core"] --> UMD2["<b>Santiago Morales</b>, Co-Investigator<br>
+    <b>Jamie Listokin</b>, EEG Core Research Coordinator"]
+    UMD2 --> n17(["<b>EEG Processing</b>"]) & n18(["<b>CBRAIN</b>"]) & n21(["<b>QC, Training, &amp; Troubleshooting</b>"])
+    n17 --> n19@{ label: "<span style=\"--tw-scale-x:\"><b>Marco McSweeney</b><br>Pre-processing &amp; Derivatives</span>" }
+    n18 --> n20@{ label: "<span style=\"--tw-scale-x:\"><b>Whitney Kasenetz</b></span><br style=\"--tw-scale-x:\">EEG pre-processing in CBRAIN" }
+    n21 --> n22@{ label: "<b><span style=\"--tw-scale-x:\">Savannah McNair</span><br style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\">Jessica Norris</span></b>" }
+    n16@{ shape: rounded}
+    UMD2@{ shape: text}
+    n19@{ shape: text}
+    n20@{ shape: text}
+    n22@{ shape: text}
+    style n16 fill:#BBDEFB,stroke:none
+    style UMD2 fill:#BBDEFB
+    style n17 fill:#E1BEE7,stroke:#000000
+    style n18 fill:#E1BEE7,stroke:#000000
+    style n21 fill:#E1BEE7,stroke:#000000
+    style n19 fill:#BBDEFB
+    style n20 fill:#BBDEFB
+    style n22 fill:#BBDEFB
+```
