@@ -331,18 +331,29 @@ config:
   theme: redux
 ---
 flowchart TD
-    A@{ label: "<b>Leigh MacIntyre</b><br>Associate Director, Project Management- MCIN" } --> B["Jennifer Zink"]
-    B --> C["<b>Aarushi Chadhury</b><br>LORIS Project Coordinator"] & D["Jordan Stirling"] & n1["Fraser Glen"]
+    A["<b>Leigh MacIntyre</b><br>Associate Director, Project Management- MCIN"] --> B(["<b>Lasso Training Scheduling<br>(Pre-Release)</b>"]) & n1(["<b>Ancillary Studies</b>"]) & n2(["<b>WorkGroup Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data Loading</b>"])
+    B --> n5["<b>Ellise Elamparo</b><br>Exec Admin"]
+    n1 --> n6["<b>Aarushi Chaudhry<br></b>Study Success Manager"]
+    n2 --> n7["<b>Jen Zink<br></b>Director, Partnerships &amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
+    n3 --> n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan Sterling<br></b>Lead Developer"]
+    n4 --> n9["<b>Edson Silva<br></b>Developer<br><br><b>Laetitia Fesselier<br></b>Sr. Developer<br><br><b>Mateus Andre<br></b>Developer"]
     A@{ shape: text}
-    B@{ shape: text}
-    C@{ shape: text}
-    D@{ shape: text}
-    n1@{ shape: text}
+    n5@{ shape: text}
+    n6@{ shape: text}
+    n7@{ shape: text}
+    n8@{ shape: text}
+    n9@{ shape: text}
     style A fill:#BBDEFB
-    style B fill:#BBDEFB
-    style C fill:#BBDEFB
-    style D fill:#BBDEFB
-    style n1 fill:#BBDEFB
+    style B fill:#E1BEE7
+    style n1 fill:#E1BEE7
+    style n2 fill:#E1BEE7
+    style n3 fill:#E1BEE7
+    style n4 fill:#E1BEE7
+    style n5 fill:#BBDEFB
+    style n6 fill:#BBDEFB
+    style n7 fill:#BBDEFB
+    style n8 fill:#BBDEFB
+    style n9 fill:#BBDEFB
 ```
 
 ## University of Minnesota
