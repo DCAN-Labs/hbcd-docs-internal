@@ -353,7 +353,7 @@ flowchart TB
     <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --> HST(["<b>Health Sciences Technology (HST)</b><br>"]) & MIDB(["<b>MIDB Informatics Hub &amp; Minnesota Supercomputing Institute (MSI)</b><br>"]) & DCAN(["<b>Developmental Cognition and Neuroimaging Lab (DCAN)</b>"]) & USDTL(["<b>USDTL</b>"])
     DCAN --> n1(["<b>Neuroinformatics</b>"]) & n2(["<b>MRI Acquisition</b>"])
     n1 --> n3["<b>Eric Feczko, PhD</b><br></b><b>Lucille A. Moore, PhD</b>"]
-    n2 --> n4["<b>Kimberly Weldon, PhD<br>Seimens Engineer"]
+    n2 --> n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
     A1@{ shape: text}
     n3@{ shape: text}
     n4@{ shape: text}
