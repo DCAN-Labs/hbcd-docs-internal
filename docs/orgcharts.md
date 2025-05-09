@@ -1,7 +1,14 @@
 #  HDCC Organizational Charts <br> 🚧 UNDER CONSTRUCTION 🚧
 
 ## Overview
-The larger organizational structure of the HBCD Data Coordinating Center (HDCC) is as follows, with the HDCC Co-Directors listed at the top and the institutions/organizations listed below- ***click on individual institutions to be directed to their organizational charts***. Please visit the [HDCC page](https://hbcdstudy.org/hbcd-data-coordinating-center/) of the HBCD Study website for a full list of all HDCC members.
+The larger organizational structure of the HBCD Data Coordinating Center (HDCC) is as follows, with the HDCC Co-Directors listed at the top and the institutions/organizations listed below- ***click on individual institutions to be directed to their organizational charts***. Please visit the [HDCC page](https://hbcdstudy.org/hbcd-data-coordinating-center/) of the HBCD Study website for a full list of all HDCC members. 
+
+<p>
+<div id="faq-subids" class="notification-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+    <span class="text"><b>NOTE:</b> The following organizational charts display the functional structure of HDCC and do not necessarily reflect reporting lines. </span>
+</div>
+</p>
 
 ```mermaid
 flowchart TB
@@ -439,49 +446,12 @@ flowchart TB
 ```
 </div>
 
-## UCSD
-```mermaid
----
-config:
-  layout: dagre
----
-flowchart TB
-    A["<b>Anders Dale, PhD</b><br>PI/Director"] --> n1(["<b>Fiona</b>"]) & n2(["<b>MRI QC</b>"]) & n3(["<b>MRI</b>"]) & n4["<b>Janosch Linkersdörfer, PhD</b><br>Data Science Lead"]
-    n4 --> n6(["<b>REDCap</b>"]) & n15(["<b>Dashboard</b>"]) & n16(["<b>Biostats</b>"])
-    n1 --> n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead<br>"]
-    n2 --> n9["<b>Donald Hagler, PhD</b><br>QC Lead<br>"]
-    n3 --> n10["<b>Josh Kuperman</b><br>MRI Lead"]
-    n6 --> n12["<b>Joseph Baligh</b><br>Server Admin<br><b>Erika Bolden</b> &amp; <b>Laura Ziemer</b><br>Dev/Admin"]
-    n9 --> n13@{ label: "<span style=\"--tw-scale-x:\"><b>Tyler Berkness<br></b></span><span style=\"background-color:\">Protocol Violations</span><br>" } & n14@{ label: "<span style=\"--tw-scale-x:\"><b>Sejal Shanbhag<br style=\"--tw-scale-x:\"></b></span><span style=\"--tw-scale-x:\">Issue Handling</span>" }
-    n15 --> n17@{ label: "<span style=\"--tw-scale-x:\"><b>Biplabendu Das</b><br>Backend Dev<br></span><span style=\"--tw-scale-x:\"><b>Olivier Celhay</b><br></span><span style=\"background-color:\">Frontend Dev</span>" }
-    n16 --> n18@{ label: "<span style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b><span style=\"--tw-scale-x:\">Amanda Li, MS</span><br style=\"--tw-scale-x:\"></b></span></span><span style=\"--tw-scale-x:\">Biostats Support</span>" }
-    A@{ shape: text}
-    n4@{ shape: text}
-    n8@{ shape: text}
-    n9@{ shape: text}
-    n10@{ shape: text}
-    n12@{ shape: text}
-    n13@{ shape: text}
-    n14@{ shape: text}
-    n17@{ shape: text}
-    n18@{ shape: text}
-    style A fill:#BBDEFB
-    style n1 fill:#E1BEE7,stroke:#000000
-    style n2 stroke:#000000,fill:#E1BEE7
-    style n3 stroke:#000000,fill:#E1BEE7
-    style n4 fill:#BBDEFB
-    style n6 stroke:#000000,fill:#E1BEE7
-    style n15 fill:#E1BEE7,stroke:#000000
-    style n16 fill:#E1BEE7,stroke:#000000
-    style n8 fill:#BBDEFB
-    style n9 fill:#BBDEFB
-    style n10 fill:#BBDEFB
-    style n12 fill:#BBDEFB
-    style n13 fill:#BBDEFB
-    style n14 fill:#BBDEFB
-    style n17 fill:#BBDEFB
-    style n18 fill:#BBDEFB
-```
+## J. Craig Venter Institute
+
+The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, Fiona, and the QC Dashboard.
+
+![](https://www.mermaidchart.com/raw/cd632b85-d99d-48e5-82b1-553d346b8f2a?theme=light&version=v0.1&format=svg)
+
 
 ## WashU
 The Washington University in St. Louis (WashU) group has oversight of: *Neurology*, *Electronic Health Records (EHR)*, *Ripple*, *Ambra*, *AirTable*, and *HCAC coordination*.
