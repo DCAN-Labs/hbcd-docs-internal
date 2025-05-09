@@ -3,12 +3,11 @@
 ## Overview
 The larger organizational structure of the HBCD Data Coordinating Center (HDCC) is as follows, with the HDCC Co-Directors listed at the top and the institutions/organizations listed below- ***click on individual institutions to be directed to their organizational charts***. Please visit the [HDCC page](https://hbcdstudy.org/hbcd-data-coordinating-center/) of the HBCD Study website for a full list of all HDCC members. 
 
-<p>
 <div id="faq-subids" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text"><b>NOTE:</b> The following organizational charts display the functional structure of HDCC and do not necessarily reflect reporting lines. </span>
+    <span class="text"><b>NOTE:</b> These org charts emphasize functional structure, not reporting lines details.</span>
 </div>
-</p>
+<br>
 
 ```mermaid
 flowchart TB
@@ -344,21 +343,16 @@ UMN has three main cores that support the HBCD study:
 ```mermaid
 ---
 config:
-  theme: redux
   layout: dagre
 ---
 flowchart TB
     A1["<b>Damien Fair</b><br>HDCC MPI<br>
-    <b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"] --> HST["<b>Health Sciences Technology (HST)</b><br>"]
-    A1 --> MIDB["<b>MIDB Informatics Hub & Minnesota Supercomputing Institute (MSI)</b><br>"] & DCAN["<b>Developmental Cognition and Neuroimaging Lab (DCAN)</b>"]
+    <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --> HST(["<b>Health Sciences Technology (HST)</b><br>"]) & MIDB(["<b>MIDB Informatics Hub &amp; Minnesota Supercomputing Institute (MSI)</b><br>"]) & DCAN(["<b>Developmental Cognition and Neuroimaging Lab (DCAN)</b>"])
     A1@{ shape: text}
-    HST@{ shape: rounded}
-    MIDB@{ shape: rounded}
-    DCAN@{ shape: rounded}
     style A1 fill:#BBDEFB
-    style HST fill:#E1BEE7
-    style MIDB fill:#E1BEE7
-    style DCAN fill:#E1BEE7
+    style HST fill:#E1BEE7,stroke:#AA00FF
+    style DCAN fill:#E1BEE7,stroke:#AA00FF
+    style MIDB fill:#E1BEE7,stroke:#AA00FF
     click HST "#health-sciences-technology-hst"
     click MIDB "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
     click DCAN "#dcan-lab"
@@ -456,49 +450,7 @@ The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for
 ## WashU
 The Washington University in St. Louis (WashU) group has oversight of: *Neurology*, *Electronic Health Records (EHR)*, *Ripple*, *Ambra*, *AirTable*, and *HCAC coordination*.
 
-```mermaid
----
-config:
-  layout: dagre
----
-flowchart TB
-    A["<b>Chris Smyser</b><br>Principal Investigator<br>
-    <b>Chad Sylvester</b><br>Co-Investigator"] --> neurology(["<b>Neurology</b>"]) & C(["<b>EHR</b><br>"]) & B["<b>Sauren Ravencroft</b><br>Project Manager"]
-    neurology --> n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Investigators &amp; Study Neuroradiologists"]
-    n1 --> n2["<b>Dimitrios (Jim) Alexopoulos</b>
-    Data Manager, Ambra"]
-    C --> n3["<b>Philip Payne</b><br><b>Albert Lai</b>
-    Co-Investigators"]
-    n3 --> n4["<b>Nicole Venteris</b><br>Project Manager"]
-    B --> n5(["<b>Ripple</b>"]) & n6(["<b>AirTable &amp; Ancillary Studies</b>"])
-    n5 --> n8["<b>Liliana Mueller</b>
-    Programming &amp; Management"]
-    n6 --> n9["<b>Lynn Menchaca</b>
-    AirTable Management<br>"] & n10["<b>Madison Gardner</b>
-    U01 Site Piloting"]
-    A@{ shape: text}
-    B@{ shape: text}
-    n1@{ shape: text}
-    n2@{ shape: text}
-    n3@{ shape: text}
-    n4@{ shape: text}
-    n8@{ shape: text}
-    n9@{ shape: text}
-    n10@{ shape: text}
-    style A fill:#BBDEFB
-    style neurology fill:#E1BEE7,stroke:#000000
-    style C stroke:#000000,fill:#E1BEE7
-    style B fill:#BBDEFB
-    style n1 fill:#BBDEFB
-    style n2 fill:#BBDEFB
-    style n3 fill:#BBDEFB
-    style n4 fill:#BBDEFB
-    style n5 fill:#E1BEE7,stroke:#000000
-    style n6 fill:#E1BEE7,stroke:#000000
-    style n8 fill:#BBDEFB,stroke:none
-    style n9 fill:#BBDEFB
-    style n10 fill:#BBDEFB
-```
+![](https://www.mermaidchart.com/raw/1a26c247-6f63-4ac1-83c9-3607e79beb4a?theme=light&version=v0.1&format=svg)
 
 ## Columbia University
 <div id="columbia" class="table-banner" onclick="toggleCollapse(this)">
