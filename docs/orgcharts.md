@@ -79,7 +79,7 @@ config:
 flowchart TB
     A["<b>Alan Evans</b><br>Principal Investigator"] --> nl["<b>Samir Das</b><br>Associate Director of Software Development"]
     nl --> n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b><br>"]) & B(["<b>Development</b>"])
-    C --> D["<b>Pierre Rioux</b><br>Senior HPC developer"]
+    C --> n12["<b>Bryan Caron</b><br>Director, CBRAIN &amp; NeuroHub - MCIN"]
     n9 --> E["<b>Santiago Torres</b><br>Study Officer"]
     B --> F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
     F --> I["<b>Regis Ongaro-Carcy</b><br>Lead Developer"] & n10["<b>Sruthy Matthew</b><br>Sr. Backend Dev"]
@@ -87,9 +87,10 @@ flowchart TB
     H --> M["<b>Laetitia Faeselier</b><br>Lead Developer"]
     n10 --> n11["<b>George Murad</b>, Jr. Dev"]
     I --> n11
+    n12 --> D["<b>Pierre Rioux</b><br>Senior HPC developer"]
     A@{ shape: text}
     nl@{ shape: text}
-    D@{ shape: text}
+    n12@{ shape: text}
     E@{ shape: text}
     F@{ shape: rounded}
     H@{ shape: rounded}
@@ -99,12 +100,13 @@ flowchart TB
     L@{ shape: text}
     M@{ shape: text}
     n11@{ shape: text}
+    D@{ shape: text}
     style A stroke:#000000,fill:#BBDEFB
     style nl stroke:#000000,fill:#BBDEFB
     style n9 stroke:#000000,fill:#E1BEE7,stroke-width:2px,stroke-dasharray: 0
     style C stroke:#333,fill:#E1BEE7
     style B stroke:#333,fill:#E1BEE7
-    style D stroke:#333,fill:#BBDEFB
+    style n12 fill:#BBDEFB
     style E stroke:#333,fill:#BBDEFB
     style F stroke:#333,fill:#E1BEE7
     style H stroke:#333,fill:#E1BEE7
@@ -114,15 +116,16 @@ flowchart TB
     style L stroke:#000000,fill:#BBDEFB
     style M fill:#BBDEFB,stroke:#000000
     style n11 fill:#BBDEFB
+    style D stroke:#333,fill:#BBDEFB
     click A "#evans"
     click nl "#das"
-    click D "#rioux"
     click E "#torres"
-    click n10 "#matthew"
     click I "#ongaro-carcy"
-    click n11 "#murad"
+    click n10 "#matthew"
     click L "#madjar"
     click M "#faeselier"
+    click n11 "#murad"
+    click D "#rioux"
 ```
 <br>
 
@@ -347,12 +350,13 @@ config:
 ---
 flowchart TB
     A1["<b>Damien Fair</b><br>HDCC MPI<br>
-    <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --> HST(["<b>Health Sciences Technology (HST)</b><br>"]) & MIDB(["<b>MIDB Informatics Hub &amp; Minnesota Supercomputing Institute (MSI)</b><br>"]) & DCAN(["<b>Developmental Cognition and Neuroimaging Lab (DCAN)</b>"])
+    <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --> HST(["<b>Health Sciences Technology (HST)</b><br>"]) & MIDB(["<b>MIDB Informatics Hub &amp; Minnesota Supercomputing Institute (MSI)</b><br>"]) & DCAN(["<b>Developmental Cognition and Neuroimaging Lab (DCAN)</b>"]) & USDTL(["<b>USDTL</b>"])
     A1@{ shape: text}
     style A1 fill:#BBDEFB
     style HST fill:#E1BEE7,stroke:#AA00FF
-    style DCAN fill:#E1BEE7,stroke:#AA00FF
     style MIDB fill:#E1BEE7,stroke:#AA00FF
+    style DCAN fill:#E1BEE7,stroke:#AA00FF
+    style USDTL fill:#E1BEE7,stroke:#AA00FF
     click HST "#health-sciences-technology-hst"
     click MIDB "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
     click DCAN "#dcan-lab"
@@ -361,63 +365,13 @@ flowchart TB
 
 ### Health Sciences Technology
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
-```mermaid
----
-config:
-  layout: dagre
----
-flowchart TB
-    B["<b>Reed McKewan</b><br>HDCC Architect &amp; Data Manager"] --> E["<b>Karen Athy-Penrose</b><br>Data Shelter PM"] & F["<b>Dan Duhon</b><br>DevOps/ETl"] & G["<b>Haley Hutala</b><br>Tableau Engineer/QC Dashboards"] & H["<b>Constantine Aliferis</b><br>Director Insitute Health Informatics"]
-    H --> I["<b>Steve Johnson</b><br>Director Informatics Innovation"] & J["<b>Tim Meyer</b><br>Senior Informatics Engineer/EHR"]
-    B@{ shape: text}
-    E@{ shape: text}
-    F@{ shape: text}
-    G@{ shape: text}
-    H@{ shape: text}
-    I@{ shape: text}
-    J@{ shape: text}
-    style B fill:#BBDEFB,stroke-width:2px,stroke-dasharray: 0,stroke:none
-    style E fill:#BBDEFB
-    style F fill:#BBDEFB
-    style G fill:#BBDEFB
-    style H fill:#BBDEFB
-    style I fill:#BBDEFB
-    style J fill:#BBDEFB
-```
+
+![](https://www.mermaidchart.com/raw/16bb04e3-f6e3-4058-a217-877ae8343c57?theme=light&version=v0.1&format=svg)
 
 ### MIDB Informatics Hub & MSI
 The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://midb.umn.edu/research/informatics) and [Minnesota Supercomputing Institute (MSI)](https://msi.umn.edu/) at UMN provide the following services to the HBCD study: *System Administration*, *Loris Hosting*, *Computing*, *Processing*, and *Data Sharing*.
 
-```mermaid
----
-config:
-  layout: dagre
----
-flowchart TB
-    L["<b>Thomas Pengo</b><br>Co-Director, Informatics Group"] --> M(["<b>Project Management</b>"]) & N(["<b>System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Management</b>"])
-    N --> Q["<b>Jesse Erdman</b><br>Senior SysOps<br>"]
-    O --> n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead<br>
-    <b>Erik Lee</b><br>Pipeline Lead<br>
-    <b>Monalisa Biles</b><br>Analyst"]
-    M --> n6@{ label: "<span style=\"--tw-scale-x:\"><b>Maren Macgregor-Hannah</b><br>HDCC PM</span><br style=\"--tw-scale-x:\">" }
-    P --> n7["<b>Kimberleigh Breen</b><br>Data Manager<br>
-    <b>Borgne Raasch</b><br>Data Steward<br>
-    <b>Naomi Hospodarsky-Sutherland</b><br>Security/Compliance"]
-    L@{ shape: text}
-    Q@{ shape: text}
-    n4@{ shape: text}
-    n6@{ shape: text}
-    n7@{ shape: text}
-    style L fill:#BBDEFB
-    style M fill:#E1BEE7,stroke:#000000
-    style N fill:#E1BEE7,stroke:#000000
-    style O color:#000000,fill:#E1BEE7,stroke:#000000
-    style P fill:#E1BEE7,stroke:#000000
-    style Q fill:#BBDEFB
-    style n4 fill:#BBDEFB
-    style n6 fill:#BBDEFB
-    style n7 fill:#BBDEFB
-```
+![](https://www.mermaidchart.com/raw/fa8b14a3-8b42-4ed6-9167-b3872f2d9855?theme=light&version=v0.1&format=svg)
 
 ### DCAN Lab
 The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
