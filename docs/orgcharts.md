@@ -376,7 +376,37 @@ flowchart TB
 ### Health Sciences Technology
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
 
-<img src="https://www.mermaidchart.com/raw/50815913-6cfb-4b23-a302-553cde2d9b6e?theme=light&version=v0.1&format=svg" width="90%" height="auto" class="center">
+<div style="width: 80%; margin: 0 auto;">
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    B["<b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --> n1(["<b>Project Management</b>"]) & n2(["<b>DevOps</b>"]) & n3(["<b>MRI Dashboard</b>"]) & n4(["<b>EHR</b>"])
+    H["<b>Constantine Aliferis</b><br>Dir. Insitute Health Informatics"] --> I["<b>Steve Johnson</b><br>Director Informatics Innovation<br><b>Tim Meyer</b><br>EHR Informatics Engineer"]
+    n1 --> E["<b>Karen Athy-Penrose</b><br>Data Shelter PM"]
+    n2 --> F["<b>Dan Duhon</b><br>DevOps/ETL"]
+    n3 --> G["<b>Haley Hutala</b><br>Tableau Engineer"]
+    n4 --> H
+    B@{ shape: text}
+    H@{ shape: text}
+    I@{ shape: text}
+    E@{ shape: text}
+    F@{ shape: text}
+    G@{ shape: text}
+    style B fill:#BBDEFB
+    style n1 fill:#E1BEE7,stroke:#000000
+    style n2 fill:#E1BEE7,stroke:#000000
+    style n3 fill:#E1BEE7,stroke:#000000
+    style n4 fill:#E1BEE7,stroke:#000000
+    style H fill:#BBDEFB
+    style I fill:#BBDEFB
+    style E fill:#BBDEFB
+    style F fill:#BBDEFB
+    style G fill:#BBDEFB
+```
+</div>
 
 ### MIDB Informatics Hub & MSI
 The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://midb.umn.edu/research/informatics) and [Minnesota Supercomputing Institute (MSI)](https://msi.umn.edu/) at UMN provide the following services to the HBCD study: *System Administration*, *Loris Hosting*, *Computing*, *Processing*, and *Data Sharing*.
