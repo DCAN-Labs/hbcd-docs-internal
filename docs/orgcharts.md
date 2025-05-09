@@ -351,15 +351,23 @@ config:
 flowchart TB
     A1["<b>Damien Fair</b><br>HDCC MPI<br>
     <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --> HST(["<b>Health Sciences Technology (HST)</b><br>"]) & MIDB(["<b>MIDB Informatics Hub &amp; Minnesota Supercomputing Institute (MSI)</b><br>"]) & DCAN(["<b>Developmental Cognition and Neuroimaging Lab (DCAN)</b>"]) & USDTL(["<b>USDTL</b>"])
+    DCAN --> n1(["<b>Neuroinformatics</b>"]) & n2(["<b>MRI Acquisition</b>"])
+    n1 --> n3@{ label: "<b><span style=\"--tw-scale-x:\">Eric Feczko, PhD</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\"><b>Lucille A. Moore, PhD</b></span><br>" }
+    n2 --> n4@{ label: "<b>Kimberly Weldon, PhD<br></b><span style=\"background-color:\">Seimens Engineer</span>" }
     A1@{ shape: text}
+    n3@{ shape: text}
+    n4@{ shape: text}
     style A1 fill:#BBDEFB
     style HST fill:#E1BEE7,stroke:#AA00FF
     style MIDB fill:#E1BEE7,stroke:#AA00FF
     style DCAN fill:#E1BEE7,stroke:#AA00FF
     style USDTL fill:#E1BEE7,stroke:#AA00FF
+    style n1 fill:#E1BEE7,stroke:#AA00FF
+    style n2 fill:#E1BEE7,stroke:#AA00FF
+    style n3 fill:#BBDEFB
+    style n4 fill:#BBDEFB
     click HST "#health-sciences-technology-hst"
     click MIDB "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
-    click DCAN "#dcan-lab"
 ```
 </div>
 
