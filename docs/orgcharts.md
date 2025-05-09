@@ -411,7 +411,38 @@ flowchart TB
 ### MIDB Informatics Hub & MSI
 The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://midb.umn.edu/research/informatics) and [Minnesota Supercomputing Institute (MSI)](https://msi.umn.edu/) at UMN provide the following services to the HBCD study: *System Administration*, *Loris Hosting*, *Computing*, *Processing*, and *Data Sharing*.
 
-![](https://www.mermaidchart.com/raw/fa8b14a3-8b42-4ed6-9167-b3872f2d9855?theme=light&version=v0.1&format=svg)
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    L["<b>Thomas Pengo</b><br>Co-Director, Informatics Group"] --> M(["<b>Project<br>Management</b>"]) & N(["<b>Advanced<br>SysOps (ASO)</b>"]) & O(["<b>Informatics<br>&amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) & n8(["<b>Security &amp;<br>Compliance</b>"])
+    N --> Q@{ label: "<b style=\"color:\">Jesse Erdman</b><br>Senior SysOps<br><br><b style=\"color:\"><span style=\"--tw-scale-x:\">Kimberleigh Breen</span><br style=\"--tw-scale-x:\"></b>Data Manager<br><br><b>Sriharshitha Anuganti<br></b>DevOps" }
+    O --> n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead<br>
+    <b>Erik Lee</b><br>Pipeline Lead<br>
+    <b>Monalisa Biles</b><br>Analyst"]
+    M --> n6@{ label: "<span style=\"--tw-scale-x:\"><b>Maren Macgregor-Hannah</b><br>HDCC PM</span><br style=\"--tw-scale-x:\">" }
+    P --> n7["<b>Borgne Raasch</b><br>"]
+    n8 --> n9@{ label: "<span style=\"--tw-scale-x:\"><b>Naomi<br>Hospodarsky-Sutherland</b></span><br style=\"--tw-scale-x:\">" }
+    L@{ shape: text}
+    Q@{ shape: text}
+    n4@{ shape: text}
+    n6@{ shape: text}
+    n7@{ shape: text}
+    n9@{ shape: text}
+    style L fill:#BBDEFB
+    style M fill:#E1BEE7,stroke:#333
+    style N fill:#E1BEE7,stroke:#333
+    style O fill:#E1BEE7,stroke:#333
+    style P fill:#E1BEE7,stroke:#333
+    style n8 fill:#E1BEE7,stroke:#333
+    style Q fill:#BBDEFB
+    style n4 fill:#BBDEFB
+    style n6 fill:#BBDEFB
+    style n7 fill:#BBDEFB
+    style n9 fill:#BBDEFB
+```
 
 ### DCAN Lab (potentially remove)
 The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
