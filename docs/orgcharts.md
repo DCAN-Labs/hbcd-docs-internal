@@ -582,7 +582,7 @@ Liana Eisler, <i>Technician</i><br>
 </div>
 
 ## University of Maryland EEG Core
-
+<div style="width: 80%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -609,3 +609,4 @@ flowchart TB
     style n20 fill:#BBDEFB
     style n22 fill:#BBDEFB
 ```
+</div>
