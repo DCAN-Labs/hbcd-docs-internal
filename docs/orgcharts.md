@@ -381,7 +381,7 @@ The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://
 
 ![](https://www.mermaidchart.com/raw/fa8b14a3-8b42-4ed6-9167-b3872f2d9855?theme=light&version=v0.1&format=svg)
 
-### DCAN Lab
+### DCAN Lab (potentially remove)
 The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
 
 <img src="https://www.mermaidchart.com/raw/deb324cd-c386-477d-8b46-f842362da3c8?theme=light&version=v0.1&format=svg" width="80%" height="auto" class="center">
