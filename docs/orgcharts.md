@@ -352,8 +352,8 @@ flowchart TB
     A1["<b>Damien Fair</b><br>HDCC MPI<br>
     <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --> HST(["<b>Health Sciences Technology (HST)</b><br>"]) & MIDB(["<b>MIDB Informatics Hub &amp; Minnesota Supercomputing Institute (MSI)</b><br>"]) & DCAN(["<b>Developmental Cognition and Neuroimaging Lab (DCAN)</b>"]) & USDTL(["<b>USDTL</b>"])
     DCAN --> n1(["<b>Neuroinformatics</b>"]) & n2(["<b>MRI Acquisition</b>"])
-    n1 --> n3@{ label: "<b><span style=\"--tw-scale-x:\">Eric Feczko, PhD</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\"><b>Lucille A. Moore, PhD</b></span><br>" }
-    n2 --> n4@{ label: "<b>Kimberly Weldon, PhD<br></b><span style=\"background-color:\">Seimens Engineer</span>" }
+    n1 --> n3["<b>Eric Feczko, PhD</b><br></b><b>Lucille A. Moore, PhD</b>"]
+    n2 --> n4["<b>Kimberly Weldon, PhD<br>Seimens Engineer"]
     A1@{ shape: text}
     n3@{ shape: text}
     n4@{ shape: text}
