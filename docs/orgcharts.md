@@ -447,14 +447,69 @@ flowchart TB
 ### DCAN Lab (potentially remove)
 The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
 
-<img src="https://www.mermaidchart.com/raw/deb324cd-c386-477d-8b46-f842362da3c8?theme=light&version=v0.1&format=svg" width="80%" height="auto" class="center">
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    D["<b>Damien Fair, PA-C, PhD</b><br>Professor UMN<br>HDCC MPI"] --> n2(["Neuroinformatics"]) & n3(["MRI Acquisition"])
+    n2 --> n1["<b>Lucille A. Moore, PhD</b><br>Software Engineer"] & S["<b>Eric Feczko, PhD</b><br>Neuroscience/Informatics<br>Software Engineer"]
+    n3 --> t1["<b>Kim Weldon, PhD</b><br>Data Acquisition Seimens Engineer"]
+    D@{ shape: text}
+    n1@{ shape: text}
+    S@{ shape: text}
+    t1@{ shape: text}
+    style D stroke:#000000,fill:#BBDEFB
+    style n2 stroke:#000000,fill:#E1BEE7
+    style n3 stroke:#000000,fill:#E1BEE7
+    style n1 fill:#BBDEFB
+    style S stroke:#000000,fill:#BBDEFB
+    style t1 fill:#BBDEFB
+```
 
 ## J. Craig Venter Institute
 
 The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, Fiona, and the QC Dashboard.
 
-![](https://www.mermaidchart.com/raw/cd632b85-d99d-48e5-82b1-553d346b8f2a?theme=light&version=v0.1&format=svg)
-
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    A["<b>Anders Dale, PhD</b><br>PI/Director"] --> n1(["<b>Fiona</b>"]) & n2(["<b>MRI QC</b>"]) & n3(["<b>MRI</b>"]) & n6(["<b>REDCap</b>"]) & n15(["<b>Dashboard</b>"])
+    n1 --> n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead<br>"]
+    n2 --> n9["<b>Donald Hagler, PhD</b><br>QC Lead<br>"]
+    n3 --> n10["<b>Josh Kuperman</b><br>MRI Lead"]
+    n6 --> n4["<b>Janosch Linkersdörfer, PhD</b><br>Data Science Lead"]
+    n9 --> n13@{ label: "<span style=\"--tw-scale-x:\"><b>Tyler Berkness<br></b></span><span style=\"background-color:\">Protocol Violations<br></span><br><span style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b>Sejal Shanbhag<br style=\"--tw-scale-x:\"></b></span></span><span style=\"--tw-scale-x:\">Issue Handling</span>" }
+    n15 --> n4
+    n4 --> n12["<b><b><u>RECap</u></b><br>Joseph Baligh</b><br>Server Admin<br><b>Erika Bolden</b> &amp; <b>Laura Ziemer</b><br>Dev/Admin"] & n18@{ label: "<span style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b><span style=\"--tw-scale-x:\">Amanda Li, MS</span><br style=\"--tw-scale-x:\"></b></span></span><span style=\"--tw-scale-x:\">Biostats Support</span>" } & n17@{ label: "<span style=\"--tw-scale-x:\"><b><b><u>Dashboard</u></b><br>Biplabendu Das</b><br>Backend Dev<br></span><span style=\"--tw-scale-x:\"><b>Olivier Celhay</b><br></span><span style=\"background-color:\">Frontend Dev</span>" }
+    A@{ shape: text}
+    n8@{ shape: text}
+    n9@{ shape: text}
+    n10@{ shape: text}
+    n4@{ shape: text}
+    n13@{ shape: text}
+    n12@{ shape: text}
+    n18@{ shape: text}
+    n17@{ shape: text}
+    style A fill:#BBDEFB
+    style n1 fill:#E1BEE7,stroke:#000000
+    style n2 stroke:#000000,fill:#E1BEE7
+    style n3 stroke:#000000,fill:#E1BEE7
+    style n6 stroke:#000000,fill:#E1BEE7
+    style n15 fill:#E1BEE7,stroke:#000000
+    style n8 fill:#BBDEFB
+    style n9 fill:#BBDEFB
+    style n10 fill:#BBDEFB
+    style n4 fill:#BBDEFB
+    style n13 fill:#BBDEFB
+    style n12 fill:#BBDEFB
+    style n18 fill:#BBDEFB
+    style n17 fill:#BBDEFB
+```
 
 ## WashU
 The Washington University in St. Louis (WashU) group has oversight of: *Neurology*, *Electronic Health Records (EHR)*, *Ripple*, *Ambra*, *AirTable*, and *HCAC coordination*.
