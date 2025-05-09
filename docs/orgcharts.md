@@ -356,6 +356,45 @@ flowchart TD
     style n9 fill:#BBDEFB
 ```
 
+### Non-Consortium-Facing
+
+```mermaid
+---
+config:
+  theme: redux
+---
+flowchart TD
+    A["<b>Leigh MacIntyre</b><br>Associate Director, Project Management- MCIN"] --> B(["Development"]) & n1(["QA"]) & n2(["<b>Architecture</b>"]) & n3(["<b>Dev Ops/Sys Ops</b>"]) & n4(["<b>UI/UX</b>"])
+    B --> n5["<b>Mark Walker<br></b>Software Architect<br><br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
+    n1 --> n6["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
+    n3 --> n8["<b>Francisco Soto<br></b>Manager<br>"]
+    n4 --> n9["<b>Andrew Sawaya<br></b>Lead Designer<br>"]
+    n8 --> n10["<b>Alexandre Meyer<br></b>DevOps Engineer"] & n11["<b>Nataliya Korniyenko<br></b>Sys Admin"]
+    n9 --> n12["<b>Mehrafarin Ekhlaspour<br></b>Visual Design Associate"]
+    A@{ shape: text}
+    n5@{ shape: text}
+    n6@{ shape: text}
+    n8@{ shape: text}
+    n9@{ shape: text}
+    n10@{ shape: text}
+    n11@{ shape: text}
+    n12@{ shape: text}
+    style A fill:#BBDEFB
+    style B fill:#E1BEE7
+    style n1 fill:#E1BEE7
+    style n2 fill:#E1BEE7
+    style n3 fill:#E1BEE7
+    style n4 fill:#E1BEE7
+    style n5 fill:#BBDEFB
+    style n6 fill:#BBDEFB
+    style n8 fill:#BBDEFB
+    style n9 fill:#BBDEFB
+    style n10 fill:#BBDEFB
+    style n11 fill:#BBDEFB
+    style n12 fill:#BBDEFB
+```
+
+
 ## University of Minnesota
 UMN has four main cores that support the HBCD study: 
 
