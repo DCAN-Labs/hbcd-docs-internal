@@ -340,9 +340,9 @@ flowchart TD
 ```
 
 ## University of Minnesota
-UMN has three main cores that support the HBCD study: 
+UMN has four main cores that support the HBCD study: 
 
-<div style="width: 80%; margin: 0 auto;">
+<div style="width: 90%; margin: 0 auto;">
 ```mermaid
 ---
 config:
