@@ -10,6 +10,10 @@ The larger organizational structure of the HBCD Data Coordinating Center (HDCC) 
 <br>
 
 ```mermaid
+---
+config:
+  layout: dagre
+---
 flowchart TB
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --> jvci["<b>JVCI</b>"]
     E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --> lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
@@ -17,12 +21,12 @@ flowchart TB
     n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --> n10["<b>WashU</b><br>"] & ripple["<b>Ripple</b>"] & n12["<b>LIBR</b>"] & lasso
     n16@{ label: "<span style=\"--tw-scale-x:\"><b>Wesley K.<br>Thompson, PhD<br></b>HDCC Assoc Dir,<br>BioStatistics Chair</span><br>" } --> n17@{ label: "<span style=\"color:\"><b>Chun Fan, PhD<br></b></span><span style=\"--tw-scale-x:\">Geolocation Chair</span><br style=\"--tw-scale-x:\">" }
     n12 --> n16
-    n11 --> n18@{ label: "<b>William P. Fifer, PhD<br></b><span style=\"--tw-scale-x:\">Novel Tech Chair</span>" }
     n8 --> n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc. Dir."]
     n7 --> n20@{ label: "<b><span style=\"color:\">Alan Evans</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">PI</span><br style=\"--tw-scale-x:\"><b><span style=\"color:\">Samir Das</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">AD Softw Dev</span>" }
     umn --> reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
     n10 --> n22@{ label: "<b><span style=\"color:\">Chad Sylvester, PhD</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">Co-Investigator</span>" }
-
+    n11 --> n23(["<b>Novel Tech &amp; Wearables</b>"])
+    n23 --> n18["<b>William P. Fifer, PhD</b>, Chair<br><b>Nicolo Pini</b>, Co-I &amp; Developer<br><b>Beth Smith</b>"]
     n2@{ shape: rect}
     jvci@{ shape: rounded}
     E@{ shape: rect}
@@ -38,11 +42,11 @@ flowchart TB
     n12@{ shape: rounded}
     n16@{ shape: text}
     n17@{ shape: text}
-    n18@{ shape: text}
     n19@{ shape: text}
     n20@{ shape: text}
     reed@{ shape: text}
     n22@{ shape: text}
+    n18@{ shape: text}
     style n2 fill:#BBDEFB,stroke:#2962FF
     style jvci fill:#E1BEE7,stroke:#AA00FF
     style E fill:#BBDEFB,stroke:#2962FF
@@ -58,17 +62,17 @@ flowchart TB
     style n12 fill:#E1BEE7,stroke:#AA00FF
     style n16 fill:#BBDEFB
     style n17 fill:#BBDEFB
-    style n18 fill:#BBDEFB
     style n19 fill:#BBDEFB
     style n20 fill:#BBDEFB
     style reed fill:#BBDEFB
     style n22 fill:#BBDEFB
+    style n23 fill:#E1BEE7,stroke:#AA00FF
+    style n18 fill:#BBDEFB
     click jvci "#j-craig-venter-institute"
     click lasso "#lasso"
     click umn "#university-of-minnesota"
     click n7 "#loris"
     click n8 "#umd-eeg-core"
-    click n11 "#columbia"
     click n10 "#washu"
 ```
 
@@ -558,28 +562,6 @@ flowchart TB
     style n9 fill:#BBDEFB
     style n10 fill:#BBDEFB
 ```
-
-## Columbia University
-<div id="columbia" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="text">Columbia (Novel Technologies & Wearables Work Group)</span>
-  <a class="anchor-link" href="#columbia" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="table-arrow">▸</span>
-</div>
-<div class="closed-collapsible-content">
-<br>
-<b>Leadership</b><br>
-William P. Fifer, <i>Co-chair</i><br>
-Dimo Amso, <i>Co-Investigator</i><br>
-Nicolo Pini, <i>Co-Investigator & Pipeline Developer</i><br>
-<br>
-<b>Research Team</b><br>
-Liana Eisler, <i>Technician</i><br>
-<br>
-</div>
 
 ## University of Maryland EEG Core
 <div style="width: 80%; margin: 0 auto;">
