@@ -1,6 +1,5 @@
 ## Elk testing
 
-TEST
 
 ```mermaid
 flowchart TB
