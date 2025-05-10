@@ -84,7 +84,7 @@ config:
 ---
 flowchart TB
     A["<b>Alan Evans</b><br>Principal Investigator"] --- nl["<b>Samir Das</b><br>Associate Director of Software Development"]
-    nl --- n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b><br>"]) & B(["<b>Development</b>"])
+    nl --- n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"]) & B(["<b>Development</b>"])
     C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN &amp; NeuroHub - MCIN"]
     n9 --- E["<b>Santiago Torres</b><br>Study Officer"]
     B --- F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
@@ -109,7 +109,7 @@ flowchart TB
     D@{ shape: text}
     style A stroke:#000000,fill:#BBDEFB
     style nl stroke:#000000,fill:#BBDEFB
-    style n9 stroke:#000000,fill:#E1BEE7,stroke-width:2px,stroke-dasharray: 0
+    style n9 stroke:#000000,fill:#E1BEE7
     style C stroke:#333,fill:#E1BEE7
     style B stroke:#333,fill:#E1BEE7
     style n12 fill:#BBDEFB
