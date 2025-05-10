@@ -117,25 +117,6 @@ flowchart TB
     click n7 "#loris"
     click n8 "#umd-eeg-core"
     click n10 "#washu"
-    jvci@{ shape: rounded}
-    E@{ shape: rect}
-    lasso@{ shape: rounded}
-    umn@{ shape: rounded}
-    n7@{ shape: rounded}
-    n8@{ shape: rounded}
-    n11@{ shape: rounded}
-    lasso1@{ shape: text}
-    n10@{ shape: rounded}
-    ripple@{ shape: rounded}
-    n12@{ shape: rounded}
-    n16@{ shape: rect}
-    n17@{ shape: text}
-    n19@{ shape: rect}
-    n20@{ shape: text}
-    reed@{ shape: text}
-    n22@{ shape: text}
-    n18@{ shape: text}
-    n25@{ shape: stadium}
 ```
 
 box shapes to add:
