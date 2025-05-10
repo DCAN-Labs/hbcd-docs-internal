@@ -82,13 +82,6 @@ flowchart TB
     click n10 "#washu"
 ```
 
-## Overview - Alternative
-```mermaid
-flowchart TB
-    layout: elk
-    n2[<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI] --> jvci[<b>JVCI</b>]
-```
-
 ## LORIS
 ```mermaid
 ---

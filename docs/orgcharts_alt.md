@@ -1,4 +1,11 @@
-## Overview - alternative (LR)
+## Elk testing
+```mermaid
+flowchart TB
+    layout: elk
+    n2[<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI] --> jvci[<b>JVCI</b>]
+```
+
+## Overview - ELK
 
 ```mermaid
 flowchart TB
