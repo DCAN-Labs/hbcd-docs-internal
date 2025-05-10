@@ -18,8 +18,11 @@ flowchart TB
 ## Overview - ELK
 
 ```mermaid
+---
+config:
+  layout: elk
+---
 flowchart TB
-    layout: elk
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --> jvci["<b>JVCI</b>"]
     E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] 
     E --> lasso["<b>Lasso</b>"]
@@ -40,25 +43,6 @@ flowchart TB
     n11 --> n23(["<b>Novel Tech &amp; Wearables</b>"])
     n23 --> n18["<b>William P. Fifer, PhD</b>, Chair<br><b>Nicolo Pini</b>, Co-I &amp; Dev<br><b>Beth Smith</b>"]
     reed --> n25["<b>USDTL</b>"] & n26(["<b>MIDB &amp; MSI</b>"]) & n27(["<b>DCAN Lab</b>"]) & n30(["<b>HST</b>"])
-    jvci@{ shape: rounded}
-    E@{ shape: rect}
-    lasso@{ shape: rounded}
-    umn@{ shape: rounded}
-    n7@{ shape: rounded}
-    n8@{ shape: rounded}
-    n11@{ shape: rounded}
-    lasso1@{ shape: text}
-    n10@{ shape: rounded}
-    ripple@{ shape: rounded}
-    n12@{ shape: rounded}
-    n16@{ shape: rect}
-    n17@{ shape: text}
-    n19@{ shape: rect}
-    n20@{ shape: text}
-    reed@{ shape: text}
-    n22@{ shape: text}
-    n18@{ shape: text}
-    n25@{ shape: stadium}
     style n2 fill:#BBDEFB,stroke:#2962FF
     style jvci fill:#E1BEE7,stroke:#AA00FF
     style E fill:#BBDEFB,stroke:#2962FF
@@ -90,6 +74,30 @@ flowchart TB
     click n7 "#loris"
     click n8 "#umd-eeg-core"
     click n10 "#washu"
+```
+
+box shapes to add:
+
+```
+    jvci@{ shape: rounded}
+    E@{ shape: rect}
+    lasso@{ shape: rounded}
+    umn@{ shape: rounded}
+    n7@{ shape: rounded}
+    n8@{ shape: rounded}
+    n11@{ shape: rounded}
+    lasso1@{ shape: text}
+    n10@{ shape: rounded}
+    ripple@{ shape: rounded}
+    n12@{ shape: rounded}
+    n16@{ shape: rect}
+    n17@{ shape: text}
+    n19@{ shape: rect}
+    n20@{ shape: text}
+    reed@{ shape: text}
+    n22@{ shape: text}
+    n18@{ shape: text}
+    n25@{ shape: stadium}
 ```
 
 ## Columbia University
