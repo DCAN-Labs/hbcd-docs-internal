@@ -17,7 +17,6 @@ markdown_extensions:
       permalink: '🔗'
   
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
   - js/extra.js
 
 extra_css:
@@ -36,10 +35,10 @@ extra_css:
 plugins:
   - search
   - mermaid2:
-      version: "11.6.0"
+      version: "10.6.1"
       arguments:
         startOnLoad: true
-      javascript_url: https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js
+      javascript: https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js
   - git-revision-date-localized:
       type: date
 
