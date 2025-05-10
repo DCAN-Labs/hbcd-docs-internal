@@ -82,6 +82,10 @@ flowchart TB
     click n10 "#washu"
 ```
 
+## Overview - Alt formatting ("elk") example
+
+![](overview_elk.png)
+
 ## LORIS
 ```mermaid
 ---
