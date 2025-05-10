@@ -1,4 +1,4 @@
-# Org Charts Extra
+## Lasso
 
 ```mermaid
 ---
@@ -6,47 +6,73 @@ config:
   theme: redux
 ---
 flowchart TB
-    A["<b>Leigh MacIntyre</b><br>CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary Studies</b>"]) & n2(["<b>WorkGroup<br>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data Loading</b>"]) & n18@{ label: "<b style=\"\">Dev</b>" } & n19(["<b>QA</b>"]) & n20(["<b>Sys/Dev Ops</b>"]) & n21(["<b>UI/UX</b>"])
+    A["<b>Leigh MacIntyre</b><br>CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary Studies</b>"]) & n2(["<b>WorkGroup<br>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data Loading</b>"]) & n18@{ label: "<b><u>Internal</u><br></b><span style=\"--tw-scale-x:\">Dev<br style=\"--tw-scale-x:\">QA<br style=\"--tw-scale-x:\">Dev/SysOps<br style=\"--tw-scale-x:\">UI/UX</span><b></b>" }
     B --> n5["<b>Ellise Elamparo</b><br>Exec Admin"]
     n1 --> n6["<b>Aarushi Chaudhry<br></b>Study Success Manager"]
     n2 --> n7["<b>Jen Zink<br></b>Director,<br>Partnerships &amp; Grant<br>Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
     n3 --> n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan Sterling<br></b>Lead Developer"]
     n4 --> n9["<b>Edson Silva<br></b>Developer<br><br><b>Laetitia Fesselier<br></b>Sr. Developer<br><br><b>Mateus Andre<br></b>Developer"]
-    n18 --> n22@{ label: "<span style=\"--tw-scale-x:\">Mark Walker<br style=\"--tw-scale-x:\"></span>Software Architect<br style=\"--tw-scale-x:\"><br style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\">Daniel Patularu</span><br style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\">Oksana Bodnariuk<br style=\"--tw-scale-x:\">Jonas Vinson<br style=\"--tw-scale-x:\"></span>Developers" }
-    n19 --> n23@{ label: "Vandana Sriram<br><span style=\"--tw-scale-x:\">Anjali Raj Katuri<br>QA Engineers</span>" }
-    n20 --> n24@{ label: "Francisco Soto<br>Manager<br><br><span style=\"--tw-scale-x:\">Alexandre Meyer<br>DevOps<br><br><span style=\"--tw-scale-x:\">Nataliya Korniyenko<br>Sys Admin</span></span>" }
-    n21 --> n25@{ label: "<span style=\"--tw-scale-x:\">Andrew Sawaya<br style=\"--tw-scale-x:\"></span>Lead Designer<br><br><span style=\"--tw-scale-x:\">Mehrafarin Ekhlaspour<br style=\"--tw-scale-x:\"></span>Visual Designer" }
     A@{ shape: text}
-    n18@{ shape: stadium}
+    n18@{ shape: rounded}
     n5@{ shape: text}
     n6@{ shape: text}
     n7@{ shape: text}
     n8@{ shape: text}
     n9@{ shape: text}
-    n22@{ shape: text}
-    n23@{ shape: text}
-    n24@{ shape: text}
-    n25@{ shape: text}
     style A fill:#BBDEFB
     style B fill:#E1BEE7
     style n1 fill:#E1BEE7
     style n2 fill:#E1BEE7
     style n3 fill:#E1BEE7
     style n4 fill:#E1BEE7
-    style n18 fill:#FFCDD2
-    style n19 fill:#FFCDD2
-    style n20 fill:#FFCDD2
-    style n21 fill:#FFCDD2
+    style n18 fill:#E1BEE7
     style n5 fill:#BBDEFB
     style n6 fill:#BBDEFB
     style n7 fill:#BBDEFB
     style n8 fill:#BBDEFB
     style n9 fill:#BBDEFB
-    style n22 fill:#BBDEFB
-    style n23 fill:#BBDEFB
-    style n24 fill:#BBDEFB
-    style n25 fill:#BBDEFB
+    click n18 "#internal-non-consortium-facing"
 ```
+
+
+### Internal (Non-Consortium-Facing)
+```mermaid
+---
+config:
+  theme: redux
+---
+flowchart TB
+    B(["<b>Development</b>"]) --> n5["<b>Mark Walker<br></b>Software Architect<br><br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
+    n1(["<b>QA</b>"]) --> n6["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
+    n3(["<b>Dev Ops/Sys Ops</b>"]) --> n8@{ label: "<b>Francisco Soto<br></b>Manager<br><br><span style=\"--tw-scale-x:\"><b>Alexandre Meyer<br style=\"--tw-scale-x:\"></b></span>DevOps Engineer<br><br><span style=\"--tw-scale-x:\"><b>Nataliya Korniyenko<br style=\"--tw-scale-x:\"></b></span>Sys Admin" }
+    n4(["<b>UI/UX</b>"]) --> n9@{ label: "<b>Andrew Sawaya<br></b>Lead Designer<br><br><span style=\"--tw-scale-x:\"><b>Mehrafarin Ekhlaspour<br style=\"--tw-scale-x:\"></b></span>Visual Design" }
+    n5@{ shape: text}
+    n6@{ shape: text}
+    n8@{ shape: text}
+    n9@{ shape: text}
+    style B fill:#E1BEE7
+    style n5 fill:#BBDEFB
+    style n1 fill:#E1BEE7
+    style n6 fill:#BBDEFB
+    style n3 fill:#E1BEE7
+    style n8 fill:#BBDEFB
+    style n4 fill:#E1BEE7
+    style n9 fill:#BBDEFB
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## MIDB roles & resp table
 <div id="midb-msi" class="table-banner" onclick="toggleCollapse(this)">
