@@ -85,6 +85,7 @@ flowchart TB
 ## Overview - Alternative
 
 <pre> ```mermaid flowchart TB layout: elk A --> B B --> C ``` </pre>
+<pre> ```mermaid flowchart TB layout: elk A[Start] --> B[Process] B --> C[End] ``` </pre>
 
 ```mermaid
 ---
