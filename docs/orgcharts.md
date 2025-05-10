@@ -396,7 +396,7 @@ flowchart TD
 
 
 ## University of Minnesota
-UMN has four main cores that support the HBCD study: 
+There are several groups that fall under the oversight of UMN. The US Drug Testing Laboratories ([USDTL](https://www.usdtl.com/)) handles toxicology. The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. The remaining groups are described in greater detail below.  
 
 <div style="width: 90%; margin: 0 auto;">
 ```mermaid
@@ -498,29 +498,6 @@ flowchart TB
     style n9 fill:#BBDEFB
 ```
 
-### DCAN Lab (potentially remove)
-The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
-
-```mermaid
----
-config:
-  layout: dagre
----
-flowchart TB
-    D["<b>Damien Fair, PA-C, PhD</b><br>Professor UMN<br>HDCC MPI"] --- n2(["Neuroinformatics"]) & n3(["MRI Acquisition"])
-    n2 --- n1["<b>Lucille A. Moore, PhD</b><br>Software Engineer"] & S["<b>Eric Feczko, PhD</b><br>Neuroscience/Informatics<br>Software Engineer"]
-    n3 --- t1["<b>Kim Weldon, PhD</b><br>Data Acquisition Seimens Engineer"]
-    D@{ shape: text}
-    n1@{ shape: text}
-    S@{ shape: text}
-    t1@{ shape: text}
-    style D stroke:#000000,fill:#BBDEFB
-    style n2 stroke:#000000,fill:#E1BEE7
-    style n3 stroke:#000000,fill:#E1BEE7
-    style n1 fill:#BBDEFB
-    style S stroke:#000000,fill:#BBDEFB
-    style t1 fill:#BBDEFB
-```
 
 ## J. Craig Venter Institute
 
