@@ -35,7 +35,7 @@ extra_css:
 plugins:
   - search
   - mermaid2:
-      version: "10.6"
+      version: "11.6.0"
       arguments:
         startOnLoad: true
         javascript: https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js
