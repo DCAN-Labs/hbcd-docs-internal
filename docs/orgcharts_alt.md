@@ -60,6 +60,52 @@ flowchart TB
 ```
 
 
+## LORIS -elk
+
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+    A["<b>Alan Evans</b><br>Principal Investigator"] --- nl["<b>Samir Das</b><br>Associate Director of Software Development"]
+    nl --- n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"]) & B(["<b>Development</b>"])
+    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; NeuroHub - MCIN"]
+    n9 --- E["<b>Santiago Torres</b><br>Study Officer"]
+    B --- F(["<b>Behavior (BHV)</b>"]) & H(["<b>EEG/Biosamples</b>"]) & G(["<b>MRI</b>"])
+    F --- I["<b>Regis Ongaro-Carcy</b><br>Lead Developer"] & n10["<b>Sruthy Matthew</b><br>Sr. Backend Dev"]
+    G --- L["<b>Cecile Madjar</b><br>Lead developer"]
+    H --- M["<b>Laetitia Faeselier</b><br>Lead Developer"]
+    n10 --- n11["<b>George Murad</b>, Jr. Dev"]
+    I --- n11
+    n12 --- D["<b>Pierre Rioux</b><br>Senior HPC developer"]
+    style A stroke:#2962FF,fill:#BBDEFB
+    style nl stroke:#2962FF,fill:#BBDEFB
+    style n9 stroke:#AA00FF,fill:#E1BEE7
+    style C stroke:#AA00FF,fill:#E1BEE7
+    style B stroke:#AA00FF,fill:#E1BEE7
+    style n12 stroke:#2962FF,fill:#BBDEFB
+    style E stroke:#2962FF,fill:#BBDEFB
+    style F stroke:#AA00FF,fill:#E1BEE7
+    style H stroke:#AA00FF,fill:#E1BEE7
+    style G stroke:#AA00FF,fill:#E1BEE7
+    style I stroke:#2962FF,fill:#BBDEFB
+    style n10 stroke:#2962FF,fill:#BBDEFB
+    style L stroke:#2962FF,fill:#BBDEFB
+    style M stroke:#2962FF,fill:#BBDEFB
+    style n11 stroke:#2962FF,fill:#BBDEFB
+    style D stroke:#2962FF,fill:#BBDEFB
+    click A "#evans"
+    click nl "#das"
+    click E "#torres"
+    click I "#ongaro-carcy"
+    click n10 "#matthew"
+    click L "#madjar"
+    click M "#faeselier"
+    click n11 "#murad"
+    click D "#rioux"
+```
+
 
 ## Columbia University
 

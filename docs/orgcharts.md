@@ -145,6 +145,10 @@ flowchart TB
 ```
 <br>
 
+## LORIS - ALT
+
+![](loris_alt.png)
+
 ### Roles & Responsibilities
 <div id="evans" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
