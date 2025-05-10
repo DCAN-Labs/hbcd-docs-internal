@@ -5,6 +5,16 @@ flowchart TB
     n2[<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI] --> jvci[<b>JVCI</b>]
 ```
 
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    n2[<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI] --> jvci[<b>JVCI</b>]
+```
+
+
 ## Overview - ELK
 
 ```mermaid
