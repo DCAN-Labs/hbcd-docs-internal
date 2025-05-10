@@ -93,10 +93,10 @@ flowchart TB
     E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --> lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
     lasso --> lasso1["<b>Leigh MacIntyre</b><br>MCIN Assoc Dir, PM"]
     n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --> n10["<b>WashU</b><br>"] & ripple["<b>Ripple</b>"] & n12["<b>LIBR</b>"] & lasso
-    n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --> n17@{ label: "<span style=\"color:\"><b>Chun Fan, PhD<br></b></span><span style=\"--tw-scale-x:\">Geolocation Chair</span><br style=\"--tw-scale-x:\">" }
+    n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --> n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
     n12 --> n16
     n8 --> n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc. Dir."]
-    n7 --> n20@{ label: "<b><span style=\"color:\">Alan Evans</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">PI</span><br style=\"--tw-scale-x:\"><b><span style=\"color:\">Samir Das</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">AD Softw Dev</span>" }
+    n7 --> n20["<b>Alan Evans</b><br>PI<br><b>Samir Das</b><br>AD Softw Dev"]
     umn --> reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
     n10 --> n22@{ label: "<b><span style=\"color:\">Chad<br>Sylvester, PhD</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">Co-Investigator</span>" }
     n11 --> n23(["<b>Novel Tech &amp; Wearables</b>"])
