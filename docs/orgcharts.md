@@ -83,6 +83,7 @@ flowchart TB
 ```
 
 ## Overview - alternative (LR)
+<div style="width: 80%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -155,6 +156,7 @@ flowchart LR
     click n8 "#umd-eeg-core"
     click n10 "#washu"
 ```
+</div>
 
 ## LORIS
 ```mermaid
