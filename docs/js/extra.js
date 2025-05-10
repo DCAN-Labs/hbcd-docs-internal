@@ -1,23 +1,3 @@
-// Mermaid diagram formatting
-document.addEventListener("DOMContentLoaded", function () {
-  // Open external links in new tab
-  const externalLinks = document.querySelectorAll('a[href^="http"]:not([target="_blank"])');
-  externalLinks.forEach(function(link) {
-    link.setAttribute('target', '_blank'); 
-    link.setAttribute('rel', 'noopener noreferrer');
-  });
-
-  // Initialize Mermaid with ELK layout
-  mermaid.initialize({
-    startOnLoad: true,
-    theme: "default",
-    flowchart: {
-      defaultRenderer: "elk"
-    },
-    layout: "elk"
-  });
-});
-
 // Collapsible content: toggles open class AND rotate class to ON when arrow is clicked to expand/collapse the section.
 function toggleCollapse(element) {
 const collapsibleContent = element.nextElementSibling;
