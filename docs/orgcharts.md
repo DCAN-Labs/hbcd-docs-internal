@@ -86,13 +86,7 @@ flowchart TB
 ```mermaid
 flowchart TB
     layout: elk
-    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --> jvci["<b>JVCI</b>"]
-    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] 
-    E --> lasso["<b>Lasso</b>"]
-    E --> umn["<b>UMN</b>"]
-    E --> n7["<b>LORIS</b>"]
-    E --> n8["<b>UMD EEG Core</b>"]
-    E --> n11["<b>Columbia</b>"]
+    n2[<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI] --> jvci[<b>JVCI</b>]
 ```
 
 ## LORIS

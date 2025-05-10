@@ -1,25 +1,28 @@
 ## Overview - alternative (LR)
-<div style="width: 80%; margin: 0 auto;">
+
 ```mermaid
----
-config:
-  layout: dagre
----
-flowchart LR
+flowchart TB
+    layout: elk
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --> jvci["<b>JVCI</b>"]
-    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --> lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
+    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] 
+    E --> lasso["<b>Lasso</b>"]
+    E --> umn["<b>UMN</b>"]
+    E --> n7["<b>LORIS</b>"]
+    E --> n8["<b>UMD EEG Core</b>"]
+    E --> n11["<b>Columbia</b>"]
     lasso --> lasso1["<b>Leigh MacIntyre</b><br>MCIN Assoc Dir, PM"]
-    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --> n10["<b>WashU</b><br>"] & ripple["<b>Ripple</b>"] & n12["<b>LIBR</b>"] & lasso
-    n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --> n17@{ label: "<span style=\"color:\"><b>Chun Fan, PhD<br></b></span><span style=\"--tw-scale-x:\">Geolocation Chair</span><br style=\"--tw-scale-x:\">" }
+    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] 
+    n1 --> n10["<b>WashU</b><br>"] & ripple["<b>Ripple</b>"] & n12["<b>LIBR</b>"] & lasso
+    n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] 
+    n16 --> n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
     n12 --> n16
     n8 --> n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc. Dir."]
-    n7 --> n20@{ label: "<b><span style=\"color:\">Alan Evans</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">PI</span><br style=\"--tw-scale-x:\"><b><span style=\"color:\">Samir Das</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">AD Softw Dev</span>" }
+    n7 --> n20["<b>Alan Evans</b><br>PI<br><b>Samir Das</b><br>AD Softw Dev"]
     umn --> reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
-    n10 --> n22@{ label: "<b><span style=\"color:\">Chad<br>Sylvester, PhD</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">Co-Investigator</span>" }
+    n10 --> n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n11 --> n23(["<b>Novel Tech &amp; Wearables</b>"])
     n23 --> n18["<b>William P. Fifer, PhD</b>, Chair<br><b>Nicolo Pini</b>, Co-I &amp; Dev<br><b>Beth Smith</b>"]
-    reed --> n25@{ label: "<span style=\"--tw-scale-x:\"><b>USDTL</b></span>" } & n26(["<b>MIDB &amp; MSI</b>"]) & n27(["<b>DCAN Lab</b>"]) & n30(["<b>HST</b>"])
-    n2@{ shape: rect}
+    reed --> n25["<b>USDTL</b>"] & n26(["<b>MIDB &amp; MSI</b>"]) & n27(["<b>DCAN Lab</b>"]) & n30(["<b>HST</b>"])
     jvci@{ shape: rounded}
     E@{ shape: rect}
     lasso@{ shape: rounded}
@@ -28,7 +31,6 @@ flowchart LR
     n8@{ shape: rounded}
     n11@{ shape: rounded}
     lasso1@{ shape: text}
-    n1@{ shape: rect}
     n10@{ shape: rounded}
     ripple@{ shape: rounded}
     n12@{ shape: rounded}
@@ -72,7 +74,6 @@ flowchart LR
     click n8 "#umd-eeg-core"
     click n10 "#washu"
 ```
-</div>
 
 ## Columbia University
 
