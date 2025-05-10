@@ -332,12 +332,12 @@ config:
   theme: redux
 ---
 flowchart TB
-    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary Studies</b>"]) & n2(["<b>WorkGroup<br>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data Loading</b>"]) & n18@{ label: "<b style=\"color:\"><u>Internal</u><br></b>(<i>Click for Details</i>)" }
+    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<b>WorkGroup<br>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"]) & n18@{ label: "<b style=\"color:\"><u>Internal</u><br></b>(<i>Click for Details</i>)" }
     B --> n5["<b>Ellise Elamparo</b><br>Exec Admin"]
-    n1 --> n6["<b>Aarushi Chaudhry<br></b>Study Success Manager"]
+    n1 --> n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
     n2 --> n7["<b>Jen Zink<br></b>Director,<br>Partnerships &amp; Grant<br>Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-    n3 --> n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan Sterling<br></b>Lead Developer"]
-    n4 --> n9["<b>Edson Silva<br></b>Developer<br><br><b>Laetitia Fesselier<br></b>Sr. Developer<br><br><b>Mateus Andre<br></b>Developer"]
+    n3 --> n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan<br>Sterling<br></b>Lead Dev"]
+    n4 --> n9@{ label: "<span style=\"--tw-scale-x:\"><b>Laetitia Fesselier<br style=\"--tw-scale-x:\"></b></span>Sr. Dev<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Dev" }
     A@{ shape: text}
     n18@{ shape: stadium}
     n5@{ shape: text}
