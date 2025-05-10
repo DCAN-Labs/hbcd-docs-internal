@@ -500,6 +500,7 @@ flowchart TB
     style n7 fill:#BBDEFB
     style n9 fill:#BBDEFB
 ```
+<br>
 
 <div id="midb-msi" class="table-banner" onclick="toggleCollapse(this)">
   <span class="table-text">Roles & Responsibilities</span>
