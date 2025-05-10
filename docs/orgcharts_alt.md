@@ -3,9 +3,11 @@
 ```mermaid
 ---
 config:
-  layout: elk
+  flowchart:
+    defaultRenderer: "elk"
+    useMaxWidth: false
 ---
-flowchart TB
+flowchart-v2 TB
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --> jvci["<b>JVCI</b>"]
     E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] 
     E --> lasso["<b>Lasso</b>"]
