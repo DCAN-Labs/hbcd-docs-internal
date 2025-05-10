@@ -9,6 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// Mermaid enable elk layout
+document.addEventListener("DOMContentLoaded", function () {
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: "default",
+    flowchart: {
+      defaultRenderer: "elk"
+    },
+    layout: "elk"
+  });
+});
+
 // Collapsible content: toggles open class AND rotate class to ON when arrow is clicked to expand/collapse the section.
 function toggleCollapse(element) {
 const collapsibleContent = element.nextElementSibling;
