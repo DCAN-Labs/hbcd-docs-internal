@@ -5,7 +5,7 @@ The larger organizational structure of the HBCD Data Coordinating Center (HDCC) 
 
 <div id="faq-subids" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text"><b>NOTE:</b> These org charts emphasize functional structure, not reporting lines details.</span>
+    <span class="text"><b>NOTE:</b> These org charts emphasize functional structure within the context of HDCC, not reporting line details of individual organizations.</span>
 </div>
 <br>
 
@@ -15,18 +15,18 @@ config:
   layout: dagre
 ---
 flowchart TB
-    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --> jvci["<b>JVCI</b>"]
-    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --> lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
-    lasso --> lasso1["<b>Leigh MacIntyre</b><br>Assoc Dir, PM - MCIN"]
-    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --> n10["<b>WashU</b><br>"] & ripple["<b>Ripple</b>"] & n12["<b>LIBR</b>"] & lasso
-    n16@{ label: "<span style=\"--tw-scale-x:\"><b>Wesley K.<br>Thompson, PhD<br></b>HDCC Assoc Dir,<br>BioStatistics Chair</span><br>" } --> n17@{ label: "<span style=\"color:\"><b>Chun Fan, PhD<br></b></span><span style=\"--tw-scale-x:\">Geolocation Chair</span><br style=\"--tw-scale-x:\">" }
-    n12 --> n16
-    n8 --> n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc. Dir."]
-    n7 --> n20@{ label: "<b><span style=\"color:\">Alan Evans</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">PI</span><br style=\"--tw-scale-x:\"><b><span style=\"color:\">Samir Das</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">AD Softw Dev</span>" }
-    umn --> reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
-    n10 --> n22@{ label: "<b><span style=\"color:\">Chad Sylvester, PhD</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">Co-Investigator</span>" }
-    n11 --> n23(["<b>Novel Tech &amp; Wearables</b>"])
-    n23 --> n18["<b>William P. Fifer, PhD</b>, Chair<br><b>Nicolo Pini</b>, Co-I &amp; Developer<br><b>Beth Smith</b>"]
+    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --o jvci["<b>JVCI</b>"]
+    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --o lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
+    lasso --o lasso1["<b>Leigh MacIntyre</b><br>Assoc Dir, PM - MCIN"]
+    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --o n10["<b>WashU</b><br>"] & ripple["<b>Ripple</b>"] & n12["<b>LIBR</b>"] & lasso
+    n16@{ label: "<span style=\"--tw-scale-x:\"><b>Wesley K.<br>Thompson, PhD<br></b>HDCC Assoc Dir,<br>BioStatistics Chair</span><br>" } --o n17@{ label: "<span style=\"color:\"><b>Chun Fan, PhD<br></b></span><span style=\"--tw-scale-x:\">Geolocation Chair</span><br style=\"--tw-scale-x:\">" }
+    n12 --o n16
+    n8 --o n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc. Dir."]
+    n7 --o n20@{ label: "<b><span style=\"color:\">Alan Evans</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">PI</span><br style=\"--tw-scale-x:\"><b><span style=\"color:\">Samir Das</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">AD Softw Dev</span>" }
+    umn --o reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
+    n10 --o n22@{ label: "<b><span style=\"color:\">Chad Sylvester, PhD</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">Co-Investigator</span>" }
+    n11 --o n23(["<b>Novel Tech &amp; Wearables</b>"])
+    n23 --o n18["<b>William P. Fifer, PhD</b>, Chair<br><b>Nicolo Pini</b>, Co-I &amp; Developer<br><b>Beth Smith</b>"]
     n2@{ shape: rect}
     jvci@{ shape: rounded}
     E@{ shape: rect}
@@ -83,17 +83,17 @@ config:
   layout: dagre
 ---
 flowchart TB
-    A["<b>Alan Evans</b><br>Principal Investigator"] --> nl["<b>Samir Das</b><br>Associate Director of Software Development"]
-    nl --> n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b><br>"]) & B(["<b>Development</b>"])
-    C --> n12["<b>Bryan Caron</b><br>Director, CBRAIN &amp; NeuroHub - MCIN"]
-    n9 --> E["<b>Santiago Torres</b><br>Study Officer"]
-    B --> F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
-    F --> I["<b>Regis Ongaro-Carcy</b><br>Lead Developer"] & n10["<b>Sruthy Matthew</b><br>Sr. Backend Dev"]
-    G --> L["<b>Cecile Madjar</b><br>Lead developer"]
-    H --> M["<b>Laetitia Faeselier</b><br>Lead Developer"]
-    n10 --> n11["<b>George Murad</b>, Jr. Dev"]
-    I --> n11
-    n12 --> D["<b>Pierre Rioux</b><br>Senior HPC developer"]
+    A["<b>Alan Evans</b><br>Principal Investigator"] --o nl["<b>Samir Das</b><br>Associate Director of Software Development"]
+    nl --o n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b><br>"]) & B(["<b>Development</b>"])
+    C --o n12["<b>Bryan Caron</b><br>Director, CBRAIN &amp; NeuroHub - MCIN"]
+    n9 --o E["<b>Santiago Torres</b><br>Study Officer"]
+    B --o F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
+    F --o I["<b>Regis Ongaro-Carcy</b><br>Lead Developer"] & n10["<b>Sruthy Matthew</b><br>Sr. Backend Dev"]
+    G --o L["<b>Cecile Madjar</b><br>Lead developer"]
+    H --o M["<b>Laetitia Faeselier</b><br>Lead Developer"]
+    n10 --o n11["<b>George Murad</b>, Jr. Dev"]
+    I --o n11
+    n12 --o D["<b>Pierre Rioux</b><br>Senior HPC developer"]
     A@{ shape: text}
     nl@{ shape: text}
     n12@{ shape: text}
@@ -331,12 +331,12 @@ config:
   theme: redux
 ---
 flowchart TD
-    A["<b>Leigh MacIntyre</b><br>Associate Director, Project Management- MCIN"] --> B(["<b>Lasso Training Scheduling<br>(Pre-Release)</b>"]) & n1(["<b>Ancillary Studies</b>"]) & n2(["<b>WorkGroup Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data Loading</b>"])
-    B --> n5["<b>Ellise Elamparo</b><br>Exec Admin"]
-    n1 --> n6["<b>Aarushi Chaudhry<br></b>Study Success Manager"]
-    n2 --> n7["<b>Jen Zink<br></b>Director, Partnerships &amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-    n3 --> n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan Sterling<br></b>Lead Developer"]
-    n4 --> n9["<b>Edson Silva<br></b>Developer<br><br><b>Laetitia Fesselier<br></b>Sr. Developer<br><br><b>Mateus Andre<br></b>Developer"]
+    A["<b>Leigh MacIntyre</b><br>Associate Director, Project Management- MCIN"] --o B(["<b>Lasso Training Scheduling<br>(Pre-Release)</b>"]) & n1(["<b>Ancillary Studies</b>"]) & n2(["<b>WorkGroup Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data Loading</b>"])
+    B --o n5["<b>Ellise Elamparo</b><br>Exec Admin"]
+    n1 --o n6["<b>Aarushi Chaudhry<br></b>Study Success Manager"]
+    n2 --o n7["<b>Jen Zink<br></b>Director, Partnerships &amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
+    n3 --o n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan Sterling<br></b>Lead Developer"]
+    n4 --o n9["<b>Edson Silva<br></b>Developer<br><br><b>Laetitia Fesselier<br></b>Sr. Developer<br><br><b>Mateus Andre<br></b>Developer"]
     A@{ shape: text}
     n5@{ shape: text}
     n6@{ shape: text}
@@ -364,13 +364,13 @@ config:
   theme: redux
 ---
 flowchart TD
-    A["<b>Leigh MacIntyre</b><br>Associate Director, Project Management- MCIN"] --> B(["Development"]) & n1(["QA"]) & n2(["<b>Architecture</b>"]) & n3(["<b>Dev Ops/Sys Ops</b>"]) & n4(["<b>UI/UX</b>"])
-    B --> n5["<b>Mark Walker<br></b>Software Architect<br><br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
-    n1 --> n6["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
-    n3 --> n8["<b>Francisco Soto<br></b>Manager<br>"]
-    n4 --> n9["<b>Andrew Sawaya<br></b>Lead Designer<br>"]
-    n8 --> n10["<b>Alexandre Meyer<br></b>DevOps Engineer"] & n11["<b>Nataliya Korniyenko<br></b>Sys Admin"]
-    n9 --> n12["<b>Mehrafarin Ekhlaspour<br></b>Visual Design Associate"]
+    A["<b>Leigh MacIntyre</b><br>Associate Director, Project Management- MCIN"] --o B(["Development"]) & n1(["QA"]) & n2(["<b>Architecture</b>"]) & n3(["<b>Dev Ops/Sys Ops</b>"]) & n4(["<b>UI/UX</b>"])
+    B --o n5["<b>Mark Walker<br></b>Software Architect<br><br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
+    n1 --o n6["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
+    n3 --o n8["<b>Francisco Soto<br></b>Manager<br>"]
+    n4 --o n9["<b>Andrew Sawaya<br></b>Lead Designer<br>"]
+    n8 --o n10["<b>Alexandre Meyer<br></b>DevOps Engineer"] & n11["<b>Nataliya Korniyenko<br></b>Sys Admin"]
+    n9 --o n12["<b>Mehrafarin Ekhlaspour<br></b>Visual Design Associate"]
     A@{ shape: text}
     n5@{ shape: text}
     n6@{ shape: text}
@@ -406,10 +406,10 @@ config:
 ---
 flowchart TB
     A1["<b>Damien Fair</b><br>HDCC MPI<br>
-    <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --> HST(["<b>Health Sciences Technology (HST)</b><br>"]) & MIDB(["<b>MIDB Informatics Hub &amp; Minnesota Supercomputing Institute (MSI)</b><br>"]) & DCAN(["<b>Developmental Cognition and Neuroimaging Lab (DCAN)</b>"]) & USDTL(["<b>USDTL</b>"])
-    DCAN --> n1(["<b>Neuroinformatics</b>"]) & n2(["<b>MRI Acquisition</b>"])
-    n1 --> n3["<b>Eric Feczko, PhD</b><br></b><b>Lucille A. Moore, PhD</b>"]
-    n2 --> n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
+    <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --o HST(["<b>Health Sciences Technology (HST)</b><br>"]) & MIDB(["<b>MIDB Informatics Hub &amp; Minnesota Supercomputing Institute (MSI)</b><br>"]) & DCAN(["<b>Developmental Cognition and Neuroimaging Lab (DCAN)</b>"]) & USDTL(["<b>USDTL</b>"])
+    DCAN --o n1(["<b>Neuroinformatics</b>"]) & n2(["<b>MRI Acquisition</b>"])
+    n1 --o n3["<b>Eric Feczko, PhD</b><br></b><b>Lucille A. Moore, PhD</b>"]
+    n2 --o n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
     A1@{ shape: text}
     n3@{ shape: text}
     n4@{ shape: text}
@@ -437,12 +437,12 @@ config:
   layout: dagre
 ---
 flowchart TB
-    B["<b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --> n1(["<b>Project Management</b>"]) & n2(["<b>DevOps</b>"]) & n3(["<b>MRI Dashboard</b>"]) & n4(["<b>EHR</b>"])
-    H["<b>Constantine Aliferis</b><br>Dir. Insitute Health Informatics"] --> I["<b>Steve Johnson</b><br>Director Informatics Innovation<br><b>Tim Meyer</b><br>EHR Informatics Engineer"]
-    n1 --> E["<b>Karen Athy-Penrose</b><br>Data Shelter PM"]
-    n2 --> F["<b>Dan Duhon</b><br>DevOps/ETL"]
-    n3 --> G["<b>Haley Hutala</b><br>Tableau Engineer"]
-    n4 --> H
+    B["<b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --o n1(["<b>Project Management</b>"]) & n2(["<b>DevOps</b>"]) & n3(["<b>MRI Dashboard</b>"]) & n4(["<b>EHR</b>"])
+    H["<b>Constantine Aliferis</b><br>Dir. Insitute Health Informatics"] --o I["<b>Steve Johnson</b><br>Director Informatics Innovation<br><b>Tim Meyer</b><br>EHR Informatics Engineer"]
+    n1 --o E["<b>Karen Athy-Penrose</b><br>Data Shelter PM"]
+    n2 --o F["<b>Dan Duhon</b><br>DevOps/ETL"]
+    n3 --o G["<b>Haley Hutala</b><br>Tableau Engineer"]
+    n4 --o H
     B@{ shape: text}
     H@{ shape: text}
     I@{ shape: text}
@@ -471,14 +471,14 @@ config:
   layout: dagre
 ---
 flowchart TB
-    L["<b>Thomas Pengo</b><br>Co-Director, Informatics Group"] --> M(["<b>Project<br>Management</b>"]) & N(["<b>Advanced<br>SysOps (ASO)</b>"]) & O(["<b>Informatics<br>&amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) & n8(["<b>Security &amp;<br>Compliance</b>"])
-    N --> Q@{ label: "<b style=\"color:\">Jesse Erdman</b><br>Senior SysOps<br><br><b style=\"color:\"><span style=\"--tw-scale-x:\">Kimberleigh Breen</span><br style=\"--tw-scale-x:\"></b>Data Manager<br><br><b>Sriharshitha Anuganti<br></b>DevOps" }
-    O --> n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead<br>
+    L["<b>Thomas Pengo</b><br>Co-Director, Informatics Group"] --o M(["<b>Project<br>Management</b>"]) & N(["<b>Advanced<br>SysOps (ASO)</b>"]) & O(["<b>Informatics<br>&amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) & n8(["<b>Security &amp;<br>Compliance</b>"])
+    N --o Q@{ label: "<b style=\"color:\">Jesse Erdman</b><br>Senior SysOps<br><br><b style=\"color:\"><span style=\"--tw-scale-x:\">Kimberleigh Breen</span><br style=\"--tw-scale-x:\"></b>Data Manager<br><br><b>Sriharshitha Anuganti<br></b>DevOps" }
+    O --o n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead<br>
     <b>Erik Lee</b><br>Pipeline Lead<br>
     <b>Monalisa Biles</b><br>Analyst"]
-    M --> n6@{ label: "<span style=\"--tw-scale-x:\"><b>Maren Macgregor-Hannah</b><br>HDCC PM</span><br style=\"--tw-scale-x:\">" }
-    P --> n7["<b>Borgne Raasch</b><br>"]
-    n8 --> n9@{ label: "<span style=\"--tw-scale-x:\"><b>Naomi<br>Hospodarsky-Sutherland</b></span><br style=\"--tw-scale-x:\">" }
+    M --o n6@{ label: "<span style=\"--tw-scale-x:\"><b>Maren Macgregor-Hannah</b><br>HDCC PM</span><br style=\"--tw-scale-x:\">" }
+    P --o n7["<b>Borgne Raasch</b><br>"]
+    n8 --o n9@{ label: "<span style=\"--tw-scale-x:\"><b>Naomi<br>Hospodarsky-Sutherland</b></span><br style=\"--tw-scale-x:\">" }
     L@{ shape: text}
     Q@{ shape: text}
     n4@{ shape: text}
@@ -507,9 +507,9 @@ config:
   layout: dagre
 ---
 flowchart TB
-    D["<b>Damien Fair, PA-C, PhD</b><br>Professor UMN<br>HDCC MPI"] --> n2(["Neuroinformatics"]) & n3(["MRI Acquisition"])
-    n2 --> n1["<b>Lucille A. Moore, PhD</b><br>Software Engineer"] & S["<b>Eric Feczko, PhD</b><br>Neuroscience/Informatics<br>Software Engineer"]
-    n3 --> t1["<b>Kim Weldon, PhD</b><br>Data Acquisition Seimens Engineer"]
+    D["<b>Damien Fair, PA-C, PhD</b><br>Professor UMN<br>HDCC MPI"] --o n2(["Neuroinformatics"]) & n3(["MRI Acquisition"])
+    n2 --o n1["<b>Lucille A. Moore, PhD</b><br>Software Engineer"] & S["<b>Eric Feczko, PhD</b><br>Neuroscience/Informatics<br>Software Engineer"]
+    n3 --o t1["<b>Kim Weldon, PhD</b><br>Data Acquisition Seimens Engineer"]
     D@{ shape: text}
     n1@{ shape: text}
     S@{ shape: text}
@@ -532,14 +532,14 @@ config:
   layout: dagre
 ---
 flowchart TB
-    A["<b>Anders Dale, PhD</b><br>PI/Director"] --> n1(["<b>Fiona</b>"]) & n2(["<b>MRI QC</b>"]) & n3(["<b>MRI</b>"]) & n6(["<b>REDCap</b>"]) & n15(["<b>Dashboard</b>"])
-    n1 --> n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead<br>"]
-    n2 --> n9["<b>Donald Hagler, PhD</b><br>QC Lead<br>"]
-    n3 --> n10["<b>Josh Kuperman</b><br>MRI Lead"]
-    n6 --> n4["<b>Janosch Linkersdörfer, PhD</b><br>Data Science Lead"]
-    n9 --> n13@{ label: "<span style=\"--tw-scale-x:\"><b>Tyler Berkness<br></b></span><span style=\"background-color:\">Protocol Violations<br></span><br><span style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b>Sejal Shanbhag<br style=\"--tw-scale-x:\"></b></span></span><span style=\"--tw-scale-x:\">Issue Handling</span>" }
-    n15 --> n4
-    n4 --> n12["<b><b><u>RECap</u></b><br>Joseph Baligh</b><br>Server Admin<br><b>Erika Bolden</b> &amp; <b>Laura Ziemer</b><br>Dev/Admin"] & n18@{ label: "<span style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b><span style=\"--tw-scale-x:\">Amanda Li, MS</span><br style=\"--tw-scale-x:\"></b></span></span><span style=\"--tw-scale-x:\">Biostats Support</span>" } & n17@{ label: "<span style=\"--tw-scale-x:\"><b><b><u>Dashboard</u></b><br>Biplabendu Das</b><br>Backend Dev<br></span><span style=\"--tw-scale-x:\"><b>Olivier Celhay</b><br></span><span style=\"background-color:\">Frontend Dev</span>" }
+    A["<b>Anders Dale, PhD</b><br>PI/Director"] --o n1(["<b>Fiona</b>"]) & n2(["<b>MRI QC</b>"]) & n3(["<b>MRI</b>"]) & n6(["<b>REDCap</b>"]) & n15(["<b>Dashboard</b>"])
+    n1 --o n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead<br>"]
+    n2 --o n9["<b>Donald Hagler, PhD</b><br>QC Lead<br>"]
+    n3 --o n10["<b>Josh Kuperman</b><br>MRI Lead"]
+    n6 --o n4["<b>Janosch Linkersdörfer, PhD</b><br>Data Science Lead"]
+    n9 --o n13@{ label: "<span style=\"--tw-scale-x:\"><b>Tyler Berkness<br></b></span><span style=\"background-color:\">Protocol Violations<br></span><br><span style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b>Sejal Shanbhag<br style=\"--tw-scale-x:\"></b></span></span><span style=\"--tw-scale-x:\">Issue Handling</span>" }
+    n15 --o n4
+    n4 --o n12["<b><b><u>RECap</u></b><br>Joseph Baligh</b><br>Server Admin<br><b>Erika Bolden</b> &amp; <b>Laura Ziemer</b><br>Dev/Admin"] & n18@{ label: "<span style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b><span style=\"--tw-scale-x:\">Amanda Li, MS</span><br style=\"--tw-scale-x:\"></b></span></span><span style=\"--tw-scale-x:\">Biostats Support</span>" } & n17@{ label: "<span style=\"--tw-scale-x:\"><b><b><u>Dashboard</u></b><br>Biplabendu Das</b><br>Backend Dev<br></span><span style=\"--tw-scale-x:\"><b>Olivier Celhay</b><br></span><span style=\"background-color:\">Frontend Dev</span>" }
     A@{ shape: text}
     n8@{ shape: text}
     n9@{ shape: text}
@@ -575,17 +575,17 @@ config:
 ---
 flowchart TB
     A["<b>Chris Smyser</b><br>Principal Investigator<br>
-    <b>Chad Sylvester</b><br>Co-Investigator"] --> neurology(["<b>Neurology</b>"]) & C(["<b>EHR</b><br>"]) & B["<b>Sauren Ravencroft</b><br>Project Manager"] & n11(["<b>OMOR</b>"])
-    neurology --> n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Investigators &amp; Study Neuroradiologists"]
-    n1 --> n2["<b>Dimitrios (Jim) Alexopoulos</b>
+    <b>Chad Sylvester</b><br>Co-Investigator"] --o neurology(["<b>Neurology</b>"]) & C(["<b>EHR</b><br>"]) & B["<b>Sauren Ravencroft</b><br>Project Manager"] & n11(["<b>OMOR</b>"])
+    neurology --o n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Investigators &amp; Study Neuroradiologists"]
+    n1 --o n2["<b>Dimitrios (Jim) Alexopoulos</b>
     Data Manager, Ambra"]
-    C --> n3["<b>Philip Payne</b><br><b>Albert Lai</b>
+    C --o n3["<b>Philip Payne</b><br><b>Albert Lai</b>
     Co-Investigators"]
-    n3 --> n4["<b>Nicole Venteris</b><br>Project Manager"]
-    B --> n5(["<b>Ripple</b>"]) & n6(["<b>AirTable &amp; Ancillary Studies</b>"])
-    n5 --> n8["<b>Liliana Mueller</b>
+    n3 --o n4["<b>Nicole Venteris</b><br>Project Manager"]
+    B --o n5(["<b>Ripple</b>"]) & n6(["<b>AirTable &amp; Ancillary Studies</b>"])
+    n5 --o n8["<b>Liliana Mueller</b>
     Programming &amp; Management"]
-    n6 --> n9["<b>Lynn Menchaca</b>
+    n6 --o n9["<b>Lynn Menchaca</b>
     AirTable Management<br>"] & n10["<b>Madison Gardner</b>
     U01 Site Piloting"]
     A@{ shape: text}
@@ -621,12 +621,12 @@ config:
   layout: dagre
 ---
 flowchart TB
-    n16["<b>Nathan Fox</b><br>Associate Director, Data Core"] --> UMD2["<b>Santiago Morales</b>, Co-Investigator<br>
+    n16["<b>Nathan Fox</b><br>Associate Director, Data Core"] --o UMD2["<b>Santiago Morales</b>, Co-Investigator<br>
     <b>Jamie Listokin</b>, EEG Core Research Coordinator"]
-    UMD2 --> n17(["<b>EEG Processing</b>"]) & n18(["<b>CBRAIN</b>"]) & n21(["<b>QC, Training, &amp; Troubleshooting</b>"])
-    n17 --> n19@{ label: "<span style=\"--tw-scale-x:\"><b>Marco McSweeney</b><br>Pre-processing &amp; Derivatives</span>" }
-    n18 --> n20@{ label: "<span style=\"--tw-scale-x:\"><b>Whitney Kasenetz</b></span><br style=\"--tw-scale-x:\">EEG pre-processing in CBRAIN" }
-    n21 --> n22@{ label: "<b><span style=\"--tw-scale-x:\">Savannah McNair</span><br style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\">Jessica Norris</span></b>" }
+    UMD2 --o n17(["<b>EEG Processing</b>"]) & n18(["<b>CBRAIN</b>"]) & n21(["<b>QC, Training, &amp; Troubleshooting</b>"])
+    n17 --o n19@{ label: "<span style=\"--tw-scale-x:\"><b>Marco McSweeney</b><br>Pre-processing &amp; Derivatives</span>" }
+    n18 --o n20@{ label: "<span style=\"--tw-scale-x:\"><b>Whitney Kasenetz</b></span><br style=\"--tw-scale-x:\">EEG pre-processing in CBRAIN" }
+    n21 --o n22@{ label: "<b><span style=\"--tw-scale-x:\">Savannah McNair</span><br style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\">Jessica Norris</span></b>" }
     n16@{ shape: rounded}
     UMD2@{ shape: text}
     n19@{ shape: text}
