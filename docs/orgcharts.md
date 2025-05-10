@@ -93,7 +93,7 @@ flowchart TB
     nl --- n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"]) & B(["<b>Development</b>"])
     C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN &amp; NeuroHub - MCIN"]
     n9 --- E["<b>Santiago Torres</b><br>Study Officer"]
-    B --- F["<b>BHV/Database</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
+    B --- F["<b>Behavior (BHV)</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
     F --- I["<b>Regis Ongaro-Carcy</b><br>Lead Developer"] & n10["<b>Sruthy Matthew</b><br>Sr. Backend Dev"]
     G --- L["<b>Cecile Madjar</b><br>Lead developer"]
     H --- M["<b>Laetitia Faeselier</b><br>Lead Developer"]
