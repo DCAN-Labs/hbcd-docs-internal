@@ -330,14 +330,15 @@ flowchart TB
 config:
   theme: redux
 ---
-flowchart TD
-    A["<b>Leigh MacIntyre</b><br>Associate Director, Project Management- MCIN"] --- B(["<b>Lasso Training Scheduling<br>(Pre-Release)</b>"]) & n1(["<b>Ancillary Studies</b>"]) & n2(["<b>WorkGroup Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data Loading</b>"])
-    B --- n5["<b>Ellise Elamparo</b><br>Exec Admin"]
-    n1 --- n6["<b>Aarushi Chaudhry<br></b>Study Success Manager"]
-    n2 --- n7["<b>Jen Zink<br></b>Director, Partnerships &amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-    n3 --- n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan Sterling<br></b>Lead Developer"]
-    n4 --- n9["<b>Edson Silva<br></b>Developer<br><br><b>Laetitia Fesselier<br></b>Sr. Developer<br><br><b>Mateus Andre<br></b>Developer"]
+flowchart TB
+    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary Studies</b>"]) & n2(["<b>WorkGroup<br>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data Loading</b>"]) & n18@{ label: "<b style=\"color:\"><u>Internal</u><br></b>(<i>Click for Details</i>)" }
+    B --> n5["<b>Ellise Elamparo</b><br>Exec Admin"]
+    n1 --> n6["<b>Aarushi Chaudhry<br></b>Study Success Manager"]
+    n2 --> n7["<b>Jen Zink<br></b>Director,<br>Partnerships &amp; Grant<br>Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
+    n3 --> n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan Sterling<br></b>Lead Developer"]
+    n4 --> n9["<b>Edson Silva<br></b>Developer<br><br><b>Laetitia Fesselier<br></b>Sr. Developer<br><br><b>Mateus Andre<br></b>Developer"]
     A@{ shape: text}
+    n18@{ shape: stadium}
     n5@{ shape: text}
     n6@{ shape: text}
     n7@{ shape: text}
@@ -349,51 +350,43 @@ flowchart TD
     style n2 fill:#E1BEE7
     style n3 fill:#E1BEE7
     style n4 fill:#E1BEE7
+    style n18 fill:#E1BEE7
     style n5 fill:#BBDEFB
     style n6 fill:#BBDEFB
     style n7 fill:#BBDEFB
     style n8 fill:#BBDEFB
     style n9 fill:#BBDEFB
+    click n18 "#internal-non-consortium-facing"
 ```
 
-### Non-Consortium-Facing
+### Internal / Non-Consortium-Facing
 
 ```mermaid
 ---
 config:
   theme: redux
 ---
-flowchart TD
-    A["<b>Leigh MacIntyre</b><br>Associate Director, Project Management- MCIN"] --- B(["Development"]) & n1(["QA"]) & n2(["<b>Architecture</b>"]) & n3(["<b>Dev Ops/Sys Ops</b>"]) & n4(["<b>UI/UX</b>"])
-    B --- n5["<b>Mark Walker<br></b>Software Architect<br><br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
-    n1 --- n6["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
-    n3 --- n8["<b>Francisco Soto<br></b>Manager<br>"]
-    n4 --- n9["<b>Andrew Sawaya<br></b>Lead Designer<br>"]
-    n8 --- n10["<b>Alexandre Meyer<br></b>DevOps Engineer"] & n11["<b>Nataliya Korniyenko<br></b>Sys Admin"]
-    n9 --- n12["<b>Mehrafarin Ekhlaspour<br></b>Visual Design Associate"]
-    A@{ shape: text}
+flowchart TB
+    B(["<b>Development</b>"]) --> n5["<b>Mark Walker<br></b>Software Architect<br><br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
+    n1(["<b>QA</b>"]) --> n6["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
+    n3(["<b>Dev Ops/Sys Ops</b>"]) --> n8@{ label: "<b>Francisco Soto<br></b>Manager<br><br><span style=\"--tw-scale-x:\"><b>Alexandre Meyer<br style=\"--tw-scale-x:\"></b></span>DevOps Engineer<br><br><span style=\"--tw-scale-x:\"><b>Nataliya Korniyenko<br style=\"--tw-scale-x:\"></b></span>Sys Admin" }
+    n4(["<b>UI/UX</b>"]) --> n9@{ label: "<b>Andrew Sawaya<br></b>Lead Designer<br><br><span style=\"--tw-scale-x:\"><b>Mehrafarin Ekhlaspour<br style=\"--tw-scale-x:\"></b></span>Visual Design" }
+    n10["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B & n1 & n3 & n4
     n5@{ shape: text}
     n6@{ shape: text}
     n8@{ shape: text}
     n9@{ shape: text}
     n10@{ shape: text}
-    n11@{ shape: text}
-    n12@{ shape: text}
-    style A fill:#BBDEFB
     style B fill:#E1BEE7
-    style n1 fill:#E1BEE7
-    style n2 fill:#E1BEE7
-    style n3 fill:#E1BEE7
-    style n4 fill:#E1BEE7
     style n5 fill:#BBDEFB
+    style n1 fill:#E1BEE7
     style n6 fill:#BBDEFB
+    style n3 fill:#E1BEE7
     style n8 fill:#BBDEFB
+    style n4 fill:#E1BEE7
     style n9 fill:#BBDEFB
     style n10 fill:#BBDEFB
-    style n11 fill:#BBDEFB
-    style n12 fill:#BBDEFB
 ```
-
 
 ## University of Minnesota
 There are several groups that fall under the oversight of UMN. The US Drug Testing Laboratories ([USDTL](https://www.usdtl.com/)) handles toxicology. The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) led by Damien Fair at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. The remaining groups are described in greater detail below.  
