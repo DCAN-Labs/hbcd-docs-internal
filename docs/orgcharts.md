@@ -83,7 +83,6 @@ flowchart TB
     G(["<b>MRI</b>"]) --- L["<b>Cecile Madjar</b><br>Lead Dev"]
     H(["<b>EEG/Biosamples</b>"]) --- M["<b>Laetitia Faeselier</b><br>Lead Dev"]
     nl --> G & H & F
-    I@{ shape: rect}
     style A stroke:#2962FF,fill:#BBDEFB
     style nl stroke:#2962FF,fill:#BBDEFB
     style n9 stroke:#AA00FF,fill:#E1BEE7
