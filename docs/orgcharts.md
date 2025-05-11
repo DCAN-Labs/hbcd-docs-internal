@@ -306,7 +306,7 @@ flowchart TB
         n22(["<b>UI/UX</b>"])
         n23(["<b>Dev &amp; Operations</b>"])
   end
-    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<b>WorkGroup<br>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"]) & s1
+    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<a href="https://hbcdstudy.org/workgroups-and-committees/"><b>Workgroup</a> Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"]) & s1
     B --> n5["<b>Ellise Elamparo</b><br>Exec Admin"]
     n1 --> n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
     n2 --> n7["<b>Jen Zink<br></b>Director,<br>Partnerships &amp; Grant<br>Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
