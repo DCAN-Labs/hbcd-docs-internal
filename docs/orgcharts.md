@@ -386,17 +386,16 @@ config:
   layout: elk
 ---
 flowchart TB
-    A["<b>Anders Dale, PhD</b><br>PI/Director"] 
-    --- n1(["<b>Fiona</b>"]) & n2(["<b>MRI QC</b>"]) & n3(["<b>MRI</b>"]) & n6(["<b>REDCap</b>"]) & n15(["<b>Dashboard</b>"])
-    n1 --- n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead<br>"]
-    n2 --- n9["<b>Donald Hagler, PhD</b><br>QC Lead<br>"]
+    A["<b>Anders Dale, PhD</b><br>PI/Director"] --- n1(["<b>Fiona</b>"]) & n2(["<b>MRI QC</b>"]) & n3(["<b>MRI</b>"]) & n6(["<b>REDCap</b>"]) & n15(["<b>Dashboard</b>"])
+    n1 --- n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead"]
+    n2 --- n9["<b>Donald Hagler, PhD</b><br>MRI QC Lead<br>"]
     n3 --- n10["<b>Josh Kuperman</b><br>MRI Lead"]
-    n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>Data Science Lead"]
-    n9 --- n13["<b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
+    n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>REDCap/Data Science Lead"]
+    n9 --- n13["<b>Tyler Berkness</b><br>Protocol Violations<br><b>Sejal Shanbhag</b><br>Issue Handling"]
     n15 --- n4
-    n4 --- n12["<b><b><u>RECap</u></b><br>Joseph Baligh</b><br>Server Admin<br><b>Erika Bolden</b> &amp; <b>Laura Ziemer</b><br>Dev/Admin"]
-    n4 --- n18["<b>Amanda Li, MS</b><br>Biostats Support"] 
-    n4 --- n17["<b><u>Dashboard</u></b><br><b>Biplabendu Das</b><br>Backend Dev<br><b>Olivier Celhay</b><br>Frontend Dev"]
+    n4 --- n12["<b>Joseph Baligh</b><br>Server Admin<br><b>Erika Bolden</b> &amp; <b>Laura Ziemer</b><br>Dev/Admin"] & n17["<b>Biplabendu Das</b><br>Backend Dev<br><b>Olivier Celhay</b><br>Frontend Dev"]
+    n15 --> n17
+    n6 --> n12
     style A fill:#BBDEFB,stroke:#2962FF
     style n1 fill:#E1BEE7,stroke:#AA00FF
     style n2 fill:#E1BEE7,stroke:#AA00FF
@@ -409,7 +408,6 @@ flowchart TB
     style n4 fill:#BBDEFB,stroke:#2962FF
     style n13 fill:#BBDEFB,stroke:#2962FF
     style n12 fill:#BBDEFB,stroke:#2962FF
-    style n18 fill:#BBDEFB,stroke:#2962FF
     style n17 fill:#BBDEFB,stroke:#2962FF
 ```
 </div>
