@@ -96,6 +96,33 @@ flowchart TB
     click M "#faeselier"
 ```
 
+## UMN elk
+
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+    A1["<b>Damien Fair</b><br>HDCC Co-Director<br>
+    <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- HST(["<b>Health Sciences Technology (HST)</b><br>"]) & MIDB(["<b>MIDB Informatics Hub &amp; MSI</b><br>"]) & DCAN(["<b>DCAN Lab</b>"]) & USDTL(["<b>USDTL</b>"])
+    DCAN --- n1(["<b>Neuroinformatics</b>"]) & n2(["<b>MRI Acquisition</b>"])
+    n1 --- n3["<b>Eric Feczko, PhD</b><br><b>Lucille A. Moore, PhD</b>"]
+    n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
+    style A1 fill:#BBDEFB,stroke:#2962FF
+    style HST fill:#E1BEE7,stroke:#AA00FF
+    style MIDB fill:#E1BEE7,stroke:#AA00FF
+    style DCAN fill:#E1BEE7,stroke:#AA00FF
+    style USDTL fill:#E1BEE7,stroke:#AA00FF
+    style n1 fill:#E1BEE7,stroke:#AA00FF
+    style n2 fill:#E1BEE7,stroke:#AA00FF
+    style n3 fill:#BBDEFB,stroke:#2962FF
+    style n4 fill:#BBDEFB,stroke:#2962FF
+    click HST "#health-sciences-technology-hst"
+    click MIDB "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
+    click DCAN "https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab"
+    click USDTL "https://www.usdtl.com/"
+```
 
 ## Columbia University
 

@@ -438,6 +438,9 @@ flowchart TB
 ```
 </div>
 
+### UMN Alt (elk formatting)
+![](umn.png)
+
 ### Health Sciences Technology
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
 
