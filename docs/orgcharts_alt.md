@@ -1,3 +1,36 @@
+## JCVI ALT
+
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+    A["<b>Anders Dale, PhD</b><br>PI/Director"] --- n1(["<b>Fiona</b>"]) & n2(["<b>MRI QC</b>"]) & n3(["<b>MRI</b>"]) & n6(["<b>REDCap</b>"]) & n15(["<b>Dashboard</b>"])
+    n1 --- n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead<br>"]
+    n2 --- n9["<b>Donald Hagler, PhD</b><br>QC Lead<br>"]
+    n3 --- n10["<b>Josh Kuperman</b><br>MRI Lead"]
+    n9 --- n13["<b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
+    n4["<b>Janosch Linkersdörfer, PhD</b><br>Data Science Lead"] --- n12["<b>Joseph Baligh</b><br>Server Admin<br><b>Erika Bolden</b> &amp; <b>Laura Ziemer</b><br>Dev/Admin"] & n18["<b>Amanda Li, MS</b><br>Biostats Support"] & n17["<b>Biplabendu Das</b><br>Backend Dev<br><b>Olivier Celhay</b><br>Frontend Dev"]
+    n6 --> n12
+    n15 --> n17
+    A --> n4
+    style A fill:#BBDEFB,stroke:#2962FF
+    style n1 fill:#E1BEE7,stroke:#AA00FF
+    style n2 fill:#E1BEE7,stroke:#AA00FF
+    style n3 fill:#E1BEE7,stroke:#AA00FF
+    style n6 fill:#E1BEE7,stroke:#AA00FF
+    style n15 fill:#E1BEE7,stroke:#AA00FF
+    style n8 fill:#BBDEFB,stroke:#2962FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
+    style n10 fill:#BBDEFB,stroke:#2962FF
+    style n13 fill:#BBDEFB,stroke:#2962FF
+    style n4 fill:#BBDEFB,stroke:#2962FF
+    style n12 fill:#BBDEFB,stroke:#2962FF
+    style n18 fill:#BBDEFB,stroke:#2962FF
+    style n17 fill:#BBDEFB,stroke:#2962FF
+```
+
 ## LORIS OLD- Roles & Responsibilities
 <div id="evans" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
