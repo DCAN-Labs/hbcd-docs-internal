@@ -1,35 +1,5 @@
 
 
-## WashU
-```mermaid
-
-```
-
-## UMD
-
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    n16["<b>Nathan Fox</b><br>Associate Director, Data Core"]
-    --- UMD2["<b>Santiago Morales</b>, Co-I<br><br><b>Jamie Listokin</b>, EEG Core Research Coordinator"]
-    UMD2 --- n17(["<b>EEG Processing</b>"]) & n18(["<b>CBRAIN</b>"]) & n21(["<b>QC, Training, &amp; Troubleshooting</b>"])
-    n17 --- n19["<b>Marco McSweeney</b><br>Pre-processing &amp; Derivatives"]
-    n18 --- n20["<b>Whitney Kasenetz</b><br>EEG pre-processing in CBRAIN"]
-    n21 --- n22["<b>Savannah McNair<br>Jessica Norris</b>"]
-    style n16 fill:#BBDEFB,stroke:#2962FF
-    style UMD2 fill:#BBDEFB,stroke:#2962FF
-    style n17 fill:#E1BEE7,stroke:#AA00FF
-    style n18 fill:#E1BEE7,stroke:#AA00FF
-    style n21 fill:#E1BEE7,stroke:#AA00FF
-    style n19 fill:#BBDEFB,stroke:#2962FF
-    style n20 fill:#BBDEFB,stroke:#2962FF
-    style n22 fill:#BBDEFB,stroke:#2962FF
-```
-
-
 ## Columbia University
 
 ```mermaid

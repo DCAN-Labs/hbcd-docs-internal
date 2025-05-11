@@ -609,27 +609,22 @@ flowchart TB
 ```mermaid
 ---
 config:
-  layout: dagre
+  layout: elk
 ---
 flowchart TB
-    n16["<b>Nathan Fox</b><br>Associate Director, Data Core"] --- UMD2["<b>Santiago Morales</b>, Co-Investigator<br>
-    <b>Jamie Listokin</b>, EEG Core Research Coordinator"]
+    n16["<b>Nathan Fox</b><br>Associate Director, Data Core"]
+    --- UMD2["<b>Santiago Morales</b>, Co-I<br><br><b>Jamie Listokin</b>, EEG Core Research Coordinator"]
     UMD2 --- n17(["<b>EEG Processing</b>"]) & n18(["<b>CBRAIN</b>"]) & n21(["<b>QC, Training, &amp; Troubleshooting</b>"])
-    n17 --- n19@{ label: "<span style=\"--tw-scale-x:\"><b>Marco McSweeney</b><br>Pre-processing &amp; Derivatives</span>" }
-    n18 --- n20@{ label: "<span style=\"--tw-scale-x:\"><b>Whitney Kasenetz</b></span><br style=\"--tw-scale-x:\">EEG pre-processing in CBRAIN" }
-    n21 --- n22@{ label: "<b><span style=\"--tw-scale-x:\">Savannah McNair</span><br style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\">Jessica Norris</span></b>" }
-    n16@{ shape: rounded}
-    UMD2@{ shape: text}
-    n19@{ shape: text}
-    n20@{ shape: text}
-    n22@{ shape: text}
-    style n16 fill:#BBDEFB,stroke:none
-    style UMD2 fill:#BBDEFB
-    style n17 fill:#E1BEE7,stroke:#000000
-    style n18 fill:#E1BEE7,stroke:#000000
-    style n21 fill:#E1BEE7,stroke:#000000
-    style n19 fill:#BBDEFB
-    style n20 fill:#BBDEFB
-    style n22 fill:#BBDEFB
+    n17 --- n19["<b>Marco McSweeney</b><br>Pre-processing &amp; Derivatives"]
+    n18 --- n20["<b>Whitney Kasenetz</b><br>EEG pre-processing in CBRAIN"]
+    n21 --- n22["<b>Savannah McNair<br>Jessica Norris</b>"]
+    style n16 fill:#BBDEFB,stroke:#2962FF
+    style UMD2 fill:#BBDEFB,stroke:#2962FF
+    style n17 fill:#E1BEE7,stroke:#AA00FF
+    style n18 fill:#E1BEE7,stroke:#AA00FF
+    style n21 fill:#E1BEE7,stroke:#AA00FF
+    style n19 fill:#BBDEFB,stroke:#2962FF
+    style n20 fill:#BBDEFB,stroke:#2962FF
+    style n22 fill:#BBDEFB,stroke:#2962FF
 ```
 </div>
