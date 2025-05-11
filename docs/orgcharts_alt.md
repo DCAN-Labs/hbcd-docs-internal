@@ -1,4 +1,4 @@
-### LORIS OLD- Roles & Responsibilities
+## LORIS OLD- Roles & Responsibilities
 <div id="evans" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Alan Evans, Principal Investigator</span>
@@ -187,6 +187,7 @@
 </div>
 
 
+# Lasso Alt diagrams
 ## lasso alt
 
 ```mermaid
@@ -268,51 +269,6 @@ config:
   layout: elk
 ---
 flowchart TB
- subgraph s1["<b>Internal</b>"]
-        n21(["<b>QA</b>"])
-        n22(["<b>UI/UX</b>"])
-        n23(["Dev &amp; Operations"])
-        n24["<b>Francisco Soto</b><br>Dev/SysOps Manager<br><b>Alexandre Meyer</b><br>DevOps<br><b>Nataliya Korniyenko<br></b>Sys Admin<br><br><b>Mark Walker<br></b>Software Architect<br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
-        n26["<b>Andrew Sawaya</b><br>Lead Designer<br><b>Mehrafarin Ekhlaspour</b><br>Visual Design"]
-        n27["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
-  end
-    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<b>WorkGroup<br>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"]) & s1
-    B --> n5["<b>Ellise Elamparo</b><br>Exec Admin"]
-    n1 --> n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
-    n2 --> n7["<b>Jen Zink<br></b>Director,<br>Partnerships &amp; Grant<br>Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-    n3 --> n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan<br>Sterling<br></b>Lead Dev"]
-    n4 --> n9["<b>Laetitia Fesselier<br></b>Sr. Dev<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Dev"]
-    n23 --> n24
-    n22 --> n26
-    n21 --> n27
-    style n21 fill:#E1BEE7,stroke:#AA00FF
-    style n22 fill:#E1BEE7,stroke:#AA00FF
-    style n23 fill:#E1BEE7,stroke:#AA00FF
-    style n24 fill:#BBDEFB,stroke:#2962FF
-    style n26 fill:#BBDEFB,stroke:#2962FF
-    style n27 fill:#BBDEFB,stroke:#2962FF
-    style A fill:#BBDEFB,stroke:#2962FF
-    style B fill:#E1BEE7,stroke:#AA00FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n4 fill:#E1BEE7,stroke:#AA00FF
-    style s1 stroke:#000000
-    style n5 fill:#BBDEFB,stroke:#2962FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
-    style n7 fill:#BBDEFB,stroke:#2962FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-```
-
-## lass
-
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
  subgraph s1["<b>INTERNAL</b>"]
         n21(["<b>QA</b>"])
         n22(["<b>UI/UX</b>"])
@@ -349,53 +305,12 @@ flowchart TB
 ```
 
 
-## lasso final
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
- subgraph s1["<b>INTERNAL</b>"]
-        n21(["<b>QA</b>"])
-        n22(["<b>UI/UX</b>"])
-        n23(["<b>Dev &amp; Operations</b>"])
-  end
-    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<b>WorkGroup<br>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"]) & s1
-    B --> n5["<b>Ellise Elamparo</b><br>Exec Admin"]
-    n1 --> n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
-    n2 --> n7["<b>Jen Zink<br></b>Director,<br>Partnerships &amp; Grant<br>Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-    n3 --> n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan<br>Sterling<br></b>Lead Dev"]
-    n4 --> n9["<b>Laetitia Fesselier<br></b>Sr. Dev<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Dev"]
-    n23 --> n24["<b>Francisco Soto</b><br>Dev/SysOps Manager<br><b>Alexandre Meyer</b><br>DevOps<br><b>Nataliya Korniyenko<br></b>Sys Admin<br><br><b>Mark Walker<br></b>Software Architect<br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
-    n22 --> n26["<b>Andrew Sawaya</b><br>Lead Designer<br><b>Mehrafarin Ekhlaspour</b><br>Visual Design"]
-    n21 --> n27["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
-    style n21 fill:#E1BEE7,stroke:#AA00FF
-    style n22 fill:#E1BEE7,stroke:#AA00FF
-    style n23 fill:#E1BEE7,stroke:#AA00FF
-    style A fill:#BBDEFB,stroke:#2962FF
-    style B fill:#E1BEE7,stroke:#AA00FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n4 fill:#E1BEE7,stroke:#AA00FF
-    style s1 stroke:#000000
-    style n5 fill:#BBDEFB,stroke:#2962FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
-    style n7 fill:#BBDEFB,stroke:#2962FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n24 fill:#BBDEFB,stroke:#2962FF
-    style n26 fill:#BBDEFB,stroke:#2962FF
-    style n27 fill:#BBDEFB,stroke:#2962FF
-```
-
 ## Columbia University
 
 ```mermaid
 ---
 config:
-  theme: redux
+  layout: elk
 ---
 flowchart TD
     A["<b>William P. Fifer</b>
@@ -403,10 +318,6 @@ flowchart TD
     Technician Research Assistant"]
     C["<b>Dima Amso</b>
     Co-Investigator"]
-    A@{ shape: rounded}
-    n1@{ shape: rounded}
-    n2@{ shape: rounded}
-    C@{ shape: rounded}
 ```
 
 
