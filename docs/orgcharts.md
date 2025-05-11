@@ -298,34 +298,29 @@ flowchart TB
 ```mermaid
 ---
 config:
-  theme: redux
+  layout: elk
 ---
 flowchart TB
-    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<b>WorkGroup<br>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"]) & n18@{ label: "<b style=\"color:\"><u>Internal</u><br></b>(<i>Click for Details</i>)" }
+    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"])
+    A --> n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<b>WorkGroup<br>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"])
+    A --> n18(["<b><u>Internal</u><br></b>(<i>Click for Details</i>)"])
     B --> n5["<b>Ellise Elamparo</b><br>Exec Admin"]
     n1 --> n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
     n2 --> n7["<b>Jen Zink<br></b>Director,<br>Partnerships &amp; Grant<br>Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
     n3 --> n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan<br>Sterling<br></b>Lead Dev"]
-    n4 --> n9@{ label: "<span style=\"--tw-scale-x:\"><b>Laetitia Fesselier<br style=\"--tw-scale-x:\"></b></span>Sr. Dev<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Dev" }
-    A@{ shape: text}
-    n18@{ shape: stadium}
-    n5@{ shape: text}
-    n6@{ shape: text}
-    n7@{ shape: text}
-    n8@{ shape: text}
-    n9@{ shape: text}
-    style A fill:#BBDEFB
-    style B fill:#E1BEE7
-    style n1 fill:#E1BEE7
-    style n2 fill:#E1BEE7
-    style n3 fill:#E1BEE7
-    style n4 fill:#E1BEE7
-    style n18 fill:#E1BEE7
-    style n5 fill:#BBDEFB
-    style n6 fill:#BBDEFB
-    style n7 fill:#BBDEFB
-    style n8 fill:#BBDEFB
-    style n9 fill:#BBDEFB
+    n4 --> n9["<b>Laetitia Fesselier<br></b>Sr. Dev<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Dev"]
+    style A fill:#BBDEFB,stroke:#2962FF
+    style B fill:#E1BEE7,stroke:#AA00FF
+    style n1 fill:#E1BEE7,stroke:#AA00FF
+    style n2 fill:#E1BEE7,stroke:#AA00FF
+    style n3 fill:#E1BEE7,stroke:#AA00FF
+    style n4 fill:#E1BEE7,stroke:#AA00FF
+    style n18 fill:#E1BEE7,stroke:#AA00FF
+    style n5 fill:#BBDEFB,stroke:#2962FF
+    style n6 fill:#BBDEFB,stroke:#2962FF
+    style n7 fill:#BBDEFB,stroke:#2962FF
+    style n8 fill:#BBDEFB,stroke:#2962FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
     click n18 "#internal-non-consortium-facing"
 ```
 <br>
@@ -536,7 +531,7 @@ flowchart TB
 ## J. Craig Venter Institute
 
 The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, Fiona, and the QC Dashboard.
-
+<div style="width: 80%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -569,6 +564,7 @@ flowchart TB
     style n18 fill:#BBDEFB,stroke:#2962FF
     style n17 fill:#BBDEFB,stroke:#2962FF
 ```
+</div>
 
 ## WashU
 The Washington University in St. Louis (WashU) group has oversight of: *Neurology*, *Electronic Health Records (EHR)*, *Ripple*, *Ambra*, *AirTable*, and *HCAC coordination*.
