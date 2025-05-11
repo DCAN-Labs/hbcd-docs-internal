@@ -295,62 +295,45 @@ flowchart TB
 
 
 ## Lasso
-#### Overview
 ```mermaid
 ---
 config:
   layout: elk
 ---
 flowchart TB
-    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"])
-    A --> n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<b>WorkGroup<br>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"])
-    A --> n18(["<b><u>Internal</u><br></b>(<i>Click for Details</i>)"])
+ subgraph s1["<b>INTERNAL</b>"]
+        n21(["<b>QA</b>"])
+        n22(["<b>UI/UX</b>"])
+        n23(["<b>Dev &amp; Operations</b>"])
+  end
+    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<b>WorkGroup<br>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"]) & s1
     B --> n5["<b>Ellise Elamparo</b><br>Exec Admin"]
     n1 --> n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
     n2 --> n7["<b>Jen Zink<br></b>Director,<br>Partnerships &amp; Grant<br>Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
     n3 --> n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan<br>Sterling<br></b>Lead Dev"]
     n4 --> n9["<b>Laetitia Fesselier<br></b>Sr. Dev<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Dev"]
+    n23 --> n24["<b>Francisco Soto</b><br>Dev/SysOps Manager<br><b>Alexandre Meyer</b><br>DevOps<br><b>Nataliya Korniyenko<br></b>Sys Admin<br><br><b>Mark Walker<br></b>Software Architect<br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
+    n22 --> n26["<b>Andrew Sawaya</b><br>Lead Designer<br><b>Mehrafarin Ekhlaspour</b><br>Visual Design"]
+    n21 --> n27["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
+    style n21 fill:#E1BEE7,stroke:#AA00FF
+    style n22 fill:#E1BEE7,stroke:#AA00FF
+    style n23 fill:#E1BEE7,stroke:#AA00FF
     style A fill:#BBDEFB,stroke:#2962FF
     style B fill:#E1BEE7,stroke:#AA00FF
     style n1 fill:#E1BEE7,stroke:#AA00FF
     style n2 fill:#E1BEE7,stroke:#AA00FF
     style n3 fill:#E1BEE7,stroke:#AA00FF
     style n4 fill:#E1BEE7,stroke:#AA00FF
-    style n18 fill:#E1BEE7,stroke:#AA00FF
+    style s1 fill:transparent,stroke:#000000
     style n5 fill:#BBDEFB,stroke:#2962FF
     style n6 fill:#BBDEFB,stroke:#2962FF
     style n7 fill:#BBDEFB,stroke:#2962FF
     style n8 fill:#BBDEFB,stroke:#2962FF
     style n9 fill:#BBDEFB,stroke:#2962FF
-    click n18 "#internal-non-consortium-facing"
+    style n24 fill:#BBDEFB,stroke:#2962FF
+    style n26 fill:#BBDEFB,stroke:#2962FF
+    style n27 fill:#BBDEFB,stroke:#2962FF
 ```
-<br>
-
-#### Internal / Non-Consortium-Facing
-
-<div style="width: 80%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    B(["<b>Development</b>"]) --> n5["<b>Mark Walker<br></b>Software Architect<br><br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
-    n1(["<b>QA</b>"]) --> n6["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
-    n3(["<b>Dev Ops/Sys Ops</b>"]) --> n8["<b>Francisco Soto</b><br>Manager<br><br><b>Alexandre Meyer</b><br>DevOps Engineer<br><br><b>Nataliya Korniyenko<br></b>Sys Admin"]
-    n4(["<b>UI/UX</b>"]) --> n9["<b>Andrew Sawaya</b><br>Lead Designer<br><br><b>Mehrafarin Ekhlaspour</b><br>Visual Design"]
-    n10["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B & n1 & n3 & n4
-    style B fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#BBDEFB,stroke:#2962FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
-    style n4 fill:#E1BEE7,stroke:#AA00FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n10 fill:#BBDEFB,stroke:#2962FF
-```
-</div>
 
 ## University of Minnesota
 There are several groups that fall under the oversight of UMN. The US Drug Testing Laboratories ([USDTL](https://www.usdtl.com/)) handles toxicology. The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) led by Damien Fair at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. The remaining groups are described in greater detail below.  
