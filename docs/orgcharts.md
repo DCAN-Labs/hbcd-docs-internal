@@ -331,28 +331,23 @@ flowchart TB
 ```mermaid
 ---
 config:
-  theme: redux
+  layout: elk
 ---
 flowchart TB
     B(["<b>Development</b>"]) --> n5["<b>Mark Walker<br></b>Software Architect<br><br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
     n1(["<b>QA</b>"]) --> n6["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
-    n3(["<b>Dev Ops/Sys Ops</b>"]) --> n8@{ label: "<b>Francisco Soto<br></b>Manager<br><br><span style=\"--tw-scale-x:\"><b>Alexandre Meyer<br style=\"--tw-scale-x:\"></b></span>DevOps Engineer<br><br><span style=\"--tw-scale-x:\"><b>Nataliya Korniyenko<br style=\"--tw-scale-x:\"></b></span>Sys Admin" }
-    n4(["<b>UI/UX</b>"]) --> n9@{ label: "<b>Andrew Sawaya<br></b>Lead Designer<br><br><span style=\"--tw-scale-x:\"><b>Mehrafarin Ekhlaspour<br style=\"--tw-scale-x:\"></b></span>Visual Design" }
+    n3(["<b>Dev Ops/Sys Ops</b>"]) --> n8["<b>Francisco Soto</b><br>Manager<br><br><b>Alexandre Meyer</b><br>DevOps Engineer<br><br><b>Nataliya Korniyenko<br></b>Sys Admin"]
+    n4(["<b>UI/UX</b>"]) --> n9["<b>Andrew Sawaya</b><br>Lead Designer<br><br><b>Mehrafarin Ekhlaspour</b><br>Visual Design"]
     n10["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B & n1 & n3 & n4
-    n5@{ shape: text}
-    n6@{ shape: text}
-    n8@{ shape: text}
-    n9@{ shape: text}
-    n10@{ shape: text}
-    style B fill:#E1BEE7
-    style n5 fill:#BBDEFB
-    style n1 fill:#E1BEE7
-    style n6 fill:#BBDEFB
-    style n3 fill:#E1BEE7
-    style n8 fill:#BBDEFB
-    style n4 fill:#E1BEE7
-    style n9 fill:#BBDEFB
-    style n10 fill:#BBDEFB
+    style B fill:#E1BEE7,stroke:#AA00FF
+    style n5 fill:#BBDEFB,stroke:#2962FF
+    style n1 fill:#E1BEE7,stroke:#AA00FF
+    style n6 fill:#BBDEFB,stroke:#2962FF
+    style n3 fill:#E1BEE7,stroke:#AA00FF
+    style n8 fill:#BBDEFB,stroke:#2962FF
+    style n4 fill:#E1BEE7,stroke:#AA00FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
+    style n10 fill:#BBDEFB,stroke:#2962FF
 ```
 </div>
 
