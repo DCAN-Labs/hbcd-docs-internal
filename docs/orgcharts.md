@@ -421,15 +421,16 @@ config:
   layout: elk
 ---
 flowchart TB
-    A["<b>Chris Smyser</b><br>Principal Investigator<br>
-    <b>Chad Sylvester</b><br>Co-Investigator"] --- neurology(["<b>Neurology</b>"]) & C(["<b>EHR</b><br>"]) & B["<b>Sauren Ravencroft</b><br>Project Manager"] & n11(["<b>OMOR</b>"])
+    A["<b>Chris Smyser, MD</b><br>Principal Investigator<br>
+    <b>Chad Sylvester, PhD</b><br>Co-Investigator"] --- neurology(["<b>Neurology</b>"]) & C(["<b>EHR</b><br>"]) & B["<b>Sauren Ravencroft</b><br>Project Manager"] & n11(["<b>OMOR</b>"])
     neurology --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Investigators &amp; Study Neuroradiologists"]
     n1 --- n2["<b>Dimitrios (Jim) Alexopoulos</b><br>Data Manager, Ambra"]
     C --- n3["<b>Philip Payne</b><br><b>Albert Lai</b><br>Co-Investigators"]
     n3 --- n4["<b>Nicole Venteris</b><br>Project Manager"]
     B --- n5(["<b>Ripple</b>"]) & n6(["<b>AirTable &amp; Ancillary Studies</b>"])
     n5 --- n8["<b>Liliana Mueller</b><br>Programming &amp; Management"]
-    n6 --- n9["<b>Lynn Menchaca</b><br>AirTable Management<br>"] & n10["<b>Madison Gardner</b><br>U01 Site Piloting"]
+    n6 --- n9["<b>Lynn Menchaca</b><br>AirTable Management<br><br><b>Madison Gardner</b><br>U01 Site Piloting"]
+    n12["<b>UMN HST</b><br><i>Click to see org chart</i>"] --> C
     style A fill:#BBDEFB,stroke:#2962FF
     style neurology fill:#E1BEE7,stroke:#AA00FF
     style C fill:#E1BEE7,stroke:#AA00FF
@@ -443,7 +444,8 @@ flowchart TB
     style n6 fill:#E1BEE7,stroke:#AA00FF
     style n8 fill:#BBDEFB,stroke:#2962FF
     style n9 fill:#BBDEFB,stroke:#2962FF
-    style n10 fill:#BBDEFB,stroke:#2962FF
+    style n12 fill:#E1BEE7,stroke:#AA00FF
+    click n12 "#health-sciences-technology"
 ```
 
 ## University of Maryland EEG Core
