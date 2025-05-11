@@ -35,27 +35,27 @@ flowchart TB
     n11 --> n23(["<b>Novel Tech &amp; Wearables</b>"])
     n23 --> n18["<b>William P. Fifer, PhD</b>, Chair<br><b>Nicolo Pini</b>, Co-I &amp; Dev<br><b>Beth Smith</b>"]
     reed --> n25(["<b>USDTL</b>"]) & n26(["<b>MIDB &amp; MSI</b>"]) & n27(["<b>DCAN Lab</b>"]) & n30(["<b>HST</b>"])
-    style n2 fill:#BBDEFB,stroke:#2962FF
+    style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style jvci fill:#E1BEE7,stroke:#AA00FF
-    style E fill:#BBDEFB,stroke:#2962FF
+    style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style lasso fill:#E1BEE7,stroke:#AA00FF
     style umn fill:#E1BEE7,stroke:#AA00FF
     style n7 fill:#E1BEE7,stroke:#AA00FF
     style n8 fill:#E1BEE7,stroke:#AA00FF
     style n11 fill:#E1BEE7,stroke:#AA00FF
-    style lasso1 fill:#BBDEFB
-    style n1 fill:#BBDEFB,stroke:#2962FF
+    style lasso1 fill:#BBDEFB,stroke:#2962FF
+    style n1 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style n10 fill:#E1BEE7,stroke:#AA00FF
     style ripple fill:#E1BEE7,stroke:#AA00FF
     style n12 fill:#E1BEE7,stroke:#AA00FF
-    style n16 fill:#BBDEFB,stroke:#2962FF
-    style n17 fill:#BBDEFB
-    style n19 fill:#BBDEFB,stroke:#2962FF
-    style n20 fill:#BBDEFB
-    style reed fill:#BBDEFB
-    style n22 fill:#BBDEFB
+    style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
+    style n17 fill:#BBDEFB,stroke:#2962FF
+    style n19 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
+    style n20 fill:#BBDEFB,stroke:#2962FF
+    style reed fill:#BBDEFB,stroke:#2962FF
+    style n22 fill:#BBDEFB,stroke:#2962FF
     style n23 fill:#E1BEE7,stroke:#AA00FF
-    style n18 fill:#BBDEFB
+    style n18 fill:#BBDEFB,stroke:#2962FF
     style n25 fill:#E1BEE7,stroke:#AA00FF
     style n26 fill:#E1BEE7,stroke:#AA00FF
     style n27 fill:#E1BEE7,stroke:#AA00FF
