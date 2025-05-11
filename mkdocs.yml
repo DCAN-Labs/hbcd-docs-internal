@@ -17,6 +17,8 @@ markdown_extensions:
       permalink: '🔗'
   
 extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js
+  - js/mermaid-init.js
   - js/extra.js
 
 extra_css:
@@ -35,10 +37,8 @@ extra_css:
 plugins:
   - search
   - mermaid2:
-      version: "11.6.0"
       arguments:
         startOnLoad: true
-        javascript: https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js
   - git-revision-date-localized:
       type: date
 
@@ -78,6 +78,3 @@ nav:
   - Resources:
     - Slides: slides.md
     - Org Charts: orgcharts.md
-
-  
-

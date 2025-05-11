@@ -1,4 +1,11 @@
-## Overview - ELK
+
+
+## WashU
+```mermaid
+
+```
+
+## UMD
 
 ```mermaid
 ---
@@ -6,123 +13,22 @@ config:
   layout: elk
 ---
 flowchart TB
-    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --> jvci["<b>JVCI</b>"]
-    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] 
-    E --> lasso["<b>Lasso</b>"]
-    E --> umn["<b>UMN</b>"]
-    E --> n7["<b>LORIS</b>"]
-    E --> n8["<b>UMD EEG Core</b>"]
-    E --> n11["<b>Columbia</b>"]
-    lasso --> lasso1["<b>Leigh MacIntyre</b><br>MCIN Assoc Dir, PM"]
-    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] 
-    n1 --> n10["<b>WashU</b><br>"] & ripple["<b>Ripple</b>"] & n12["<b>LIBR</b>"] & lasso
-    n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] 
-    n16 --> n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
-    n12 --> n16
-    n8 --> n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc. Dir."]
-    n7 --> n20["<b>Alan Evans</b><br>PI<br><b>Samir Das</b><br>AD Softw Dev"]
-    umn --> reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
-    n10 --> n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
-    n11 --> n23(["<b>Novel Tech &amp; Wearables</b>"])
-    n23 --> n18["<b>William P. Fifer, PhD</b>, Chair<br><b>Nicolo Pini</b>, Co-I &amp; Dev<br><b>Beth Smith</b>"]
-    reed --> n25(["<b>USDTL</b>"]) & n26(["<b>MIDB &amp; MSI</b>"]) & n27(["<b>DCAN Lab</b>"]) & n30(["<b>HST</b>"])
-    style n2 fill:#BBDEFB,stroke:#2962FF
-    style jvci fill:#E1BEE7,stroke:#AA00FF
-    style E fill:#BBDEFB,stroke:#2962FF
-    style lasso fill:#E1BEE7,stroke:#AA00FF
-    style umn fill:#E1BEE7,stroke:#AA00FF
-    style n7 fill:#E1BEE7,stroke:#AA00FF
-    style n8 fill:#E1BEE7,stroke:#AA00FF
-    style n11 fill:#E1BEE7,stroke:#AA00FF
-    style lasso1 fill:#BBDEFB
-    style n1 fill:#BBDEFB,stroke:#2962FF
-    style n10 fill:#E1BEE7,stroke:#AA00FF
-    style ripple fill:#E1BEE7,stroke:#AA00FF
-    style n12 fill:#E1BEE7,stroke:#AA00FF
+    n16["<b>Nathan Fox</b><br>Associate Director, Data Core"]
+    --- UMD2["<b>Santiago Morales</b>, Co-I<br><br><b>Jamie Listokin</b>, EEG Core Research Coordinator"]
+    UMD2 --- n17(["<b>EEG Processing</b>"]) & n18(["<b>CBRAIN</b>"]) & n21(["<b>QC, Training, &amp; Troubleshooting</b>"])
+    n17 --- n19["<b>Marco McSweeney</b><br>Pre-processing &amp; Derivatives"]
+    n18 --- n20["<b>Whitney Kasenetz</b><br>EEG pre-processing in CBRAIN"]
+    n21 --- n22["<b>Savannah McNair<br>Jessica Norris</b>"]
     style n16 fill:#BBDEFB,stroke:#2962FF
-    style n17 fill:#BBDEFB
+    style UMD2 fill:#BBDEFB,stroke:#2962FF
+    style n17 fill:#E1BEE7,stroke:#AA00FF
+    style n18 fill:#E1BEE7,stroke:#AA00FF
+    style n21 fill:#E1BEE7,stroke:#AA00FF
     style n19 fill:#BBDEFB,stroke:#2962FF
-    style n20 fill:#BBDEFB
-    style reed fill:#BBDEFB
-    style n22 fill:#BBDEFB
-    style n23 fill:#E1BEE7,stroke:#AA00FF
-    style n18 fill:#BBDEFB
-    style n25 fill:#E1BEE7,stroke:#AA00FF
-    style n26 fill:#E1BEE7,stroke:#AA00FF
-    style n27 fill:#E1BEE7,stroke:#AA00FF
-    style n30 fill:#E1BEE7,stroke:#AA00FF
-    click jvci "#j-craig-venter-institute"
-    click lasso "#lasso"
-    click umn "#university-of-minnesota"
-    click n7 "#loris"
-    click n8 "#umd-eeg-core"
-    click n10 "#washu"
+    style n20 fill:#BBDEFB,stroke:#2962FF
+    style n22 fill:#BBDEFB,stroke:#2962FF
 ```
 
-
-## LORIS -elk
-
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    A["<b>Alan Evans</b>, PI"] --- nl["<b>Samir Das</b><br>Assoc Dir Softw Dev"]
-    nl --- n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"])
-    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; NeuroHub - MCIN<br><br><b>Pierre Rioux</b><br>Sr HPC Dev"]
-    n9 --- E["<b>Santiago Torres</b><br>Study Officer"]
-    F(["<b>Behavior (BHV)</b>"]) --- I["<b>Regis Ongaro-Carcy</b><br>Lead Dev<br><br><b>Sruthy Matthew</b><br>Sr Backend Dev<br><br><b>George Murad</b>, Jr Dev"]
-    G(["<b>MRI</b>"]) --- L["<b>Cecile Madjar</b><br>Lead Dev"]
-    H(["<b>EEG/Biosamples</b>"]) --- M["<b>Laetitia Faeselier</b><br>Lead Dev"]
-    nl --> G & H & F
-    I@{ shape: rect}
-    style A stroke:#2962FF,fill:#BBDEFB
-    style nl stroke:#2962FF,fill:#BBDEFB
-    style n9 stroke:#AA00FF,fill:#E1BEE7
-    style C stroke:#AA00FF,fill:#E1BEE7
-    style n12 stroke:#2962FF,fill:#BBDEFB
-    style E stroke:#2962FF,fill:#BBDEFB
-    style F stroke:#AA00FF,fill:#E1BEE7
-    style I stroke:#2962FF,fill:#BBDEFB
-    style G stroke:#AA00FF,fill:#E1BEE7
-    style L stroke:#2962FF,fill:#BBDEFB
-    style H stroke:#AA00FF,fill:#E1BEE7
-    style M stroke:#2962FF,fill:#BBDEFB
-    click A "#evans"
-    click nl "#das"
-    click E "#torres"
-    click L "#madjar"
-    click M "#faeselier"
-```
-
-## UMN elk
-
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    A1["<b>Damien Fair</b><br>HDCC Co-Director<br>
-    <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- HST(["<b>Health Sciences Technology (HST)</b><br>"]) & MIDB(["<b>MIDB Informatics Hub &amp; MSI</b><br>"]) & DCAN(["<b>DCAN Lab</b>"]) & USDTL(["<b>USDTL</b>"])
-    DCAN --- n1(["<b>Neuroinformatics</b>"]) & n2(["<b>MRI Acquisition</b>"])
-    n1 --- n3["<b>Eric Feczko, PhD</b><br><b>Lucille A. Moore, PhD</b>"]
-    n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
-    style A1 fill:#BBDEFB,stroke:#2962FF
-    style HST fill:#E1BEE7,stroke:#AA00FF
-    style MIDB fill:#E1BEE7,stroke:#AA00FF
-    style DCAN fill:#E1BEE7,stroke:#AA00FF
-    style USDTL fill:#E1BEE7,stroke:#AA00FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#BBDEFB,stroke:#2962FF
-    style n4 fill:#BBDEFB,stroke:#2962FF
-    click HST "#health-sciences-technology-hst"
-    click MIDB "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
-    click DCAN "https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab"
-    click USDTL "https://www.usdtl.com/"
-```
 
 ## Columbia University
 

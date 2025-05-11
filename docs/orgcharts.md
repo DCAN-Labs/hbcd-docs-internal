@@ -16,39 +16,25 @@ config:
 ---
 flowchart TB
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --> jvci["<b>JVCI</b>"]
-    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --> lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
+    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] 
+    E --> lasso["<b>Lasso</b>"]
+    E --> umn["<b>UMN</b>"]
+    E --> n7["<b>LORIS</b>"]
+    E --> n8["<b>UMD EEG Core</b>"]
+    E --> n11["<b>Columbia</b>"]
     lasso --> lasso1["<b>Leigh MacIntyre</b><br>MCIN Assoc Dir, PM"]
-    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --> n10["<b>WashU</b><br>"] & ripple["<b>Ripple</b>"] & n12["<b>LIBR</b>"] & lasso
-    n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --> n17@{ label: "<span style=\"color:\"><b>Chun Fan, PhD<br></b></span><span style=\"--tw-scale-x:\">Geolocation Chair</span><br style=\"--tw-scale-x:\">" }
+    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] 
+    n1 --> n10["<b>WashU</b><br>"] & ripple["<b>Ripple</b>"] & n12["<b>LIBR</b>"] & lasso
+    n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] 
+    n16 --> n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
     n12 --> n16
     n8 --> n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc. Dir."]
-    n7 --> n20@{ label: "<b><span style=\"color:\">Alan Evans</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">PI</span><br style=\"--tw-scale-x:\"><b><span style=\"color:\">Samir Das</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">AD Softw Dev</span>" }
+    n7 --> n20["<b>Alan Evans</b><br>PI<br><b>Samir Das</b><br>AD Softw Dev"]
     umn --> reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
-    n10 --> n22@{ label: "<b><span style=\"color:\">Chad<br>Sylvester, PhD</span><br style=\"--tw-scale-x:\"></b><span style=\"--tw-scale-x:\">Co-Investigator</span>" }
+    n10 --> n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n11 --> n23(["<b>Novel Tech &amp; Wearables</b>"])
     n23 --> n18["<b>William P. Fifer, PhD</b>, Chair<br><b>Nicolo Pini</b>, Co-I &amp; Dev<br><b>Beth Smith</b>"]
-    reed --> n25@{ label: "<span style=\"--tw-scale-x:\"><b>USDTL</b></span>" } & n26(["<b>MIDB &amp; MSI</b>"]) & n27(["<b>DCAN Lab</b>"]) & n30(["<b>HST</b>"])
-    n2@{ shape: rect}
-    jvci@{ shape: rounded}
-    E@{ shape: rect}
-    lasso@{ shape: rounded}
-    umn@{ shape: rounded}
-    n7@{ shape: rounded}
-    n8@{ shape: rounded}
-    n11@{ shape: rounded}
-    lasso1@{ shape: text}
-    n1@{ shape: rect}
-    n10@{ shape: rounded}
-    ripple@{ shape: rounded}
-    n12@{ shape: rounded}
-    n16@{ shape: rect}
-    n17@{ shape: text}
-    n19@{ shape: rect}
-    n20@{ shape: text}
-    reed@{ shape: text}
-    n22@{ shape: text}
-    n18@{ shape: text}
-    n25@{ shape: stadium}
+    reed --> n25(["<b>USDTL</b>"]) & n26(["<b>MIDB &amp; MSI</b>"]) & n27(["<b>DCAN Lab</b>"]) & n30(["<b>HST</b>"])
     style n2 fill:#BBDEFB,stroke:#2962FF
     style jvci fill:#E1BEE7,stroke:#AA00FF
     style E fill:#BBDEFB,stroke:#2962FF
@@ -82,72 +68,41 @@ flowchart TB
     click n10 "#washu"
 ```
 
-## Overview - Alt formatting ("elk") example
-
-![](overview_elk.png)
-
 ## LORIS
 ```mermaid
 ---
 config:
-  layout: dagre
+  layout: elk
 ---
 flowchart TB
-    A["<b>Alan Evans</b><br>Principal Investigator"] --- nl["<b>Samir Das</b><br>Associate Director of Software Development"]
-    nl --- n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"]) & B(["<b>Development</b>"])
-    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN &amp; NeuroHub - MCIN"]
+    A["<b>Alan Evans</b>, PI"] --- nl["<b>Samir Das</b><br>Assoc Dir Softw Dev"]
+    nl --- n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"])
+    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; NeuroHub - MCIN<br><br><b>Pierre Rioux</b><br>Sr HPC Dev"]
     n9 --- E["<b>Santiago Torres</b><br>Study Officer"]
-    B --- F["<b>Behavior (BHV)</b>"] & H["<b>EEG/Biosamples</b>"] & G["<b>MRI</b>"]
-    F --- I["<b>Regis Ongaro-Carcy</b><br>Lead Developer"] & n10["<b>Sruthy Matthew</b><br>Sr. Backend Dev"]
-    G --- L["<b>Cecile Madjar</b><br>Lead developer"]
-    H --- M["<b>Laetitia Faeselier</b><br>Lead Developer"]
-    n10 --- n11["<b>George Murad</b>, Jr. Dev"]
-    I --- n11
-    n12 --- D["<b>Pierre Rioux</b><br>Senior HPC developer"]
-    A@{ shape: text}
-    nl@{ shape: text}
-    n12@{ shape: text}
-    E@{ shape: text}
-    F@{ shape: rounded}
-    H@{ shape: rounded}
-    G@{ shape: rounded}
-    I@{ shape: text}
-    n10@{ shape: text}
-    L@{ shape: text}
-    M@{ shape: text}
-    n11@{ shape: text}
-    D@{ shape: text}
-    style A stroke:#000000,fill:#BBDEFB
-    style nl stroke:#000000,fill:#BBDEFB
-    style n9 stroke:#000000,fill:#E1BEE7
-    style C stroke:#333,fill:#E1BEE7
-    style B stroke:#333,fill:#E1BEE7
-    style n12 fill:#BBDEFB
-    style E stroke:#333,fill:#BBDEFB
-    style F stroke:#333,fill:#E1BEE7
-    style H stroke:#333,fill:#E1BEE7
-    style G stroke:#333,fill:#E1BEE7
-    style I stroke:#333,fill:#BBDEFB
-    style n10 fill:#BBDEFB
-    style L stroke:#000000,fill:#BBDEFB
-    style M fill:#BBDEFB,stroke:#000000
-    style n11 fill:#BBDEFB
-    style D stroke:#333,fill:#BBDEFB
+    F(["<b>Behavior (BHV)</b>"]) --- I["<b>Regis Ongaro-Carcy</b><br>Lead Dev<br><br><b>Sruthy Matthew</b><br>Sr Backend Dev<br><br><b>George Murad</b>, Jr Dev"]
+    G(["<b>MRI</b>"]) --- L["<b>Cecile Madjar</b><br>Lead Dev"]
+    H(["<b>EEG/Biosamples</b>"]) --- M["<b>Laetitia Faeselier</b><br>Lead Dev"]
+    nl --> G & H & F
+    I@{ shape: rect}
+    style A stroke:#2962FF,fill:#BBDEFB
+    style nl stroke:#2962FF,fill:#BBDEFB
+    style n9 stroke:#AA00FF,fill:#E1BEE7
+    style C stroke:#AA00FF,fill:#E1BEE7
+    style n12 stroke:#2962FF,fill:#BBDEFB
+    style E stroke:#2962FF,fill:#BBDEFB
+    style F stroke:#AA00FF,fill:#E1BEE7
+    style I stroke:#2962FF,fill:#BBDEFB
+    style G stroke:#AA00FF,fill:#E1BEE7
+    style L stroke:#2962FF,fill:#BBDEFB
+    style H stroke:#AA00FF,fill:#E1BEE7
+    style M stroke:#2962FF,fill:#BBDEFB
     click A "#evans"
     click nl "#das"
     click E "#torres"
-    click I "#ongaro-carcy"
-    click n10 "#matthew"
     click L "#madjar"
     click M "#faeselier"
-    click n11 "#murad"
-    click D "#rioux"
 ```
 <br>
-
-## LORIS - ALT
-
-![](loris_alt.png)
 
 ### Roles & Responsibilities
 <div id="evans" class="table-banner" onclick="toggleCollapse(this)">
@@ -413,33 +368,29 @@ There are several groups that fall under the oversight of UMN. The US Drug Testi
 ```mermaid
 ---
 config:
-  layout: dagre
+  layout: elk
 ---
 flowchart TB
-    A1["<b>Damien Fair</b><br>HDCC MPI<br>
-    <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- HST(["<b>Health Sciences Technology (HST)</b><br>"]) & MIDB(["<b>MIDB Informatics Hub &amp; Minnesota Supercomputing Institute (MSI)</b><br>"]) & DCAN(["<b>Developmental Cognition and Neuroimaging Lab (DCAN)</b>"]) & USDTL(["<b>USDTL</b>"])
+    A1["<b>Damien Fair</b><br>HDCC Co-Director<br>
+    <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- HST(["<b>Health Sciences Technology (HST)</b><br>"]) & MIDB(["<b>MIDB Informatics Hub &amp; MSI</b><br>"]) & DCAN(["<b>DCAN Lab</b>"]) & USDTL(["<b>USDTL</b>"])
     DCAN --- n1(["<b>Neuroinformatics</b>"]) & n2(["<b>MRI Acquisition</b>"])
-    n1 --- n3["<b>Eric Feczko, PhD</b><br></b><b>Lucille A. Moore, PhD</b>"]
+    n1 --- n3["<b>Eric Feczko, PhD</b><br><b>Lucille A. Moore, PhD</b>"]
     n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
-    A1@{ shape: text}
-    n3@{ shape: text}
-    n4@{ shape: text}
-    style A1 fill:#BBDEFB
+    style A1 fill:#BBDEFB,stroke:#2962FF
     style HST fill:#E1BEE7,stroke:#AA00FF
     style MIDB fill:#E1BEE7,stroke:#AA00FF
     style DCAN fill:#E1BEE7,stroke:#AA00FF
     style USDTL fill:#E1BEE7,stroke:#AA00FF
     style n1 fill:#E1BEE7,stroke:#AA00FF
     style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#BBDEFB
-    style n4 fill:#BBDEFB
+    style n3 fill:#BBDEFB,stroke:#2962FF
+    style n4 fill:#BBDEFB,stroke:#2962FF
     click HST "#health-sciences-technology-hst"
     click MIDB "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
+    click DCAN "https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab"
+    click USDTL "https://www.usdtl.com/"
 ```
 </div>
-
-### UMN Alt (elk formatting)
-![](umn.png)
 
 ### Health Sciences Technology
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
@@ -448,31 +399,27 @@ flowchart TB
 ```mermaid
 ---
 config:
-  layout: dagre
+  layout: elk
 ---
 flowchart TB
-    B["<b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- n1(["<b>Project Management</b>"]) & n2(["<b>DevOps</b>"]) & n3(["<b>MRI Dashboard</b>"]) & n4(["<b>EHR</b>"])
-    H["<b>Constantine Aliferis</b><br>Dir. Insitute Health Informatics"] --- I["<b>Steve Johnson</b><br>Director Informatics Innovation<br><b>Tim Meyer</b><br>EHR Informatics Engineer"]
+    B["<b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"]
+    B --- n1(["<b>Project Management</b>"]) & n2(["<b>DevOps</b>"]) & n3(["<b>MRI Dashboard</b>"]) & n4(["<b>EHR</b>"])
+    H["<b>Constantine Aliferis</b><br>Dir. Insitute Health Informatics"] 
+    --- I["<b>Steve Johnson</b><br>Dir Informatics Innovation<br><b>Tim Meyer</b><br>EHR Informatics Engineer"]
     n1 --- E["<b>Karen Athy-Penrose</b><br>Data Shelter PM"]
     n2 --- F["<b>Dan Duhon</b><br>DevOps/ETL"]
     n3 --- G["<b>Haley Hutala</b><br>Tableau Engineer"]
     n4 --- H
-    B@{ shape: text}
-    H@{ shape: text}
-    I@{ shape: text}
-    E@{ shape: text}
-    F@{ shape: text}
-    G@{ shape: text}
-    style B fill:#BBDEFB
-    style n1 fill:#E1BEE7,stroke:#000000
-    style n2 fill:#E1BEE7,stroke:#000000
-    style n3 fill:#E1BEE7,stroke:#000000
-    style n4 fill:#E1BEE7,stroke:#000000
-    style H fill:#BBDEFB
-    style I fill:#BBDEFB
-    style E fill:#BBDEFB
-    style F fill:#BBDEFB
-    style G fill:#BBDEFB
+    style B fill:#BBDEFB,stroke:#2962FF
+    style n1 fill:#E1BEE7,stroke:#AA00FF
+    style n2 fill:#E1BEE7,stroke:#AA00FF
+    style n3 fill:#E1BEE7,stroke:#AA00FF
+    style n4 fill:#E1BEE7,stroke:#AA00FF
+    style H fill:#BBDEFB,stroke:#2962FF
+    style I fill:#BBDEFB,stroke:#2962FF
+    style E fill:#BBDEFB,stroke:#2962FF
+    style F fill:#BBDEFB,stroke:#2962FF
+    style G fill:#BBDEFB,stroke:#2962FF
 ```
 </div>
 
@@ -482,34 +429,28 @@ The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://
 ```mermaid
 ---
 config:
-  layout: dagre
+  layout: elk
 ---
 flowchart TB
-    L["<b>Thomas Pengo</b><br>Co-Director, Informatics Group"] --- M(["<b>Project<br>Management</b>"]) & N(["<b>Advanced<br>SysOps (ASO)</b>"]) & O(["<b>Informatics<br>&amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) & n8(["<b>Security &amp;<br>Compliance</b>"])
-    N --- Q@{ label: "<b style=\"color:\">Jesse Erdman</b><br>Senior SysOps<br><br><b style=\"color:\"><span style=\"--tw-scale-x:\">Kimberleigh Breen</span><br style=\"--tw-scale-x:\"></b>Data Manager<br><br><b>Sriharshitha Anuganti<br></b>DevOps" }
-    O --- n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead<br>
-    <b>Erik Lee</b><br>Pipeline Lead<br>
-    <b>Monalisa Biles</b><br>Analyst"]
-    M --- n6@{ label: "<span style=\"--tw-scale-x:\"><b>Maren Macgregor-Hannah</b><br>HDCC PM</span><br style=\"--tw-scale-x:\">" }
-    P --- n7["<b>Borgne Raasch</b><br>"]
-    n8 --- n9@{ label: "<span style=\"--tw-scale-x:\"><b>Naomi<br>Hospodarsky-Sutherland</b></span><br style=\"--tw-scale-x:\">" }
-    L@{ shape: text}
-    Q@{ shape: text}
-    n4@{ shape: text}
-    n6@{ shape: text}
-    n7@{ shape: text}
-    n9@{ shape: text}
-    style L fill:#BBDEFB
-    style M fill:#E1BEE7,stroke:#333
-    style N fill:#E1BEE7,stroke:#333
-    style O fill:#E1BEE7,stroke:#333
-    style P fill:#E1BEE7,stroke:#333
-    style n8 fill:#E1BEE7,stroke:#333
-    style Q fill:#BBDEFB
-    style n4 fill:#BBDEFB
-    style n6 fill:#BBDEFB
-    style n7 fill:#BBDEFB
-    style n9 fill:#BBDEFB
+    L["<b>Thomas Pengo</b><br>Co-Director, Informatics Group"] 
+    --- M(["<b>Project<br>Management</b>"]) & N(["<b>Advanced<br>SysOps (ASO)</b>"])
+    L --- O(["<b>Informatics<br>&amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) & n8(["<b>Security &amp;<br>Compliance</b>"])
+    N --- Q["<b>Jesse Erdman</b><br>Senior SysOps<br><br><b>Kimberleigh Breen</b><br>Data Manager<br><br><b>Sriharshitha Anuganti</b><br>DevOps"]
+    O --- n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead<br><br><b>Erik Lee</b><br>Pipeline Lead<br><br><b>Monalisa Biles</b><br>Analyst"]
+    M --- n6["<b>Maren Macgregor-Hannah</b><br>HDCC PM"]
+    P --- n7["<b>Borgne Raasch</b>"]
+    n8 --- n9["<b>Naomi<br>Hospodarsky-Sutherland</b>"]
+    style L fill:#BBDEFB,stroke:#2962FF
+    style M fill:#E1BEE7,stroke:#AA00FF
+    style N fill:#E1BEE7,stroke:#AA00FF
+    style O fill:#E1BEE7,stroke:#AA00FF
+    style P fill:#E1BEE7,stroke:#AA00FF
+    style n8 fill:#E1BEE7,stroke:#AA00FF
+    style Q fill:#BBDEFB,stroke:#2962FF
+    style n4 fill:#BBDEFB,stroke:#2962FF
+    style n6 fill:#BBDEFB,stroke:#2962FF
+    style n7 fill:#BBDEFB,stroke:#2962FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
 ```
 <br>
 
@@ -599,40 +540,34 @@ The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for
 ```mermaid
 ---
 config:
-  layout: dagre
+  layout: elk
 ---
 flowchart TB
-    A["<b>Anders Dale, PhD</b><br>PI/Director"] --- n1(["<b>Fiona</b>"]) & n2(["<b>MRI QC</b>"]) & n3(["<b>MRI</b>"]) & n6(["<b>REDCap</b>"]) & n15(["<b>Dashboard</b>"])
+    A["<b>Anders Dale, PhD</b><br>PI/Director"] 
+    --- n1(["<b>Fiona</b>"]) & n2(["<b>MRI QC</b>"]) & n3(["<b>MRI</b>"]) & n6(["<b>REDCap</b>"]) & n15(["<b>Dashboard</b>"])
     n1 --- n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead<br>"]
     n2 --- n9["<b>Donald Hagler, PhD</b><br>QC Lead<br>"]
     n3 --- n10["<b>Josh Kuperman</b><br>MRI Lead"]
     n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>Data Science Lead"]
-    n9 --- n13@{ label: "<span style=\"--tw-scale-x:\"><b>Tyler Berkness<br></b></span><span style=\"background-color:\">Protocol Violations<br></span><br><span style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b>Sejal Shanbhag<br style=\"--tw-scale-x:\"></b></span></span><span style=\"--tw-scale-x:\">Issue Handling</span>" }
+    n9 --- n13["<b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
     n15 --- n4
-    n4 --- n12["<b><b><u>RECap</u></b><br>Joseph Baligh</b><br>Server Admin<br><b>Erika Bolden</b> &amp; <b>Laura Ziemer</b><br>Dev/Admin"] & n18@{ label: "<span style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b><span style=\"--tw-scale-x:\">Amanda Li, MS</span><br style=\"--tw-scale-x:\"></b></span></span><span style=\"--tw-scale-x:\">Biostats Support</span>" } & n17@{ label: "<span style=\"--tw-scale-x:\"><b><b><u>Dashboard</u></b><br>Biplabendu Das</b><br>Backend Dev<br></span><span style=\"--tw-scale-x:\"><b>Olivier Celhay</b><br></span><span style=\"background-color:\">Frontend Dev</span>" }
-    A@{ shape: text}
-    n8@{ shape: text}
-    n9@{ shape: text}
-    n10@{ shape: text}
-    n4@{ shape: text}
-    n13@{ shape: text}
-    n12@{ shape: text}
-    n18@{ shape: text}
-    n17@{ shape: text}
-    style A fill:#BBDEFB
-    style n1 fill:#E1BEE7,stroke:#000000
-    style n2 stroke:#000000,fill:#E1BEE7
-    style n3 stroke:#000000,fill:#E1BEE7
-    style n6 stroke:#000000,fill:#E1BEE7
-    style n15 fill:#E1BEE7,stroke:#000000
-    style n8 fill:#BBDEFB
-    style n9 fill:#BBDEFB
-    style n10 fill:#BBDEFB
-    style n4 fill:#BBDEFB
-    style n13 fill:#BBDEFB
-    style n12 fill:#BBDEFB
-    style n18 fill:#BBDEFB
-    style n17 fill:#BBDEFB
+    n4 --- n12["<b><b><u>RECap</u></b><br>Joseph Baligh</b><br>Server Admin<br><b>Erika Bolden</b> &amp; <b>Laura Ziemer</b><br>Dev/Admin"]
+    n4 --- n18["<b>Amanda Li, MS</b><br>Biostats Support"] 
+    n4 --- n17["<b><u>Dashboard</u></b><br><b>Biplabendu Das</b><br>Backend Dev<br><b>Olivier Celhay</b><br>Frontend Dev"]
+    style A fill:#BBDEFB,stroke:#2962FF
+    style n1 fill:#E1BEE7,stroke:#AA00FF
+    style n2 fill:#E1BEE7,stroke:#AA00FF
+    style n3 fill:#E1BEE7,stroke:#AA00FF
+    style n6 fill:#E1BEE7,stroke:#AA00FF
+    style n15 fill:#E1BEE7,stroke:#AA00FF
+    style n8 fill:#BBDEFB,stroke:#2962FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
+    style n10 fill:#BBDEFB,stroke:#2962FF
+    style n4 fill:#BBDEFB,stroke:#2962FF
+    style n13 fill:#BBDEFB,stroke:#2962FF
+    style n12 fill:#BBDEFB,stroke:#2962FF
+    style n18 fill:#BBDEFB,stroke:#2962FF
+    style n17 fill:#BBDEFB,stroke:#2962FF
 ```
 
 ## WashU
@@ -641,46 +576,32 @@ The Washington University in St. Louis (WashU) group has oversight of: *Neurolog
 ```mermaid
 ---
 config:
-  layout: dagre
+  layout: elk
 ---
 flowchart TB
     A["<b>Chris Smyser</b><br>Principal Investigator<br>
     <b>Chad Sylvester</b><br>Co-Investigator"] --- neurology(["<b>Neurology</b>"]) & C(["<b>EHR</b><br>"]) & B["<b>Sauren Ravencroft</b><br>Project Manager"] & n11(["<b>OMOR</b>"])
     neurology --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Investigators &amp; Study Neuroradiologists"]
-    n1 --- n2["<b>Dimitrios (Jim) Alexopoulos</b>
-    Data Manager, Ambra"]
-    C --- n3["<b>Philip Payne</b><br><b>Albert Lai</b>
-    Co-Investigators"]
+    n1 --- n2["<b>Dimitrios (Jim) Alexopoulos</b><br>Data Manager, Ambra"]
+    C --- n3["<b>Philip Payne</b><br><b>Albert Lai</b><br>Co-Investigators"]
     n3 --- n4["<b>Nicole Venteris</b><br>Project Manager"]
     B --- n5(["<b>Ripple</b>"]) & n6(["<b>AirTable &amp; Ancillary Studies</b>"])
-    n5 --- n8["<b>Liliana Mueller</b>
-    Programming &amp; Management"]
-    n6 --- n9["<b>Lynn Menchaca</b>
-    AirTable Management<br>"] & n10["<b>Madison Gardner</b>
-    U01 Site Piloting"]
-    A@{ shape: text}
-    B@{ shape: text}
-    n1@{ shape: text}
-    n2@{ shape: text}
-    n3@{ shape: text}
-    n4@{ shape: text}
-    n8@{ shape: text}
-    n9@{ shape: text}
-    n10@{ shape: text}
-    style A fill:#BBDEFB
-    style neurology fill:#E1BEE7,stroke:#000000
-    style C stroke:#000000,fill:#E1BEE7
-    style B fill:#BBDEFB
-    style n11 stroke:#000000,fill:#E1BEE7
-    style n1 fill:#BBDEFB
-    style n2 fill:#BBDEFB
-    style n3 fill:#BBDEFB
-    style n4 fill:#BBDEFB
-    style n5 fill:#E1BEE7,stroke:#000000
-    style n6 fill:#E1BEE7,stroke:#000000
-    style n8 fill:#BBDEFB,stroke:none
-    style n9 fill:#BBDEFB
-    style n10 fill:#BBDEFB
+    n5 --- n8["<b>Liliana Mueller</b><br>Programming &amp; Management"]
+    n6 --- n9["<b>Lynn Menchaca</b><br>AirTable Management<br>"] & n10["<b>Madison Gardner</b><br>U01 Site Piloting"]
+    style A fill:#BBDEFB,stroke:#2962FF
+    style neurology fill:#E1BEE7,stroke:#AA00FF
+    style C fill:#E1BEE7,stroke:#AA00FF
+    style B fill:#BBDEFB,stroke:#2962FF
+    style n11 fill:#E1BEE7,stroke:#AA00FF
+    style n1 fill:#BBDEFB,stroke:#2962FF
+    style n2 fill:#BBDEFB,stroke:#2962FF
+    style n3 fill:#BBDEFB,stroke:#2962FF
+    style n4 fill:#BBDEFB,stroke:#2962FF
+    style n5 fill:#E1BEE7,stroke:#AA00FF
+    style n6 fill:#E1BEE7,stroke:#AA00FF
+    style n8 fill:#BBDEFB,stroke:#2962FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
+    style n10 fill:#BBDEFB,stroke:#2962FF
 ```
 
 ## University of Maryland EEG Core
