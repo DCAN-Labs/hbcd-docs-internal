@@ -69,6 +69,7 @@ flowchart TB
 ```
 
 ## LORIS
+<div style="width: 80%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -101,6 +102,7 @@ flowchart TB
     click L "#madjar"
     click M "#faeselier"
 ```
+</div>
 <br>
 
 ### Roles & Responsibilities
