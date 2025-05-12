@@ -238,7 +238,6 @@ flowchart TB
 ### Health Sciences Technology
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
 
-<div style="width: 80%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -263,7 +262,6 @@ flowchart TB
     style n5 fill:#E1BEE7,stroke:#AA00FF
     click n5 "#washu"
 ```
-</div>
 
 ### MIDB Informatics Hub & MSI
 The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://midb.umn.edu/research/informatics) and [Minnesota Supercomputing Institute (MSI)](https://msi.umn.edu/) at UMN provide the following services to the HBCD study: *System Administration*, *Loris Hosting*, *Computing*, *Processing*, and *Data Sharing*.
