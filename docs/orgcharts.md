@@ -15,19 +15,19 @@ config:
   layout: elk
 ---
 flowchart TB
-    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --> jvci["<b>JVCI</b>"]
-    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --> lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
-    lasso --> lasso1["<b>Leigh MacIntyre</b><br>MCIN Assoc Dir, PM"]
-    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --> n10["<b>WashU</b><br>"] & n12["<b>LIBR</b>"] & lasso
-    n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --> n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
-    n12 --> n16
-    n8 --> n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc. Dir."]
-    n7 --> n20["<b>Alan Evans</b><br>PI<br><b>Samir Das</b><br>AD Softw Dev"]
-    umn --> reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
-    n10 --> n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
-    n11 --> n23(["<b>Novel Tech &amp; Wearables</b>"])
-    n23 --> n18["<b>William P. Fifer, PhD</b><br><b>Beth Smith, DPT, PhD</b><br>Co-Chairs<br><b>Nicolo Pini<br></b>Co-I &amp; Dev"]
-    n22 --> n24(["<b>Ripple</b>"])
+    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jvci["<b>JVCI</b>"]
+    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
+    lasso --- lasso1["<b>Leigh MacIntyre</b><br>MCIN Assoc Dir, PM"]
+    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<b>WashU</b><br>"] & n12["<b>LIBR</b>"] & lasso
+    n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
+    n12 --- n16
+    n8 --- n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc. Dir."]
+    n7 --- n20["<b>Alan Evans</b><br>PI<br><b>Samir Das</b><br>AD Softw Dev"]
+    umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
+    n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
+    n11 --- n23(["<b>Novel Tech &amp; Wearables</b>"])
+    n23 --- n18["<b>William P. Fifer, PhD</b><br><b>Beth Smith, DPT, PhD</b><br>Co-Chairs<br><b>Nicolo Pini<br></b>Co-I &amp; Dev"]
+    n22 --- n24(["<b>Ripple</b>"])
     style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style jvci fill:#E1BEE7,stroke:#AA00FF
     style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
@@ -72,7 +72,7 @@ flowchart TB
     F(["<b>Behavior (BHV)</b>"]) --- I["<b>Regis Ongaro-Carcy</b><br>Lead Dev<br><br><b>Sruthy Matthew</b><br>Sr Backend Dev<br><br><b>George Murad</b>, Jr Dev"]
     G(["<b>MRI</b>"]) --- L["<b>Cecile Madjar</b><br>Lead Dev"]
     H(["<b>EEG/Biosamples</b>"]) --- M["<b>Laetitia Faeselier</b><br>Lead Dev"]
-    nl --> G & H & F
+    nl --- G & H & F
     style A stroke:#2962FF,fill:#BBDEFB
     style nl stroke:#2962FF,fill:#BBDEFB
     style n9 stroke:#AA00FF,fill:#E1BEE7
@@ -164,15 +164,15 @@ flowchart TB
         n22(["<b>UI/UX</b>"])
         n23(["<b>Dev &amp; Operations</b>"])
   end
-    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<a href="https://hbcdstudy.org/workgroups-and-committees/"><b>Workgroup</a> Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"]) & s1
-    B --> n5["<b>Ellise Elamparo</b><br>Exec Admin"]
-    n1 --> n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
-    n2 --> n7["<b>Jen Zink<br></b>Director,<br>Partnerships &amp; Grant<br>Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-    n3 --> n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan<br>Sterling<br></b>Lead Dev"]
-    n4 --> n9["<b>Laetitia Fesselier<br></b>Sr. Dev<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Dev"]
-    n23 --> n24["<b>Francisco Soto</b><br>Dev/SysOps Manager<br><b>Alexandre Meyer</b><br>DevOps<br><b>Nataliya Korniyenko<br></b>Sys Admin<br><br><b>Mark Walker<br></b>Software Architect<br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
-    n22 --> n26["<b>Andrew Sawaya</b><br>Lead Designer<br><b>Mehrafarin Ekhlaspour</b><br>Visual Design"]
-    n21 --> n27["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
+    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --- B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<a href="https://hbcdstudy.org/workgroups-and-committees/"><b>Workgroup</a> Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"]) & s1
+    B --- n5["<b>Ellise Elamparo</b><br>Exec Admin"]
+    n1 --- n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
+    n2 --- n7["<b>Jen Zink<br></b>Director,<br>Partnerships &amp; Grant<br>Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
+    n3 --- n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan<br>Sterling<br></b>Lead Dev"]
+    n4 --- n9["<b>Laetitia Fesselier<br></b>Sr. Dev<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Dev"]
+    n23 --- n24["<b>Francisco Soto</b><br>Dev/SysOps Manager<br><b>Alexandre Meyer</b><br>DevOps<br><b>Nataliya Korniyenko<br></b>Sys Admin<br><br><b>Mark Walker<br></b>Software Architect<br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
+    n22 --- n26["<b>Andrew Sawaya</b><br>Lead Designer<br><b>Mehrafarin Ekhlaspour</b><br>Visual Design"]
+    n21 --- n27["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
     style n21 fill:#E1BEE7,stroke:#AA00FF
     style n22 fill:#E1BEE7,stroke:#AA00FF
     style n23 fill:#E1BEE7,stroke:#AA00FF
@@ -236,7 +236,7 @@ flowchart TB
     n2 --- F["<b>Dan Duhon</b><br>DevOps/ETL"]
     n3 --- G["<b>Haley Hutala</b><br>Tableau Engineer"]
     n4 --- H["<b>Constantine Aliferis</b><br>Dir. Insitute Health Informatics<br><b>Steve Johnson</b><br>Dir Informatics Innovation<br><b>Tim Meyer</b><br>Informatics Engineer"]
-    n4 --> n5["<b>WashU EHR Team<br></b><i>Click to view org chart</i>"]
+    n4 --- n5["<b>WashU EHR Team<br></b><i>Click to view org chart</i>"]
     style B fill:#BBDEFB,stroke:#2962FF
     style n1 fill:#E1BEE7,stroke:#AA00FF
     style n2 fill:#E1BEE7,stroke:#AA00FF
@@ -378,8 +378,8 @@ flowchart TB
     n9 --- n13["<b>Tyler Berkness</b><br>Protocol Violations<br><b>Sejal Shanbhag</b><br>Issue Handling"]
     n15 --- n4
     n4 --- n12["<b>Joseph Baligh</b><br>Server Admin<br><b>Erika Bolden</b> &amp; <b>Laura Ziemer</b><br>Dev/Admin"] & n17["<b>Biplabendu Das</b><br>Backend Dev<br><b>Olivier Celhay</b><br>Frontend Dev"]
-    n15 --> n17
-    n6 --> n12
+    n15 --- n17
+    n6 --- n12
     style A fill:#BBDEFB,stroke:#2962FF
     style n1 fill:#E1BEE7,stroke:#AA00FF
     style n2 fill:#E1BEE7,stroke:#AA00FF
@@ -410,10 +410,10 @@ flowchart TB
     n1 --- n2["<b>Dimitrios Alexopoulos, PhD</b><br>Data Manager"]
     C --- n3["<b>Philip Payne</b><br><b>Albert Lai</b><br>Co-Investigators"]
     n3 --- n4["<b>Nicole Venteris</b><br>Project Manager"]
-    n12["<b>UMN HST</b><br><i>Click to view org chart</i>"] --> C
+    n12["<b>UMN HST</b><br><i>Click to view org chart</i>"] --- C
     n5(["<b>Ripple</b>"]) --- B["<b>Sauren Ravencroft</b><br>Project Manager"]
-    A --> n5 & n6(["<b>AirTable &amp; Ancillary Studies</b>"])
-    B --> n8["<b>Lynn Menchaca</b><br>AirTable Management<br><b>Madison Gardner</b><br>U01 Site Piloting"] & n9["<b>Liliana Mueller</b><br>Programming<br>&amp; Management"]
+    A --- n5 & n6(["<b>AirTable &amp; Ancillary Studies</b>"])
+    B --- n8["<b>Lynn Menchaca</b><br>AirTable Management<br><b>Madison Gardner</b><br>U01 Site Piloting"] & n9["<b>Liliana Mueller</b><br>Programming<br>&amp; Management"]
     n6 --- B
     style A fill:#BBDEFB,stroke:#2962FF
     style ambra fill:#E1BEE7,stroke:#AA00FF
