@@ -207,7 +207,6 @@ flowchart TB
 ## University of Minnesota
 There are several groups that fall under the oversight of UMN. The US Drug Testing Laboratories ([USDTL](https://www.usdtl.com/)) handles toxicology. The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) led by Damien Fair at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. The remaining groups are described in greater detail below.  
 
-<div style="width: 90%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -233,7 +232,6 @@ flowchart TB
     click DCAN "https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab"
     click USDTL "https://www.usdtl.com/"
 ```
-</div>
 
 ### Health Sciences Technology
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
