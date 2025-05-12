@@ -277,7 +277,7 @@ flowchart TB
     style n3 fill:#BBDEFB,stroke:#2962FF
     style n4 fill:#BBDEFB,stroke:#2962FF
     click HST "#health-sciences-technology-hst"
-    click MIDB "#masonic-institute-for-the-developing-brain-midb-informatics-hub"
+    click MIDB "#midb-informatics-hub-msi"
     click DCAN "https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab"
     click USDTL "https://www.usdtl.com/"
 ```
