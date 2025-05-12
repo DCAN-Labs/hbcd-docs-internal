@@ -65,11 +65,11 @@ config:
   layout: elk
 ---
 flowchart TB
-    A["<b>Alan Evans</b>, PI"] --- nl["<b>Samir Das</b><br>Assoc Dir Softw Dev"]
+    A["<b>Alan Evans</b>, PI"] --- nl["<b>Samir Das</b><br>Assoc Dir Technology - MCIN"]
     nl --- n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"])
-    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; NeuroHub - MCIN<br><br><b>Pierre Rioux</b><br>Sr HPC Dev"]
+    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; NeuroHub - MCIN<br><br><b>Pierre Rioux</b>, Lead Dev<br><b>Natacha Beck</b>, Sr Dev"]
     n9 --- E["<b>Santiago Torres</b><br>Study Officer"]
-    F(["<b>Behavior (BHV)</b>"]) --- I["<b>Regis Ongaro-Carcy</b><br>Lead Dev<br><br><b>Sruthy Matthew</b><br>Sr Backend Dev<br><br><b>George Murad</b>, Jr Dev"]
+    F(["<b>Behavior (BHV)</b>"]) --- I["<b>Dave McFarlane</b><br>Lead Dev<br><br><b>Sruthy Matthew</b><br>Sr Backend Dev<br><br><b>Regis Ongaro-Carcy<br>George Murad<br>Moshood Abiola</b><br>Dev"]
     G(["<b>MRI</b>"]) --- L["<b>Cecile Madjar</b><br>Lead Dev"]
     H(["<b>EEG/Biosamples</b>"]) --- M["<b>Laetitia Faeselier</b><br>Lead Dev"]
     nl --- G & H & F
