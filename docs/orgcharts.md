@@ -242,7 +242,7 @@ flowchart TB
     style n2 fill:#E1BEE7,stroke:#AA00FF
     style n3 fill:#E1BEE7,stroke:#AA00FF
     style n4 fill:#E1BEE7,stroke:#AA00FF
-    style s1 fill:transparent,stroke:#000000
+    style s1 fill:#FFFFFF,stroke:#000000
     style n5 fill:#BBDEFB,stroke:#2962FF
     style n6 fill:#BBDEFB,stroke:#2962FF
     style n7 fill:#BBDEFB,stroke:#2962FF
