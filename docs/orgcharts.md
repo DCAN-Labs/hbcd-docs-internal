@@ -235,11 +235,10 @@ config:
 ---
 flowchart TB
     B["<b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- n1(["<b>Project Management</b>"]) & n2(["<b>DevOps</b>"]) & n3(["<b>MRI Dashboard</b>"]) & n4(["<b>Electronic Health Records (EHR)</b>"])
-    n1 --- E["<b>Karen Athy-Penrose</b><br>Data Shelter PM"]
-    n2 --- F["<b>Dan Duhon</b><br>DevOps/ETL"]
-    n3 --- G["<b>Haley Hutala</b><br>Tableau Engineer"]
-    n4 --- H["<b>Constantine Aliferis</b><br>Dir. Insitute Health Informatics<br><b>Steve Johnson</b><br>Dir Informatics Innovation<br><b>Tim Meyer</b><br>Informatics Engineer"]
-    n4 --- n5["<b>WashU EHR Team<br></b><i>Click to view org chart</i>"]
+    n1 --- E["<b>Karen Athy-Penrose</b>"]
+    n2 --- F["<b>Dan Duhon<br>Derek Thompson</b>"]
+    n3 --- G["<b>Haley Hutala</b><br>Tableau Engineer<br><b>Sanjana Madakshire</b><br>QC"]
+    n4 --- H["<b>Constantine Aliferis</b><br>Dir. Insitute Health Informatics<br><b>Steve Johnson</b><br>Dir Informatics Innovation<br><b>Tim Meyer</b><br>Informatics Engineer"] & n5["<b>WashU EHR Team<br></b><i>Click to view org chart</i>"]
     style B fill:#BBDEFB,stroke:#2962FF
     style n1 fill:#E1BEE7,stroke:#AA00FF
     style n2 fill:#E1BEE7,stroke:#AA00FF
