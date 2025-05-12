@@ -407,34 +407,30 @@ config:
   layout: elk
 ---
 flowchart TB
-    A["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"] --- ambra(["<b>Ambra</b>"]) & C(["<b>EHR</b><br>"]) & n11(["<b>OMOR</b>"])
-    ambra --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Study Neuroradiologists"]
-    n1 --- n2["<b>Dimitrios Alexopoulos, PhD</b><br>Data Manager"]
-    C --- n3["<b>Philip Payne</b><br><b>Albert Lai</b><br>Co-Investigators"]
-    n3 --- n4["<b>Nicole Venteris</b><br>Project Manager"]
+    A["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"] --- ambra(["<b>Ambra</b>"]) & C(["<b>EHR</b><br>"]) & n11(["<b>OMOR</b>"]) & n5(["<b>Ripple</b>"]) & n6(["<b>AirTable &amp; Ancillary Studies</b>"])
+    ambra --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br><br><b>Jim Alexopoulos, PhD</b><br>Data Manager"]
+    C --- n3["<b>Philip Payne</b><br><b>Albert Lai</b><br>Co-Investigators<br><br><b>Nicole Venteris</b><br>Project Manager"]
     n12["<b>UMN HST</b><br><i>Click to view org chart</i>"] --- C
-    n5(["<b>Ripple</b>"]) --- B["<b>Sauren Ravencroft</b><br>Project Manager"]
-    A --- n5 & n6(["<b>AirTable &amp; Ancillary Studies</b>"])
-    B --- n8["<b>Lynn Menchaca</b><br>AirTable Management<br><b>Madison Gardner</b><br>U01 Site Piloting"] & n9["<b>Liliana Mueller</b><br>Programming<br>&amp; Management"]
+    n5 --- B["<b>Sauren Ravencroft</b><br>Project Manager"]
     n6 --- B
+    n5 --> n9["<b>Liliana Mueller</b>"]
+    n6 --> n8["<b>Lynn Menchaca</b><br>AirTable Admin<br><br><b>Madison Gardner</b><br>U01 Site Piloting"]
     style A fill:#BBDEFB,stroke:#2962FF
     style ambra fill:#E1BEE7,stroke:#AA00FF
     style C fill:#E1BEE7,stroke:#AA00FF
     style n11 fill:#E1BEE7,stroke:#AA00FF
-    style n1 fill:#BBDEFB,stroke:#2962FF
-    style n2 fill:#BBDEFB,stroke:#2962FF
-    style n3 fill:#BBDEFB,stroke:#2962FF
-    style n4 fill:#BBDEFB,stroke:#2962FF
-    style n12 fill:#E1BEE7,stroke:#AA00FF
     style n5 fill:#E1BEE7,stroke:#AA00FF
-    style B fill:#BBDEFB,stroke:#2962FF
     style n6 fill:#E1BEE7,stroke:#AA00FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
+    style n1 fill:#BBDEFB,stroke:#2962FF
+    style n3 fill:#BBDEFB,stroke:#2962FF
+    style n12 fill:#E1BEE7,stroke:#AA00FF
+    style B fill:#BBDEFB,stroke:#2962FF
     style n9 fill:#BBDEFB,stroke:#2962FF
+    style n8 fill:#BBDEFB,stroke:#2962FF
     click ambra "#ambra"
-    click n12 "#health-sciences-technology"
     click n5 "#ripple-science"
     click n6 "#airtable"
+    click n12 "#health-sciences-technology"
 ```
 
 ### Subcontractor Details
