@@ -207,6 +207,7 @@ flowchart TB
     DCAN --- n1(["<b>Neuroinformatics</b>"]) & n2(["<b>MRI Acquisition</b>"])
     n1 --- n3["<b>Eric Feczko, PhD</b><br><b>Lucille A. Moore, PhD</b>"]
     n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
+    A1 --- n5(["<b>Biosamples (BAH)</b>"]) & n6(["<b>Genomics</b>"])
     style A1 fill:#BBDEFB,stroke:#2962FF
     style HST fill:#E1BEE7,stroke:#AA00FF
     style MIDB fill:#E1BEE7,stroke:#AA00FF
@@ -216,6 +217,8 @@ flowchart TB
     style n2 fill:#E1BEE7,stroke:#AA00FF
     style n3 fill:#BBDEFB,stroke:#2962FF
     style n4 fill:#BBDEFB,stroke:#2962FF
+    style n5 fill:#E1BEE7,stroke:#AA00FF
+    style n6 fill:#E1BEE7,stroke:#AA00FF
     click HST "#health-sciences-technology-hst"
     click MIDB "#midb-informatics-hub-msi"
     click DCAN "https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab"
