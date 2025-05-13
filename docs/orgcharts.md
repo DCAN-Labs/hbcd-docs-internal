@@ -409,8 +409,8 @@ flowchart TB
     n12["<b>UMN HST</b><br><i>Click to view org chart</i>"] --- C
     n5 --- B["<b>Sauren Ravencroft</b><br>Project Manager"]
     n6 --- B
-    n5 --> n9["<b>Liliana Mueller</b>"]
-    n6 --> n8["<b>Lynn Menchaca</b><br>AirTable Admin<br><br><b>Madison Gardner</b><br>U01 Site Piloting"]
+    n5 --- n9["<b>Liliana Mueller</b>"]
+    n6 --- n8["<b>Lynn Menchaca</b><br>AirTable Admin<br><br><b>Madison Gardner</b><br>U01 Site Piloting"]
     style A fill:#BBDEFB,stroke:#2962FF
     style ambra fill:#E1BEE7,stroke:#AA00FF
     style C fill:#E1BEE7,stroke:#AA00FF
@@ -452,7 +452,7 @@ flowchart TB
     n17(["<b>EEG Pre-processing &amp; Derivatives</b>"]) --- n19["<b>Marco McSweeney, PhD</b>"]
     n18(["<b>CBRAIN Processing</b>"]) --- n20["<b>Whitney Kasenetz</b>"]
     n21(["<b>QC, Training, &amp; Troubleshooting</b>"]) --- n22["<b>Savannah McNair<br>Jessica Norris</b>"]
-    n16["<b>Nathan Fox</b>, Assoc Dir<br><b>Santiago Morales</b>, Co-I<br><b>Jamie Listokin</b>, RC"] --> n21 & n17 & n18
+    n16["<b>Nathan Fox</b>, Assoc Dir<br><b>Santiago Morales</b>, Co-I<br><b>Jamie Listokin</b>, RC"] --- n21 & n17 & n18
     style n17 fill:#E1BEE7,stroke:#AA00FF
     style n19 fill:#BBDEFB,stroke:#2962FF
     style n18 fill:#E1BEE7,stroke:#AA00FF
