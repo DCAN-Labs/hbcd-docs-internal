@@ -160,21 +160,23 @@ config:
 ---
 flowchart TB
  subgraph s1["<b>INTERNAL</b>"]
-        n21(["<b>QA</b>"])
-        n22(["<b>UI/UX</b>"])
-        n23(["<b>Dev &amp; Operations</b>"])
+        n22(["<b>Dev</b>"])
+        n23(["<b>Dev/SysOps</b>"])
   end
-    A["<b>Leigh MacIntyre</b>, CEO<br><a href="https://mcin.ca/about-mcin/" target="_blank">MCIN</a> Assoc Dir"] --- B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<a href="https://hbcdstudy.org/workgroups-and-committees/"><b>Workgroup</a> Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"]) & s1
-    B --- n5["<b>Ellise Elamparo</b><br>Exec Admin"]
+    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --- B(["<b>Admin</b>"]) & n1(["<b>Ancillary Studies</b>"]) & n2(["<b>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data Loading</b>"]) & s1
+    B --- n5["<b>Ellise Elamparo</b><br>Training Scheduling<br>(pre-release)"]
     n1 --- n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
-    n2 --- n7["<b>Jen Zink<br></b>Director,<br>Partnerships &amp; Grant<br>Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-    n3 --- n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan<br>Sterling<br></b>Lead Dev"]
+    n2 --- n7["<b>Jen Zink<br></b>Dir. Partnerships<br>&amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
+    n3 --- n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan Sterling<br></b>Lead Dev"]
     n4 --- n9["<b>Laetitia Fesselier<br></b>Sr. Dev<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Dev"]
-    n23 --- n24["<b>Francisco Soto</b><br>Dev/SysOps Manager<br><b>Alexandre Meyer</b><br>DevOps<br><b>Nataliya Korniyenko<br></b>Sys Admin<br><br><b>Mark Walker<br></b>Software Architect<br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
-    n22 --- n26["<b>Andrew Sawaya</b><br>Lead Designer<br><b>Mehrafarin Ekhlaspour</b><br>Visual Design"]
-    n21 --- n27["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
-    style n21 fill:#E1BEE7,stroke:#AA00FF
-    style n22 fill:#E1BEE7,stroke:#AA00FF
+    n23 --- n24["<b>Francisco Soto</b><br>Manager<br>
+    <b>Alexandre Meyer</b><br>DevOps<br>
+    <b>Nataliya Korniyenko<br></b>Sys Admin"]
+    n22 --- n26["<b>Mark Walker</b><br>Software Architect<br>
+    <b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers<br>
+    <b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers<br>
+    <b>Andrew Sawaya</b><br>UI/UX Lead Designer<br><b>Mehrafarin Ekhlaspour</b><br>UI/UX Visual Design"]
+    style n22 fill:#E1BEE7
     style n23 fill:#E1BEE7,stroke:#AA00FF
     style A fill:#BBDEFB,stroke:#2962FF
     style B fill:#E1BEE7,stroke:#AA00FF
@@ -190,7 +192,6 @@ flowchart TB
     style n9 fill:#BBDEFB,stroke:#2962FF
     style n24 fill:#BBDEFB,stroke:#2962FF
     style n26 fill:#BBDEFB,stroke:#2962FF
-    style n27 fill:#BBDEFB,stroke:#2962FF
 ```
 
 ## University of Minnesota
