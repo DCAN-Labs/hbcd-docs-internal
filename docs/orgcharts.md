@@ -17,10 +17,7 @@ config:
 flowchart TB
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jvci["<b>JVCI</b>"]
     E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
-    lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO<br>
-    <span class="tooltip">MCIN
-        <span class="tooltiptext">McGill Centre for Integrative Neuroscience</span>
-      </span> Assoc Dir"]
+    lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO<br>MCIN Assoc Dir"]
     n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<b>WashU</b><br>"] & n12["<b>LIBR</b>"] & lasso
     n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
     n12 --- n16
@@ -68,7 +65,7 @@ config:
   layout: elk
 ---
 flowchart TB
-    A["<b>Alan Evans</b>, PI"] --- nl["<b>Samir Das</b><br>Assoc Dir Technology - MCIN"]
+    A["<b>Alan Evans</b>, PI"] --- nl["<b>Samir Das</b><br>MCIN Assoc Dir Technology"]
     nl --- n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"])
     C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; NeuroHub - MCIN<br><br><b>Pierre Rioux</b>, Lead Dev<br><b>Natacha Beck</b>, Sr Dev"]
     n9 --- E["<b>Santiago Torres</b><br>Study Officer"]
@@ -167,7 +164,7 @@ flowchart TB
         n22(["<b>UI/UX</b>"])
         n23(["<b>Dev &amp; Operations</b>"])
   end
-    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --- B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<a href="https://hbcdstudy.org/workgroups-and-committees/"><b>Workgroup</a> Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"]) & s1
+    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc Dir"] --- B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<a href="https://hbcdstudy.org/workgroups-and-committees/"><b>Workgroup</a> Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"]) & s1
     B --- n5["<b>Ellise Elamparo</b><br>Exec Admin"]
     n1 --- n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
     n2 --- n7["<b>Jen Zink<br></b>Director,<br>Partnerships &amp; Grant<br>Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
