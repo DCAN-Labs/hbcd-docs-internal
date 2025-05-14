@@ -176,7 +176,7 @@ flowchart TB
     <b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers<br>
     <b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers<br>
     <b>Andrew Sawaya</b><br>UI/UX Lead Designer<br><b>Mehrafarin Ekhlaspour</b><br>UI/UX Visual Design"]
-    style n22 fill:#E1BEE7
+    style n22 fill:#E1BEE7,stroke:#AA00FF
     style n23 fill:#E1BEE7,stroke:#AA00FF
     style A fill:#BBDEFB,stroke:#2962FF
     style B fill:#E1BEE7,stroke:#AA00FF
