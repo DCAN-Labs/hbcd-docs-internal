@@ -403,7 +403,7 @@ config:
   layout: elk
 ---
 flowchart TB
-    A["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"] --- ambra(["<b>Ambra</b>"]) & C(["<b>EHR</b><br>"]) & n11(["<b>OMOR</b>"]) & n5(["<b>Ripple</b>"]) & n6(["<b>AirTable &amp; Ancillary Studies</b>"])
+    A["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"] --- ambra(["<b>Ambra</b>"]) & C(["<b>EHR</b><br>"]) & n11(["<b>OMOP</b>"]) & n5(["<b>Ripple</b>"]) & n6(["<b>AirTable &amp; Ancillary Studies</b>"])
     ambra --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br><br><b>Jim Alexopoulos, PhD</b><br>Data Manager"]
     C --- n3["<b>Philip Payne</b><br><b>Albert Lai</b><br>Co-Investigators<br><br><b>Nicole Venteris</b><br>Project Manager"]
     n12["<b>UMN HST</b><br><i>Click to view org chart</i>"] --- C
