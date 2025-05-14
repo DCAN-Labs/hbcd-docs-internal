@@ -87,6 +87,49 @@ flowchart TB
     style M stroke:#2962FF,fill:#BBDEFB
 ```
 </div>
+
+### Alternative LORIS chart option
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+ subgraph s1["<b>LORIS</b>"]
+        n9(["<b>Study Coordination</b>"])
+        C(["<b>CBRAIN/Computing</b>"])
+        n12["<b>Bryan Caron</b><br>Dir, CBRAIN &amp; MCIN</a> NeuroHub<br><br><b>Pierre Rioux</b><br>Lead Dev<br><b>
+        Natacha Beck</b><br>Sr Dev"]
+        E["<b>Santiago Torres</b><br>Study Officer"]
+        F(["<b>Behavior (BHV)</b>"])
+        I["<b>Dave McFarlane</b><br>Lead Dev<br><br><b>Sruthy Matthew</b><br>Sr Backend Dev<br><br><b>Regis Ongaro-Carcy<br>George Murad<br>Moshood Abiola</b><br>Dev"]
+        G(["<b>MRI</b>"])
+        L["<b>Cecile Madjar</b><br>Lead Dev"]
+        H(["<b>EEG/Biosamples</b>"])
+        M["<b>Laetitia Faeselier</b><br>Lead Dev"]
+  end
+    C --- n12
+    n9 --- E
+    F --- I
+    G --- L
+    H --- M
+    A["<b>Alan Evans</b>, PI
+    <b>Samir Das</b>, MCIN Assoc Dir Technology"] --> s1
+    n12@{ shape: rect}
+    style n9 stroke:#AA00FF,fill:#E1BEE7
+    style C stroke:#AA00FF,fill:#E1BEE7
+    style n12 stroke:#2962FF,fill:#BBDEFB
+    style E stroke:#2962FF,fill:#BBDEFB
+    style F stroke:#AA00FF,fill:#E1BEE7
+    style I stroke:#2962FF,fill:#BBDEFB
+    style G stroke:#AA00FF,fill:#E1BEE7
+    style L stroke:#2962FF,fill:#BBDEFB
+    style H stroke:#AA00FF,fill:#E1BEE7
+    style M stroke:#2962FF,fill:#BBDEFB
+    style A stroke:#2962FF,fill:#BBDEFB
+    style s1 fill:#FFFFFF,stroke:#000000
+```
+
 <br>
 
 <div id="loris" class="table-banner" onclick="toggleCollapse(this)">
