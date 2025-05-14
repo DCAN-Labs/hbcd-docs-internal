@@ -13,9 +13,13 @@ theme:
 
 markdown_extensions:
   - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.snippets
+  - pymdownx.details
+  - attr_list
   - toc:
       permalink: '🔗'
-  
+
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js
   - js/mermaid-init.js

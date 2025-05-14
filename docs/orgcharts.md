@@ -4,6 +4,15 @@
 The larger organizational structure of the HBCD Data Coordinating Center (HDCC) is as follows, with the HDCC Co-Directors listed at the top and the institutions/organizations listed below- ***click on individual institutions to be directed to their organizational charts***. Please visit the [HDCC page](https://hbcdstudy.org/hbcd-data-coordinating-center/) of the HBCD Study website for a full list of all HDCC members. 
 
 ```mermaid
+flowchart TB
+    n2["Anders Dale, PhD<br>HDCC Co-Director<br>JCVI"] --- jvci["JVCI"]
+    E["Damien Fair, PA-C, PhD<br>HDCC Co-Director<br>University of Minnesota"] --- lasso["Lasso"] & umn["UMN"] & n7["LORIS"] & n8["UMD EEG Core"] & n11["Columbia"]
+    lasso --- lasso1["Leigh MacIntyre<br>Lasso CEO<br>MCIN Assoc Dir"]
+    click lasso1 "https://mcin.ca" "Montreal Consortium for Innovation in Neuroinformatics"
+```
+
+
+```mermaid
 ---
 config:
   layout: elk
