@@ -115,7 +115,6 @@ flowchart TB
     H --- M
     A["<b>Alan Evans</b>, PI
     <b>Samir Das</b>, MCIN Assoc Dir Technology"] --> s1
-    n12@{ shape: rect}
     style n9 stroke:#AA00FF,fill:#E1BEE7
     style C stroke:#AA00FF,fill:#E1BEE7
     style n12 stroke:#2962FF,fill:#BBDEFB
