@@ -6,6 +6,13 @@ The larger organizational structure of the HBCD Data Coordinating Center (HDCC) 
 ```mermaid
 %%{ init: { "flowchart": { "htmlLabels": true } } }%%
 flowchart TB
+    lasso1["Leigh MacIntyre<br>Lasso CEO<br>MCIN Assoc Dir"]
+    %% This is not a built-in tooltip, but you can simulate one using HTML title.
+```
+
+```mermaid
+%%{ init: { "flowchart": { "htmlLabels": true } } }%%
+flowchart TB
     lasso1(["<div title='Montreal Consortium for Innovation in Neuroinformatics'>Leigh MacIntyre<br>Lasso CEO<br>MCIN Assoc Dir</div>"])
 ```
 
