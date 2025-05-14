@@ -5,33 +5,10 @@ The larger organizational structure of the HBCD Data Coordinating Center (HDCC) 
 
 ```mermaid
 flowchart TB
-    n2["Anders Dale, PhD<br>HDCC Co-Director<br>JCVI"] --- jvci["JVCI"]
-    E["Damien Fair, PA-C, PhD<br>HDCC Co-Director<br>University of Minnesota"] --- lasso["Lasso"] & umn["UMN"] & n7["LORIS"] & n8["UMD EEG Core"] & n11["Columbia"]
-    lasso --- lasso1["Leigh MacIntyre<br>Lasso CEO<br>MCIN Assoc Dir"]
-    click lasso1 "Montreal Consortium for Innovation in Neuroinformatics"
-```
-
-
-```mermaid
-flowchart TB
-    n2["Anders Dale, PhD<br>HDCC Co-Director<br>JCVI"] --- jvci["JVCI"]
-    E["Damien Fair, PA-C, PhD<br>HDCC Co-Director<br>University of Minnesota"] --- lasso["Lasso"] & umn["UMN"] & n7["LORIS"] & n8["UMD EEG Core"] & n11["Columbia"]
-    lasso --- lasso1["Leigh MacIntyre<br>Lasso CEO<br>MCIN Assoc Dir"]
+    lasso1["Leigh MacIntyre<br>Lasso CEO<br>MCIN Assoc Dir"]
     click lasso1 "https://mcin.ca" "Montreal Consortium for Innovation in Neuroinformatics"
 ```
 
-
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    n2["Anders Dale, PhD<br>HDCC Co-Director<br>JCVI"] --- jvci["JVCI"]
-    E["Damien Fair, PA-C, PhD<br>HDCC Co-Director<br>University of Minnesota"] --- lasso["Lasso"] & umn["UMN"] & n7["LORIS"] & n8["UMD EEG Core"] & n11["Columbia"]
-    lasso --- lasso1["Leigh MacIntyre<br>Lasso CEO<br>MCIN Assoc Dir"]
-    click lasso1 "https://mcin.ca" "Montreal Consortium for Innovation in Neuroinformatics"
-```
 
 <div id="faq-subids" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
