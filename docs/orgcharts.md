@@ -212,7 +212,7 @@ flowchart TB
         n22(["<b>Dev</b>"])
         n23(["<b>Dev/SysOps</b>"])
   end
-    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --- s1 & s2
+    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc Dir"] --- s1 & s2
     B --- n5["<b>Ellise Elamparo</b><br>Training Scheduling<br>(pre-release)"]
     n1 --- n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
     n2 --- n7["<b>Jen Zink<br></b>Dir. Partnerships<br>&amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
