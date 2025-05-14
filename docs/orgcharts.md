@@ -9,6 +9,14 @@ flowchart TB
     click lasso1 "https://mcin.ca" "Montreal Consortium for Innovation in Neuroinformatics"
 ```
 
+### hover only
+
+```mermaid
+flowchart TB
+    lasso1["Leigh MacIntyre<br>Lasso CEO<br>MCIN Assoc Dir"]
+    click lasso1 "#" "Montreal Consortium for Innovation in Neuroinformatics"
+```
+
 
 <div id="faq-subids" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
