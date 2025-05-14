@@ -4,17 +4,9 @@
 The larger organizational structure of the HBCD Data Coordinating Center (HDCC) is as follows, with the HDCC Co-Directors listed at the top and the institutions/organizations listed below- ***click on individual institutions to be directed to their organizational charts***. Please visit the [HDCC page](https://hbcdstudy.org/hbcd-data-coordinating-center/) of the HBCD Study website for a full list of all HDCC members. 
 
 ```mermaid
+%%{ init: { "flowchart": { "htmlLabels": true } } }%%
 flowchart TB
-    lasso1["Leigh MacIntyre<br>Lasso CEO<br>MCIN Assoc Dir"]
-    click lasso1 "https://mcin.ca" "Montreal Consortium for Innovation in Neuroinformatics"
-```
-
-### hover only
-
-```mermaid
-flowchart TB
-    lasso1["Leigh MacIntyre<br>Lasso CEO<br>MCIN Assoc Dir"]
-    click lasso1 "#" "Montreal Consortium for Innovation in Neuroinformatics"
+    lasso1(["<div title='Montreal Consortium for Innovation in Neuroinformatics'>Leigh MacIntyre<br>Lasso CEO<br>MCIN Assoc Dir</div>"])
 ```
 
 
