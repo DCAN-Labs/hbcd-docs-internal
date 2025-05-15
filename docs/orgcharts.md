@@ -57,7 +57,12 @@ flowchart TB
     click n10 "#washu"
 ```
 
-## LORIS
+## McGill Centre for Integrative Neuroscience
+LORIS and Lasso are both software tools developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)). [LORIS](https://mcin.ca/technology/loris/) is the core data management system, while [Lasso](https://www.lassoinformatics.com/) is a complementary API developed to extend LORIS’s functionality by enabling integration with external tools and real-time operations. The organizational charts for each of the teams associated with administering these platforms for the HBCD Study are outlined below.
+
+### LORIS
+LORIS (Longitudinal Online Research and Imaging System) is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
+
 <div style="width: 90%; margin: 0 auto;">
 ```mermaid
 ---
@@ -88,7 +93,7 @@ flowchart TB
 ```
 </div>
 
-### Alternative LORIS chart option
+#### Alternative LORIS chart option
 ```mermaid
 ---
 config:
@@ -194,7 +199,9 @@ flowchart TB
 </table>
 </div>
 
-## Lasso
+### Lasso
+Lasso (Lightweight API for Synchronized Studies and Operations) is a lightweight RESTful API framework developed to integrate external tools and pipelines with LORIS. It facilitates real-time data synchronization, automation of processing workflows, and interoperability between LORIS and other platforms (e.g., imaging pipelines or analysis software).
+
 ```mermaid
 ---
 config:
