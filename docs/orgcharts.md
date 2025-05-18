@@ -16,7 +16,7 @@ config:
 ---
 flowchart TB
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jvci["<b>JVCI</b>"]
-    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b><br>(Novel Tech<br>&amp; Wearables)"]
+    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
     lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO<br><a href="https://mcin.ca/about-mcin/" target="_blank">MCIN</a> Assoc Dir"]
     n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<b>WashU</b><br>"] & n12["<b>LIBR</b>"] & lasso
     n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
@@ -26,7 +26,7 @@ flowchart TB
     umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n22 --- n24["<b>Ripple</b>"]
-    n11 --- n18["<b>William P. Fifer, PhD</b><br><b>Beth Smith, DPT, PhD</b><br>Co-Chairs<br><b>Nicolo Pini<br></b>Co-I &amp; Dev"]
+    n11 --- n18["<b>William P. Fifer, PhD</b><br><b>Beth Smith, DPT, PhD</b><br>NT&W* Co-Chairs<br><b>Nicolo Pini<br></b>NT&W* Co-I &amp; Dev"]
     reed --- n25["<b>MIDB &amp; MSI</b>"] & n27["<b>HST</b>"] & n28["<b>DCAN Lab</b>"] & n29["<b>USDTL<br>Biosamples<br>Genomics</b>"]
     style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style jvci fill:#E1BEE7,stroke:#AA00FF
@@ -61,6 +61,8 @@ flowchart TB
     click n25 "#midb-informatics-hub-msi"
     click n27 "#health-sciences-technology"
 ```
+
+*NT&W = Novel Technologies & Wearables Workgroup*
 
 ## McGill Centre for Integrative Neuroscience
 LORIS and Lasso are both software tools developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)). [LORIS](https://mcin.ca/technology/loris/) is the core data management system, while [Lasso](https://www.lassoinformatics.com/) is a complementary API developed to extend LORIS’s functionality by enabling integration with external tools and real-time operations. The organizational charts for each of the teams associated with administering these platforms for the HBCD Study are outlined below.
