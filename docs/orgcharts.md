@@ -58,7 +58,7 @@ flowchart TB
     click n27 "#health-sciences-technology"
 ```
 
-<small><i>NT&W = Novel Technologies & Wearables Workgroup</i></small>
+<small><i>* NT&W = Novel Technologies & Wearables Workgroup</i></small>
 
 ## McGill Centre for Integrative Neuroscience
 LORIS and Lasso are both software tools developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)). [LORIS](https://mcin.ca/technology/loris/) is the core data management system, while [Lasso](https://www.lassoinformatics.com/) is a complementary API developed to extend LORIS’s functionality by enabling integration with external tools and real-time operations. The organizational charts for each of the teams associated with administering these platforms for the HBCD Study are outlined below.
