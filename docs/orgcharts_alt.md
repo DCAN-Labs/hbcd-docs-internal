@@ -6,6 +6,19 @@ flowchart TB
     click lasso1 "https://mcin.ca/about-mcin/" "Montreal Consortium for Innovation in Neuroinformatics"
 ```
 
+## vesion fix
+
+```mermaid
+%%{ init: { "flowchart": { "htmlLabels": true } } }%%
+flowchart TB
+    lasso1(["<div title='Montreal Consortium for Innovation in Neuroinformatics'>Leigh MacIntyre<br>Lasso CEO<br>MCIN Assoc Dir</div>"])
+```
+
+```mermaid
+flowchart TB
+    lasso1(["<div title='Montreal Consortium for Innovation in Neuroinformatics'>Leigh MacIntyre<br>Lasso CEO<br>MCIN Assoc Dir</div>"])
+```
+
 ## Test1
 
 ---
