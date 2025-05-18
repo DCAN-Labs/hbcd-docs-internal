@@ -198,8 +198,8 @@ flowchart TB
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Regis Ongaro-Carcy</td>
-        <td style="word-wrap: break-word; white-space: normal;">Lead Behavior (BHV) Developer</td>
-        <td style="word-wrap: break-word; white-space: normal;">Development of LORIS BHV features, including integration with external platforms (e.g. REDCap, Ripple, MSI), streamlining data collection, and enhancing system functionality through interoperability and workflow improvements</td>
+        <td style="word-wrap: break-word; white-space: normal;">Lead BHV Developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Development of LORIS features for behavior (questionnaire/survey responses), including integration with external platforms (e.g. REDCap, Ripple, MSI), streamlining data collection, and enhancing system functionality through interoperability and workflow improvements</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Sruthy Matthew</td>
@@ -208,8 +208,8 @@ flowchart TB
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">George Murad</td>
-        <td style="word-wrap: break-word; white-space: normal;">Junior Behavior (BHV) Developer</td>
-        <td style="word-wrap: break-word; white-space: normal;">Development of LORIS BHV features, including instrument coding, automated QC queries, and API/Endpoint implementation</td>
+        <td style="word-wrap: break-word; white-space: normal;">Junior BHV Developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Development of LORIS features for behavior (questionnaire/survey responses), including instrument coding, automated QC queries, and API/Endpoint implementation</td>
     </tr>
 </tbody>
 </table>
