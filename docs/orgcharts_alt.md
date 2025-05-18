@@ -1,3 +1,11 @@
+## test with mermaid tool tip
+
+```mermaid
+flowchart TB
+    lasso1["Leigh MacIntyre<br>Lasso CEO<br>MCIN Assoc Dir"]
+    click lasso1 "https://mcin.ca/about-mcin/" "Montreal Consortium for Innovation in Neuroinformatics"
+```
+
 ## Test1
 
 ---
