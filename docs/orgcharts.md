@@ -496,6 +496,41 @@ flowchart TB
     click n12 "#health-sciences-technology"
 ```
 
+### WashU w/ PMs re-arranged
+
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+    A["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"] --- n11(["<b>OMOP</b>"]) & B["<b>Sauren Ravencroft</b><br>Project Manager"] & n13["<b>Nicole Venteris</b><br>EHR Project Manager"]
+    ambra(["<b>Ambra</b>"]) --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br><br><b>Jim Alexopoulos, PhD</b><br>Data Manager"]
+    n12["<b>UMN HST</b><br><i>Click to view org chart</i>"] --- C(["<b>EHR</b><br>"])
+    B --- n5(["<b>Ripple</b>"]) & n6(["<b>AirTable &amp; Ancillary Studies</b>"]) & ambra
+    n6 --- n8["<b>Lynn Menchaca</b><br>AirTable Admin<br><br><b>Madison Gardner</b><br>U01 Site Piloting"]
+    n13 --- C
+    C --- n3["<b>Philip Payne</b><br><b>Albert Lai</b><br>Co-Investigators"]
+    n5 --> n14["<b>Liliana Mueller</b>"]
+    style A fill:#BBDEFB,stroke:#2962FF
+    style n11 fill:#E1BEE7,stroke:#AA00FF
+    style B fill:#C8E6C9,stroke:#00C853
+    style n13 fill:#C8E6C9,stroke:#00C853
+    style ambra fill:#E1BEE7,stroke:#AA00FF
+    style n1 fill:#BBDEFB,stroke:#2962FF
+    style n12 fill:#E1BEE7,stroke:#AA00FF
+    style C fill:#E1BEE7,stroke:#AA00FF
+    style n5 fill:#E1BEE7,stroke:#AA00FF
+    style n6 fill:#E1BEE7,stroke:#AA00FF
+    style n8 fill:#BBDEFB,stroke:#2962FF
+    style n3 fill:#BBDEFB,stroke:#2962FF
+    style n14 fill:#BBDEFB,stroke:#2962FF
+    click ambra "#ambra"
+    click n12 "#health-sciences-technology"
+    click n5 "#ripple-science"
+    click n6 "#airtable"
+```
+
 ### Subcontractor Details
 
 #### Ripple Science
