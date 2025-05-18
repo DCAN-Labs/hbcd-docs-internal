@@ -17,23 +17,3 @@ document.addEventListener("DOMContentLoaded", function () {
     layout: "elk"
   });
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Wait for Mermaid to finish rendering
-    setTimeout(() => {
-        const tooltipText = "Montreal Consortium for Innovation in Neuroinformatics";
-
-        // Find the Mermaid node by label text
-        const nodes = document.querySelectorAll('.mermaid g.node');
-        nodes.forEach(node => {
-            const textElements = node.querySelectorAll('tspan');
-            textElements.forEach(t => {
-                if (t.textContent.includes("MCIN Assoc Dir")) {
-                    node.setAttribute("title", tooltipText);
-                    node.style.cursor = "help";
-                }
-            });
-        });
-    }, 500); // Wait for render — adjust delay if needed
-});
-

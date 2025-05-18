@@ -1,41 +1,119 @@
 /* Only apply to tooltips inside Mermaid diagrams */
-.tooltip {
+.mermaid {
+    overflow: visible !important;
+    position: relative;
+}
+.mermaid svg {
+    overflow: visible !important;
+}
+.mermaid .diagram-tooltip {
     position: relative;
     display: inline-block;
     cursor: help;
-    font-weight: 500;
+    border-bottom: 1px dotted #555;
     color: #007bff;
+    font-weight: 500;
 }
-
-.tooltip .tooltiptext {
+.mermaid .diagram-tooltip .diagram-tooltiptext {
     visibility: hidden;
-    opacity: 0;
-    width: 220px;
+    width: 200px;
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 6px;
     border-radius: 4px;
     position: absolute;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
     z-index: 1000;
-    bottom: 125%; /* position above the text */
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 90vw;
+    bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
-    transition: opacity 0.3s;
-    white-space: normal;
-    pointer-events: none;
+    margin-bottom: 5px;
+}
+.mermaid .diagram-tooltip:hover .diagram-tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
 
+
+
+/* General Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    border-bottom: 1px dotted #555; /* Dotted underline for hover indication */
+    color: #007bff; /* A blue color to indicate interactivity */
+    font-weight: 500;
+}
+
+/* Default Tooltip (Above the Text) */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+    border-radius: 4px;
+    position: absolute;
+    transition: opacity 0.3s;
+    opacity: 0;
+    z-index: 10;
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 90vw; /* Prevents the tooltip from exceeding the viewport width */
+    
+    /* Default tooltip appears above */
+    bottom: 100%; /* Positions above */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px; /* Space between text and tooltip */
+}
+
+/* Show tooltip on hover */
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
 }
 
-.mermaid {
-    overflow: visible !important;
-    position: relative;
+/* Add a slight color change on hover */
+.tooltip:hover {
+    color: #0056b3;
+    border-bottom: 1px dotted #0056b3;
 }
 
-.mermaid svg {
-    overflow: visible !important;
+/* Position the tooltip to the left */
+.tooltip-left .tooltiptext {
+    /* Override default positioning */
+    bottom: auto; /* Reset bottom positioning */
+    left: auto;
+    
+    /* Position it to the left */
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    margin-right: 5px;
+    
+    /* Ensure proper display */
+    white-space: nowrap; /* Prevents text wrapping */
 }
+
+/* Position the tooltip to the right */
+.tooltip-right .tooltiptext {
+    /* Override default positioning */
+    bottom: auto; /* Reset bottom positioning */
+    left: auto;
+    right: auto;
+    
+    /* Position it to the right */
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+}
+
