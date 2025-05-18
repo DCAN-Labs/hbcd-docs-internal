@@ -9,7 +9,6 @@
 }
 
 .mermaid .diagram-tooltip .diagram-tooltiptext {
-    visibility: hidden;
     width: 200px;
     background-color: #333;
     color: #fff;
@@ -19,7 +18,7 @@
     position: absolute;
     transition: opacity 0.3s ease-in-out;
     opacity: 0;
-    z-index: 1000;
+    z-index: 10;
     white-space: normal;
     word-wrap: break-word;
     max-width: 90vw;
@@ -72,7 +71,7 @@
     position: absolute;
     transition: opacity 0.3s;
     opacity: 0;
-    z-index: 1000;
+    z-index: 10;
     white-space: normal;
     word-wrap: break-word;
     max-width: 90vw; /* Prevents the tooltip from exceeding the viewport width */
