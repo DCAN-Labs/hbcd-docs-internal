@@ -470,65 +470,40 @@ config:
   layout: elk
 ---
 flowchart TB
-    A["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"] --- ambra(["<b>Ambra</b>"]) & C(["<b>EHR</b><br>"]) & n11(["<b>OMOP</b>"]) & n5(["<b>Ripple</b>"]) & n6(["<b>AirTable &amp; Ancillary Studies</b>"])
-    ambra --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br><br><b>Jim Alexopoulos, PhD</b><br>Data Manager"]
-    C --- n3["<b>Philip Payne</b><br><b>Albert Lai</b><br>Co-Investigators<br><br><b>Nicole Venteris</b><br>Project Manager"]
+    A["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"] --- ambra(["<b>Ambra</b>"]) & n11(["<b>OMOP</b>"]) & C(["<b>EHR</b><br>"]) & n5(["<b>Ripple</b>"])
+    A --- n6(["<b>AirTable</b>"])
     n12["<b>UMN HST</b><br><i>Click to view org chart</i>"] --- C
+    C --- n13["<b>Nicole Venteris</b><br>EHR Project Manager"]
+    n13 --- n3["<b>Philip Payne</b><br><b>Albert Lai</b><br>Co-Investigators"]
     n5 --- B["<b>Sauren Ravencroft</b><br>Project Manager"]
     n6 --- B
-    n5 --- n9["<b>Liliana Mueller</b>"]
-    n6 --- n8["<b>Lynn Menchaca</b><br>AirTable Admin<br><br><b>Madison Gardner</b><br>U01 Site Piloting"]
+    B --- n8["<b>Lynn Menchaca</b><br>AirTable Admin"]
+    B --- n9["<b>Liliana Mueller</b><br>Ripple Admin"]
+    B --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br><br><b>Jim Alexopoulos, PhD</b><br>Data Manager"]
+    ambra --- B
+    n5 --> n9
+    ambra --> n1
+    n6 --> n8
     style A fill:#BBDEFB,stroke:#2962FF
     style ambra fill:#E1BEE7,stroke:#AA00FF
-    style C fill:#E1BEE7,stroke:#AA00FF
     style n11 fill:#E1BEE7,stroke:#AA00FF
+    style C fill:#E1BEE7,stroke:#AA00FF
     style n5 fill:#E1BEE7,stroke:#AA00FF
     style n6 fill:#E1BEE7,stroke:#AA00FF
-    style n1 fill:#BBDEFB,stroke:#2962FF
-    style n3 fill:#BBDEFB,stroke:#2962FF
     style n12 fill:#E1BEE7,stroke:#AA00FF
-    style B fill:#BBDEFB,stroke:#2962FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
-    click ambra "#ambra"
-    click n5 "#ripple-science"
-    click n6 "#airtable"
-    click n12 "#health-sciences-technology"
-```
-
-### WashU w/ PMs re-arranged
-
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    A["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"] --- n11(["<b>OMOP</b>"]) & B["<b>Sauren Ravencroft</b><br>Project Manager"] & n13["<b>Nicole Venteris</b><br>EHR Project Manager"]
-    ambra(["<b>Ambra</b>"]) --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br><br><b>Jim Alexopoulos, PhD</b><br>Data Manager"]
-    n12["<b>UMN HST</b><br><i>Click to view org chart</i>"] --- C(["<b>EHR</b><br>"])
-    B --- n5(["<b>Ripple</b>"]) & n6(["<b>AirTable &amp; Ancillary Studies</b>"]) & ambra
-    n6 --- n8["<b>Lynn Menchaca</b><br>AirTable Admin<br><br><b>Madison Gardner</b><br>U01 Site Piloting"]
-    n13 --- C
-    C --- n3["<b>Philip Payne</b><br><b>Albert Lai</b><br>Co-Investigators"]
-    n5 --> n14["<b>Liliana Mueller</b>"]
-    style A fill:#BBDEFB,stroke:#2962FF
-    style n11 fill:#E1BEE7,stroke:#AA00FF
-    style B fill:#C8E6C9,stroke:#00C853
     style n13 fill:#C8E6C9,stroke:#00C853
-    style ambra fill:#E1BEE7,stroke:#AA00FF
-    style n1 fill:#BBDEFB,stroke:#2962FF
-    style n12 fill:#E1BEE7,stroke:#AA00FF
-    style C fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#E1BEE7,stroke:#AA00FF
-    style n6 fill:#E1BEE7,stroke:#AA00FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
     style n3 fill:#BBDEFB,stroke:#2962FF
-    style n14 fill:#BBDEFB,stroke:#2962FF
+    style B fill:#C8E6C9,stroke:#00C853
+    style n8 fill:#BBDEFB,stroke:#2962FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
+    style n1 fill:#BBDEFB,stroke:#2962FF
     click ambra "#ambra"
-    click n12 "#health-sciences-technology"
     click n5 "#ripple-science"
     click n6 "#airtable"
+    click n12 "#health-sciences-technology"
+    linkStyle 14 stroke:none,fill:none
+    linkStyle 15 stroke:none,fill:none
+    linkStyle 16 stroke:none
 ```
 
 ### Subcontractor Details
