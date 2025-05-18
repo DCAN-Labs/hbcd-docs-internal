@@ -330,23 +330,23 @@ config:
   layout: elk
 ---
 flowchart TB
-    L["<b>Thomas Pengo, PhD</b><br>Co-Director, Informatics Group"] --- M(["<b>Project<br>Management</b>"]) & N(["<b>Advanced<br>SysOps (ASO)</b>"]) & O(["<b>Informatics<br>&amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) & n8(["<b>Security &amp;<br>Compliance</b>"])
+    L["<b>Maren Macgregor-Hannah</b><br>HDCC Project Manager"] --- N(["<b>Advanced SysOps (ASO)</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) 
+    L --- n8(["<b>Security &amp Compliance</b>"])
     N --- Q["<b>Jesse Erdman</b><br>Senior SysOps<br><br><b>Kimberleigh Breen</b><br>Data Manager<br><br><b>Sriharshitha Anuganti<br>Alyssa Oksa<br>Anders Skaar</b><br>DevOps"]
     O --- n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead<br><br><b>Erik Lee</b><br>Pipeline Lead<br><br><b>Monalisa Biles</b><br>Analyst"]
-    M --- n6["<b>Maren Macgregor-Hannah</b><br>HDCC PM"]
     P --- n7["<b>Borgne Raasch</b>"]
     n8 --- n9["<b>Naomi Hospodarsky</b>"]
-    style L fill:#BBDEFB,stroke:#2962FF
-    style M fill:#E1BEE7,stroke:#AA00FF
+    n10["<b>Thomas Pengo, PhD</b><br>Co-Director, Informatics Group"] --- L
+    style L fill:#C8E6C9,stroke:#00C853
     style N fill:#E1BEE7,stroke:#AA00FF
     style O fill:#E1BEE7,stroke:#AA00FF
     style P fill:#E1BEE7,stroke:#AA00FF
     style n8 fill:#E1BEE7,stroke:#AA00FF
     style Q fill:#BBDEFB,stroke:#2962FF
     style n4 fill:#BBDEFB,stroke:#2962FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
     style n7 fill:#BBDEFB,stroke:#2962FF
     style n9 fill:#BBDEFB,stroke:#2962FF
+    style n10 fill:#BBDEFB,stroke:#2962FF
 ```
 <br>
 
