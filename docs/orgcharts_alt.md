@@ -1,3 +1,25 @@
+## Test1
+
+---
+config:
+  layout: elk
+---
+flowchart TB
+    lasso1(["<div class='tooltip'>MCIN Assoc Dir<span class='tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
+
+
+## test2
+
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+    lasso1(["<div class='tooltip'>MCIN Assoc Dir<span class='tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
+```
+
+
 ## test with mermaid tool tip
 
 ```mermaid
@@ -18,15 +40,6 @@ flowchart TB
 flowchart TB
     lasso1(["<div title='Montreal Consortium for Innovation in Neuroinformatics'>Leigh MacIntyre<br>Lasso CEO<br>MCIN Assoc Dir</div>"])
 ```
-
-## Test1
-
----
-config:
-  layout: elk
----
-flowchart TB
-    lasso1(["<div class='tooltip'>MCIN Assoc Dir<span class='tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
 
 
 ## Test3 - remove init
