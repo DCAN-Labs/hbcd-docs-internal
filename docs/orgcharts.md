@@ -465,42 +465,35 @@ flowchart TB
 The Washington University in St. Louis (WashU) group has oversight of: *Electronic Health Records (EHR)*, *Ripple*, *Ambra*, *AirTable*, and *HBCD Study Administrative Core (HCAC) coordination*.
 
 ```mermaid
----
-config:
-  layout: elk
----
 flowchart TB
-    A["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"] --- ambra(["<b>Ambra</b>"]) & n11(["<b>OMOP</b>"]) & C(["<b>EHR</b><br>"]) & n5(["<b>Ripple</b>"]) & n6(["<b>AirTable</b>"])
-    n12["<b>UMN HST</b><br><i>Click to view org chart</i>"] --- C
+    A["<b>Sauren Ravencroft</b><br>Project Manager"] --- ambra(["<b>Ambra</b>"]) & n11(["<b>OMOP</b>"]) & n5(["<b>Ripple</b>"]) & n6(["<b>AirTable</b>"])
+    n12["<b>UMN HST</b><br><i>Click to view org chart</i>"] --- C(["<b>EHR</b><br>"])
     C --- n13["<b>Nicole Venteris</b><br>EHR Project Manager"]
     n13 --- n3["<b>Philip Payne</b><br><b>Albert Lai</b><br>Co-Investigators"]
-    n5 --- B["<b>Sauren Ravencroft</b><br>Project Manager"]
-    n6 --- B
-    B --- n8["<b>Lynn Menchaca</b><br>AirTable Admin"] & n9["<b>Liliana Mueller</b><br>Ripple Admin"] & n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br><br><b>Jim Alexopoulos, PhD</b><br>Data Manager"]
-    ambra --- B
-    n5 ~~~ n9
-    ambra ~~~ n1
-    n6 ~~~ n8
-    style A fill:#BBDEFB,stroke:#2962FF
+    n5 --- n9["<b>Liliana Mueller</b><br>Ripple Admin"]
+    n6 --- n8["<b>Lynn Menchaca</b><br>AirTable Admin"]
+    ambra --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br><br><b>Jim Alexopoulos, PhD</b><br>Data Manager"]
+    n14["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"] --- A & C
+    style A fill:#C8E6C9,stroke:#00C853
     style ambra fill:#E1BEE7,stroke:#AA00FF
     style n11 fill:#E1BEE7,stroke:#AA00FF
-    style C fill:#E1BEE7,stroke:#AA00FF
     style n5 fill:#E1BEE7,stroke:#AA00FF
     style n6 fill:#E1BEE7,stroke:#AA00FF
     style n12 fill:#E1BEE7,stroke:#AA00FF
+    style C fill:#E1BEE7,stroke:#AA00FF
     style n13 fill:#C8E6C9,stroke:#00C853
     style n3 fill:#BBDEFB,stroke:#2962FF
-    style B fill:#C8E6C9,stroke:#00C853
-    style n8 fill:#BBDEFB,stroke:#2962FF
     style n9 fill:#BBDEFB,stroke:#2962FF
+    style n8 fill:#BBDEFB,stroke:#2962FF
     style n1 fill:#BBDEFB,stroke:#2962FF
+    style n14 fill:#BBDEFB,stroke:#2962FF
     click ambra "#ambra"
     click n5 "#ripple-science"
     click n6 "#airtable"
     click n12 "#health-sciences-technology"
-    linkStyle 14 stroke:none,fill:none
-    linkStyle 15 stroke:none,fill:none
-    linkStyle 16 stroke:none,fill:none
+    linkStyle 7 stroke:#000000,fill:none
+    linkStyle 8 stroke:#000000,fill:none
+    linkStyle 9 stroke:#000000,fill:none
 ```
 
 ### Subcontractor Details
