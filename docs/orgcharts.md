@@ -304,21 +304,20 @@ config:
   layout: elk
 ---
 flowchart TB
-    B["<b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- n1(["<b>Project Management</b>"]) & n2(["<b>DevOps</b>"]) & n3(["<b>MRI Dashboard</b>"]) & n4(["<b>Electronic Health Records (EHR)</b>"])
-    n1 --- E["<b>Karen Athy-Penrose</b>"]
+    B["<b>Karen Athy-Penrose</b><br>Project Manager"] --- n2(["<b>DevOps</b>"]) & n3(["<b>MRI Dashboard</b>"]) & n4(["<b>Electronic Health Records (EHR)</b>"])
     n2 --- F["<b>Dan Duhon<br>Derek Thompson</b>"]
     n3 --- G["<b>Haley Hutala</b><br>Tableau Engineer<br><b>Sanjana Madakshire</b><br>QC"]
     n4 --- H["<b>Constantine Aliferis</b><br>Dir. Insitute Health Informatics<br><b>Steve Johnson</b><br>Dir Informatics Innovation<br><b>Tim Meyer</b><br>Informatics Engineer"] & n5["<b>WashU EHR Team<br></b><i>Click to view org chart</i>"]
-    style B fill:#BBDEFB,stroke:#2962FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
+    E["<b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- B
+    style B fill:#C8E6C9,stroke:#00C853
     style n2 fill:#E1BEE7,stroke:#AA00FF
     style n3 fill:#E1BEE7,stroke:#AA00FF
     style n4 fill:#E1BEE7,stroke:#AA00FF
-    style E fill:#BBDEFB,stroke:#2962FF
     style F fill:#BBDEFB,stroke:#2962FF
     style G fill:#BBDEFB,stroke:#2962FF
     style H fill:#BBDEFB,stroke:#2962FF
     style n5 fill:#E1BEE7,stroke:#AA00FF
+    style E fill:#BBDEFB,stroke:#2962FF
     click n5 "#washu"
 ```
 
