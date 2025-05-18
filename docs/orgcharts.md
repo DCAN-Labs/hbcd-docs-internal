@@ -21,7 +21,7 @@ flowchart TB
     n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<b>WashU</b><br>"] & n12["<b>LIBR</b>"] & lasso
     n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
     n12 --- n16
-    n8 --- n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc. Dir."]
+    n8 --- n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc Dir"]
     n7 --- n20["<b>Alan Evans</b>, PI<br><b>Samir Das</b><br><a href="https://mcin.ca/about-mcin/" target="_blank">MCIN</a> Assoc Dir"]
     umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
@@ -320,14 +320,12 @@ config:
   layout: elk
 ---
 flowchart TB
-    L["<b>Thomas Pengo</b><br>Co-Director, Informatics Group"] 
-    --- M(["<b>Project<br>Management</b>"]) & N(["<b>Advanced<br>SysOps (ASO)</b>"])
-    L --- O(["<b>Informatics<br>&amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) & n8(["<b>Security &amp;<br>Compliance</b>"])
+    L["<b>Thomas Pengo, PhD</b><br>Co-Director, Informatics Group"] --- M(["<b>Project<br>Management</b>"]) & N(["<b>Advanced<br>SysOps (ASO)</b>"]) & O(["<b>Informatics<br>&amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) & n8(["<b>Security &amp;<br>Compliance</b>"])
     N --- Q["<b>Jesse Erdman</b><br>Senior SysOps<br><br><b>Kimberleigh Breen</b><br>Data Manager<br><br><b>Sriharshitha Anuganti<br>Alyssa Oksa<br>Anders Skaar</b><br>DevOps"]
     O --- n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead<br><br><b>Erik Lee</b><br>Pipeline Lead<br><br><b>Monalisa Biles</b><br>Analyst"]
     M --- n6["<b>Maren Macgregor-Hannah</b><br>HDCC PM"]
     P --- n7["<b>Borgne Raasch</b>"]
-    n8 --- n9["<b>Naomi<br>Hospodarsky-Sutherland</b>"]
+    n8 --- n9["<b>Naomi Hospodarsky</b>"]
     style L fill:#BBDEFB,stroke:#2962FF
     style M fill:#E1BEE7,stroke:#AA00FF
     style N fill:#E1BEE7,stroke:#AA00FF
