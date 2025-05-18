@@ -464,6 +464,7 @@ flowchart TB
 ## WashU
 The Washington University in St. Louis (WashU) group has oversight of: *Electronic Health Records (EHR)*, *Ripple*, *Ambra*, *AirTable*, and *HBCD Study Administrative Core (HCAC) coordination*.
 
+<div style="width: 80%; margin: 0 auto;">
 ```mermaid
 flowchart TB
     A["<b>Sauren Ravencroft</b><br>Project Manager"] --- ambra(["<b>Ambra</b>"]) & n11(["<b>OMOP</b>"]) & n5(["<b>Ripple</b>"]) & n6(["<b>AirTable</b>"])
@@ -495,6 +496,7 @@ flowchart TB
     linkStyle 8 stroke:#000000,fill:none
     linkStyle 9 stroke:#000000,fill:none
 ```
+</div>
 
 ### Subcontractor Details
 
