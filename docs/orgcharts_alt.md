@@ -1,6 +1,5 @@
 ## Test1
 
-%%{ init: { "flowchart": { "htmlLabels": true } } }%%
 flowchart TB
     lasso1(["<div class='tooltip'>MCIN Assoc Dir<span class='tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
 
@@ -12,21 +11,12 @@ flowchart TB
     lasso1(["<div class='tooltip'>MCIN Assoc Dir<span class='tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
 ```
 
-## test3
-```mermaid
-%%{ init: { "flowchart": { "htmlLabels": true } } }%%
-flowchart TB
-    mc(["<div class='diagram-tooltip'>MCIN Assoc Dir<span class='diagram-tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
-```
 
-## test4
----
-config:
-  layout: elk
----
-%%{ init: { "flowchart": { "htmlLabels": true } } }%%
+## Test3 - remove init
+```mermaid
 flowchart TB
-    mc(["<div class='diagram-tooltip'>MCIN Assoc Dir<span class='diagram-tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
+    lasso1(["<div class='tooltip'>MCIN Assoc Dir<span class='tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
+```
 
 ## test6
 
