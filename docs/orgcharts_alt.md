@@ -1,22 +1,25 @@
 ## Test1
 
----
-config:
-  layout: elk
----
+%%{ init: {
+  "flowchart": {
+    "htmlLabels": true
+  }
+} }%%
 flowchart TB
-    lasso1(["<div class='tooltip'>MCIN Assoc Dir<span class='tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
+    lasso1(["<div title='Montreal Consortium for Innovation in Neuroinformatics'>MCIN Assoc Dir</div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
+
 
 
 ## test2
 
 ```mermaid
----
-config:
-  layout: elk
----
+%%{ init: {
+  "flowchart": {
+    "htmlLabels": true
+  }
+} }%%
 flowchart TB
-    lasso1(["<div class='tooltip'>MCIN Assoc Dir<span class='tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
+    lasso1(["<div title='Montreal Consortium for Innovation in Neuroinformatics'>MCIN Assoc Dir</div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
 ```
 
 ## test3
