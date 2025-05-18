@@ -208,14 +208,14 @@ config:
   layout: elk
 ---
 flowchart TB
- subgraph s2["<b>CONSORTIUM-FACING</b>"]
+ subgraph s1["<b>CONSORTIUM-FACING</b>"]
         B(["<b>Admin</b>"])
         n1(["<b>Ancillary Studies</b>"])
         n2(["<b>Data QC</b>"])
         n3(["<b>Technical</b>"])
         n4(["<b>Data Loading</b>"])
   end
- subgraph s1["<b>INTERNAL</b>"]
+ subgraph s2["<b>INTERNAL TO LASSO</b>"]
         n22(["<b>Dev</b>"])
         n23(["<b>Dev/SysOps</b>"])
   end
@@ -241,6 +241,7 @@ flowchart TB
     style n23 fill:#E1BEE7,stroke:#AA00FF
     style A fill:#BBDEFB,stroke:#2962FF
     style s1 fill:#FFFFFF,stroke:#000000
+    style s2 fill:#FFFFFF,stroke:#000000
     style n5 fill:#BBDEFB,stroke:#2962FF
     style n6 fill:#BBDEFB,stroke:#2962FF
     style n7 fill:#BBDEFB,stroke:#2962FF
@@ -248,7 +249,6 @@ flowchart TB
     style n9 fill:#BBDEFB,stroke:#2962FF
     style n24 fill:#BBDEFB,stroke:#2962FF
     style n26 fill:#BBDEFB,stroke:#2962FF
-    style s2 fill:#FFFFFF,stroke:#000000
 ```
 
 ## University of Minnesota
