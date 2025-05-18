@@ -5,16 +5,59 @@ flowchart TB
     lasso1(["<div class='tooltip'>MCIN Assoc Dir<span class='tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
 
 
-
-## Test3
+## Test2
 ```mermaid
 %%{ init: { "flowchart": { "htmlLabels": true } } }%%
 flowchart TB
     lasso1(["<div class='tooltip'>MCIN Assoc Dir<span class='tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
 ```
 
-## test5
+## test3
 ```mermaid
+%%{ init: { "flowchart": { "htmlLabels": true } } }%%
+flowchart TB
+    mc(["<div class='diagram-tooltip'>MCIN Assoc Dir<span class='diagram-tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
+```
+
+## test4
+---
+config:
+  layout: elk
+---
+%%{ init: { "flowchart": { "htmlLabels": true } } }%%
+flowchart TB
+    mc(["<div class='diagram-tooltip'>MCIN Assoc Dir<span class='diagram-tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
+
+## test5
+```
+---
+config:
+  layout: elk
+---
+%%{ init: { "flowchart": { "htmlLabels": true } } }%%
+flowchart TB
+    mc(["<div class='diagram-tooltip'>MCIN Assoc Dir<span class='diagram-tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
+```
+
+## test6
+
+```mermaid
+---
+config:
+  layout: elk
+---
+%%{ init: { "flowchart": { "htmlLabels": true } } }%%
+flowchart TB
+    mc(["<div class='diagram-tooltip'>MCIN Assoc Dir<span class='diagram-tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
+```
+
+##test7
+
+```mermaid2
+---
+config:
+  layout: elk
+---
 %%{ init: { "flowchart": { "htmlLabels": true } } }%%
 flowchart TB
     mc(["<div class='diagram-tooltip'>MCIN Assoc Dir<span class='diagram-tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
