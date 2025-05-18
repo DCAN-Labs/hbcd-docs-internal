@@ -21,6 +21,7 @@ markdown_extensions:
       permalink: '🔗'
 
 extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js
   - js/mermaid-init.js
   - js/extra.js
 
