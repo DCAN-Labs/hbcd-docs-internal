@@ -130,25 +130,22 @@ config:
   layout: elk
 ---
 flowchart TB
-    A["<b>Alan Evans</b>, PI"] --- nl["<b>Samir Das</b><br><a href="https://mcin.ca/about-mcin/" target="_blank">MCIN</a> Assoc Dir Technology"]
-    nl --- n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN/Computing</b>"])
-    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; <a href="https://mcin.ca/about-mcin/" target="_blank">MCIN</a> NeuroHub<br><br><b>Pierre Rioux</b>, Lead Dev<br><b>Natacha Beck</b>, Sr Dev"]
+    nl["<b>Alan Evans</b>, PI<br><b>Samir Das</b>, MCIN Assoc Dir"] --- n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN</b>"]) & G(["<b>MRI</b>"]) & H(["<b>EEG/Biosamples</b>"]) & F(["<b>Behavior (BHV)</b>"])
+    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; MCIN NeuroHub<br><br><b>Pierre Rioux</b><br>Lead Dev<br><br><b>Natacha Beck</b><br>Sr Dev"]
     n9 --- E["<b>Santiago Torres</b><br>Study Officer"]
-    F(["<b>Behavior (BHV)</b>"]) --- I["<b>Dave McFarlane</b><br>Lead Dev<br><br><b>Sruthy Matthew</b><br>Sr Backend Dev<br><br><b>Regis Ongaro-Carcy<br>George Murad<br>Moshood Abiola</b><br>Dev"]
-    G(["<b>MRI</b>"]) --- L["<b>Cecile Madjar</b><br>Lead Dev"]
-    H(["<b>EEG/Biosamples</b>"]) --- M["<b>Laetitia Faeselier</b><br>Lead Dev"]
-    nl --- G & H & F
-    style A stroke:#2962FF,fill:#BBDEFB
+    F --- I["<b>Dave McFarlane</b><br>Lead Dev<br><br><b>Sruthy Matthew</b><br>Sr Backend Dev<br><br><b>Regis Ongaro-Carcy<br>George Murad<br>Moshood Abiola</b><br>Dev"]
+    G --- L["<b>Cecile Madjar</b><br>Lead Dev"]
+    H --- M["<b>Laetitia Faeselier</b><br>Lead Dev"]
     style nl stroke:#2962FF,fill:#BBDEFB
     style n9 stroke:#AA00FF,fill:#E1BEE7
     style C stroke:#AA00FF,fill:#E1BEE7
+    style G stroke:#AA00FF,fill:#E1BEE7
+    style H stroke:#AA00FF,fill:#E1BEE7
+    style F stroke:#AA00FF,fill:#E1BEE7
     style n12 stroke:#2962FF,fill:#BBDEFB
     style E stroke:#2962FF,fill:#BBDEFB
-    style F stroke:#AA00FF,fill:#E1BEE7
     style I stroke:#2962FF,fill:#BBDEFB
-    style G stroke:#AA00FF,fill:#E1BEE7
     style L stroke:#2962FF,fill:#BBDEFB
-    style H stroke:#AA00FF,fill:#E1BEE7
     style M stroke:#2962FF,fill:#BBDEFB
 ```
 </div>
