@@ -45,6 +45,8 @@ plugins:
         startOnLoad: true
         flowchart:
           htmlLabels: true
+        theme: default
+        layout: elk
   - git-revision-date-localized:
       type: date
 

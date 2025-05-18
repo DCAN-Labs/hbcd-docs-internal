@@ -46,12 +46,9 @@ flowchart TB
     style n13 fill:#BBDEFB
 ```
 
-## PM test
+## PMs test
 
----
-config:
-  layout: elk
----
+```mermaid
 flowchart TB
     n6(["<b>MIDB &amp; MSI</b>"]) --> A1["<b>Maren Macgregor-Hannah</b>"]
     n9(["<b>WashU</b>"]) --> n8["<b>Sauren Ravencroft</b>"] & n12(["<b>EHR</b>"])
@@ -67,6 +64,7 @@ flowchart TB
     style B fill:#BBDEFB
     style n11 fill:#E1BEE7
     style n13 fill:#BBDEFB
+```
 
 
 
