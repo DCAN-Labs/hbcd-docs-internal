@@ -57,7 +57,6 @@ flowchart TB
     click n25 "#midb-informatics-hub-msi"
     click n27 "#health-sciences-technology"
 ```
-
 <small><i>* NT&W = Novel Technologies & Wearables Workgroup</i></small>
 
 ### Overview w/ PMs
@@ -76,10 +75,10 @@ flowchart TB
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n11 --- n18["<b>William P. Fifer, PhD</b><br><b>Beth Smith, DPT, PhD</b><br>NT&W* Co-Chairs<br><b>Nicolo Pini<br></b>NT&W* Co-I &amp; Dev"]
     reed --- n25["<b>MIDB &amp; MSI</b>"] & n27["<b>HST</b>"] & n28["<b>DCAN Lab</b>"] & n29["<b>USDTL<br>Biosamples<br>Genomics</b>"]
-    n25 --> n30["<b>Maren Macgregor-Hannah</b><br>Project Manager"]
-    n27 --> n31["<b>Karen Athy-Penrose</b><br>Project Manager"]
-    n22 --> n32["<b>Sauren Ravencroft</b><br>Project Manager"]
-    n1 --> n24["<b>Ripple</b>"]
+    n25 --- n30["<b>Maren Macgregor-Hannah</b><br>Project Manager"]
+    n27 --- n31["<b>Karen Athy-Penrose</b><br>Project Manager"]
+    n22 --- n32["<b>Sauren Ravencroft</b><br>Project Manager"]
+    n1 --- n24["<b>Ripple</b>"]
     style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style jvci fill:#E1BEE7,stroke:#AA00FF
     style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
@@ -116,6 +115,7 @@ flowchart TB
     click n25 "#midb-informatics-hub-msi"
     click n27 "#health-sciences-technology"
 ```
+<small><i>* NT&W = Novel Technologies & Wearables Workgroup</i></small>
 
 ## McGill Centre for Integrative Neuroscience
 LORIS and Lasso are both software tools developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)). [LORIS](https://mcin.ca/technology/loris/) is the core data management system, while [Lasso](https://www.lassoinformatics.com/) is a complementary API developed to extend LORIS’s functionality by enabling integration with external tools and real-time operations. The organizational charts for each of the teams associated with administering these platforms for the HBCD Study are outlined below.
