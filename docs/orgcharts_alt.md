@@ -28,17 +28,6 @@ config:
 flowchart TB
     mc(["<div class='diagram-tooltip'>MCIN Assoc Dir<span class='diagram-tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
 
-## test5
-```
----
-config:
-  layout: elk
----
-%%{ init: { "flowchart": { "htmlLabels": true } } }%%
-flowchart TB
-    mc(["<div class='diagram-tooltip'>MCIN Assoc Dir<span class='diagram-tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
-```
-
 ## test6
 
 ```mermaid
@@ -51,17 +40,6 @@ flowchart TB
     mc(["<div class='diagram-tooltip'>MCIN Assoc Dir<span class='diagram-tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
 ```
 
-##test7
-
-```mermaid2
----
-config:
-  layout: elk
----
-%%{ init: { "flowchart": { "htmlLabels": true } } }%%
-flowchart TB
-    mc(["<div class='diagram-tooltip'>MCIN Assoc Dir<span class='diagram-tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
-```
 
 ## PMs
 

@@ -43,6 +43,8 @@ plugins:
   - mermaid2:
       arguments:
         startOnLoad: true
+        flowchart:
+          htmlLabels: true
   - git-revision-date-localized:
       type: date
 
