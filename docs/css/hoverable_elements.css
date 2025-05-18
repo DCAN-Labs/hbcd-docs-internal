@@ -43,6 +43,10 @@
 .mermaid svg {
     overflow: visible !important;
 }
+.diagram-tooltiptext {
+    outline: 1px solid red;
+}
+
 
 
 
