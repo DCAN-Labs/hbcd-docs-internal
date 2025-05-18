@@ -1,40 +1,32 @@
 /* Only apply to tooltips inside Mermaid diagrams */
-.mermaid {
-    overflow: visible !important;
-    position: relative;
-}
-.mermaid svg {
-    overflow: visible !important;
-}
-.mermaid .diagram-tooltip {
+.tooltip {
     position: relative;
     display: inline-block;
     cursor: help;
-    border-bottom: 1px dotted #555;
-    color: #007bff;
     font-weight: 500;
+    color: #007bff;
 }
-.mermaid .diagram-tooltip .diagram-tooltiptext {
+
+.tooltip .tooltiptext {
     visibility: hidden;
-    width: 200px;
+    opacity: 0;
+    width: 220px;
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 6px;
     border-radius: 4px;
     position: absolute;
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0;
     z-index: 1000;
-    white-space: normal;
-    word-wrap: break-word;
-    max-width: 90vw;
-    bottom: 100%;
+    bottom: 125%; /* position above the text */
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 5px;
+    transition: opacity 0.3s;
+    white-space: normal;
+    pointer-events: none;
 }
-.mermaid .diagram-tooltip:hover .diagram-tooltiptext {
+
+.tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
 }
