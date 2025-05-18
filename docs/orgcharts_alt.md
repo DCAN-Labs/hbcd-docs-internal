@@ -1,5 +1,27 @@
+## Test1
+
+%%{ init: { "flowchart": { "htmlLabels": true } } }%%
+flowchart TB
+    lasso1(["<div class='tooltip'>MCIN Assoc Dir<span class='tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
+
+## Test2
+```
+%%{ init: { "flowchart": { "htmlLabels": true } } }%%
+flowchart TB
+    lasso1(["<div class='tooltip'>MCIN Assoc Dir<span class='tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
+```
+
+## Test3
+```mermaid
+%%{ init: { "flowchart": { "htmlLabels": true } } }%%
+flowchart TB
+    lasso1(["<div class='tooltip'>MCIN Assoc Dir<span class='tooltiptext'>Montreal Consortium for Innovation in Neuroinformatics</span></div><br><b>Leigh MacIntyre</b><br>Lasso CEO"])
+```
+
+
 ## PMs
 
+```mermaid
 ---
 config:
   layout: elk
@@ -21,7 +43,7 @@ flowchart TB
     style B fill:#BBDEFB
     style n11 fill:#E1BEE7
     style n13 fill:#BBDEFB
-
+```
 
 
 ## Orig Overview w/out BAH listed under UMN
