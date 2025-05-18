@@ -27,7 +27,7 @@ flowchart TB
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n22 --- n24["<b>Ripple</b>"]
     n11 --- n18["<b>William P. Fifer, PhD</b><br><b>Beth Smith, DPT, PhD</b><br>Co-Chairs<br><b>Nicolo Pini<br></b>Co-I &amp; Dev"]
-    reed --> n25["<b>MIDB &amp; MSI</b>"] & n27["<b>HST</b>"] & n28["<b>DCAN Lab</b>"] & n29["<b>USDTL<br>Biosamples<br>Genomics</b>"]
+    reed --- n25["<b>MIDB &amp; MSI</b>"] & n27["<b>HST</b>"] & n28["<b>DCAN Lab</b>"] & n29["<b>USDTL<br>Biosamples<br>Genomics</b>"]
     style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style jvci fill:#E1BEE7,stroke:#AA00FF
     style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
@@ -124,7 +124,7 @@ flowchart TB
     G --- L
     H --- M
     A["<b>Alan Evans</b>, PI
-    <b>Samir Das</b>, MCIN Assoc Dir Technology"] --> s1
+    <b>Samir Das</b>, MCIN Assoc Dir Technology"] --- s1
     style n9 stroke:#AA00FF,fill:#E1BEE7
     style C stroke:#AA00FF,fill:#E1BEE7
     style n12 stroke:#2962FF,fill:#BBDEFB
