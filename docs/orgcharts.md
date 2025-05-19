@@ -388,6 +388,7 @@ flowchart TB
 
 The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, Fiona, and the QC Dashboard.
 
+<div style="width: 80%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -414,6 +415,7 @@ flowchart TB
     style n17 fill:#BBDEFB,stroke:#2962FF
     style n18 fill:#BBDEFB,stroke:#2962FF
 ```
+</div>
 
 ## WashU
 The Washington University in St. Louis (WashU) group has oversight of: *Electronic Health Records (EHR)*, *Ripple*, *Ambra*, *AirTable*, and *HBCD Study Administrative Core (HCAC) coordination*.
