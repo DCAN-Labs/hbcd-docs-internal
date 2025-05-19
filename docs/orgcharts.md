@@ -68,17 +68,6 @@ flowchart TB
     click n27 "#health-sciences-technology"
 ```
 
-<div id="definitions" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="table-text">Definition of Roles</span>
-  <span class="notification-arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-
-<p><b>Advanced System Operations</b>: </p>
-</tbody>
-</table>
-</div>
-
 ## McGill Centre for Integrative Neuroscience
 LORIS and Lasso are both software tools developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)). [LORIS](https://mcin.ca/technology/loris/) is the core data management system, while [Lasso](https://www.lassoinformatics.com/) is a complementary API developed to extend LORIS’s functionality by enabling integration with external tools and real-time operations. The organizational charts for each of the teams associated with administering these platforms for the HBCD Study are outlined below.
 
@@ -194,15 +183,15 @@ flowchart TB
         n4(["<b>Data Loading</b>"])
   end
  subgraph s2["<b>INTERNAL TO LASSO</b>"]
-        n22(["<b>Dev</b>"])
+        n22(["<b>Development</b>"])
         n23(["<b>Dev/SysOps</b>"])
   end
     A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc Dir"] --- s1 & s2
     B --- n5["<b>Ellise Elamparo</b><br>Training Scheduling<br>(pre-release)"]
     n1 --- n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
     n2 --- n7["<b>Jen Zink<br></b>Dir. Partnerships<br>&amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-    n3 --- n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan Sterling<br></b>Lead Dev"]
-    n4 --- n9["<b>Laetitia Fesselier<br></b>Sr. Dev<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Dev"]
+    n3 --- n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan Sterling<br></b>Lead Developer"]
+    n4 --- n9["<b>Laetitia Fesselier<br></b>Sr. Developer<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Developer"]
     n23 --- n24["<b>Francisco Soto</b><br>Manager<br>
     <b>Alexandre Meyer</b><br>DevOps<br>
     <b>Nataliya Korniyenko<br></b>Sys Admin"]
