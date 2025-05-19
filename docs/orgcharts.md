@@ -62,7 +62,7 @@ flowchart TB
     click lasso "#lasso"
     click umn "#university-of-minnesota"
     click n7 "#loris"
-    click n8 "#umd-eeg-core"
+    click n8 "#university-of-maryland-eeg-core"
     click n10 "#washu"
     click n25 "#midb-informatics-hub-msi"
     click n27 "#health-sciences-technology"
