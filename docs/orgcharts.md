@@ -382,7 +382,7 @@ flowchart TB
 </div>
 
 ### DCAN Lab
-The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
+The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) under Dr. Damien Fair at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
 
 <div style="width: 80%; margin: 0 auto;">
 ```mermaid
@@ -391,7 +391,7 @@ config:
   layout: elk
 ---
 flowchart LR
-    DCAN["<b>DCAN Lab</b>"] --- n2(["<b>MRI Acquisition</b>"]) & n5(["<b>Processed MRI Quality Control</b>"])
+    DCAN["<b>Damien Fair</b><br>HDCC Co-Director"] --- n2(["<b>MRI Acquisition</b>"]) & n5(["<b>Processed MRI Quality Control</b>"])
     n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
     n5 --- n6["<b>Eric Feczko, PhD</b><br>QC Lead<br><br><b>Lucille A. Moore, PhD</b><br>Neuroinformatics<br>
     <b>Michael Anderson</b><br>Analyst"]
