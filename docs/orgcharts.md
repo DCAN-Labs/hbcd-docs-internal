@@ -66,7 +66,7 @@ flowchart TB
     click n10 "#washu"
     click n25 "#midb-informatics-hub-msi"
     click n27 "#health-sciences-technology"
-    click n87 "#dcan-lab"
+    click n28 "#dcan-lab"
 ```
 
 ## McGill Centre for Integrative Neuroscience
