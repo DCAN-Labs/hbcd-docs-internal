@@ -1,20 +1,14 @@
-/* Default style for linked nodes (non-hover) */
-.mermaid a rect {
-  stroke: #007acc !important;       /* give it a border to look clickable */
-  stroke-width: 2px !important;
-  fill: #d1eaff !important;         /* light blue background to suggest interactivity */
-}
-
-/* Optional: Add a subtle shadow to indicate elevation */
+/* Target links inside Mermaid diagrams */
 .mermaid a {
-  cursor: pointer;
-  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
-  transition: filter 0.2s, fill 0.2s;
-}
-
-/* Enhanced style on hover */
-.mermaid a:hover rect {
-  stroke: #005a9e !important;
-  stroke-width: 4px !important;
-  fill: #a5dfff !important;
-}
+    fill: #d1eaff !important;  /* background fill on hover */
+    cursor: pointer;
+    transition: fill 0.2s;
+  }
+  
+  /* Only apply when hovering */
+  .mermaid a:hover rect {
+    stroke: #007acc !important;
+    stroke-width: 4px !important;
+    fill: #a5dfff !important;
+  }
+  
