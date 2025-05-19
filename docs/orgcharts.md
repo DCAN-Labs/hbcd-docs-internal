@@ -228,7 +228,7 @@ config:
 ---
 flowchart TB
     A1["<b>Damien Fair</b><br>HDCC Co-Director<br>
-    <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- HST(["<b>Health Sciences Technology (HST)</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]) & MIDB(["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]) & DCAN(["<b>DCAN Lab</b>"]) & n6(["<b>USDTL<br>Biosamples<br>Genomics</b>"])
+    <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- HST["<b>Health Sciences Technology (HST)</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & MIDB["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & DCAN["<b>DCAN Lab</b>"] & n6["<b>USDTL<br>Biosamples<br>Genomics</b>"]
     DCAN --- n1(["<b>Neuroinformatics</b>"]) & n2(["<b>MRI Acquisition</b>"])
     n1 --- n3["<b>Eric Feczko, PhD</b><br><b>Lucille A. Moore, PhD</b>"]
     n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
