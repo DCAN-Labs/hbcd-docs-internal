@@ -1,20 +1,16 @@
-/* Underline the text inside linked nodes */
-.mermaid a text {
+/* Underline text in clickable Mermaid nodes */
+.mermaid .clickable text {
   text-decoration: underline;
-}
-
-/* Pointer cursor and transition on the entire link */
-.mermaid a {
   cursor: pointer;
 }
 
-/* Don't apply fill globally — only apply on hover, and only to rect */
-.mermaid a rect {
-  fill: inherit !important;  /* Ensure no override of default fill */
+/* Optional: add pointer cursor to the whole group */
+.mermaid .clickable {
+  cursor: pointer;
 }
 
-/* On hover: highlight the node */
-.mermaid a:hover rect {
+/* Hover effect for clickable nodes */
+.mermaid .clickable:hover rect {
   stroke: #007acc !important;
   stroke-width: 4px !important;
   fill: #a5dfff !important;
