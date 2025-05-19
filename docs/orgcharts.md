@@ -414,25 +414,26 @@ config:
   layout: elk
 ---
 flowchart TB
-    A["<b>Anders Dale, PhD</b>, PI/Director"] --- n1(["<b>Fiona</b>"]) & n2(["<b>Raw MR Quality Control</b>"]) & n3(["<b>MRI</b>"]) & n6(["<b>REDCap</b>"]) & n15(["<b>Dashboard</b>"])
-    n1 --- n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead"]
-    n2 --- n9["<b>Donald Hagler, PhD</b><br>Raw MR QC Lead<br><br><b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
-    n3 --- n10["<b>Josh Kuperman</b><br>MRI Lead"]
-    n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>REDCap/Data Science Lead"]
-    n15 --- n4
-    n4 --- n17["<b>Biplabendu Das</b><br>Backend Developer<br><br><b>Olivier Celhay</b><br>Frontend Developer"] & n18["<b>Joseph Baligh</b><br>Server Admin<br><br><b>Erika Bolden<br>Laura Ziemer</b><br>Dev/Admin"]
+    A["<b>Anders Dale, PhD</b>, PI/Director"] --- z(["<b>Fiona</b>"])
+    A --- n2(["<b>Raw MRI Quality Control</b>"])
+    A --- n3(["<b>MRI Phantom Quality Control</b>"])
+    A --- n6(["<b>REDCap/Data Science</b>"])
+    n2 --- n9["<b>Donald Hagler, PhD</b><br>Raw MRI QC Lead<br><br><b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
+    n3 --- n10["<b>Josh Kuperman</b><br>MRI Phantom QC Lead"]
+    n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>REDCap/Data Science Lead<br>
+    <b>Joseph Baligh</b><br>REDCap Server Admin<br>
+    <b>Erika Bolden<br>Laura Ziemer</b><br>REDCap Dev/Admin<b><br>
+    Biplabendu Das</b><br>Dashboard Backend<br><br><b>Olivier Celhay</b><br>Dashboard Frontend"]
+    z --> n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead"]
     style A fill:#BBDEFB,stroke:#2962FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
+    style z fill:#E1BEE7,stroke:#AA00FF
     style n2 fill:#E1BEE7,stroke:#AA00FF
     style n3 fill:#E1BEE7,stroke:#AA00FF
     style n6 fill:#E1BEE7,stroke:#AA00FF
-    style n15 fill:#E1BEE7,stroke:#AA00FF
     style n8 fill:#BBDEFB,stroke:#2962FF
     style n9 fill:#BBDEFB,stroke:#2962FF
     style n10 fill:#BBDEFB,stroke:#2962FF
     style n4 fill:#BBDEFB,stroke:#2962FF
-    style n17 fill:#BBDEFB,stroke:#2962FF
-    style n18 fill:#BBDEFB,stroke:#2962FF
 ```
 </div>
 
