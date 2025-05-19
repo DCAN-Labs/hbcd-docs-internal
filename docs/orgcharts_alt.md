@@ -215,67 +215,6 @@ flowchart TB
     style n13 fill:#BBDEFB
 ```
 
-
-## Orig Overview w/out BAH listed under UMN
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --> jvci["<b>JVCI</b>"]
-    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] 
-    E --> lasso["<b>Lasso</b>"]
-    E --> umn["<b>UMN</b>"]
-    E --> n7["<b>LORIS</b>"]
-    E --> n8["<b>UMD EEG Core</b>"]
-    E --> n11["<b>Columbia</b>"]
-    lasso --> lasso1["<b>Leigh MacIntyre</b><br>MCIN Assoc Dir, PM"]
-    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] 
-    n1 --> n10["<b>WashU</b><br>"] & ripple["<b>Ripple</b>"] & n12["<b>LIBR</b>"] & lasso
-    n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] 
-    n16 --> n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
-    n12 --> n16
-    n8 --> n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc. Dir."]
-    n7 --> n20["<b>Alan Evans</b><br>PI<br><b>Samir Das</b><br>AD Softw Dev"]
-    umn --> reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
-    n10 --> n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
-    n11 --> n23(["<b>Novel Tech &amp; Wearables</b>"])
-    n23 --> n18["<b>William P. Fifer, PhD</b>, Chair<br><b>Nicolo Pini</b>, Co-I &amp; Dev<br><b>Beth Smith</b>"]
-    reed --> n25(["<b>USDTL</b>"]) & n26(["<b>MIDB &amp; MSI</b>"]) & n27(["<b>DCAN Lab</b>"]) & n30(["<b>HST</b>"])
-    style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style jvci fill:#E1BEE7,stroke:#AA00FF
-    style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style lasso fill:#E1BEE7,stroke:#AA00FF
-    style umn fill:#E1BEE7,stroke:#AA00FF
-    style n7 fill:#E1BEE7,stroke:#AA00FF
-    style n8 fill:#E1BEE7,stroke:#AA00FF
-    style n11 fill:#E1BEE7,stroke:#AA00FF
-    style lasso1 fill:#BBDEFB,stroke:#2962FF
-    style n1 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style n10 fill:#E1BEE7,stroke:#AA00FF
-    style ripple fill:#E1BEE7,stroke:#AA00FF
-    style n12 fill:#E1BEE7,stroke:#AA00FF
-    style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style n17 fill:#BBDEFB,stroke:#2962FF
-    style n19 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style n20 fill:#BBDEFB,stroke:#2962FF
-    style reed fill:#BBDEFB,stroke:#2962FF
-    style n22 fill:#BBDEFB,stroke:#2962FF
-    style n23 fill:#E1BEE7,stroke:#AA00FF
-    style n18 fill:#BBDEFB,stroke:#2962FF
-    style n25 fill:#E1BEE7,stroke:#AA00FF
-    style n26 fill:#E1BEE7,stroke:#AA00FF
-    style n27 fill:#E1BEE7,stroke:#AA00FF
-    style n30 fill:#E1BEE7,stroke:#AA00FF
-    click jvci "#j-craig-venter-institute"
-    click lasso "#lasso"
-    click umn "#university-of-minnesota"
-    click n7 "#loris"
-    click n8 "#umd-eeg-core"
-    click n10 "#washu"
-```
-
 ## Overview alt
 
 ```mermaid
@@ -329,69 +268,6 @@ flowchart TB
     click n7 "#loris"
     click n8 "#umd-eeg-core"
     click n10 "#washu"
-```
-
-## JCVI ALT
-
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    A["<b>Anders Dale, PhD</b><br>PI/Director"] --- n1(["<b>Fiona</b>"]) & n2(["<b>MRI QC</b>"]) & n3(["<b>MRI</b>"]) & n6(["<b>REDCap</b>"]) & n15(["<b>Dashboard</b>"])
-    n1 --- n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead<br>"]
-    n2 --- n9["<b>Donald Hagler, PhD</b><br>QC Lead<br>"]
-    n3 --- n10["<b>Josh Kuperman</b><br>MRI Lead"]
-    n9 --- n13["<b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
-    n4["<b>Janosch Linkersdörfer, PhD</b><br>Data Science Lead"] --- n12["<b>Joseph Baligh</b><br>Server Admin<br><b>Erika Bolden</b> &amp; <b>Laura Ziemer</b><br>Dev/Admin"] & n18["<b>Amanda Li, MS</b><br>Biostats Support"] & n17["<b>Biplabendu Das</b><br>Backend Dev<br><b>Olivier Celhay</b><br>Frontend Dev"]
-    n6 --> n12
-    n15 --> n17
-    A --> n4
-    style A fill:#BBDEFB,stroke:#2962FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n6 fill:#E1BEE7,stroke:#AA00FF
-    style n15 fill:#E1BEE7,stroke:#AA00FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n10 fill:#BBDEFB,stroke:#2962FF
-    style n13 fill:#BBDEFB,stroke:#2962FF
-    style n4 fill:#BBDEFB,stroke:#2962FF
-    style n12 fill:#BBDEFB,stroke:#2962FF
-    style n18 fill:#BBDEFB,stroke:#2962FF
-    style n17 fill:#BBDEFB,stroke:#2962FF
-```
-
-## JCVI ALT2
-
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    A["<b>Anders Dale, PhD</b><br>PI/Director"] --- n3(["<b>MRI</b>"])
-    n3 --- n10["<b>Josh Kuperman</b><br>MRI Lead"]
-    n6(["<b>REDCap</b>"]) --> n12["<b>Joseph Baligh</b><br>Server Admin<br><b>Erika Bolden</b> &amp; <b>Laura Ziemer</b><br>Dev/Admin"]
-    n15(["<b>Dashboard</b>"]) --> n17["<b>Biplabendu Das</b><br>Backend Dev<br><b>Olivier Celhay</b><br>Frontend Dev"]
-    A --> n4["<b>Janosch Linkersdörfer, PhD</b><br>Data Science Lead"] & n8["<b>Rongguang Yang, PhD</b><br>Supervisor (Informatics)<br>"] & n9["<b>Donald Hagler, PhD</b><br>QC Lead<br>"]
-    n8 --> n1(["<b>Fiona</b>"])
-    n9 --> n2(["<b>MRI QC</b>"])
-    n2 --> n13["<b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
-    n4 --> n15 & n6
-    style A fill:#BBDEFB,stroke:#2962FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n10 fill:#BBDEFB,stroke:#2962FF
-    style n4 fill:#BBDEFB,stroke:#2962FF
-    style n6 fill:#E1BEE7,stroke:#AA00FF
-    style n12 fill:#BBDEFB,stroke:#2962FF
-    style n15 fill:#E1BEE7,stroke:#AA00FF
-    style n17 fill:#BBDEFB,stroke:#2962FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n13 fill:#BBDEFB,stroke:#2962FF
 ```
 
 ## LORIS OLD- Roles & Responsibilities
@@ -584,45 +460,6 @@ flowchart TB
 
 
 # Lasso Alt diagrams
-## lasso alt
-
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<b>WorkGroup<br>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"]) & n19(["<b>Internal</b>"])
-    B --> n5["<b>Ellise Elamparo</b><br>Exec Admin"]
-    n1 --> n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
-    n2 --> n7["<b>Jen Zink<br></b>Director,<br>Partnerships &amp; Grant<br>Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-    n3 --> n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan<br>Sterling<br></b>Lead Dev"]
-    n4 --> n9["<b>Laetitia Fesselier<br></b>Sr. Dev<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Dev"]
-    n19 --> n21(["<b>QA</b>"]) & n22(["<b>UI/UX</b>"]) & n23(["Dev &amp; Operations"])
-    n23 --> n24["<b>Francisco Soto</b><br>Dev/SysOps Manager<br><b>Alexandre Meyer</b><br>DevOps<br><b>Nataliya Korniyenko<br></b>Sys Admin"] & n25["<b>Mark Walker<br></b>Software Architect<br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
-    n22 --> n26["<b>Andrew Sawaya</b><br>Lead Designer<br><b>Mehrafarin Ekhlaspour</b><br>Visual Design"]
-    n21 --> n27["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
-    style A fill:#BBDEFB,stroke:#2962FF
-    style B fill:#E1BEE7,stroke:#AA00FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n4 fill:#E1BEE7,stroke:#AA00FF
-    style n19 fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#BBDEFB,stroke:#2962FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
-    style n7 fill:#BBDEFB,stroke:#2962FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n21 fill:#E1BEE7,stroke:#AA00FF
-    style n22 fill:#E1BEE7,stroke:#AA00FF
-    style n23 fill:#E1BEE7,stroke:#AA00FF
-    style n24 fill:#BBDEFB,stroke:#2962FF
-    style n25 fill:#BBDEFB,stroke:#2962FF
-    style n26 fill:#BBDEFB,stroke:#2962FF
-    style n27 fill:#BBDEFB,stroke:#2962FF
-```
-
 ## lasso alt 2
 ```mermaid
 ---
@@ -654,48 +491,6 @@ flowchart TB
     style n8 fill:#BBDEFB,stroke:#2962FF
     style n9 fill:#BBDEFB,stroke:#2962FF
     style n24 fill:#BBDEFB,stroke:#2962FF
-    style n26 fill:#BBDEFB,stroke:#2962FF
-    style n27 fill:#BBDEFB,stroke:#2962FF
-```
-
-## lasso with subgraph
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
- subgraph s1["<b>INTERNAL</b>"]
-        n21(["<b>QA</b>"])
-        n22(["<b>UI/UX</b>"])
-        n23(["<b>Dev &amp; Operations</b>"])
-  end
-    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<b>WorkGroup<br>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"]) & s1
-    B --> n5["<b>Ellise Elamparo</b><br>Exec Admin"]
-    n1 --> n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
-    n2 --> n7["<b>Jen Zink<br></b>Director,<br>Partnerships &amp; Grant<br>Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-    n3 --> n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan<br>Sterling<br></b>Lead Dev"]
-    n4 --> n9["<b>Laetitia Fesselier<br></b>Sr. Dev<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Dev"]
-    n23 --> n24["<b>Francisco Soto</b><br>Dev/SysOps Manager<br><b>Alexandre Meyer</b><br>DevOps<br><b>Nataliya Korniyenko<br></b>Sys Admin"] & n25["<b>Mark Walker<br></b>Software Architect<br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
-    n22 --> n26["<b>Andrew Sawaya</b><br>Lead Designer<br><b>Mehrafarin Ekhlaspour</b><br>Visual Design"]
-    n21 --> n27["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
-    style n21 fill:#E1BEE7,stroke:#AA00FF
-    style n22 fill:#E1BEE7,stroke:#AA00FF
-    style n23 fill:#E1BEE7,stroke:#AA00FF
-    style A fill:#BBDEFB,stroke:#2962FF
-    style B fill:#E1BEE7,stroke:#AA00FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n4 fill:#E1BEE7,stroke:#AA00FF
-    style s1 stroke:#000000
-    style n5 fill:#BBDEFB,stroke:#2962FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
-    style n7 fill:#BBDEFB,stroke:#2962FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n24 fill:#BBDEFB,stroke:#2962FF
-    style n25 fill:#BBDEFB,stroke:#2962FF
     style n26 fill:#BBDEFB,stroke:#2962FF
     style n27 fill:#BBDEFB,stroke:#2962FF
 ```

@@ -226,6 +226,28 @@ There are several groups that fall under the oversight of UMN. The US Drug Testi
 config:
   layout: elk
 ---
+flowchart LR
+    A1["<b>Damien Fair</b><br>HDCC Co-Director<br><b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] 
+    A1 --- HST["<b>Health Sciences Technology (HST)</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
+    A1 --- MIDB["MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
+    A1 --- DCAN["<b>DCAN Lab</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n6["<b>USDTL<br>Biosamples<br>Genomics</b>"]
+    HST@{ shape: rect}
+    MIDB@{ shape: rect}
+    style A1 fill:#BBDEFB,stroke:#2962FF
+    style HST fill:#E1BEE7,stroke:#AA00FF
+    style MIDB fill:#E1BEE7,stroke:#AA00FF
+    style DCAN fill:#E1BEE7,stroke:#AA00FF
+    style n6 fill:#E1BEE7,stroke:#AA00FF
+    click HST "#health-sciences-technology-hst"
+    click MIDB "#midb-informatics-hub-msi"
+    click DCAN "#dcan-lab"
+```
+
+```mermaid
+---
+config:
+  layout: elk
+---
 flowchart TB
     A1["<b>Damien Fair</b><br>HDCC Co-Director<br>
     <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- HST["<b>Health Sciences Technology (HST)</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & MIDB["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & DCAN["<b>DCAN Lab</b>"] & n6["<b>USDTL<br>Biosamples<br>Genomics</b>"]
@@ -383,6 +405,25 @@ flowchart TB
 </table>
 </div>
 
+### DCAN Lab
+The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
+
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart LR
+    DCAN["<b>DCAN Lab</b>"] --- n2(["<b>MRI Acquisition</b>"]) & n5(["<b>Processed MRI Quality Control</b>"])
+    n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
+    n5 --- n6["<b>Eric Feczko, PhD</b><br>QC Lead<br><br><b>Lucille A. Moore, PhD</b><br>Neuroinformatics<br>
+    <b>Michael Anderson</b><br>Analyst"]
+    style DCAN fill:#E1BEE7,stroke:#AA00FF
+    style n2 fill:#E1BEE7,stroke:#AA00FF
+    style n5 fill:#E1BEE7,stroke:#AA00FF
+    style n4 fill:#BBDEFB,stroke:#2962FF
+    style n6 fill:#BBDEFB,stroke:#2962FF
+```
 
 ## J. Craig Venter Institute
 
@@ -395,9 +436,9 @@ config:
   layout: elk
 ---
 flowchart TB
-    A["<b>Anders Dale, PhD</b>, PI/Director"] --- n1(["<b>Fiona</b>"]) & n2(["<b>MRI Quality Control</b>"]) & n3(["<b>MRI</b>"]) & n6(["<b>REDCap</b>"]) & n15(["<b>Dashboard</b>"])
+    A["<b>Anders Dale, PhD</b>, PI/Director"] --- n1(["<b>Fiona</b>"]) & n2(["<b>Raw MR Quality Control</b>"]) & n3(["<b>MRI</b>"]) & n6(["<b>REDCap</b>"]) & n15(["<b>Dashboard</b>"])
     n1 --- n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead"]
-    n2 --- n9["<b>Donald Hagler, PhD</b><br>MRI QC Lead<br><br><b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
+    n2 --- n9["<b>Donald Hagler, PhD</b><br>Raw MR QC Lead<br><br><b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
     n3 --- n10["<b>Josh Kuperman</b><br>MRI Lead"]
     n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>REDCap/Data Science Lead"]
     n15 --- n4
