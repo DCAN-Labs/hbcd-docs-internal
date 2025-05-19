@@ -10,6 +10,10 @@ The larger organizational structure of the HBCD Data Coordinating Center (HDCC) 
 <br>
 
 ```mermaid
+---
+config:
+  layout: elk
+---
 flowchart TB
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jvci["<b>JVCI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
     E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & umn["<b>UMN</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n7["<b>LORIS</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n8["<b>UMD EEG Core</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n11["<b>Columbia</b>"]
@@ -224,7 +228,7 @@ config:
 ---
 flowchart TB
     A1["<b>Damien Fair</b><br>HDCC Co-Director<br>
-    <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- HST(["<b>Health Sciences Technology (HST)</b> <i class="fa-solid fa-link" style="color: blue;"></i>""]) & MIDB(["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>""]) & DCAN(["<b>DCAN Lab</b>"]) & n6(["<b>USDTL<br>Biosamples<br>Genomics</b>"])
+    <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- HST(["<b>Health Sciences Technology (HST)</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]) & MIDB(["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]) & DCAN(["<b>DCAN Lab</b>"]) & n6(["<b>USDTL<br>Biosamples<br>Genomics</b>"])
     DCAN --- n1(["<b>Neuroinformatics</b>"]) & n2(["<b>MRI Acquisition</b>"])
     n1 --- n3["<b>Eric Feczko, PhD</b><br><b>Lucille A. Moore, PhD</b>"]
     n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
