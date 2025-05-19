@@ -22,7 +22,7 @@ flowchart TB
     umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n11 --- n18["<b>William P. Fifer, PhD</b><br><b>Beth Smith, DPT, PhD</b><br>Novel Tech &<br>Wearables Co-Chairs"]
-    reed --- n25["<b>MIDB &amp; MSI</b>"] & n27["<b>HST</b>"] & n28["<b>DCAN Lab</b>"] & n29["<b>USDTL<br>Biosamples<br>Genomics</b>"]
+    reed --- n25["<b>MIDB &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>""] & n27["<b>HST</b> <i class="fa-solid fa-link" style="color: blue;"></i>""] & n28["<b>DCAN Lab</b>"] & n29["<b>USDTL<br>Biosamples<br>Genomics</b>"]
     n25 --- n30["<b>Maren Macgregor-Hannah</b><br>Project Manager"]
     n27 --- n31["<b>Karen Athy-Penrose</b><br>Project Manager"]
     n22 --- n32["<b>Sauren Ravencroft</b><br>Project Manager"]
@@ -224,7 +224,7 @@ config:
 ---
 flowchart TB
     A1["<b>Damien Fair</b><br>HDCC Co-Director<br>
-    <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- HST(["<b>Health Sciences Technology (HST)</b><br>"]) & MIDB(["<b>MIDB Informatics Hub &amp; MSI</b><br>"]) & DCAN(["<b>DCAN Lab</b>"]) & n6(["<b>USDTL<br>Biosamples<br>Genomics</b>"])
+    <b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- HST(["<b>Health Sciences Technology (HST)</b> <i class="fa-solid fa-link" style="color: blue;"></i>""]) & MIDB(["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>""]) & DCAN(["<b>DCAN Lab</b>"]) & n6(["<b>USDTL<br>Biosamples<br>Genomics</b>"])
     DCAN --- n1(["<b>Neuroinformatics</b>"]) & n2(["<b>MRI Acquisition</b>"])
     n1 --- n3["<b>Eric Feczko, PhD</b><br><b>Lucille A. Moore, PhD</b>"]
     n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
