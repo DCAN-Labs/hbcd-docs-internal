@@ -21,7 +21,7 @@ flowchart TB
     n7 --- n20["<b>Alan Evans</b>, PI<br><b>Samir Das</b><br><a href="https://mcin.ca/about-mcin/" target="_blank">MCIN</a> Assoc Dir"]
     umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
-    n11 --- n18["<b>William P. Fifer, PhD</b><br><b>Beth Smith, DPT, PhD</b><br>Novel Tech & Wearables Co-Chairs"]
+    n11 --- n18["<b>William P. Fifer, PhD</b><br><b>Beth Smith, DPT, PhD</b><br>Novel Tech &<br>Wearables Co-Chairs"]
     reed --- n25["<b>MIDB &amp; MSI</b>"] & n27["<b>HST</b>"] & n28["<b>DCAN Lab</b>"] & n29["<b>USDTL<br>Biosamples<br>Genomics</b>"]
     n25 --- n30["<b>Maren Macgregor-Hannah</b><br>Project Manager"]
     n27 --- n31["<b>Karen Athy-Penrose</b><br>Project Manager"]
