@@ -18,11 +18,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Hoverable links formatting
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".mermaid .clickable rect").forEach(rect => {
-    rect.removeAttribute("style");
-  });
-});
-
 
