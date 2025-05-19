@@ -17,3 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
     layout: "elk"
   });
 });
+
+// Hoverable links formatting
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".mermaid .clickable rect").forEach(rect => {
+    rect.removeAttribute("style");
+  });
+});
+
+
