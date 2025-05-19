@@ -1,20 +1,14 @@
-.mermaid .clickable text {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.mermaid .clickable {
-  cursor: pointer;
-}
-
-.mermaid .clickable rect {
-  fill: #E1BEE7;
-  stroke: #AA00FF;
-  stroke-width: 2px;
-}
-
-.mermaid .clickable:hover rect {
-  fill: #a5dfff;
-  stroke: #007acc;
-  stroke-width: 4px;
-}
+/* Target links inside Mermaid diagrams */
+.mermaid a {
+    fill: #d1eaff !important;  /* background fill on hover */
+    cursor: pointer;
+    transition: fill 0.2s;
+  }
+  
+  /* Only apply when hovering */
+  .mermaid a:hover rect {
+    stroke: #007acc !important;
+    stroke-width: 4px !important;
+    fill: #a5dfff !important;
+  }
+  
