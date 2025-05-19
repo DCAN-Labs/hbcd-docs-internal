@@ -1,3 +1,8 @@
+/* Underline text in clickable Mermaid nodes */
+.mermaid a text {
+  text-decoration: underline;
+}
+
 /* Target links inside Mermaid diagrams */
 .mermaid a {
     fill: #d1eaff !important;  /* background fill on hover */
@@ -11,4 +16,6 @@
     stroke-width: 4px !important;
     fill: #a5dfff !important;
   }
+
+
   
