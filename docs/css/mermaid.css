@@ -5,7 +5,6 @@
 
 /* Target links inside Mermaid diagrams */
 .mermaid a {
-    fill: #d1eaff !important;  /* background fill on hover */
     cursor: pointer;
     transition: fill 0.2s;
   }
