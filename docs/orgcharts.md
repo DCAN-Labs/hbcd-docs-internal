@@ -388,7 +388,7 @@ flowchart TB
 
 The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, Fiona, and the QC Dashboard.
 
-<div style="width: 80%; margin: 0 auto;">
+<div style="width: 70%; margin: 0 auto;">
 ```mermaid
 ---
 config:
