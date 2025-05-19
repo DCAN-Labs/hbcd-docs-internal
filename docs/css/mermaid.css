@@ -1,0 +1,20 @@
+.mermaid .clickable text {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mermaid .clickable {
+  cursor: pointer;
+}
+
+.mermaid .clickable rect {
+  fill: #E1BEE7;
+  stroke: #AA00FF;
+  stroke-width: 2px;
+}
+
+.mermaid .clickable:hover rect {
+  fill: #a5dfff;
+  stroke: #007acc;
+  stroke-width: 4px;
+}
