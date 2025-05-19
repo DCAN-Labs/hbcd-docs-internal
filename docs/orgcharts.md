@@ -26,7 +26,7 @@ flowchart TB
     umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n11 --- n18["<b>William P. Fifer, PhD</b><br><b>Beth Smith, DPT, PhD</b><br>Novel Tech &<br>Wearables Co-Chairs"]
-    reed --- n25["<b>MIDB &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n27["<b>HST</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n28["<b>DCAN Lab</b>"] & n29["<b>USDTL<br>Biosamples<br>Genomics</b>"]
+    reed --- n25["<b>MIDB &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n27["<b>HST</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n28["<b>DCAN Lab</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n29["<b>USDTL<br>Biosamples<br>Genomics</b>"]
     n25 --- n30["<b>Maren Macgregor-Hannah</b><br>Project Manager"]
     n27 --- n31["<b>Karen Athy-Penrose</b><br>Project Manager"]
     n22 --- n32["<b>Sauren Ravencroft</b><br>Project Manager"]
@@ -66,6 +66,7 @@ flowchart TB
     click n10 "#washu"
     click n25 "#midb-informatics-hub-msi"
     click n27 "#health-sciences-technology"
+    click n87 "#dcan-lab"
 ```
 
 ## McGill Centre for Integrative Neuroscience
@@ -231,8 +232,6 @@ flowchart LR
     A1 --- HST["<b>Health Sciences Technology (HST)</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
     A1 --- MIDB["MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
     A1 --- DCAN["<b>DCAN Lab</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n6["<b>USDTL<br>Biosamples<br>Genomics</b>"]
-    HST@{ shape: rect}
-    MIDB@{ shape: rect}
     style A1 fill:#BBDEFB,stroke:#2962FF
     style HST fill:#E1BEE7,stroke:#AA00FF
     style MIDB fill:#E1BEE7,stroke:#AA00FF
