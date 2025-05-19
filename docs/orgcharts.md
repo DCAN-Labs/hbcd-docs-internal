@@ -14,7 +14,7 @@ flowchart TB
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jvci["<b>JVCI</b> <i class="fa-solid fa-link"></i>"]
     E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b> <i class="fa-solid fa-link"></i>"] & umn["<b>UMN</b> <i class="fa-solid fa-link"></i>"] & n7["<b>LORIS</b> <i class="fa-solid fa-link"></i>"] & n8["<b>UMD EEG Core</b> <i class="fa-solid fa-link"></i>"] & n11["<b>Columbia</b>"]
     lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO<br><a href="https://mcin.ca/about-mcin/" target="_blank">MCIN</a> Assoc Dir"]
-    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<b>WashU</b> <i class="fa-solid fa-link"></i>"] & n12["<b>LIBR</b>"] & lasso
+    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<b>WashU</b> <i class="fa-solid fa-link" style="color: red;"></i>"] & n12["<b>LIBR</b>"] & lasso
     n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
     n12 --- n16
     n8 --- n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc Dir"]
@@ -37,7 +37,7 @@ flowchart TB
     style n11 fill:#E1BEE7,stroke:#AA00FF
     style lasso1 fill:#BBDEFB,stroke:#2962FF
     style n1 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style n10 fill:#E1BEE7,stroke:#AA00FF,stroke-width:2px,stroke-dasharray: 4
+    style n10 fill:#E1BEE7,stroke:#AA00FF
     style n12 fill:#E1BEE7,stroke:#AA00FF
     style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style n17 fill:#BBDEFB,stroke:#2962FF
