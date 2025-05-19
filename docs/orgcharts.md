@@ -68,6 +68,17 @@ flowchart TB
     click n27 "#health-sciences-technology"
 ```
 
+<div id="definitions" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="table-text">Definition of Roles</span>
+  <span class="notification-arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+
+<p><b>Advanced System Operations</b>: </p>
+</tbody>
+</table>
+</div>
+
 ## McGill Centre for Integrative Neuroscience
 LORIS and Lasso are both software tools developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)). [LORIS](https://mcin.ca/technology/loris/) is the core data management system, while [Lasso](https://www.lassoinformatics.com/) is a complementary API developed to extend LORIS’s functionality by enabling integration with external tools and real-time operations. The organizational charts for each of the teams associated with administering these platforms for the HBCD Study are outlined below.
 
@@ -82,11 +93,11 @@ config:
 ---
 flowchart TB
     nl["<b>Alan Evans</b>, PI<br><b>Samir Das</b>, MCIN Assoc Dir"] --- n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN</b>"]) & G(["<b>MRI</b>"]) & H(["<b>EEG/Biosamples</b>"]) & F(["<b>Behavior (BHV)</b>"])
-    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; MCIN NeuroHub<br><br><b>Pierre Rioux</b><br>Lead Dev<br><br><b>Natacha Beck</b><br>Sr Dev"]
+    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; MCIN NeuroHub<br><br><b>Pierre Rioux</b><br>Lead Developer<br><br><b>Natacha Beck</b><br>Sr Developer"]
     n9 --- E["<b>Santiago Torres</b><br>Study Officer"]
-    F --- I["<b>Dave McFarlane</b><br>Lead Dev<br><br><b>Sruthy Matthew</b><br>Sr Backend Dev<br><br><b>Regis Ongaro-Carcy<br>George Murad<br>Moshood Abiola</b><br>Dev"]
-    G --- L["<b>Cecile Madjar</b><br>Lead Dev"]
-    H --- M["<b>Laetitia Faeselier</b><br>Lead Dev"]
+    F --- I["<b>Dave McFarlane</b><br>Lead Developer<br><br><b>Sruthy Matthew</b><br>Sr Backend Developer<br><br><b>Regis Ongaro-Carcy<br>George Murad<br>Moshood Abiola</b><br>Developers"]
+    G --- L["<b>Cecile Madjar</b><br>Lead Developer"]
+    H --- M["<b>Laetitia Faeselier</b><br>Lead Developer"]
     style nl stroke:#2962FF,fill:#BBDEFB
     style n9 stroke:#AA00FF,fill:#E1BEE7
     style C stroke:#AA00FF,fill:#E1BEE7
@@ -281,7 +292,7 @@ config:
   layout: elk
 ---
 flowchart TB
-    L["<b>Maren Macgregor-Hannah</b><br>HDCC Project Manager"] --- N(["<b>Advanced SysOps (ASO)</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) 
+    L["<b>Maren Macgregor-Hannah</b><br>HDCC Project Manager"] --- N(["<b>Advanced System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) 
     L --- n8(["<b>Security &amp Compliance</b>"])
     N --- Q["<b>Jesse Erdman</b><br>Senior SysOps<br><br><b>Kimberleigh Breen</b><br>Data Manager<br><br><b>Sriharshitha Anuganti<br>Alyssa Oksa<br>Anders Skaar</b><br>DevOps"]
     O --- n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead<br><br><b>Erik Lee</b><br>Pipeline Lead<br><br><b>Monalisa Biles</b><br>Analyst"]
@@ -332,7 +343,7 @@ flowchart TB
     </tr>
     <tr>
     <td>Jesse Erdmann</td>
-    <td>ASO oversight</td>
+    <td>Advanced System Operations (ASO) oversight</td>
     <td>Systems Operations</td>
     </tr>
     <tr>
