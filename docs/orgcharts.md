@@ -37,7 +37,7 @@ flowchart TB
     style n11 fill:#E1BEE7,stroke:#AA00FF
     style lasso1 fill:#BBDEFB,stroke:#2962FF
     style n1 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style n10 fill:#E1BEE7,stroke:#AA00FF
+    style n10 fill:#E1BEE7,stroke:#AA00FF,stroke-width:2px,stroke-dasharray: 2
     style n12 fill:#E1BEE7,stroke:#AA00FF
     style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style n17 fill:#BBDEFB,stroke:#2962FF
