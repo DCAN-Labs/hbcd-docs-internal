@@ -314,55 +314,55 @@ flowchart TB
     <thead>
       <tr>
         <th style="width: 25%;">Name</th>
-        <th style="width: 25%;">Role on HDCC</th>
-        <th style="width: 50%;">Title</th>
+        <th style="width: 30%;">Title</th>
+        <th style="width: 45%;">Role on HDCC</th>
       </tr>
     </thead>
     <tbody>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Jim Wilgenbusch</td>
+        <td style="word-wrap: break-word; white-space: normal;">Director of Research Computing in the Research & Innovation Office</td>
         <td style="word-wrap: break-word; white-space: normal;">Administration</td>
-        <td style="word-wrap: break-word; white-space: normal;">Director of Research Computing in the Research & Innovation Office, UMN</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Thomas Pengo, PhD</td>
-        <td style="word-wrap: break-word; white-space: normal;">IG Lead</td>
         <td style="word-wrap: break-word; white-space: normal;">Co-Director, MIDB Informatics Group</td>
+        <td style="word-wrap: break-word; white-space: normal;">IG Lead</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Maren Macgregor-Hannah</td>
-        <td style="word-wrap: break-word; white-space: normal;">HDCC Project Manager</td>
         <td style="word-wrap: break-word; white-space: normal;">Project Manager</td>
+        <td style="word-wrap: break-word; white-space: normal;">HDCC Project Manager</td>
     </tr>
     <tr>
     <td>Jesse Erdmann</td>
-    <td>Advanced System Operations (ASO) oversight</td>
     <td>Systems Operations</td>
+    <td style="word-wrap: break-word; white-space: normal;">Advanced System Operations (ASO) oversight</td>
     </tr>
     <tr>
     <td>Devin Willis</td>
-    <td>Dev Ops</td>
     <td>DevOps Engineer</td>
+    <td>Dev Ops</td>
     </tr>
     <tr>
     <td>Jesus Garcia</td>
-    <td>Dev Ops</td>
     <td>DevOps Engineer</td>
+    <td>Dev Ops</td>
     </tr>
     <tr>
     <td>Timothy Hendrickson</td>
+    <td style="word-wrap: break-word; white-space: normal;">MIDB-IG Neuroimaging Informatics Manager</td>
     <td>Neuroimaging lead</td>
-    <td>MIDB-IG Neuroimaging Informatics Manager</td>
     </tr>
     <tr>
     <td>Erik Lee</td>
-    <td>Pipeline lead</td>
     <td>Neuroimaging Analyst</td>
+    <td>Pipeline lead</td>
     </tr>
     <tr>
     <td>Monalisa Biles</td>
-    <td>Analyst</td>
     <td>&nbsp;</td>
+    <td>Analyst</td>
     </tr>
     <tr>
     <td>Kimberleigh Breen</td>
@@ -375,9 +375,9 @@ flowchart TB
   <td>Data Steward</td>
   </tr>
   <tr>
-  <td>Naomi Hospodarsky-Sutherland</td>
-  <td>Security/Compliance</td>
+  <td>Naomi Hospodarsky</td>
   <td>Research Security and Compliance Analyst</td>
+  <td>Security/Compliance</td>
   </tr>
 </tbody>
 </table>
