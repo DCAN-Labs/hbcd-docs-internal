@@ -191,7 +191,7 @@ flowchart TB
     n1 --- n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
     n2 --- n7["<b>Jen Zink<br></b>Dir. Partnerships<br>&amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
     n3 --- n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan Sterling<br></b>Lead Developer"]
-    n4 --- n9["<b>Laetitia Fesselier<br></b>Sr. Developer<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Developer"]
+    n4 --- n9["<b>Laetitia Fesselier<br></b>Sr. Developer<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Developers"]
     n23 --- n24["<b>Francisco Soto</b><br>Manager<br>
     <b>Alexandre Meyer</b><br>DevOps<br>
     <b>Nataliya Korniyenko<br></b>Sys Admin"]
@@ -249,16 +249,19 @@ flowchart TB
 ### Health Sciences Technology
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
 
+<div style="width: 90%; margin: 0 auto;">
 ```mermaid
 ---
 config:
   layout: elk
 ---
 flowchart TB
-    B["<b>Karen Athy-Penrose</b><br>Project Manager"] --- n2(["<b>DevOps</b>"]) & n3(["<b>MRI Dashboard</b>"]) & n4(["<b>Electronic Health Records (EHR)</b>"])
+    B["<b>Karen Athy-Penrose</b><br>Project Manager"] --- n2(["<b>DevOps</b>"])
+    B --- n3(["<b>MRI Dashboard</b>"]) & n4(["<b>Electronic Health Records (EHR)</b>"])
     n2 --- F["<b>Dan Duhon<br>Derek Thompson</b>"]
-    n3 --- G["<b>Haley Hutala</b><br>Tableau Engineer<br><b>Sanjana Madakshire</b><br>QC"]
-    n4 --- H["<b>Constantine Aliferis</b><br>Dir. Insitute Health Informatics<br><b>Steve Johnson</b><br>Dir Informatics Innovation<br><b>Tim Meyer</b><br>Informatics Engineer"] & n5["<b>WashU EHR Team<br></b><i>Click to view org chart</i>"]
+    n3 --- G["<b>Haley Hutala</b><br>Tableau Engineer<br><br><b>Sanjana Madakshire</b><br>Quality Control"]
+    n4 --- H["<b>Constantine Aliferis</b><br>Dir Insitute Health Informatics<br><br><b>Steve Johnson</b><br>Dir Informatics Innovation<br><br><b>Tim Meyer</b><br>Informatics Engineer"]
+    n4 --- n5["<b>WashU EHR Team<br></b><i>Click to view org chart</i>"]
     E["<b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] --- B
     style B fill:#C8E6C9,stroke:#00C853
     style n2 fill:#E1BEE7,stroke:#AA00FF
@@ -271,6 +274,7 @@ flowchart TB
     style E fill:#BBDEFB,stroke:#2962FF
     click n5 "#washu"
 ```
+</div>
 
 ### MIDB Informatics Hub & MSI
 The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://midb.umn.edu/research/informatics) and [Minnesota Supercomputing Institute (MSI)](https://msi.umn.edu/) at UMN provide the following services to the HBCD study: *System Administration*, *Loris Hosting*, *Computing*, *Processing*, and *Data Sharing*.
@@ -383,6 +387,7 @@ flowchart TB
 ## J. Craig Venter Institute
 
 The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, Fiona, and the QC Dashboard.
+
 <div style="width: 90%; margin: 0 auto;">
 ```mermaid
 ---
