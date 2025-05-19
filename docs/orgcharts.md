@@ -400,7 +400,7 @@ flowchart TB
     n3 --- n10["<b>Josh Kuperman</b><br>MRI Lead"]
     n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>REDCap/Data Science Lead"]
     n15 --- n4
-    n4 --> n17["<b>Biplabendu Das</b><br>Backend Developer<br><br><b>Olivier Celhay</b><br>Frontend Developer"] & n18["<b>Joseph Baligh</b><br>Server Admin<br><br><b>Erika Bolden<br>Laura Ziemer</b><br>Dev/Admin"]
+    n4 --- n17["<b>Biplabendu Das</b><br>Backend Developer<br><br><b>Olivier Celhay</b><br>Frontend Developer"] & n18["<b>Joseph Baligh</b><br>Server Admin<br><br><b>Erika Bolden<br>Laura Ziemer</b><br>Dev/Admin"]
     style A fill:#BBDEFB,stroke:#2962FF
     style n1 fill:#E1BEE7,stroke:#AA00FF
     style n2 fill:#E1BEE7,stroke:#AA00FF
