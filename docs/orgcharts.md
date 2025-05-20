@@ -69,7 +69,7 @@ flowchart TB
 
 ## J. Craig Venter Institute
 
-The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, Fiona, and the QC Dashboard.
+The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, FIONA, and the QC Dashboard.
 
 <div style="width: 90%; margin: 0 auto;">
 ```mermaid
@@ -78,17 +78,17 @@ config:
   layout: elk
 ---
 flowchart TB
-    A["<b>Anders Dale, PhD</b>, PI/Director"] --- z(["<b>Fiona</b>"])
+    A["<b>Anders Dale, PhD</b>, PI/Director"] --- z(["<a href="#fiona"><b>FIONA</b></a>"])
     A --- n2(["<b>Raw MRI Quality Control</b>"])
     A --- n3(["<b>MRI Phantom Quality Control</b>"])
-    A --- n6(["<b>REDCap/Data Science</b>"])
+    A --- n6(["<a href="#redcap"><b>REDCap</b></a><br><b>Data Science</b><br><a href="#deap"><b>DEAP</b></a>"])
     n2 --- n9["<b>Donald Hagler, PhD</b><br>Raw MRI QC Lead<br><br><b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
     n3 --- n10["<b>Josh Kuperman</b><br>MRI Phantom QC Lead"]
-    n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>REDCap/Data Science Lead<br>
-    <b>Joseph Baligh</b><br>REDCap Server Admin<br>
+    n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>Team Lead<br>
+    <b>Asef-Joseph Baligh</b><br>REDCap Server Admin<br>
     <b>Erika Bolden<br>Laura Ziemer</b><br>REDCap Dev/Admin<b><br>
     Biplabendu Das</b><br>Dashboard Backend<br><br><b>Olivier Celhay</b><br>Dashboard Frontend"]
-    z --- n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead"]
+    z --- n8["<b>Rongguang Yang, PhD</b><br>FIONA Lead"]
     style A fill:#BBDEFB,stroke:#2962FF
     style z fill:#E1BEE7,stroke:#AA00FF
     style n2 fill:#E1BEE7,stroke:#AA00FF
@@ -100,6 +100,17 @@ flowchart TB
     style n4 fill:#BBDEFB,stroke:#2962FF
 ```
 </div>
+
+### Subcontractor Details
+
+#### FIONA
+ADD SHORT DESCRIPTION of what FIONA is and role in HBCD study
+
+#### REDCap
+ADD SHORT DESCRIPTION of what redcap is and role in HBCD study
+
+#### DEAP
+ADD SHORT DESCRIPTION
 
 ## Lasso
 [Lasso](https://www.lassoinformatics.com/) (Lightweight API for Synchronized Studies and Operations) is a lightweight RESTful API framework developed to integrate external tools and pipelines with LORIS. It facilitates real-time data synchronization, automation of processing workflows, and interoperability between LORIS and other platforms (e.g., imaging pipelines or analysis software).
