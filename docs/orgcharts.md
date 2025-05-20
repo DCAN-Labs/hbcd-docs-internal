@@ -67,11 +67,94 @@ flowchart TB
     click n28 "#dcan-lab"
 ```
 
-## McGill Centre for Integrative Neuroscience
-LORIS and Lasso are both software tools developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)). [LORIS](https://mcin.ca/technology/loris/) is the core data management system, while [Lasso](https://www.lassoinformatics.com/) is a complementary API developed to extend LORIS’s functionality by enabling integration with external tools and real-time operations. The organizational charts for each of the teams associated with administering these platforms for the HBCD Study are outlined below.
+## J. Craig Venter Institute
 
-### LORIS
-LORIS (Longitudinal Online Research and Imaging System) is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
+The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, Fiona, and the QC Dashboard.
+
+<div style="width: 90%; margin: 0 auto;">
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+    A["<b>Anders Dale, PhD</b>, PI/Director"] --- z(["<b>Fiona</b>"])
+    A --- n2(["<b>Raw MRI Quality Control</b>"])
+    A --- n3(["<b>MRI Phantom Quality Control</b>"])
+    A --- n6(["<b>REDCap/Data Science</b>"])
+    n2 --- n9["<b>Donald Hagler, PhD</b><br>Raw MRI QC Lead<br><br><b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
+    n3 --- n10["<b>Josh Kuperman</b><br>MRI Phantom QC Lead"]
+    n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>REDCap/Data Science Lead<br>
+    <b>Joseph Baligh</b><br>REDCap Server Admin<br>
+    <b>Erika Bolden<br>Laura Ziemer</b><br>REDCap Dev/Admin<b><br>
+    Biplabendu Das</b><br>Dashboard Backend<br><br><b>Olivier Celhay</b><br>Dashboard Frontend"]
+    z --- n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead"]
+    style A fill:#BBDEFB,stroke:#2962FF
+    style z fill:#E1BEE7,stroke:#AA00FF
+    style n2 fill:#E1BEE7,stroke:#AA00FF
+    style n3 fill:#E1BEE7,stroke:#AA00FF
+    style n6 fill:#E1BEE7,stroke:#AA00FF
+    style n8 fill:#BBDEFB,stroke:#2962FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
+    style n10 fill:#BBDEFB,stroke:#2962FF
+    style n4 fill:#BBDEFB,stroke:#2962FF
+```
+</div>
+
+## Lasso
+[Lasso](https://www.lassoinformatics.com/) (Lightweight API for Synchronized Studies and Operations) is a lightweight RESTful API framework developed to integrate external tools and pipelines with LORIS. It facilitates real-time data synchronization, automation of processing workflows, and interoperability between LORIS and other platforms (e.g., imaging pipelines or analysis software).
+
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+ subgraph s1["<b>CONSORTIUM-FACING</b>"]
+        B(["<b>Admin</b>"])
+        n1(["<b>Ancillary Studies</b>"])
+        n2(["<b>Data QC</b>"])
+        n3(["<b>Technical</b>"])
+        n4(["<b>Data Loading</b>"])
+  end
+ subgraph s2["<b>INTERNAL TO LASSO</b>"]
+        n22(["<b>Development</b>"])
+        n23(["<b>Dev/SysOps</b>"])
+  end
+    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc Dir"] --- s1 & s2
+    B --- n5["<b>Ellise Elamparo</b><br>Training Scheduling<br>(pre-release)"]
+    n1 --- n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
+    n2 --- n7["<b>Jen Zink<br></b>Dir. Partnerships<br>&amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
+    n3 --- n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan Sterling<br></b>Lead Developer"]
+    n4 --- n9["<b>Laetitia Fesselier<br></b>Sr. Developer<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Developers"]
+    n23 --- n24["<b>Francisco Soto</b><br>Manager<br>
+    <b>Alexandre Meyer</b><br>DevOps<br>
+    <b>Nataliya Korniyenko<br></b>Sys Admin"]
+    n22 --- n26["<b>Mark Walker</b><br>Software Architect<br>
+    <b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers<br>
+    <b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers<br>
+    <b>Andrew Sawaya</b><br>UI/UX Lead Designer<br><b>Mehrafarin Ekhlaspour</b><br>UI/UX Visual Design"]
+    style B fill:#E1BEE7,stroke:#AA00FF
+    style n1 fill:#E1BEE7,stroke:#AA00FF
+    style n2 fill:#E1BEE7,stroke:#AA00FF
+    style n3 fill:#E1BEE7,stroke:#AA00FF
+    style n4 fill:#E1BEE7,stroke:#AA00FF
+    style n22 fill:#E1BEE7,stroke:#AA00FF
+    style n23 fill:#E1BEE7,stroke:#AA00FF
+    style A fill:#BBDEFB,stroke:#2962FF
+    style s1 fill:#FFFFFF,stroke:#000000
+    style s2 fill:#FFFFFF,stroke:#000000
+    style n5 fill:#BBDEFB,stroke:#2962FF
+    style n6 fill:#BBDEFB,stroke:#2962FF
+    style n7 fill:#BBDEFB,stroke:#2962FF
+    style n8 fill:#BBDEFB,stroke:#2962FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
+    style n24 fill:#BBDEFB,stroke:#2962FF
+    style n26 fill:#BBDEFB,stroke:#2962FF
+```
+
+## LORIS
+[LORIS](https://mcin.ca/technology/loris/) (Longitudinal Online Research and Imaging System), developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)), is the core data management system for the HBCD Study. It is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
 
 ```mermaid
 ---
@@ -99,7 +182,6 @@ flowchart TB
     style L stroke:#2962FF,fill:#BBDEFB
     style M stroke:#2962FF,fill:#BBDEFB
 ```
-
 
 <div id="loris" class="table-banner" onclick="toggleCollapse(this)">
   <span class="table-text">Roles & Responsibilities</span>
@@ -164,57 +246,27 @@ flowchart TB
 </table>
 </div>
 
-### Lasso
-Lasso (Lightweight API for Synchronized Studies and Operations) is a lightweight RESTful API framework developed to integrate external tools and pipelines with LORIS. It facilitates real-time data synchronization, automation of processing workflows, and interoperability between LORIS and other platforms (e.g., imaging pipelines or analysis software).
-
+## University of Maryland EEG Core
+<div style="width: 80%; margin: 0 auto;">
 ```mermaid
 ---
 config:
   layout: elk
 ---
 flowchart TB
- subgraph s1["<b>CONSORTIUM-FACING</b>"]
-        B(["<b>Admin</b>"])
-        n1(["<b>Ancillary Studies</b>"])
-        n2(["<b>Data QC</b>"])
-        n3(["<b>Technical</b>"])
-        n4(["<b>Data Loading</b>"])
-  end
- subgraph s2["<b>INTERNAL TO LASSO</b>"]
-        n22(["<b>Development</b>"])
-        n23(["<b>Dev/SysOps</b>"])
-  end
-    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc Dir"] --- s1 & s2
-    B --- n5["<b>Ellise Elamparo</b><br>Training Scheduling<br>(pre-release)"]
-    n1 --- n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
-    n2 --- n7["<b>Jen Zink<br></b>Dir. Partnerships<br>&amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-    n3 --- n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan Sterling<br></b>Lead Developer"]
-    n4 --- n9["<b>Laetitia Fesselier<br></b>Sr. Developer<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Developers"]
-    n23 --- n24["<b>Francisco Soto</b><br>Manager<br>
-    <b>Alexandre Meyer</b><br>DevOps<br>
-    <b>Nataliya Korniyenko<br></b>Sys Admin"]
-    n22 --- n26["<b>Mark Walker</b><br>Software Architect<br>
-    <b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers<br>
-    <b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers<br>
-    <b>Andrew Sawaya</b><br>UI/UX Lead Designer<br><b>Mehrafarin Ekhlaspour</b><br>UI/UX Visual Design"]
-    style B fill:#E1BEE7,stroke:#AA00FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n4 fill:#E1BEE7,stroke:#AA00FF
-    style n22 fill:#E1BEE7,stroke:#AA00FF
-    style n23 fill:#E1BEE7,stroke:#AA00FF
-    style A fill:#BBDEFB,stroke:#2962FF
-    style s1 fill:#FFFFFF,stroke:#000000
-    style s2 fill:#FFFFFF,stroke:#000000
-    style n5 fill:#BBDEFB,stroke:#2962FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
-    style n7 fill:#BBDEFB,stroke:#2962FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n24 fill:#BBDEFB,stroke:#2962FF
-    style n26 fill:#BBDEFB,stroke:#2962FF
+    n17(["<b>EEG Pre-processing &amp; Derivatives</b>"]) --- n19["<b>Marco McSweeney, PhD</b>"]
+    n18(["<b>CBRAIN Processing</b>"]) --- n20["<b>Whitney Kasenetz</b>"]
+    n21(["<b>QC, Training, &amp; Troubleshooting</b>"]) --- n22["<b>Savannah McNair<br>Jessica Norris</b>"]
+    n16["<b>Nathan Fox</b>, Assoc Dir<br><b>Santiago Morales</b>, Co-I<br><b>Jamie Listokin</b>, RC"] --- n21 & n17 & n18
+    style n17 fill:#E1BEE7,stroke:#AA00FF
+    style n19 fill:#BBDEFB,stroke:#2962FF
+    style n18 fill:#E1BEE7,stroke:#AA00FF
+    style n20 fill:#BBDEFB,stroke:#2962FF
+    style n21 fill:#E1BEE7,stroke:#AA00FF
+    style n22 fill:#BBDEFB,stroke:#2962FF
+    style n16 fill:#BBDEFB,stroke:#2962FF
 ```
+</div>
 
 ## University of Minnesota
 There are several groups that fall under the oversight of UMN. The US Drug Testing Laboratories ([USDTL](https://www.usdtl.com/)) handles toxicology. The remaining groups are described in greater detail below.  
@@ -238,6 +290,28 @@ flowchart LR
     click HST "#health-sciences-technology-hst"
     click MIDB "#midb-informatics-hub-msi"
     click DCAN "#dcan-lab"
+```
+</div>
+
+### DCAN Lab
+The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) under Dr. Damien Fair at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
+
+<div style="width: 80%; margin: 0 auto;">
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart LR
+    DCAN["<b>Damien Fair</b><br>HDCC Co-Director"] --- n2(["<b>MRI Acquisition</b>"]) & n5(["<b>Processed MRI Quality Control</b>"])
+    n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
+    n5 --- n6["<b>Eric Feczko, PhD</b><br>QC Lead<br><br><b>Lucille A. Moore, PhD</b><br>Neuroinformatics<br>
+    <b>Michael Anderson</b><br>Analyst"]
+    style DCAN fill:#E1BEE7,stroke:#AA00FF
+    style n2 fill:#E1BEE7,stroke:#AA00FF
+    style n5 fill:#E1BEE7,stroke:#AA00FF
+    style n4 fill:#BBDEFB,stroke:#2962FF
+    style n6 fill:#BBDEFB,stroke:#2962FF
 ```
 </div>
 
@@ -378,61 +452,6 @@ flowchart TB
 </table>
 </div>
 
-### DCAN Lab
-The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) under Dr. Damien Fair at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
-
-<div style="width: 80%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart LR
-    DCAN["<b>Damien Fair</b><br>HDCC Co-Director"] --- n2(["<b>MRI Acquisition</b>"]) & n5(["<b>Processed MRI Quality Control</b>"])
-    n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
-    n5 --- n6["<b>Eric Feczko, PhD</b><br>QC Lead<br><br><b>Lucille A. Moore, PhD</b><br>Neuroinformatics<br>
-    <b>Michael Anderson</b><br>Analyst"]
-    style DCAN fill:#E1BEE7,stroke:#AA00FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#E1BEE7,stroke:#AA00FF
-    style n4 fill:#BBDEFB,stroke:#2962FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
-```
-</div>
-
-## J. Craig Venter Institute
-
-The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, Fiona, and the QC Dashboard.
-
-<div style="width: 90%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    A["<b>Anders Dale, PhD</b>, PI/Director"] --- z(["<b>Fiona</b>"])
-    A --- n2(["<b>Raw MRI Quality Control</b>"])
-    A --- n3(["<b>MRI Phantom Quality Control</b>"])
-    A --- n6(["<b>REDCap/Data Science</b>"])
-    n2 --- n9["<b>Donald Hagler, PhD</b><br>Raw MRI QC Lead<br><br><b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
-    n3 --- n10["<b>Josh Kuperman</b><br>MRI Phantom QC Lead"]
-    n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>REDCap/Data Science Lead<br>
-    <b>Joseph Baligh</b><br>REDCap Server Admin<br>
-    <b>Erika Bolden<br>Laura Ziemer</b><br>REDCap Dev/Admin<b><br>
-    Biplabendu Das</b><br>Dashboard Backend<br><br><b>Olivier Celhay</b><br>Dashboard Frontend"]
-    z --- n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead"]
-    style A fill:#BBDEFB,stroke:#2962FF
-    style z fill:#E1BEE7,stroke:#AA00FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n6 fill:#E1BEE7,stroke:#AA00FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n10 fill:#BBDEFB,stroke:#2962FF
-    style n4 fill:#BBDEFB,stroke:#2962FF
-```
-</div>
 
 ## WashU
 The Washington University in St. Louis (WashU) group has oversight of: *Electronic Health Records (EHR)*, *Ripple*, *Ambra*, *AirTable*, and *HBCD Study Administrative Core (HCAC) coordination*.
@@ -473,34 +492,15 @@ flowchart TB
 
 ### Subcontractor Details
 
-#### Ripple Science
-[Ripple Science](https://www.ripplescience.com/) is a digital clinical trial software deployed at all HBCD Study sites for participant recruitment and retention. See details of Ripple's role in the study [here](https://www.ripplescience.com/ripple-science-supports-nih-funded-healthy-brain-and-child-development-study/).
-
-#### Ambra
-Ambra is a cloud-based gateway that allows the direct transmission of medical images between participating institutions. Ambra supports secure data transfer, DICOM standard compliance, de-identification tools, and access control, making it suitable for large-scale, multi-site research studies.
-For the HBCD Study, Ambra is used as the centralized platform for uploading, storing, and sharing neuroimaging data from participating research sites.
-
 #### AirTable
 AirTable is a cloud-based collaborative platform and database service that combines the features of a database and a spreadsheet. It allows users to organize, track, and collaborate on structured data using customizable tables, forms, views, and automation. In the HBCD Study, Airtable is widely used as a centralized project management and tracking tool, including study coordination and oversight, neuroimaging workflow tracking, cross-team communication, and quality control and reporting.
 
-## University of Maryland EEG Core
-<div style="width: 80%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    n17(["<b>EEG Pre-processing &amp; Derivatives</b>"]) --- n19["<b>Marco McSweeney, PhD</b>"]
-    n18(["<b>CBRAIN Processing</b>"]) --- n20["<b>Whitney Kasenetz</b>"]
-    n21(["<b>QC, Training, &amp; Troubleshooting</b>"]) --- n22["<b>Savannah McNair<br>Jessica Norris</b>"]
-    n16["<b>Nathan Fox</b>, Assoc Dir<br><b>Santiago Morales</b>, Co-I<br><b>Jamie Listokin</b>, RC"] --- n21 & n17 & n18
-    style n17 fill:#E1BEE7,stroke:#AA00FF
-    style n19 fill:#BBDEFB,stroke:#2962FF
-    style n18 fill:#E1BEE7,stroke:#AA00FF
-    style n20 fill:#BBDEFB,stroke:#2962FF
-    style n21 fill:#E1BEE7,stroke:#AA00FF
-    style n22 fill:#BBDEFB,stroke:#2962FF
-    style n16 fill:#BBDEFB,stroke:#2962FF
-```
-</div>
+#### Ambra
+Ambra is a cloud-based gateway that allows the direct transmission of medical images between participating institutions. Ambra supports secure data transfer, DICOM standard compliance, de-identification tools, and access control, making it suitable for large-scale, multi-site research studies. For the HBCD Study, Ambra is used as the centralized platform for uploading, storing, and sharing neuroimaging data from participating research sites.
+
+#### Ripple Science
+[Ripple Science](https://www.ripplescience.com/) is a digital clinical trial software deployed at all HBCD Study sites for participant recruitment and retention. See details of Ripple's role in the study [here](https://www.ripplescience.com/ripple-science-supports-nih-funded-healthy-brain-and-child-development-study/).
+
+
+
+
