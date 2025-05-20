@@ -251,10 +251,13 @@ config:
   layout: elk
 ---
 flowchart TB
-    n17(["<b>EEG Pre-processing &amp; Derivatives</b>"]) --- n19["<b>Marco McSweeney, PhD</b>"]
+    n17(["<b>EEG Pre-processing &amp; Derivatives</b>"]) --- n19["<b>Marco McSweeney, PhD</b>
+    <b>Dylan Gilbreath</b>
+    <b>Trisha Maheshwari</b>
+    <b>Kira Ashton</b>"]
     n18(["<b>CBRAIN Processing</b>"]) --- n20["<b>Whitney Kasenetz</b>"]
     n21(["<b>QC, Training, &amp; Troubleshooting</b>"]) --- n22["<b>Savannah McNair<br>Jessica Norris</b>"]
-    n16["<b>Nathan Fox</b>, Assoc Dir<br><b>Santiago Morales</b>, Co-I<br><b>Jamie Listokin</b>, RC"] --- n21 & n17 & n18
+    n16["<b>Nathan Fox</b>, Assoc Dir<br><b>Santiago Morales</b>, Co-I"] --- n21 & n17 & n18
     style n17 fill:#E1BEE7,stroke:#AA00FF
     style n19 fill:#BBDEFB,stroke:#2962FF
     style n18 fill:#E1BEE7,stroke:#AA00FF
