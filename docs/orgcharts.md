@@ -15,7 +15,7 @@ config:
   layout: elk
 ---
 flowchart TB
-    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jvci["<b>JVCI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
+    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<b>JCVI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
     E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & umn["<b>UMN</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n7["<b>LORIS</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n8["<b>UMD EEG Core</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n11["<b>Columbia</b>"]
     lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO<br><a href="https://mcin.ca/about-mcin/" target="_blank">MCIN</a> Assoc Dir"]
     n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<b>WashU</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n12["<b>LIBR</b>"] & lasso
@@ -31,7 +31,7 @@ flowchart TB
     n27 --- n31["<b>Karen Athy-Penrose</b><br>Project Manager"]
     n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
     style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style jvci fill:#E1BEE7,stroke:#AA00FF
+    style jcvi fill:#E1BEE7,stroke:#AA00FF
     style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style lasso fill:#E1BEE7,stroke:#AA00FF
     style umn fill:#E1BEE7,stroke:#AA00FF
@@ -56,7 +56,7 @@ flowchart TB
     style n30 fill:#C8E6C9,stroke:#00C853
     style n31 fill:#C8E6C9,stroke:#00C853
     style n32 fill:#C8E6C9,stroke:#00C853
-    click jvci "#j-craig-venter-institute"
+    click jcvi "#j-craig-venter-institute"
     click lasso "#lasso"
     click umn "#university-of-minnesota"
     click n7 "#loris"
@@ -162,28 +162,25 @@ config:
   layout: elk
 ---
 flowchart TB
-    nl["<b>Alan Evans</b>, PI<br><b>Samir Das</b>, MCIN Assoc Dir"]
-    nl --- n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN</b>"])
-    nl --- G(["<b>MRI BIDS Conversion & Database Management</b>"]) & H(["<b>EEG/Biosamples</b>"]) & F(["<b>Behavior (BHV)</b>"])
+    nl["<b>Santiago Torres</b><br>Study Officer"] --- C(["<b>CBRAIN</b>"]) & G(["<b>MRI BIDS Conversion &amp; Database Management</b>"]) & H(["<b>EEG &amp; Biospecimens</b>"]) & F(["<b>Systems Operations</b>"])
     C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; MCIN NeuroHub<br><br><b>Pierre Rioux</b><br>Lead Developer<br><br><b>Natacha Beck</b><br>Sr Developer"]
-    n9 --- E["<b>Santiago Torres</b><br>Study Officer"]
     F --- I["<b>Dave McFarlane</b><br>Lead Developer<br><br><b>Sruthy Matthew</b><br>Sr Backend Developer<br><br><b>Regis Ongaro-Carcy<br>George Murad<br>Moshood Abiola</b><br>Developers"]
     G --- L["<b>Cecile Madjar</b><br>Lead Developer"]
     H --- M["<b>Laetitia Faeselier</b><br>Lead Developer"]
-    style nl stroke:#2962FF,fill:#BBDEFB
-    style n9 stroke:#AA00FF,fill:#E1BEE7
+    n13["<b>Alan Evans</b>, PI<br><b>Samir Das</b>, MCIN Assoc Dir"] --> nl
+    style nl stroke:#00C853,fill:#C8E6C9
     style C stroke:#AA00FF,fill:#E1BEE7
     style G stroke:#AA00FF,fill:#E1BEE7
     style H stroke:#AA00FF,fill:#E1BEE7
     style F stroke:#AA00FF,fill:#E1BEE7
     style n12 stroke:#2962FF,fill:#BBDEFB
-    style E stroke:#2962FF,fill:#BBDEFB
     style I stroke:#2962FF,fill:#BBDEFB
     style L stroke:#2962FF,fill:#BBDEFB
     style M stroke:#2962FF,fill:#BBDEFB
+    style n13 stroke:#2962FF,fill:#BBDEFB
 ```
 
-<div id="loris" class="table-banner" onclick="toggleCollapse(this)">
+<div id="loris-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="table-text">Roles & Responsibilities</span>
   <span class="notification-arrow">▸</span>
 </div>
@@ -191,7 +188,7 @@ flowchart TB
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
     <thead>
       <tr>
-        <th style="width: 20%;">Name</th>
+        <th style="width: 25%;">Name</th>
         <th style="width: 30%;">Title</th>
         <th style="width: 50%;">Role on HDCC</th>
       </tr>
@@ -224,13 +221,13 @@ flowchart TB
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Laetitia Faeselier</td>
-        <td style="word-wrap: break-word; white-space: normal;">Lead BioSamples/EEG Developer</td>
-        <td style="word-wrap: break-word; white-space: normal;">Development and implementation of LORIS BioSample/EEG features, including data ingestion, quality control, tracking systems, and Dashboard innovations</td>
+        <td style="word-wrap: break-word; white-space: normal;">Lead Biospecimens & EEG Developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Development and implementation of LORIS Biospecimens & EEG features, including data ingestion, quality control, tracking systems, and Dashboard innovations</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Regis Ongaro-Carcy</td>
-        <td style="word-wrap: break-word; white-space: normal;">Lead BHV Developer</td>
-        <td style="word-wrap: break-word; white-space: normal;">Development of LORIS features for behavior (questionnaire/survey responses), including integration with external platforms (e.g. REDCap, Ripple, MSI), streamlining data collection, and enhancing system functionality through interoperability and workflow improvements</td>
+        <td style="word-wrap: break-word; white-space: normal;">Lead Developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Development of LORIS features for behavior (questionnaire/survey responses), including integration with external platforms (e.g. REDCap, Ripple, MSI), streamlining data collection, and enhancing system interoperability and workflows</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Sruthy Matthew</td>
@@ -239,7 +236,7 @@ flowchart TB
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">George Murad</td>
-        <td style="word-wrap: break-word; white-space: normal;">Junior BHV Developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Junior Developer</td>
         <td style="word-wrap: break-word; white-space: normal;">Development of LORIS features for behavior (questionnaire/survey responses), including instrument coding, automated QC queries, and API/Endpoint implementation</td>
     </tr>
 </tbody>
