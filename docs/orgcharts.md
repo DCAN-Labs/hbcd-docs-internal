@@ -163,7 +163,7 @@ config:
 ---
 flowchart TB
     nl["<b>Santiago Torres</b><br>Study Officer"] --- C(["<b>CBRAIN</b>"]) & G(["<b>MRI BIDS Conversion &amp; Database Management</b>"]) & H(["<b>EEG &amp; Biospecimens</b>"]) & F(["<b>Systems Operations</b>"])
-    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; MCIN NeuroHub<br><br><b>Pierre Rioux</b><br>Lead Developer<br><br><b>Natacha Beck</b><br>Sr Developer"]
+    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; MCIN NeuroHub<br><br><b>Pierre Rioux</b><br>Lead Developer"]
     F --- I["<b>Dave McFarlane</b><br>Lead Developer<br><br><b>Sruthy Matthew</b><br>Sr Backend Developer<br><br><b>Regis Ongaro-Carcy<br>George Murad<br>Moshood Abiola</b><br>Developers"]
     G --- L["<b>Cecile Madjar</b><br>Lead Developer"]
     H --- M["<b>Laetitia Faeselier</b><br>Lead Developer"]
