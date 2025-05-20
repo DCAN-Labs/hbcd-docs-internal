@@ -121,47 +121,36 @@ config:
   layout: elk
 ---
 flowchart TB
- subgraph s1["<b>CONSORTIUM-FACING</b>"]
-        B(["<b>Admin</b>"])
-        n1(["<b>Ancillary Studies</b>"])
-        n2(["<b>Data QC</b>"])
-        n3(["<b>Technical</b>"])
-        n4(["<b>Data Loading</b>"])
-  end
- subgraph s2["<b>INTERNAL TO LASSO</b>"]
-        n22(["<b>Development</b>"])
-        n23(["<b>Dev/SysOps</b>"])
-  end
-    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc Dir"] --- s1 & s2
-    B --- n5["<b>Ellise Elamparo</b><br>Training Scheduling<br>(pre-release)"]
-    n1 --- n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
-    n2 --- n7["<b>Jen Zink<br></b>Dir. Partnerships<br>&amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-    n3 --- n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan Sterling<br></b>Lead Developer"]
-    n4 --- n9["<b>Laetitia Fesselier<br></b>Sr. Developer<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Developers"]
-    n23 --- n24["<b>Francisco Soto</b><br>Manager<br>
-    <b>Alexandre Meyer</b><br>DevOps<br>
-    <b>Nataliya Korniyenko<br></b>Sys Admin"]
-    n22 --- n26["<b>Mark Walker</b><br>Software Architect<br>
+    B(["<b>Admin</b>"]) --- n5["<b>Ellise Elamparo</b><br>Training Scheduling<br>(pre-release)"]
+    n1(["<b>Ancillary Studies</b>"]) --- n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
+    n2(["<b>Data QC</b>"]) --- n7["<b>Jen Zink<br></b>Dir Partnerships<br>&amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
+    n4(["<b>Data Loading</b>"]) --- n9["<b>Laetitia Fesselier<br></b>Sr Developer
+    -------------------------------
+    <b><i>INTERNAL TO LASSO:</i>
+    Edson Silva</b><br><b>Mateus Andre<br></b>Developers"]
+    n23(["<b>Dev/SysOps</b>"]) --- n24["<b><i>INTERNAL TO LASSO:</i><br>Francisco Soto</b><br>Manager<br>
+    <b>Alexandre Meyer</b><br>DevOps Engineer<br><br><b>Nataliya Korniyenko<br></b>Systems Administrator"]
+    n22(["<b>Development</b>"]) --- n26["<b>Fraser Glen<br></b>CTO<br><b>Jordan Sterling<br></b>Lead Developer
+    -------------------------------
+    <b><i>INTERNAL TO LASSO:</i>
+    Mark Walker</b><br>Software Architect<br>
     <b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers<br>
     <b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers<br>
     <b>Andrew Sawaya</b><br>UI/UX Lead Designer<br><b>Mehrafarin Ekhlaspour</b><br>UI/UX Visual Design"]
+    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc Dir"] --- n22 & n23 & n2 & B & n4 & n1
     style B fill:#E1BEE7,stroke:#AA00FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n4 fill:#E1BEE7,stroke:#AA00FF
-    style n22 fill:#E1BEE7,stroke:#AA00FF
-    style n23 fill:#E1BEE7,stroke:#AA00FF
-    style A fill:#BBDEFB,stroke:#2962FF
-    style s1 fill:#FFFFFF,stroke:#000000
-    style s2 fill:#FFFFFF,stroke:#000000
     style n5 fill:#BBDEFB,stroke:#2962FF
+    style n1 fill:#E1BEE7,stroke:#AA00FF
     style n6 fill:#BBDEFB,stroke:#2962FF
+    style n2 fill:#E1BEE7,stroke:#AA00FF
     style n7 fill:#BBDEFB,stroke:#2962FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
+    style n4 fill:#E1BEE7,stroke:#AA00FF
     style n9 fill:#BBDEFB,stroke:#2962FF
+    style n23 fill:#E1BEE7,stroke:#AA00FF
     style n24 fill:#BBDEFB,stroke:#2962FF
+    style n22 fill:#E1BEE7,stroke:#AA00FF
     style n26 fill:#BBDEFB,stroke:#2962FF
+    style A fill:#BBDEFB,stroke:#2962FF
 ```
 
 ## LORIS
