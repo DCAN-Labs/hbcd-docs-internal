@@ -82,7 +82,9 @@ config:
   layout: elk
 ---
 flowchart TB
-    nl["<b>Alan Evans</b>, PI<br><b>Samir Das</b>, MCIN Assoc Dir"] --- n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN</b>"]) & G(["<b>MRI</b>"]) & H(["<b>EEG/Biosamples</b>"]) & F(["<b>Behavior (BHV)</b>"])
+    nl["<b>Alan Evans</b>, PI<br><b>Samir Das</b>, MCIN Assoc Dir"]
+    nl --- n9(["<b>Study Coordination</b>"]) & C(["<b>CBRAIN</b>"])
+    nl --- G(["<b>MRI BIDS Conversion & Database Management</b>"]) & H(["<b>EEG/Biosamples</b>"]) & F(["<b>Behavior (BHV)</b>"])
     C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; MCIN NeuroHub<br><br><b>Pierre Rioux</b><br>Lead Developer<br><br><b>Natacha Beck</b><br>Sr Developer"]
     n9 --- E["<b>Santiago Torres</b><br>Study Officer"]
     F --- I["<b>Dave McFarlane</b><br>Lead Developer<br><br><b>Sruthy Matthew</b><br>Sr Backend Developer<br><br><b>Regis Ongaro-Carcy<br>George Murad<br>Moshood Abiola</b><br>Developers"]
