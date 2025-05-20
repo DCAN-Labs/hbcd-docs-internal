@@ -454,39 +454,32 @@ flowchart TB
 
 
 ## WashU
-The Washington University in St. Louis (WashU) group has oversight of: *Electronic Medical Records (EMR)*, *Ripple*, *Ambra*, *AirTable*, and *HBCD Study Administrative Core (HCAC) coordination*.
+The Washington University in St. Louis (WashU) group has oversight of: *Electronic Medical Records (EMR)*, *Ripple*, *AMBRA*, *AirTable*, and *HBCD Study Administrative Core (HCAC) coordination*.
 
 <div style="width: 80%; margin: 0 auto;">
 ```mermaid
+---
+config:
+  layout: elk
+---
 flowchart TB
-    A["<b>Sauren Ravencroft</b><br>Project Manager"] --- ambra(["<b>Ambra</b>"]) & n11(["<b>OMOP</b>"]) & n5(["<b>Ripple</b>"]) & n6(["<b>AirTable</b>"])
-    n12["<b>UMN HST</b><br><i>Click to view org chart</i>"] --- C(["<b>EHR</b><br>"])
-    C --- n13["<b>Nicole Venteris</b><br>EHR Project Manager"]
-    n13 --- n3["<b>Philip Payne</b><br><b>Albert Lai</b><br>Co-Investigators"]
-    n5 --- n9["<b>Liliana Mueller</b><br>Ripple Admin"]
-    n6 --- n8["<b>Lynn Menchaca</b><br>AirTable Admin"]
-    ambra --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br><br><b>Jim Alexopoulos, PhD</b><br>Data Manager"]
-    n14["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"] --- A & C
+    A["<b>Sauren Ravencroft</b><br>Project Manager"] --- ambra(["<a href="#ambra"><b>AMBRA</b></a>"])
+    A --- n5
+    n13["<b>Nicole Venteris</b><br>EMR Project Manager"] --- C["<b>EMR Data Core</b><br>"]
+    n5(["<a href="#airtable"><b>AirTable</b></a> & <a href="#ripple"><b>Ripple</b></a>"]) --- n9["<b>Liliana Mueller</b><br>Ripple Admin<br><br><b>Kevine Ngalula</b><br>Ripple<br><br><b>Lynn Menchaca</b><br>AirTable Admin"]
+    ambra --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br><br><b>Dimitrios ('Jim') Alexopoulos</b><br>Data Manager"]
+    n14["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"] --- A & n13
     style A fill:#C8E6C9,stroke:#00C853
-    style ambra fill:#E1BEE7,stroke:#AA00FF
-    style n11 fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#E1BEE7,stroke:#AA00FF
-    style n6 fill:#E1BEE7,stroke:#AA00FF
-    style n12 fill:#E1BEE7,stroke:#AA00FF
     style C fill:#E1BEE7,stroke:#AA00FF
     style n13 fill:#C8E6C9,stroke:#00C853
-    style n3 fill:#BBDEFB,stroke:#2962FF
+    style n5 fill:#E1BEE7,stroke:#AA00FF
     style n9 fill:#BBDEFB,stroke:#2962FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
     style n1 fill:#BBDEFB,stroke:#2962FF
     style n14 fill:#BBDEFB,stroke:#2962FF
-    click ambra "#ambra"
-    click n5 "#ripple-science"
-    click n6 "#airtable"
-    click n12 "#health-sciences-technology"
-    linkStyle 7 stroke:#000000,fill:none
-    linkStyle 8 stroke:#000000,fill:none
-    linkStyle 9 stroke:#000000,fill:none
+    style ambra fill:#E1BEE7,stroke:#AA00FF
+    linkStyle 3 stroke:#000000,fill:none
+    linkStyle 4 stroke:#000000,fill:none
+    linkStyle 5 stroke:#000000,fill:none
 ```
 </div>
 
@@ -495,10 +488,10 @@ flowchart TB
 #### AirTable
 AirTable is a cloud-based collaborative platform and database service that combines the features of a database and a spreadsheet. It allows users to organize, track, and collaborate on structured data using customizable tables, forms, views, and automation. In the HBCD Study, Airtable is widely used as a centralized project management and tracking tool, including study coordination and oversight, neuroimaging workflow tracking, cross-team communication, and quality control and reporting.
 
-#### Ambra
-Ambra is a cloud-based gateway that allows the direct transmission of medical images between participating institutions. Ambra supports secure data transfer, DICOM standard compliance, de-identification tools, and access control, making it suitable for large-scale, multi-site research studies. For the HBCD Study, Ambra is used as the centralized platform for uploading, storing, and sharing neuroimaging data from participating research sites.
+#### AMBRA
+AMBRA is a cloud-based gateway that allows the direct transmission of medical images between participating institutions. Ambra supports secure data transfer, DICOM standard compliance, de-identification tools, and access control, making it suitable for large-scale, multi-site research studies. For the HBCD Study, AMBRA is used as the centralized platform for uploading, storing, and sharing neuroimaging data from participating research sites.
 
-#### Ripple Science
+#### Ripple
 [Ripple Science](https://www.ripplescience.com/) is a digital clinical trial software deployed at all HBCD Study sites for participant recruitment and retention. See details of Ripple's role in the study [here](https://www.ripplescience.com/ripple-science-supports-nih-funded-healthy-brain-and-child-development-study/).
 
 
