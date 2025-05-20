@@ -30,6 +30,7 @@ flowchart TB
     n25 --- n30["<b>Maren Macgregor-Hannah</b><br>Program Manager"]
     n27 --- n31["<b>Karen Athy-Penrose</b><br>Project Manager"]
     n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
+    n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
     style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style jcvi fill:#E1BEE7,stroke:#AA00FF
     style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
@@ -56,6 +57,7 @@ flowchart TB
     style n30 fill:#C8E6C9,stroke:#00C853
     style n31 fill:#C8E6C9,stroke:#00C853
     style n32 fill:#C8E6C9,stroke:#00C853
+    style n33 fill:#C8E6C9,stroke:#00C853
     click jcvi "#j-craig-venter-institute"
     click lasso "#lasso"
     click umn "#university-of-minnesota"
