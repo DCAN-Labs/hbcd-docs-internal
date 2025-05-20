@@ -409,7 +409,7 @@ flowchart LR
 
 The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, Fiona, and the QC Dashboard.
 
-<div style="width: 80%; margin: 0 auto;">
+<div style="width: 90%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -426,7 +426,7 @@ flowchart TB
     <b>Joseph Baligh</b><br>REDCap Server Admin<br>
     <b>Erika Bolden<br>Laura Ziemer</b><br>REDCap Dev/Admin<b><br>
     Biplabendu Das</b><br>Dashboard Backend<br><br><b>Olivier Celhay</b><br>Dashboard Frontend"]
-    z --> n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead"]
+    z --- n8["<b>Rongguang Yang, PhD</b><br>Fiona Lead"]
     style A fill:#BBDEFB,stroke:#2962FF
     style z fill:#E1BEE7,stroke:#AA00FF
     style n2 fill:#E1BEE7,stroke:#AA00FF
