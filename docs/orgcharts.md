@@ -181,7 +181,7 @@ flowchart TB
     style M stroke:#2962FF,fill:#BBDEFB
     style n13 stroke:#2962FF,fill:#BBDEFB
 ```
-
+<p>
 <div id="loris-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="table-text">Roles & Responsibilities</span>
   <span class="notification-arrow">▸</span>
@@ -244,6 +244,7 @@ flowchart TB
 </tbody>
 </table>
 </div>
+</p>
 
 ## University of Maryland EEG Core
 <div style="width: 80%; margin: 0 auto;">
