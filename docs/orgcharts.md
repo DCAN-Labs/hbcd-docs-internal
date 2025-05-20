@@ -75,7 +75,6 @@ LORIS and Lasso are both software tools developed and maintained by research tea
 ### LORIS
 LORIS (Longitudinal Online Research and Imaging System) is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
 
-<div style="width: 90%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -102,9 +101,7 @@ flowchart TB
     style L stroke:#2962FF,fill:#BBDEFB
     style M stroke:#2962FF,fill:#BBDEFB
 ```
-</div>
 
-<br>
 
 <div id="loris" class="table-banner" onclick="toggleCollapse(this)">
   <span class="table-text">Roles & Responsibilities</span>
