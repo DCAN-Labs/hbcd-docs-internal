@@ -453,7 +453,7 @@ flowchart TB
 ## WashU
 The Washington University in St. Louis (WashU) group has oversight of: *Electronic Medical Records (EMR)*, *Ripple*, *AMBRA*, *AirTable*, and *HBCD Study Administrative Core (HCAC) coordination*.
 
-<div style="width: 70%; margin: 0 auto;">
+<div style="width: 50%; margin: 0 auto;">
 ```mermaid
 ---
 config:
