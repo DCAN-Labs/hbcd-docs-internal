@@ -292,7 +292,7 @@ flowchart LR
     A1["<b>Damien Fair</b><br>HDCC Co-Director<br><br><b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] 
     A1 --- HST["<b>Health Sciences Technology (HST)</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
     A1 --- MIDB["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    A1 --- DCAN["<b>DCAN Lab</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n6["<b>USDTL<br>Biosamples<br>Genomics</b>"]
+    A1 --- DCAN["<b>DCAN Lab</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n6["<b>USDTL<br>Biospecimens<br>Genomics</b>"]
     style A1 fill:#BBDEFB,stroke:#2962FF
     style HST fill:#E1BEE7,stroke:#AA00FF
     style MIDB fill:#E1BEE7,stroke:#AA00FF
