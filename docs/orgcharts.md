@@ -105,14 +105,14 @@ flowchart TB
 
 ### Subcontractor Details
 
+#### DEAP
+The Data Exploration and Analysis Portal (DEAP) is a cloud-based platform developed to facilitate secure, efficient, and user-friendly access to large-scale, multimodal research datasets. Originally designed for the Adolescent Brain Cognitive Development (ABCD) Study, DEAP supports visual exploration of NBDC data dictionaries as well as data download.
+
 #### FIONA
 FIONA (Flexible Image Open Network Appliance) is a high-performance data transfer node (DTN) developed by the Energy Sciences Network (ESnet), designed to move large scientific datasets quickly and securely across research networks. It's typically used in research settings to support efficient, reliable, and high-throughput data transfers between institutions, especially for projects that generate or share large volumes of data. For the HBCD Study, FIONA plays a critical role in the infrastructure that supports data management and secure sharing, specifically for neuroimaging and other high-throughput data types collected across the many study sites.
 
 #### REDCap
 [REDCap](https://projectredcap.org/) (Research Electronic Data Capture) is a secure, widely used web-based application designed to support data capture for research studies, particularly in academic and clinical environments. In the HBCD Study, REDCap serves as a central tool for managing behavioral, clinical, and demographic data across the multiple participating sites. While neuroimaging and biosensor data flow through pipelines involving systems like FIONA, REDCap is used for more structured, form-based data collected during assessments and visits.
-
-#### DEAP
-The Data Exploration and Analysis Portal (DEAP) is a cloud-based platform developed to facilitate secure, efficient, and user-friendly access to large-scale, multimodal research datasets. Originally designed for the Adolescent Brain Cognitive Development (ABCD) Study, DEAP supports visual exploration of NBDC data dictionaries as well as data download.
 
 ## Lasso
 [Lasso](https://www.lassoinformatics.com/) (Lightweight API for Synchronized Studies and Operations) is a lightweight RESTful API framework developed to integrate external tools and pipelines with LORIS. It facilitates real-time data synchronization, automation of processing workflows, and interoperability between LORIS and other platforms (e.g., imaging pipelines or analysis software).
