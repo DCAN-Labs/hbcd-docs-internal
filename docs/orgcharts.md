@@ -365,12 +365,12 @@ config:
   layout: elk
 ---
 flowchart TB
-    L["<b>Maren Macgregor-Hannah</b><br>HDCC Project Manager"] --- N(["<b>Advanced System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) 
+    L["<b>Maren Macgregor-Hannah</b><br>HDCC Program Manager"] --- N(["<b>Advanced System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) 
     L --- n8(["<b>Security &amp Compliance</b>"])
-    N --- Q["<b>Jesse Erdman</b><br>Senior SysOps<br><br><b>Kimberleigh Breen</b><br>Data Manager<br><br><b>Sriharshitha Anuganti<br>Alyssa Oksa<br>Anders Skaar</b><br>DevOps"]
+    N --- Q["<b>Jesse Erdmann</b><br>Senior SysOps<br><br><b>Kimberleigh Breen</b><br>Data Manager<br><br><b>Sriharshitha Anuganti<br>Alyssa Oksa</b><br>DevOps"]
     O --- n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead<br><br><b>Erik Lee</b><br>Pipeline Lead<br><br><b>Monalisa Biles</b><br>Analyst"]
-    P --- n7["<b>Borgne Raasch</b>"]
-    n8 --- n9["<b>Naomi Hospodarsky</b>"]
+    P --- n7["<b>Jeff Shi</b><br>Informatics Consultant<br><br><b>Borgne Raasch</b><br>Data Steward"]
+    n8 --- n9["<b>Naomi Hospodarsky-Sutherland</b>"]
     n10["<b>Thomas Pengo, PhD</b><br>Co-Director, Informatics Group"] --- L
     style L fill:#C8E6C9,stroke:#00C853
     style N fill:#E1BEE7,stroke:#AA00FF
@@ -400,19 +400,14 @@ flowchart TB
     </thead>
     <tbody>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Jim Wilgenbusch</td>
-        <td style="word-wrap: break-word; white-space: normal;">Director of Research Computing in the Research & Innovation Office</td>
-        <td style="word-wrap: break-word; white-space: normal;">Administration</td>
-    </tr>
-    <tr>
         <td style="word-wrap: break-word; white-space: normal;">Thomas Pengo, PhD</td>
         <td style="word-wrap: break-word; white-space: normal;">Co-Director, MIDB Informatics Group</td>
         <td style="word-wrap: break-word; white-space: normal;">IG Lead</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Maren Macgregor-Hannah</td>
-        <td style="word-wrap: break-word; white-space: normal;">Project Manager</td>
-        <td style="word-wrap: break-word; white-space: normal;">HDCC Project Manager</td>
+        <td style="word-wrap: break-word; white-space: normal;">Program Manager</td>
+        <td style="word-wrap: break-word; white-space: normal;">HDCC Program Manager</td>
     </tr>
     <tr>
     <td>Jesse Erdmann</td>
@@ -455,7 +450,7 @@ flowchart TB
   <td>Data Steward</td>
   </tr>
   <tr>
-  <td>Naomi Hospodarsky</td>
+  <td>Naomi Hospodarsky-Sutherland</td>
   <td>Research Security and Compliance Analyst</td>
   <td>Security/Compliance</td>
   </tr>
