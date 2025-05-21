@@ -50,6 +50,17 @@ plugins:
   - git-revision-date-localized:
       type: date
 
+extra:
+  mermaid_config: |
+    {
+      "theme": "base",  // or "default"
+      "themeVariables": {
+        "primaryColor": "#ffffff",
+        "primaryTextColor": "#000000",
+        "tertiaryColor": "#f0f0f0"
+      }
+    }
+
 docs_dir: docs
 
 nav: 

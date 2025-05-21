@@ -62,13 +62,9 @@ flowchart TB
     style s1 stroke:#757575
 ```
 
-## theme default - w/ subgraphs
+## theme default - w/ subgraphs and no config
 <div style="width: 80%; margin: 0 auto;">
 ```mermaid
----
-config:
-  layout: elk
----
 flowchart TB
  subgraph s1["<b>INTERNAL TO LASSO</b>"]
         n23(["<b>Dev/SysOps</b>"])
