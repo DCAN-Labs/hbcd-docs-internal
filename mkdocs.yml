@@ -19,18 +19,9 @@ markdown_extensions:
   - attr_list
   - toc:
       permalink: '🔗'
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.arithmatex
-  - pymdownx.betterem
-  - pymdownx.magiclink
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.highlight
-  - pymdownx.tilde
 
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
+  - https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js
   - js/mermaid-init.js
   - js/extra.js
 
@@ -54,12 +45,6 @@ plugins:
         startOnLoad: true
         flowchart:
           htmlLabels: true
-        theme: default  # or "base" if you want some default styling
-        themeVariables:
-          primaryColor: "#ffffff"
-          primaryTextColor: "#000000"
-          tertiaryColor: "#f0f0f0"
-        layout: elk
   - git-revision-date-localized:
       type: date
 
