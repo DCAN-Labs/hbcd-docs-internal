@@ -45,6 +45,12 @@ plugins:
         startOnLoad: true
         flowchart:
           htmlLabels: true
+        theme: default  # or "base" 
+        themeVariables:
+          primaryColor: "#ffffff"
+          primaryTextColor: "#000000"
+          tertiaryColor: "#f0f0f0"
+        layout: elk
   - git-revision-date-localized:
       type: date
 
