@@ -1,9 +1,10 @@
-## alt lasso
+## theme mc
 
 ```mermaid
 ---
 config:
   layout: elk
+  theme: mc
 ---
 flowchart TB
  subgraph s1["<b>INTERNAL TO LASSO</b>"]
