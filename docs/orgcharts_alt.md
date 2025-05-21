@@ -42,6 +42,24 @@ flowchart TB
     n27 --- n28
     n29 --- n30
     A["<b>Leigh MacIntyre</b>, CEO"] --- s2 & s1
+    style n23 fill:#E1BEE7,stroke:#AA00FF
+    style n24 fill:#BBDEFB,stroke:#2962FF
+    style n4 fill:#E1BEE7,stroke:#AA00FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
+    style n29 fill:#E1BEE7,stroke:#AA00FF
+    style n30 fill:#BBDEFB,stroke:#2962FF
+    style n27 fill:#E1BEE7,stroke:#AA00FF
+    style n28 fill:#BBDEFB,stroke:#2962FF
+    style B fill:#E1BEE7,stroke:#AA00FF
+    style n5 fill:#BBDEFB,stroke:#2962FF
+    style n1 fill:#E1BEE7,stroke:#AA00FF
+    style n6 fill:#BBDEFB,stroke:#2962FF
+    style n2 fill:#E1BEE7,stroke:#AA00FF
+    style n7 fill:#BBDEFB,stroke:#2962FF
+    style n26 fill:#BBDEFB,stroke:#2962FF
+    style A fill:#BBDEFB,stroke:#2962FF
+    style s2 fill:#FFCDD2
+    style s1 stroke:#757575
 ```
 
 ```mermaid
@@ -114,26 +132,7 @@ flowchart TB
     style s1 fill:#FFFFFF
 ```
 
-```
-    style n23 fill:#E1BEE7,stroke:#AA00FF
-    style n24 fill:#BBDEFB,stroke:#2962FF
-    style n4 fill:#E1BEE7,stroke:#AA00FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n29 fill:#E1BEE7,stroke:#AA00FF
-    style n30 fill:#BBDEFB,stroke:#2962FF
-    style n27 fill:#E1BEE7,stroke:#AA00FF
-    style n28 fill:#BBDEFB,stroke:#2962FF
-    style B fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#BBDEFB,stroke:#2962FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n7 fill:#BBDEFB,stroke:#2962FF
-    style n26 fill:#BBDEFB,stroke:#2962FF
-    style A fill:#BBDEFB,stroke:#2962FF
-    style s2 fill:#FFCDD2
-    style s1 stroke:#757575
-```
+
 
 ```
     style n23 fill:#E1BEE7,stroke:#AA00FF
