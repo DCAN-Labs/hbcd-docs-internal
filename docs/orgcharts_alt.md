@@ -1,4 +1,7 @@
-## theme default w/ spec
+# Lasso alt
+
+## Alt 1
+### Code
 
 ```mermaid
 ---
@@ -19,7 +22,7 @@ flowchart TB
         n27(["<b>QA</b>"])
         n28["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
   end
- subgraph s2["<b>CONSORTIUM-FACING (Unless Otherwise Noted)</b>"]
+ subgraph s2["<b>CONSORTIUM-FACING (<i>Unless Specific Otherwise</i>)</b>"]
         B(["<b>Admin</b>"])
         n5["<b>Ellise Elamparo</b><br>Training Scheduling<br>(pre-release)"]
         n1(["<b>Ancillary Studies</b>"])
@@ -56,13 +59,18 @@ flowchart TB
     style n6 fill:#BBDEFB,stroke:#2962FF
     style n2 fill:#E1BEE7,stroke:#AA00FF
     style n7 fill:#BBDEFB,stroke:#2962FF
+    style n22 fill:#E1BEE7,stroke:#AA00FF
     style n26 fill:#BBDEFB,stroke:#2962FF
     style A fill:#BBDEFB,stroke:#2962FF
     style s2 fill:#FFFFFF,stroke:#000000
     style s1 fill:#FFFFFF,stroke:#000000
 ```
+### svg
 
-## theme default - w/ subgraphs 
+![](lasso.svg)
+
+## Alt 2
+### Code
 <div style="width: 80%; margin: 0 auto;">
 ```mermaid
 ---
@@ -135,6 +143,9 @@ flowchart TB
 ```
 </div>
 
+
+### svg
+![](lasso2.svg)
 
 ## alt2 no config
 ```mermaid
