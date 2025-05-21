@@ -1,4 +1,4 @@
-## theme default
+## theme default w/ spec
 
 ```mermaid
 ---
@@ -58,8 +58,8 @@ flowchart TB
     style n7 fill:#BBDEFB,stroke:#2962FF
     style n26 fill:#BBDEFB,stroke:#2962FF
     style A fill:#BBDEFB,stroke:#2962FF
-    style s2 fill:#FFCDD2
-    style s1 stroke:#757575
+    style s2 fill:#FFFFFF,stroke:#000000
+    style s1 fill:#FFFFFF,stroke:#000000
 ```
 
 ## theme default - w/ subgraphs and no config
@@ -126,8 +126,8 @@ flowchart TB
     style n22 fill:#E1BEE7,stroke:#AA00FF
     style n26 fill:#BBDEFB,stroke:#2962FF
     style A fill:#BBDEFB,stroke:#2962FF
-    style s2 fill:#FFFFFF
-    style s1 fill:#FFFFFF
+    style s2 fill:#FFFFFF,stroke:#000000
+    style s1 fill:#FFFFFF,stroke:#000000
 ```
 </div>
 
