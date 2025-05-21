@@ -131,8 +131,7 @@ flowchart TB
     click n28 "#center-for-developmental-neuroimaging"
 ```
 
-## J. Craig Venter Institute
-
+## J. Craig Venter Institute 
 The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, FIONA, and the QC Dashboard.
 
 <div style="width: 90%; margin: 0 auto;">
@@ -167,13 +166,13 @@ flowchart TB
 
 ### Subcontractor Details
 
-#### DEAP
+#### DEAP 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
 The Data Exploration and Analysis Portal (DEAP) is a cloud-based platform developed to facilitate secure, efficient, and user-friendly access to large-scale, multimodal research datasets. Originally designed for the Adolescent Brain Cognitive Development (ABCD) Study, DEAP supports visual exploration of NBDC data dictionaries as well as data download.
 
-#### FIONA
+#### FIONA 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
 FIONA (Flexible Image Open Network Appliance) is a high-performance data transfer node (DTN) developed by the Energy Sciences Network (ESnet), designed to move large scientific datasets quickly and securely across research networks. It's typically used in research settings to support efficient, reliable, and high-throughput data transfers between institutions, especially for projects that generate or share large volumes of data. For the HBCD Study, FIONA plays a critical role in the infrastructure that supports data management and secure sharing, specifically for neuroimaging and other high-throughput data types collected across the many study sites.
 
-#### REDCap
+#### REDCap 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
 [REDCap](https://projectredcap.org/) (Research Electronic Data Capture) is a secure, widely used web-based application designed to support data capture for research studies, particularly in academic and clinical environments. In the HBCD Study, REDCap serves as a central tool for managing behavioral, clinical, and demographic data across the multiple participating sites. While neuroimaging and biosensor data flow through pipelines involving systems like FIONA, REDCap is used for more structured, form-based data collected during assessments and visits.
 
 ## Lasso
@@ -224,6 +223,7 @@ flowchart TB
 ```
 
 ## LORIS
+🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
 [LORIS](https://mcin.ca/technology/loris/) (Longitudinal Online Research and Imaging System), developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)), is the core data management system for the HBCD Study. It is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
 
 ```mermaid
@@ -340,6 +340,7 @@ flowchart TB
 </div>
 
 ## University of Minnesota
+🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
 There are several groups that fall under the oversight of UMN. The US Drug Testing Laboratories ([USDTL](https://www.usdtl.com/)) handles toxicology. The remaining groups are described in greater detail below.  
 
 <div style="width: 80%; margin: 0 auto;">
@@ -365,6 +366,7 @@ flowchart LR
 </div>
 
 ### Center for Developmental NeuroImaging
+🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
 The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
 
 <div style="width: 80%; margin: 0 auto;">
@@ -387,6 +389,7 @@ flowchart LR
 </div>
 
 ### Health Sciences Technology
+🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Electronic Health Records (EHR)*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
 
 <div style="width: 90%; margin: 0 auto;">
@@ -417,6 +420,7 @@ flowchart TB
 </div>
 
 ### MIDB Informatics Hub & MSI
+🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
 The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://midb.umn.edu/research/informatics) and [Minnesota Supercomputing Institute (MSI)](https://msi.umn.edu/) at UMN provide the following services to the HBCD study: *System Administration*, *Loris Hosting*, *Computing*, *Processing*, and *Data Sharing*.
 
 ```mermaid
@@ -520,6 +524,7 @@ flowchart TB
 
 
 ## WashU
+🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
 The Washington University in St. Louis (WashU) group has oversight of: *Electronic Medical Records (EMR)*, *Ripple*, *Ambra*, *AirTable*, and *HBCD Study Administrative Core (HCAC) coordination*.
 
 <div style="width: 60%; margin: 0 auto;">
@@ -551,13 +556,13 @@ flowchart TB
 
 ### Subcontractor Details
 
-#### AirTable
+#### AirTable 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
 AirTable is a cloud-based collaborative platform and database service that combines the features of a database and a spreadsheet. It allows users to organize, track, and collaborate on structured data using customizable tables, forms, views, and automation. In the HBCD Study, Airtable is widely used as a centralized project management and tracking tool, including study coordination and oversight, neuroimaging workflow tracking, cross-team communication, and quality control and reporting.
 
-#### Ambra
+#### Ambra 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
 Ambra is a cloud-based gateway that allows the direct transmission of medical images between participating institutions. Ambra supports secure data transfer, DICOM standard compliance, de-identification tools, and access control, making it suitable for large-scale, multi-site research studies. For the HBCD Study, Ambra is used as the centralized platform for uploading, storing, and sharing neuroimaging data from participating research sites.
-
-#### Ripple
+ 
+#### Ripple 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
 [Ripple Science](https://www.ripplescience.com/) is a digital clinical trial software deployed at all HBCD Study sites for participant recruitment and retention. See details of Ripple's role in the study [here](https://www.ripplescience.com/ripple-science-supports-nih-funded-healthy-brain-and-child-development-study/).
 
 
