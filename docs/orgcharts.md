@@ -188,8 +188,8 @@ flowchart TB
     B(["<b>Admin</b>"]) --- n5["<b>Ellise Elamparo</b><br>Training Scheduling<br>(pre-release)"]
     n1(["<b>Ancillary Studies</b>"]) --- n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
     n2(["<b>Data QC</b>"]) --- n7["<b>Jen Zink<br></b>Dir Partnerships<br>&amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-    n4(["<b>Data Loading</b>"]) --- n9["<b><i>INTERNAL TO LASSO:</i>:<br>Laetitia Fesselier<br></b>Sr Developer<br>
-    Edson Silva</b><br><b>Mateus Andre<br></b>Developers"]
+    n4(["<b>Data Loading</b>"]) --- n9["<b><i>INTERNAL TO LASSO:</i></b><br><b>Laetitia Fesselier</b><br>Sr Developer<br>
+    <b>Edson Silva</b><br><b>Mateus Andre</b><br>Developers"]
     n23(["<b>Dev/SysOps</b>"]) --- n24["<b><i>INTERNAL TO LASSO:</i><br>Francisco Soto</b><br>Manager<br>
     <b>Alexandre Meyer</b><br>DevOps Engineer<br><br><b>Nataliya Korniyenko<br></b>Systems Administrator"]
     n22(["<b>Development</b>"]) --- n26["<b>Fraser Glen<br></b>CTO<br><b>Jordan Sterling<br></b>Lead Developer
