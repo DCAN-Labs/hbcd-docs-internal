@@ -229,6 +229,11 @@ flowchart TB
   <img src="../lasso2.svg" alt="Lasso" width="80%" />
 </div>
 
+### Lasso alt 3
+<div style="text-align: center;">
+  <img src="../lasso3.svg" alt="Lasso" width="80%" />
+</div>
+
 ## LORIS
 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
 [LORIS](https://mcin.ca/technology/loris/) (Longitudinal Online Research and Imaging System), developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)), is the core data management system for the HBCD Study. It is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
