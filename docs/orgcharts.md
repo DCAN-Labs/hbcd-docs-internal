@@ -221,6 +221,13 @@ flowchart TB
     style n28 fill:#BBDEFB,stroke:#2962FF
     style n30 fill:#BBDEFB,stroke:#2962FF
 ```
+### Lasso alt 1
+![](lasso.svg)
+
+### Lasso alt 2
+<div style="text-align: center;">
+  <img src="../lasso2.svg" alt="Lasso" width="80%" />
+</div>
 
 ## LORIS
 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
