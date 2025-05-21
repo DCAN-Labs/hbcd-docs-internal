@@ -365,7 +365,7 @@ flowchart LR
 </div>
 
 ### Center for Developmental NeuroImaging
-The Center for Developmental NeuroImaging ([CDNI](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
+The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
 
 <div style="width: 80%; margin: 0 auto;">
 ```mermaid
