@@ -247,60 +247,6 @@ flowchart TB
     style n13 fill:#BBDEFB
 ```
 
-## Overview alt
-
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --> jvci["<b>JVCI</b>"]
-    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --> lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
-    lasso --> lasso1["<b>Leigh MacIntyre</b><br>MCIN Assoc Dir, PM"]
-    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --> n10["<b>WashU</b><br>"] & ripple["<b>Ripple</b>"] & n12["<b>LIBR</b>"] & lasso
-    n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --> n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
-    n12 --> n16
-    n8 --> n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc. Dir."]
-    n7 --> n20["<b>Alan Evans</b><br>PI<br><b>Samir Das</b><br>AD Softw Dev"]
-    umn --> reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
-    n10 --> n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
-    n11 --> n23(["<b>Novel Tech<br>&amp; Wearables</b>"])
-    n23 --> n18["<b>William P. Fifer, PhD<br></b>Chair<br><b>Nicolo Pini<br></b>Co-I &amp; Dev<br><b>Beth Smith</b>"]
-    reed --> n25(["<b>USDTL</b>"]) & n26(["<b>MIDB/MSI</b>"]) & n27(["<b>DCAN Lab</b>"]) & bio(["<b>BAH</b>"]) & n30(["<b>HST</b>"])
-    style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style jvci fill:#E1BEE7,stroke:#AA00FF
-    style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style lasso fill:#E1BEE7,stroke:#AA00FF
-    style umn fill:#E1BEE7,stroke:#AA00FF
-    style n7 fill:#E1BEE7,stroke:#AA00FF
-    style n8 fill:#E1BEE7,stroke:#AA00FF
-    style n11 fill:#E1BEE7,stroke:#AA00FF
-    style lasso1 fill:#BBDEFB,stroke:#2962FF
-    style n1 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style n10 fill:#E1BEE7,stroke:#AA00FF
-    style ripple fill:#E1BEE7,stroke:#AA00FF
-    style n12 fill:#E1BEE7,stroke:#AA00FF
-    style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style n17 fill:#BBDEFB,stroke:#2962FF
-    style n19 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style n20 fill:#BBDEFB,stroke:#2962FF
-    style reed fill:#BBDEFB,stroke:#2962FF
-    style n22 fill:#BBDEFB,stroke:#2962FF
-    style n23 fill:#E1BEE7,stroke:#AA00FF
-    style n18 fill:#BBDEFB,stroke:#2962FF
-    style n25 fill:#E1BEE7,stroke:#AA00FF
-    style n26 fill:#E1BEE7,stroke:#AA00FF
-    style n27 fill:#E1BEE7,stroke:#AA00FF
-    style bio fill:#E1BEE7,stroke:#AA00FF
-    style n30 fill:#E1BEE7,stroke:#AA00FF
-    click jvci "#j-craig-venter-institute"
-    click lasso "#lasso"
-    click umn "#university-of-minnesota"
-    click n7 "#loris"
-    click n8 "#umd-eeg-core"
-    click n10 "#washu"
-```
 
 ## LORIS OLD- Roles & Responsibilities
 <div id="evans" class="table-banner" onclick="toggleCollapse(this)">
@@ -490,42 +436,6 @@ flowchart TB
 </ul>
 </div>
 
-
-# Lasso Alt diagrams
-## lasso alt 2
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    A["<b>Leigh MacIntyre</b>, CEO<br>MCIN Assoc. Dir., PM"] --> B(["<b>Pre-Release Training<br>Scheduling<br></b>"]) & n1(["<b>Ancillary<br>Studies</b>"]) & n2(["<b>WorkGroup<br>Data QC</b>"]) & n3(["<b>Technical</b>"]) & n4(["<b>Data<br>Loading</b>"]) & n22(["<b>UI/UX</b>"]) & n21(["<b>QA</b>"]) & n23(["<b>Dev &amp; Operations</b>"])
-    B --> n5["<b>Ellise Elamparo</b><br>Exec Admin"]
-    n1 --> n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
-    n2 --> n7["<b>Jen Zink<br></b>Director,<br>Partnerships &amp; Grant<br>Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-    n3 --> n8["<b>Fraser Glen<br></b>CTO<br><br><b>Jordan<br>Sterling<br></b>Lead Dev"]
-    n4 --> n9["<b>Laetitia Fesselier<br></b>Sr. Dev<br><b><br>Edson Silva</b><br><b>Mateus Andre<br></b>Dev"]
-    n23 --> n24["<b>Francisco Soto</b><br>Dev/SysOps Manager<br><b>Alexandre Meyer</b><br>DevOps<br><b>Nataliya Korniyenko<br></b>Sys Admin<br><br><b>Mark Walker<br></b>Software Architect<br><b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
-    n22 --> n26["<b>Andrew Sawaya</b><br>Lead Designer<br><b>Mehrafarin Ekhlaspour</b><br>Visual Design"]
-    n21 --> n27["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
-    style A fill:#BBDEFB,stroke:#2962FF
-    style B fill:#E1BEE7,stroke:#AA00FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n4 fill:#E1BEE7,stroke:#AA00FF
-    style n22 fill:#E1BEE7,stroke:#AA00FF
-    style n21 fill:#E1BEE7,stroke:#AA00FF
-    style n23 fill:#E1BEE7
-    style n5 fill:#BBDEFB,stroke:#2962FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
-    style n7 fill:#BBDEFB,stroke:#2962FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n24 fill:#BBDEFB,stroke:#2962FF
-    style n26 fill:#BBDEFB,stroke:#2962FF
-    style n27 fill:#BBDEFB,stroke:#2962FF
-```
 
 
 ## Columbia University
