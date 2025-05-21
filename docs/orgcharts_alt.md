@@ -62,9 +62,13 @@ flowchart TB
     style s1 fill:#FFFFFF,stroke:#000000
 ```
 
-## theme default - w/ subgraphs and no config
+## theme default - w/ subgraphs 
 <div style="width: 80%; margin: 0 auto;">
 ```mermaid
+---
+config:
+  layout: elk
+---
 flowchart TB
  subgraph s1["<b>INTERNAL TO LASSO</b>"]
         n23(["<b>Dev/SysOps</b>"])
@@ -132,12 +136,8 @@ flowchart TB
 </div>
 
 
-## alt2
+## alt2 no config
 ```mermaid
----
-config:
-  layout: dagre
----
 flowchart TB
  subgraph s1["<b>INTERNAL TO LASSO</b>"]
         n23(["<b>Dev/SysOps</b>"])
@@ -157,7 +157,6 @@ flowchart TB
         Oksana Bodnariuk
         Jonas Vinson</b>
         Developers"]
-        n32(["<b>Development</b>"])
   end
  subgraph s2["<b>CONSORTIUM-FACING</b>"]
         B(["<b>Admin</b>"])
@@ -169,17 +168,15 @@ flowchart TB
         n22(["<b>Development</b>"])
         n26["<b>Fraser Glen<br></b>CTO<br><b>Jordan Sterling<br></b>Lead Develope"]
   end
-    A["<b>Leigh MacIntyre</b>, CEO"] --- s1 & s2
+    A["<b>Leigh MacIntyre</b>, CEO"] --- s2 & s1
     B --- n5
     n1 --- n6
     n2 --- n7
     n4 --- n9
     n23 --- n24
-    n22 --- n26
+    n22 --- n26 & n31
     n27 --- n28
     n29 --- n30
-    n32 --- n31
-    n26 --- n32
     style n23 fill:#E1BEE7,stroke:#AA00FF
     style n24 fill:#BBDEFB,stroke:#2962FF
     style n4 fill:#E1BEE7,stroke:#AA00FF
@@ -189,7 +186,6 @@ flowchart TB
     style n27 fill:#E1BEE7,stroke:#AA00FF
     style n28 fill:#BBDEFB,stroke:#2962FF
     style n31 fill:#BBDEFB,stroke:#2962FF
-    style n32 fill:#E1BEE7,stroke:#AA00FF
     style B fill:#E1BEE7,stroke:#AA00FF
     style n5 fill:#BBDEFB,stroke:#2962FF
     style n1 fill:#E1BEE7,stroke:#AA00FF
@@ -201,113 +197,6 @@ flowchart TB
     style A fill:#BBDEFB,stroke:#2962FF
     style s2 fill:#FFFFFF,stroke:#000000
     style s1 fill:#FFFFFF,stroke:#000000
-```
-
-## WashU alt
-
-```mermaid
----
-config:
-  layout: dagre
----
-flowchart TB
- subgraph s1["<b>INTERNAL TO LASSO</b>"]
-        n23(["<b>Dev/SysOps</b>"])
-        n24["<b>Francisco Soto</b><br>Manager<br>
-    <b>Alexandre Meyer</b><br>DevOps Engineer<br><br><b>Nataliya Korniyenko<br></b>Systems Administrator"]
-        n4(["<b>Data Loading</b>"])
-        n9["<b>Laetitia Fesselier</b><br>Sr Developer<br>
-    <b>Edson Silva</b><br><b>Mateus Andre</b><br>Developers"]
-        n29(["<b>UI/UX</b>"])
-        n30["<b>Andrew Sawaya</b><br>Lead Designer<br>
-    <b>Mehrafarin Ekhlaspour</b><br>Visual Design"]
-        n27(["<b>QA</b>"])
-        n28["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
-        n31["<b>Mark Walker</b>
-        Software Architect<br>
-        <b>Daniel Patularu
-        Oksana Bodnariuk
-        Jonas Vinson</b>
-        Developers"]
-        n32(["<b>Development</b>"])
-  end
- subgraph s2["<b>CONSORTIUM-FACING</b>"]
-        B(["<b>Admin</b>"])
-        n5["<b>Ellise Elamparo</b><br>Training Scheduling<br>(pre-release)"]
-        n1(["<b>Ancillary Studies</b>"])
-        n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
-        n2(["<b>Data QC</b>"])
-        n7["<b>Jen Zink<br></b>Dir Partnerships<br>&amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-        n22(["<b>Development</b>"])
-        n26["<b>Fraser Glen<br></b>CTO<br><b>Jordan Sterling<br></b>Lead Develope"]
-  end
-    A["<b>Leigh MacIntyre</b>, CEO"] --- s1 & s2
-    B --- n5
-    n1 --- n6
-    n2 --- n7
-    n4 --- n9
-    n23 --- n24
-    n22 --- n26
-    n27 --- n28
-    n29 --- n30
-    n32 --- n31
-    n26 --- n32
-    style n23 fill:#E1BEE7,stroke:#AA00FF
-    style n24 fill:#BBDEFB,stroke:#2962FF
-    style n4 fill:#E1BEE7,stroke:#AA00FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n29 fill:#E1BEE7,stroke:#AA00FF
-    style n30 fill:#BBDEFB,stroke:#2962FF
-    style n27 fill:#E1BEE7,stroke:#AA00FF
-    style n28 fill:#BBDEFB,stroke:#2962FF
-    style n31 fill:#BBDEFB,stroke:#2962FF
-    style n32 fill:#E1BEE7,stroke:#AA00FF
-    style B fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#BBDEFB,stroke:#2962FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n7 fill:#BBDEFB,stroke:#2962FF
-    style n22 fill:#E1BEE7,stroke:#AA00FF
-    style n26 fill:#BBDEFB,stroke:#2962FF
-    style A fill:#BBDEFB,stroke:#2962FF
-    style s2 fill:#FFFFFF,stroke:#000000
-    style s1 fill:#FFFFFF,stroke:#000000
-```
-
-## WashU alt2
-
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    A["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"] --- n11(["<b>OMOP</b>"]) & B["<b>Sauren Ravencroft</b><br>Project Manager"] & n13["<b>Nicole Venteris</b><br>EHR Project Manager"]
-    ambra(["<b>Ambra</b>"]) --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br><br><b>Jim Alexopoulos, PhD</b><br>Data Manager"]
-    n12["<b>UMN HST</b><br><i>Click to view org chart</i>"] --- C(["<b>EHR</b><br>"])
-    B --- n5(["<b>Ripple</b>"]) & n6(["<b>AirTable &amp; Ancillary Studies</b>"]) & ambra
-    n6 --- n8["<b>Lynn Menchaca</b><br>AirTable Admin<br><br><b>Madison Gardner</b><br>U01 Site Piloting"]
-    n13 --- C
-    C --- n3["<b>Philip Payne</b><br><b>Albert Lai</b><br>Co-Investigators"]
-    n5 --> n14["<b>Liliana Mueller</b>"]
-    style A fill:#BBDEFB,stroke:#2962FF
-    style n11 fill:#E1BEE7,stroke:#AA00FF
-    style B fill:#C8E6C9,stroke:#00C853
-    style n13 fill:#C8E6C9,stroke:#00C853
-    style ambra fill:#E1BEE7,stroke:#AA00FF
-    style n1 fill:#BBDEFB,stroke:#2962FF
-    style n12 fill:#E1BEE7,stroke:#AA00FF
-    style C fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#E1BEE7,stroke:#AA00FF
-    style n6 fill:#E1BEE7,stroke:#AA00FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
-    style n3 fill:#BBDEFB,stroke:#2962FF
-    style n14 fill:#BBDEFB,stroke:#2962FF
-    click ambra "#ambra"
-    click n12 "#health-sciences-technology"
-    click n5 "#ripple-science"
-    click n6 "#airtable"
 ```
 
 ## HST orig
