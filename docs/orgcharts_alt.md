@@ -145,12 +145,37 @@ flowchart TB
 
 
 ### svg
-
 <div style="text-align: center;">
   <img src="../lasso2.svg" alt="Lasso" width="80%" />
 </div>
 
+## Alt 3 - reorder and don't use elk
 
+```mermaid
+---
+config:
+  layout: dagre
+---
+flowchart TB
+    A(["<b>Leigh MacIntyre</b>, CEO"]) --> n1["Data QC"] & n3["Admin"] & n5["Ancillary Studies"] & n7["Development"] & n9["Data Loading"] & n11["Dev/SysOps"] & n13["QA"] & n15["UI/UX"]
+    n1 --> n2["<b>Jen Zink<br></b>Dir Partnerships<br>&amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
+    n3 --> n4["<b>Ellise Elamparo</b><br>Training Scheduling<br>(pre-release)"]
+    n5 --> n6["<b>Aarushi Chaudhry<br></b>Study Success Manager"]
+    n7 --> n8["<b>Fraser Glen<br></b>CTO<br><b>Jordan Sterling<br></b>Lead Developer
+    -------------------------------
+    <b><i>INTERNAL TO LASSO:</i>
+    Mark Walker</b><br>Software Architect<br>
+    <b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
+    n9 --> n10["<b><i>INTERNAL TO LASSO:</i></b><br><b>Laetitia Fesselier</b><br>Sr Developer<br>
+    <b>Edson Silva</b><br><b>Mateus Andre</b><br>Developers"]
+    n11 --> n12["<b><i>INTERNAL TO LASSO:</i><br>Francisco Soto</b><br>Manager<br>
+    <b>Alexandre Meyer</b><br>DevOps Engineer<br><br><b>Nataliya Korniyenko<br></b>Systems Administrator"]
+    n13 --> n14["<b><i>INTERNAL TO LASSO:</i></b>
+    <b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
+    n15 --> n16["<b><i>INTERNAL TO LASSO:</i></b>
+    <b>Andrew Sawaya</b><br>Lead Designer<br>
+    <b>Mehrafarin Ekhlaspour</b><br>Visual Design"]
+```
 
 # Tests for hover boxes
 
