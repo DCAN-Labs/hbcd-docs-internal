@@ -26,7 +26,7 @@ flowchart TB
     umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n11 --- n18["<b>William P. Fifer, PhD</b><br>Novel Tech &<br>Wearables Co-Chair"]
-    reed --- n25["<b>MIDB &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n27["<b>HST</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n28["<b>DCAN Lab</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n29["<b>USDTL<br>Biospecimens<br>Genomics</b>"]
+    reed --- n25["<b>MIDB &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n27["<b>HST</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n28["<b>CDNI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n29["<b>USDTL<br>Biospecimens<br>Genomics</b>"]
     n25 --- n30["<b>Maren Macgregor-Hannah</b><br>Program Manager"]
     n27 --- n31["<b>Karen Athy-Penrose</b><br>Project Manager"]
     n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
@@ -66,7 +66,7 @@ flowchart TB
     click n10 "#washu"
     click n25 "#midb-informatics-hub-msi"
     click n27 "#health-sciences-technology"
-    click n28 "#dcan-lab"
+    click n28 "#center-for-developmental-neuroimaging"
 ```
 
 ## Overview - Alternate 
@@ -89,7 +89,7 @@ flowchart TB
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n11 --- n18["<b>William P. Fifer, PhD</b><br>Novel Tech &<br>Wearables Co-Chair"]
     reed --- n30["<b>Maren Macgregor-Hannah</b><br>Program Manager"]
-    n30 --- n25["<b>MIDB &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n27["<b>HST</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n28["<b>DCAN Lab</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n29["<b>USDTL<br>Biospecimens<br>Genomics</b>"]
+    n30 --- n25["<b>MIDB &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n27["<b>HST</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n28["<b>CDNI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n29["<b>USDTL<br>Biospecimens<br>Genomics</b>"]
     n27 --- n31["<b>Karen Athy-Penrose</b><br>Project Manager"]
     n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
     n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
@@ -128,7 +128,7 @@ flowchart TB
     click n10 "#washu"
     click n25 "#midb-informatics-hub-msi"
     click n27 "#health-sciences-technology"
-    click n28 "#dcan-lab"
+    click n28 "#center-for-developmental-neuroimaging"
 ```
 
 ## J. Craig Venter Institute
@@ -352,20 +352,20 @@ flowchart LR
     A1["<b>Damien Fair</b><br>HDCC Co-Director<br><br><b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] 
     A1 --- HST["<b>Health Sciences Technology (HST)</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
     A1 --- MIDB["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    A1 --- DCAN["<b>DCAN Lab</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n6["<b>USDTL<br>Biospecimens<br>Genomics</b>"]
+    A1 --- CDNI["<b>Center for Developmental NeuroImaging (CDNI)</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n6["<b>USDTL<br>Biospecimens<br>Genomics</b>"]
     style A1 fill:#BBDEFB,stroke:#2962FF
     style HST fill:#E1BEE7,stroke:#AA00FF
     style MIDB fill:#E1BEE7,stroke:#AA00FF
-    style DCAN fill:#E1BEE7,stroke:#AA00FF
+    style CDNI fill:#E1BEE7,stroke:#AA00FF
     style n6 fill:#E1BEE7,stroke:#AA00FF
     click HST "#health-sciences-technology-hst"
     click MIDB "#midb-informatics-hub-msi"
-    click DCAN "#dcan-lab"
+    click CDNI "#center-for-developmental-neuroimaging"
 ```
 </div>
 
-### DCAN Lab
-The Developmental Cognition and Neuroimaging Lab ([DCAN](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) under Dr. Damien Fair at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
+### Center for Developmental NeuroImaging
+The Center for Developmental NeuroImaging ([CDNI](https://innovation.umn.edu/developmental-cognition-and-neuroimaging-lab)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
 
 <div style="width: 80%; margin: 0 auto;">
 ```mermaid
@@ -374,11 +374,11 @@ config:
   layout: elk
 ---
 flowchart LR
-    DCAN["<b>Damien Fair</b><br>HDCC Co-Director"] --- n2(["<b>MRI Acquisition</b>"]) & n5(["<b>Processed MRI Quality Control</b>"])
+    CDNI["<b>Damien Fair</b><br>HDCC Co-Director"] --- n2(["<b>MRI Acquisition</b>"]) & n5(["<b>Processed MRI Quality Control</b>"])
     n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
     n5 --- n6["<b>Eric Feczko, PhD</b><br>QC Lead<br><br><b>Lucille A. Moore, PhD</b><br>Neuroinformatics<br>
     <b>Michael Anderson</b><br>Analyst"]
-    style DCAN fill:#E1BEE7,stroke:#AA00FF
+    style CDNI fill:#E1BEE7,stroke:#AA00FF
     style n2 fill:#E1BEE7,stroke:#AA00FF
     style n5 fill:#E1BEE7,stroke:#AA00FF
     style n4 fill:#BBDEFB,stroke:#2962FF
