@@ -1,10 +1,9 @@
-## theme mc
+## theme base
 
 ```mermaid
 ---
 config:
   layout: elk
-  theme: mc
 ---
 flowchart TB
  subgraph s1["<b>INTERNAL TO LASSO</b>"]
@@ -63,6 +62,8 @@ flowchart TB
     style s1 stroke:#757575
 ```
 
+## theme default - w/ subgraphs
+<div style="width: 80%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -132,30 +133,8 @@ flowchart TB
     style s2 fill:#FFFFFF
     style s1 fill:#FFFFFF
 ```
+</div>
 
-
-
-```
-    style n23 fill:#E1BEE7,stroke:#AA00FF
-    style n24 fill:#BBDEFB,stroke:#2962FF
-    style n4 fill:#E1BEE7,stroke:#AA00FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n29 fill:#E1BEE7,stroke:#AA00FF
-    style n30 fill:#BBDEFB,stroke:#2962FF
-    style n27 fill:#E1BEE7,stroke:#AA00FF
-    style n28 fill:#BBDEFB,stroke:#2962FF
-    style B fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#BBDEFB,stroke:#2962FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n7 fill:#BBDEFB,stroke:#2962FF
-    style n22 fill:#E1BEE7,stroke:#AA00FF
-    style n26 fill:#BBDEFB,stroke:#2962FF
-    style A fill:#BBDEFB,stroke:#2962FF
-    style s2 stroke:#757575
-    style s1 stroke:#757575
-```
 
 
 ## WashU alt
