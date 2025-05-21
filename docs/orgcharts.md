@@ -229,7 +229,7 @@ flowchart TB
     F --- I["<b>Dave McFarlane</b><br>Lead Developer<br><br><b>Sruthy Matthew</b><br>Sr Backend Developer<br><br><b>Regis Ongaro-Carcy<br>George Murad<br>Moshood Abiola</b><br>Developers"]
     G --- L["<b>Cecile Madjar</b><br>Lead Developer"]
     H --- M["<b>Laetitia Faeselier</b><br>Lead Developer"]
-    n13["<b>Alan Evans</b>, PI<br><b>Samir Das</b>, MCIN Assoc Dir"] --> nl
+    n13["<b>Alan Evans</b>, PI<br><b>Samir Das</b>, MCIN Assoc Dir"] --- nl
     style nl stroke:#00C853,fill:#C8E6C9
     style C stroke:#AA00FF,fill:#E1BEE7
     style G stroke:#AA00FF,fill:#E1BEE7
