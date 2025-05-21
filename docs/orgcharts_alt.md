@@ -147,7 +147,7 @@ flowchart TB
 ### svg
 
 <div style="text-align: center;">
-  <img src="lasso2.svg" alt="Team Logo" width="80%" />
+  <img src="../lasso2.svg" alt="Lasso" width="80%" />
 </div>
 
 
