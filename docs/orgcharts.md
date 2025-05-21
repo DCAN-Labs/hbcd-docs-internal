@@ -116,56 +116,7 @@ FIONA (Flexible Image Open Network Appliance) is a high-performance data transfe
 ## Lasso
 [Lasso](https://www.lassoinformatics.com/) is a lightweight RESTful API framework developed to integrate external tools and pipelines with LORIS. Lasso offers a user-friendly, (NIST) 800-171-compliant data management platform particularly suited for large-scale multi-modal data. Lasso serves several core functions in HDCC, including developing dashboards for ongoing workgroup data QC and being the official public data release platform for the HBCD Study.
 
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    B(["<b>Admin</b>"]) --- n5["<b>Ellise Elamparo</b><br>Training Scheduling<br>(pre-release)"]
-    n1(["<b>Ancillary Studies</b>"]) --- n6["<b>Aarushi Chaudhry<br></b>Study Success<br>Manager"]
-    n2(["<b>Data QC</b>"]) --- n7["<b>Jen Zink<br></b>Dir Partnerships<br>&amp; Grant Funding<br><br><b>Marion Fechino</b><br>Data Analyst"]
-    n4(["<b>Data Loading</b>"]) --- n9["<b><i>INTERNAL TO LASSO:</i></b><br><b>Laetitia Fesselier</b><br>Sr Developer<br>
-    <b>Edson Silva</b><br><b>Mateus Andre</b><br>Developers"]
-    n23(["<b>Dev/SysOps</b>"]) --- n24["<b><i>INTERNAL TO LASSO:</i><br>Francisco Soto</b><br>Manager<br>
-    <b>Alexandre Meyer</b><br>DevOps Engineer<br><br><b>Nataliya Korniyenko<br></b>Systems Administrator"]
-    n22(["<b>Development</b>"]) --- n26["<b>Fraser Glen<br></b>CTO<br><b>Jordan Sterling<br></b>Lead Developer
-    -------------------------------
-    <b><i>INTERNAL TO LASSO:</i>
-    Mark Walker</b><br>Software Architect<br>
-    <b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers"]
-    A["<b>Leigh MacIntyre</b>, CEO"] --- n22 & n23 & n2 & B & n4 & n1
-    A --- n27(["<b>QA</b>"]) & n29(["<b>UI/UX</b>"])
-    n27 --- n28["<b><i>INTERNAL TO LASSO:</i></b>
-    <b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
-    n29 --- n30["<b><i>INTERNAL TO LASSO:</i></b>
-    <b>Andrew Sawaya</b><br>Lead Designer<br>
-    <b>Mehrafarin Ekhlaspour</b><br>Visual Design"]
-    style B fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#BBDEFB,stroke:#2962FF
-    style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n7 fill:#BBDEFB,stroke:#2962FF
-    style n4 fill:#E1BEE7,stroke:#AA00FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n23 fill:#E1BEE7,stroke:#AA00FF
-    style n24 fill:#BBDEFB,stroke:#2962FF
-    style n22 fill:#E1BEE7,stroke:#AA00FF
-    style n26 fill:#BBDEFB,stroke:#2962FF
-    style A fill:#BBDEFB,stroke:#2962FF
-    style n27 fill:#E1BEE7,stroke:#AA00FF
-    style n29 fill:#E1BEE7,stroke:#AA00FF
-    style n28 fill:#BBDEFB,stroke:#2962FF
-    style n30 fill:#BBDEFB,stroke:#2962FF
-```
-### Lasso alt 1
 ![](lasso.svg)
-
-### Lasso alt 2
-<div style="text-align: center;">
-  <img src="../lasso2.svg" alt="Lasso" width="80%" />
-</div>
 
 ## LORIS
 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      

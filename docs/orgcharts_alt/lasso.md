@@ -22,7 +22,7 @@ flowchart TB
         n27(["<b>QA</b>"])
         n28["<b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers"]
   end
- subgraph s2["<b>CONSORTIUM-FACING<br>(<i>Unless Specified Otherwise</i>)</b>"]
+ subgraph s2["<b>CONSORTIUM-FACING</b> (<i>Unless Specified Otherwise</i>)"]
         B(["<b>Admin</b>"])
         n5["<b>Ellise Elamparo</b><br>Training Scheduling<br>(pre-release)"]
         n1(["<b>Ancillary Studies</b>"])
