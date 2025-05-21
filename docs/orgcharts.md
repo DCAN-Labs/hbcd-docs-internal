@@ -197,22 +197,25 @@ flowchart TB
     <b><i>INTERNAL TO LASSO:</i>
     Mark Walker</b><br>Software Architect<br>
     <b>Daniel Patularu</b><br><b>Oksana Bodnariuk<br>Jonas Vinson<br></b>Developers<br>
-    <b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers<br>
     <b>Andrew Sawaya</b><br>UI/UX Lead Designer<br><b>Mehrafarin Ekhlaspour</b><br>UI/UX Visual Design"]
-    A["<b>Leigh MacIntyre</b>, CEO"] --- n22 & n23 & n2 & B & n4 & n1
+    A["<b>Leigh MacIntyre</b>, CEO"] ~~~ n22
+    A --- n23 & n2 & B & n4 & n1 & n27(["<b>Quality Assessment</b>"])
+    n27 --- n28["<b><i>INTERNAL TO LASSO:</i></b><br><b>Vandana Sriram</b><br><b>Anjali Raj Katuri<br></b>QA Engineers<br>"]
     style B fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#BBDEFB,stroke:#2962FF
     style n1 fill:#E1BEE7,stroke:#AA00FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
     style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n7 fill:#BBDEFB,stroke:#2962FF
     style n4 fill:#E1BEE7,stroke:#AA00FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
     style n23 fill:#E1BEE7,stroke:#AA00FF
-    style n24 fill:#BBDEFB,stroke:#2962FF
     style n22 fill:#E1BEE7,stroke:#AA00FF
+    style n27 fill:#E1BEE7,stroke:#AA00FF
+    style n5 fill:#BBDEFB,stroke:#2962FF
+    style n6 fill:#BBDEFB,stroke:#2962FF
+    style n7 fill:#BBDEFB,stroke:#2962FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
+    style n24 fill:#BBDEFB,stroke:#2962FF
     style n26 fill:#BBDEFB,stroke:#2962FF
     style A fill:#BBDEFB,stroke:#2962FF
+    style n28 fill:#BBDEFB,stroke:#2962FF
 ```
 
 ## LORIS
