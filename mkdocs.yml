@@ -45,7 +45,7 @@ plugins:
         startOnLoad: true
         flowchart:
           htmlLabels: true
-        theme: default  # or "base" 
+        theme: base  # "default" or "base" 
         themeVariables:
           primaryColor: "#ffffff"
           primaryTextColor: "#000000"
