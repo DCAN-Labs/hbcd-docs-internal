@@ -177,7 +177,7 @@ FIONA (Flexible Image Open Network Appliance) is a high-performance data transfe
 [REDCap](https://projectredcap.org/) (Research Electronic Data Capture) is a secure, widely used web-based application designed to support data capture for research studies, particularly in academic and clinical environments. In the HBCD Study, REDCap serves as a central tool for managing behavioral, clinical, and demographic data across the multiple participating sites. While neuroimaging and biosensor data flow through pipelines involving systems like FIONA, REDCap is used for more structured, form-based data collected during assessments and visits.
 
 ## Lasso
-[Lasso](https://www.lassoinformatics.com/) (Lightweight API for Synchronized Studies and Operations) is a lightweight RESTful API framework developed to integrate external tools and pipelines with LORIS. It facilitates real-time data synchronization, automation of processing workflows, and interoperability between LORIS and other platforms (e.g., imaging pipelines or analysis software).
+[Lasso](https://www.lassoinformatics.com/) is a lightweight RESTful API framework developed to integrate external tools and pipelines with LORIS. It facilitates real-time data synchronization, automation of processing workflows, and interoperability between LORIS and other platforms (e.g., imaging pipelines or analysis software).
 
 ```mermaid
 ---
