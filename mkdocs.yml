@@ -45,21 +45,14 @@ plugins:
         startOnLoad: true
         flowchart:
           htmlLabels: true
-        theme: base
+        theme: default  # or "base" if you want some default styling
+        themeVariables:
+          primaryColor: "#ffffff"
+          primaryTextColor: "#000000"
+          tertiaryColor: "#f0f0f0"
         layout: elk
   - git-revision-date-localized:
       type: date
-
-extra:
-  mermaid_config: |
-    {
-      "theme": "base",  // or "default"
-      "themeVariables": {
-        "primaryColor": "#ffffff",
-        "primaryTextColor": "#000000",
-        "tertiaryColor": "#f0f0f0"
-      }
-    }
 
 docs_dir: docs
 

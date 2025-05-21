@@ -1,4 +1,4 @@
-## theme base
+## theme default
 
 ```mermaid
 ---
