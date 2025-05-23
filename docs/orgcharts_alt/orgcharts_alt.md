@@ -1,5 +1,24 @@
 # Tests for hover boxes
 
+
+---
+config:
+  layout: elk
+---
+flowchart TB
+    n16["<b>Nathan Fox</b>, Assoc Dir<br><b>Santiago Morales</b>, Co-I"] --> n17["<b>Processing Oversight</b>"] & n19["<b>QC &amp; Site Oversight</b>"] & n21["Site Oversight"]
+    n17 --> n18["<b>Whitney Kasenetz</b>
+    Preprocessing Liason w/ Lasso &amp; LORIS<br>
+    <b>Dylan Gilbreath</b>
+    Pipeline Dev"]
+    n19 --> n20["<b>Trisha Maheswari</b><br>QC, Site Supervision, &amp; Dev<br>
+    <b>Elise Harris</b>
+    QC, Training, &amp; Site Oversight"]
+
+
+
+
+
 ## Test1
 
 %%{ init: {

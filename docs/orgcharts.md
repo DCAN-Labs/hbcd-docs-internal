@@ -220,20 +220,23 @@ config:
   layout: elk
 ---
 flowchart TB
-    n17(["<b>EEG Pre-processing &amp; Derivatives</b>"]) --- n19["<b>Marco McSweeney, PhD</b>
+    n16["<b>Nathan Fox</b>, Assoc Dir<br><b>Santiago Morales</b>, Co-I"] --- n17(["<b>Processing/Pipeline</b>"]) & n19(["<b>QC</b>"]) 
+    n16 --- n21(["<b>Site Supervision</b>"]) & n22(["<b>Training</b>"])
+    n17 --- n18["<b>Whitney Kasenetz</b><br>Preprocessing Liason w/ Lasso &amp; LORIS<br>
     <b>Dylan Gilbreath</b>
-    <b>Trisha Maheshwari</b>
-    <b>Kira Ashton</b>"]
-    n18(["<b>CBRAIN Processing</b>"]) --- n20["<b>Whitney Kasenetz</b>"]
-    n21(["<b>QC, Training, &amp; Troubleshooting</b>"]) --- n22["<b>Savannah McNair<br>Jessica Norris</b>"]
-    n16["<b>Nathan Fox</b>, Assoc Dir<br><b>Santiago Morales</b>, Co-I"] --- n21 & n17 & n18
-    style n17 fill:#E1BEE7,stroke:#AA00FF
-    style n19 fill:#BBDEFB,stroke:#2962FF
-    style n18 fill:#E1BEE7,stroke:#AA00FF
-    style n20 fill:#BBDEFB,stroke:#2962FF
-    style n21 fill:#E1BEE7,stroke:#AA00FF
-    style n22 fill:#BBDEFB,stroke:#2962FF
+    Pipeline Dev &amp; QC"]
+    n19 --- n27["<b>Kira Ashton</b>"]
+    n21 --- n20["<b>Trisha Maheswari</b><br>Site Supervision &amp; QC"]
+    n22 --- n24["<b>Elise Harris<br></b>Training, QC, &amp; Site Oversight"]
     style n16 fill:#BBDEFB,stroke:#2962FF
+    style n17 fill:#E1BEE7,stroke:#AA00FF
+    style n19 fill:#E1BEE7,stroke:#AA00FF
+    style n21 fill:#E1BEE7,stroke:#AA00FF
+    style n22 fill:#E1BEE7,stroke:#AA00FF
+    style n18 fill:#BBDEFB,stroke:#2962FF
+    style n27 fill:#BBDEFB,stroke:#2962FF
+    style n20 fill:#BBDEFB,stroke:#2962FF
+    style n24 fill:#BBDEFB,stroke:#2962FF
 ```
 </div>
 
