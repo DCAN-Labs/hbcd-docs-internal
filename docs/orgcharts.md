@@ -213,6 +213,7 @@ flowchart TB
 </p>
 
 ## University of Maryland
+<div style="width: 90%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -238,11 +239,11 @@ flowchart TB
     style n31 fill:#BBDEFB,stroke:#2962FF
     style n27 fill:#BBDEFB,stroke:#2962FF
 ```
+</div>
 
 
 ### UMD Alt
-
-<div style="width: 80%; margin: 0 auto;">
+<div style="width: 90%; margin: 0 auto;">
 ```mermaid
 ---
 config:
