@@ -254,7 +254,7 @@ flowchart TB
     Associate Dir, EEG Data Core"] --- n17(["<b>Preprocessing</b>"]) & n19(["<b>Coding &amp; QC</b>"]) & n21(["<b>Pipeline Development</b>"]) & n29(["<b>Site Supervision</b>"])
     n17 --- n18["<b>Whitney Kasenetz</b><br>Preprocessing Liason w/ Lasso &amp; LORIS"]
     n19 --- n27["<b>Santiago Morales</b><br>Co-I &amp; Coding Lead<br>
-    <b>Kira Ashton</b><br>Coding &amp; QC"] & n28["<b>Dylan Gilbreath</b><br>Pipeline Dev &amp; QC"] & n30["<b>Trisha Maheswari</b><br>Site Supervision &amp; QC<br>
+    <b>Kira Ashton</b><br>Coding &amp; QC"] & n28["<b>Dylan Gilbreath</b><br>Pipeline Dev, Coding, &amp; QC"] & n30["<b>Trisha Maheswari</b><br>Site Supervision, Coding, &amp; QC<br>
     <b>Elise Harris<br></b>Site Oversight, QC, &amp; Training"]
     n21 --- n28
     n29 --- n30
