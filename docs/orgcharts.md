@@ -62,7 +62,7 @@ flowchart TB
     click lasso "#lasso"
     click umn "#university-of-minnesota"
     click n7 "#loris"
-    click n8 "#university-of-maryland-eeg-core"
+    click n8 "#university-of-maryland"
     click n10 "#washu"
     click n25 "#midb-informatics-hub-msi"
     click n27 "#health-sciences-technology"
@@ -212,7 +212,7 @@ flowchart TB
 </div>
 </p>
 
-## University of Maryland EEG Core
+## University of Maryland
 <div style="width: 80%; margin: 0 auto;">
 ```mermaid
 ---
@@ -220,23 +220,23 @@ config:
   layout: elk
 ---
 flowchart TB
-    n16["<b>Nathan Fox</b>, Assoc Dir<br><b>Santiago Morales</b>, Co-I"] --- n17(["<b>Processing/Pipeline</b>"]) & n19(["<b>QC</b>"]) 
-    n16 --- n21(["<b>Site Supervision</b>"]) & n22(["<b>Training</b>"])
-    n17 --- n18["<b>Whitney Kasenetz</b><br>Preprocessing Liason w/ Lasso &amp; LORIS<br>
-    <b>Dylan Gilbreath</b>
-    Pipeline Dev &amp; QC"]
-    n19 --- n27["<b>Kira Ashton</b>"]
-    n21 --- n20["<b>Trisha Maheswari</b><br>Site Supervision &amp; QC"]
-    n22 --- n24["<b>Elise Harris<br></b>Training, QC, &amp; Site Oversight"]
+    n16["<b>Nathan Fox</b>
+    Associate Dir, EEG Data Core"] --- n17(["<b>Preprocessing</b>"]) & n19(["<b>Coding &amp; QC</b>"]) & n21(["<b>Pipeline Development</b>"]) & n29(["<b>Site Supervision</b>"])
+    n17 --- n18["<b>Whitney Kasenetz</b><br>Preprocessing Liason w/ Lasso &amp; LORIS"]
+    n19 --- n27["<b>Santiago Morales</b><br>Co-I &amp; Coding Lead<br>
+    <b>Kira Ashton</b><br>Coding &amp; QC"] & n28["<b>Dylan Gilbreath</b><br>Pipeline Dev &amp; QC"] & n30["<b>Trisha Maheswari</b><br>Site Supervision &amp; QC<br>
+    <b>Elise Harris<br></b>Site Oversight, QC, &amp; Training"]
+    n21 --- n28
+    n29 --- n30
     style n16 fill:#BBDEFB,stroke:#2962FF
     style n17 fill:#E1BEE7,stroke:#AA00FF
     style n19 fill:#E1BEE7,stroke:#AA00FF
     style n21 fill:#E1BEE7,stroke:#AA00FF
-    style n22 fill:#E1BEE7,stroke:#AA00FF
+    style n29 fill:#E1BEE7,stroke:#AA00FF
     style n18 fill:#BBDEFB,stroke:#2962FF
     style n27 fill:#BBDEFB,stroke:#2962FF
-    style n20 fill:#BBDEFB,stroke:#2962FF
-    style n24 fill:#BBDEFB,stroke:#2962FF
+    style n28 fill:#BBDEFB,stroke:#2962FF
+    style n30 fill:#BBDEFB,stroke:#2962FF
 ```
 </div>
 
