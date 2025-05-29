@@ -386,7 +386,7 @@ flowchart TB
 ### MIDB Analytics Hub
 The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) provides support for genomic data processing and analysis as part of the **HBCD Genomics Supplement**.
 
-<div style="width: 80%; margin: 0 auto;">
+<div style="width: 70%; margin: 0 auto;">
 ```mermaid
 ---
 config:
