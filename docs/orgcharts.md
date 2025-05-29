@@ -313,15 +313,19 @@ flowchart LR
     A1["<b>Damien Fair</b><br>HDCC Co-Director<br><br><b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] 
     A1 --- HST["<b>Health Sciences Technology (HST)</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
     A1 --- MIDB["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    A1 --- CDNI["<b>Center for Developmental NeuroImaging (CDNI)</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n6["<b>USDTL<br>Biospecimens<br>Genomics</b>"]
+    A1 --- CDNI["<b>Center for Developmental NeuroImaging (CDNI)</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
+    A1 --- n6["<b>USDTL<br>Biospecimens"]
+    A1 --- genomics["<b>MIDB Analytics Hub</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
     style A1 fill:#BBDEFB,stroke:#2962FF
     style HST fill:#E1BEE7,stroke:#AA00FF
     style MIDB fill:#E1BEE7,stroke:#AA00FF
     style CDNI fill:#E1BEE7,stroke:#AA00FF
+    style genomics fill:#E1BEE7,stroke:#AA00FF
     style n6 fill:#E1BEE7,stroke:#AA00FF
     click HST "#health-sciences-technology-hst"
     click MIDB "#midb-informatics-hub-msi"
     click CDNI "#center-for-developmental-neuroimaging"
+    click genomics "#midb-analytics-hub"
 ```
 </div>
 
@@ -377,6 +381,61 @@ flowchart TB
     style n5 fill:#E1BEE7,stroke:#AA00FF
     click n5 "#washu"
 ```
+</div>
+
+### MIDB Analytics Hub
+The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) provides support for genomic data processing and analysis as part of the **HBCD Genomics Supplement**.
+
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+    B["<b>Annette Xenopoulos-Oddsson, MSc</b><br>Project Manager"] --- n3(["<b>Genomics Processing &amp; Analysis</b>"])
+    n3 --- G["<b>Michael Anderson, PhD</b><br>Genomics Data Scientist<br><br><b>Christian Coffman</b><br>Data Scientist &amp; Analyst"]
+    E["<b>Saonli Basu, PhD</b><br>Co-I, HBCD Genomics Supplement Lead Faculty"] --- B
+    style B fill:#C8E6C9,stroke:#00C853
+    style n3 fill:#E1BEE7,stroke:#AA00FF
+    style G fill:#BBDEFB,stroke:#2962FF
+    style E fill:#BBDEFB,stroke:#2962FF
+```
+<div id="midb-msi" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="table-text">Roles & Responsibilities</span>
+  <span class="notification-arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <thead>
+      <tr>
+        <th style="width: 25%;">Name</th>
+        <th style="width: 30%;">Title</th>
+        <th style="width: 45%;">Role on HDCC</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Saonli Basu, PhD</td>
+        <td style="word-wrap: break-word; white-space: normal;">Co-I, HBCD Genomics Supplement Lead Faculty</td>
+        <td style="word-wrap: break-word; white-space: normal;">Oversight on the HBCD Genomics supplement, working with the Data Scientists, project management, and HBCD Leadership</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Annette Xenopoulos-Oddsson, MSc</td>
+        <td style="word-wrap: break-word; white-space: normal;">HBCD Genomics Supplement Project Manager</td>
+        <td style="word-wrap: break-word; white-space: normal;">Project manager for project task management, meetings, etc.</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Michael Anderson, PhD</td>
+        <td style="word-wrap: break-word; white-space: normal;">HBCD Genomics Data Scientist</td>
+        <td style="word-wrap: break-word; white-space: normal;">Developing the genomics pipelines, documentation, running the genomic data analysis</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Christian Coffman</td>
+        <td style="word-wrap: break-word; white-space: normal;">Data Scientist & Analyst</td>
+        <td style="word-wrap: break-word; white-space: normal;">Support for pipeline development, documentation, and genomic data analysis</td>
+    </tr>
+</tbody>
+</table>
 </div>
 
 ### MIDB Informatics Hub & MSI
@@ -481,7 +540,6 @@ flowchart TB
 </tbody>
 </table>
 </div>
-
 
 ## WashU
 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
