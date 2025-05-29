@@ -402,6 +402,7 @@ flowchart TB
     style E fill:#BBDEFB,stroke:#2962FF
 ```
 </div>
+<br>
 
 <div id="midb-msi" class="table-banner" onclick="toggleCollapse(this)">
   <span class="table-text">Roles & Responsibilities</span>
