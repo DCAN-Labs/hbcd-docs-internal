@@ -27,7 +27,10 @@ flowchart TB
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n11 --- n18["<b>William P. Fifer, PhD</b><br>Novel Tech &<br>Wearables Co-Chair"]
     reed --- n30["<b>Maren Macgregor-Hannah</b><br>Program Manager"]
-    n30 --- n25["<b>MIDB &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n27["<b>HST</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n28["<b>CDNI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n29["<b>USDTL<br>Biospecimens<br>Genomics</b>"]
+    n30 --- n25["<b>MIDB Informatics</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
+    n30 --- n27["<b>HST</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
+    n30 --- n28["<b>CDNI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
+    n30 --- n29["<b>MIDB Analytics</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
     n27 --- n31["<b>Karen Athy-Penrose</b><br>Project Manager"]
     n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
     n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
@@ -65,6 +68,7 @@ flowchart TB
     click n8 "#university-of-maryland"
     click n10 "#washu"
     click n25 "#midb-informatics-hub-msi"
+    click n29 "#midb-analytics-hub"
     click n27 "#health-sciences-technology"
     click n28 "#center-for-developmental-neuroimaging"
 ```
