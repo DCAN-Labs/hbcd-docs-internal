@@ -402,7 +402,7 @@ flowchart LR
 ```
 </div>
 
-<div style="width: 80%; margin: 0 auto;">
+<div style="width: 70%; margin: 0 auto;">
 ```mermaid
 ---
 config:
