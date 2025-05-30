@@ -451,13 +451,12 @@ config:
   layout: elk
 ---
 flowchart TB
-    L["<b>Maren Macgregor-Hannah</b><br>HDCC Program Manager"] --- N(["<b>Advanced System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) 
-    L --- n8(["<b>Security &amp Compliance</b>"])
+    L["<b>Maren Macgregor-Hannah</b><br>HDCC Program Manager"] --- N(["<b>Advanced System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) & n8(["<b>Security &amp; Compliance</b>"])
     N --- Q["<b>Jesse Erdmann</b><br>Senior SysOps<br><br><b>Kimberleigh Breen</b><br>Data Manager<br><br><b>Sriharshitha Anuganti<br>Alyssa Oksa</b><br>DevOps"]
     O --- n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead<br><br><b>Erik Lee</b><br>Pipeline Lead<br><br><b>Monalisa Biles</b><br>Analyst"]
     P --- n7["<b>Jeff Shi</b><br>Informatics Consultant<br><br><b>Borgne Raasch</b><br>Data Steward"]
     n8 --- n9["<b>Naomi Hospodarsky-Sutherland</b>"]
-    n10["<b>Thomas Pengo, PhD</b><br>Co-Director, Informatics Group"] --- L
+    n10["<b>Thomas Pengo, PhD</b><br>Co-Director, Informatics Group"]
     style L fill:#C8E6C9,stroke:#00C853
     style N fill:#E1BEE7,stroke:#AA00FF
     style O fill:#E1BEE7,stroke:#AA00FF
