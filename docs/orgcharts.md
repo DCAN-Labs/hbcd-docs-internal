@@ -411,7 +411,7 @@ config:
 flowchart LR
     B["<b>Annette Xenopoulos-Oddsson, MSc</b><br>Project Manager"] --- n3(["<b>Genomics</b>"])
     n3 --- G["<b>Michael Anderson, PhD</b><br>Genomics Data Scientist<br><br><b>Christian Coffman</b><br>Data Scientist &amp; Analyst"]
-    E["<b>Saonli Basu, PhD</b><br>Co-I, Genomics Lead"]
+    E["<b>Saonli Basu, PhD</b><br>Co-I, HBCD Genomics Lead"]
     style B fill:#C8E6C9,stroke:#00C853
     style n3 fill:#E1BEE7,stroke:#AA00FF
     style G fill:#BBDEFB,stroke:#2962FF
