@@ -313,7 +313,7 @@ config:
 flowchart TB
     A["<b>Damien Fair</b><br>HDCC Co-Director"] 
     A --- B["<b>Health Sciences Technology</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    A --- C["<b>Center for Developmental Neuroimaging</b>"]
+    A --- C["<b>Center for Developmental Neuroimaging</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
     A --- D["<b>MIDB Analytics Hub</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
     A --- E["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
     style A fill:#BBDEFB,stroke:#2962FF
