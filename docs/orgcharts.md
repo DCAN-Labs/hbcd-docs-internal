@@ -309,23 +309,19 @@ config:
 ---
 flowchart TB
     A["<b>Damien Fair</b><br>HDCC Co-Director"] 
-    A --- biospec["<b>USDTL<br>Biospecimens</b>"]
-    A --- HST["<b>Health Sciences Technology</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    A --- n7["<b>Masonic Institute for the Developing Brain</b>"]
-    n7 --- CDNI["<b>Center for Developmental Neuroimaging</b>"]
-    n7 --- genomics["<b>MIDB Analytics Hub</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    n7 --- informatics["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
+    A --- B["<b>Health Sciences Technology</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
+    A --- C["<b>Center for Developmental Neuroimaging</b>"]
+    A --- D["<b>MIDB Analytics Hub</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
+    A --- E["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
     style A fill:#BBDEFB,stroke:#2962FF
-    style HST fill:#E1BEE7,stroke:#AA00FF
-    style CDNI fill:#E1BEE7,stroke:#AA00FF
-    style genomics fill:#E1BEE7,stroke:#AA00FF
-    style informatics fill:#E1BEE7,stroke:#AA00FF
-    style n7 fill:#E1BEE7,stroke:#AA00FF
-    style biospec fill:#E1BEE7,stroke:#AA00FF
-    click HST "#health-sciences-technology-hst"
-    click CDNI "#center-for-developmental-neuroimaging"
-    click genomics "#midb-analytics-hub"
-    click informatics "#midb-informatics-hub-msi"
+    style B fill:#E1BEE7,stroke:#AA00FF
+    style C fill:#E1BEE7,stroke:#AA00FF
+    style D fill:#E1BEE7,stroke:#AA00FF
+    style E fill:#E1BEE7,stroke:#AA00FF
+    click B "#health-sciences-technology-hst"
+    click C "#center-for-developmental-neuroimaging"
+    click D "#midb-analytics-hub"
+    click E "#midb-informatics-hub-msi"
 ```
 </div>
 
@@ -383,9 +379,7 @@ flowchart TB
 </div>
 
 ### MIDB Analytics Hub
-The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) provides support for genomic data processing and analysis as part of the **HBCD Genomics Supplement**. This group coordinates with the US Drug Testing Laboratories ([USDTL](https://www.usdtl.com/)) and Biospecimens Workgroup, which handle toxicology.
-
-**TO DO: add USDTL & Biospecimens somewhere in org chart**
+The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) works in coordination with the Biospecimens Workgroup to provide support for genomic data processing and analysis as part of the **HBCD Genomics Supplement**. 
 
 <div style="width: 70%; margin: 0 auto;">
 ```mermaid
