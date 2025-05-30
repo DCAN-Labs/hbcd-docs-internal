@@ -300,8 +300,6 @@ flowchart TB
 </div>
 
 ## University of Minnesota
-🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
-There are several groups that fall under the oversight of UMN. The US Drug Testing Laboratories ([USDTL](https://www.usdtl.com/)) handles toxicology. The remaining groups are described in greater detail below.  
 
 <div style="width: 80%; margin: 0 auto;">
 ```mermaid
@@ -413,7 +411,7 @@ flowchart TB
 </div>
 
 ### MIDB Analytics Hub
-The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) provides support for genomic data processing and analysis as part of the **HBCD Genomics Supplement**.
+The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) provides support for genomic data processing and analysis as part of the **HBCD Genomics Supplement**. This group coordinates with the US Drug Testing Laboratories ([USDTL](https://www.usdtl.com/)) and Biospecimens Workgroup, which handle toxicology.
 
 <div style="width: 70%; margin: 0 auto;">
 ```mermaid
