@@ -321,7 +321,7 @@ flowchart TB
     style C fill:#E1BEE7,stroke:#AA00FF
     style D fill:#E1BEE7,stroke:#AA00FF
     style E fill:#E1BEE7,stroke:#AA00FF
-    click B "#health-sciences-technology-hst"
+    click B "#health-sciences-technology"
     click C "#center-for-developmental-neuroimaging"
     click D "#midb-analytics-hub"
     click E "#midb-informatics-hub-msi"
