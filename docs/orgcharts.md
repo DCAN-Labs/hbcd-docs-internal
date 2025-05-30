@@ -317,7 +317,6 @@ flowchart TB
     Biospecimens</b>
     <i class="fa-solid fa-link" style="color: blue;"></i>"]
     n7 --- informatics["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    genomics@{ shape: rect}
     style A fill:#BBDEFB,stroke:#2962FF
     style HST fill:#E1BEE7,stroke:#AA00FF
     style CDNI fill:#E1BEE7,stroke:#AA00FF
