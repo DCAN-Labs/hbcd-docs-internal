@@ -412,6 +412,8 @@ flowchart TB
 ### MIDB Analytics Hub
 The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) provides support for genomic data processing and analysis as part of the **HBCD Genomics Supplement**. This group coordinates with the US Drug Testing Laboratories ([USDTL](https://www.usdtl.com/)) and Biospecimens Workgroup, which handle toxicology.
 
+**TO DO: add USDTL & Biospecimens somewhere in org chart**
+
 <div style="width: 70%; margin: 0 auto;">
 ```mermaid
 ---
