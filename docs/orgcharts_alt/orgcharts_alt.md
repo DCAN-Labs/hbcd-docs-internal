@@ -1,5 +1,6 @@
 # HST alt
 
+<div style="width: 90%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -23,6 +24,7 @@ flowchart TB
     style n5 fill:#E1BEE7,stroke:#AA00FF
     click n5 "#washu"
 ```
+</div>
 
 # MIDB analytics alt
 
