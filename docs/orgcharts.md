@@ -303,10 +303,6 @@ flowchart TB
 
 <div style="width: 90%; margin: 0 auto;">
 ```mermaid
----
-config:
-  layout: elk
----
 flowchart TB
     A["<b>Damien Fair</b><br>HDCC Co-Director"] 
     A --- HST["<b>Health Sciences Technology</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
@@ -327,32 +323,6 @@ flowchart TB
     click CDNI "#center-for-developmental-neuroimaging"
     click genomics "#midb-analytics-hub"
     click informatics "#midb-informatics-hub-msi"
-```
-</div>
-
-<div style="width: 80%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart LR
-    A1["<b>Damien Fair</b><br>HDCC Co-Director<br><br><b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] 
-    A1 --- HST["<b>Health Sciences Technology (HST)</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    A1 --- MIDB["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    A1 --- CDNI["<b>Center for Developmental NeuroImaging (CDNI)</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    A1 --- n6["<b>USDTL<br>Biospecimens"]
-    A1 --- genomics["<b>MIDB Analytics Hub</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    style A1 fill:#BBDEFB,stroke:#2962FF
-    style HST fill:#E1BEE7,stroke:#AA00FF
-    style MIDB fill:#E1BEE7,stroke:#AA00FF
-    style CDNI fill:#E1BEE7,stroke:#AA00FF
-    style genomics fill:#E1BEE7,stroke:#AA00FF
-    style n6 fill:#E1BEE7,stroke:#AA00FF
-    click HST "#health-sciences-technology-hst"
-    click MIDB "#midb-informatics-hub-msi"
-    click CDNI "#center-for-developmental-neuroimaging"
-    click genomics "#midb-analytics-hub"
 ```
 </div>
 
