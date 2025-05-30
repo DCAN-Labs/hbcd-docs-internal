@@ -543,9 +543,8 @@ flowchart TB
 </table>
 </div>
 
-## WashU
-🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
-The Washington University in St. Louis (WashU) group has oversight of: *Electronic Medical Records (EMR)*, *Ripple*, *Ambra*, *AirTable*, and *HBCD Study Administrative Core (HCAC) coordination*.
+## WashU    
+Washington University in St. Louis (WashU) has oversight of: *Electronic Medical Records (EMR)*, *[Ambra](#ambra)*, *[AirTable](#airtable)*, *[Ripple](#ripple)*,  and *HBCD Study Administrative Core (HCAC) coordination*.
 
 <div style="width: 80%; margin: 0 auto;">
 ```mermaid
@@ -575,13 +574,19 @@ flowchart TB
 
 ### Subcontractor Details
 
-#### AirTable 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
+#### AirTable 
+🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
+
 AirTable is a cloud-based collaborative platform and database service that combines the features of a database and a spreadsheet. It allows users to organize, track, and collaborate on structured data using customizable tables, forms, views, and automation. In the HBCD Study, Airtable is widely used as a centralized project management and tracking tool, including study coordination and oversight, neuroimaging workflow tracking, cross-team communication, and quality control and reporting.
 
-#### Ambra 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
+#### Ambra 
+🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
+
 Ambra is a cloud-based gateway that allows the direct transmission of medical images between participating institutions. Ambra supports secure data transfer, DICOM standard compliance, de-identification tools, and access control, making it suitable for large-scale, multi-site research studies. For the HBCD Study, Ambra is used as the centralized platform for uploading, storing, and sharing neuroimaging data from participating research sites.
  
-#### Ripple 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
+#### Ripple
+ 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
+ 
 [Ripple Science](https://www.ripplescience.com/) is a digital clinical trial software deployed at all HBCD Study sites for participant recruitment and retention. See details of Ripple's role in the study [here](https://www.ripplescience.com/ripple-science-supports-nih-funded-healthy-brain-and-child-development-study/).
 
 
