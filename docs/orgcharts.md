@@ -135,7 +135,7 @@ flowchart TB
     F --- I["<b>Dave McFarlane</b><br>Lead Developer<br><br><b>Sruthy Matthew</b><br>Sr Backend Developer<br><br><b>Regis Ongaro-Carcy<br>George Murad<br>Moshood Abiola</b><br>Developers"]
     G --- L["<b>Cecile Madjar</b><br>Lead Developer"]
     H --- M["<b>Laetitia Faeselier</b><br>Lead Developer"]
-    n13["<b>Alan Evans</b>, PI<br><b>Samir Das</b>, MCIN Assoc Dir"] --- nl
+    n13["<b>Alan Evans</b>, PI<br><b>Samir Das</b>, MCIN Assoc Dir"]
     style nl stroke:#00C853,fill:#C8E6C9
     style C stroke:#AA00FF,fill:#E1BEE7
     style G stroke:#AA00FF,fill:#E1BEE7
@@ -560,6 +560,33 @@ flowchart TB
     n5(["<a href="#airtable"><b>AirTable</b></a> & <a href="#ripple"><b>Ripple</b></a>"]) --- n9["<b>Liliana Mueller</b><br>Ripple Admin<br><br><b>Kevine Ngalula</b><br>Ripple<br><br><b>Lynn Menchaca</b><br>AirTable Admin"]
     ambra --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br><br><b>Dimitrios ('Jim') Alexopoulos</b><br>Data Manager"]
     n14["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"] --- A & n13
+    style A fill:#C8E6C9,stroke:#00C853
+    style C fill:#E1BEE7,stroke:#AA00FF
+    style n13 fill:#C8E6C9,stroke:#00C853
+    style n5 fill:#E1BEE7,stroke:#AA00FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
+    style n1 fill:#BBDEFB,stroke:#2962FF
+    style n14 fill:#BBDEFB,stroke:#2962FF
+    style ambra fill:#E1BEE7,stroke:#AA00FF
+    linkStyle 3 stroke:#000000,fill:none
+    linkStyle 4 stroke:#000000,fill:none
+    linkStyle 5 stroke:#000000,fill:none
+```
+</div>
+
+<div style="width: 60%; margin: 0 auto;">
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+    A["<b>Sauren Ravencroft</b><br>Project Manager"] --- ambra(["<a href="#ambra"><b>Ambra</b></a>"])
+    A --- n5
+    n13["<b>Nicole Venteris</b><br>EMR Project Manager"] --- C["<b>EMR Data Core</b><br>"]
+    n5(["<a href="#airtable"><b>AirTable</b></a> & <a href="#ripple"><b>Ripple</b></a>"]) --- n9["<b>Liliana Mueller</b><br>Ripple Admin<br><br><b>Kevine Ngalula</b><br>Ripple<br><br><b>Lynn Menchaca</b><br>AirTable Admin"]
+    ambra --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br><br><b>Dimitrios ('Jim') Alexopoulos</b><br>Data Manager"]
+    n14["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"]
     style A fill:#C8E6C9,stroke:#00C853
     style C fill:#E1BEE7,stroke:#AA00FF
     style n13 fill:#C8E6C9,stroke:#00C853
