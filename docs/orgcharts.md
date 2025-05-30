@@ -305,7 +305,6 @@ flowchart TB
 
 ## University of Minnesota
 
-<div style="width: 90%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -327,7 +326,6 @@ flowchart TB
     click D "#midb-analytics-hub"
     click E "#midb-informatics-hub-msi"
 ```
-</div>
 
 ### Center for Developmental NeuroImaging
 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
