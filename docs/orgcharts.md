@@ -309,6 +309,36 @@ There are several groups that fall under the oversight of UMN. The US Drug Testi
 config:
   layout: elk
 ---
+flowchart TB
+    A["<b>Damien Fair</b><br>HDCC Co-Director"] 
+    A --- HST["<b>Health Sciences Technology</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
+    A --- n7["<b>Masonic Institute for the Developing Brain</b>"]
+    n7 --- CDNI["<b>Center for Developmental Neuroimaging</b>"]
+    n7 --- genomics["<b>MIDB Analytics Hub</b>
+    <b>USDTL
+    Biospecimens</b>
+    <i class="fa-solid fa-link" style="color: blue;"></i>"]
+    n7 --- informatics["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
+    genomics@{ shape: rect}
+    style A fill:#BBDEFB,stroke:#2962FF
+    style HST fill:#E1BEE7,stroke:#AA00FF
+    style CDNI fill:#E1BEE7,stroke:#AA00FF
+    style genomics fill:#E1BEE7,stroke:#AA00FF
+    style informatics fill:#E1BEE7,stroke:#AA00FF
+    style n7 fill:#E1BEE7,stroke:#AA00FF
+    click HST "#health-sciences-technology-hst"
+    click CDNI "#center-for-developmental-neuroimaging"
+    click genomics "#midb-analytics-hub"
+    click informatics "#midb-informatics-hub-msi"
+```
+</div>
+
+<div style="width: 80%; margin: 0 auto;">
+```mermaid
+---
+config:
+  layout: elk
+---
 flowchart LR
     A1["<b>Damien Fair</b><br>HDCC Co-Director<br><br><b>Reed McEwan</b><br>HDCC Architect &amp; Data Manager"] 
     A1 --- HST["<b>Health Sciences Technology (HST)</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
