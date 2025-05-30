@@ -1,31 +1,3 @@
-# HST alt
-
-<div style="width: 90%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    B["<b>Karen Athy-Penrose</b><br>Project Manager"] --- n2(["<b>Development Operations</b>"]) & n3(["<b>MRI Quality Control Dashboard</b>"]) & n4(["<b>Electronic Health Records</b>"])
-    n2 --- F["<b>Dan Duhon<br>Derek Thompson<br>Saranya Subramanian<br>Brett Weaver</b>"]
-    n3 --- G["<b>Haley Hutala</b><br>Tableau Engineer<br><br><b>Sanjana Madakshire</b><br>Quality Control"]
-    H["<b>Steve Johnson</b><br>Dir Informatics Innovation<br><br><b>Tim Meyer</b><br>Informatics Engineer"] --- n5["<b>WashU EMR Data Core<br></b><i>Click to view org chart</i>"]
-    n4 --- H
-    E["<b>Reed McEwan, MS</b><br>HDCC Architect &amp; Data Manager"]
-    style B fill:#C8E6C9,stroke:#00C853
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n4 fill:#E1BEE7,stroke:#AA00FF
-    style F fill:#BBDEFB,stroke:#2962FF
-    style G fill:#BBDEFB,stroke:#2962FF
-    style E fill:#BBDEFB,stroke:#2962FF
-    style H fill:#BBDEFB,stroke:#2962FF
-    style n5 fill:#E1BEE7,stroke:#AA00FF
-    click n5 "#washu"
-```
-</div>
-
 # MIDB analytics alt
 
 <div style="width: 60%; margin: 0 auto;">
