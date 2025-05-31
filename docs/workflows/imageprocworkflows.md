@@ -2,25 +2,7 @@
 
 <object type="image/svg+xml" data="../procWF.drawio.svg" width="100%" height="600px"></object>
 
-
-
-### with tooltip
-
-<object type="image/svg+xml" data="../procWF_tooltip.drawio.svg" width="100%" height="600px"></object>
-
-### link test
-
-<object type="image/svg+xml" data="../test3.drawio.svg" width="100%" height="600px"></object>
-
-
-
-### Local test
-
-
-![](localprocWF.drawio.svg)
-
-<object type="image/svg+xml" data="../localprocWF.drawio.svg" width="100%" height="600px"></object>
-
+Go to html diagram [HERE](test.drawio.html)
 
 ### S3 Bucket Definitions
 **S3DEID**: `s3://midb-hbcd-main-deid` - S3 Bucket with de-identified data 
