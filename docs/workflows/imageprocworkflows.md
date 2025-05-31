@@ -10,13 +10,10 @@
 
 ### link test
 
-<object type="image/svg+xml" data="../linktest.drawio.svg" width="100%" height="600px"></object>
+<object type="image/svg+xml" data="../test3.drawio.svg" width="100%" height="600px"></object>
 
 
 ### test
-<object type="image/svg+xml" data="../test.drawio.svg" width="100%" height="600px"></object>
-
-
 <object type="image/svg+xml" data="../test2.drawio.svg" width="100%" height="600px"></object>
 
 
