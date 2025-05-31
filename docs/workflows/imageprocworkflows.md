@@ -13,10 +13,13 @@
 <object type="image/svg+xml" data="../test3.drawio.svg" width="100%" height="600px"></object>
 
 
-### test
-<object type="image/svg+xml" data="../test2.drawio.svg" width="100%" height="600px"></object>
+
+### Local test
 
 
+![](localprocWF.drawio.svg)
+
+<object type="image/svg+xml" data="../localprocWF.drawio.svg" width="100%" height="600px"></object>
 
 
 ### S3 Bucket Definitions
