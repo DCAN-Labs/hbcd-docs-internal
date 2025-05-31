@@ -2,10 +2,14 @@
 
 <object type="image/svg+xml" data="../procWF.drawio.svg" width="100%" height="600px"></object>
 
-Go to html diagram [HERE](test.drawio.html)
+<object type="image/svg+xml" data="../test2.svg" width="100%" height="600px"></object>
 
 ### S3 Bucket Definitions
 **S3DEID**: `s3://midb-hbcd-main-deid` - S3 Bucket with de-identified data 
+
+
+## TO DO
+Add in MRS QC: performed by UCSD (does UCSD source from UMN post-BIDS conversion?) is it sent to loris separate from QC?
 
 ### De-Identification Details
 
