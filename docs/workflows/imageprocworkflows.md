@@ -2,6 +2,61 @@
 
 <object type="image/svg+xml" data="../WF-HBCD.svg" width="100%"></object>
 
+<p>
+<div id="s3-paths" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="table-text">S3 Bucket Paths Key</span>
+  <span class="notification-arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <thead>
+      <tr>
+        <th style="width: 25%;">S3 Location Short Name Used in Diagram</th>
+        <th style="width: 75%;">S3 URL</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>De-ID Main PR &gt; BrainSwipes</td>
+        <td><code>s3://midb-hbcd-main-deid/brainswipes</code></td>
+        </tr>
+        <tr>
+        <td>De-ID Main PR &gt; Derivatives</td>
+        <td><code>s3://midb-hbcd-main-deid/derivatives/</code></td>
+        </tr>
+        <tr>
+        <td>De-ID Main PR &gt; Raw BIDS</td>
+        <td><code>s3://midb-hbcd-main-deid/assembly_bids/</code></td>
+        </tr>
+        <tr>
+        <td>Lasso Staging</td>
+        <td><code>s3://midb-hbcd-lasso-staging/</code></td>
+        </tr>
+        <tr>
+        <td>Lasso Release</td>
+        <td><code>s3://midb-hbcd-lasso-release/</code></td>
+        </tr>
+        <tr>
+        <td>Main PR &gt; Derivatives</td>
+        <td><code>s3://midb-hbcd-main-pr/derivatives/</code></td>
+        </tr>
+        <tr>
+        <td>Main PR &gt; De-ID Lists</td>
+        <td><code>s3://midb-hbcd-main-pr/deidentification-lists/</code></td>
+        </tr>
+        <tr>
+        <td>Main PR &gt; Raw BIDS</td>
+        <td><code>s3://midb-hbcd-main-pr/assembly_bids/</code></td>
+        </tr>
+        <tr>
+        <td>Main PR Dicoms</td>
+        <td><code>s3://midb-hbcd-ucsd-main-pr-dicoms/</code></td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+</p>
+
 ## TO DO
 - Add in MRS QC: performed by UCSD (does UCSD source from UMN post-BIDS conversion?) is it sent to loris separate from QC?
 - Add: links to descriptions of language, what is automated and what is not, and who is the responsible party
