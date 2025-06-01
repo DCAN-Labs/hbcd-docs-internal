@@ -1,6 +1,6 @@
 # Image Processing Workflows
 
-<object type="image/svg+xml" data="../WF-HBCD-Proc.svg" width="100%"></object>
+<object type="image/svg+xml" data="../WF-HBCD.svg" width="100%"></object>
 
 ## TO DO
 - Add in MRS QC: performed by UCSD (does UCSD source from UMN post-BIDS conversion?) is it sent to loris separate from QC?
