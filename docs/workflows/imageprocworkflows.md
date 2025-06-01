@@ -1,6 +1,6 @@
 # Image Processing Workflows
 
-<object type="image/svg+xml" data="../WF-HBCD.svg" width="100%"></object>
+<object type="image/svg+xml" data="../WF.svg" width="100%"></object>
 
 <p>
 <div id="s3-paths" class="table-banner" onclick="toggleCollapse(this)">
