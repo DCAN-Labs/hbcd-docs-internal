@@ -1,9 +1,9 @@
 # Image Processing Workflows
 
-<object type="image/svg+xml" data="../WF.drawio.svg" width="100%"></object>
+<object type="image/svg+xml" data="../WF.svg" width="100%"></object>
 
 ## TO DO
-Add in MRS QC: performed by UCSD (does UCSD source from UMN post-BIDS conversion?) is it sent to loris separate from QC?
+- Add in MRS QC: performed by UCSD (does UCSD source from UMN post-BIDS conversion?) is it sent to loris separate from QC?
 
 ## De-Identification
 De-identification is run daily to update `s3://midb-hbcd-main-deid/assembly_bids` from `s3://midb-hbcd-main-pr/assembly_bids`. In the process of de-identification, any DCCIDs/PSCIDs/Site IDs are removed or replaced with Release Candidate IDs and/or Anonymized Site IDs, where applicable. In addition to de-identifying new sessions, existing sessions are also updated.
