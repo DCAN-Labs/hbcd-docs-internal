@@ -21,8 +21,8 @@ Duplicating the derivatives enables LORIS to (1) maintain QC dashboards for HBCD
 
 Prior to re-identification, `s3://midb-hbcd-main-pr/derivatives` is first queried to find and delete any data that either does not have associated files in `s3://midb-hbcd-main-deid/derivatives`. When there is a newer copy of derivative data available from the source bucket, these are deleted and repopulated. Finally, new derivative data that has never existed in the LORIS bucket is copied over.
 
-### LORIS Ingestion Post- Re-Identification
-LORIS updates their databased using `s3://midb-hbcd-main-pr/derivatives` by:
+### LORIS Ingestion of Re-Identified Derivatives
+LORIS updates their database from `s3://midb-hbcd-main-pr/derivatives` by:
 
 1. Removing any database entries related to derivative outputs that no longer exist
 2. Looking for cases where there are newer derivative outputs than what exists in LORIS records and replacing the old records with the new data
