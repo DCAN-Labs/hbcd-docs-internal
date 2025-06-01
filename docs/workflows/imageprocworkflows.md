@@ -28,5 +28,14 @@ LORIS updates their database from `s3://midb-hbcd-main-pr/derivatives` by:
 2. Looking for cases where there are newer derivative outputs than what exists in LORIS records and replacing the old records with the new data
 3. Adding in records for any new subjects/sessions
 
-## Copying Data to Release Staging Bucket
-This involves (1) finding release ready subject/sessions, (2) making edits to the assembly_bids structure such as (a) removing low-QC images/files that were not used for attempted processing, (b) reconstructing the scans.tsv file to only have rows for files that are included in the release, (c) reconstructing the sessions.tsv file to only include sessions from the release, (3) squashing the derivatives folders across imaging sessions so that there is one common derivatives folder for all imaging sessions, (4) placing the resulting assembly_bids data at s`3://midb-hbcd-lasso-staging/<release_identifier>/hbcd/rawdata/`, (5) placing the resulting derivatives data at `s3://midb-hbcd-lasso-staging/<release_identifier>/hbcd/derivatives`
+## Copying Release Data to Staging Bucket
+The details of this process are as follows:
+
+1. Find release-ready subject/sessions
+2. Edit assembly_bids structure like so:
+    - Remove low-QC images/files that were not used for attempted processing
+    - Reconstruct `scans.tsv` files to only include entries for files included in the release
+    - Reconstruct `sessions.tsv` files to only include sessions from the release
+3. Squash the derivatives folders across imaging sessions so that there is one common derivatives folder for all imaging sessions
+4. Place the resulting assembly_bids data in `s3://midb-hbcd-lasso-staging/<release_identifier>/hbcd/rawdata/`
+5. Place the resulting derivatives data in `s3://midb-hbcd-lasso-staging/<release_identifier>/hbcd/derivatives`
