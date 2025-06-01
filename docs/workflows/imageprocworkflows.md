@@ -4,6 +4,9 @@
 
 ## TO DO
 - Add in MRS QC: performed by UCSD (does UCSD source from UMN post-BIDS conversion?) is it sent to loris separate from QC?
+- Add: links to descriptions of language, what is automated and what is not, and who is the responsible party
+- Add missing s3 bucket names and server names
+- Clarify final de-ID steps
 
 ## De-Identification
 De-identification is run daily to update `s3://midb-hbcd-main-deid/assembly_bids` from `s3://midb-hbcd-main-pr/assembly_bids`. In the process of de-identification, any DCCIDs/PSCIDs/Site IDs are removed or replaced with Release Candidate IDs and/or Anonymized Site IDs, where applicable. In addition to de-identifying new sessions, existing sessions are also updated.
