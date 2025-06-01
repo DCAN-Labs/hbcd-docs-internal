@@ -13,11 +13,11 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 
 ## Re-Identification
 
-Following CBRAIN processing, processing records are queried for new derivative outputs ready to be re-identified. Re-identificated replaces instances of release candidate ID's in processing outputs with DCCIDs. The `s3://midb-hbcd-main-deid/derivatives` folder is copied to `s3://midb-hbcd-main-pr/derivatives` and re-identified in the process of duplication. 
+Following CBRAIN processing, processing records are queried for new derivative outputs ready to be re-identified. Re-identification involves replacing all release candidate IDs with DCCIDs in processing outputs and occurs in the process of copying the data from the source (`s3://midb-hbcd-main-deid/derivatives/`) to destination (`s3://midb-hbcd-main-pr/derivatives`) S3 paths.
 
-The purpose of this new copy of the data is for LORIS to be able to (1) maintain QC dashboards for HBCD users based on processing outputs (mostly important for EEG) and (2) prepare tabulated summary outputs that will eventually get sent to LASSO.
+Duplicating the derivatives enables LORIS to (1) maintain QC dashboards for HBCD users based on processing outputs (primarily important for EEG) and (2) prepare tabulated summary outputs for Lasso ingestion.
 
-Prior to performing re-identification, `s3://midb-hbcd-main-pr/derivatives` is first queried to find and delete any data that does not have associated files in `s3://midb-hbcd-main-deid/derivatives`. When there is a newer copy of derivative data available, delete and repopulate any data in `s3://midb-hbcd-main-pr/derivatives`. Finally, new derivative data that has never existed in the LORIS bucket is copied over.
+Prior to re-identification, `s3://midb-hbcd-main-pr/derivatives` is first queried to find and delete any data that either does not have associated files in `s3://midb-hbcd-main-deid/derivatives`. When there is a newer copy of derivative data available from the source bucket, these are deleted and repopulated. Finally, new derivative data that has never existed in the LORIS bucket is copied over.
 
 ### LORIS Ingestion Post- Re-Identification
 LORIS updates their databased using `s3://midb-hbcd-main-pr/derivatives` by:
