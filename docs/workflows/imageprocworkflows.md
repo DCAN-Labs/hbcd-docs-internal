@@ -3,7 +3,12 @@
 
 Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [Org Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. Please see the [S3 Bucket Paths Key](#s3-paths) below for a key to the S3 bucket paths referenced in the workflow diagram as well as a [Definition of Terms](#def-terms) for terms used in the diagram or on this page.
 
+### Option 1
 <object type="image/svg+xml" data="../WF.drawio.svg" width="100%"></object>
+
+### Option 2 BrainSwipes Simplified & connected to Re-ID WF
+<object type="image/svg+xml" data="../Luci2.svg" width="100%"></object>
+
 
 <p>
 <div id="s3-paths" class="table-banner" onclick="toggleCollapse(this)">
@@ -82,7 +87,7 @@ Each subsection of the workflow diagram includes the name of the responsible org
     <tbody>
         <tr>
         <td>DCCID/PSCID</td>
-        <td style="word-wrap: break-word; white-space: normal;">Original BIDS participant IDs, prior to de-identification (e.g. <code>sub-1234</code> where <code>1234</code> is the DCCID). Note that the PSCID is more commonlu used by sites during the data collection and debugging process</td>
+        <td style="word-wrap: break-word; white-space: normal;">Original BIDS participant ID numbers prior to de-identification (e.g. <code>sub-1234</code> where <code>1234</code> is the DCCID). These participant IDs are primarily used by LORIS and study sites, with PSCID being more commonly used by sites during the data collection and debugging process</td>
         </tr>
         <tr>
         <td>SCE</td>
@@ -101,6 +106,12 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 
 ### Record Query & Derivatives Cleanup
 After CBRAIN processing, previous processing records are queried against the contents of `s3://midb-hbcd-main-deid/assembly_bids` to ensure that processing is still up-to-date with the current BIDS data. For any cases where the derivative data has become out of sync with the assembly_bids data, the impacted derivative data along with CBRAIN processing task objects are deleted. The next time the query scripts are run that look for new subjects to process, the processing will be re-initiated for these subjects.
+
+## BrainSwipes
+The workflow for BrainSwipes is unique compared to other data due to the fact that the quality control (QC) is performed post-CBRAIN processing and therefore must go through additional steps. Some details to note:
+
+- After transfer of the visual reports used for QC to the BrainSwipes bucket, a query is run to identify outputs that are out of date and either remove or archive records related to out-of-date files
+- **TBD**: Participant sessions that fail structural QC (based on XCP-D derivative visual reports) are flagged to perform manual corrections on the corresponding BIBSNet brain segmentations. The corrected segmentations will not be fed back into the main processing workflows, but are instead integrated into the training set for future BIBSNet models.
 
 ## Re-Identification
 Following CBRAIN processing, processing records are queried for new derivative outputs ready to be re-identified. Re-identification involves replacing all release candidate IDs with DCCIDs in processing outputs and occurs in the process of copying the data from the source (`s3://midb-hbcd-main-deid/derivatives/`) to destination (`s3://midb-hbcd-main-pr/derivatives`) S3 paths.
