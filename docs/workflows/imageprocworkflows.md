@@ -1,9 +1,7 @@
 # Image Processing Workflows
-<p>
-    Below is the full image processing workflow for the HBCD data processing, including data capture from HBCD study sites, quality control, BIDS conversion, LORIS ingestion, de- and re-identification procedures at various stages, CBRAIN processing, and lastly Lasso ingestion. Further details for certain steps are provided in the sections below (as indicated by the note <span class="blue-text">ⓘ <i>Click for Details</i>).</span>
-</p>
+<p>This section outlines the full processing workflow for HBCD Study data, detailing each step from data capture at study sites to final ingestion into Lasso. Additional details for specific steps can be accessed in the sections below by selecting <span class="blue-text">ⓘ <i>Click for Details</i></span>.</p>
 
-The organization responsible for each step is indicated in the lower left-hand corner of each box. Click on the organization name to be directed to its correponding section on the [Org Charts](../orgcharts.md) page for more information about the organization, team members, and its role in the HBCD Study.
+Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [Org Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members.
 
 ### *TO DO*
 - Add in MRS QC: performed by UCSD (does UCSD source from UMN post-BIDS conversion?) is it sent to loris separate from QC?
@@ -11,7 +9,7 @@ The organization responsible for each step is indicated in the lower left-hand c
 - Add missing s3 bucket names and server names: CDNI BrainSwipes Bucket
 - Clarify final de-ID steps
 
-<object type="image/svg+xml" data="../WF.svg" width="100%"></object>
+<object type="image/svg+xml" data="../WF_nocopy.svg" width="100%"></object>
 
 <p>
 <div id="s3-paths" class="table-banner" onclick="toggleCollapse(this)">
