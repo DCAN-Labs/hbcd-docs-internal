@@ -1,6 +1,6 @@
 # Image Processing Workflows
 
-<object type="image/svg+xml" data="../WF-openthiswindow.svg" width="100%"></object>
+<object type="image/svg+xml" data="../WF.drawio.svg" width="100%"></object>
 
 <p>
 <div id="s3-paths" class="table-banner" onclick="toggleCollapse(this)">
@@ -17,15 +17,19 @@
     </thead>
     <tbody>
         <tr>
-        <td>De-ID Main PR &gt; BrainSwipes</td>
+        <td>BrainSwipes</td>
+        <td><code> </code></td>
+        </tr>
+        <tr>
+        <td>De-ID &gt; BrainSwipes</td>
         <td><code>s3://midb-hbcd-main-deid/brainswipes</code></td>
         </tr>
         <tr>
-        <td>De-ID Main PR &gt; Derivatives</td>
+        <td>De-ID &gt; Derivatives</td>
         <td><code>s3://midb-hbcd-main-deid/derivatives/</code></td>
         </tr>
         <tr>
-        <td>De-ID Main PR &gt; Raw BIDS</td>
+        <td>De-ID &gt; Raw BIDS</td>
         <td><code>s3://midb-hbcd-main-deid/assembly_bids/</code></td>
         </tr>
         <tr>
@@ -37,19 +41,23 @@
         <td><code>s3://midb-hbcd-lasso-release/</code></td>
         </tr>
         <tr>
-        <td>Main PR &gt; Derivatives</td>
+        <td>Main &gt; BrainSwipes</td>
+        <td><code>s3://midb-hbcd-main-pr/reid_brainswipes/</code></td>
+        </tr>
+        <tr>
+        <td>Main &gt; Derivatives</td>
         <td><code>s3://midb-hbcd-main-pr/derivatives/</code></td>
         </tr>
         <tr>
-        <td>Main PR &gt; De-ID Lists</td>
+        <td>Main &gt; De-ID Lists</td>
         <td><code>s3://midb-hbcd-main-pr/deidentification-lists/</code></td>
         </tr>
         <tr>
-        <td>Main PR &gt; Raw BIDS</td>
+        <td>Main &gt; Raw BIDS</td>
         <td><code>s3://midb-hbcd-main-pr/assembly_bids/</code></td>
         </tr>
         <tr>
-        <td>Main PR Dicoms</td>
+        <td>UCSD DICOMs</td>
         <td><code>s3://midb-hbcd-ucsd-main-pr-dicoms/</code></td>
         </tr>
     </tbody>
@@ -61,6 +69,7 @@
 - Add in MRS QC: performed by UCSD (does UCSD source from UMN post-BIDS conversion?) is it sent to loris separate from QC?
 - Add: links to descriptions of language, what is automated and what is not, and who is the responsible party
 - Add missing s3 bucket names and server names
+    - CDNI BrainSwipes Bucket where QC images are transferred for swipes
 - Clarify final de-ID steps
 - Fix buggy WF render with dark mode and embedded links displaying in place of diagram if needed (click open in this window in export options)
 
