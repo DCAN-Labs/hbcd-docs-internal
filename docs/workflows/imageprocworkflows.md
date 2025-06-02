@@ -58,6 +58,7 @@
 </p>
 
 ## TO DO
+- Fix buggy WF render with dark mode and embedded links displaying in place of diagram 
 - Add in MRS QC: performed by UCSD (does UCSD source from UMN post-BIDS conversion?) is it sent to loris separate from QC?
 - Add: links to descriptions of language, what is automated and what is not, and who is the responsible party
 - Add missing s3 bucket names and server names
