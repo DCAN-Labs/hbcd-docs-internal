@@ -7,7 +7,7 @@ Each subsection of the workflow diagram includes the name of the responsible org
 <object type="image/svg+xml" data="../WF.drawio.svg" width="100%"></object>
 
 ### Option 2 BrainSwipes Simplified & connected to Re-ID WF
-<object type="image/svg+xml" data="../WF_option2.svg" width="100%"></object>
+<object type="image/svg+xml" data="../WF2.drawio.svg" width="100%"></object>
 
 
 <p>
@@ -24,10 +24,6 @@ Each subsection of the workflow diagram includes the name of the responsible org
       </tr>
     </thead>
     <tbody>
-        <tr>
-        <td>BrainSwipes</td>
-        <td><code> </code></td>
-        </tr>
         <tr>
         <td>De-ID &gt; BrainSwipes</td>
         <td><code>s3://midb-hbcd-main-deid/brainswipes</code></td>
@@ -63,6 +59,10 @@ Each subsection of the workflow diagram includes the name of the responsible org
         <tr>
         <td>Main &gt; De-ID Lists</td>
         <td><code>s3://midb-hbcd-main-pr/deidentification-lists/</code></td>
+        </tr>
+        <tr>
+        <td>Prerelease Derivatives</td>
+        <td><code>s3://midb-hbcd-prerelease-bids/derivatives/</code></td>
         </tr>
         <tr>
         <td>Main &gt; Raw BIDS</td>
@@ -113,7 +113,7 @@ After CBRAIN processing, previous processing records are queried against the con
 ## BrainSwipes
 The workflow for BrainSwipes is unique compared to other data due to the fact that the quality control (QC) is performed post-CBRAIN processing and therefore must go through additional steps. Some details to note:
 
-- After transfer of the visual reports used for QC to the BrainSwipes bucket, a query is run to identify outputs that are out of date and either remove or archive records related to out-of-date files
+- After transfer of the visual reports used for QC to the Prerelease Derivatives S3 URL (`s3://midb-hbcd-prerelease-bids/derivatives/ses-V02/xcp_d/{{SUBJECT}}/figures/{{FILENAME}}.png`), a query is run to identify outputs that are out of date and either remove or archive records related to out-of-date files
 - **TBD**: Participant sessions that fail structural QC (based on XCP-D derivative visual reports) are flagged to perform manual corrections on the corresponding BIBSNet brain segmentations. The corrected segmentations will not be fed back into the main processing workflows, but are instead integrated into the training set for future BIBSNet models.
 
 ## Re-Identification
