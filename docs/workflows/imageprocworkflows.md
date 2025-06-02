@@ -1,6 +1,6 @@
 # Image Processing Workflows
 
-<object type="image/svg+xml" data="../WF.svg" width="100%"></object>
+<object type="image/svg+xml" data="../WF-openthiswindow.svg" width="100%"></object>
 
 <p>
 <div id="s3-paths" class="table-banner" onclick="toggleCollapse(this)">
@@ -58,11 +58,11 @@
 </p>
 
 ## TO DO
-- Fix buggy WF render with dark mode and embedded links displaying in place of diagram 
 - Add in MRS QC: performed by UCSD (does UCSD source from UMN post-BIDS conversion?) is it sent to loris separate from QC?
 - Add: links to descriptions of language, what is automated and what is not, and who is the responsible party
 - Add missing s3 bucket names and server names
 - Clarify final de-ID steps
+- Fix buggy WF render with dark mode and embedded links displaying in place of diagram if needed (click open in this window in export options)
 
 ## De-Identification
 De-identification is run daily to update `s3://midb-hbcd-main-deid/assembly_bids` from `s3://midb-hbcd-main-pr/assembly_bids`. In the process of de-identification, any DCCIDs/PSCIDs/Site IDs are removed or replaced with Release Candidate IDs and/or Anonymized Site IDs, where applicable. In addition to de-identifying new sessions, existing sessions are also updated.
