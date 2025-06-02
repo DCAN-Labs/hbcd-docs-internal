@@ -1,7 +1,7 @@
 # HBCD Data Processing Workflows
 <p>This section outlines the full processing workflow for HBCD Study data, detailing each step from data capture at study sites to final ingestion into Lasso. Additional details for specific steps can be accessed in the sections below by selecting <span class="blue-text">ⓘ <i>Click for Details</i></span>.</p>
 
-Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [Org Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. Please see the [expandable section](#s3-paths) below for a key to the S3 bucket paths referenced in the workflow diagram.
+Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [Org Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. Please see the [S3 Bucket Paths Key](#s3-paths) below for a key to the S3 bucket paths referenced in the workflow diagram as well as a [Definition of Terms](#def-terms) for terms used in the diagram or on this page.
 
 <object type="image/svg+xml" data="../WF.drawio.svg" width="100%"></object>
 
@@ -62,6 +62,31 @@ Each subsection of the workflow diagram includes the name of the responsible org
         <tr>
         <td>Main &gt; Raw BIDS</td>
         <td><code>s3://midb-hbcd-main-pr/assembly_bids/</code></td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+
+<div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="table-text">Definition of Terms</span>
+  <span class="notification-arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <thead>
+      <tr>
+        <th style="width: 10%;">Term</th>
+        <th style="width: 90%;">Definition</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>DCCID/PSCID</td>
+        <td style="word-wrap: break-word; white-space: normal;">Original BIDS participant IDs, prior to de-identification (e.g. <code>sub-1234</code> where <code>1234</code> is the DCCID). Note that the PSCID is more commonlu used by sites during the data collection and debugging process</td>
+        </tr>
+        <tr>
+        <td>SCE</td>
+        <td style="word-wrap: break-word; white-space: normal;">Secure computing environment at the UMN <a href="../orgcharts.md#health-sciences-technology">Health Sciences Technology</a> Office</td>
         </tr>
     </tbody>
     </table>
