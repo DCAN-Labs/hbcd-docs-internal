@@ -1,4 +1,4 @@
-# HBCD Data Processing Workflow
+# HBCD Data Processing Workflows
 <p>This section outlines the full processing workflow for HBCD Study data, detailing each step from data capture at study sites to final ingestion into Lasso. Additional details for specific steps can be accessed in the sections below by selecting <span class="blue-text">ⓘ <i>Click for Details</i></span>.</p>
 
 Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [Org Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members.
@@ -9,7 +9,7 @@ Each subsection of the workflow diagram includes the name of the responsible org
 - Add missing s3 bucket names and server names: CDNI BrainSwipes Bucket
 - Clarify final de-ID steps
 
-<object type="image/svg+xml" data="../WF_nocopy.svg" width="100%"></object>
+<object type="image/svg+xml" data="../WF.svg" width="100%"></object>
 
 <p>
 <div id="s3-paths" class="table-banner" onclick="toggleCollapse(this)">

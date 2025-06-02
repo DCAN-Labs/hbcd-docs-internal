@@ -61,7 +61,7 @@ nav:
   - Report Issues: internal/reportissues.md
   - Review Beta Data Release Site: internal/beta_release_site_review.md
   - Workflows:
-    - Data Processing Workflow: workflows/imageprocworkflows.md
+    - Data Processing Workflows: workflows/imageprocworkflows.md
     - S3 Buckets: workflows/s3.md
   - CHANGE LOG: 
     - Pending & Upcoming Updates: changelog/pending.md
