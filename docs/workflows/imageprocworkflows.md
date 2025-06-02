@@ -1,4 +1,15 @@
 # Image Processing Workflows
+<p>
+    Below is the full image processing workflow for the HBCD data processing, including data capture from HBCD study sites, quality control, BIDS conversion, LORIS ingestion, de- and re-identification procedures at various stages, CBRAIN processing, and lastly Lasso ingestion. Further details for certain steps are provided in the sections below (as indicated by the note <span class="blue-text">ⓘ <i>Click for Details</i>).</span>
+</p>
+
+The organization responsible for each step is indicated in the lower left-hand corner of each box. Click on the organization name to be directed to its correponding section on the [Org Charts](../orgcharts.md) page for more information about the organization, team members, and its role in the HBCD Study.
+
+### *TO DO*
+- Add in MRS QC: performed by UCSD (does UCSD source from UMN post-BIDS conversion?) is it sent to loris separate from QC?
+- Add: what is automated and what is not
+- Add missing s3 bucket names and server names: CDNI BrainSwipes Bucket
+- Clarify final de-ID steps
 
 <object type="image/svg+xml" data="../wf_orglinks.svg" width="100%"></object>
 
@@ -64,14 +75,6 @@
     </table>
 </div>
 </p>
-
-## TO DO
-- Add in MRS QC: performed by UCSD (does UCSD source from UMN post-BIDS conversion?) is it sent to loris separate from QC?
-- Add: links to descriptions of language, what is automated and what is not, and who is the responsible party
-- Add missing s3 bucket names and server names
-    - CDNI BrainSwipes Bucket where QC images are transferred for swipes
-- Clarify final de-ID steps
-- Fix buggy WF render with dark mode and embedded links displaying in place of diagram if needed (click open in this window in export options)
 
 ## De-Identification
 De-identification is run daily to update `s3://midb-hbcd-main-deid/assembly_bids` from `s3://midb-hbcd-main-pr/assembly_bids`. In the process of de-identification, any DCCIDs/PSCIDs/Site IDs are removed or replaced with Release Candidate IDs and/or Anonymized Site IDs, where applicable. In addition to de-identifying new sessions, existing sessions are also updated.
