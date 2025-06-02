@@ -11,7 +11,7 @@ The organization responsible for each step is indicated in the lower left-hand c
 - Add missing s3 bucket names and server names: CDNI BrainSwipes Bucket
 - Clarify final de-ID steps
 
-<object type="image/svg+xml" data="../wf_orglinks.svg" width="100%"></object>
+<object type="image/svg+xml" data="../WF.svg" width="100%"></object>
 
 <p>
 <div id="s3-paths" class="table-banner" onclick="toggleCollapse(this)">
