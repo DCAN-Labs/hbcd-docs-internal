@@ -7,7 +7,7 @@ Each subsection of the workflow diagram includes the name of the responsible org
 <object type="image/svg+xml" data="../WF.drawio.svg" width="100%"></object>
 
 ### Option 2 BrainSwipes Simplified & connected to Re-ID WF
-<object type="image/svg+xml" data="../Luci2.svg" width="100%"></object>
+<object type="image/svg+xml" data="../WF_option2.svg" width="100%"></object>
 
 
 <p>
@@ -98,6 +98,9 @@ Each subsection of the workflow diagram includes the name of the responsible org
 </div>
 </p>
 
+## LORIS Formatting Updates
+LORIS makes changes to the `assembly_bids` metadata and formatting based on identified issues. This process happens irregularly, and includes changes from QC/DICOMS sent via UCSD, along with other related elements.
+
 ## De-Identification
 De-identification is run daily to update `s3://midb-hbcd-main-deid/assembly_bids` from `s3://midb-hbcd-main-pr/assembly_bids`. In the process of de-identification, any DCCIDs/PSCIDs/Site IDs are removed or replaced with Release Candidate IDs and/or Anonymized Site IDs, where applicable. In addition to de-identifying new sessions, existing sessions are also updated.
 
@@ -138,3 +141,4 @@ The details of this process are as follows:
 3. Squash the derivatives folders across imaging sessions so that there is one common derivatives folder for all imaging sessions
 4. Place the resulting assembly_bids data in `s3://midb-hbcd-lasso-staging/<release_identifier>/hbcd/rawdata/`
 5. Place the resulting derivatives data in `s3://midb-hbcd-lasso-staging/<release_identifier>/hbcd/derivatives`
+
