@@ -67,27 +67,28 @@ nav:
     - Pending & Upcoming Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md
     - Version History:    
-        - Beta Release 15: changelog/versions/BR15.md
+        - Beta Release 15.1: changelog/versions/BR15.1.md
+        - Beta Release 15.0: changelog/versions/BR15.md
         - Beta Release 14.8: changelog/versions/BR14.8.md 
         - Beta Release 14.7: changelog/versions/BR14.7.md 
         - Beta Release 14.6: changelog/versions/BR14.6.md   
         - Beta Release 14.5: changelog/versions/BR14.5.md  
-        - Beta Release 14: changelog/versions/BR14.md    
-        - Beta Release 13: changelog/versions/BR13.md
-        - Beta Release 12: changelog/versions/BR12.md
-        - Beta Release 11: changelog/versions/BR11.md
-        - Beta Release 10: changelog/versions/BR10.md
-        - Beta Release 9: changelog/versions/BR9.md
-        - Beta Release 8: changelog/versions/BR8.md
+        - Beta Release 14.0: changelog/versions/BR14.md    
+        - Beta Release 13.0: changelog/versions/BR13.md
+        - Beta Release 12.0: changelog/versions/BR12.md
+        - Beta Release 11.0: changelog/versions/BR11.md
+        - Beta Release 10.0: changelog/versions/BR10.md
+        - Beta Release 9.0: changelog/versions/BR9.md
+        - Beta Release 8.0: changelog/versions/BR8.md
         - Beta Release 7.5: changelog/versions/BR7.5.md
-        - Beta Release 7: changelog/versions/BR7.md      
+        - Beta Release 7.0: changelog/versions/BR7.md      
         - Beta Release 6.5: changelog/versions/BR6.5.md    
-        - Beta Release 6: changelog/versions/BR6.md          
-        - Beta Release 5: changelog/versions/v1.4.md
-        - Beta Release 4: changelog/versions/v1.3.md
-        - Beta Release 3: changelog/versions/v1.2.md
-        - Beta Release 2: changelog/versions/v1.1.md
-        - Beta Release 1: changelog/versions/v1.0.md
+        - Beta Release 6.0: changelog/versions/BR6.md          
+        - Beta Release 5.0: changelog/versions/v1.4.md
+        - Beta Release 4.0: changelog/versions/v1.3.md
+        - Beta Release 3.0: changelog/versions/v1.2.md
+        - Beta Release 2.0: changelog/versions/v1.1.md
+        - Beta Release 1.0: changelog/versions/v1.0.md
   - Resources:
     - Slides: slides.md
     - Org Charts: orgcharts.md
