@@ -110,14 +110,17 @@ flowchart TB
 
 #### DEAP
 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
+
 The Data Exploration and Analysis Portal (DEAP) is a cloud-based platform developed to facilitate secure, efficient, and user-friendly access to large-scale, multimodal research datasets. Originally designed for the Adolescent Brain Cognitive Development (ABCD) Study, DEAP supports visual exploration of NBDC data dictionaries as well as data download.
 
 #### FIONA 
 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
-FIONA (Flexible Image Open Network Appliance) is a high-performance data transfer node (DTN) developed by the Energy Sciences Network (ESnet), designed to move large scientific datasets quickly and securely across research networks. It's typically used in research settings to support efficient, reliable, and high-throughput data transfers between institutions, especially for projects that generate or share large volumes of data. For the HBCD Study, FIONA plays a critical role in the infrastructure that supports data management and secure sharing, specifically for neuroimaging and other high-throughput data types collected across the many study sites.
+
+FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance data transfer node (DTN) designed to move large scientific datasets quickly and securely across research networks. For the HBCD Study, it is used to transfer data from the HBCD Study sites to the HDCC following well-established procedures for quality control and processing.
 
 #### REDCap 
 🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
+
 [REDCap](https://projectredcap.org/) (Research Electronic Data Capture) is a secure, widely used web-based application designed to support data capture for research studies, particularly in academic and clinical environments. In the HBCD Study, REDCap serves as a central tool for managing behavioral, clinical, and demographic data across the multiple participating sites. While neuroimaging and biosensor data flow through pipelines involving systems like FIONA, REDCap is used for more structured, form-based data collected during assessments and visits.
 
 ## Lasso
