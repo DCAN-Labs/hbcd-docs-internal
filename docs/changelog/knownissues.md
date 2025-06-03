@@ -9,11 +9,7 @@ On toggling between file-based and tabular data tabs in the Dictionary Query Too
 
 ## BR15.1 Target Release for Fix
 
-### ⚠️ Duplicate Options for 'Mother Ethnicity' Variable
-
-The variable 'Mother Ethnicity' (`sed_basic_demographics_screen_mother_race`) has duplicate options for the selection of 'Black African American' (option #3). This option is not used for data entry, and instead the 'Black_or African American' option (option #5) should be used. No other variables are affected by this.
-
-
+*NONE*
 
 
 
