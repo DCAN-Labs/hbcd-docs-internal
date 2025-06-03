@@ -60,12 +60,17 @@ Each subsection of the workflow diagram includes the name of the responsible org
         <td><code>s3://midb-hbcd-main-pr/assembly_bids/</code></td>
         </tr>
         <tr>
+        <td>MRS BIDS</td>
+        <td><code>s3://midb-hbcd-main-pr-mrs/</code></td>
+        </tr>
+        <tr>
         <td>Prerelease Derivatives</td>
         <td><code>s3://midb-hbcd-prerelease-bids/derivatives/</code></td>
         </tr>
     </tbody>
     </table>
 </div>
+
 
 <div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
   <span class="table-text">Definition of Terms</span>
