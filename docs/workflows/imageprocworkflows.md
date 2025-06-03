@@ -56,12 +56,12 @@ Each subsection of the workflow diagram includes the name of the responsible org
         <td><code>s3://midb-hbcd-main-pr/deidentification-lists/</code></td>
         </tr>
         <tr>
-        <td>Prerelease Derivatives</td>
-        <td><code>s3://midb-hbcd-prerelease-bids/derivatives/</code></td>
-        </tr>
-        <tr>
         <td>Main &gt; Raw BIDS</td>
         <td><code>s3://midb-hbcd-main-pr/assembly_bids/</code></td>
+        </tr>
+        <tr>
+        <td>Prerelease Derivatives</td>
+        <td><code>s3://midb-hbcd-prerelease-bids/derivatives/</code></td>
         </tr>
     </tbody>
     </table>
