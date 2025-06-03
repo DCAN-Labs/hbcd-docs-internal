@@ -91,7 +91,7 @@ Each subsection of the workflow diagram includes the name of the responsible org
         </tr>
         <tr>
         <td>SCE</td>
-        <td style="word-wrap: break-word; white-space: normal;">Secure computing environment at the UMN <a href="../orgcharts.md#health-sciences-technology">Health Sciences Technology</a> Office</td>
+        <td style="word-wrap: break-word; white-space: normal;">Secure computing environment at the UMN <a href="../../orgcharts/#health-sciences-technology">Health Sciences Technology</a> Office</td>
         </tr>
     </tbody>
     </table>
