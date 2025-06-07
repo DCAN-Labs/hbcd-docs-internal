@@ -3,7 +3,7 @@
 
 Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [Org Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. Please see the [S3 Bucket Paths Key](#s3-paths) below for a key to the S3 bucket paths referenced in the workflow diagram as well as a [Definition of Terms](#def-terms) for terms used in the diagram or on this page.
 
-<object type="image/svg+xml" data="../WF.svg" width="100%"></object>
+<object type="image/svg+xml" data="../images/WF.svg" width="100%"></object>
 
 <p>
 <div id="s3-paths" class="table-banner" onclick="toggleCollapse(this)">
@@ -142,8 +142,18 @@ The details of this process are as follows:
 4. Place the resulting assembly_bids data in `s3://midb-hbcd-lasso-staging/<release_identifier>/hbcd/rawdata/`
 5. Place the resulting derivatives data in `s3://midb-hbcd-lasso-staging/<release_identifier>/hbcd/derivatives`
 
-## Extra
+## Modality-Specific Worfklow Details
 
-### MRI Data QC Workflow
+### Magnetic Resonance Raw Data Quality Control
 
-![](MRI-QC-WF.png)
+![](images/MRI-QC-WF.png)
+
+### MRS Procesing
+
+The following magnetic resonance spectroscopy (MRS) data processing workflow diagram is sourced from [Dean et al. 2024](https://doi.org/10.1016/j.dcn.2024.101452):
+
+<figure>
+  <img src="../images/MRS-WF.jpg" alt="MRS-WF" class="center" width="80%">
+  <figcaption style="text-align: center; font-style: italic;">Fig. 9. : Summary of the fully automated MRS data processing workflow. The workflow includes automated data transfer and ingestion, integrates derivatives from the HBCD MRI analysis, performs the MRS analysis, and generates quantitative results and summary reports.</figcaption>
+</figure>
+
