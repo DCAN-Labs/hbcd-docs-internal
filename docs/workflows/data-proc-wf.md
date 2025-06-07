@@ -142,3 +142,8 @@ The details of this process are as follows:
 4. Place the resulting assembly_bids data in `s3://midb-hbcd-lasso-staging/<release_identifier>/hbcd/rawdata/`
 5. Place the resulting derivatives data in `s3://midb-hbcd-lasso-staging/<release_identifier>/hbcd/derivatives`
 
+## Extra
+
+### MRI Data QC Workflow
+
+![](MRI-QC-WF.png)
