@@ -64,6 +64,7 @@ nav:
   - Workflows:
     # - Data Processing Workflows: workflows/data-proc-wf.md
     - S3 Buckets: workflows/s3.md
+    # - Release SOPs: workflows/release-wf.md
   - CHANGE LOG: 
     - Pending & Upcoming Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md
