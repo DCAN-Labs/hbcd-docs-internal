@@ -152,7 +152,7 @@ The details of this process are as follows:
 
 ![](images/MRI-QC-WF.png)
 
-### MRS Procesing
+### MRS Processing
 
 The following magnetic resonance spectroscopy (MRS) data processing workflow diagram is sourced from [Dean et al. 2024](https://doi.org/10.1016/j.dcn.2024.101452):
 
