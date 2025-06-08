@@ -1,5 +1,11 @@
 # Data Release Workflows & SOPs
 
+### 🚧 Action Items 🚧
+
+See [Basecamp](https://3.basecamp.com/5032058/buckets/35843816/todolists/8733090807) for updates needed for this page.
+
+------------------------
+
 ## BR Hot Sheets
 
 Every beta release (BR) of the HDCC data will have a corresponding "BR Hot Sheet" to be completed by the HDCC and sent to Lasso once all items are checked off. This document serves as a central resource for information regarding the release to address the following key areas:

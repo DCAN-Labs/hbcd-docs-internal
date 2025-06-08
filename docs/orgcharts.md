@@ -1,4 +1,11 @@
-#  🚧 HDCC Organizational Charts 🚧
+#  HDCC Organizational Charts
+
+### 🚧 Action Items 🚧
+
+See [Basecamp](https://3.basecamp.com/5032058/buckets/35843816/todolists/8584532437) for updates needed for this page.
+
+----------------------------
+
 
 ## Overview
 The larger organizational structure of the HBCD Data Coordinating Center (HDCC) is as follows, with the HDCC Co-Directors listed at the top and the institutions/organizations listed below- ***click on individual teams to be directed to their organizational charts***. Please visit the [HDCC page](https://hbcdstudy.org/hbcd-data-coordinating-center/) of the HBCD Study website for a full list of all HDCC members. 
