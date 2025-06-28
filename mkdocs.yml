@@ -24,6 +24,12 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js
   - js/mermaid-init.js
   - js/extra.js
+  - https://www.googletagmanager.com/gtag/js?id=G-95CHYYTVHC
+
+extra:
+  analytics:
+    provider: google
+    property: G-95CHYYTVHC
 
 extra_css:
   - css/custom.css
