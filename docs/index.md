@@ -1,3 +1,13 @@
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95CHYYTVHC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95CHYYTVHC');
+</script>
+
 <p align="center">
 <img src="images/logo_HBCD_final.png" alt="logo" width="500"/>
 </p>
