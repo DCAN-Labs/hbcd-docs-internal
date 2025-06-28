@@ -25,6 +25,7 @@ extra_javascript:
   - js/mermaid-init.js
   - js/extra.js
   - https://www.googletagmanager.com/gtag/js?id=G-95CHYYTVHC
+  - js/ga.js
 
 extra:
   analytics:
