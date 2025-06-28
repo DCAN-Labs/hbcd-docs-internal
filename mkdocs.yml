@@ -1,4 +1,4 @@
-site_name: Internal HBCD Data Release Docs
+site_name: Internal HBCD Docs
 
 theme:
   name: readthedocs
@@ -65,15 +65,8 @@ plugins:
 docs_dir: docs
 
 nav: 
-  - ABOUT: index.md
-  - Report Issues: internal/reportissues.md
-  - Review Beta Data Release Site: internal/beta_release_site_review.md
-  - Workflows:
-    # - Data Processing Workflows: workflows/data-proc-wf.md
-    - S3 Buckets: workflows/s3.md
-    # - Release SOPs: workflows/release-wf.md
   - CHANGE LOG: 
-    - Pending & Upcoming Updates: changelog/pending.md
+    # - Pending & Upcoming Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md
     - Version History:    
         - Beta Release 15.1: changelog/versions/BR15.1.md
@@ -98,8 +91,15 @@ nav:
         - Beta Release 3.0: changelog/versions/v1.2.md
         - Beta Release 2.0: changelog/versions/v1.1.md
         - Beta Release 1.0: changelog/versions/v1.0.md
+  - Help:
+      - Report Issues: internal/reportissues.md
+      - Review Beta Data Release Site: internal/beta_release_site_review.md
   - Resources:
     - Slides: slides.md
     # - Org Charts: orgcharts.md
+  - Workflows:
+    # - Data Processing Workflows: workflows/data-proc-wf.md
+    - S3 Buckets: workflows/s3.md
+    # - Release SOPs: workflows/release-wf.md
   - Restricted Access Content: hidden.md
     

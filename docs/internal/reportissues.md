@@ -2,7 +2,9 @@
 
 ## Lasso Help Center
 
-Please submit a help desk ticket via the [Lasso Help Center](https://nbdc-datashare.lassoinformatics.com/help-center) to report: 
+HBCD Consortium members can submit help desks following the same process as other users via the [Lasso Help Center](https://nbdc-datashare.lassoinformatics.com/help-center). Detailed instructions for how to create and submit a ticket can be found [here](https://nbdc.lassoinformatics.com/issue-tracker).
+
+We encourage HBCD Consortium members to review their data and report any of the following issues:
 
 - Any issues with your data.
 - Any issues in the Data Dictionary for your WG’s measures.
