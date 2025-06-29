@@ -101,5 +101,6 @@ nav:
     # - Data Processing Workflows: workflows/data-proc-wf.md
     - S3 Buckets: workflows/s3.md
     # - Release SOPs: workflows/release-wf.md
+    # - Web Development: workflows/webdev.md
   - Restricted Access Content: hidden.md
     
