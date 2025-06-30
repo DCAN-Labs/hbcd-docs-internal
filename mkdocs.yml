@@ -91,9 +91,9 @@ nav:
         - Beta Release 3.0: changelog/versions/v1.2.md
         - Beta Release 2.0: changelog/versions/v1.1.md
         - Beta Release 1.0: changelog/versions/v1.0.md
-  - Help:
-      - Report Issues: internal/reportissues.md
-      - Review Beta Data Release Site: internal/beta_release_site_review.md
+  - Internal Data QC:
+      - Review Beta Data & Report Issues: internal/reportissues.md
+      # - Review Beta Data Release Site: internal/beta_release_site_review.md
   - Resources:
     - Slides: slides.md
     # - Org Charts: orgcharts.md

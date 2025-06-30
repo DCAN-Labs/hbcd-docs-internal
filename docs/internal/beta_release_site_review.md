@@ -1,4 +1,8 @@
-# Review Beta Data Release Site
+# Review Beta Data Release Site - redirect to consolidated page
+<meta http-equiv="refresh" content="0; url=../reportissues">
+
+
+
 
 The Beta Data Release Site is now ready for review. If you would like access to the site, please do the following:
 
