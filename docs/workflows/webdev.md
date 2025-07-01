@@ -23,7 +23,7 @@ An alternative solution is to create a new branch on the the public NBDC repo - 
     - Reorganization of the pages that leads to URL changes
 - Changes that do not warrant a new version include styling and formatting updates that do not change the meaning/interpretation of the content
 
-**NOTE:** The current version is `1.0.1`. This is due to the fact that the workflow designed by ABCD ([see details in next section](#abcd-workflow)) was being used at first, which automatically incremented the version after a small change was made. It's possible (though not good practice) to delete tags and release versions on GitHub, but the publication automatically made to Zenodo whenever a new version is tagged, is permanent.
+**NOTE:** The current version is `1.0.3`. This is due to the fact that the workflow designed by ABCD ([see details in next section](#abcd-workflow)) was being used at first, which automatically incremented the version after a small change was made. It's possible (though not good practice) to delete tags and release versions on GitHub, but the publication automatically made to Zenodo whenever a new version is tagged, is permanent.
 
 ## ABCD Workflow
 
