@@ -120,3 +120,21 @@
   color: #3e3e3e;
   cursor: pointer; 
 }
+
+/* Preproc Banner */
+.preproc-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures proper spacing */
+  background-color: #38c9ef;
+  border: 1px solid #3333331a;
+  padding: 0 20px;
+  border-radius: 0; /* Make square shaped */
+  font-family: Lato; 
+  color: #3e3e3e;
+  cursor: pointer; 
+}
+
+
+
+
