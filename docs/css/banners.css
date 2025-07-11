@@ -1,4 +1,3 @@
-
 /* Anchor links for collapsible sections */
 .text-with-link {
   position: relative;
@@ -101,3 +100,4 @@
   margin-right: 10px; /* Adds space between text and the arrow */
   word-wrap: break-word; /* Ensures text wraps if too long */
 }
+

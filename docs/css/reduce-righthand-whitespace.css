@@ -13,6 +13,6 @@
 /* Push the main content over so it doesn’t overlap */
 @media (min-width: 1000px) {
   .wy-nav-content {
-    margin-right: 220px;      /* Should be slightly more than TOC width */
+    margin-right: 195px;      /* Should be slightly more than TOC width */
   }
 }

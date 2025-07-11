@@ -4,6 +4,32 @@
 /* red: #be074c */ 
 /* black/gray: #6b6b6b */ 
 
+/* styling for text with hyperlinks */
+a {
+  color: #0066cc;               /* Use a distinguishable color */
+  font-weight: 600;             /* Optional: Slightly bolder text */
+}
+/* Change appearance when hovering */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Inline code styling */
+:not(pre) > code {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  color: #c900cc !important;
+  font-size: 0.8em !important;
+  font-weight: 500;
+}
+
+code, pre {
+  font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', monospace;
+  font-size: 0.95em;
+}
+
+
 /* Style for expand all button (measures overview page) */
 #toggle-all-btn {
   background-color: #d0dff0;
