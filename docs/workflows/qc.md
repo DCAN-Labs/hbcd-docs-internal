@@ -178,6 +178,7 @@ A complete imaging session consists of the following valid series:
 
 ## EEG Data
 
+See [here](https://docs.hbcdstudy.org/latest/instruments/eeg/#quality-control)
 
 
 
