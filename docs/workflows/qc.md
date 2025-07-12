@@ -3,7 +3,7 @@
 ![](images/qc-wf.png)
 
 
-## File-Based MRI Data
+## MR Data
 
 <div id="source" class="source-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -41,14 +41,14 @@
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>Automated QC</b> (see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#automated-qc">HBCD Data Release Docs</a> for full details)</p>
+<p><b>AUTOMATED QC</b> (see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#automated-qc">HBCD Data Release Docs</a> for full details)</p>
 
-<p><i><b>Protocol compliance</b></i><br>
-Extraction of information from DICOM headers to identify common issues and protocol deviations (e.g.  missing files or incorrect patient orientation). Criteria include whether key imaging parameters, such as voxel size or repetition time, match the expected values for a given scanner. Out-of-compliance series are reviewed and sites are contacted if corrective action is required.</p> 
+<p><i><strong>Protocol compliance</strong></i><br>
+This is based on extraction of information from DICOM headers to identify common issues and protocol deviations (e.g.  missing files or incorrect patient orientation). Criteria include whether key imaging parameters, such as voxel size or repetition time, match the expected values for a given scanner.</p> 
 
-<p><i><b>Completeness checks</b></i><br>
+<p><i><strong>Completeness checks</strong></i><br>
 A complete imaging session consists of the following valid series:
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
     <tbody>
     <tr>
         <td>Structural T1 Block:</td>
@@ -78,9 +78,38 @@ A complete imaging session consists of the following valid series:
 </table>
 </p>
 
-<br>
 
-<p><b>Manual QC</b> (see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#manual-review">HBCD Data Release Docs</a> for full details)</p>
+<p><b>MANUAL QC</b> (see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#manual-review">HBCD Data Release Docs</a> for full details)</p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
+<thead>
+<tr>
+    <th style="width: 20%; text-align: center;">Modality</th>
+    <th style="width: 80%; text-align: center;">QC Procedures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T1w, T2w</td>
+<td style="word-wrap: break-word; white-space: normal;"> • Scored for <strong>motion artifacts</strong> (e.g., ripples, blurring) on a 0-3 scale (0 = none, 3 = severe)<br> • Other documented issues include intensity inhomogeneity and <span class="tooltip">ghosting<span class="tooltiptext">faint displaced copy of anatomy due to slices outside FOV</span></span></td>
+</tr>
+<tr>
+<td>qMRI</td>
+<td style="word-wrap: break-word; white-space: normal;"> • Same artifact scoring as above (0 - 3)<br> • Inspection of derived data (parametric maps, ROI analysis, and quantitative comparisons for 3D-QALAS)</td>
+</tr>
+<tr>
+<td>B1 field maps</td>
+<td style="word-wrap: break-word; white-space: normal;"> • Visual inspection and overall QC only; used for bias field correction of qMRI scans.</td>
+</tr>
+<tr>
+<td>SVS localizer scans (MRS)</td>
+<td style="word-wrap: break-word; white-space: normal;"> • Visual inspection and overall QC only; used to define ROI for spectroscopy.</td>
+</tr>
+<tr>
+<td>dMRI, fMRI, field maps</td>
+<td style="word-wrap: break-word; white-space: normal;"> • Scored for susceptibility artifacts, FOV cutoff, and <span class="tooltip">line artifacts<span class="tooltiptext">horizontal lines present in the sagittal view, including dark slice-frame and interleaved sliced offset</span></span>.<br> • Susceptibility issues include <span class="tooltip">signal dropout<span class="tooltiptext">Consistent with prior infant fMRI using posterior-anterior (PA) acquisitions, signal dropout is commonly noted in the posterior occipital cortex</span></span>, signal bunching, and warping.</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 <div id="proc" class="proc-banner" onclick="toggleCollapse(this)">
@@ -106,7 +135,16 @@ ADD CONTENT
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-ADD CONTENT
+<p>Prior to inclusion in the release data, the following checks are performed:</p>
+<p> • Analysis of processed structural data based on tabulated data (<a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">see details</a>) derived from XCP-D file-based outputs: blah blah</p>
+<p> • Analysis of processed functional data based on tabulated data (<a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">see details</a>) derived from XCP-D file-based outputs: blah blah</p>
+<p> • Diffusion derivatives from QSIPrep: analysis of automated QC metric distributions</p>
+
+<p>See <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#qc-summary-statistics">QC Summary Statistics</a> on the HBCD Data Release Docs for some findings from these analysis shared with users.</p>
 </div>
+
+## EEG Data
+
+
 
 
