@@ -153,7 +153,7 @@ A complete imaging session consists of the following valid series:
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>QC is performed on processed MR data using BrainSwipes - please see full details <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#brainswipes">here</a>.</p>
+<p>QC is performed on processed MR data using BrainSwipes - please see full details <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#brainswipes">here</a>. BrainSwipes results will be included for diffusion MRI in the future, but the QSIPrep pipeline generates fairly robust automated QC metrics - see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#dwi-qc">Automated QC for Processed Diffusion Data</a> for details.</p>
 </div>
 
 <div id="pre-release" class="pre-release-banner" onclick="toggleCollapse(this)">
@@ -167,9 +167,11 @@ A complete imaging session consists of the following valid series:
 </div>
 <div class="collapsible-content">
 <p>Prior to inclusion in the release data, the following checks are performed:</p>
-<p> • Analysis of processed structural data based on tabulated data (<a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">see details</a>) derived from XCP-D file-based outputs: blah blah</p>
-<p> • Analysis of processed functional data based on tabulated data (<a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">see details</a>) derived from XCP-D file-based outputs: blah blah</p>
-<p> • Diffusion derivatives from QSIPrep: analysis of automated QC metric distributions</p>
+<p> 
+• Analysis of processed structural data based on <a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">tabulated data</a> derived from XCP-D file-based outputs: blah blah<br>
+• Analysis of processed functional data based on <a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">tabulated data</a> derived from XCP-D file-based outputs: blah blah<br>
+• Diffusion derivatives from QSIPrep: analysis of automated QC metric distributions
+</p>
 
 <p>See <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#qc-summary-statistics">QC Summary Statistics</a> on the HBCD Data Release Docs for some findings from these analysis shared with users.</p>
 </div>
