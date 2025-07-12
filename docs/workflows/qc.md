@@ -41,7 +41,7 @@
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>Automated QC</b></p>
+<p><b>Automated QC</b> (see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#automated-qc">HBCD Data Release Docs</a> for full details)</p>
 
 <p><i><b>Protocol compliance</b></i><br>
 Extraction of information from DICOM headers to identify common issues and protocol deviations (e.g.  missing files or incorrect patient orientation). Criteria include whether key imaging parameters, such as voxel size or repetition time, match the expected values for a given scanner. Out-of-compliance series are reviewed and sites are contacted if corrective action is required.</p> 
@@ -78,7 +78,9 @@ A complete imaging session consists of the following valid series:
 </table>
 </p>
 
-<p>See <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#automated-qc">HBCD Data Release Docs</a> for full details.</p>
+<br>
+
+<p><b>Manual QC</b> (see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#manual-review">HBCD Data Release Docs</a> for full details)</p>
 </div>
 
 <div id="proc" class="proc-banner" onclick="toggleCollapse(this)">
