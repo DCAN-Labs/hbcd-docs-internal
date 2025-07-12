@@ -3,7 +3,9 @@
 ![](images/qc-wf.png)
 
 
-## MR Data
+## MRI & MRS Data
+
+These data include both file-based and tabulated data for the instruments listed on the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/#mri).
 
 <div id="source" class="source-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -15,7 +17,9 @@
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>ADD CONTENT</p>
+<p>Validations performed during MRI & MRS data acquisition include:<br>
+ • XXXX<br>
+ • XXXX<br></p>
 </div>
 
 <div id="ingestion" class="ingestion-banner" onclick="toggleCollapse(this)">
@@ -28,25 +32,10 @@
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>ADD CONTENT</p>
-</div>
-
-<div id="preproc" class="preproc-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="text">Pre-Processing QC</span>
-  <a class="anchor-link" href="#preproc" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p><b>AUTOMATED QC</b> (see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#automated-qc">HBCD Data Release Docs</a> for full details)</p>
-
-<p><i><strong>Protocol compliance</strong></i><br>
+<p>As outlined in the <a href="../data-proc-wf">data processing workflow diagram</a>, raw data are sent via FIONA to UMN SCE/HST and HBCD Central/JCVI. Data are checked for protocal compliance and completion - see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#automated-qc">HBCD Data Release Docs</a> for full details. In summary:</p> 
+<p><b>Protocol compliance</b><br>
 This is based on extraction of information from DICOM headers to identify common issues and protocol deviations (e.g.  missing files or incorrect patient orientation). Criteria include whether key imaging parameters, such as voxel size or repetition time, match the expected values for a given scanner.</p> 
-
-<p><i><strong>Completeness checks</strong></i><br>
+<p><b>Completeness checks</b><br>
 A complete imaging session consists of the following valid series:
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
     <tbody>
@@ -77,7 +66,49 @@ A complete imaging session consists of the following valid series:
 </tbody>
 </table>
 </p>
+</div>
 
+<div id="preproc" class="preproc-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Pre-Processing QC</span>
+  <a class="anchor-link" href="#preproc" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p><b>AUTOMATED QC</b> (see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#automated-qc">HBCD Data Release Docs</a> for full details)</p>
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
+<thead>
+<tr>
+    <th style="width: 20%; text-align: center;">Modality</th>
+    <th style="width: 80%; text-align: center;">QC Procedures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Structural (T1w, T2w, qMRI)</td>
+<td style="word-wrap: break-word; white-space: normal;">• Deep learning model estimates motion artifacts<br />• Signal-to-noise ratio (SNR) computed</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">dMRI</td>
+<td style="word-wrap: break-word; white-space: normal;">• Framewise displacement (FD) for head motion<br />• Head motion estimated via <span class="tooltip">registration to tensor-synthesized images<span class="tooltiptext">accounts for contrast differences across orientations</span></span> (<a href="https://doi.org/10.1002/hbm.20619">Hagler et al. 2009</a>)<br />• Identification of <span class="tooltip">dark slices<span class="tooltiptext">artifacts caused by abrupt head movements</span></span> via RMS difference between raw and tensor-fitted data<br />• Total slices and frames with motion artifacts calculated<br />• Metrics for line artifacts and field-of-view (FOV) cutoff</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">fMRI</td>
+<td style="word-wrap: break-word; white-space: normal;">• FD for head motion (average FD and seconds with FD &lt; 0.2 mm, 0.3 mm, 0.4 mm) (<a href="https://doi.org/10.1016/j.neuroimage.2011.10.018">Power et al., 2012</a>)<br />• Metrics for line artifacts and FOV cutoff<br />• <span class="tooltip">FWHM<span class="tooltiptext">Full width half max () spatial smoothness</span></span> and <span class="tooltip">tSNR<span class="tooltiptext">temporal SNR</span></span> computed after motion correction (<a href="https://doi.org/10.1016/j.neuroimage.2005.01.007">Triantafyllou et al. 2005</a>)</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Field Maps</td>
+<td style="word-wrap: break-word; white-space: normal;">• Metrics for line artifacts and FOV cutoff</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">All Modalities</td>
+<td style="word-wrap: break-word; white-space: normal;">• SNR computed where applicable</td>
+</tr>
+</tbody>
+</table>
 
 <p><b>MANUAL QC</b> (see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#manual-review">HBCD Data Release Docs</a> for full details)</p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
@@ -122,7 +153,7 @@ A complete imaging session consists of the following valid series:
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-ADD CONTENT
+<p>QC is performed on processed MR data using BrainSwipes - please see full details <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#brainswipes">here</a>.</p>
 </div>
 
 <div id="pre-release" class="pre-release-banner" onclick="toggleCollapse(this)">
