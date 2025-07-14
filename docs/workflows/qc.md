@@ -21,7 +21,84 @@ The majority HBCD data are provided as tabulated data, including [demographics &
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>TO DO</p>
+<p><b>Range Checks</b><br>
+<ol>
+<li>Work with the Workgroups to establish plausible ranges  </li>
+<li>Enforce numeric bounds for all fields with defined minimum or maximum values.  </li>
+<li>Automatically verify all date fields fall within protocol-defined windows.  </li>
+<li>For derived fields (e.g., BMI), ensure source values are present and valid.  </li>
+<li>Identify and flag inconsistent or reversed event sequences (e.g., follow-up before baseline).</li>
+</ol>
+</p>
+<p><b>Handling of Special Codes in Standardized method</b><br>
+<ol>
+<li>Confirm all non-response fields use standardized special codes:  <ol>
+<li>-999 for Don’t know  </li>
+<li>-888 for Refused to answer  </li>
+<li>-777 for Not applicable</li>
+</ol>
+</li>
+<li>Ensure that these codes are not used in computed fields or date fields.</li>
+</ol>
+</p>
+<p><b>Variable Naming Convention Checks</b><br>
+Parse all variable names and validate against naming rules:  
+<ol>
+<li>Insert naming convention here<ol>
+</ol>
+</p>
+<p><b>Branching Logic Enforcement</b><br>
+<ol>
+<li>Extract branching logic from the REDCap Data Dictionary.  </li>
+<li>For each field with logic conditions:  <ol>
+<li>Identify records where data are present but the logic condition is not satisfied.  </li>
+<li>Flag violations where fields are populated outside of their visible state.</li>
+</ol>
+</li>
+<li>For required fields inside conditional blocks, ensure logic has been triggered if data are expected.</li>
+</ol>
+</p>
+<p><b>Required Fields</b><br>
+To enforce completeness without violating participant autonomy, we treat all fields as *required* by including standardized non-answer response options. This enables complete data collection while capturing legitimate missingness and refusals.<br>
+
+<ol>
+<i><strong>Implementation Steps:</strong></i>
+<li><p>For every field (except calculated fields or system-generated timestamps), ensure there is a valid value recorded.  </p>
+</li>
+<li><p>Include explicit non-answer choices in all multiple choice or dropdown fields:</p>
+<ol>
+<li><p>&quot;-999, Don't know&quot;</p>
+</li>
+<li><p>&quot;-888, Refused to answer&quot;</p>
+</li>
+<li><p>&quot;–777, Not applicable&quot; (used when appropriate)</p>
+</li>
+</ol>
+</li>
+<li><p>No Open Text F Limiting Use of Open Text Fields</p>
+</li>
+</ol>
+</p>
+<p>We limit the use of open-ended text fields to ensure consistency, support downstream coding, and reduce manual data cleaning.
+<ol>
+<i><strong>Rules Applied:</strong></i>
+<li><p>Open text fields are prohibited by default unless:  </p>
+<ol>
+<li>The field is explicitly designed for collecting novel, uncategorized input.  </li>
+<li>The data cannot be anticipated or meaningfully pre-coded at design time.</li>
+</ol>
+</li>
+<li><p>When text fields are used, they are treated as temporary input capture mechanisms for refining structured options.</p>
+</li>
+<li><p>For any field that begins as free text:  </p>
+<ol>
+<li>Responses are monitored regularly.  </li>
+<li>Common answers are converted into predefined choices in future versions of the form.  </li>
+<li>A structured dropdown or radio field is created, with an &quot;Other, specify&quot; option.</li>
+</ol>
+</li>
+</ol>
+</p>
 </div>
 
 <div id="ingestion-pheno" class="ingestion-banner" onclick="toggleCollapse(this)">
@@ -232,7 +309,9 @@ A complete imaging session consists of the following valid series:
 </tbody>
 </table>
 
-<p><b>MANUAL QC</b> (see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#manual-review">HBCD Data Release Docs</a> for full details)</p>
+<p><b>MANUAL QC</b> (see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#manual-review">HBCD Data Release Docs</a> for full details)<br>
+Data is selection for manual review based on multivariate prediction and Bayesian classifier. Manual review involves scoring images based on severity of the following artifacts:
+</p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
 <thead>
 <tr>
