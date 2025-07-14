@@ -42,10 +42,7 @@ The majority HBCD data are provided as tabulated data, including [demographics &
 </ol>
 </p>
 <p><b>Variable Naming Convention Checks</b><br>
-Parse all variable names and validate against naming rules:  
-<ol>
-<li>Insert naming convention here<ol>
-</ol>
+Parse all variable names and validate against naming rules outlined <a href="https://docs.hbcdstudy.org/latest/access/metadata/#naming-conventions">here</a>.
 </p>
 <p><b>Branching Logic Enforcement</b><br>
 <ol>
