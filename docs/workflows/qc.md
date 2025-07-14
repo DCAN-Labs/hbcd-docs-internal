@@ -60,19 +60,19 @@ To enforce completeness without violating participant autonomy, we treat all fie
 <ol>
 <i><strong>Rules Applied:</strong></i>
 <li><p>Open text fields are prohibited by default unless:  </p>
-<ol>
+<ul>
 <li>The field is explicitly designed for collecting novel, uncategorized input.  </li>
 <li>The data cannot be anticipated or meaningfully pre-coded at design time.</li>
-</ol>
+</ul>
 </li>
 <li><p>When text fields are used, they are treated as temporary input capture mechanisms for refining structured options.</p>
 </li>
 <li><p>For any field that begins as free text:  </p>
-<ol>
+<ul>
 <li>Responses are monitored regularly.  </li>
 <li>Common answers are converted into predefined choices in future versions of the form.  </li>
 <li>A structured dropdown or radio field is created, with an &quot;Other, specify&quot; option.</li>
-</ol>
+</ul>
 </li>
 </ol>
 </p>
