@@ -429,7 +429,7 @@ Electroencephalography data include both file-based and tabulated data for the t
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-TO DO
+<p>EEG capping quality ratings are used to determine inclusion in the data release pool and subsequent processing. Photos are taken for each acquisition from the front, back, top, left, and right angles of the participant's head and uploaded via the BIDS Wizard application to a secure computing environment. They are then reviewed by the EEG Core at the University of Maryland to rate the quality of EEG net placement, or "capping quality," for each acquisition. Please see the section <a href="https://docs.hbcdstudy.org/latest/instruments/eeg/#eeg-net-placement-capping-quality-ratings">EEG Net Placement ("Capping Quality") Ratings</a> on the HBCD Data Release Docs for full details.</p>
 </div>
 
 <div id="proc-eeg" class="proc-banner" onclick="toggleCollapse(this)">
