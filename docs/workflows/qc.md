@@ -1,6 +1,118 @@
-# HBCD Quality Control
+# HBCD Quality Control: 5 Stages
+
+The following outlines the 5 stages of QC performed for all study data:
 
 ![](images/qc-wf.png)
+
+Additional and critical automated checks include: Scoring calculation checks, notifications and full workflow to site staff and
+clinical oversight if there is a clinically relevant finding (ie: endorsed suicidality,partner violence etc..)
+
+## Behavior, Biology, & Environment
+
+The majority HBCD data are provided as tabulated data, including [demographics & visit information](https://docs.hbcdstudy.org/latest/instruments/#demo) and [study instruments](https://docs.hbcdstudy.org/latest/instruments/#behavior-biology-environment). The QC processes outlined below describes processes for all HBCD Workgroups ([see details](https://hbcdstudy.org/workgroups-and-committees/)) unless otherwise specified:
+
+<div id="source-pheno" class="source-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Source QC</span>
+  <a class="anchor-link" href="#source-pheno" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>TO DO</p>
+</div>
+
+<div id="ingestion-pheno" class="ingestion-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Ingestion QC</span>
+  <a class="anchor-link" href="#ingestion-pheno" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>TO DO</p> 
+</div>
+
+<div id="preproc-pheno" class="preproc-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Pre-Processing QC</span>
+  <a class="anchor-link" href="#preproc-pheno" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+TO DO
+</div>
+
+<div id="proc-pheno" class="proc-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Processed Data QC</span>
+  <a class="anchor-link" href="#proc-pheno" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>Processed data QC is performed via Tableau Dashboards for the majority of Workgroups:
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr><td><b>Tableau Dashboards</b></td>
+<td>Behavior and Caregiver-Child Interaction<br>
+Neurocognition & Language<br>
+Novel Technologies & Wearables<br>
+Physical Health<br>
+Pregnancy & Exposure, including Substance Use<br>
+Social & Environmental Determinants</td></tr>
+<tr><td><b>HST Dashboards</b></td>
+<td>Biospecimens & Omics<br></td></tr>
+<tr><td><b>Ripple</b></td>
+<td>Geocoding & Linking External Data<br>
+Transitions in Care</td></tr>
+</tbody>
+</table>
+<p>Based on the processed data QC performed via these dashboards, subject matter experts (SMEs) submit monthly reports to Lasso and Lasso connects relevant parties when issues are reported. QC performed on all data <strong>and</strong> site-specific data include: 
+<ul>
+<li>Missingness   </li>
+<li>Protocol compliance </li>
+<li>Instrument scoring?</li>
+</ul>
+</div>
+
+<div id="pre-release-pheno" class="pre-release-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Pre-Release/Analysis QC</span>
+  <a class="anchor-link" href="#pre-release-pheno" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>Pre-release data QC is performed via the Lasso Pre-Release System and involves the following:
+<ul>
+<li>All SMEs review data in Lasso pre-release system and sign off prior to public release  <ul>
+<li>Instrument scoring, mins/maxes/BIV   </li>
+<li>Missingness/Shadow matrix  </li>
+<li>Data dictionary</li>
+</ul>
+</li>
+<li>Biostatistics WG also reviews data and data dictionary in Lasso pre-release system  <ul>
+<li>mins/maxes/BIV  </li>
+<li>Descriptives (means, frequencies)  </li>
+<li>Missingness/Shadow matrix   </li>
+<li>Data dictionary</li>
+</ul>
+</li>
+</ul>
+</p>
+</div>
 
 
 ## MRI & MRS Data
@@ -179,6 +291,7 @@ A complete imaging session consists of the following valid series:
 ## EEG Data
 
 See [here](https://docs.hbcdstudy.org/latest/instruments/eeg/#quality-control)
+
 
 
 
