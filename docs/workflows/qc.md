@@ -31,16 +31,7 @@ The majority HBCD data are provided as tabulated data, including [demographics &
 </ol>
 </p>
 <p><b>Handling of Special Codes in Standardized method</b><br>
-<ol>
-<li>Confirm all non-response fields use standardized special codes:  <ol>
-<li>-999 for Don’t know  </li>
-<li>-888 for Refused to answer  </li>
-<li>-777 for Not applicable</li>
-</ol>
-</li>
-<li>Ensure that these codes are not used in computed fields or date fields.</li>
-</ol>
-</p>
+All non-response fields are confirmed to be using <span class="tooltip">standardized special codes<span class="tooltiptext">-999 = Don’t know<br> -888 = Refused to answer<br> -777 = Not applicable</span></span>. In addition, checks are made to ensure that these codes are not used in computed or date fields.</p>
 <p><b>Variable Naming Convention Checks</b><br>
 Parse all variable names and validate against naming rules outlined <a href="https://docs.hbcdstudy.org/latest/access/metadata/#naming-conventions">here</a>.
 </p>
@@ -61,18 +52,8 @@ To enforce completeness without violating participant autonomy, we treat all fie
 <i><strong>Implementation Steps:</strong></i>
 <li><p>For every field (except calculated fields or system-generated timestamps), ensure there is a valid value recorded.  </p>
 </li>
-<li><p>Include explicit non-answer choices in all multiple choice or dropdown fields:</p>
-<ol>
-<li><p>&quot;-999, Don't know&quot;</p>
-</li>
-<li><p>&quot;-888, Refused to answer&quot;</p>
-</li>
-<li><p>&quot;–777, Not applicable&quot; (used when appropriate)</p>
-</li>
-</ol>
-</li>
-<li><p>No Open Text F Limiting Use of Open Text Fields</p>
-</li>
+<li>Include explicit <span class="tooltip">non-answer choices<span class="tooltiptext">-999 = "Don’t know"<br> -888 = "Refused to answer"<br> -777 = "Not applicable"</span></span> in all multiple choice or dropdown fields.</li>
+<li>No Open Text F Limiting Use of Open Text Fields.</li>
 </ol>
 </p>
 <p>We limit the use of open-ended text fields to ensure consistency, support downstream coding, and reduce manual data cleaning.
