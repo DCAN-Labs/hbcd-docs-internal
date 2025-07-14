@@ -384,7 +384,7 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 
 ## EEG Data
 
-Electroencephalography data include both file-based and tabulated data for the tasks listed on the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/#eeg).
+Electroencephalography data include both file-based and tabulated data for the tasks listed on the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/#eeg). EEG QC procedures shared with users are outlined in the HBCD Docs site [here](https://docs.hbcdstudy.org/latest/instruments/eeg/#quality-control). For a detailed description of QC procedures in the HBCD Study EEG protocol, refer to [Fox et al., 2024](https://doi.org/10.1016/j.dcn.2024.101447).
 
 <div id="source-eeg" class="source-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -416,7 +416,7 @@ Electroencephalography data include both file-based and tabulated data for the t
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>TO DO</p> 
+<p>Both study sites and the EEG Core team use an EEG Quality Control dashboard developed by LORIS to access and monitor incoming EEG data and QC metrics, such as retained epochs and line noise levels. Outputs from the HBCD-Maryland Analysis of Developmental EEG (<a href="https://hbcd-made.readthedocs.io/en/latest/">HBCD-MADE</a>) pipeline, which handles preprocessing and data cleaning, are also integrated into the dashboard. These outputs include key metrics like outlier statistics for specific task epochs (<a href="https://doi.org/10.1111/psyp.13580">Debnath et al., 2020</a>). Regular site-specific check-ins and troubleshooting are conducted to ensure consistent protocol adherence and data quality across sites.</p>
 </div>
 
 <div id="preproc-eeg" class="preproc-banner" onclick="toggleCollapse(this)">
