@@ -56,23 +56,22 @@ To enforce completeness without violating participant autonomy, we treat all fie
 <li>No Open Text F Limiting Use of Open Text Fields.</li>
 </ol>
 </p>
-<p>We limit the use of open-ended text fields to ensure consistency, support downstream coding, and reduce manual data cleaning.
+<p>We limit the use of open-ended text fields to ensure consistency, support downstream coding, and reduce manual data cleaning.</p>
+<p><i><strong>Rules Applied:</strong></i>
 <ol>
-<i><strong>Rules Applied:</strong></i>
-<li><p>Open text fields are prohibited by default unless:  </p>
+<li>Open text fields are prohibited by default unless:
 <ul>
 <li>The field is explicitly designed for collecting novel, uncategorized input.  </li>
 <li>The data cannot be anticipated or meaningfully pre-coded at design time.</li>
 </ul>
 </li>
-<li><p>When text fields are used, they are treated as temporary input capture mechanisms for refining structured options.</p>
-</li>
-<li><p>For any field that begins as free text:  </p>
-<ul>
-<li>Responses are monitored regularly.  </li>
-<li>Common answers are converted into predefined choices in future versions of the form.  </li>
-<li>A structured dropdown or radio field is created, with an &quot;Other, specify&quot; option.</li>
-</ul>
+<li>When text fields are used, they are treated as temporary input capture mechanisms for refining structured options.</li>
+<li>For any field that begins as free text:
+  <ul>
+  <li>Responses are monitored regularly.  </li>
+  <li>Common answers are converted into predefined choices in future versions of the form.  </li>
+  <li>A structured dropdown or radio field is created, with an &quot;Other, specify&quot; option.</li>
+  </ul>
 </li>
 </ol>
 </p>
