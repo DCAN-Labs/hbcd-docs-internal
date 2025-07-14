@@ -384,7 +384,7 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 
 ## EEG Data
 
-These data include both file-based and tabulated data for the instruments listed on the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/#eeg).
+Electroencephalography data include both file-based and tabulated data for the tasks listed on the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/#eeg).
 
 <div id="source-eeg" class="source-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
