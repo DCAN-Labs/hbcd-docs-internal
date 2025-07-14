@@ -60,7 +60,6 @@ Parse all variable names and validate against naming rules:
 </p>
 <p><b>Required Fields</b><br>
 To enforce completeness without violating participant autonomy, we treat all fields as *required* by including standardized non-answer response options. This enables complete data collection while capturing legitimate missingness and refusals.<br>
-
 <ol>
 <i><strong>Implementation Steps:</strong></i>
 <li><p>For every field (except calculated fields or system-generated timestamps), ensure there is a valid value recorded.  </p>
@@ -155,7 +154,6 @@ Social & Environmental Determinants</td></tr>
 Transitions in Care</td></tr>
 </tbody>
 </table>
-
 Workgroups review the processed data via these QC Dashboards. QC performed on all data <strong>and</strong> site-specific data include: 
 <ul>
 <li>Missingness   </li>
@@ -167,7 +165,6 @@ Workgroups review the processed data via these QC Dashboards. QC performed on al
     <img src="../images/qc/tableau.png" alt="Tableau" width="80%" height="auto" class="center">
     <p style="text-align: center;"><i>Example of Data View on Tableau Dashboard</i></p>
 </div>
-
 <p><b>Monthly Reports Submitted to Lasso</b><br>
 Based on the processed data QC performed via these dashboards, subject matter experts (SMEs) submit monthly reports to Lasso and Lasso connects relevant parties when issues are reported.</p>
 </div>
@@ -387,8 +384,78 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 
 ## EEG Data
 
-See [here](https://docs.hbcdstudy.org/latest/instruments/eeg/#quality-control)
+Integrate content from [here](https://docs.hbcdstudy.org/latest/instruments/eeg/#quality-control) 
 
+<div id="source-eeg" class="source-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Source QC</span>
+  <a class="anchor-link" href="#source-eeg" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>After EEG acquisition, quality control checks are performed using <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application installed at all HBCD sites. These checks are immediately provided to the user to ensure the data&#39;s integrity and usability. The process includes:</p>
+<ul>
+<li>Verifying event markers in the EEG data to confirm all required events are accurately recorded.</li>
+<li>Ensuring the setup for stimulus presentation and EEG data acquisition adheres to the study protocol.</li>
+<li>Inspecting electrode impedances to ensure they are within acceptable limits.</li>
+<li>Detecting multiple task runs and incomplete recordings.</li>
+<li>Confirming the use of correct E-Prime task versions.</li>
+</ul>
+</div>
 
+<div id="ingestion-eeg" class="ingestion-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Ingestion QC</span>
+  <a class="anchor-link" href="#ingestion-eeg" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>TO DO</p> 
+</div>
 
+<div id="preproc-eeg" class="preproc-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Pre-Processing QC</span>
+  <a class="anchor-link" href="#preproc-eeg" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+TO DO
+</div>
 
+<div id="proc-eeg" class="proc-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Processed Data QC</span>
+  <a class="anchor-link" href="#proc-eeg" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+TO DO
+</div>
+
+<div id="pre-release-eeg" class="pre-release-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="text">Pre-Release/Analysis QC</span>
+  <a class="anchor-link" href="#pre-release-eeg" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+TO DO
+</div>
+
+<br>
