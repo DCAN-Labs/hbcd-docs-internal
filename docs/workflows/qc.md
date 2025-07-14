@@ -206,25 +206,35 @@ Based on the processed data QC performed via these dashboards, subject matter ex
 
 These data include both file-based and tabulated data for the instruments listed on the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/#mri).
 
-<div id="source" class="source-banner" onclick="toggleCollapse(this)">
+<div id="source-mri" class="source-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Source QC</span>
-  <a class="anchor-link" href="#source" title="Copy link">
+  <a class="anchor-link" href="#source-mri" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Validations performed during MRI & MRS data acquisition include:<br>
- • XXXX<br>
- • XXXX<br></p>
+<p><b>Validations performed during MRI &amp; MRS data acquisition include:</b>
+<ol>
+  <li>FIRMM during acquisition</li>
+  <li>FIONA
+    <ul>
+      <li>Updates patient ID by cross-checking against the Loris database to ensure no manual entry errors at the scanner</li>
+      <li>Checks all expected files are on the transfer device</li>
+      <li>Checks that all files were sent properly to their destination (UCSD: all DICOMs; UMN/HST: MRS/k-space)</li>
+    </ul>
+  </li>
+  <li>Data Tracking: Documents time of all data transfers at any given stage and confirms transfer completion, monitored in Loris</li>
+</ol>
+</p>
 </div>
 
-<div id="ingestion" class="ingestion-banner" onclick="toggleCollapse(this)">
+<div id="ingestion-mri" class="ingestion-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Ingestion QC</span>
-  <a class="anchor-link" href="#ingestion" title="Copy link">
+  <a class="anchor-link" href="#ingestion-mri" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -267,10 +277,10 @@ A complete imaging session consists of the following valid series:
 </p>
 </div>
 
-<div id="preproc" class="preproc-banner" onclick="toggleCollapse(this)">
+<div id="preproc-mri" class="preproc-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Pre-Processing QC</span>
-  <a class="anchor-link" href="#preproc" title="Copy link">
+  <a class="anchor-link" href="#preproc-mri" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -308,7 +318,6 @@ A complete imaging session consists of the following valid series:
 </tr>
 </tbody>
 </table>
-
 <p><b>MANUAL QC</b> (see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#manual-review">HBCD Data Release Docs</a> for full details)<br>
 Data is selection for manual review based on multivariate prediction and Bayesian classifier. Manual review involves scoring images based on severity of the following artifacts:
 </p>
@@ -344,10 +353,10 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 </table>
 </div>
 
-<div id="proc" class="proc-banner" onclick="toggleCollapse(this)">
+<div id="proc-mri" class="proc-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Processed Data QC</span>
-  <a class="anchor-link" href="#proc" title="Copy link">
+  <a class="anchor-link" href="#proc-mri" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -357,10 +366,10 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 <p>QC is performed on processed MR data using BrainSwipes - please see full details <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#brainswipes">here</a>. BrainSwipes results will be included for diffusion MRI in the future, but the QSIPrep pipeline generates fairly robust automated QC metrics - see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#dwi-qc">Automated QC for Processed Diffusion Data</a> for details.</p>
 </div>
 
-<div id="pre-release" class="pre-release-banner" onclick="toggleCollapse(this)">
+<div id="pre-release-mri" class="pre-release-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="text">Pre-Release/Analysis QC</span>
-  <a class="anchor-link" href="#pre-release" title="Copy link">
+  <a class="anchor-link" href="#pre-release-mri" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -373,7 +382,6 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 • Analysis of processed functional data based on <a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">tabulated data</a> derived from XCP-D file-based outputs: blah blah<br>
 • Diffusion derivatives from QSIPrep: analysis of automated QC metric distributions
 </p>
-
 <p>See <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#qc-summary-statistics">QC Summary Statistics</a> on the HBCD Data Release Docs for some findings from these analysis shared with users.</p>
 </div>
 
