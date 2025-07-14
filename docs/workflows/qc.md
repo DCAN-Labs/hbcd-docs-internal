@@ -60,7 +60,8 @@ TO DO
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Processed data QC is performed via Tableau Dashboards for the majority of Workgroups:
+<p><b>QC Dashboards</b><br>
+Processed data QC is performed via the following QC Dashboards for the Workgroups indicated:
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr><td><b>Tableau Dashboards</b></td>
@@ -77,12 +78,21 @@ Social & Environmental Determinants</td></tr>
 Transitions in Care</td></tr>
 </tbody>
 </table>
-<p>Based on the processed data QC performed via these dashboards, subject matter experts (SMEs) submit monthly reports to Lasso and Lasso connects relevant parties when issues are reported. QC performed on all data <strong>and</strong> site-specific data include: 
+
+Workgroups review the processed data via these QC Dashboards. QC performed on all data <strong>and</strong> site-specific data include: 
 <ul>
 <li>Missingness   </li>
 <li>Protocol compliance </li>
 <li>Instrument scoring?</li>
-</ul>
+</ul></p>
+
+<div class="img-with-text">
+    <img src="../images/qc/tableau.png" alt="Tableau" width="80%" height="auto" class="center">
+    <p style="text-align: center;"><i>Example of Data View on Tableau Dashboard</i></p>
+</div>
+
+<p><b>Monthly Reports Submitted to Lasso</b><br>
+Based on the processed data QC performed via these dashboards, subject matter experts (SMEs) submit monthly reports to Lasso and Lasso connects relevant parties when issues are reported.</p>
 </div>
 
 <div id="pre-release-pheno" class="pre-release-banner" onclick="toggleCollapse(this)">
