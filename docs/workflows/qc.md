@@ -167,7 +167,7 @@ Based on the processed data QC performed via these dashboards, subject matter ex
 
 <div id="pre-release-pheno" class="pre-release-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="text">Pre-Release/Analysis QC</span>
+  <span class="text">Pre-Release Final QC</span>
   <a class="anchor-link" href="#pre-release-pheno" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -380,7 +380,7 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 
 <div id="pre-release-mri" class="pre-release-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="text">Pre-Release/Analysis QC</span>
+  <span class="text">Pre-Release Final QC</span>
   <a class="anchor-link" href="#pre-release-mri" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -468,7 +468,7 @@ Electroencephalography data include both file-based and tabulated data for the t
 
 <div id="pre-release-eeg" class="pre-release-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="text">Pre-Release/Analysis QC</span>
+  <span class="text">Pre-Release Final QC</span>
   <a class="anchor-link" href="#pre-release-eeg" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
