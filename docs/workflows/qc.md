@@ -143,7 +143,7 @@ Workgroups review the processed data via these QC Dashboards. QC performed on al
     <p style="text-align: center;"><i>Example of Data View on Tableau Dashboard</i></p>
 </div>
 <p><b>Monthly Reports Submitted to Lasso</b><br>
-Based on the processed data QC performed via these dashboards, subject matter experts (SMEs) submit monthly reports to Lasso and Lasso connects relevant parties when issues are reported.</p>
+Based on the processed data QC performed via these dashboards, subject matter experts (SMEs) submit monthly reports to Lasso where they describe, for each issue identified, whether it impacts one variable or the entire instrument, the number of participants impacted, and at what level the required fix will need to incur (including data entry/collection at the site, scoring correction from LORIS or RedCAP, and/or new data import). After review, Lasso connects the Workgroup with the relevant parties to resolve them.</p>
 </div>
 
 <div id="pre-release-pheno" class="pre-release-banner" onclick="toggleCollapse(this)">
