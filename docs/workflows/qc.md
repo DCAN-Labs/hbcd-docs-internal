@@ -172,6 +172,11 @@ Based on the processed data QC performed via these dashboards, subject matter ex
 </ul>
 </li>
 </ul>
+
+<div class="img-with-text">
+    <img src="../images/qc/lasso.png" alt="lasso" width="80%" height="auto" class="center">
+    <p style="text-align: center;"><i>Example of Data View on Lasso Pre-Release System</i></p>
+</div>
 </p>
 </div>
 
