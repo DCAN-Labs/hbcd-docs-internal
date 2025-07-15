@@ -21,50 +21,35 @@ The majority HBCD data are provided as tabulated data, including [demographics &
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Source QC is 
-<p><b>Range Checks</b><br>
+<p>Source QC is performed via REDCap, Ripple, and LORIS (automated) when site staff or participants enter the data. The following checks are performed:</p>
+
+<p><b>Input Validation</b><br>
+<p><strong>Range Checks</strong><br>
+In cases where plausible ranges are established for a given study instrument, the following checks are performed:
 <ol>
-<li>Work with the Workgroups to establish plausible ranges  </li>
 <li>Enforce numeric bounds for all fields with defined minimum or maximum values.  </li>
 <li>Automatically verify all date fields fall within protocol-defined windows.  </li>
 <li>For derived fields (e.g., BMI), ensure source values are present and valid.  </li>
 <li>Identify and flag inconsistent or reversed event sequences (e.g., follow-up before baseline).</li>
 </ol>
 </p>
-<p><b>Handling of Special Codes in Standardized method</b><br>
-All non-response fields are confirmed to be using <span class="tooltip">standardized special codes<span class="tooltiptext">-999 = Don’t know<br> -888 = Refused to answer<br> -777 = Not applicable</span></span>. In addition, checks are made to ensure that these codes are not used in computed or date fields.</p>
-<p><b>Variable Naming Convention Checks</b><br>
-Parse all variable names and validate against naming rules outlined <a href="https://docs.hbcdstudy.org/latest/access/metadata/#naming-conventions">here</a>.
-</p>
-<p><b>Branching Logic Enforcement</b><br>
+
+<p><strong>Required Fields</strong><br>
+To enforce completeness without violating participant autonomy, we treat all fields as *required* by including standardized non-answer response options. This enables complete data collection while capturing legitimate missingness and refusals.
 <ol>
-<li>Extract branching logic from the REDCap Data Dictionary.  </li>
-<li>For each field with logic conditions:  <ol>
-<li>Identify records where data are present but the logic condition is not satisfied.  </li>
-<li>Flag violations where fields are populated outside of their visible state.</li>
-</ol>
-</li>
-<li>For required fields inside conditional blocks, ensure logic has been triggered if data are expected.</li>
-</ol>
-</p>
-<p><b>Required Fields</b><br>
-To enforce completeness without violating participant autonomy, we treat all fields as *required* by including standardized non-answer response options. This enables complete data collection while capturing legitimate missingness and refusals.<br>
-<ol>
-<i><strong>Implementation Steps:</strong></i>
-<li><p>For every field (except calculated fields or system-generated timestamps), ensure there is a valid value recorded.  </p>
-</li>
+<i>Implementation Steps:</i>
+<li>For every field (except calculated fields or system-generated timestamps), ensure there is a valid value recorded.</li>
 <li>Include explicit <span class="tooltip">non-answer choices<span class="tooltiptext">-999 = "Don’t know"<br> -888 = "Refused to answer"<br> -777 = "Not applicable"</span></span> in all multiple choice or dropdown fields.</li>
-<li>No Open Text F Limiting Use of Open Text Fields.</li>
+<li>No Open Text F Limiting Use of Open Text Fields. We limit the use of open-ended text fields to ensure consistency, support downstream coding, and reduce manual data cleaning.</li>
 </ol>
-</p>
-<p>We limit the use of open-ended text fields to ensure consistency, support downstream coding, and reduce manual data cleaning.</p>
-<p><i><strong>Rules Applied:</strong></i>
+
+<i>Rules Applied:</i>
 <ol>
 <li>Open text fields are prohibited by default unless:
-<ul>
-<li>The field is explicitly designed for collecting novel, uncategorized input.  </li>
-<li>The data cannot be anticipated or meaningfully pre-coded at design time.</li>
-</ul>
+  <ul>
+  <li>The field is explicitly designed for collecting novel, uncategorized input.  </li>
+  <li>The data cannot be anticipated or meaningfully pre-coded at design time.</li>
+  </ul>
 </li>
 <li>When text fields are used, they are treated as temporary input capture mechanisms for refining structured options.</li>
 <li>For any field that begins as free text:
@@ -76,6 +61,29 @@ To enforce completeness without violating participant autonomy, we treat all fie
 </li>
 </ol>
 </p>
+
+<p><strong>Handling of Special Codes in Standardized method</strong><br>
+All non-response fields are confirmed to be using <span class="tooltip">standardized special codes<span class="tooltiptext">-999 = Don’t know<br> -888 = Refused to answer<br> -777 = Not applicable</span></span>. In addition, checks are made to ensure that these codes are not used in computed or date fields.</p>
+
+<p><b>Branching Logic Enforcement</b><br>
+<ol>
+<li>Extract branching logic from the REDCap Data Dictionary.  </li>
+<li>For each field with logic conditions:
+  <ul>
+  <li>Identify records where data are present but the logic condition is not satisfied.  </li>
+  <li>Flag violations where fields are populated outside of their visible state.</li>
+  </ul>
+</li>
+<li>For required fields inside conditional blocks, ensure logic has been triggered if data are expected.</li>
+</ol>
+</p>
+
+<p><b>Table & Variable Naming Schema Standardization & Validation</b><br>
+All variable names are parsed and validated against naming rules outlined <a href="https://docs.hbcdstudy.org/latest/access/metadata/#naming-conventions">here</a>.
+</p>
+
+<p><b>Staff/Site Violation Corrections & Workflow Improvements</b></p>
+<p><b>Some non-complex scoring</b></p>
 </div>
 
 <div id="ingestion-pheno" class="ingestion-banner" onclick="toggleCollapse(this)">
