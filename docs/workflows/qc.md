@@ -389,7 +389,12 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 <div class="collapsible-content">
 <p>Prior to inclusion in the release data, the following checks are performed:</p>
 <p><b>Structural MRI</b><br> 
-Analysis of processed structural data is based on <a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">tabulated data</a> derived from XCP-D file-based outputs. R-based scripts examined the distribution of region of interest (ROI) anatomical MRI structural measures from the cortical gordon parcellation and Freesurfer subcortical segmentation. The cortical gordon parcellation comprised 333 ROIs  measuring cortical thickness, surface area, and curvature per ROI. The Freesurfer subcortical segmentation comprised 19 ROIs measuring volume. BrainSwipes visual QC outputs were used to examine the amount of anatomical data passing data quality and its effect on the underlying distributions. In addition, demographic effects associated with  structure were also examined. We found that over 90% of data passes BrainSwipes QC, indicating that the data available in the release is of high quality. Furthermore, we found no significant effects of data quality, nor associations with demographic factors. While reassuring, this indicates that effects of demographics and data quality cannot be detected with this sample size.</p> 
+Processed structural MRI data, based on <a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">tabulated data</a> derived from XCP-D outputs, were analyzed using R-based scripts. ROI-level measures included:
+<ul>
+<li><strong>Cortical metrics</strong> (Gordon parcellation, 333 ROIs): cortical thickness, surface area, and curvature</li>
+<li><strong>Subcortical metrics</strong> (Freesurfer segmentation, 19 ROIs): volume</li>
+</ul>
+BrainSwipes visual QC outputs were used to assess data quality and its impact on the underlying distributions. We also evaluated associations with demographic variables. Over 90% of data passed BrainSwipes QC, indicating high overall quality. No significant effects of data quality or associations with demographic factors were detected, suggesting either minimal confounding or limited statistical power to detect such effects in the current sample.</p> 
 <p><b>Functional MRI</b><br> 
 QC performed for processed resting-state fMRI (rs-fMRI) data, derived from XCP-D outputs, is performed on both <a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">tabulated</a> and file-based data. Analyses leverage R-based scripts and BrainSwipes QC outputs.</p>
 <p><strong><i>Tabulated Data</i></strong><br>
