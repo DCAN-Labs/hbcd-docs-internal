@@ -475,7 +475,7 @@ Electroencephalography data include both file-based and tabulated data for the t
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The EEG Workgroup performs a final review of the data to be included in the release via the Lasso Pre-Release System and provides official sign off that the data is ready for release.</p>
+<p>The EEG Workgroup performs a final review of the data to be included in the release via the Lasso Pre-Release System and provides official sign off that the data is ready for release. Known issues are documented as needed on the HBCD Data Release Docs site.</p>
 </div>
 
 <br>
