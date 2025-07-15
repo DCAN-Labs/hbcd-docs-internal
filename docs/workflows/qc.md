@@ -5,7 +5,7 @@ The following outlines the 5 stages of QC performed for all study data:
 ![](images/qc/qc-overview.png)
 
 Additional and critical automated checks include: Scoring calculation checks, notifications and full workflow to site staff and
-clinical oversight if there is a clinically relevant finding (ie: endorsed suicidality,partner violence etc..)
+clinical oversight if there is a clinically relevant finding (i.e. endorsed suicidality, partner violence, etc.).
 
 ## Behavior, Biology, & Environment
 
