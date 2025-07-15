@@ -88,7 +88,14 @@ To enforce completeness without violating participant autonomy, we treat all fie
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>TO DO</p> 
+<p>Ingestion QC is performed when data is transferred from the capture source (i.e. REDCap or Ripple) to the central LORIS repository. It includes:<br>
+<ul>
+<li>Data tracking via LORIS and RBA Dashboards</li>
+<li>Ensuring what was saved in REDCap was successfully transferred to LORIS via scripts in ETL/LORIS</li>
+<li>Transfer warnings/errors via scripts in ETL/LORIS</li>
+<li>Completeness warnings via LORIS launch pad</li>
+</ul>
+</p> 
 </div>
 
 <div id="preproc-pheno" class="preproc-banner" onclick="toggleCollapse(this)">
