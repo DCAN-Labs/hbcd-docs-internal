@@ -4,9 +4,6 @@ The following outlines the 5 stages of QC performed for all study data:
 
 ![](images/qc/qc-overview.png)
 
-Additional and critical automated checks include: Scoring calculation checks, notifications and full workflow to site staff and
-clinical oversight if there is a clinically relevant finding (i.e. endorsed suicidality, partner violence, etc.).
-
 ## Behavior, Biology, & Environment
 
 The majority HBCD data are provided as tabulated data, including [demographics & visit information](https://docs.hbcdstudy.org/latest/instruments/#demo) and [study instruments](https://docs.hbcdstudy.org/latest/instruments/#behavior-biology-environment). The QC processes outlined below describes processes for all HBCD Workgroups ([see details](https://hbcdstudy.org/workgroups-and-committees/)) unless otherwise specified:
@@ -157,7 +154,7 @@ Workgroups review the processed data via these QC Dashboards. QC performed on al
 <ul>
 <li>Missingness   </li>
 <li>Protocol compliance </li>
-<li>Instrument scoring?</li>
+<li>Scoring calculation checks</li>
 </ul></p>
 
 <div class="img-with-text">
