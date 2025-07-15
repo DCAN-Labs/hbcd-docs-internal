@@ -191,7 +191,6 @@ Based on the processed data QC performed via these dashboards, subject matter ex
 </ul>
 </li>
 </ul>
-
 <div class="img-with-text">
     <img src="../images/qc/lasso.png" alt="lasso" width="80%" height="auto" class="center">
     <p style="text-align: center;"><i>Example of Data View on Lasso Pre-Release System</i></p>
@@ -476,7 +475,7 @@ Electroencephalography data include both file-based and tabulated data for the t
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-TO DO
+<p>The EEG Workgroup performs a final review of the data to be included in the release via the Lasso Pre-Release System and provides official sign off that the data is ready for release.</p>
 </div>
 
 <br>
