@@ -6,7 +6,7 @@ The following outlines the 5 stages of QC performed for all study data:
 
 ## Behavior, Biology, & Environment
 
-The majority HBCD data are provided as tabulated data, including [demographics & visit information](https://docs.hbcdstudy.org/latest/instruments/#demo) and [study instruments](https://docs.hbcdstudy.org/latest/instruments/#behavior-biology-environment). The QC processes outlined below describes processes for all HBCD Workgroups ([see details](https://hbcdstudy.org/workgroups-and-committees/)) unless otherwise specified:
+The majority HBCD data are provided as tabulated data, including [demographics & visit information](https://docs.hbcdstudy.org/latest/instruments/#demo) and [study instruments](https://docs.hbcdstudy.org/latest/instruments/#behavior-biology-environment). The QC processes outlined below describes processes for all HBCD Workgroups ([see details](https://hbcdstudy.org/workgroups-and-committees/)) unless otherwise specified. Note that, in the context of tabulated instrument data, "processing" refers to scoring the data where applicable.
 
 <div id="source-pheno" class="source-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
