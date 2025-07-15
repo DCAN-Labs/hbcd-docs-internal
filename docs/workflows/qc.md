@@ -21,6 +21,7 @@ The majority HBCD data are provided as tabulated data, including [demographics &
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+<p>Source QC is 
 <p><b>Range Checks</b><br>
 <ol>
 <li>Work with the Workgroups to establish plausible ranges  </li>
@@ -100,7 +101,13 @@ To enforce completeness without violating participant autonomy, we treat all fie
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-TO DO
+<p>Pre-processing QC involves the following:<br>
+<ul>
+<li>Outlier identification: performed by Workgroups via Tableau and DQT (Dictionary Query Tool)</li>
+<li>Data entry corrections: performed by site staff, generally after being notified by HDCC or Workgroups</li>
+<li>Answer distribution and missingness checks: performed by Workgroups via Tableau and DQT (Dictionary Query Tool)</li>
+<li>Complex Scoring (i.e. look up tables and other scoring that REDCap does not do): performed by LORIS</li>
+</ul>
 </div>
 
 <div id="proc-pheno" class="proc-banner" onclick="toggleCollapse(this)">
