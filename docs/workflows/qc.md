@@ -361,7 +361,21 @@ Data is selection for manual review based on multivariate prediction and Bayesia
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>QC is performed on processed MR data using BrainSwipes - please see full details <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#brainswipes">here</a>. BrainSwipes results will be included for diffusion MRI in the future, but the QSIPrep pipeline generates fairly robust automated QC metrics - see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#dwi-qc">Automated QC for Processed Diffusion Data</a> for details.</p>
+<p>QC is performed on processed MR data using several automated and manual approaches:</p>
+<p><ul><b>AUTOMATED QC</b>
+<li>Diffusion: QSIPrep pipeline generates fairly robust automated QC metrics - see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#dwi-qc">Automated QC for Processed Diffusion Data</a> for details.</li>
+<li>BOLD: XCP-D pipeline generates several QC measurements and QC reports (e.g., Framewise displacement
+  <ul>
+  <li>Rules here:</li>
+  </ul>
+  </li>
+<li>MRIQC:</li>
+</ul>
+</p>
+<p><ul><b>MANUAL QC</b>
+<li>BrainSwipes - please see full details <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#brainswipes">here</a>. BrainSwipes results will be included for diffusion MRI in the future.</li>
+</ul>
+</p>
 </div>
 
 <div id="pre-release-mri" class="pre-release-banner" onclick="toggleCollapse(this)">
