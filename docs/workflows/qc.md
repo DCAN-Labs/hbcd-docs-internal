@@ -368,7 +368,7 @@ Data is selection for manual review based on multivariate prediction and Bayesia
   <li>Rules here:</li>
   </ul>
   </li>
-<li>MRIQC:</li>
+<li>MRIQC extracts image quality metrics from structural (T1w and T2w) and functional MRI - <a href="https://docs.hbcdstudy.org/latest/datacuration/derivatives/#mriqc-mriqc">see details</a>.</li>
 </ul>
 </p>
 <p><ul><b>MANUAL QC</b>
