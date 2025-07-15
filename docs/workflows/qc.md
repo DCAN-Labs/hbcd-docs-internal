@@ -389,11 +389,17 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 </div>
 <div class="collapsible-content">
 <p>Prior to inclusion in the release data, the following checks are performed:</p>
-<p> 
-• Analysis of processed structural data based on <a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">tabulated data</a> derived from XCP-D file-based outputs: blah blah<br>
-• Analysis of processed functional data based on <a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">tabulated data</a> derived from XCP-D file-based outputs: blah blah<br>
-• Diffusion derivatives from QSIPrep: analysis of automated QC metric distributions
-</p>
+<p><b>Structural MRI</b><br> 
+Analysis of processed structural data is based on <a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">tabulated data</a> derived from XCP-D file-based outputs. R-based scripts examined the distribution of region of interest (ROI) anatomical MRI structural measures from the cortical gordon parcellation and Freesurfer subcortical segmentation. The cortical gordon parcellation comprised 333 ROIs  measuring cortical thickness, surface area, and curvature per ROI. The Freesurfer subcortical segmentation comprised 19 ROIs measuring volume. BrainSwipes visual QC outputs were used to examine the amount of anatomical data passing data quality and its effect on the underlying distributions. In addition, demographic effects associated with  structure were also examined. We found that over 90% of data passes BrainSwipes QC, indicating that the data available in the release is of high quality. Furthermore, we found no significant effects of data quality, nor associations with demographic factors. While reassuring, this indicates that effects of demographics and data quality cannot be detected with this sample size.</p> 
+<p><b>Functional MRI</b><br> 
+<strong><i>Tabulated Data</i></strong><br>
+Analysis of processed functional data based on <a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">tabulated data</a> derived from XCP-D file-based outputs is as follows: R-based scripts examined the alff and reho rs-fMRI measures from the cortical gordon parcellation and Freesurfer subcortical segmentation, totaling 352 ROIs.  BrainSwipes visual QC outputs were used to examine the amount of rs-fMRI  data passing data quality and its effect on the underlying distributions.  We found that BrainSwipes QC showed a linear trend, indicating that the QC metric here reflects more of a continuous measure. Examining effects of data quality, we find that data quality effects are most minimized when the %pass for BrainSwipes QC exceeds 70%.</p> 
+<strong><i>File-Based Data</i></strong><br>
+Analysis of processed functional data based on imaging data derived from XCP-D file-based outputs is as follows: R-based scripts examined the mean connectivity maps  of region of interest by region of interest  (ROIxROI) functional connectivity  rs-fMRI measures from the cortical gordon parcellation and Freesurfer subcortical segmentation, totaling 352 ROIs.  BrainSwipes visual QC outputs were used to examine the amount of rs-fMRI  data passing data quality and its effect on the underlying mean connectivity maps.  We found that BrainSwipes QC showed a linear trend, indicating that the QC metric here reflects more of a continuous measure. Examining effects of data quality, we find that data quality effects are most minimized when the % pass for BrainSwipes QC exceeds 70%.</p> 
+<p><b>Diffusion MRI</b><br> 
+Based on diffusion derivatives from QSIPrep, analysis of automated QC metric distributions was conducted by the diffusion Workgroup.</p>
+<p><b>Magnetic Resonance Spectroscopy (MRS)</b><br> 
+MRS QC is based on tabulated data-derived distributions of Osprey derivatives. R-based scripts examine distributions of MRS-derived measures from tabulated data.</p> 
 <p>See <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#qc-summary-statistics">QC Summary Statistics</a> on the HBCD Data Release Docs for some findings from these analysis shared with users.</p>
 </div>
 
@@ -431,7 +437,7 @@ Electroencephalography data include both file-based and tabulated data for the t
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Both study sites and the EEG Core team use an EEG Quality Control dashboard developed by LORIS to access and monitor incoming EEG data and QC metrics, such as retained epochs and line noise levels. Outputs from the HBCD-Maryland Analysis of Developmental EEG (<a href="https://hbcd-made.readthedocs.io/en/latest/">HBCD-MADE</a>) pipeline, which handles preprocessing and data cleaning, are also integrated into the dashboard. These outputs include key metrics like outlier statistics for specific task epochs (<a href="https://doi.org/10.1111/psyp.13580">Debnath et al., 2020</a>). Regular site-specific check-ins and troubleshooting are conducted to ensure consistent protocol adherence and data quality across sites.</p>
+<p>Both study sites and the EEG Core team use an EEG Quality Control dashboard developed by LORIS to access and monitor incoming EEG data and QC metrics, such as retained epochs and line noise levels.</p>
 </div>
 
 <div id="preproc-eeg" class="preproc-banner" onclick="toggleCollapse(this)">
@@ -457,7 +463,7 @@ Electroencephalography data include both file-based and tabulated data for the t
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-TO DO
+<p>Outputs from the HBCD-Maryland Analysis of Developmental EEG (<a href="https://hbcd-made.readthedocs.io/en/latest/">HBCD-MADE</a>) pipeline, which handles preprocessing and data cleaning, are also integrated into the dashboard. These outputs include key metrics like outlier statistics for specific task epochs (<a href="https://doi.org/10.1111/psyp.13580">Debnath et al., 2020</a>). Regular site-specific check-ins and troubleshooting are conducted to ensure consistent protocol adherence and data quality across sites.</p>
 </div>
 
 <div id="pre-release-eeg" class="pre-release-banner" onclick="toggleCollapse(this)">
