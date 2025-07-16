@@ -201,7 +201,7 @@ Based on the processed data QC performed via these dashboards, subject matter ex
 
 ## MRI & MRS Data
 
-These data include both file-based and tabulated data for the instruments listed on the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/#mri).
+These data include both file-based and tabulated data for the instruments listed on the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/#mri). Also see a the workflow diagram for raw data QC, which spans ingestion and pre-processing QC stages and outlines the feedback loops, under Data Processing Workflows [here](data-proc-wf.md#magnetic-resonance-raw-data-quality-control). 
 
 <div id="source-mri" class="source-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -368,7 +368,6 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 <div class="collapsible-content">
 <p>QC is performed on processed MR data using several automated and manual approaches:</p>
 <p><ul><b>AUTOMATED QC</b>
-
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
     <tbody>
     <tr>
