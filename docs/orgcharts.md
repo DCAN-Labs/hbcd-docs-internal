@@ -310,7 +310,7 @@ flowchart TB
 ```
 
 ### Center for Developmental NeuroImaging
-🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
+   
 The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
 
 <div style="width: 80%; margin: 0 auto;">
@@ -333,7 +333,7 @@ flowchart LR
 </div>
 
 ### Health Sciences Technology
-🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
+  
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Electronic Health Records (EHR)*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
 
 <div style="width: 90%; margin: 0 auto;">
@@ -422,7 +422,7 @@ flowchart LR
 </div>
 
 ### MIDB Informatics Hub & MSI
-🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
+   
 The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://midb.umn.edu/research/informatics) and [Minnesota Supercomputing Institute (MSI)](https://msi.umn.edu/) at UMN provide the following services to the HBCD study: *System Administration*, *Loris Hosting*, *Computing*, *Processing*, and *Data Sharing*.
 
 ```mermaid
