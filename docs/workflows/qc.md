@@ -138,6 +138,7 @@ Processed data QC is performed via the following QC Dashboards for the Workgroup
 <tbody>
 <tr><td><b>Tableau Dashboards</b></td>
 <td>Behavior and Caregiver-Child Interaction<br>
+Biostatistics<br>
 Neurocognition & Language<br>
 Novel Technologies & Wearables<br>
 Physical Health<br>
