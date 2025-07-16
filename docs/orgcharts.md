@@ -6,7 +6,6 @@ See [Basecamp](https://3.basecamp.com/5032058/buckets/35843816/todolists/8584532
 
 ----------------------------
 
-
 ## Overview
 The larger organizational structure of the HBCD Data Coordinating Center (HDCC) is as follows, with the HDCC Co-Directors listed at the top and the institutions/organizations listed below- ***click on individual teams to be directed to their organizational charts***. Please visit the [HDCC page](https://hbcdstudy.org/hbcd-data-coordinating-center/) of the HBCD Study website for a full list of all HDCC members. 
 
@@ -115,28 +114,28 @@ flowchart TB
 
 ### Subcontractor Details
 
+🚧 **UPDATE FOLLOWING DESCRIPTIONS - these are first drafts and need to be reviewed/corrected by SMEs** 🚧
+
 #### DEAP
-🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
 
 The Data Exploration and Analysis Portal (DEAP) is a cloud-based platform developed to facilitate secure, efficient, and user-friendly access to large-scale, multimodal research datasets. Originally designed for the Adolescent Brain Cognitive Development (ABCD) Study, DEAP supports visual exploration of NBDC data dictionaries as well as data download.
 
 #### FIONA 
-🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
 
 FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance data transfer node (DTN) designed to move large scientific datasets quickly and securely across research networks. For the HBCD Study, it is used to transfer data from the HBCD Study sites to the HDCC following well-established procedures for quality control and processing.
 
 #### REDCap 
-🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧
 
 [REDCap](https://projectredcap.org/) (Research Electronic Data Capture) is a secure, widely used web-based application designed to support data capture for research studies, particularly in academic and clinical environments. In the HBCD Study, REDCap serves as a central tool for managing behavioral, clinical, and demographic data across the multiple participating sites. While neuroimaging and biosensor data flow through pipelines involving systems like FIONA, REDCap is used for more structured, form-based data collected during assessments and visits.
 
 ## Lasso
+
 [Lasso](https://www.lassoinformatics.com/) is a lightweight RESTful API framework developed to integrate external tools and pipelines with LORIS. Lasso offers a user-friendly, (NIST) 800-171-compliant data management platform particularly suited for large-scale multi-modal data. Lasso serves several core functions in HDCC, including developing dashboards for ongoing workgroup data QC and being the official public data release platform for the HBCD Study.
 
 ![](lasso2.svg)
 
 ## LORIS
-🚧 **UPDATE FOLLOWING DESCRIPTION** 🚧      
+ 
 [LORIS](https://mcin.ca/technology/loris/) (Longitudinal Online Research and Imaging System), developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)), is the core data management system for the HBCD Study. It is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
 
 ```mermaid
