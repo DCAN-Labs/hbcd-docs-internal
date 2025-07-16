@@ -408,7 +408,7 @@ We analyzed ALFF and ReHo measures from the Gordon cortical parcellation and Fre
 <p><strong><i>File-Based Imaging Data</i></strong><br>
 We also analyzed mean ROI-to-ROI functional connectivity maps from the same parcellations (Gordon cortical and Freesurfer subcortical, 352 ROIs). As with tabulated data, BrainSwipes QC outputs were used to assess data quality and its influence on connectivity estimates. A similar linear relationship was observed, and QC effects were minimized when only data with at least a 70% pass rate were included.</p> 
 <p><b>Diffusion MRI</b><br> 
-Based on diffusion derivatives from QSIPrep, analysis of automated QC metric distributions was conducted by the diffusion Workgroup.</p>
+The dMRI Workgroup checked that automated QC metrics such as the neighboring DWI correlation (NDC) increase in preprocessed data compared to raw data. They also compared the Contrast to Noise Ratio (CNR) for each shell to the CNR values for the ABCC QSIPrep outputs, checking for approximately similar ranges per vendor. Postprocessed (QSIRecon) data was checked to be sure that most bundles were recovered for most scans.</p>
 <p><b>Magnetic Resonance Spectroscopy (MRS)</b><br> 
 MRS QC is based on tabulated data-derived distributions of Osprey derivatives. R-based scripts examine distributions of MRS-derived measures from tabulated data.</p> 
 <p>See <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#qc-summary-statistics">QC Summary Statistics</a> on the HBCD Data Release Docs for some findings from these analysis shared with users.</p>
