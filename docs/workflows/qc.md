@@ -22,7 +22,7 @@ The majority HBCD data are provided as tabulated data, including [demographics &
 
 <p><b>Input Validation</b><br>
 <p><strong>Range Checks</strong><br>
-In cases where plausible ranges are established for a given study instrument, the following checks are performed:
+LORIS/Lasso works with Workgroups to establish plausible value ranges (e.g. see <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#filtered-field-values">Filtered Field Values</a> for R1.0). For these variables, the following checks are performed:
 <ol>
 <li>Enforce numeric bounds for all fields with defined minimum or maximum values.  </li>
 <li>Automatically verify all date fields fall within protocol-defined windows.  </li>
