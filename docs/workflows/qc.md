@@ -452,11 +452,11 @@ Electroencephalography data include both file-based and tabulated data for the t
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>For ingestion QC, the EEG2BIDS Wizard facilitates the transfer of data to both a dedicated secure computing environment (SCE) housed at the University of Minnesota and to an Amazon Web Storage (ASW) S3 bucket:<p>
+<p>The EEG2BIDS Wizard additionally facilitates the transfer of data to both a dedicated SCE (secure computing environment) housed at the University of Minnesota (UMN) and to an ASW S3 bucket, each of which facilitates different aspects of QC:<p>
 
-<p><b>SCE</b><br>The Wizard handles the transfer of .mff files containing raw EEG, metadata, and personally identifiable information (PII) to the SCE. PII includes video recordings of the EEG session and photographs of EEG cap placement from multiple angles, which are used to rate quality of cap placement according to a rubric.</p>
+<p><b>UMN SCE</b><br>The Wizard handles the transfer of <code>.mff</code> files containing raw EEG, metadata, and personally identifiable information (PII) to the SCE. PII includes video recordings of the EEG session and photographs of EEG cap placement from multiple angles, which are used to rate quality of cap placement according to a rubric.</p>
 
-<p><b>ASW S3 bucket</b><br>A subset of data consisting of .set files, E-Prime stimuli files and associated non-PII metadata are uploaded to an AWS S3 bucket curated by the LORIS data management system where they are stored for subsequent processing and analysis. The contents of the ASW S3 bucket are represented on the EEG Quality Control dashboard, which is used by both study sites and the EEG Core team to access and monitor incoming EEG data and QC metrics. such as retained epochs and line noise levels.</p>
+<p><b>ASW S3 bucket</b><br>A subset of data consisting of <code>.set</code> files, E-Prime stimuli files and associated non-PII metadata are uploaded to an AWS S3 bucket curated by the LORIS data management system where they are stored for subsequent processing and analysis. The contents of the ASW S3 bucket are represented on the EEG Quality Control dashboard, which is used by both study sites and the EEG Core team to access and monitor incoming EEG data and QC metrics, such as retained epochs and line noise levels.</p>
 </div>
 
 <div id="preproc-eeg" class="preproc-banner" onclick="toggleCollapse(this)">
