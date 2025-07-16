@@ -67,7 +67,7 @@ All non-response fields are confirmed to be using <span class="tooltip">standard
 <li>Extract branching logic from the REDCap Data Dictionary.  </li>
 <li>For each field with logic conditions:
   <ul>
-  <li>Identify records where data are present but the logic condition is not satisfied.  </li>
+  <li>Identify records where data are present, but the logic condition is not satisfied.  </li>
   <li>Flag violations where fields are populated outside of their visible state.</li>
   </ul>
 </li>
@@ -113,13 +113,32 @@ All variable names are parsed and validated against naming rules outlined <a hre
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Pre-processing QC involves the following:<br>
-<ul>
-<li>Outlier identification: performed by Workgroups via Tableau and DQT (Dictionary Query Tool)</li>
-<li>Data entry corrections: performed by site staff, generally after being notified by HDCC or Workgroups</li>
-<li>Answer distribution and missingness checks: performed by Workgroups via Tableau and DQT (Dictionary Query Tool)</li>
-<li>Complex Scoring (i.e. look up tables and other scoring that REDCap does not do): performed by LORIS</li>
-</ul>
+<p>Pre-processing QC involves the following, performed by the indicated parties responsible:
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <th></th>
+  <th>Responsible Party</th>
+</thead>
+<tbody>
+<tr>
+  <td><b>Outlier identification</b></td>
+  <td>Workgroups (via Tableau and <span class="tooltip">DQT<span class="tooltiptext">Dictionary Query Tool</span></span>)</td>
+</tr>
+<tr>
+  <td><b>Data entry corrections</b></td>
+  <td>HBCD Study Site Staff (generally after being notified by HDCC or WGs)</td>
+</tr>
+<tr>
+  <td><b>Answer distribution and missingness checks</b></td>
+  <td>Workgroups (via Tableau and <span class="tooltip">DQT<span class="tooltiptext">Dictionary Query Tool</span></span>)</td>
+</tr>
+<tr>
+  <td><span class="tooltip"><b>Complex scoring not handled in REDCap</b><span class="tooltiptext">e.g. look up tables</span></span></td>
+  <td>LORIS</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 <div id="proc-pheno" class="proc-banner" onclick="toggleCollapse(this)">
