@@ -430,6 +430,16 @@ Electroencephalography data include both file-based and tabulated data for the t
 <li>Detecting multiple task runs and incomplete recordings.</li>
 <li>Confirming the use of correct E-Prime task versions.</li>
 </ul>
+
+<p>In addition to the post-acquisition checks performed by the EEG2BIDS Wizard, site staff complete an <strong>EEG Acquisition Form</strong> directly in LORIS at the time of the EEG visit to document key procedural and quality control details. This form captures real-time information on net placement, signal quality, and task completion status, ensuring protocol adherence and supporting downstream data evaluation.</p>
+
+<p>The EEG Acquisition Form records:
+<ul>
+<li><strong>Net placement checks</strong> ensure electrodes are correctly positioned, using anatomical landmarks (nasion, inion, preauricular points), and that cables are secured and symmetrical. Visual inspections are done for impedance and physical fit.</li>
+<li><strong>EEG acquisition QC</strong> documents whether impedances are within acceptable limits, the number of channels with good signal, and issues like high noise or signal dropout.</li>
+<li><strong>For each phase</strong> (e.g., Resting State, VEP Task), the system tracks whether data were acquired, any problems occurred, and whether the segments are marked for review or re-collection.</li>
+</ul>
+</p>
 </div>
 
 <div id="ingestion-eeg" class="ingestion-banner" onclick="toggleCollapse(this)">
