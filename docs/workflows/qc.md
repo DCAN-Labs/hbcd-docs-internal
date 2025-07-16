@@ -380,7 +380,7 @@ Data is selection for manual review based on multivariate prediction and Bayesia
         <td style="word-wrap: break-word; white-space: normal;">XCP-D generates several QC measurements (e.g., Framewise displacement) and visual QC reports.</td>
     </tr>   
     <tr>
-        <td><strong>MRIQC Utility</strong></td>
+        <td><strong>MRIQC utility</strong></td>
         <td style="word-wrap: break-word; white-space: normal;">MRIQC extracts image quality metrics, provided in the release data, from structural and functional MRI - <a href="https://docs.hbcdstudy.org/latest/datacuration/derivatives/#mriqc-mriqc">see details</a>.</td>
     </tr>    
 </tbody>
