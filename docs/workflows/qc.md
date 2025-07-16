@@ -157,7 +157,6 @@ Workgroups review the processed data via these QC Dashboards. QC performed on al
 <li>Protocol compliance </li>
 <li>Scoring calculation checks</li>
 </ul></p>
-
 <div class="img-with-text">
     <img src="../images/qc/tableau.png" alt="Tableau" width="80%" height="auto" class="center">
     <p style="text-align: center;"><i>Example of Data View on Tableau Dashboard</i></p>
@@ -176,7 +175,7 @@ Based on the processed data QC performed via these dashboards, subject matter ex
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Pre-release data QC is performed via the Lasso Pre-Release System and involves the following:
+<p>LORIS and Lasso obtain final sign-off from Workgroups on datasets in their release-ready form with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a> and known issues are documented. Pre-release data QC is performed via the Lasso Pre-Release System and involves the following:
 <ul>
 <li>All SMEs review data in Lasso pre-release system and sign off prior to public release  <ul>
 <li>Instrument scoring, mins/maxes/BIV   </li>
