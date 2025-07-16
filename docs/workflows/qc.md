@@ -217,8 +217,7 @@ These data include both file-based and tabulated data for the instruments listed
 During MRI acquisition, <a href="https://firmm.readthedocs.io/">FIRMM</a> software is used to monitor motion and phantom scans are used to monitor drift. In addition, there are QC processes in place for when sites receive upgrades or a new scanner.</p>
 <p>
 <ul>
-<b>FIONA</b><br>
-Validations performed by FIONA include:
+<b>FIONA</b>
   <li>Updates patient ID by cross-checking against the Loris database to ensure no manual entry errors at the scanner</li>
   <li>Checks all expected files are on the transfer device</li>
   <li>Checks that all files were sent properly to their destination (UCSD: all DICOMs; UMN/HST: MRS/k-space)</li>
