@@ -213,8 +213,14 @@ These data include both file-based and tabulated data for the instruments listed
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>Acquisition</b><br>
-During MRI acquisition, <a href="https://firmm.readthedocs.io/">FIRMM</a> software is used to monitor motion and phantom scans are used to monitor drift. In addition, there are QC processes in place for when sites receive upgrades or a new scanner.</p>
+<p>
+<ul>
+<b>Acquisition</b>
+<li>fBIRN phantom scans, used to monitor drift, occur either every day that an HBCD subject is acquired or weekly if the former is impractical. In terms of acquisition, the main criteria should be consistency. Sites with multiple operators are directed to discuss positioning of the phantom to make sure it is done in a similar manner every time. For weight, entering 100 lbs every time is recommended (age and height not needed).</li>
+<li><a href="https://firmm.readthedocs.io/">FIRMM</a> software is used to monitor motion during acquisition.</li>
+<li>There are additional QC processes in place for when sites receive upgrades or a new scanner.</li>
+</ul>
+</p>
 <p>
 <ul>
 <b>FIONA</b>
@@ -223,9 +229,9 @@ During MRI acquisition, <a href="https://firmm.readthedocs.io/">FIRMM</a> softwa
   <li>Checks that all files were sent properly to their destination (UCSD: all DICOMs; UMN/HST: MRS/k-space)</li>
 </ul>
 </p>
-<p><b>Data Tracking</b><br>
-Data tracking is used to document time of all data transfers at any given stage and confirm transfer completion, monitored in Loris.
-</p>
+<p><ul><b>Data Tracking</b><br>
+The time of all data transfers at any given stage is documented and transfer completion is confirmed (monitored in LORIS).
+</ul></p>
 </div>
 
 <div id="ingestion-mri" class="ingestion-banner" onclick="toggleCollapse(this)">
