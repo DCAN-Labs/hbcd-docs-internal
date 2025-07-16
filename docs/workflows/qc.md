@@ -37,7 +37,7 @@ To enforce completeness without violating participant autonomy, we treat all fie
 <i>Implementation Steps:</i>
 <li>For every field (except calculated fields or system-generated timestamps), ensure there is a valid value recorded.</li>
 <li>Include explicit <span class="tooltip">non-answer choices<span class="tooltiptext">-999 = "Don’t know"<br> -888 = "Refused to answer"<br> -777 = "Not applicable"</span></span> in all multiple choice or dropdown fields.</li>
-<li>No Open Text F Limiting Use of Open Text Fields. We limit the use of open-ended text fields to ensure consistency, support downstream coding, and reduce manual data cleaning.</li>
+<li>Limit use of open text fields to ensure consistency, support downstream coding, and reduce manual data cleaning.</li>
 </ol>
 
 <i>Rules Applied:</i>
