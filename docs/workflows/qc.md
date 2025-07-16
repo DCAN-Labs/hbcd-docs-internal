@@ -113,7 +113,7 @@ All variable names are parsed and validated against naming rules outlined <a hre
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Pre-processing QC involves the following, performed by the indicated parties responsible:
+<p>Pre-processing QC involves the following, performed by the indicated parties responsible:</p>
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
