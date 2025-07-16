@@ -368,14 +368,23 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 <div class="collapsible-content">
 <p>QC is performed on processed MR data using several automated and manual approaches:</p>
 <p><ul><b>AUTOMATED QC</b>
-<li>Diffusion: QSIPrep pipeline generates fairly robust automated QC metrics - see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#dwi-qc">Automated QC for Processed Diffusion Data</a> for details.</li>
-<li>BOLD: XCP-D pipeline generates several QC measurements and QC reports (e.g., Framewise displacement
-  <ul>
-  <li>Rules here:</li>
-  </ul>
-  </li>
-<li>MRIQC extracts image quality metrics, provided in the release data, from structural and functional MRI - <a href="https://docs.hbcdstudy.org/latest/datacuration/derivatives/#mriqc-mriqc">see details</a>.</li>
-</ul>
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+    <tbody>
+    <tr>
+        <td><strong>QSIPrep pipeline (dMRI)</strong></td>
+        <td style="word-wrap: break-word; white-space: normal;">QSIPrep produces robust QC metrics - see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#dwi-qc">Automated QC for Processed Diffusion Data</a> for details.</td>
+    </tr>
+    <tr>
+        <td><strong>XCP-D pipeline (sMRI/fMRI)</strong></td>
+        <td style="word-wrap: break-word; white-space: normal;">XCP-D generates several QC measurements (e.g., Framewise displacement) and visual QC reports.</td>
+    </tr>   
+    <tr>
+        <td><strong>MRIQC Utility</strong></td>
+        <td style="word-wrap: break-word; white-space: normal;">MRIQC extracts image quality metrics, provided in the release data, from structural and functional MRI - <a href="https://docs.hbcdstudy.org/latest/datacuration/derivatives/#mriqc-mriqc">see details</a>.</td>
+    </tr>    
+</tbody>
+</table>
 </p>
 <p><ul><b>MANUAL QC</b>
 <li>BrainSwipes - please see full details <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#brainswipes">here</a>. BrainSwipes results will be included for diffusion MRI in the future.</li>
