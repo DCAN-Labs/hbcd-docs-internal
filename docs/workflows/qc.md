@@ -213,18 +213,19 @@ These data include both file-based and tabulated data for the instruments listed
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>Validations performed during MRI &amp; MRS data acquisition include:</b>
-<ol>
-  <li>FIRMM during acquisition</li>
-  <li>FIONA
-    <ul>
-      <li>Updates patient ID by cross-checking against the Loris database to ensure no manual entry errors at the scanner</li>
-      <li>Checks all expected files are on the transfer device</li>
-      <li>Checks that all files were sent properly to their destination (UCSD: all DICOMs; UMN/HST: MRS/k-space)</li>
-    </ul>
-  </li>
-  <li>Data Tracking: Documents time of all data transfers at any given stage and confirms transfer completion, monitored in Loris</li>
-</ol>
+<p><b>Acquisition</b><br>
+During MRI acquisition, <a href="https://firmm.readthedocs.io/">FIRMM</a> software is used to monitor motion and phantom scans are used to monitor drift. In addition, there are QC processes in place for when sites receive upgrades or a new scanner.</p>
+<p>
+<ul>
+<b>FIONA</b><br>
+Validations performed by FIONA include:
+  <li>Updates patient ID by cross-checking against the Loris database to ensure no manual entry errors at the scanner</li>
+  <li>Checks all expected files are on the transfer device</li>
+  <li>Checks that all files were sent properly to their destination (UCSD: all DICOMs; UMN/HST: MRS/k-space)</li>
+</ul>
+</p>
+<p><b>Data Tracking</b><br>
+Data tracking is used to document time of all data transfers at any given stage and confirm transfer completion, monitored in Loris.
 </p>
 </div>
 
