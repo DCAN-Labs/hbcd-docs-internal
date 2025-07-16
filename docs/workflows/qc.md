@@ -376,7 +376,7 @@ Data is selection for manual review based on multivariate prediction and Bayesia
     </tr>
     <tr>
         <td><strong>XCP-D pipeline (sMRI/fMRI)</strong></td>
-        <td style="word-wrap: break-word; white-space: normal;">XCP-D generates several QC measurements (e.g., Framewise displacement) and visual QC reports.</td>
+        <td style="word-wrap: break-word; white-space: normal;">XCP-D produces several QC metrics and visual reports to aid in data evaluation. One key metric is <a href="https://xcp-d.readthedocs.io/en/latest/workflows.html#framewise-displacement-calculation-and-thresholding">framewise displacement</a> (FD), which quantifies head motion across the scan. For each run, the amount of low-motion data, based on an FD threshold of 0.3 mm, is calculated. Only runs with at least 210 seconds of low-motion data are retained in the final outputs.</td>
     </tr>   
     <tr>
         <td><strong>MRIQC utility</strong></td>
@@ -412,7 +412,7 @@ BrainSwipes visual QC outputs were used to assess data quality and its impact on
 <p><b>Functional MRI</b><br> 
 QC performed for processed resting-state fMRI (rs-fMRI) data, derived from XCP-D outputs, is performed on both <a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">tabulated</a> and file-based data. Analyses leverage R-based scripts and BrainSwipes QC outputs.</p>
 <p><strong><i>Tabulated Data</i></strong><br>
-We analyzed ALFF and ReHo measures from the Gordon cortical parcellation and Freesurfer subcortical segmentation, covering a total of 352 ROIs. BrainSwipes visual QC was used to assess the proportion of rs-fMRI data meeting quality thresholds and to evaluate its impact on distributional characteristics. The QC metric exhibited a linear trend, supporting its interpretation as a continuous measure. Examining effects of data quality, we find that data quality effects are most minimized when the %pass for BrainSwipes QC exceeds 70%.</p> 
+We analyzed ALFF and ReHo measures from the Gordon cortical parcellation and Freesurfer subcortical segmentation, covering a total of 352 ROIs. BrainSwipes visual QC was used to assess the proportion of rs-fMRI data meeting quality thresholds and to evaluate its impact on distributional characteristics. The QC metric exhibited a linear trend, supporting its interpretation as a continuous measure. Examining effects of data quality, we find that data quality effects are most minimized when the pass rate for BrainSwipes QC exceeds 70%.</p> 
 <p><strong><i>File-Based Imaging Data</i></strong><br>
 We also analyzed mean ROI-to-ROI functional connectivity maps from the same parcellations (Gordon cortical and Freesurfer subcortical, 352 ROIs). As with tabulated data, BrainSwipes QC outputs were used to assess data quality and its influence on connectivity estimates. A similar linear relationship was observed, and QC effects were minimized when only data with at least a 70% pass rate were included.</p> 
 <p><b>Diffusion MRI</b><br> 
