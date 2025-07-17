@@ -22,7 +22,8 @@ The majority HBCD data are provided as tabulated data, including [demographics &
 
 <p><b>Input Validation</b><br>
 <p><strong>Range Checks</strong>
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris">LORIS</a></span><br>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#loris">LORIS</a>
+</span><br>
 LORIS works with Workgroups to establish plausible value ranges (e.g. see <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#filtered-field-values">Filtered Field Values</a> for R1.0). For these variables, the following checks are performed:
 <ol>
 <li>Enforce numeric bounds for all fields with defined minimum or maximum values.  </li>
@@ -33,8 +34,10 @@ LORIS works with Workgroups to establish plausible value ranges (e.g. see <a hre
 </p>
 
 <p><strong>Required Fields</strong>
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#redcap">REDCap</a></span>
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#ripple">Ripple</a></span><br> 
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#redcap">REDCap</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#ripple">Ripple</a>
+</span><br>
 To enforce completeness without violating participant autonomy, we treat all fields as *required* by including standardized non-answer response options. This enables complete data collection while capturing legitimate missingness and refusals.
 <ol>
 <i>Implementation Steps:</i>
