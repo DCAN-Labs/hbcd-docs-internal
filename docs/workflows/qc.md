@@ -18,11 +18,12 @@ The majority HBCD data are provided as tabulated data, including [demographics &
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Source QC is performed via REDCap, Ripple, and LORIS (automated) when site staff or participants enter the data. The following checks are performed:</p>
+<p>Automated source QC is performed via <a href="../../orgcharts/#redcap">REDCap</a>, <a href="../../orgcharts/#ripple">Ripple</a>, and <a href="../../orgcharts/#loris">LORIS</a> when site staff or participants enter the data. The following checks are performed:</p>
 
 <p><b>Input Validation</b><br>
-<p><strong>Range Checks</strong><br>
-LORIS/Lasso works with Workgroups to establish plausible value ranges (e.g. see <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#filtered-field-values">Filtered Field Values</a> for R1.0). For these variables, the following checks are performed:
+<p><strong>Range Checks</strong>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris">LORIS</a></span><br>
+LORIS works with Workgroups to establish plausible value ranges (e.g. see <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#filtered-field-values">Filtered Field Values</a> for R1.0). For these variables, the following checks are performed:
 <ol>
 <li>Enforce numeric bounds for all fields with defined minimum or maximum values.  </li>
 <li>Automatically verify all date fields fall within protocol-defined windows.  </li>
@@ -31,7 +32,9 @@ LORIS/Lasso works with Workgroups to establish plausible value ranges (e.g. see 
 </ol>
 </p>
 
-<p><strong>Required Fields</strong><br>
+<p><strong>Required Fields</strong>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#redcap">REDCap</a></span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#ripple">Ripple</a></span><br> 
 To enforce completeness without violating participant autonomy, we treat all fields as *required* by including standardized non-answer response options. This enables complete data collection while capturing legitimate missingness and refusals.
 <ol>
 <i>Implementation Steps:</i>
@@ -62,7 +65,8 @@ To enforce completeness without violating participant autonomy, we treat all fie
 <p><strong>Handling of Special Codes in Standardized method</strong><br>
 All non-response fields are confirmed to be using <span class="tooltip">standardized special codes<span class="tooltiptext">-999 = Don’t know<br> -888 = Refused to answer<br> -777 = Not applicable</span></span>. In addition, checks are made to ensure that these codes are not used in computed or date fields.</p>
 
-<p><b>Branching Logic Enforcement</b><br>
+<p><b>Branching Logic Enforcement</b>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#redcap">REDCap</a></span><br>
 <ol>
 <li>Extract branching logic from the REDCap Data Dictionary.  </li>
 <li>For each field with logic conditions:
