@@ -1,10 +1,12 @@
-# HBCD Quality Control: 5 Stages
+# HBCD Quality Control
 
-The following outlines the 5 stages of QC performed for all study data:
+## Pre-Release QC: 5 Stages
+
+The following outlines the 5 stages of QC performed for all study data prior to release. Below we outline the specific details of each stage associated with tabulated [Behavior, Biology, & Environment](#behavior-biology-environment) data and file-based data for [MRI & MRS](#mri-mrs-data) and [EEG](#eeg-data).
 
 ![](images/qc/qc-overview.png)
 
-## Behavior, Biology, & Environment
+### Behavior, Biology, & Environment
 
 The majority HBCD data are provided as tabulated data, including [demographics & visit information](https://docs.hbcdstudy.org/latest/instruments/#demo) and [study instruments](https://docs.hbcdstudy.org/latest/instruments/#behavior-biology-environment). The QC processes outlined below describe processes for all HBCD Workgroups ([see details](https://hbcdstudy.org/workgroups-and-committees/)) unless otherwise specified. Note that, in the context of tabulated instrument data, "processing" refers to scoring the data where applicable. Instrument-specific QC procedures are documented on the HBCD Data Release Docs site under the <strong>Administration & Quality Control</strong> section for each instrument page (e.g. see <a href="https://docs.hbcdstudy.org/latest/instruments/bcgi/ecpromis/#administration-quality-control">here</a>). 
 
@@ -253,7 +255,7 @@ Lasso obtains final sign-off from Workgroups on datasets in their release-ready 
 </div>
 
 
-## MRI & MRS Data
+### MRI & MRS Data
 
 These data include both file-based and tabulated data for the instruments listed on the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/#mri). Also see the workflow diagram for raw data QC, which spans ingestion and pre-processing QC stages and outlines the feedback loops, under Data Processing Workflows [here](data-proc-wf.md#magnetic-resonance-raw-data-quality-control). 
 
@@ -504,7 +506,7 @@ MRS QC is based on tabulated data-derived distributions of Osprey derivatives. R
 <p>See <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#qc-summary-statistics">QC Summary Statistics</a> on the HBCD Data Release Docs for some findings from these analysis shared with users.</p>
 </div>
 
-## EEG Data
+### EEG Data
 
 Electroencephalography data include both file-based and tabulated data for the tasks listed on the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/#eeg). EEG QC procedures shared with users are outlined in the HBCD Docs site [here](https://docs.hbcdstudy.org/latest/instruments/eeg/#quality-control). For a detailed description of QC procedures in the HBCD Study EEG protocol, refer to [Fox et al., 2024](https://doi.org/10.1016/j.dcn.2024.101447).
 
@@ -618,6 +620,23 @@ A subset of data consisting of <code>.set</code> files, E-Prime stimuli files an
 </span>
 </p>
 <p>The EEG Workgroup performs a final review of the data to be included in the release via the Lasso Pre-Release System and provides official sign off that the data is ready for release. Known issues are documented as needed on the HBCD Data Release Docs site.</p>
+</div>
+
+## Post-Release QC
+
+After data is released, additional QC is performed via updates made based on reported issues by users:
+
+<div style="position: relative; text-align: center; margin: 2em auto; max-width: 800px;">
+  <img src="../images/qc/bg-cycle.svg"
+       style="width: 40%; height: auto; display: block; opacity: 0.7;"
+       class="center">
+  <div style="position: absolute; top: 50%; left: 50%;
+              transform: translate(-50%, -50%);
+              padding: 1em; border-radius: 10px; max-width: 90%;">
+    <p>Users submit tickets via <a href="https://nbdc-datashare.lassoinformatics.com/help-center">Lasso Help Center</a><br>
+    <p>Tickets triaged to relevant SMEs<br>
+    <p>Data issues are documented on <a href="https://docs.hbcdstudy.org/latest/changelog/knownissues/">Release Docs site</a> and resolved for future release</p>
+  </div>
 </div>
 
 <br>
