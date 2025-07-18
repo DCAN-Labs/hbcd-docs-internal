@@ -268,6 +268,14 @@ These data include both file-based and tabulated data for the instruments listed
 </div>
 <div class="collapsible-content">
 <p>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#fiona">FIONA</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#loris">LORIS</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><b>Site Staff</b>
+</span>
+</p>
+<p>
 <ul>
 <b>Acquisition</b>
 <li>fBIRN phantom scans, used to monitor drift, occur either every day that an HBCD subject is acquired or weekly if the former is impractical. In terms of acquisition, the main criteria should be consistency. Sites with multiple operators are directed to discuss positioning of the phantom to make sure it is done in a similar manner every time. For weight, entering 100 lbs every time is recommended (age and height not needed).</li>
@@ -298,6 +306,12 @@ The time of all data transfers at any given stage is documented and transfer com
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+<p>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute">JCVI</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#health-sciences-technology">HST</a>
+</span>
+</p>
 <p>As outlined in the <a href="../data-proc-wf">data processing workflow diagram</a>, raw data are sent via FIONA to UMN SCE/HST and HBCD Central/JCVI. Data are checked for protocal compliance and completion - see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#automated-qc">HBCD Data Release Docs</a> for full details. In summary:</p> 
 <p><b>Protocol compliance</b><br>
 This is based on extraction of information from DICOM headers to identify common issues and protocol deviations (e.g.  missing files or incorrect patient orientation). Criteria include whether key imaging parameters, such as voxel size or repetition time, match the expected values for a given scanner.</p> 
@@ -344,6 +358,10 @@ A complete imaging session consists of the following valid series:
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+<p>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute">JCVI</a>
+</span>
+</p>
 <p><b>AUTOMATED QC</b> (see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#automated-qc">HBCD Data Release Docs</a> for full details)</p>
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
 <thead>
@@ -422,6 +440,8 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 <div class="collapsible-content">
 <p>QC is performed on processed MR data using several automated and manual approaches:</p>
 <p><ul><b>AUTOMATED QC</b>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="https://hbcdstudy.org/workgroups-and-committees/">MRI Workgroups</a>
+</span>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
     <tbody>
     <tr>
@@ -440,6 +460,8 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 </table>
 </p>
 <p><ul><b>MANUAL QC</b>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/center-for-developmental-neuroimaging">CDNI</a>
+</span>
 <li>BrainSwipes - please see full details <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#brainswipes">here</a>. BrainSwipes results will be included for diffusion MRI in the future.</li>
 </ul>
 </p>
@@ -456,22 +478,28 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 </div>
 <div class="collapsible-content">
 <p>Prior to inclusion in the release data, the following checks are performed:</p>
-<p><b>Structural MRI</b><br> 
+<p><b>Structural MRI</b>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/center-for-developmental-neuroimaging">CDNI</a>
+</span><br> 
 Processed structural MRI data, based on <a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">tabulated data</a> derived from XCP-D outputs, were analyzed using R-based scripts. ROI-level measures included:
 <ul>
 <li><strong>Cortical metrics</strong> (Gordon parcellation, 333 ROIs): cortical thickness, surface area, and curvature</li>
 <li><strong>Subcortical metrics</strong> (Freesurfer segmentation, 19 ROIs): volume</li>
 </ul>
 BrainSwipes visual QC outputs were used to assess data quality and its impact on the underlying distributions. We also evaluated associations with demographic variables. Over 90% of data passed BrainSwipes QC, indicating high overall quality. No significant effects of data quality or associations with demographic factors were detected, suggesting either minimal confounding or limited statistical power to detect such effects in the current sample.</p> 
-<p><b>Functional MRI</b><br> 
+<p><b>Functional MRI</b>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/center-for-developmental-neuroimaging">CDNI</a>
+</span><br> 
 QC performed for processed resting-state fMRI (rs-fMRI) data, derived from XCP-D outputs, is performed on both <a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">tabulated</a> and file-based data. Analyses leverage R-based scripts and BrainSwipes QC outputs.</p>
 <p><strong><i>Tabulated Data</i></strong><br>
 We analyzed ALFF and ReHo measures from the Gordon cortical parcellation and Freesurfer subcortical segmentation, covering a total of 352 ROIs. BrainSwipes visual QC was used to assess the proportion of rs-fMRI data meeting quality thresholds and to evaluate its impact on distributional characteristics. The QC metric exhibited a linear trend, supporting its interpretation as a continuous measure. Examining effects of data quality, we find that data quality effects are most minimized when the pass rate for BrainSwipes QC exceeds 70%.</p> 
 <p><strong><i>File-Based Imaging Data</i></strong><br>
 We also analyzed mean ROI-to-ROI functional connectivity maps from the same parcellations (Gordon cortical and Freesurfer subcortical, 352 ROIs). As with tabulated data, BrainSwipes QC outputs were used to assess data quality and its influence on connectivity estimates. A similar linear relationship was observed, and QC effects were minimized when only data with at least a 70% pass rate were included.</p> 
-<p><b>Diffusion MRI</b><br> 
+<p><b>Diffusion MRI</b>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="https://hbcdstudy.org/workgroups-and-committees/">dMRI Workgroup</a></span><br> 
 The dMRI Workgroup checked that automated QC metrics such as the neighboring DWI correlation (NDC) increase in preprocessed data compared to raw data. They also compared the Contrast to Noise Ratio (CNR) for each shell to the CNR values for the ABCC QSIPrep outputs, checking for approximately similar ranges per vendor. Postprocessed (QSIRecon) data was checked to be sure that most bundles were recovered for most scans.</p>
-<p><b>Magnetic Resonance Spectroscopy (MRS)</b><br> 
+<p><b>Magnetic Resonance Spectroscopy (MRS)</b>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="https://hbcdstudy.org/workgroups-and-committees/">MRS Workgroup</a></span><br> 
 MRS QC is based on tabulated data-derived distributions of Osprey derivatives. R-based scripts examine distributions of MRS-derived measures from tabulated data.</p> 
 <p>See <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#qc-summary-statistics">QC Summary Statistics</a> on the HBCD Data Release Docs for some findings from these analysis shared with users.</p>
 </div>
@@ -490,6 +518,13 @@ Electroencephalography data include both file-based and tabulated data for the t
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+<p>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland">UMD EEG Data Core
+</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#loris">LORIS</a>
+</span>
+</p>
 <p>After EEG acquisition, quality control checks are performed using <a href="https://github.com/aces/eeg2bids">EEG2BIDS Wizard</a>, a custom MATLAB application installed at all HBCD sites. These checks are immediately provided to staff to ensure the data's integrity and usability. The process includes:</p>
 <ul>
 <li>Verifying event markers in the EEG data to confirm all required events are accurately recorded.</li>
@@ -498,9 +533,7 @@ Electroencephalography data include both file-based and tabulated data for the t
 <li>Detecting multiple task runs and incomplete recordings.</li>
 <li>Confirming the use of correct E-Prime task versions.</li>
 </ul>
-
 <p>In addition to the post-acquisition checks performed by the EEG2BIDS Wizard, site staff complete an <strong>EEG Acquisition Form</strong> directly in LORIS at the time of the EEG visit to document key procedural and quality control details. This form captures real-time information on net placement, signal quality, and task completion status, ensuring protocol adherence and supporting downstream data evaluation.</p>
-
 <p>The EEG Acquisition Form records:
 <ul>
 <li><strong>Net placement checks</strong> ensure electrodes are correctly positioned, using anatomical landmarks (nasion, inion, preauricular points), and that cables are secured and symmetrical. Visual inspections are done for impedance and physical fit.</li>
@@ -521,10 +554,14 @@ Electroencephalography data include both file-based and tabulated data for the t
 </div>
 <div class="collapsible-content">
 <p>The EEG2BIDS Wizard additionally facilitates the transfer of data to both a dedicated SCE (secure computing environment) housed at the University of Minnesota (UMN) and to an ASW S3 bucket, each of which facilitates different aspects of QC:<p>
-
-<p><b>UMN SCE</b><br>The Wizard handles the transfer of <code>.mff</code> files containing raw EEG, metadata, and personally identifiable information (PII) to the SCE. PII includes video recordings of the EEG session and photographs of EEG cap placement from multiple angles, which are used to rate quality of cap placement according to a rubric.</p>
-
-<p><b>ASW S3 bucket</b><br>A subset of data consisting of <code>.set</code> files, E-Prime stimuli files and associated non-PII metadata are uploaded to an AWS S3 bucket curated by the LORIS data management system where they are stored for subsequent processing and analysis. The contents of the ASW S3 bucket are represented on the EEG Quality Control dashboard, which is used by both study sites and the EEG Core team to access and monitor incoming EEG data and QC metrics, such as retained epochs and line noise levels.</p>
+<p><b>UMN SCE</b>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#university-of-minnesota">UMN</a>
+</span><br>
+The Wizard handles the transfer of <code>.mff</code> files containing raw EEG, metadata, and personally identifiable information (PII) to the SCE. PII includes video recordings of the EEG session and photographs of EEG cap placement from multiple angles, which are used to rate quality of cap placement according to a rubric.</p>
+<p><b>ASW S3 bucket</b>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#loris">LORIS</a>
+</span><br>
+A subset of data consisting of <code>.set</code> files, E-Prime stimuli files and associated non-PII metadata are uploaded to an AWS S3 bucket curated by the LORIS data management system where they are stored for subsequent processing and analysis. The contents of the ASW S3 bucket are represented on the EEG Quality Control dashboard, which is used by both study sites and the EEG Core team to access and monitor incoming EEG data and QC metrics, such as retained epochs and line noise levels.</p>
 </div>
 
 <div id="preproc-eeg" class="preproc-banner" onclick="toggleCollapse(this)">
@@ -537,6 +574,11 @@ Electroencephalography data include both file-based and tabulated data for the t
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+<p>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland">UMD EEG Data Core
+</a>
+</span>
+</p>
 <p>EEG capping quality ratings are used to determine inclusion in the data release pool and subsequent processing. Photos are taken for each acquisition from the front, back, top, left, and right angles of the participant's head and uploaded via the BIDS Wizard application to a secure computing environment. They are then reviewed by the EEG Core at the University of Maryland to rate the quality of EEG net placement, or "capping quality," for each acquisition. Please see the section <a href="https://docs.hbcdstudy.org/latest/instruments/eeg/#eeg-net-placement-capping-quality-ratings">EEG Net Placement ("Capping Quality") Ratings</a> in the HBCD Data Release Docs for full details.</p>
 </div>
 
@@ -550,6 +592,11 @@ Electroencephalography data include both file-based and tabulated data for the t
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+<p>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland">UMD EEG Data Core
+</a>
+</span>
+</p>
 <p>Outputs from the HBCD-Maryland Analysis of Developmental EEG (<a href="https://hbcd-made.readthedocs.io/en/latest/">HBCD-MADE</a>) pipeline, which handles preprocessing and data cleaning, are also integrated into the dashboard. These outputs include key metrics like outlier statistics for specific task epochs (<a href="https://doi.org/10.1111/psyp.13580">Debnath et al., 2020</a>). Regular site-specific check-ins and troubleshooting are conducted to ensure consistent protocol adherence and data quality across sites.</p>
 </div>
 
@@ -563,6 +610,13 @@ Electroencephalography data include both file-based and tabulated data for the t
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+<p>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland">UMD EEG Data Core
+</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a>
+</span>
+</p>
 <p>The EEG Workgroup performs a final review of the data to be included in the release via the Lasso Pre-Release System and provides official sign off that the data is ready for release. Known issues are documented as needed on the HBCD Data Release Docs site.</p>
 </div>
 
