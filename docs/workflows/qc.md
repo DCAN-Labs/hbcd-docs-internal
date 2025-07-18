@@ -64,7 +64,8 @@ To enforce completeness without violating participant autonomy, we treat all fie
 <p><strong>Handling of Special Codes in Standardized method</strong><br>
 All non-response fields are confirmed to be using <span class="tooltip">standardized special codes<span class="tooltiptext">-999 = Don’t know<br> -888 = Refused to answer<br> -777 = Not applicable</span></span>. In addition, checks are made to ensure that these codes are not used in computed or date fields.</p>
 <p><b>Branching Logic Enforcement</b>
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#redcap">REDCap</a></span><br>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#redcap">REDCap</a>
+</span><br>
 <ol>
 <li>Extract branching logic from the REDCap Data Dictionary.  </li>
 <li>For each field with logic conditions:
