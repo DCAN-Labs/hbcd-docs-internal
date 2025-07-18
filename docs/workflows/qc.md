@@ -624,19 +624,43 @@ A subset of data consisting of <code>.set</code> files, E-Prime stimuli files an
 
 ## Post-Release QC
 
-After data is released, additional QC is performed via updates made based on reported issues by users:
+After data is released, additional QC is conducted in response to user-reported issues:
 
 <div style="position: relative; text-align: center; margin: 2em auto; max-width: 800px;">
   <img src="../images/qc/bg-cycle.svg"
-       style="width: 40%; height: auto; display: block; opacity: 0.7;"
+       style="width: 70%; height: auto; display: block; opacity: 0.7;"
        class="center">
   <div style="position: absolute; top: 50%; left: 50%;
               transform: translate(-50%, -50%);
-              padding: 1em; border-radius: 10px; max-width: 90%;">
-    <p>Users submit tickets via <a href="https://nbdc-datashare.lassoinformatics.com/help-center">Lasso Help Center</a> to report issues with data.<br>
-    <p>Tickets are triaged to relevant SMEs.<br>
-    <p>Data issues are documented on <a href="https://docs.hbcdstudy.org/latest/changelog/knownissues/">Release Docs site</a> and resolved for future release.</p>
-  </div>
+              padding: 1em; border-radius: 10px; max-width: 80%;">
+    <style>
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5em;
+}
+.check-icon {
+  margin-right: 0.5em;
+  font-weight: bold;
+  color: blue;
+  flex-shrink: 0;
+}
+</style>
+<div class="check-item">
+  <div class="check-icon">✓</div>
+  <div>Users report issues by submitting tickets via the <a href="https://nbdc-datashare.lassoinformatics.com/help-center">Lasso Help Center</a>.</div>
+</div>
+<br>
+<div class="check-item">
+  <div class="check-icon">✓</div>
+  <div>Tickets are triaged to the appropriate subject matter experts (SMEs).</div>
+</div>
+<br>
+<div class="check-item">
+  <div class="check-icon">✓</div>
+  <div>Verified issues are documented on the <a href="https://docs.hbcdstudy.org/latest/changelog/knownissues/">HBCD Data Release Docs</a> site and addressed in a future release, as noted in the corresponding known issue entry.</div>
+</div>
+</div>
 </div>
 
 <br>
