@@ -633,9 +633,9 @@ After data is released, additional QC is performed via updates made based on rep
   <div style="position: absolute; top: 50%; left: 50%;
               transform: translate(-50%, -50%);
               padding: 1em; border-radius: 10px; max-width: 90%;">
-    <p>Users submit tickets via <a href="https://nbdc-datashare.lassoinformatics.com/help-center">Lasso Help Center</a><br>
-    <p>Tickets triaged to relevant SMEs<br>
-    <p>Data issues are documented on <a href="https://docs.hbcdstudy.org/latest/changelog/knownissues/">Release Docs site</a> and resolved for future release</p>
+    <p>Users submit tickets via <a href="https://nbdc-datashare.lassoinformatics.com/help-center">Lasso Help Center</a> to report issues with data.<br>
+    <p>Tickets are triaged to relevant SMEs.<br>
+    <p>Data issues are documented on <a href="https://docs.hbcdstudy.org/latest/changelog/knownissues/">Release Docs site</a> and resolved for future release.</p>
   </div>
 </div>
 
