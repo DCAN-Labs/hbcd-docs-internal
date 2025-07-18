@@ -19,7 +19,6 @@ The majority HBCD data are provided as tabulated data, including [demographics &
 </div>
 <div class="collapsible-content">
 <p>Automated source QC is performed via <a href="../../orgcharts/#redcap">REDCap</a>, <a href="../../orgcharts/#ripple">Ripple</a>, and <a href="../../orgcharts/#loris">LORIS</a> when site staff or participants enter the data. The following checks are performed:</p>
-
 <p><b>Input Validation</b><br>
 <p><strong>Range Checks</strong>
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#loris">LORIS</a>
@@ -32,7 +31,6 @@ LORIS works with Workgroups to establish plausible value ranges (e.g. see <a hre
 <li>Identify and flag inconsistent or reversed event sequences (e.g., follow-up before baseline).</li>
 </ol>
 </p>
-
 <p><strong>Required Fields</strong>
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#redcap">REDCap</a>
 </span>
@@ -45,7 +43,6 @@ To enforce completeness without violating participant autonomy, we treat all fie
 <li>Include explicit <span class="tooltip">non-answer choices<span class="tooltiptext">-999 = "Don’t know"<br> -888 = "Refused to answer"<br> -777 = "Not applicable"</span></span> in all multiple choice or dropdown fields.</li>
 <li>Limit use of open text fields to ensure consistency, support downstream coding, and reduce manual data cleaning.</li>
 </ol>
-
 <i>Rules Applied:</i>
 <ol>
 <li>Open text fields are prohibited by default unless:
@@ -64,10 +61,8 @@ To enforce completeness without violating participant autonomy, we treat all fie
 </li>
 </ol>
 </p>
-
 <p><strong>Handling of Special Codes in Standardized method</strong><br>
 All non-response fields are confirmed to be using <span class="tooltip">standardized special codes<span class="tooltiptext">-999 = Don’t know<br> -888 = Refused to answer<br> -777 = Not applicable</span></span>. In addition, checks are made to ensure that these codes are not used in computed or date fields.</p>
-
 <p><b>Branching Logic Enforcement</b>
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#redcap">REDCap</a></span><br>
 <ol>
@@ -81,11 +76,9 @@ All non-response fields are confirmed to be using <span class="tooltip">standard
 <li>For required fields inside conditional blocks, ensure logic has been triggered if data are expected.</li>
 </ol>
 </p>
-
 <p><b>Table & Variable Naming Schema Standardization & Validation</b><br>
 All variable names are parsed and validated against naming rules outlined <a href="https://docs.hbcdstudy.org/latest/access/metadata/#naming-conventions">here</a>.
 </p>
-
 <p><b>Staff/Site Violation Corrections & Workflow Improvements</b></p>
 <p><b>Some non-complex scoring</b></p>
 </div>
@@ -121,7 +114,6 @@ All variable names are parsed and validated against naming rules outlined <a hre
 </div>
 <div class="collapsible-content">
 <p>Pre-processing QC involves the following, performed by the indicated parties responsible:</p>
-
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <th></th>
@@ -201,12 +193,27 @@ Based on the processed data QC performed via these dashboards, subject matter ex
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>LORIS and Lasso obtain final sign-off from Workgroups on datasets in their release-ready form with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a> and known issues are documented. Pre-release data QC is performed via the Lasso Pre-Release System and involves the following:
+<p><b>Lasso Ingestion</b>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a>
+</span><br>
+Data ready for release is first ingested into Lasso. Errors in ingestion are addressed and the following checks are performed: 
+<ul>
+<li>Ingestion logs are queried to check for skipped sessions and insertion errors</li>
+<li>Quality Assurance (QA) of the file transfer UI and Globus transfer performed</li>
+</ul>
+</p>
+<p><b>Subject Matter Expert (SME) Sign-Off</b>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="https://hbcdstudy.org/workgroups-and-committees/">Workgroups</a>
+</span><br>
+Lasso obtains final sign-off from Workgroups on datasets in their release-ready form, with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a>, via the Lasso Pre-Release System:
 <ul>
 <li>All SMEs review data in Lasso pre-release system and sign off prior to public release  <ul>
 <li>Instrument scoring, mins/maxes/BIV   </li>
 <li>Missingness/Shadow matrix  </li>
 <li>Data dictionary</li>
+<li>Known issues are documented</li>
 </ul>
 </li>
 <li>Biostatistics WG also reviews data and data dictionary in Lasso pre-release system  <ul>
