@@ -123,6 +123,14 @@ All variable names are parsed and validated against naming rules outlined <a hre
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+<p>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="https://hbcdstudy.org/workgroups-and-committees/">Workgroups</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#loris">LORIS</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><b>Site Staff</b>
+</span>
+</p>
 <p>Pre-processing QC involves the following, performed by the indicated parties responsible:</p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
@@ -233,6 +241,7 @@ Lasso obtains final sign-off from Workgroups on datasets in their release-ready 
 <li>Descriptives (means, frequencies)  </li>
 <li>Missingness/Shadow matrix   </li>
 <li>Data dictionary</li>
+<li>Known issues are documented</li>
 </ul>
 </li>
 </ul>
