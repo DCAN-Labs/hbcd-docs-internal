@@ -17,7 +17,7 @@ th, td {
   display: flex;
   align-items: center; /* Ensures vertical alignment of items */
   justify-content: space-between; /* Ensures proper spacing */
-  background-color: #d0dff0;
+  background-color: #f0f4ff;
   border: 1px solid #3333331a;
   padding: 8px 10px;
   border-radius: 5px;
@@ -81,6 +81,3 @@ th, td {
 .table-no-vertical-lines th {
   background-color: rgba(255, 255, 255, 0.6) !important;
 }
-
-
-

@@ -1,17 +1,11 @@
 # HBCD Data Processing Workflows
 
-🚧 **Action Items** 🚧
-
-See [Basecamp](https://3.basecamp.com/5032058/buckets/35843816/todolists/8733067772) for updates needed for this page.
-
-----------------------------
-
-<p>This section outlines the full HBCD processing workflows for [tabulated data](#tabulated-data) and [file-based data](#file-based-data), detailing each step from data capture at study sites to final ingestion into Lasso. Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [Org Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. Additional details for specific steps can be accessed in the sections below by selecting <span class="blue-text">ⓘ <i>Click for Details</i></span>.</p>
+This section outlines the full HBCD processing workflows for [tabulated data](#tabulated-data) and [file-based data](#file-based-data), detailing each step from data capture at study sites to final ingestion into Lasso. Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [Org Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. 
 
 <p>
 <div id="s3-paths" class="table-banner" onclick="toggleCollapse(this)">
   <span class="table-text">S3 Bucket Paths Key</span>
-  <span class="notification-arrow">▸</span>
+  <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
@@ -81,7 +75,7 @@ See [Basecamp](https://3.basecamp.com/5032058/buckets/35843816/todolists/8733067
 
 <div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
   <span class="table-text">Definition of Terms</span>
-  <span class="notification-arrow">▸</span>
+  <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
@@ -110,6 +104,8 @@ See [Basecamp](https://3.basecamp.com/5032058/buckets/35843816/todolists/8733067
 <object type="image/svg+xml" data="../images/tabulated-proc-WF.svg" width="100%"></object>
 
 ## File-Based Data
+
+<i>Note: Select <span class="blue-text">ⓘ <i>Click for Details</i></span> for a given step to be linked to the relevant section on this page with additional details.</i>
 
 <object type="image/svg+xml" data="../images/WF.svg" width="100%"></object>
 
