@@ -93,6 +93,15 @@ All variable names are parsed and validated against naming rules outlined <a hre
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
+<p>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#loris">LORIS</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#redcap">REDCap</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#ripple">Ripple</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute">JCVI</a>
+</span></p>
 <p>Ingestion QC is performed when data is transferred from the capture source (i.e. REDCap or Ripple) to the central LORIS repository. It includes:<br>
 <ul>
 <li>Data tracking via LORIS and RBA Dashboards</li>
@@ -150,11 +159,19 @@ All variable names are parsed and validated against naming rules outlined <a hre
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>QC Dashboards</b><br>
-Processed data QC is performed via the following QC Dashboards for the Workgroups indicated:
+<p><b>QC Dashboards</b>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="https://hbcdstudy.org/workgroups-and-committees/">Workgroups</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#health-sciences-technology">HST</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#ripple">Ripple</a>
+</span><br></p>
+<p>Workgroups perform processed data QC (on all data <strong>and</strong> site-specific data) via QC Dashboards to assess missingness, protocol compliance, and scoring calculation checks. The specific Dashboard utilized by each HBCD Workgroup is as follows:</p> 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
-<tr><td><b>Tableau Dashboards</b></td>
+<tr><td><b>Tableau Dashboards (administered by Lasso)</b></td>
 <td>Behavior and Caregiver-Child Interaction<br>
 Biostatistics<br>
 Neurocognition & Language<br>
@@ -169,18 +186,12 @@ Social & Environmental Determinants</td></tr>
 Transitions in Care</td></tr>
 </tbody>
 </table>
-Workgroups review the processed data via these QC Dashboards. QC performed on all data <strong>and</strong> site-specific data include: 
-<ul>
-<li>Missingness   </li>
-<li>Protocol compliance </li>
-<li>Scoring calculation checks</li>
-</ul></p>
+<p><b>Monthly Reports Submitted to Lasso</b><br>
+Based on the processed data QC performed via these dashboards, subject matter experts (SMEs) submit monthly reports to Lasso where they describe, for each issue identified, whether it impacts one variable or the entire instrument, the number of participants impacted, and at what level the required fix will need to occur (including data entry/collection at the site, scoring correction from LORIS or RedCAP, and/or new data import). After review, Lasso connects the Workgroup with the relevant parties to resolve them.</p>
 <div class="img-with-text">
     <img src="../images/qc/tableau.png" alt="Tableau" width="80%" height="auto" class="center">
     <p style="text-align: center;"><i>Example of Data View on Tableau Dashboard</i></p>
 </div>
-<p><b>Monthly Reports Submitted to Lasso</b><br>
-Based on the processed data QC performed via these dashboards, subject matter experts (SMEs) submit monthly reports to Lasso where they describe, for each issue identified, whether it impacts one variable or the entire instrument, the number of participants impacted, and at what level the required fix will need to occur (including data entry/collection at the site, scoring correction from LORIS or RedCAP, and/or new data import). After review, Lasso connects the Workgroup with the relevant parties to resolve them.</p>
 </div>
 
 <div id="pre-release-pheno" class="pre-release-banner" onclick="toggleCollapse(this)">
