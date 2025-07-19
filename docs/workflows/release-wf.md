@@ -13,7 +13,7 @@ The HDCC works to implement the items indicated as “INCLUDE” by the Workgrou
 
 *Under development: Adapt SOP to account for scenarios where a Workgroup selects “INCLUDE,” but HDCC is unable to implement at this stage.*
 
-1. Known issues or new features are prioritized (*note: the number of issues or new features per sprint may be limited as needed if scope becomes too large*)
+1. Known issues or new features are prioritized
 2. Versioned BRs are released on the 4th Friday of every month
     - Every BR of the HDCC has  a corresponding "BR Hot Sheet" to be completed by the HDCC. This document serves as a central resource for information regarding the release to address the following key areas:
         - **Single Point of Truth on date/time**: provides a clear time/date when BRX is ready, and a single point of contact/truth 
