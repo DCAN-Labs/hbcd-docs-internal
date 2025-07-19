@@ -7,7 +7,7 @@ The HCAC PM (Stephanie Averill) collaborates with HDCC to generate a full list o
  - Leadership and OG approve, along with Workgroups  
  - The full list of potential measures is circulated to all Workgroups and subject matter experts, who update [this form](https://docs.google.com/spreadsheets/d/171oj0PLLtVgp5OSReBD5J6Ir4U56QQrWEwu92ZwttrM/edit?usp=sharing) to mark “INCLUDE” or “NOT INCLUDED” *at the variable level* for each potential measure
 
-## Stage 2: Integrate Planned Measures in Beta Releases
+### Stage 2: Integrate Planned Measures in Beta Releases
 
 The HDCC works to implement the items indicated as “INCLUDE” by the Workgroups and subject matter experts and the first versioned beta release begins 1-2 months after the data freeze. The Beta Release (BR) Sprint Cycle includes: 
 
@@ -24,7 +24,7 @@ The HDCC works to implement the items indicated as “INCLUDE” by the Workgrou
         - Quality Assurance (QA) of the file transfer UI and Globus transfer performed  
 3. Once Lasso ingestion of BR data is complete, HDCC liaison (Jen Zink) communicates this back out to the WGs to QC their data in the Lasso system  
 
-## Stage 3: Data Quality Issue Identification, Reporting, and Handling  
+### Stage 3: Data Quality Issue Identification, Reporting, and Handling  
 
 There are 2 bins of issues with separate pipelines for reporting/handling:
 
