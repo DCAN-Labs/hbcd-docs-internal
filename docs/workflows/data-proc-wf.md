@@ -103,6 +103,9 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 
 <object type="image/svg+xml" data="../images/tabulated-proc-WF.svg" width="100%"></object>
 
+
+<span class="blue-text"><b>**</b></span> <span><i>Third party includes: Pearson's, ERICA, CDI, Bayley, Vineland, NIH BTB, and BISQR.</i></span>
+
 ## File-Based Data
 
 <i>Note: Select <span class="blue-text">ⓘ <i>Click for Details</i></span> for a given step to be linked to the relevant section on this page with additional details.</i>
