@@ -39,12 +39,7 @@ The HDCC implements the measures marked as INCLUDE and begins the first versione
 
 #### Lasso Ingestion
 
-Once the BR Hot Sheet is finalized, the HDCC sends it to Lasso to initiate BR ingestion. During ingestion:
-
- - Logs are checked for skipped sessions and insertion errors.
- - QA is performed on the file transfer UI and Globus transfer.
-
-After ingestion is complete, the HDCC liaison (Jen Zink) notifies WGs that data are available in Lasso and requests they complete Quality Control (QC) reviews.
+Once the BR Hot Sheet is finalized, the HDCC sends it to Lasso to initiate BR ingestion, which includes [Lasso ingestion QA](qc.md#pre-release-pheno). After ingestion is complete, the HDCC liaison (Jen Zink) notifies WGs that data are available in Lasso and requests they complete Quality Control (QC) reviews.
   
 ### Stage 3: Data Quality Issue Identification, Reporting, and Handling  
 
