@@ -1,12 +1,118 @@
 #  HDCC Organizational Charts
 
-### 🚧 Action Items 🚧
-
-See [Basecamp](https://3.basecamp.com/5032058/buckets/35843816/todolists/8584532437) for updates needed for this page.
+**🚧 Action Items 🚧** - See [Basecamp](https://3.basecamp.com/5032058/buckets/35843816/todolists/8584532437) for updates needed for this page.
 
 ----------------------------
 
-## Overview
+## HBCD Workgroups
+
+HBCD Workgroups that interface heavily with HDCC include the following (the full list of Workgroups can be found on the HBCD Study site [here](https://hbcdstudy.org/workgroups-and-committees/)).
+
+<style>
+  .compact-table {
+    font-size: 0.8em;
+    line-height: 1.2;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .compact-table th, .compact-table td {
+    vertical-align: top;
+    text-align: left;
+    padding: 0.3em 0.6em;
+    border: 1px solid #ddd;
+  }
+  .compact-table th {
+    background-color: #e3f2fd;
+    width: 20%;
+  }
+  .compact-table td {
+    background-color: #f9f9f9;
+  }
+</style>
+
+<table class="compact-table">
+  <tr>
+    <th>Behavior and Caregiver-Child Interaction</th>
+    <td>
+      Renee Edwards (Co-chair) – renee.edwards@northwestern.edu<br>
+      Beth Planalp (Co-chair) – bplanalp@medicine.wisc.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Biospecimens and Omics</th>
+    <td>
+      Julie Croff (Co-chair) – julie.croff@okstate.edu<br>
+      Elinor Sullivan (Co-chair) – sullivel@ohsu.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Biostatistics</th>
+    <td>
+      Wesley Thompson (Co-chair) – wes.stat@gmail.com<br>
+      Yajuan Si (Co-chair) – yajuan@umich.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Electroencephalogram (EEG)</th>
+    <td>
+      Nathan Fox (Co-chair) – fox@umd.edu<br>
+      Koraly Perez-Edgar (Co-chair) – kxp24@psu.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Geocoding and Linking External Data</th>
+    <td>
+      Chun Fan (Chair) – chunchiehfan@gmail.com
+    </td>
+  </tr>
+  <tr>
+    <th>Magnetic Resonance Imaging (MRI)</th>
+    <td>
+      Chris Smyser (HDCC) – smyserc@neuro.wustl.edu<br>
+      Anders Dale (Co-chair) – andersmdale@gmail.com<br>
+      Damien Fair (Co-chair) – faird@umn.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Neurocognition and Language</th>
+    <td>
+      Julie Kable (Co-chair) – jkabl01@emory.edu<br>
+      Alexi Potter (Co-chair) – Alexandra.Potter@uvm.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Novel Technologies and Wearables</th>
+    <td>
+      Bill Fifer (Co-chair) – wpf1@columbia.edu, wpf1@cumc.columbia.edu<br>
+      Beth Smith (Co-chair) – bsmith@chla.usc.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Physical Health</th>
+    <td>
+      Leigh-Anne Cioffredi (Co-chair) – leigh-anne.cioffredi@uvm.edu<br>
+      Sara DeMauro (Co-chair) – demauro@chop.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Pregnancy and Exposure</th>
+    <td>
+      Gretchen Bandoli (Co-chair) – gbandoli@health.ucsd.edu<br>
+      Claire Coles (Co-chair) – ccoles@emory.edu<br>
+      Lynne Smith (Co-chair) – Smith@lundquist.org
+    </td>
+  </tr>
+  <tr>
+    <th>Social and Environmental Determinants</th>
+    <td>
+      Ashley Acheson (Co-chair) – awacheson@uams.edu<br>
+      Lea Yerby (Co-chair) – yerby002@ua.edu
+    </td>
+  </tr>
+</table>
+
+## HDCC Overall Structure
+
 The larger organizational structure of the HBCD Data Coordinating Center (HDCC) is as follows, with the HDCC Co-Directors listed at the top and the institutions/organizations listed below- ***click on individual teams to be directed to their organizational charts***. Please visit the [HDCC page](https://hbcdstudy.org/hbcd-data-coordinating-center/) of the HBCD Study website for a full list of all HDCC members. 
 
 <div id="faq-subids" class="notification-banner" onclick="toggleCollapse(this)">
@@ -79,7 +185,7 @@ flowchart TB
     click n28 "#center-for-developmental-neuroimaging"
 ```
 
-## J. Craig Venter Institute 
+### J. Craig Venter Institute 
 The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, FIONA, and the QC Dashboard.
 
 <div style="width: 90%; margin: 0 auto;">
@@ -112,29 +218,29 @@ flowchart TB
 ```
 </div>
 
-### Subcontractor Details
+#### Subcontractor Details
 
 🚧 **UPDATE FOLLOWING DESCRIPTIONS - these are first drafts and need to be reviewed/corrected by SMEs** 🚧
 
-#### DEAP
+##### DEAP
 
 Originally designed for the Adolescent Brain Cognitive Development ([ABCD](https://abcdstudy.org/)) Study, Data Exploration and Analysis Portal (DEAP) is an application offered by the NBDC Data Hub to allow users to explore, query, and download data for HBCD. See details on their website [here](https://docs.deapscience.com/). 
 
-#### FIONA 
+##### FIONA 
 
 FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance data transfer node (DTN) designed to move large scientific datasets quickly and securely across research networks. For the HBCD Study, it is used to transfer data from the HBCD Study sites to the HDCC following well-established procedures for quality control and processing.
 
-#### REDCap 
+##### REDCap 
 
 [REDCap](https://projectredcap.org/) (Research Electronic Data Capture) is a secure, widely used web-based application designed to support data capture for research studies, particularly in academic and clinical environments. In the HBCD Study, REDCap serves as a central tool for managing behavioral, clinical, and demographic data across the multiple participating sites. While neuroimaging and biosensor data flow through pipelines involving systems like FIONA, REDCap is used for more structured, form-based data collected during assessments and visits.
 
-## Lasso
+### Lasso
 
 [Lasso](https://www.lassoinformatics.com/) is a lightweight RESTful API framework developed to integrate external tools and pipelines with LORIS. Lasso offers a user-friendly, (NIST) 800-171-compliant data management platform particularly suited for large-scale multi-modal data. Lasso serves several core functions in HDCC, including developing dashboards for ongoing workgroup data QC and being the data release platform where the scientific community can access all publicly released HBCD Study data.
 
 ![](lasso2.svg)
 
-## LORIS
+### LORIS
  
 [LORIS](https://mcin.ca/technology/loris/) (Longitudinal Online Research and Imaging System), developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)), is the core data management system for the HBCD Study. It is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
 
@@ -226,7 +332,7 @@ flowchart TB
 </div>
 </p>
 
-## University of Maryland
+### University of Maryland
 <div style="width: 90%; margin: 0 auto;">
 ```mermaid
 ---
@@ -254,7 +360,7 @@ flowchart TB
 ```
 </div>
 
-### UMD Alt
+#### UMD Alt
 
 <div style="width: 90%; margin: 0 auto;">
 ```mermaid
@@ -284,7 +390,7 @@ flowchart TB
 ```
 </div>
 
-## University of Minnesota
+### University of Minnesota
 
 ```mermaid
 ---
@@ -308,7 +414,7 @@ flowchart TB
     click E "#midb-informatics-hub-msi"
 ```
 
-### Center for Developmental NeuroImaging
+#### Center for Developmental NeuroImaging
    
 The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
 
@@ -331,7 +437,7 @@ flowchart LR
 ```
 </div>
 
-### Health Sciences Technology
+#### Health Sciences Technology
   
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Electronic Health Records (EHR)*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
 
@@ -361,7 +467,7 @@ flowchart TB
 ```
 </div>
 
-### MIDB Analytics Hub
+#### MIDB Analytics Hub
 The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) works in coordination with the Biospecimens Workgroup to provide support for genomic data processing and analysis as part of the **HBCD Genomics Supplement**. 
 
 <div style="width: 70%; margin: 0 auto;">
@@ -420,7 +526,7 @@ flowchart LR
 </table>
 </div>
 
-### MIDB Informatics Hub & MSI
+#### MIDB Informatics Hub & MSI
    
 The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://midb.umn.edu/research/informatics) and [Minnesota Supercomputing Institute (MSI)](https://msi.umn.edu/) at UMN provide the following services to the HBCD study: *System Administration*, *Loris Hosting*, *Computing*, *Processing*, and *Data Sharing*.
 
@@ -522,7 +628,7 @@ flowchart TB
 </table>
 </div>
 
-## WashU    
+### WashU    
 Washington University in St. Louis (WashU) has oversight of: *Electronic Medical Records (EMR)*, *[Ambra](#ambra)*, *[AirTable](#airtable)*, *[Ripple](#ripple)*,  and *HBCD Study Administrative Core (HCAC) coordination*.
 
 <div style="width: 80%; margin: 0 auto;">
@@ -551,19 +657,19 @@ flowchart TB
 ```
 </div>
 
-### Subcontractor Details
+#### Subcontractor Details
 
 🚧 **UPDATE FOLLOWING DESCRIPTIONS - these are first drafts and need to be reviewed/corrected by SMEs** 🚧
 
-#### AirTable 
+##### AirTable 
 
 AirTable is a cloud-based collaborative platform and database service that combines the features of a database and a spreadsheet. It allows users to organize, track, and collaborate on structured data using customizable tables, forms, views, and automation. In the HBCD Study, Airtable is widely used as a centralized project management and tracking tool, including study coordination and oversight, neuroimaging workflow tracking, cross-team communication, and quality control and reporting.
 
-#### Ambra 
+##### Ambra 
 
 Ambra is a cloud-based gateway that allows the direct transmission of medical images between participating institutions. Ambra supports secure data transfer, DICOM standard compliance, de-identification tools, and access control, making it suitable for large-scale, multi-site research studies. For the HBCD Study, Ambra is used as the centralized platform for uploading, storing, and sharing neuroimaging data from participating research sites.
  
-#### Ripple
+##### Ripple
 
 Ripple is a data-driven innovative web-based technology that allows groups to collect data while solving complex patient recruitment and retention challenges. In the HBCD Study, it serves as the data center for all PII in the study and is used as both a recruitment tool and a data collection center ([see details](https://www.ripplescience.com/ripple-science-supports-nih-funded-healthy-brain-and-child-development-study/)).
 
