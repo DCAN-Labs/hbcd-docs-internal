@@ -4,113 +4,6 @@
 
 ----------------------------
 
-## HBCD Workgroups
-
-HBCD Workgroups that interface heavily with HDCC include the following (the full list of Workgroups can be found on the HBCD Study site [here](https://hbcdstudy.org/workgroups-and-committees/)).
-
-<style>
-  .compact-table {
-    font-size: 0.8em;
-    line-height: 1.2;
-    width: 100%;
-    border-collapse: collapse;
-  }
-  .compact-table th, .compact-table td {
-    vertical-align: top;
-    text-align: left;
-    padding: 0.3em 0.6em;
-    border: 1px solid #ddd;
-  }
-  .compact-table th {
-    background-color: #e3f2fd;
-    width: 20%;
-  }
-  .compact-table td {
-    background-color: #f9f9f9;
-  }
-</style>
-
-<table class="compact-table">
-  <tr>
-    <th>Behavior and Caregiver-Child Interaction</th>
-    <td>
-      Renee Edwards (Co-chair) – renee.edwards@northwestern.edu<br>
-      Beth Planalp (Co-chair) – bplanalp@medicine.wisc.edu
-    </td>
-  </tr>
-  <tr>
-    <th>Biospecimens and Omics</th>
-    <td>
-      Julie Croff (Co-chair) – julie.croff@okstate.edu<br>
-      Elinor Sullivan (Co-chair) – sullivel@ohsu.edu
-    </td>
-  </tr>
-  <tr>
-    <th>Biostatistics</th>
-    <td>
-      Wesley Thompson (Co-chair) – wes.stat@gmail.com<br>
-      Yajuan Si (Co-chair) – yajuan@umich.edu
-    </td>
-  </tr>
-  <tr>
-    <th>Electroencephalogram (EEG)</th>
-    <td>
-      Nathan Fox (Co-chair) – fox@umd.edu<br>
-      Koraly Perez-Edgar (Co-chair) – kxp24@psu.edu
-    </td>
-  </tr>
-  <tr>
-    <th>Geocoding and Linking External Data</th>
-    <td>
-      Chun Fan (Chair) – chunchiehfan@gmail.com
-    </td>
-  </tr>
-  <tr>
-    <th>Magnetic Resonance Imaging (MRI)</th>
-    <td>
-      Chris Smyser (HDCC) – smyserc@neuro.wustl.edu<br>
-      Anders Dale (Co-chair) – andersmdale@gmail.com<br>
-      Damien Fair (Co-chair) – faird@umn.edu
-    </td>
-  </tr>
-  <tr>
-    <th>Neurocognition and Language</th>
-    <td>
-      Julie Kable (Co-chair) – jkabl01@emory.edu<br>
-      Alexi Potter (Co-chair) – Alexandra.Potter@uvm.edu
-    </td>
-  </tr>
-  <tr>
-    <th>Novel Technologies and Wearables</th>
-    <td>
-      Bill Fifer (Co-chair) – wpf1@columbia.edu, wpf1@cumc.columbia.edu<br>
-      Beth Smith (Co-chair) – bsmith@chla.usc.edu
-    </td>
-  </tr>
-  <tr>
-    <th>Physical Health</th>
-    <td>
-      Leigh-Anne Cioffredi (Co-chair) – leigh-anne.cioffredi@uvm.edu<br>
-      Sara DeMauro (Co-chair) – demauro@chop.edu
-    </td>
-  </tr>
-  <tr>
-    <th>Pregnancy and Exposure</th>
-    <td>
-      Gretchen Bandoli (Co-chair) – gbandoli@health.ucsd.edu<br>
-      Claire Coles (Co-chair) – ccoles@emory.edu<br>
-      Lynne Smith (Co-chair) – Smith@lundquist.org
-    </td>
-  </tr>
-  <tr>
-    <th>Social and Environmental Determinants</th>
-    <td>
-      Ashley Acheson (Co-chair) – awacheson@uams.edu<br>
-      Lea Yerby (Co-chair) – yerby002@ua.edu
-    </td>
-  </tr>
-</table>
-
 ## HDCC Overall Structure
 
 The larger organizational structure of the HBCD Data Coordinating Center (HDCC) is as follows, with the HDCC Co-Directors listed at the top and the institutions/organizations listed below- ***click on individual teams to be directed to their organizational charts***. Please visit the [HDCC page](https://hbcdstudy.org/hbcd-data-coordinating-center/) of the HBCD Study website for a full list of all HDCC members. 
@@ -674,5 +567,109 @@ Ambra is a cloud-based gateway that allows the direct transmission of medical im
 Ripple is a data-driven innovative web-based technology that allows groups to collect data while solving complex patient recruitment and retention challenges. In the HBCD Study, it serves as the data center for all PII in the study and is used as both a recruitment tool and a data collection center ([see details](https://www.ripplescience.com/ripple-science-supports-nih-funded-healthy-brain-and-child-development-study/)).
 
 
+## HBCD Workgroups
 
+HBCD Workgroups that interface heavily with HDCC include the following (the full list of Workgroups can be found on the HBCD Study site [here](https://hbcdstudy.org/workgroups-and-committees/)).
 
+<style>
+  .compact-table {
+    font-size: 0.8em;
+    line-height: 1.2;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .compact-table th, .compact-table td {
+    vertical-align: top;
+    text-align: left;
+    padding: 0.3em 0.6em;
+    border: 1px solid #ddd;
+  }
+  .compact-table th {
+    background-color: #e3f2fd;
+    width: 20%;
+  }
+  .compact-table td {
+    background-color: #f9f9f9;
+  }
+</style>
+
+<table class="compact-table">
+  <tr>
+    <th>Behavior and Caregiver-Child Interaction</th>
+    <td>
+      Renee Edwards (Co-chair) – renee.edwards@northwestern.edu<br>
+      Beth Planalp (Co-chair) – bplanalp@medicine.wisc.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Biospecimens and Omics</th>
+    <td>
+      Julie Croff (Co-chair) – julie.croff@okstate.edu<br>
+      Elinor Sullivan (Co-chair) – sullivel@ohsu.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Biostatistics</th>
+    <td>
+      Wesley Thompson (Co-chair) – wes.stat@gmail.com<br>
+      Yajuan Si (Co-chair) – yajuan@umich.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Electroencephalogram (EEG)</th>
+    <td>
+      Nathan Fox (Co-chair) – fox@umd.edu<br>
+      Koraly Perez-Edgar (Co-chair) – kxp24@psu.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Geocoding and Linking External Data</th>
+    <td>
+      Chun Fan (Chair) – chunchiehfan@gmail.com
+    </td>
+  </tr>
+  <tr>
+    <th>Magnetic Resonance Imaging (MRI)</th>
+    <td>
+      Chris Smyser (HDCC) – smyserc@neuro.wustl.edu<br>
+      Anders Dale (Co-chair) – andersmdale@gmail.com<br>
+      Damien Fair (Co-chair) – faird@umn.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Neurocognition and Language</th>
+    <td>
+      Julie Kable (Co-chair) – jkabl01@emory.edu<br>
+      Alexi Potter (Co-chair) – Alexandra.Potter@uvm.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Novel Technologies and Wearables</th>
+    <td>
+      Bill Fifer (Co-chair) – wpf1@columbia.edu, wpf1@cumc.columbia.edu<br>
+      Beth Smith (Co-chair) – bsmith@chla.usc.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Physical Health</th>
+    <td>
+      Leigh-Anne Cioffredi (Co-chair) – leigh-anne.cioffredi@uvm.edu<br>
+      Sara DeMauro (Co-chair) – demauro@chop.edu
+    </td>
+  </tr>
+  <tr>
+    <th>Pregnancy and Exposure</th>
+    <td>
+      Gretchen Bandoli (Co-chair) – gbandoli@health.ucsd.edu<br>
+      Claire Coles (Co-chair) – ccoles@emory.edu<br>
+      Lynne Smith (Co-chair) – Smith@lundquist.org
+    </td>
+  </tr>
+  <tr>
+    <th>Social and Environmental Determinants</th>
+    <td>
+      Ashley Acheson (Co-chair) – awacheson@uams.edu<br>
+      Lea Yerby (Co-chair) – yerby002@ua.edu
+    </td>
+  </tr>
+</table>
