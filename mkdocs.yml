@@ -73,7 +73,7 @@ docs_dir: docs
 
 nav: 
   - CHANGE LOG: 
-    - 🚧 Pending & Upcoming Updates: changelog/pending.md
+   # - 🚧 Pending & Upcoming Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md
     - Version History:    
         - Beta Release 15.1: changelog/versions/BR15.1.md
@@ -100,12 +100,10 @@ nav:
         - Beta Release 1.0: changelog/versions/v1.0.md
   - Internal Data QC:
       - Review Beta Data & Report Issues: internal/reportissues.md
-  - Resources:
-    - Slides: slides.md
-    - 🚧 Org Charts: orgcharts.md
-  - Workflows:
-    - 🚧 Data QC Workflows: workflows/qc.md
-    - 🚧 Data Processing Workflows: workflows/data-proc-wf.md
-    - 🚧 Release SOPs: workflows/release-wf.md
-    - 🚧 Web Development: workflows/webdev.md
+  - 🚧 Workflows & SOPs (ALL UNDER DEV):
+    - Org Charts: orgcharts.md
+    - Quality Control Procedures: workflows/qc.md
+    - Data Processing: workflows/data-proc-wf.md
+    - Release SOPs: workflows/release-wf.md
+    - Docs Sites Maintenance & Dev: workflows/webdev.md
     

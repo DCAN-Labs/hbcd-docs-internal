@@ -10,10 +10,6 @@ The branch `dev` is used for development purposes, where changes are made and th
 
 Content that is under development, but not to be included in the website until a future release, is currently being developed on a separate GitHub repository housed under the DCAN-Lab org: [https://github.com/DCAN-Labs/beta-repo](https://github.com/DCAN-Labs/beta-repo). This repository is rendered on a separate ReadtheDocs site here: [https://beta-repo.readthedocs.io/latest/](https://beta-repo.readthedocs.io/latest/). The website has a discrete name so that users won't accidentally stumble upon it when searching for HBCD and get confused. However, it is still public of course.
 
-### Alternative Solution
-
-An alternative solution is to create a new branch on the the public NBDC repo - [https://github.com/nbdc-datahub/hbcd-docs](https://github.com/nbdc-datahub/hbcd-docs) - called `1.1` for example, and render it so that it's accessible via the flyout menu in the bottom right-hand corner (see details on ReadtheDocs documentation [here](https://docs.readthedocs.com/platform/stable/flyout-menu.html#addons-flyout-menu)). The downside is that if users stumble upon it, it may confuse them, although we can just be sure to explain clearly on the landing page that it's dev content for future releases and shouldn't be referenced. 
-
 ## Versioning
 
 - The base version numbers (e.g. `1.2` for a version number `1.2.3`) will always match the release - for example, for the interim release, the Docs version will be `1.1.0` when first published
