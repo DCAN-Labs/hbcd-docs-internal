@@ -3,78 +3,13 @@
 This section outlines the full HBCD processing workflows for [tabulated data](#tabulated-data) and [file-based data](#file-based-data), detailing each step from data capture at study sites to final ingestion into Lasso. Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [Org Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. 
 
 <p>
-<div id="s3-paths" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="table-text">S3 Bucket Paths Key</span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
-    <thead>
-      <tr>
-        <th style="width: 25%;">S3 Location Short Name Used in Diagram</th>
-        <th style="width: 75%;">S3 URL</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-        <td>De-ID &gt; BrainSwipes</td>
-        <td><code>s3://midb-hbcd-main-deid/brainswipes</code></td>
-        </tr>
-        <tr>
-        <td>De-ID &gt; Derivatives</td>
-        <td><code>s3://midb-hbcd-main-deid/derivatives/</code></td>
-        </tr>
-        <tr>
-        <td>De-ID &gt; Raw BIDS</td>
-        <td><code>s3://midb-hbcd-main-deid/assembly_bids/</code></td>
-        </tr>
-        <tr>
-        <td>JCVI DICOMs</td>
-        <td><code>s3://midb-hbcd-ucsd-main-pr-dicoms/</code></td>
-        </tr>
-        <tr>
-        <td>Lasso Staging</td>
-        <td><code>s3://midb-hbcd-lasso-staging/</code></td>
-        </tr>
-        <tr>
-        <td>Lasso PR Participant List</td>
-        <td><code>s3://midb-hbcd-lasso-data-prerelease/br{LATEST}/hbcd/rawdata/participants.tsv</code></td>
-        </tr>
-        <tr>
-        <td>Lasso Release</td>
-        <td><code>s3://midb-hbcd-lasso-release/</code></td>
-        </tr>
-        <tr>
-        <td>Main &gt; BrainSwipes</td>
-        <td><code>s3://midb-hbcd-main-pr/reid_brainswipes/</code></td>
-        </tr>
-        <tr>
-        <td>Main &gt; Derivatives</td>
-        <td><code>s3://midb-hbcd-main-pr/derivatives/</code></td>
-        </tr>
-        <tr>
-        <td>Main &gt; De-ID Lists</td>
-        <td><code>s3://midb-hbcd-main-pr/deidentification-lists/</code></td>
-        </tr>
-        <tr>
-        <td>Main &gt; Raw BIDS</td>
-        <td><code>s3://midb-hbcd-main-pr/assembly_bids/</code></td>
-        </tr>
-        <tr>
-        <td>MRS BIDS</td>
-        <td><code>s3://midb-hbcd-main-pr-mrs/</code></td>
-        </tr>
-        <tr>
-        <td>Prerelease Derivatives</td>
-        <td><code>s3://midb-hbcd-prerelease-bids/derivatives/</code></td>
-        </tr>
-    </tbody>
-    </table>
-</div>
-
-
 <div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
   <span class="table-text">Definition of Terms</span>
+  <a class="anchor-link" href="#def-terms" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
@@ -110,7 +45,84 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 
 <i>Note: Select <span class="blue-text">ⓘ <i>Click for Details</i></span> for a given step to be linked to the relevant section on this page with additional details.</i>
 
-<object type="image/svg+xml" data="../images/WF.svg" width="100%"></object>
+<object type="image/svg+xml" data="../images/file-based-proc-WF.svg" width="100%"></object>
+
+
+### S3 Buckets
+
+<div id="s3-paths" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">S3 Bucket Paths Key</span>
+  <a class="anchor-link" href="#s3-paths" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <thead>
+      <tr>
+        <th style="width: 30%; word-wrap: break-word; white-space: normal;">Name (as referenced in diagrams)</th>
+        <th style="width: 40%;">S3 URL</th>
+        <th style="width: 30%;">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>JCVI DICOMs S3</td>
+      <td><code>s3://midb-hbcd-ucsd-main-pr-dicoms/</code></td>
+      <td>JCVI DICOMs and raw data QC results</td>
+    </tr>
+    <tr>
+      <td>MRS BIDS S3</td>
+      <td><code>s3://midb-hbcd-main-pr-mrs/</code></td>
+      <td>MRS data post-BIDS conversion</td>
+    </tr>
+    <tr>
+      <td>De-ID S3</td>
+      <td><code>s3://midb-hbcd-main-deid/</code></td>
+      <td>De-identified raw BIDS, derivatives, and BrainSwipes data</td>
+    </tr>
+    <tr>
+      <td>Main PR S3</td>
+      <td><code>s3://midb-hbcd-main-pr/</code></td>
+      <td>ContainsLORIS-curated BIDS data for the full HBCD study:<br />- de-identfied subject lists (<code>deidentification-lists/</code>)<br />- de-identfied raw BIDS (<code>assembly_bids/</code>)<br />- re-identfied BrainSwipes data (<code>reid_brainswipes/</code>)<br />- re-identfied derivatives (<code>derivatives/</code>)</td>
+    </tr>
+    <tr>
+      <td>Pre-Release S3</td>
+      <td><code>s3://midb-hbcd-prerelease-bids/</code></td>
+      <td>Contains pre-release derivatives</td>
+    </tr>
+    <tr>
+      <td>Lasso Staging S3</td>
+      <td><code>s3://midb-hbcd-lasso-staging/</code></td>
+      <td>Lasso staging bucket</td>
+    </tr>
+    <tr>
+      <td>Lasso Release S3</td>
+      <td><code>s3://midb-hbcd-lasso-release/</code></td>
+      <td>Lasso release bucket</td>
+    </tr>
+    <tr>
+      <td>Lasso Prerelease S3</td>
+      <td><code>s3://midb-hbcd-lasso-data-prerelease/br{BETA RELEASE#}/hbcd/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">Contains release version-specific data, including participant list to be included in the relase (<code>rawdata/participants.tsv</code>)</td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+#### Additional Notes:
+
+##### Pre-Release Bucket: `s3://midb-hbcd-prerelease-bids`
+
+This bucket holds de-identified data sent to CBRAIN for processing. It includes both QC-passed and failed images (per UCSD). Derivatives are stored in session-specific folders (e.g., `derivatives/ses-V02/bibsnet/`). Currently, it mainly includes subjects/sessions flagged by LORIS for release, but will eventually include more non-release data as well.
+
+##### Staging Bucket: `s3://midb-hbcd-lasso-data-release-staging`
+
+The staging bucket holds finalized data prepared for Lasso, with separate locations for each beta release version (e.g. `../br14.8/hbcd/<derivatives | rawdata>/`). Only data intended for release is included. Unlike the prerelease BIDS bucket, this one contains only QC-passed images (per UCSD). Note that derivatives are merged across sessions during transfer.
+
 
 ### LORIS Formatting Updates
 LORIS makes changes to the `assembly_bids` metadata and formatting based on identified issues. This process happens irregularly, and includes changes from QC/DICOMS sent via UCSD, along with other related elements.
