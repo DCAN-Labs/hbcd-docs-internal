@@ -1,6 +1,7 @@
 #  HDCC Organizational Charts
 
-**🚧 Action Items 🚧** - See [Basecamp](https://3.basecamp.com/5032058/buckets/35843816/todolists/8584532437) for updates needed for this page.
+
+🚧 UNDER DEVELOPMENT 🚧 - Action Items on [Basecamp](https://3.basecamp.com/5032058/buckets/35843816/todolists/8584532437) for updates needed for this page.
 
 ----------------------------
 

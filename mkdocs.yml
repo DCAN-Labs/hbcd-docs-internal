@@ -98,11 +98,12 @@ nav:
         - Beta Release 3.0: changelog/versions/v1.2.md
         - Beta Release 2.0: changelog/versions/v1.1.md
         - Beta Release 1.0: changelog/versions/v1.0.md
-  - Internal Data QC:
-      - Review Beta Data & Report Issues: internal/reportissues.md
-  - 🚧 Workflows & SOPs (ALL UNDER DEV):
+  - Workgroup Instructions:
+      - Review BR Data: internal/br-review.md
+      - Report Issues: internal/reportissues.md
+  - 🚧 Workflows & SOPs 🚧:
     - Org Charts: orgcharts.md
     - Quality Control Procedures: workflows/qc.md
-    - Data Processing: workflows/data-proc-wf.md
-    - Release SOPs: workflows/release-wf.md
+    - Data Processing Workflows: workflows/data-proc-wf.md
+    - Release SOP: workflows/release-wf.md
     
