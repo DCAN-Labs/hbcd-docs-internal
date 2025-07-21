@@ -104,7 +104,6 @@ nav:
     - Slides: slides.md
     - 🚧 Org Charts: orgcharts.md
   - Workflows:
-    - S3 Buckets: workflows/s3.md
     - 🚧 Data QC Workflows: workflows/qc.md
     - 🚧 Data Processing Workflows: workflows/data-proc-wf.md
     - 🚧 Release SOPs: workflows/release-wf.md
