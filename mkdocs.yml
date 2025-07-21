@@ -72,7 +72,7 @@ plugins:
 docs_dir: docs
 
 nav: 
-  - CHANGE LOG: 
+  - Beta Release Notes: 
    # - 🚧 Pending & Upcoming Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md
     - Version History:    
