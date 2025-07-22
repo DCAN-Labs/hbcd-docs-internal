@@ -39,7 +39,7 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 ## Tabulated Data 
 
 <object type="image/svg+xml" data="../images/tab-proc-wf.svg" width="100%"></object>
-
+<i>Note: Genetics capture currently occurs via Sampled and BAH, but will be changed to only Sampled in the future.</i> 
 
 <table class="compact-table">
 <b><i>S3 Bucket Key</i></b>
