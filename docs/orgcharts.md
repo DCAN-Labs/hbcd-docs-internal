@@ -601,28 +601,6 @@ flowchart TB
 
 HBCD Workgroups that interface heavily with HDCC include the following (the full list of Workgroups can be found on the HBCD Study site [here](https://hbcdstudy.org/workgroups-and-committees/)). While co-chairs at listed below, subject matter experts (SMEs) are also critically involved as liaisons with HDCC - a full list of SMEs and additional Workgroup information can be found on AirTable [here](https://airtable.com/appn4aOIu0MgKDF5I/shrE5KLPOKWinGcWH/tblGJaQwPti6T61J1).
 
-<style>
-  .compact-table {
-    font-size: 0.8em;
-    line-height: 1.2;
-    width: 100%;
-    border-collapse: collapse;
-  }
-  .compact-table th, .compact-table td {
-    vertical-align: top;
-    text-align: left;
-    padding: 0.3em 0.6em;
-    border: 1px solid #ddd;
-  }
-  .compact-table th {
-    background-color: #e3f2fd;
-    width: 20%;
-  }
-  .compact-table td {
-    background-color: #f9f9f9;
-  }
-</style>
-
 <table class="compact-table">
   <tr>
     <th>Behavior and Caregiver-Child Interaction</th>

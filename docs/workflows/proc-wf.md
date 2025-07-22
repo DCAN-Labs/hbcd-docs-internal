@@ -38,9 +38,37 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 
 ## Tabulated Data 
 
-<object type="image/svg+xml" data="../images/tab-wf.svg" width="100%"></object>
+<object type="image/svg+xml" data="../images/tab-proc-wf.svg" width="100%"></object>
 
-<p>
+
+<table class="compact-table">
+<b><i>S3 Bucket Key</i></b>
+    <thead>
+      <tr>
+        <th style="width: 5%;">Name</th>
+        <th style="width: 10%;">S3 URL</th>
+        <th style="width: 30%;">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>LORIS Production</td>
+      <td><code>????</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">LORIS Bucket that receives all tabulated data prior to staging and ingestion</td>
+    </tr>
+    <tr>
+      <td>Lasso Staging</td>
+      <td><code>s3://midb-hbcd-lasso-staging/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">Where LORIS deposits data after running data release script for each BR</td>
+    </tr>
+    <tr>
+      <td>Lasso Prerelease</td>
+      <td><code>s3://midb-hbcd-lasso-data-prerelease/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">Contains release version-specific data housed under <code>br{BETA RELEASE#}/hbcd/</code> to be ingested into Lasso</td>
+    </tr>
+</tbody>
+</table>
+
 <div id="third-party" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text">Third Party Tools</span>
@@ -84,7 +112,6 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 </tbody>
 </table>
 </div>
-</p>
 
 ## File-Based Data
 
@@ -119,3 +146,7 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
 ## Lasso Staging & Ingestion
 
 <object type="image/svg+xml" data="../images/lasso-ingestion.svg" width="100%"></object>
+
+
+
+
