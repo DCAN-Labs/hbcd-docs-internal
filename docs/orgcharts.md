@@ -130,7 +130,7 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
 
 ### Lasso
 
-[Lasso](https://www.lassoinformatics.com/) is a lightweight RESTful API framework developed to integrate external tools and pipelines with LORIS. Lasso offers a user-friendly, (NIST) 800-171-compliant data management platform particularly suited for large-scale multi-modal data. Lasso serves several core functions in HDCC, including developing dashboards for ongoing workgroup data QC and being the data release platform where the scientific community can access all publicly released HBCD Study data.
+[Lasso](https://www.lassoinformatics.com/) DataShare is a secure data management platform for multi-modal data, streamlining secure data access, searching, filtering, merging, sharing and downloading. Lasso Data Share and Lasso Professional Services serve several core functions in HDCC, including developing dashboards for ongoing workgroup data QC, supporting pre-release data QC,  developing QC workflows, and being the data release platform where the scientific community can access all publicly available HBCD Study data (file-based and tabulated data). Lasso Data Share is fully compliant with (NIST) 800-53 and FISMA-low security standards.
 
 ![](images/lasso-org-chart.svg)
 
