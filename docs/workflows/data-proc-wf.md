@@ -1,5 +1,14 @@
 # HBCD Data Processing Workflows
 
+## mermaid-test.svg
+
+
+<!-- Include your SVG inline -->
+<object type="image/svg+xml" data="../mermaid-test.svg" style="width: 100%; height: auto;">
+  Your browser does not support SVG
+</object>
+
+
 ## test 1
 <pre> ```mermaid graph TD A[Start] --> B{Is Mermaid working?} B -- Yes --> C[Celebrate!] B -- No --> D[Fix the config] ``` </pre>
 
