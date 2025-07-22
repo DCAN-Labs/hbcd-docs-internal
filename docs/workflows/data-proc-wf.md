@@ -39,37 +39,9 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 <object type="image/svg+xml" data="../images/tabulated-proc-WF.svg" width="100%"></object>
 <span class="blue-text"><b>**</b></span> <span><i>Third party includes: Pearson's, ERICA, CDI, Bayley, Vineland, NIH BTB, and BISQR.</i></span>
 
-<div id="s3-paths-tab" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text">S3 Bucket Paths Key (Tabulated data)</span>
-  <a class="anchor-link" href="#s3-paths-tab" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
-    <thead>
-      <tr>
-        <th style="width: 30%; word-wrap: break-word; white-space: normal;"><span class="tooltip tooltip-right">Name<span class="tooltiptext"><i>as referenced in diagrams</i></span></span></th>
-        <th style="width: 40%;">S3 URL</th>
-        <th style="width: 30%;">Description</th>
-      </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>xxxx</td>
-      <td><code>s3://xxxxx</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">xxxx</td>
-    </tr>
-</tbody>
-</table>
-</div>
-
 <div id="s3-paths-lasso" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">S3 Bucket Paths Key (Lasso Ingestion - both file-based and tabulated data)</span>
+  <span class="table-text">S3 Bucket Paths Key (Tabulated Data)</span>
   <a class="anchor-link" href="#s3-paths-lasso" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -109,8 +81,9 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 
 <i>Note: Select <span class="blue-text">ⓘ <i>Click for Details</i></span> for a given step to be linked to the relevant section on this page with additional details.</i>
 
-<object type="image/svg+xml" data="../images/file-based-proc-WF.svg" width="100%"></object>
+<object type="image/svg+xml" data="../images/fb-proc-wf2.svg" width="100%"></object>
 
+<p>
 <div id="s3-paths-fb" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text">S3 Bucket Paths Key (File-Based Data)</span>
@@ -158,43 +131,8 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
       <td><code>s3://midb-hbcd-prerelease-bids/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">Contains pre-release derivatives<br>
       - This bucket holds de-identified data, both QC-passed and failed images per UCSD, sent to CBRAIN for processing<br>
-      - Derivatives are stored in session-specific folders (e.g., derivatives/ses-V02/bibsnet/)<br>
-      - Currently, it mainly includes subjects/sessions flagged by LORIS for release, but will eventually include more non-release data as well.
+      - Derivatives are stored in session-specific folders (e.g., derivatives/ses-V02/bibsnet/)
       </td>
-    </tr>
-</tbody>
-</table>
-</div>
-
-
-<div id="s3-paths-lasso" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text">S3 Bucket Paths Key (Lasso Ingestion - both file-based and tabulated data)</span>
-  <a class="anchor-link" href="#s3-paths-lasso" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
-    <thead>
-      <tr>
-        <th style="width: 30%; word-wrap: break-word; white-space: normal;"><span class="tooltip tooltip-right">Name<span class="tooltiptext"><i>as referenced in diagrams</i></span></span></th>
-        <th style="width: 40%;">S3 URL</th>
-        <th style="width: 30%;">Description</th>
-      </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <td>Lasso Staging S3</td>
-      <td><code>s3://midb-hbcd-lasso-staging/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">Lasso staging bucket where LORIS deposits the data after running the data release script for each BR</td>
-    </tr>
-    <tr>
-      <td>Lasso Release S3</td>
-      <td><code>s3://midb-hbcd-lasso-release/</code></td>
-      <td>Lasso release bucket</td>
     </tr>
     <tr>
       <td>Lasso Prerelease S3</td>
@@ -204,6 +142,7 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 </tbody>
 </table>
 </div>
+</p>
 
 ### LORIS Formatting Updates
 LORIS makes changes to the `assembly_bids` metadata and formatting based on identified issues. This process happens irregularly, and includes changes from QC/DICOMS sent via UCSD, along with other related elements.
