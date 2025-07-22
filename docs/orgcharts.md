@@ -4,6 +4,8 @@
 
 ## HDCC Functional Structure
 
+### Overview
+
 The larger organizational structure of the HBCD Data Coordinating Center (HDCC) is as follows, with the HDCC Co-Directors listed at the top and the institutions/organizations listed below- ***click on individual teams to be directed to their organizational charts***. Please visit the [HDCC page](https://hbcdstudy.org/hbcd-data-coordinating-center/) of the HBCD Study website for a full list of all HDCC members. 
 
 <div id="fyi" class="notification-banner" onclick="toggleCollapse(this)">
@@ -75,183 +77,6 @@ flowchart TB
     click n27 "#health-sciences-technology"
     click n28 "#center-for-developmental-neuroimaging"
 ```
-
-### J. Craig Venter Institute 
-The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, FIONA, and the QC Dashboard.
-
-<div style="width: 90%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    A["<b>Anders Dale, PhD</b>, PI/Director"] --- z(["<a href="#fiona"><b>FIONA</b></a>"])
-    A --- n2(["<b>Raw MRI Quality Control</b>"])
-    A --- n3(["<b>MRI Phantom Quality Control</b>"])
-    A --- n6(["<a href="#redcap"><b>REDCap</b></a><br><b>Data Science</b><br><a href="#deap"><b>DEAP</b></a>"])
-    n2 --- n9["<b>Donald Hagler, PhD</b><br>Raw MRI QC Lead<br><br><b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
-    n3 --- n10["<b>Josh Kuperman</b><br>MRI Phantom QC Lead"]
-    n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>Team Lead<br>
-    <b>Asef-Joseph Baligh</b><br>REDCap Server Admin<br>
-    <b>Erika Bolden<br>Laura Ziemer</b><br>REDCap Dev/Admin<b><br>
-    Biplabendu Das</b><br>Dashboard Backend<br><br><b>Olivier Celhay</b><br>Dashboard Frontend"]
-    z --- n8["<b>Rongguang Yang, PhD</b><br>FIONA Lead"]
-    style A fill:#BBDEFB,stroke:#2962FF
-    style z fill:#E1BEE7,stroke:#AA00FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n6 fill:#E1BEE7,stroke:#AA00FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n10 fill:#BBDEFB,stroke:#2962FF
-    style n4 fill:#BBDEFB,stroke:#2962FF
-```
-</div>
-
-#### Subcontractor Details
-
-🚧 **UPDATE FOLLOWING DESCRIPTIONS - these are first drafts and need to be reviewed/corrected by SMEs** 🚧
-
-##### DEAP
-
-Originally designed for the Adolescent Brain Cognitive Development ([ABCD](https://abcdstudy.org/)) Study, Data Exploration and Analysis Portal (DEAP) is an application offered by the NBDC Data Hub to allow users to explore, query, and download data for HBCD. See details on their website [here](https://docs.deapscience.com/). 
-
-##### FIONA 
-
-FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance data transfer node (DTN) designed to move large scientific datasets quickly and securely across research networks. For the HBCD Study, it is used to transfer data from the HBCD Study sites to the HDCC following well-established procedures for quality control and processing.
-
-##### REDCap 
-
-[REDCap](https://projectredcap.org/) (Research Electronic Data Capture) is a secure, widely used web-based application designed to support data capture for research studies, particularly in academic and clinical environments. In the HBCD Study, REDCap serves as a central tool for managing behavioral, clinical, and demographic data across the multiple participating sites. While neuroimaging and biosensor data flow through pipelines involving systems like FIONA, REDCap is used for more structured, form-based data collected during assessments and visits.
-
-### Lasso
-
-[Lasso](https://www.lassoinformatics.com/) DataShare is a secure data management platform for multi-modal data, streamlining secure data access, searching, filtering, merging, sharing and downloading. Lasso Data Share and Lasso Professional Services serve several core functions in HDCC, including developing dashboards for ongoing workgroup data QC, supporting pre-release data QC,  developing QC workflows, and being the data release platform where the scientific community can access all publicly available HBCD Study data (file-based and tabulated data). Lasso Data Share is fully compliant with (NIST) 800-53 and FISMA-low security standards.
-
-![](images/lasso-org-chart.svg)
-
-### LORIS
- 
-[LORIS](https://mcin.ca/technology/loris/) (Longitudinal Online Research and Imaging System), developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)), is the core data management system for the HBCD Study. It is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
-
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    nl["<b>Santiago Torres</b><br>Study Officer"] --- C(["<b>CBRAIN</b>"]) & G(["<b>MRI BIDS Conversion &amp; Database Management</b>"]) & H(["<b>EEG &amp; Biospecimens</b>"]) & F(["<b>Systems Operations</b>"])
-    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; MCIN NeuroHub<br><br><b>Pierre Rioux</b><br>Lead Developer"]
-    F --- I["<b>Dave McFarlane</b><br>Lead Developer<br><br><b>Sruthy Matthew</b><br>Sr Backend Developer<br><br><b>Regis Ongaro-Carcy<br>George Murad<br>Moshood Abiola</b><br>Developers"]
-    G --- L["<b>Cecile Madjar</b><br>Lead Developer"]
-    H --- M["<b>Laetitia Faeselier</b><br>Lead Developer"]
-    n13["<b>Alan Evans</b>, PI<br><b>Samir Das</b>, MCIN Assoc Dir"]
-    style nl stroke:#00C853,fill:#C8E6C9
-    style C stroke:#AA00FF,fill:#E1BEE7
-    style G stroke:#AA00FF,fill:#E1BEE7
-    style H stroke:#AA00FF,fill:#E1BEE7
-    style F stroke:#AA00FF,fill:#E1BEE7
-    style n12 stroke:#2962FF,fill:#BBDEFB
-    style I stroke:#2962FF,fill:#BBDEFB
-    style L stroke:#2962FF,fill:#BBDEFB
-    style M stroke:#2962FF,fill:#BBDEFB
-    style n13 stroke:#2962FF,fill:#BBDEFB
-```
-<p>
-<div id="loris-rr" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="table-text">Roles & Responsibilities</span>
-  <span class="notification-arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
-    <thead>
-      <tr>
-        <th style="width: 25%;">Name</th>
-        <th style="width: 30%;">Title</th>
-        <th style="width: 50%;">Role on HDCC</th>
-      </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Alan Evans</td>
-        <td style="word-wrap: break-word; white-space: normal;">Principal Investigator</td>
-        <td style="word-wrap: break-word; white-space: normal;">Oversight and management of <a href="https://mcin.ca/about-mcin/" target="_blank">MCIN</a> and LORIS operations</td>
-    </tr>
-    <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Samir Das</td>
-        <td style="word-wrap: break-word; white-space: normal;">Associate Director of Software Development</td>
-        <td style="word-wrap: break-word; white-space: normal;">Administration and oversight of LORIS operations for the HBCD Study</td>
-    </tr>
-    <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Pierre Rioux</td>
-        <td style="word-wrap: break-word; white-space: normal;">Senior CBRAIN Developer</td>
-        <td style="word-wrap: break-word; white-space: normal;">CBRAIN configuration, tool containerization, design computing and analysis workflows, system interoperability</td>
-    </tr>
-    <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Santiago Torres</td>
-        <td style="word-wrap: break-word; white-space: normal;">Study Officer (Research Admin)</td>
-        <td style="word-wrap: break-word; white-space: normal;">Project coordinator and liaison, ensuring timely implementation of study tasks and alignment with Workgroup requirements through oversight, testing, and data validation activities</td>
-    </tr>
-    <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Cecile Madjar</td>
-        <td style="word-wrap: break-word; white-space: normal;">Lead MRI developer</td>
-        <td style="word-wrap: break-word; white-space: normal;">Development and deployment of LORIS MRI features, including ingestion and error handling</td>
-    </tr>
-    <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Laetitia Faeselier</td>
-        <td style="word-wrap: break-word; white-space: normal;">Lead Biospecimens & EEG Developer</td>
-        <td style="word-wrap: break-word; white-space: normal;">Development and implementation of LORIS Biospecimens & EEG features, including data ingestion, quality control, tracking systems, and Dashboard innovations</td>
-    </tr>
-    <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Regis Ongaro-Carcy</td>
-        <td style="word-wrap: break-word; white-space: normal;">Lead Developer</td>
-        <td style="word-wrap: break-word; white-space: normal;">Development of LORIS features for behavior (questionnaire/survey responses), including integration with external platforms (e.g. REDCap, Ripple, MSI), streamlining data collection, and enhancing system interoperability and workflows</td>
-    </tr>
-    <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Sruthy Matthew</td>
-        <td style="word-wrap: break-word; white-space: normal;">Senior Backend Developer</td>
-        <td style="word-wrap: break-word; white-space: normal;">Development of LORIS LaunchPad and Backend features</td>
-    </tr>
-    <tr>
-        <td style="word-wrap: break-word; white-space: normal;">George Murad</td>
-        <td style="word-wrap: break-word; white-space: normal;">Junior Developer</td>
-        <td style="word-wrap: break-word; white-space: normal;">Development of LORIS features for behavior (questionnaire/survey responses), including instrument coding, automated QC queries, and API/Endpoint implementation</td>
-    </tr>
-</tbody>
-</table>
-</div>
-</p>
-
-### University of Maryland
-
-<div style="width: 90%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    n16["<b>Nathan Fox</b>
-    Associate Dir, EEG Data Core"] --- n17(["<b>Preprocessing</b>"]) & n19(["<b>Coding &amp; Quality Control</b>"]) & n21(["<b>Pipeline Development</b>"]) & n29(["<b>Site Supervision</b>"])
-    n17 --- n18["<b>Whitney Kasenetz</b><br>Preprocessing Liason w/ Lasso &amp; LORIS"]
-    n21 --- n28["<b>Dylan Gilbreath</b><br>Pipeline Dev, Coding, &amp; QC"]
-    n29 --- n30["<b>Trisha Maheswari</b><br>Site Supervision, Coding, &amp; QC<br>
-    <b>Elise Harris<br></b>Site Oversight, QC, &amp; Training"]
-    n19 --- n31["<b>Santiago Morales</b><br>Co-I &amp; Coding Lead"]
-    n31 --- n27["<b>Kira Ashton</b><br>Coding &amp; QC"] & n30 & n28
-    style n16 fill:#BBDEFB,stroke:#2962FF
-    style n17 fill:#E1BEE7,stroke:#AA00FF
-    style n19 fill:#E1BEE7,stroke:#AA00FF
-    style n21 fill:#E1BEE7,stroke:#AA00FF
-    style n29 fill:#E1BEE7,stroke:#AA00FF
-    style n18 fill:#BBDEFB,stroke:#2962FF
-    style n28 fill:#BBDEFB,stroke:#2962FF
-    style n30 fill:#BBDEFB,stroke:#2962FF
-    style n31 fill:#C8E6C9,stroke:#00C853
-    style n27 fill:#BBDEFB,stroke:#2962FF
-```
-</div>
 
 ### University of Minnesota
 
@@ -548,8 +373,6 @@ flowchart TB
 
 #### Subcontractor Details
 
-🚧 **UPDATE FOLLOWING DESCRIPTIONS - these are first drafts and need to be reviewed/corrected by SMEs** 🚧
-
 ##### AirTable 
 
 AirTable is a cloud-based collaborative platform and database service that combines the features of a database and a spreadsheet. It allows users to organize, track, and collaborate on structured data using customizable tables, forms, views, and automation. In the HBCD Study, Airtable is widely used as a centralized project management and tracking tool, including study coordination and oversight, neuroimaging workflow tracking, cross-team communication, and quality control and reporting.
@@ -561,6 +384,199 @@ Ambra is a cloud-based gateway that allows the direct transmission of medical im
 ##### Ripple
 
 Ripple is a data-driven innovative web-based technology that allows groups to collect data while solving complex patient recruitment and retention challenges. In the HBCD Study, it serves as the data center for all PII in the study and is used as both a recruitment tool and a data collection center ([see details](https://www.ripplescience.com/ripple-science-supports-nih-funded-healthy-brain-and-child-development-study/)).
+
+
+### J. Craig Venter Institute 
+The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, FIONA, and the QC Dashboard.
+
+<div style="width: 90%; margin: 0 auto;">
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+    A["<b>Anders Dale, PhD</b>, PI/Director"] --- z(["<a href="#fiona"><b>FIONA</b></a>"])
+    A --- n2(["<b>Raw MRI Quality Control</b>"])
+    A --- n3(["<b>MRI Phantom Quality Control</b>"])
+    A --- n6(["<a href="#redcap"><b>REDCap</b></a><br><b>Data Science</b><br><a href="#deap"><b>DEAP</b></a>"])
+    n2 --- n9["<b>Donald Hagler, PhD</b><br>Raw MRI QC Lead<br><br><b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
+    n3 --- n10["<b>Josh Kuperman</b><br>MRI Phantom QC Lead"]
+    n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>Team Lead<br>
+    <b>Asef-Joseph Baligh</b><br>REDCap Server Admin<br>
+    <b>Erika Bolden<br>Laura Ziemer</b><br>REDCap Dev/Admin<b><br>
+    Biplabendu Das</b><br>Dashboard Backend<br><br><b>Olivier Celhay</b><br>Dashboard Frontend"]
+    z --- n8["<b>Rongguang Yang, PhD</b><br>FIONA Lead"]
+    style A fill:#BBDEFB,stroke:#2962FF
+    style z fill:#E1BEE7,stroke:#AA00FF
+    style n2 fill:#E1BEE7,stroke:#AA00FF
+    style n3 fill:#E1BEE7,stroke:#AA00FF
+    style n6 fill:#E1BEE7,stroke:#AA00FF
+    style n8 fill:#BBDEFB,stroke:#2962FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
+    style n10 fill:#BBDEFB,stroke:#2962FF
+    style n4 fill:#BBDEFB,stroke:#2962FF
+```
+</div>
+
+#### Subcontractor Details
+
+🚧 **UPDATE FOLLOWING DESCRIPTIONS - these are first drafts and need to be reviewed/corrected by SMEs** 🚧
+
+##### DEAP
+
+Originally designed for the Adolescent Brain Cognitive Development ([ABCD](https://abcdstudy.org/)) Study, Data Exploration and Analysis Portal (DEAP) is an application offered by the NBDC Data Hub to allow users to explore, query, and download data for HBCD. See details on their website [here](https://docs.deapscience.com/). 
+
+##### FIONA 
+
+FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance data transfer node (DTN) designed to move large scientific datasets quickly and securely across research networks. For the HBCD Study, it is used to transfer data from the HBCD Study sites to the HDCC following well-established procedures for quality control and processing.
+
+##### REDCap 
+
+[REDCap](https://projectredcap.org/) (Research Electronic Data Capture) is a secure, widely used web-based application designed to support data capture for research studies, particularly in academic and clinical environments. In the HBCD Study, REDCap serves as a central tool for managing behavioral, clinical, and demographic data across the multiple participating sites. While neuroimaging and biosensor data flow through pipelines involving systems like FIONA, REDCap is used for more structured, form-based data collected during assessments and visits.
+
+### Lasso
+
+[Lasso](https://www.lassoinformatics.com/) DataShare is a secure data management platform for multi-modal data, streamlining secure data access, searching, filtering, merging, sharing and downloading. Lasso Data Share and Lasso Professional Services serve several core functions in HDCC, including developing dashboards for ongoing workgroup data QC, supporting pre-release data QC,  developing QC workflows, and being the data release platform where the scientific community can access all publicly available HBCD Study data (file-based and tabulated data). Lasso Data Share is fully compliant with (NIST) 800-53 and FISMA-low security standards.
+
+![](images/lasso-org-chart.svg)
+
+### McGill University
+
+#### LORIS
+ 
+[LORIS](https://mcin.ca/technology/loris/) (Longitudinal Online Research and Imaging System), developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)), is the core data management system for the HBCD Study. It is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
+
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+    nl["<b>Santiago Torres</b><br>Study Officer"] --- C(["<b>CBRAIN</b>"]) & G(["<b>MRI BIDS Conversion &amp; Database Management</b>"]) & H(["<b>EEG &amp; Biospecimens</b>"]) & F(["<b>Systems Operations</b>"])
+    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; MCIN NeuroHub<br><br><b>Pierre Rioux</b><br>Lead Developer"]
+    F --- I["<b>Dave McFarlane</b><br>Lead Developer<br><br><b>Sruthy Matthew</b><br>Sr Backend Developer<br><br><b>Regis Ongaro-Carcy<br>George Murad<br>Moshood Abiola</b><br>Developers"]
+    G --- L["<b>Cecile Madjar</b><br>Lead Developer"]
+    H --- M["<b>Laetitia Faeselier</b><br>Lead Developer"]
+    n13["<b>Alan Evans</b>, PI<br><b>Samir Das</b>, MCIN Assoc Dir"]
+    style nl stroke:#00C853,fill:#C8E6C9
+    style C stroke:#AA00FF,fill:#E1BEE7
+    style G stroke:#AA00FF,fill:#E1BEE7
+    style H stroke:#AA00FF,fill:#E1BEE7
+    style F stroke:#AA00FF,fill:#E1BEE7
+    style n12 stroke:#2962FF,fill:#BBDEFB
+    style I stroke:#2962FF,fill:#BBDEFB
+    style L stroke:#2962FF,fill:#BBDEFB
+    style M stroke:#2962FF,fill:#BBDEFB
+    style n13 stroke:#2962FF,fill:#BBDEFB
+```
+<p>
+<div id="loris-rr" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="table-text">Roles & Responsibilities</span>
+  <span class="notification-arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <thead>
+      <tr>
+        <th style="width: 25%;">Name</th>
+        <th style="width: 30%;">Title</th>
+        <th style="width: 50%;">Role on HDCC</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Alan Evans</td>
+        <td style="word-wrap: break-word; white-space: normal;">Principal Investigator</td>
+        <td style="word-wrap: break-word; white-space: normal;">Oversight and management of <a href="https://mcin.ca/about-mcin/" target="_blank">MCIN</a> and LORIS operations</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Samir Das</td>
+        <td style="word-wrap: break-word; white-space: normal;">Associate Director of Software Development</td>
+        <td style="word-wrap: break-word; white-space: normal;">Administration and oversight of LORIS operations for the HBCD Study</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Pierre Rioux</td>
+        <td style="word-wrap: break-word; white-space: normal;">Senior CBRAIN Developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">CBRAIN configuration, tool containerization, design computing and analysis workflows, system interoperability</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Santiago Torres</td>
+        <td style="word-wrap: break-word; white-space: normal;">Study Officer (Research Admin)</td>
+        <td style="word-wrap: break-word; white-space: normal;">Project coordinator and liaison, ensuring timely implementation of study tasks and alignment with Workgroup requirements through oversight, testing, and data validation activities</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Cecile Madjar</td>
+        <td style="word-wrap: break-word; white-space: normal;">Lead MRI developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Development and deployment of LORIS MRI features, including ingestion and error handling</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Laetitia Faeselier</td>
+        <td style="word-wrap: break-word; white-space: normal;">Lead Biospecimens & EEG Developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Development and implementation of LORIS Biospecimens & EEG features, including data ingestion, quality control, tracking systems, and Dashboard innovations</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Regis Ongaro-Carcy</td>
+        <td style="word-wrap: break-word; white-space: normal;">Lead Developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Development of LORIS features for behavior (questionnaire/survey responses), including integration with external platforms (e.g. REDCap, Ripple, MSI), streamlining data collection, and enhancing system interoperability and workflows</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Sruthy Matthew</td>
+        <td style="word-wrap: break-word; white-space: normal;">Senior Backend Developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Development of LORIS LaunchPad and Backend features</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">George Murad</td>
+        <td style="word-wrap: break-word; white-space: normal;">Junior Developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Development of LORIS features for behavior (questionnaire/survey responses), including instrument coding, automated QC queries, and API/Endpoint implementation</td>
+    </tr>
+</tbody>
+</table>
+</div>
+</p>
+
+### LIBR
+
+```mermaid
+---
+config:
+  layout: fixed
+---
+flowchart TB
+    n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
+    style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
+    style n17 fill:#BBDEFB,stroke:#2962FF
+```
+
+### University of Maryland
+
+<div style="width: 90%; margin: 0 auto;">
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+    n16["<b>Nathan Fox</b>
+    Associate Dir, EEG Data Core"] --- n17(["<b>Preprocessing</b>"]) & n19(["<b>Coding &amp; Quality Control</b>"]) & n21(["<b>Pipeline Development</b>"]) & n29(["<b>Site Supervision</b>"])
+    n17 --- n18["<b>Whitney Kasenetz</b><br>Preprocessing Liason w/ Lasso &amp; LORIS"]
+    n21 --- n28["<b>Dylan Gilbreath</b><br>Pipeline Dev, Coding, &amp; QC"]
+    n29 --- n30["<b>Trisha Maheswari</b><br>Site Supervision, Coding, &amp; QC<br>
+    <b>Elise Harris<br></b>Site Oversight, QC, &amp; Training"]
+    n19 --- n31["<b>Santiago Morales</b><br>Co-I &amp; Coding Lead"]
+    n31 --- n27["<b>Kira Ashton</b><br>Coding &amp; QC"] & n30 & n28
+    style n16 fill:#BBDEFB,stroke:#2962FF
+    style n17 fill:#E1BEE7,stroke:#AA00FF
+    style n19 fill:#E1BEE7,stroke:#AA00FF
+    style n21 fill:#E1BEE7,stroke:#AA00FF
+    style n29 fill:#E1BEE7,stroke:#AA00FF
+    style n18 fill:#BBDEFB,stroke:#2962FF
+    style n28 fill:#BBDEFB,stroke:#2962FF
+    style n30 fill:#BBDEFB,stroke:#2962FF
+    style n31 fill:#C8E6C9,stroke:#00C853
+    style n27 fill:#BBDEFB,stroke:#2962FF
+```
+</div>
 
 
 ## HBCD Workgroups
