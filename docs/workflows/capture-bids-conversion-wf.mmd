@@ -1,10 +1,5 @@
-# HBCD Data Processing Workflows
-
-<pre> ```mermaid graph TD A[Start] --> B{Is Mermaid working?} B -- Yes --> C[Celebrate!] B -- No --> D[Fix the config] ``` </pre>
-
-```mermaid
 flowchart LR
- subgraph Sites_Capture["Sites Capture<br><b>FIONA</b>"]
+ subgraph Sites_Capture["Sites Capture</br><b>FIONA</b>"]
         FIONA_KSI[/"KSI MRI (DCM)"/]
         LORIS_ACM[/"MRS"/]
         n15[/"K-Space"/]
@@ -12,12 +7,12 @@ flowchart LR
  subgraph Capture_JCVI["Capture &amp; BIDS Conversion<br><b>JCVI</b>"]
         UMN["UMN SCE [HST]"]
         JCVI["Convert to BIDS"]
-        n1@{ label: "<span style=\"color:\">S3 - <i>MRS BIDS*</i></span>" }
+        n1@{ label: "<span style=\"color:\">S3 -<i>MRS BIDS</i></span>" }
   end
  subgraph Capture_HST["Capture &amp; BIDS Conversion<br><b>UMN HST</b>"]
         n6["HBCD Central"]
         n9["QC Raw MRI"]
-        n10["S3 - <i>JCVI DICOMs*</i>"]
+        n10["S3 - <i>JCVI DICOMs</i>"]
         n11["Convert to BIDS"]
   end
  subgraph Capture_LORIS["Sites Capture<br><b>LORIS</b>"]
@@ -28,7 +23,7 @@ flowchart LR
     LORIS_ACM --> UMN
     UMN --> JCVI
     JCVI --> n1
-    n1 --> RAW_BIDS["<b>S3 MAIN PR<br></b><i>s3://midb-hbcd-main-pr/assembly_bids/</i>"]
+    n1 --> RAW_BIDS["<b>S3 - MAIN PR</b>"]
     n6 --> n9 & n10
     n9 --> n10
     n10 --> n11
@@ -64,4 +59,3 @@ flowchart LR
     style Sites_Capture fill:#FFF9C4
     style Capture_JCVI fill:#BBDEFB
     style Capture_HST fill:#BBDEFB
-```

@@ -10,19 +10,23 @@ theme:
     - navigation.sections
     - header.autohide
     - content.code.annotate
+    - navigation.instant
 
 markdown_extensions:
   - pymdownx.superfences
-  - pymdownx.tabbed
-  - pymdownx.snippets
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
   - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.keys
   - attr_list
+  - admonition
+  - pymdownx.tabbed
   - toc:
       permalink: '🔗'
 
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js
-  - js/mermaid-init.js
+  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
   - js/extra.js
   - https://www.googletagmanager.com/gtag/js?id=G-95CHYYTVHC
   - js/ga.js
@@ -55,17 +59,7 @@ extra_css:
 
 plugins:
   - search
-  - mermaid2:
-      arguments:
-        startOnLoad: true
-        flowchart:
-          htmlLabels: true
-        theme: base  # "default" or "base" 
-        themeVariables:
-          primaryColor: "#ffffff"
-          primaryTextColor: "#000000"
-          tertiaryColor: "#f0f0f0"
-        layout: elk
+  - mermaid2
   - git-revision-date-localized:
       type: date
 
@@ -105,8 +99,7 @@ nav:
     - Slides: slides.md
     # - Org Charts: orgcharts.md
   - Workflows:
-    # - Data Processing Workflows: workflows/data-proc-wf.md
-    - S3 Buckets: workflows/s3.md
+    - Data Processing Workflows: workflows/data-proc-wf.md
     # - Release SOPs: workflows/release-wf.md
     # - Web Development: workflows/webdev.md
     

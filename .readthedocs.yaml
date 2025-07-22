@@ -16,7 +16,8 @@ mkdocs:
 # Optionally declare the Python requirements required to build your docs
 python:
   install:
-  - requirements: docs/requirements.txt
+    - method: pip
+      requirements: requirements.txt
 
 # Optionally build your docs in additional formats such as PDF and ePub
 # formats:
