@@ -125,10 +125,9 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
 
 ### CBRAIN Processing, Re-Identification, & Lasso Ingestion
 
-<object type="image/svg+xml" data="../images/cbrain-release.svg" style="width: 100%; height: auto;">
+<object type="image/svg+xml" data="../images/fb-proc.svg" style="width: 100%; height: auto;">
   Your browser does not support SVG
 </object>
-
 
 <div id="record-query" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -143,10 +142,6 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
 <p>After CBRAIN processing, previous processing records are queried against the contents of s3://midb-hbcd-main-deid/assembly_bids to ensure that processing is still up-to-date with the current BIDS data. For any cases where the derivative data has become out of sync with the assembly_bids data, the impacted derivative data along with CBRAIN processing task objects are deleted. The next time the query scripts are run that look for new subjects to process, the processing will be re-initiated for these subjects.</p>
 </div>
 
-## Lasso Staging & Ingestion
-
-<object type="image/svg+xml" data="../images/lasso-ingestion.svg" width="100%"></object>
-
-
+<br>
 
 
