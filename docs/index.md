@@ -11,7 +11,7 @@
 
 ## HDCC Data Release Framework
 
-The HDCC is committed to a principled and transparent approach to data sharing. Our data release workflow strives emphasizes **clarity, quality, reproducibility, timeliness, and transparency**, drawing on international best practices and customized to the complexities of a large, multi-site longitudinal study (see [References](#references-and-frameworks)).
+The HDCC is committed to a principled and transparent approach to data sharing. Our data release workflow emphasizes **clarity, quality, reproducibility, timeliness, and transparency**, drawing on international best practices and customized to the complexities of a large, multi-site longitudinal study (see [References](#references-and-frameworks)).
 
 
 #### 1. Clear Objectives and Scope
