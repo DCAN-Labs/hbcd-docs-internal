@@ -24,7 +24,7 @@ The HDCC implements the measures marked as INCLUDE and begins the first versione
 
 1. Known issues and new features are prioritized for the sprint.
 2. Versioned BRs are released on the 4th Friday of every month.
-3. Each BR is accompanied by a BR Hot Sheet completed by HDCC to guide Lasso ingestion.
+3. Each BR is accompanied by a BR Hot Sheet completed by HDCC to guide Lasso ingestion - see [Hot Sheet template](https://docs.google.com/document/d/1qwfD_lccV89u205KPdq_5dZCx_w4pu8BFWI31wLDH8Q/edit?usp=sharing).
 
 <p style="margin-bottom: 2px; font-weight: bold;"><i>BR Hot Sheet - Key Areas</i></p>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
