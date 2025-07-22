@@ -8,6 +8,7 @@ This document outlines the staged workflow for selecting, releasing, and validat
 
 <img src="../images/timeline.svg" alt="Tableau" width="100%" height="auto" class="center">
 
+## Stages of the Release Workflow
 
 ### Stage 1: Determine Measures to Include in Release
 
@@ -68,3 +69,18 @@ Issues identified by WGs, analysts, or via LORIS, reported in collaboration with
 **Description:** *Explanation of issue*         
 **Explanation for how to address the issue**: *Description of fix*	      
 **Reporter**: *SME/analyst name and contact information* 	
+
+### Stage 4: Data Sign-off and Public Release
+
+When the the second-to-last BR prior to Public Release is loaded in Lasso, the HDCC liaison (Jen Zink) schedules one-on-one sign-off meetings with all WG chairs/SMEs who have measures in the planned release for final QC/review in Lasso. Prior to these meetings, WG chairs/SMEs have pre-QC’ed their data in the latest BR. During these meetings, Jen reviews:
+
+1. Past QC items that have been identified and corrected in previous BRs
+2. Any further QC action-items to be addressed prior to public release (if applicable) based on WG/SME review of the latest BR and items identified by Jen 
+
+During the one-on-one sign-off meetings, if no further action-items are found by either the WG/SMEs or Jen, the WGs/SMEs sign off on their measures via this [sign-off sheet template](https://docs.google.com/spreadsheets/d/1zPfNGb7ejFlVelfGWNJZSlaslsv3yHQjjiZJgt0BiyU/edit?gid=615569410#gid=615569410). 
+
+If further QC action-items are found in the second-to-last BR during the one-on-one sign-off meetings, the WG/SMEs do NOT sign off on their measures.  Jen communicates the data issues back to the HDCC via the centralized Monday Board, so the remaining items can be prioritized for the final BR prior to public release. 
+
+When the final BR prior to public release is loaded into Lasso, Jen schedules one-on-one sign-off meetings with the remaining WGs/SMEs who were awaiting corrections to their data prior to sign off. During these meetings, Jen reviews the list of items that were identified in the last round of QC with the WGs/SMEs to ensure the correction is implemented as expected in the Lasso; the WGs/SMEs then sign off on their measures via the same google form above. 
+
+In the event that data issues remain, or new issues are identified in QC of the final BR during the one-on-one sign-off meetings, Jen collaborates with the WGs/SMEs and Luci Moore to document these as ‘Known Issues’ for the Data Release Documentation site. Jen reports the known issues on the HDCC centralized Monday Board so they can be prioritized for the Patch Release.
