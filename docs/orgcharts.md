@@ -5,7 +5,7 @@
 
 ----------------------------
 
-## HDCC Overall Structure
+## HDCC Functional Structure
 
 The larger organizational structure of the HBCD Data Coordinating Center (HDCC) is as follows, with the HDCC Co-Directors listed at the top and the institutions/organizations listed below- ***click on individual teams to be directed to their organizational charts***. Please visit the [HDCC page](https://hbcdstudy.org/hbcd-data-coordinating-center/) of the HBCD Study website for a full list of all HDCC members. 
 
@@ -429,66 +429,66 @@ flowchart TB
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
     <thead>
       <tr>
-        <th style="width: 25%;">Name</th>
-        <th style="width: 30%;">Title</th>
-        <th style="width: 45%;">Role on HDCC</th>
+        <th style="width: 10%;">Name</th>
+        <th style="width: 20%;">Title</th>
+        <th style="width: 70%;">Role on HDCC</th>
       </tr>
     </thead>
     <tbody>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Thomas Pengo, PhD</td>
         <td style="word-wrap: break-word; white-space: normal;">Co-Director, MIDB Informatics Group</td>
-        <td style="word-wrap: break-word; white-space: normal;">IG Lead</td>
+        <td style="word-wrap: break-word; white-space: normal;">IG Lead: Oversees all personnel for the platform used as the primary housing for HBCD data, processing, and preparation</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Maren Macgregor-Hannah</td>
         <td style="word-wrap: break-word; white-space: normal;">Program Manager</td>
-        <td style="word-wrap: break-word; white-space: normal;">HDCC Program Manager</td>
+        <td style="word-wrap: break-word; white-space: normal;">HDCC Program Manager: Responsible for primary HDCC WG meetings, managing timelines and deliverables, and facilitating communication among technical, scientific, and administrative HCAC teams.</td>
     </tr>
     <tr>
     <td>Jesse Erdmann</td>
     <td>Systems Operations</td>
-    <td style="word-wrap: break-word; white-space: normal;">Advanced System Operations (ASO) oversight</td>
+    <td style="word-wrap: break-word; white-space: normal;">dvanced System Operations (ASO) oversight: Oversees the performance, reliability, and security of the MSI computational systems and infrastructure, for integration and support for Loris, large-scale data processing, and analysis workflows.</td>
     </tr>
     <tr>
     <td>Devin Willis</td>
     <td>DevOps Engineer</td>
-    <td>Dev Ops</td>
+    <td style="word-wrap: break-word; white-space: normal;">Continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
     </tr>
     <tr>
     <td>Jesus Garcia</td>
     <td>DevOps Engineer</td>
-    <td>Dev Ops</td>
+    <td style="word-wrap: break-word; white-space: normal;">Continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
     </tr>
     <tr>
     <td>Timothy Hendrickson</td>
     <td style="word-wrap: break-word; white-space: normal;">MIDB-IG Neuroimaging Informatics Manager</td>
-    <td>Neuroimaging lead</td>
+    <td style="word-wrap: break-word; white-space: normal;">Neuroimaging lead: Lead design and oversight of neuroimaging processing implementation.</td>
     </tr>
     <tr>
     <td>Erik Lee</td>
     <td>Neuroimaging Analyst</td>
-    <td>Pipeline lead</td>
+    <td style="word-wrap: break-word; white-space: normal;">Pipeline lead: Lead software developer and processing for HBCD.</td>
     </tr>
     <tr>
     <td>Monalisa Biles</td>
     <td>&nbsp;</td>
-    <td>Analyst</td>
+    <td style="word-wrap: break-word; white-space: normal;">Analyst: Assistant to Pipeline lead for high throughput processing and incident response.</td>
     </tr>
     <tr>
     <td>Kimberleigh Breen</td>
     <td>Data Manager</td>
-    <td>Data Manager</td>
+    <td style="word-wrap: break-word; white-space: normal;">Data Manager: Responsible for designing and implementing data management plans with IG lead, storage, version control using DataLad.</td>
     </tr>
     <tr>
   <td>Borgne Raasch</td>
   <td>Data Steward</td>
-  <td>Data Steward</td>
+  <td style="word-wrap: break-word; white-space: normal;">Data Steward: Managing data lineage and documentation, and supporting data users in access and&nbsp; applying best practices for responsible data use and sharing.</td>
   </tr>
   <tr>
-  <td>Naomi Hospodarsky-Sutherland</td>
-  <td>Research Security and Compliance Analyst</td>
-  <td>Security/Compliance</td>
+  <td style="word-wrap: break-word; white-space: normal;">Naomi Hospodarsky-Sutherland</td>
+  <td style="word-wrap: break-word; white-space: normal;">Research Security and Compliance Analyst</td>
+  <td style="word-wrap: break-word; white-space: normal;">Security/Compliance: Responsible for developing, implementing, and monitoring policies and controls to ensure data security, privacy, and regulatory compliance for MSI. Works with lead at secure data warehouse to ensure&nbsp; HIPAA, FISMA, and institutional standards across all stages of data handling and system operations are met.</td>
   </tr>
 </tbody>
 </table>
