@@ -25,7 +25,7 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
     <tbody>
         <tr>
         <td>DCCID/PSCID</td>
-        <td style="word-wrap: break-word; white-space: normal;">Original BIDS participant ID numbers prior to de-identification (e.g. <code>sub-1234</code> where <code>1234</code> is the DCCID). These participant IDs are primarily used by LORIS and study sites, with PSCID being more commonly used by sites during the data collection and debugging process</td>
+        <td style="word-wrap: break-word; white-space: normal;">These participant IDs are primarily used by LORIS and study sites, with PSCID being more commonly used by sites during the data collection and debugging process. The DCCID specifically is the original BIDS participant ID prior to de-identification (e.g. <code>sub-1234</code> where <code>1234</code> is the DCCID).</td>
         </tr>
         <tr>
         <td>SCE</td>
@@ -78,6 +78,7 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 </tbody>
 </table>
 </div>
+
 
 ## File-Based Data
 
@@ -194,7 +195,7 @@ LORIS updates their database from `s3://midb-hbcd-main-pr/derivatives` by:
 
 ### Site Capture, BIDS Conversion, & De-Identification
 
-Data is collected from sites into LORIS (EEG, Axtivity, and GABI) or FIONA (for MRI and MRS). LORIS data is subsequently transferred directly into the central S3 main PR bucket, which subsequently is sourced for CBRAIN processing. MRI and MRS must first be converted to BIDS format and MRI data also undergoes extensive raw data QC ([see details](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc)).
+Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for MRI and MRS). LORIS data is subsequently transferred directly into the central S3 main PR bucket, which subsequently is sourced for CBRAIN processing. MRI and MRS must first be converted to BIDS format and MRI data also undergoes extensive raw data QC ([see details](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc)).
 
 <object type="image/svg+xml" data="../images/pre-CBRAIN.svg" style="width: 100%; height: auto;">
   Your browser does not support SVG

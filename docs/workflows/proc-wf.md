@@ -1,0 +1,87 @@
+# HBCD Data Processing Workflows
+
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
+
+This section outlines the full HBCD processing workflows for [tabulated data](#tabulated-data) and [file-based data](#file-based-data), detailing each step from data capture at study sites to final ingestion into Lasso. Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [Org Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. 
+
+<p>
+<div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Definition of Terms</span>
+  <a class="anchor-link" href="#def-terms" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <thead>
+      <tr>
+        <th style="width: 10%;">Term</th>
+        <th style="width: 90%;">Definition</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>DCCID/PSCID</td>
+        <td style="word-wrap: break-word; white-space: normal;">These participant IDs are primarily used by LORIS and study sites, with PSCID being more commonly used by sites during the data collection and debugging process. The DCCID specifically is the original BIDS participant ID prior to de-identification (e.g. <code>sub-1234</code> where <code>1234</code> is the DCCID).</td>
+        </tr>
+        <tr>
+        <td>SCE</td>
+        <td style="word-wrap: break-word; white-space: normal;">Secure computing environment at the UMN <a href="../../orgcharts/#health-sciences-technology">Health Sciences Technology</a> Office</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+</p>
+
+## Tabulated Data 
+
+<object type="image/svg+xml" data="../images/tab-wf.svg" width="100%"></object>
+
+<p>
+<div id="third-party" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Third Party Tools</span>
+  <a class="anchor-link" href="#third-party" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <th>Tool</th>
+  <th>Description</th>
+</thead>
+<tbody>
+<tr>
+<td><b>ERICA</b></td>
+<td style="word-wrap: break-word; white-space: normal;">Early Regulation in Context Assessment</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;"><b>CDI</b></td>
+<td style="word-wrap: break-word; white-space: normal;">The <strong>MacArthur-Bates Communicative Development Inventories</strong>, a widely used tool for assessing early language</td>
+</tr>
+<tr>
+<td><b>Bayley</b></td>
+<td style="word-wrap: break-word; white-space: normal;">The <strong>Bayley Scales of Infant and Toddler Development</strong> (licensed via <strong>Pearson</strong>), used to assess cognitive, motor, and language development</td>
+</tr>
+<tr>
+<td><b>Vineland</b></td>
+<td style="word-wrap: break-word; white-space: normal;">The <strong>Vineland Adaptive Behavior Scales</strong> (licensed via <strong>Pearson</strong>), used to measure adaptive behaviors and daily functioning</td>
+</tr>
+<tr>
+<td><b>NIH BTB</b></td>
+<td style="word-wrap: break-word; white-space: normal;">NIH Baby Toolbox</td>
+</tr>
+<tr>
+<td><b>BISQ-R</b></td>
+<td style="word-wrap: break-word; white-space: normal;">The <strong>Brief Infant Sleep Questionnaire - Revised</strong>, a validated parent-report sleep instrument</td>
+</tr>
+</tbody>
+</table>
+</div>
+</p>
