@@ -73,7 +73,7 @@ docs_dir: docs
 
 nav: 
   - Overview: index.md
-  - 🚧 Workflows & SOPs 🚧:
+  - Workflows & SOPs:
     - Org Charts: orgcharts.md
     - Quality Control Procedures: workflows/qc.md
     - Data Processing Workflows: workflows/data-proc-wf.md

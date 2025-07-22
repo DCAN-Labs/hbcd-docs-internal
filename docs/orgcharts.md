@@ -1,9 +1,6 @@
 #  HDCC Organizational Charts
 
-
-🚧 UNDER DEVELOPMENT 🚧 - Action Items on [Basecamp](https://3.basecamp.com/5032058/buckets/35843816/todolists/8584532437) for updates needed for this page.
-
-----------------------------
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
 
 ## HDCC Functional Structure
 
