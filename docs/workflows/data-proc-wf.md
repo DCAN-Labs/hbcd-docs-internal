@@ -250,10 +250,7 @@ The details of this process are as follows:
  `s3://midb-hbcd-lasso-data-release-staging/<release_identifier>/hbcd/` 
 
 
-
-## Alt WF diagrams made in mermaid and split up
-
-### File-Based Data Processing Workflow
+## Alt Mermaid WF diagrams: File-Based Data Processing Workflow
 
 ### Pre-CBRAIN Processing: Site Capture, BIDS Conversion, & De-Identification
 
