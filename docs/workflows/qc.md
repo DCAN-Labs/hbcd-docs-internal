@@ -663,4 +663,23 @@ After data is released, additional QC is conducted in response to user-reported 
 </div>
 </div>
 
-<br>
+## Software Standards
+
+The following procedures are performed to support transparency, reproducibility, and standard environments for our databases and systems controls:
+
+### Processing & Analytic Standards
+
+See the full details on the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/#processing-analytic-standards). This includes the use of standardized processing pipelines for MRI, EEG, and other modalities, as well as the use of standardized analytic approaches across sites. Independent code review is performed for all processing pipelines via the NMIND Coding Standards Checklist, with a focus on ensuring that the code is well-documented, reproducible, and follows best practices in software development. This includes version control of all internal and public-facing code bases, including the documentation websites.
+
+### Data Storage and Backup
+
+ - Large data files are stored in MSI's Tier 2 Ceph storage system, while the LORIS systems operate off of the storage in MSI's OpenStack cloud environment.
+ - Research data is encrypted and backed up to AWS Deep Glacier on a nightly basis.
+ - The LORIS systems (prod, sandbox, and staging) have their database backed up on a nightly basis to MSI Tier 2 storage.
+ - Currently all data is held, although we are in the final phases of determining a system for retiring some nightly backups after six months, reducing to retaining weekly backups for another three months and then monthly after nine total months.
+
+### Code Versioning
+All code, both LORIS customizations and Puppet orchestration code, are maintained in the University of Minnesota's local Enterprise GitHub. These code bases are kept in separate internal GitHub organizations with different memberships and access controls. The orchestration code is also subject to our Internal Change Control process that requires a change to get a separate approval and verification from someone other than the implementer to ensure safety and reliability.
+
+### Access Controls
+Data access is modified through the same Internal Change Control process governing orchestration changes. All change requests must be signed off on by a senior staff manner and are vetted by data stewards or managers of the projects.
