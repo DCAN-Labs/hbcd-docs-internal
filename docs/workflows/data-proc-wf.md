@@ -156,6 +156,18 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 #### Record Query & Derivatives Cleanup
 After CBRAIN processing, previous processing records are queried against the contents of `s3://midb-hbcd-main-deid/assembly_bids` to ensure that processing is still up-to-date with the current BIDS data. For any cases where the derivative data has become out of sync with the assembly_bids data, the impacted derivative data along with CBRAIN processing task objects are deleted. The next time the query scripts are run that look for new subjects to process, the processing will be re-initiated for these subjects.
 
+### Copying Release Data to Staging Bucket
+The details of this process are as follows:
+
+1. Find release-ready subject/sessions in `s3://midb-hbcd-main-deid/`
+2. Edit assembly_bids structure like so:
+    - Remove low-QC images/files that were not used for attempted processing
+    - Reconstruct `scans.tsv` files to only include entries for files included in the release
+    - Reconstruct `sessions.tsv` files to only include sessions from the release
+3. Squash the derivatives folders across imaging sessions so that there is one common derivatives folder for all imaging sessions
+4. Copy the resulting assembly_bids and derivatives data to `rawdata/` and `derivatives/`, respectively, under:     
+ `s3://midb-hbcd-lasso-data-release-staging/<release_identifier>/hbcd/` 
+
 ### BrainSwipes
 The workflow for BrainSwipes is unique compared to other data due to the fact that the quality control (QC) is performed post-CBRAIN processing and therefore must go through additional steps. Some details to note:
 
@@ -176,19 +188,6 @@ LORIS updates their database from `s3://midb-hbcd-main-pr/derivatives` by:
 2. Looking for cases where there are newer derivative outputs than what exists in LORIS records and replacing the old records with the new data
 3. Adding in records for any new subjects/sessions
 
-### Copying Release Data to Staging Bucket
-The details of this process are as follows:
-
-1. Find release-ready subject/sessions in `s3://midb-hbcd-main-deid/`
-2. Edit assembly_bids structure like so:
-    - Remove low-QC images/files that were not used for attempted processing
-    - Reconstruct `scans.tsv` files to only include entries for files included in the release
-    - Reconstruct `sessions.tsv` files to only include sessions from the release
-3. Squash the derivatives folders across imaging sessions so that there is one common derivatives folder for all imaging sessions
-4. Copy the resulting assembly_bids and derivatives data to `rawdata/` and `derivatives/`, respectively, under:     
- `s3://midb-hbcd-lasso-data-release-staging/<release_identifier>/hbcd/` 
-
-
 ## Alt Mermaid WF diagrams: File-Based Data Processing Workflow
 
 ### Site Capture, BIDS Conversion, & De-Identification
@@ -201,6 +200,22 @@ Data is collected from sites into LORIS (EEG, Axtivity, and GABI) or FIONA (for 
 
 ### CBRAIN Processing, Re-Identification, & Lasso Ingestion
 
-<object type="image/svg+xml" data="../images/CBRAIN-lasso-ingestion.svg" style="width: 100%; height: auto;">
+<object type="image/svg+xml" data="../images/cbrain-release.svg" style="width: 100%; height: auto;">
   Your browser does not support SVG
 </object>
+
+
+<div id="record-query" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Record Query</span>
+  <a class="anchor-link" href="#record-query" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>After CBRAIN processing, previous processing records are queried against the contents of s3://midb-hbcd-main-deid/assembly_bids to ensure that processing is still up-to-date with the current BIDS data. For any cases where the derivative data has become out of sync with the assembly_bids data, the impacted derivative data along with CBRAIN processing task objects are deleted. The next time the query scripts are run that look for new subjects to process, the processing will be re-initiated for these subjects.</p>
+</div>
+
+<br>
