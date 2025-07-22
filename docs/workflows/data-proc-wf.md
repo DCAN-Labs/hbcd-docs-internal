@@ -191,34 +191,5 @@ LORIS updates their database from `s3://midb-hbcd-main-pr/derivatives` by:
 2. Looking for cases where there are newer derivative outputs than what exists in LORIS records and replacing the old records with the new data
 3. Adding in records for any new subjects/sessions
 
-## Alt Mermaid WF diagrams: File-Based Data Processing Workflow
-
-### Site Capture, BIDS Conversion, & De-Identification
-
-Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for MRI and MRS). LORIS data is subsequently transferred directly into the central S3 main PR bucket, which subsequently is sourced for CBRAIN processing. MRI and MRS must first be converted to BIDS format and MRI data also undergoes extensive raw data QC ([see details](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc)).
-
-<object type="image/svg+xml" data="../images/pre-CBRAIN.svg" style="width: 100%; height: auto;">
-  Your browser does not support SVG
-</object>
-
-### CBRAIN Processing, Re-Identification, & Lasso Ingestion
-
-<object type="image/svg+xml" data="../images/cbrain-release.svg" style="width: 100%; height: auto;">
-  Your browser does not support SVG
-</object>
-
-
-<div id="record-query" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text">Record Query</span>
-  <a class="anchor-link" href="#record-query" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>After CBRAIN processing, previous processing records are queried against the contents of s3://midb-hbcd-main-deid/assembly_bids to ensure that processing is still up-to-date with the current BIDS data. For any cases where the derivative data has become out of sync with the assembly_bids data, the impacted derivative data along with CBRAIN processing task objects are deleted. The next time the query scripts are run that look for new subjects to process, the processing will be re-initiated for these subjects.</p>
-</div>
 
 <br>
