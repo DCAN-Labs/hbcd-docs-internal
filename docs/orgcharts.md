@@ -203,9 +203,14 @@ flowchart LR
 </div>
 <br>
 
-<div id="midb-msi" class="table-banner" onclick="toggleCollapse(this)">
+<div id="midb-analytics-rr" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
   <span class="table-text">Roles & Responsibilities</span>
-  <span class="notification-arrow">▸</span>
+  <a class="anchor-link" href="#midb-analytics-rr" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
@@ -270,9 +275,14 @@ flowchart TB
 ```
 <br>
 
-<div id="midb-msi" class="table-banner" onclick="toggleCollapse(this)">
+<div id="midb-msi-rr" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
   <span class="table-text">Roles & Responsibilities</span>
-  <span class="notification-arrow">▸</span>
+  <a class="anchor-link" href="#midb-msi-rr" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
@@ -473,8 +483,13 @@ flowchart TB
 ```
 <p>
 <div id="loris-rr" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
   <span class="table-text">Roles & Responsibilities</span>
-  <span class="notification-arrow">▸</span>
+  <a class="anchor-link" href="#loris-rr" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
@@ -538,7 +553,7 @@ flowchart TB
 
 ### LIBR
 
-The Laureate Institute for Brain Research (LIBR) houses the Biostatitics and Geolocation [HBCD Workgroups](#hbcd-workgroups) and provides support for the HDCC in the areas of biostatistics, geolocation, and data analysis.
+The Laureate Institute for Brain Research (LIBR) houses the Biostatistics and Geolocation [HBCD Workgroups](#hbcd-workgroups) and provides support for the HDCC in the areas of biostatistics, geolocation, and data analysis.
 
 ```mermaid
 ---
