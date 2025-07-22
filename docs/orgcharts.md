@@ -126,6 +126,54 @@ flowchart LR
 ```
 </div>
 
+<div id="cdni-rr" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Roles & Responsibilities</span>
+  <a class="anchor-link" href="#cdni-rr" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <thead>
+      <tr>
+        <th style="width: 5%;">Name</th>
+        <th style="width: 5%;">Title</th>
+        <th style="width: 60%;">Role on HDCC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>Damien Fair</td>
+      <td>PI</td>
+      <td style="word-wrap: break-word; white-space: normal;">Provides scientific and operational leadership for the HBCD Data Coordinating Center, with direct oversight of MRI acquisition strategy, processing pipeline development, and quality control infrastructure at CDNI.</td>
+      </tr>
+      <tr>
+      <td>Kimberly Weldon</td>
+      <td>Siemens Engineer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Supports MRI acquisition through scanner calibration, sequence optimization, and technical troubleshooting, ensuring harmonized imaging protocols across Siemens scanners and sites.</td>
+      </tr>
+      <tr>
+      <td>Eric Feczko</td>
+      <td>QC Lead</td>
+      <td style="word-wrap: break-word; white-space: normal;">Leads the design and implementation of post-processing MRI quality control procedures, developing automated and manual QC metrics to assess data reliability and identify artifacts across modalities.</td>
+      </tr>
+      <tr>
+      <td>Lucille A. Moore</td>
+      <td>Neuroinformatics</td>
+      <td style="word-wrap: break-word; white-space: normal;">Develops and maintains software tools for organizing, processing, and visualizing neuroimaging data, integrating processed outputs with metadata and quality metrics for centralized review and downstream analysis. Lead documentation across all HDCC release docs and works with director and HCAC to coordinate processes throughout HBCD. Developer and/or project manager for select HBCD processing pipelines.</td>
+      </tr>
+      <tr>
+      <td>Michael Anderson</td>
+      <td>Analyst</td>
+      <td style="word-wrap: break-word; white-space: normal;">Conducts data analysis and curation of processed MRI datasets, supports QC review and scoring workflows, and ensures alignment between data outputs and release standards.</td>
+      </tr>
+</tbody>
+</table>
+</div>
+
 #### Health Sciences Technology
   
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Electronic Health Records (EHR)*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
@@ -180,6 +228,69 @@ flowchart TB
     style n5 fill:#E1BEE7,stroke:#AA00FF
     click n5 "#washu"
 ```
+</div>
+
+<div id="hst-rr" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Roles & Responsibilities</span>
+  <a class="anchor-link" href="#hst-rr" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <thead>
+      <tr>
+        <th style="width: 5%;">Name</th>
+        <th style="width: 5%;">Title</th>
+        <th style="width: 50%;">Role on HDCC</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Reed McEwan</td>
+    <td>HDCC Architect &amp; Data Manager</td>
+    <td style="word-wrap: break-word; white-space: normal;">Oversees the design and implementation of secure data infrastructure for the HBCD Data Core, including data shelter, PHI protection, system architecture, and integration across platforms.</td>
+    </tr>
+    <tr>
+    <td>Karen Athy-Penrose</td>
+    <td>Project Manger</td>
+    <td style="word-wrap: break-word; white-space: normal;">Coordinates cross-functional efforts across HST teams, ensuring timely progress on dashboard development, EHR integration, and data governance activities related to PHI and third-party tools.</td>
+    </tr>
+    <tr>
+    <td>Haley Hutala</td>
+    <td>Tableau Engineer</td>
+    <td style="word-wrap: break-word; white-space: normal;">Designs and maintains interactive data visualizations in Tableau to monitor MRI quality metrics, enabling real-time insights and reporting for QC stakeholders.</td>
+    </tr>
+    <tr>
+    <td>Sanjana Madakshire</td>
+    <td>QC</td>
+    <td style="word-wrap: break-word; white-space: normal;">Performs data validation and quality assurance tasks for MRI datasets, collaborating with dashboard and data teams to ensure accuracy in visualized metrics.</td>
+    </tr>
+    <tr>
+    <td>Dan Duhon,</td>
+    <td>Developer</td>
+    <td style="word-wrap: break-word; white-space: normal;">Maintain the infrastructure, APIs, and backend services supporting HST platforms, including data ingestion, automation pipelines, authentication systems, and secure data exchange between HBCD components. Lead ETL developer</td>
+    </tr>
+    <tr>
+    <td>Derek Thompson,</td>
+    <td>Developer</td>
+    <td style="word-wrap: break-word; white-space: normal;">Maintain the infrastructure, APIs, and backend services supporting HST platforms, including data ingestion, automation pipelines, authentication systems, and secure data exchange between HBCD components.</td>
+    </tr>
+    <tr>
+    <td>Saranya Subramanian,</td>
+    <td>Developer</td>
+    <td style="word-wrap: break-word; white-space: normal;">Maintain the infrastructure, APIs, and backend services supporting HST platforms, including data ingestion, automation pipelines, authentication systems, and secure data exchange between HBCD components.</td>
+    </tr>
+    <tr>
+    <td>Brett Weaver</td>
+    <td>Developer</td>
+    <td style="word-wrap: break-word; white-space: normal;">Maintain the infrastructure, APIs, and backend services supporting HST platforms, including data ingestion, automation pipelines, authentication systems, and secure data exchange between HBCD components.</td>
+    </tr>
+</tbody>
+</table>
 </div>
 
 #### MIDB Analytics Hub
@@ -382,6 +493,76 @@ flowchart TB
 ```
 </div>
 
+<p>
+<div id="washu-rr" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Roles & Responsibilities</span>
+  <a class="anchor-link" href="#washu-rr" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <thead>
+      <tr>
+        <th style="width: 10%;">Name</th>
+        <th style="width: 10%;">Title</th>
+        <th style="width: 50%;">Role on HDCC</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Chris Smyser</td>
+    <td>PI</td>
+    <td style="word-wrap: break-word; white-space: normal;">Provide scientific and administrative leadership for WashU's contributions to HBCD, including oversight of EMR integration, imaging infrastructure (Ambra), participant tracking tools (AirTable, Ripple), and coordination with the Study Administrative Core (HCAC)</td>
+    </tr>
+    <tr>
+    <td>Sauren Ravencroft</td>
+    <td>Project Manager</td>
+    <td style="word-wrap: break-word; white-space: normal;">Coordinates implementation, integration, development, and maintenance of the AirTable and Ripple platforms</td>
+    </tr>
+    <tr>
+    <td>Lilliana Mueller</td>
+    <td>Ripple Admin</td>
+    <td style="word-wrap: break-word; white-space: normal;">Administers Ripple platform operations and coordinates communication on MRI feedback to sites</td>
+    </tr>
+    <tr>
+    <td>Nicole Venteris</td>
+    <td>EMR Project Manager</td>
+    <td style="word-wrap: break-word; white-space: normal;">Oversees development and implementation of workflows for integrating and managing structured EMR data across study sites</td>
+    </tr>
+    <tr>
+    <td>Bob McKinstry</td>
+    <td>Co-I &amp; Neuroadiologist</td>
+    <td style="word-wrap: break-word; white-space: normal;">Provide clinical reads of brain imaging</td>
+    </tr>
+    <tr>
+    <td>Josh Shimony</td>
+    <td>Co-I &amp; Neuroadiologist</td>
+    <td  style="word-wrap: break-word; white-space: normal;">Provide clinical reads of brain imaging</td>
+    </tr>
+    <tr>
+    <td>Jim Alexopoulos</td>
+    <td>Data Manager</td>
+    <td style="word-wrap: break-word; white-space: normal;">Manages Ambra workflows and consults on all MRI QC and processing workflows</td>
+    </tr>
+    <tr>
+    <td>Kevine Ngalula</td>
+    <td>Ripple Developer</td>
+    <td style="word-wrap: break-word; white-space: normal;">Supports customization and maintenance of Ripple</td>
+    </tr>
+    <tr>
+    <td>Lynne Menchaca</td>
+    <td>AirTable Admin</td>
+    <td style="word-wrap: break-word; white-space: normal;">Manages and configures AirTable databases to manage access controls and personnel across the study</td>
+    </tr>
+</tbody>
+</table>
+</div>
+</p>
+
 #### Subcontractor Details
 
 ##### AirTable 
@@ -451,6 +632,93 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
 [Lasso](https://www.lassoinformatics.com/) DataShare is a secure data management platform for multi-modal data, streamlining secure data access, searching, filtering, merging, sharing and downloading. Lasso Data Share and Lasso Professional Services serve several core functions in HDCC, including developing dashboards for ongoing workgroup data QC, supporting pre-release data QC,  developing QC workflows, and being the data release platform where the scientific community can access all publicly available HBCD Study data (file-based and tabulated data). Lasso Data Share is fully compliant with (NIST) 800-53 and FISMA-low security standards.
 
 ![](images/lasso-org-chart.svg)
+
+<div id="lasso-rr" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Roles & Responsibilities</span>
+  <a class="anchor-link" href="#lasso-rr" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <thead>
+      <tr>
+        <th style="width: 25%;">Name</th>
+        <th style="width: 30%;">Title</th>
+        <th style="width: 45%;">Role on HDCC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>Leigh MacIntyre</td>
+      <td>CEO</td>
+      <td>&nbsp;</td>
+      </tr>
+      <tr>
+      <td>Fraser Glen</td>
+      <td>CTO</td>
+      <td>&nbsp;</td>
+      </tr>
+      <tr>
+      <td>Jen Zink</td>
+      <td>Director, Partnerships &amp; Grants</td>
+      <td>&nbsp;</td>
+      </tr>
+      <tr>
+      <td>Jordan Stirling</td>
+      <td>Lead Developer</td>
+      <td>Oversight of Lasso Development</td>
+      </tr>
+      <tr>
+      <td>Aarushi Chaudhry</td>
+      <td>Director, Customer Success</td>
+      <td>Answering tickets and providing documentation for release</td>
+      </tr>
+      <tr>
+      <td>Marion Fechino</td>
+      <td>Data Analyst</td>
+      <td>Tableau Dashboard Updates for WG&rsquo;s</td>
+      </tr>
+      <tr>
+      <td>Laetitia Fesselier</td>
+      <td>Senior Lasso Developer</td>
+      <td>Data Loading Team Lead</td>
+      </tr>
+      <tr>
+      <td>Mateus Andre</td>
+      <td>Lasso Developer</td>
+      <td>Data Loading Team</td>
+      </tr>
+      <tr>
+      <td>Edson Silva</td>
+      <td>Lasso Developer</td>
+      <td>Data Loading Team</td>
+      </tr>
+      <tr>
+      <td>Vandana Sriram</td>
+      <td>Lasso QC Engineer</td>
+      <td>QA/QC pipelines for new HDCC_QC features, and data loading sanity checks</td>
+      </tr>
+      <tr>
+      <td>Anjali Raj Katuri</td>
+      <td>Lasso QC Engineer</td>
+      <td>QA/QC pipelines for new HDCC_QC features, and data loading sanity checks</td>
+      </tr>
+      <tr>
+      <td>Andrew Sawaya</td>
+      <td>UX/UI Lead Designer</td>
+      <td>UX design of new feature requests</td>
+      </tr>
+      <tr>
+      <td>Mehrafarin Ekhlaspour</td>
+      <td>UX/UI Designer</td>
+      <td>UX design of new feature requests</td>
+      </tr>
+</table>
+</div>
 
 ### McGill University
 
@@ -596,6 +864,64 @@ flowchart TB
 ```
 </div>
 
+
+<div id="umd-rr" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Roles & Responsibilities</span>
+  <a class="anchor-link" href="#umd-rr" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <thead>
+      <tr>
+        <th style="width: 10%;">Name</th>
+        <th style="width: 10%;">Title</th>
+        <th style="width: 50%;">Role on HDCC</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Nathan Fox</td>
+    <td>Associate Director</td>
+    <td style="word-wrap: break-word; white-space: normal;">Provides strategic and scientific oversight for EEG data collection, preprocessing, and integration efforts across sites.</td>
+    </tr>
+    <tr>
+    <td>Whitney Kasenetz</td>
+    <td style="word-wrap: break-word; white-space: normal;">Preprocessing Liason w/ Lasso &amp; LORIS</td>
+    <td style="word-wrap: break-word; white-space: normal;">Coordinates preprocessing workflows and serves as the primary liaison between the EEG team and the Lasso and LORIS development groups.</td>
+    </tr>
+    <tr>
+    <td>Dylan Gilbreath</td>
+    <td>Pipeline Developer</td>
+    <td style="word-wrap: break-word; white-space: normal;">Designs and implements automated EEG preprocessing and analysis pipelines, develops code for signal processing and feature extraction, and performs quality control checks to ensure accurate, standardized output across sites.</td>
+    </tr>
+    <tr>
+    <td>Santiago Morales</td>
+    <td>Co-I &amp; Coding Lead</td>
+    <td style="word-wrap: break-word; white-space: normal;">Leads EEG behavioral coding initiatives and quality assurance protocols, overseeing the alignment of coded variables with experimental design and coordinating validation efforts to maintain data integrity across cohorts.</td>
+    </tr>
+    <tr>
+    <td>Kira Ashton</td>
+    <td>Developer</td>
+    <td style="word-wrap: break-word; white-space: normal;">Conducts EEG data annotation, behavioral coding, and quality control checks, ensuring consistent and accurate coding practices across participants and sessions.</td>
+    </tr>
+    <tr>
+    <td>Trisha Maheswari</td>
+    <td>Site Supervisor</td>
+    <td style="word-wrap: break-word; white-space: normal;">Manages site-level EEG data collection processes, supervises staff and students involved in EEG acquisition and coding, and conducts local QC to maintain protocol compliance.</td>
+    </tr>
+    <tr>
+    <td>Elise Harris</td>
+    <td>Site Oversight</td>
+    <td style="word-wrap: break-word; white-space: normal;">Oversees EEG protocol adherence at the site level, provides training for new staff, and supports ongoing quality control reviews to ensure consistent data collection across the study timeline.</td>
+    </tr>
+    </tbody>
+    </table>
+</div>
 
 ## HBCD Workgroups
 

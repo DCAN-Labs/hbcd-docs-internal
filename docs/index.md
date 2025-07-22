@@ -16,7 +16,7 @@ The HDCC is committed to a principled and transparent approach to data sharing. 
 
 #### 1. Clear Objectives and Scope
 
-Each data release begins with a clearly defined scope. We identify which data components will be made publicly available. This includes an organized document of instruments and visits to be released that is signed off by leadership groups across HDCC-HCAC, program, and HBCD Workgroups ([see details](../orgcharts.md#hbcd-workgroups)). It is archived and versioned within the Docs pages. 
+Each data release begins with a clearly defined scope. We identify which data components will be made publicly available. This includes an organized document of instruments and visits to be released that is signed off by leadership groups across HDCC-HCAC, program, and HBCD Workgroups ([see details](orgcharts.md#hbcd-workgroups)). It is archived and versioned within the Docs pages. 
 
 * **Metadata and Documentation**: Each release includes standardized metadata, data dictionaries, and explanatory documentation, aligned with BIDS and accompanied by dedicated documentation pages for data and software.
 
