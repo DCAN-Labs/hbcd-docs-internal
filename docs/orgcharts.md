@@ -538,12 +538,14 @@ flowchart TB
 
 ### LIBR
 
+The Laureate Institute for Brain Research (LIBR) houses the Biostatitics and Geolocation [HBCD Workgroups](#hbcd-workgroups) and provides support for the HDCC in the areas of biostatistics, geolocation, and data analysis.
+
 ```mermaid
 ---
 config:
   layout: fixed
 ---
-flowchart TB
+flowchart LR
     n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
     style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style n17 fill:#BBDEFB,stroke:#2962FF
