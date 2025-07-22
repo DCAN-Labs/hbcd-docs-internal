@@ -252,7 +252,7 @@ The details of this process are as follows:
 
 ## Alt Mermaid WF diagrams: File-Based Data Processing Workflow
 
-### Pre-CBRAIN Processing: Site Capture, BIDS Conversion, & De-Identification
+### Site Capture, BIDS Conversion, & De-Identification
 
 Data is collected from sites into LORIS (EEG, Axtivity, and GABI) or FIONA (for MRI and MRS). LORIS data is subsequently transferred directly into the central S3 main PR bucket, which subsequently is sourced for CBRAIN processing. MRI and MRS must first be converted to BIDS format and MRI data also undergoes extensive raw data QC ([see details](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc)).
 
@@ -260,12 +260,8 @@ Data is collected from sites into LORIS (EEG, Axtivity, and GABI) or FIONA (for 
   Your browser does not support SVG
 </object>
 
-### CBRAIN Processing
+### CBRAIN Processing, Re-Identification, & Lasso Ingestion
 
-<object type="image/svg+xml" data="../images/CBRAIN.svg" style="width: 100%; height: auto;">
+<object type="image/svg+xml" data="../images/CBRAIN-lasso-ingestion.svg" style="width: 100%; height: auto;">
   Your browser does not support SVG
 </object>
-
-### Staging & Lasso Ingestion
-
-ADD DIAGRAM
