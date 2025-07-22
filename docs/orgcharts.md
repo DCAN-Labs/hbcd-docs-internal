@@ -173,6 +173,7 @@ flowchart LR
 </tbody>
 </table>
 </div>
+<br>
 
 #### Health Sciences Technology
   
@@ -292,6 +293,7 @@ flowchart TB
 </tbody>
 </table>
 </div>
+<br>
 
 #### MIDB Analytics Hub
 The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) works in coordination with the Biospecimens Workgroup to provide support for genomic data processing and analysis as part of the **HBCD Genomics Supplement**. 
@@ -611,6 +613,80 @@ flowchart TB
 ```
 </div>
 
+<div id="jcvi-rr" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Roles & Responsibilities</span>
+  <a class="anchor-link" href="#jcvi-rr" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <thead>
+      <tr>
+        <th style="width: 5%;">Name</th>
+        <th style="width: 5%;">Title</th>
+        <th style="width: 50%;">Role on HDCC</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Janosch Linkersdoerfer</td>
+      <td>Team Lead</td>
+      <td style="word-wrap: break-word; white-space: normal;">Lead manager at UCSD who assists with the overall architecture planning of the HDCC. Oversees development and integration of REDCap, DEAP, and dashboard systems, for the HDCC.</td>
+      </tr>
+      <tr>
+      <td>Erika Bolden</td>
+      <td>Redcap Developer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Develop, configure, and support REDCap instruments and workflows for structured data collection</td>
+      </tr>
+      <tr>
+      <td>Biplabendu Das</td>
+      <td>RBA Dashboard Developer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Designs and maintains the QC and data dashboards, enabling dynamic visualization, reporting, and data access across platforms.</td>
+      </tr>
+      <tr>
+      <td>Josh Kuperman</td>
+      <td>MRI Phantom QC Lead</td>
+      <td style="word-wrap: break-word; white-space: normal;">Manages the acquisition, monitoring, and analysis of MRI phantom data across study sites to ensure scanner stability, calibration, and harmonization.</td>
+      </tr>
+      <tr>
+      <td>Donald Hagler</td>
+      <td>MRI QC</td>
+      <td style="word-wrap: break-word; white-space: normal;">Directs the pipeline for raw MRI data quality assurance, including protocol compliance, artifact detection</td>
+      </tr>
+      <tr>
+      <td>Rongguang Yang</td>
+      <td>FIONA Lead</td>
+      <td style="word-wrap: break-word; white-space: normal;">Leads the deployment and optimization of FIONA for transfer of imaging data from acquisition sites to the central data core.</td>
+      </tr>
+      <tr>
+      <td>Asef-Joseph Baligh</td>
+      <td>REDCap Server Admin</td>
+      <td style="word-wrap: break-word; white-space: normal;">Maintains and secures the REDCap server infrastructure</td>
+      </tr>
+      <tr>
+      <td>Olivier Celhay</td>
+      <td>Dashboard Frontend Developer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Builds and maintains user-facing interfaces for data dashboards, enhancing usability and responsiveness for QC tracking, metrics visualization</td>
+      </tr>
+      <tr>
+      <td>Tyler Berkness</td>
+      <td>Protocol Violation QC</td>
+      <td style="word-wrap: break-word; white-space: normal;">Monitors and flags protocol deviations in incoming MRI datasets</td>
+      </tr>
+      <tr>
+      <td>Sejal Shanbhag</td>
+      <td>Issue Handling</td>
+      <td style="word-wrap: break-word; white-space: normal;">Manages the triage and resolution of quality control issues related to raw MRI data</td>
+      </tr>
+</tbody>
+</table>
+</div>
+
+
 #### Subcontractor Details
 
 🚧 **UPDATE FOLLOWING DESCRIPTIONS - these are first drafts and need to be reviewed/corrected by SMEs** 🚧
@@ -770,29 +846,24 @@ flowchart TB
     </thead>
     <tbody>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Alan Evans</td>
-        <td style="word-wrap: break-word; white-space: normal;">Principal Investigator</td>
-        <td style="word-wrap: break-word; white-space: normal;">Oversight and management of <a href="https://mcin.ca/about-mcin/" target="_blank">MCIN</a> and LORIS operations</td>
+        <td style="word-wrap: break-word; white-space: normal;">Samir Das</td>
+        <td style="word-wrap: break-word; white-space: normal;">Director, LORIS</td>
+        <td style="word-wrap: break-word; white-space: normal;">Leads the strategic development, deployment, and oversight of the LORIS data management and capture system, ensuring it supports scalable, secure, and interoperable workflows for data acquisition, curation, quality control, and multi-site collaboration across HBCD.</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Samir Das</td>
-        <td style="word-wrap: break-word; white-space: normal;">Associate Director of Software Development</td>
-        <td style="word-wrap: break-word; white-space: normal;">Administration and oversight of LORIS operations for the HBCD Study</td>
+        <td style="word-wrap: break-word; white-space: normal;">Santiago Torres</td>
+        <td style="word-wrap: break-word; white-space: normal;">Study Officer/Project Manager</td>
+        <td style="word-wrap: break-word; white-space: normal;">Coordinates cross-functional teams, timelines, and deliverables to support the LORIS in implementing system enhancements, managing user requirements, facilitating stakeholder communication, and ensuring the successful integration of LORIS across research sites and the HDCC.</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Cecile Madjar</td>
+        <td style="word-wrap: break-word; white-space: normal;">Lead MRI developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Designs and implements pipelines to integrate raw and processed MRI data, quality control metrics, and imaging metadata into the LORIS platform, ensuring robust, automated, and reproducible data flow from acquisition through curation within a scalable research infrastructure.</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Pierre Rioux</td>
         <td style="word-wrap: break-word; white-space: normal;">Senior CBRAIN Developer</td>
         <td style="word-wrap: break-word; white-space: normal;">CBRAIN configuration, tool containerization, design computing and analysis workflows, system interoperability</td>
-    </tr>
-    <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Santiago Torres</td>
-        <td style="word-wrap: break-word; white-space: normal;">Study Officer (Research Admin)</td>
-        <td style="word-wrap: break-word; white-space: normal;">Project coordinator and liaison, ensuring timely implementation of study tasks and alignment with Workgroup requirements through oversight, testing, and data validation activities</td>
-    </tr>
-    <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Cecile Madjar</td>
-        <td style="word-wrap: break-word; white-space: normal;">Lead MRI developer</td>
-        <td style="word-wrap: break-word; white-space: normal;">Development and deployment of LORIS MRI features, including ingestion and error handling</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Laetitia Faeselier</td>
@@ -801,18 +872,18 @@ flowchart TB
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Regis Ongaro-Carcy</td>
-        <td style="word-wrap: break-word; white-space: normal;">Lead Developer</td>
-        <td style="word-wrap: break-word; white-space: normal;">Development of LORIS features for behavior (questionnaire/survey responses), including integration with external platforms (e.g. REDCap, Ripple, MSI), streamlining data collection, and enhancing system interoperability and workflows</td>
+        <td style="word-wrap: break-word; white-space: normal;">Senior LORIS Developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Leads the architectural design and implementation of advanced features within the LORIS platform, oversees integration with acquisition, processing, QC, and metadata workflows, mentors junior developers, and designs robust pipelines to support secure, reproducible, public data releases for large-scale.</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Sruthy Matthew</td>
-        <td style="word-wrap: break-word; white-space: normal;">Senior Backend Developer</td>
-        <td style="word-wrap: break-word; white-space: normal;">Development of LORIS LaunchPad and Backend features</td>
+        <td style="word-wrap: break-word; white-space: normal;">LORIS Developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Develops, maintains, and extends the LORIS data management platform by implementing new features, fixing bugs, and supporting integrations.</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">George Murad</td>
-        <td style="word-wrap: break-word; white-space: normal;">Junior Developer</td>
-        <td style="word-wrap: break-word; white-space: normal;">Development of LORIS features for behavior (questionnaire/survey responses), including instrument coding, automated QC queries, and API/Endpoint implementation</td>
+        <td style="word-wrap: break-word; white-space: normal;">LORIS Developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Develops, maintains, and extends the LORIS data management platform by implementing new features, fixing bugs, and supporting integrations.</td>
     </tr>
 </tbody>
 </table>
