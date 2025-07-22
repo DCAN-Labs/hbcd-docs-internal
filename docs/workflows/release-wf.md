@@ -2,6 +2,11 @@
 
 This document outlines the staged workflow for selecting, releasing, and validating data for public dissemination. Key stakeholders include the HCAC Project Manager (PM), HBCD Data Coordinating Center (HDCC), Oversight Group (OG), Workgroups (WGs), and Lasso.
 
+## Release Timeline
+
+<img src="../images/timeline.svg" alt="Tableau" width="100%" height="auto" class="center">
+
+
 ### Stage 1: Determine Measures to Include in Release
 
 The HCAC PM (Stephanie Averill) collaborates with the HDCC to generate a comprehensive list of potential measures for the upcoming data release.
