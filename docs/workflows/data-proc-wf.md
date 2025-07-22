@@ -248,31 +248,3 @@ The details of this process are as follows:
 3. Squash the derivatives folders across imaging sessions so that there is one common derivatives folder for all imaging sessions
 4. Copy the resulting assembly_bids and derivatives data to `rawdata/` and `derivatives/`, respectively, under:     
  `s3://midb-hbcd-lasso-data-release-staging/<release_identifier>/hbcd/` 
-
-### Modality-Specific Worfklow Details
-
-#### Magnetic Resonance Raw Data Quality Control
-
-![](images/MRI-QC-WF.png)
-
-#### MRS Processing
-
-The following magnetic resonance spectroscopy (MRS) data processing workflow diagram is sourced from [Dean et al. 2024](https://doi.org/10.1016/j.dcn.2024.101452):
-
-<figure>
-  <img src="../images/MRS-WF.jpg" alt="MRS-WF" class="center" width="80%">
-  <figcaption style="text-align: center; font-style: italic;">Fig. 9. : Summary of the fully automated MRS data processing workflow. The workflow includes automated data transfer and ingestion, integrates derivatives from the HBCD MRI analysis, performs the MRS analysis, and generates quantitative results and summary reports.</figcaption>
-</figure>
-
-## Alt WF diagrams made in mermaid and split up: File-Based Data Processing Workflow
-
-### Site Capture & BIDS Conversion
-
-Data is collected from sites into LORIS (EEG, Axtivity, and GABI) or FIONA (for MRI and MRS). LORIS data is subsequently transferred directly into the central S3 main PR bucket, which subsequently is sourced for CBRAIN processing. MRI and MRS must first be converted to BIDS format and MRI data also undergoes extensive raw data QC ([see details](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc)).
-
-<object type="image/svg+xml" data="../images/mermaid6.svg" style="width: 100%; height: auto;">
-  Your browser does not support SVG
-</object>
-
-
-### CBRAIN Processing

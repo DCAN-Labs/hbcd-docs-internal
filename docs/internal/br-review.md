@@ -1,4 +1,4 @@
-# Beta Release Data: QC & Review
+# Access Beta Release Data
 
 The Beta Data Release Site is used for quality control so that HBCD Consortium members to review their data as it appears on the Lasso platform prior to inclusion in a release. 
 

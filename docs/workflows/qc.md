@@ -428,6 +428,10 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 </tr>
 </tbody>
 </table>
+
+<p><b>Modality-Specific Worfklow Details</b>
+<img src="../images/qc/MRI-QC-WF.png" alt="Tableau" width="80%" height="auto" class="center">
+</p>
 </div>
 
 <div id="proc-mri" class="proc-banner" onclick="toggleCollapse(this)">
