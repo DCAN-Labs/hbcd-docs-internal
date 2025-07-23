@@ -202,9 +202,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <object type="image/svg+xml" data="../images/fb-wf-part2.svg" style="width: 100%; height: auto;">
   Your browser does not support SVG
 </object>
-
-Note: Prerelase S3
-derivatives/
+<small><b>NOTE</b>: <i>Currently, for release staging, the data is first copied to a separate staging bucket prior to being copied to the Lasso Prerelease bucket, but will soon be cut out to transfer directly to the Lasso Prerelease bucket as displayed in the diagram.</i></small>
 
 <div id="og-wf-fb" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -280,7 +278,7 @@ derivatives/
 <p>The details of this process are as follows:</p>
 <ol>
 <li>Find release-ready subject/sessions in <code>s3://midb-hbcd-main-deid/</code></li>
-<li>Edit assembly_bids structure like so:<ul>
+<li>Edit <code>assembly_bids/</code> structure like so:<ul>
 <li>Remove low-QC images/files that were not used for attempted processing</li>
 <li>Reconstruct <code>scans.tsv</code> files to only include entries for files included in the release</li>
 <li>Reconstruct <code>sessions.tsv</code> files to only include sessions from the release</li>
