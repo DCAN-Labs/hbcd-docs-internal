@@ -57,13 +57,6 @@ Platform Integration: We use Monday.com to manage tasks, tickets, timelines, and
 **Why this matters:**
 A well-run project management system ensures no detail or dependency is missed, enables visibility across groups, and makes coordination across dozens of stakeholders efficient and predictable.
 
-#### 3. Version Control
-
-All data, code, and pipelines are managed using robust versioning systems, primarily Git and DataLad. Releases are versioned with the Beta Releases. Each transformation step and release ‘snapshot’ is tracked, documented, and reproducible.
-
-**Why this matters:**  
-Version control ensures that every release can be reconstructed exactly, supporting reproducibility, auditing, and collaborative development. It also provides transparency and protects against data loss or undocumented changes.
-
 #### 4. Reproducibility
 
 Our data processing workflows are built to be fully reproducible by both internal and external teams:
