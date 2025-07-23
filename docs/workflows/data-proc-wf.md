@@ -4,6 +4,20 @@
 
 This section outlines the full HBCD processing workflows for [tabulated data](#tabulated-data) and [file-based data](#file-based-data), detailing each step from data capture at study sites to final ingestion into Lasso. Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [Org Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. 
 
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">
+    Tabulated vs. File-Based Data
+  </span>
+</div>
+<div class="notification-static-content">
+<p>HBCD Study data includes both <strong>tabulated data</strong> and <strong>file-based data</strong> (see <a href="https://docs.hbcdstudy.org/latest/datacuration/overview/">overview of data structure</a>):</p>
+<ul>
+<li><strong>Tabulated data</strong> are in table format and include behavior, demographics, visit data, toxicology results, and tabulated data associated with brain imaging and other file-based data (<a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">see details</a>). </li>
+<li><strong>File-based data</strong> are in BIDS format and include both <span><i class="fas fa-hammer"></i> <b>Raw BIDS</b></span> (<a href="https://docs.hbcdstudy.org/latest/datacuration/rawbids/">details</a>) and processed <span><i class="fas fa-cog"></i> <b>Derivatives</b></span> (<a href="https://docs.hbcdstudy.org/latest/datacuration/derivatives/">details</a>) for MRI, MRS, EEG, and motion/accelerometry. </li>
+</ul>
+</div>
+
 <p>
 <div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -39,7 +53,7 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 ## Tabulated Data 
 
 <object type="image/svg+xml" data="../images/tab-proc-wf.svg" width="100%"></object>
-<i>Note: Genetics capture currently occurs via Sampled and BAH, but will be changed to only Sampled in the future.</i> 
+<small><b>NOTE</b>: <i>Genetics capture currently occurs via Sampled and BAH, but will be changed to only Sampled in the future.</i></small>
 
 <div id="og-wf-tab" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -188,6 +202,9 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <object type="image/svg+xml" data="../images/fb-wf-part2.svg" style="width: 100%; height: auto;">
   Your browser does not support SVG
 </object>
+
+Note: Prerelase S3
+derivatives/
 
 <div id="og-wf-fb" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">

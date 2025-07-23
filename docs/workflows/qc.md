@@ -259,7 +259,7 @@ Lasso obtains final sign-off from Workgroups on datasets in their release-ready 
 
 ### MRI & MRS Data
 
-These data include both file-based and tabulated data for the instruments listed on the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/#mri). Also see the workflow diagram for raw data QC, which spans ingestion and pre-processing QC stages and outlines the feedback loops, under Data Processing Workflows [here](data-proc-wf.md#magnetic-resonance-raw-data-quality-control). 
+These data include both file-based and tabulated data for the instruments listed on the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/#mri).
 
 <div id="source-mri" class="source-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
