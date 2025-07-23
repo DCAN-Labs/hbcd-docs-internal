@@ -135,7 +135,7 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 
 Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for MRI and MRS). LORIS data is subsequently transferred directly into the central S3 main PR bucket, which subsequently is sourced for CBRAIN processing. MRI and MRS must first be converted to BIDS format and MRI data also undergoes extensive raw data QC ([see details](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc)).
 
-<object type="image/svg+xml" data="../images/pre-CBRAIN.svg" style="width: 100%; height: auto;">
+<object type="image/svg+xml" data="../images/fb-wf.svg" style="width: 100%; height: auto;">
   Your browser does not support SVG
 </object>
 
@@ -172,6 +172,11 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
        • De-identfied: <span class="tooltip">raw BIDS<span class="tooltiptext"><i>assembly_bids/</i></span></span> and <span class="tooltip">participant lists<span class="tooltiptext"><i>deidentification-lists/</i></span></span><br>
        • Re-identfied: <span class="tooltip">derivatives<span class="tooltiptext"><i>derivatives/</i></span></span> and <span class="tooltip">BrainSwipes data<span class="tooltiptext"><i>reid_brainswipes/</i></span></span>
       </td>
+    </tr>
+    <tr>
+      <td>De-ID Lists</td>
+      <td><code>s3://midb-hbcd-main-pr-deidentification-list</code></td>
+      <td>Contains de-identified participant list information used for de-identification step.</td>
     </tr>
 </tbody>
 </table>

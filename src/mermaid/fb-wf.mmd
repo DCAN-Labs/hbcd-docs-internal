@@ -1,0 +1,85 @@
+---
+config:
+  layout: elk
+  look: neo
+  theme: redux
+---
+flowchart LR
+ subgraph Sites_Capture["<b>Sites Capture</b><br><a href=../../orgcharts/#fiona rel=noopener target=_blank><b>FIONA</b></a>"]
+        FIONA_KSI[/"DCM"/]
+        LORIS_ACM[/"MRS"/]
+        n15[/"K-Space"/]
+  end
+ subgraph Capture_JCVI["Capture &amp; BIDS Conversion<br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank><b>UMN MSI</b></a>"]
+        UMN@{ label: "UMN SCE<br>(<a href=\"../../orgcharts/#health-sciences-technology\" rel=\"noopener\" target=\"_blank\">HST</a>)" }
+        JCVI["Convert to BIDS"]
+        n1@{ label: "<span style=\"color:\">S3<br>MRS BIDS</span>" }
+  end
+ subgraph Capture_HST["Capture &amp; BIDS Conversion<br><a href=../../orgcharts/#health-sciences-technology rel=noopener target=_blank><b>UMN HST</b></a>"]
+        n6["HBCD<br>Central"]
+        n9["QC Raw<br>MRI"]
+        n10["S3<br>JCVI DICOMs"]
+        n11["Convert<br>to BIDS"]
+  end
+ subgraph Capture_LORIS["<b>Sites Capture</b><br><a href=../../orgcharts/#loris rel=noopener target=_blank><b>LORIS</b></a>"]
+        n12[/"EEG BIDSWizard"/]
+        n13[/"Axivity"/]
+        n14[/"GABI"/]
+  end
+ subgraph s1["<b style=white-space:>De-Identification<br></b><span style=white-space:>Run daily to replace any DCCIDs/PSCIDs/Site IDs with anonymized IDs</span>"]
+        n17["De-ID"]
+        n18@{ label: "S3<br><span style=\"text-wrap-mode:\">De-ID</span><br style=\"text-wrap-mode:\"><i style=\"text-wrap-mode:\">assemly_bids/</i>" }
+  end
+    LORIS_ACM --> UMN
+    UMN --> JCVI
+    JCVI --> n1
+    n1 --> RAW_BIDS@{ label: "<b>S3<br>MAIN PR<br></b><i style=\"text-wrap-mode:\">assembly_bids/</i><b></b>" }
+    n6 --> n9 & n10
+    n9 --> n10
+    n10 --> n11
+    n11 --> RAW_BIDS
+    n12 --> RAW_BIDS
+    n13 --> RAW_BIDS
+    n14 --> RAW_BIDS
+    n15 --> UMN
+    FIONA_KSI --> n6
+    n16@{ label: "<span style=\"color:\">LORIS updates to <i>assembly_bids/ </i>metadata and formatting based on identified issues. Includes changes from QC/DICOMs sent from JCVI.</span>" } --> RAW_BIDS
+    RAW_BIDS --> n17
+    n17 --> n18
+    n19["S3<br>De-ID Lists"] --> n17
+    n18 --> n20["<b>CBRAIN<br>PROCESSING</b>"]
+    UMN@{ shape: disk}
+    JCVI@{ shape: rect}
+    n1@{ shape: disk}
+    n6@{ shape: disk}
+    n9@{ shape: rect}
+    n10@{ shape: disk}
+    n11@{ shape: rect}
+    n18@{ shape: disk}
+    RAW_BIDS@{ shape: disk}
+    n16@{ shape: rect}
+    n19@{ shape: disk}
+    style FIONA_KSI fill:#FFD600
+    style LORIS_ACM fill:#FFD600
+    style n15 fill:#FFD600
+    style UMN fill:#C8E6C9
+    style JCVI fill:#FFCDD2,color:#000000
+    style n1 fill:#C8E6C9
+    style n6 fill:#C8E6C9,color:#000000
+    style n9 fill:#FFCDD2,color:#000000
+    style n10 fill:#C8E6C9,color:#000000
+    style n11 fill:#FFCDD2,color:#000000
+    style n12 fill:#FFD600
+    style n13 fill:#FFD600
+    style n14 fill:#FFD600
+    style n17 fill:#FFCDD2
+    style n18 fill:#C8E6C9
+    style RAW_BIDS fill:#C8E6C9
+    style n16 fill:#FFCDD2
+    style n19 fill:#C8E6C9
+    style n20 fill:#FFD600
+    style Capture_LORIS fill:#FFF9C4
+    style Sites_Capture fill:#FFF9C4
+    style Capture_JCVI fill:#E1BEE7
+    style Capture_HST fill:#E1BEE7
+    style s1 fill:#BBDEFB
