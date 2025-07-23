@@ -111,6 +111,16 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
       <td style="word-wrap: break-word; white-space: normal;">LORIS Bucket for non-production system to test data flows on pilot data</td>
     </tr>
     <tr>
+      <td>De-ID</td>
+      <td><code>s3://midb-hbcd-main-deid/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">De-identified raw BIDS, derivatives, and BrainSwipes data</td>
+    </tr>
+    <tr>
+      <td>De-ID List</td>
+      <td><code>s3://midb-hbcd-main-pr-deidentification-list/</code></td>
+      <td>Contains de-identified participant list information used for de-identification step.</td>
+    </tr>
+    <tr>
       <td>Lasso Staging</td>
       <td><code>s3://midb-hbcd-lasso-staging/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">Where LORIS deposits data after running data release script for each BR</td>
@@ -214,7 +224,7 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
       </td>
     </tr>
     <tr>
-      <td>De-ID Lists</td>
+      <td>De-ID List</td>
       <td><code>s3://midb-hbcd-main-pr-deidentification-list/</code></td>
       <td>Contains de-identified participant list information used for de-identification step.</td>
     </tr>
