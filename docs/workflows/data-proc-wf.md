@@ -198,7 +198,7 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
     </tr>
     <tr>
       <td>De-ID Lists</td>
-      <td><code>s3://midb-hbcd-main-pr-deidentification-list</code></td>
+      <td><code>s3://midb-hbcd-main-pr-deidentification-list/</code></td>
       <td>Contains de-identified participant list information used for de-identification step.</td>
     </tr>
 </tbody>
