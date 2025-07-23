@@ -36,93 +36,186 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 </div>
 </p>
 
-## Tabulated Data
+## Tabulated Data 
 
-<object type="image/svg+xml" data="../images/tabulated-proc-WF.svg" width="100%"></object>
-<span class="blue-text"><b>**</b></span> <span><i>Third party includes: Pearson's, ERICA, CDI, Bayley, Vineland, NIH BTB, and BISQR.</i></span>
+<object type="image/svg+xml" data="../images/tab-proc-wf.svg" width="100%"></object>
+<i>Note: Genetics capture currently occurs via Sampled and BAH, but will be changed to only Sampled in the future.</i> 
 
-<div id="s3-paths-lasso" class="table-banner" onclick="toggleCollapse(this)">
+<div id="og-wf-tab" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">S3 Bucket Paths Key (Tabulated Data)</span>
-  <a class="anchor-link" href="#s3-paths-lasso" title="Copy link">
+  <span class="table-text">Original WF Diagram</span>
+  <a class="anchor-link" href="#og-wf-tab" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
   </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<object type="image/svg+xml" data="../images/tabulated-proc-WF.svg" width="100%"></object>
+<span class="blue-text"><b>**</b></span> <span><i>Third party includes: ERICA, CDI, Bayley, Vineland, NIH BTB, and BISQR.</i></span>
+</div>
+
+<table class="compact-table">
+<b><i>S3 Bucket Key</i></b>
     <thead>
       <tr>
-        <th style="width: 30%; word-wrap: break-word; white-space: normal;"><span class="tooltip tooltip-right">Name<span class="tooltiptext"><i>as referenced in diagrams</i></span></span></th>
-        <th style="width: 40%;">S3 URL</th>
+        <th style="width: 5%;">Name</th>
+        <th style="width: 10%;">S3 URL</th>
         <th style="width: 30%;">Description</th>
       </tr>
     </thead>
     <tbody>
     <tr>
-      <td>Lasso Staging S3</td>
+      <td>LORIS Production</td>
+      <td><code>????</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">LORIS Bucket that receives all tabulated data prior to staging and ingestion</td>
+    </tr>
+    <tr>
+      <td>Lasso Staging</td>
       <td><code>s3://midb-hbcd-lasso-staging/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">Lasso staging bucket where LORIS deposits the data after running the data release script for each BR</td>
+      <td style="word-wrap: break-word; white-space: normal;">Where LORIS deposits data after running data release script for each BR</td>
     </tr>
     <tr>
-      <td>Lasso Release S3</td>
-      <td><code>s3://midb-hbcd-lasso-release/</code></td>
-      <td>Lasso release bucket</td>
+      <td>Lasso Prerelease</td>
+      <td><code>s3://midb-hbcd-lasso-data-prerelease/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">Contains release version-specific data housed under <code>br{BETA RELEASE#}/hbcd/</code> to be ingested into Lasso</td>
     </tr>
-    <tr>
-      <td>Lasso Prerelease S3</td>
-      <td><code>s3://midb-hbcd-lasso-data-prerelease/br{BETA RELEASE#}/hbcd/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">Contains release version-specific data, including participant list to be included in the release (<code>rawdata/participants.tsv</code>). This is the final repository after de-identification and prior to Lasso ingestion.</td>
-    </tr>
+</tbody>
+</table>
+
+##### Additional Details Linked to in Diagram:
+
+<div id="third-party" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Third Party Tools</span>
+  <a class="anchor-link" href="#third-party" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <th>Tool</th>
+  <th>Description</th>
+</thead>
+<tbody>
+<tr>
+<td><b>ERICA</b></td>
+<td style="word-wrap: break-word; white-space: normal;">Early Regulation in Context Assessment</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;"><b>CDI</b></td>
+<td style="word-wrap: break-word; white-space: normal;">The <strong>MacArthur-Bates Communicative Development Inventories</strong>, a widely used tool for assessing early language</td>
+</tr>
+<tr>
+<td><b>Bayley</b></td>
+<td style="word-wrap: break-word; white-space: normal;">The <strong>Bayley Scales of Infant and Toddler Development</strong> (licensed via <strong>Pearson</strong>), used to assess cognitive, motor, and language development</td>
+</tr>
+<tr>
+<td><b>Vineland</b></td>
+<td style="word-wrap: break-word; white-space: normal;">The <strong>Vineland Adaptive Behavior Scales</strong> (licensed via <strong>Pearson</strong>), used to measure adaptive behaviors and daily functioning</td>
+</tr>
+<tr>
+<td><b>NIH BTB</b></td>
+<td style="word-wrap: break-word; white-space: normal;">NIH Baby Toolbox</td>
+</tr>
+<tr>
+<td><b>BISQ-R</b></td>
+<td style="word-wrap: break-word; white-space: normal;">The <strong>Brief Infant Sleep Questionnaire - Revised</strong>, a validated parent-report sleep instrument</td>
+</tr>
 </tbody>
 </table>
 </div>
 
-
 ## File-Based Data
 
-<i>Note: Select <span class="blue-text">ⓘ <i>Click for Details</i></span> for a given step to be linked to the relevant section on this page with additional details.</i>
+### Site Capture, BIDS Conversion, & De-Identification
 
-<object type="image/svg+xml" data="../images/fb-proc-wf2.svg" width="100%"></object>
+Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for MRI and MRS). LORIS data is subsequently transferred directly into the central S3 main PR bucket, which subsequently is sourced for CBRAIN processing. MRI and MRS must first be converted to BIDS format and MRI data also undergoes extensive raw data QC ([see details](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc)).
 
-<p>
-<div id="s3-paths-fb" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text">S3 Bucket Paths Key (File-Based Data)</span>
-  <a class="anchor-link" href="#s3-paths-fb" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<object type="image/svg+xml" data="../images/pre-CBRAIN.svg" style="width: 100%; height: auto;">
+  Your browser does not support SVG
+</object>
+
+<table class="compact-table">
+<b><i>S3 Bucket Key</i></b>
+    <thead>
     <thead>
       <tr>
-        <th style="width: 20%; word-wrap: break-word; white-space: normal;"><span class="tooltip tooltip-right">Name<span class="tooltiptext"><i>as referenced in diagrams</i></span></span></th>
+        <th style="width: 20%;">Name</th>
         <th style="width: 40%;">S3 URL</th>
         <th style="width: 30%;">Description</th>
       </tr>
     </thead>
     <tbody>
     <tr>
-      <td>JCVI DICOMs S3</td>
+      <td>JCVI DICOMs</td>
       <td><code>s3://midb-hbcd-ucsd-main-pr-dicoms/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">JCVI DICOMs and raw data QC results</td>
     </tr>
     <tr>
-      <td>MRS BIDS S3</td>
+      <td>MRS BIDS</td>
       <td><code>s3://midb-hbcd-main-pr-mrs/</code></td>
       <td>MRS data post-BIDS conversion</td>
     </tr>
     <tr>
-      <td>De-ID S3</td>
+      <td>De-ID</td>
       <td><code>s3://midb-hbcd-main-deid/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">De-identified raw BIDS, derivatives, and BrainSwipes data</td>
     </tr>
     <tr>
-      <td>Main PR S3</td>
+      <td>Main PR</td>
+      <td><code>s3://midb-hbcd-main-pr/</code></td>
+      <td>Contains LORIS-curated BIDS data for the full HBCD study, including:<br>
+       • De-identfied: <span class="tooltip">raw BIDS<span class="tooltiptext"><i>assembly_bids/</i></span></span> and <span class="tooltip">participant lists<span class="tooltiptext"><i>deidentification-lists/</i></span></span><br>
+       • Re-identfied: <span class="tooltip">derivatives<span class="tooltiptext"><i>derivatives/</i></span></span> and <span class="tooltip">BrainSwipes data<span class="tooltiptext"><i>reid_brainswipes/</i></span></span>
+      </td>
+    </tr>
+</tbody>
+</table>
+
+### CBRAIN Processing, Re-Identification, & Lasso Ingestion
+
+Processing pipelines are run in CBRAIN and outputs are stored in session-specific folders on `s3://midb-hbcd-main-deid/derivatives`. When processing is launched, a record of which files were used for processing is stored under `s3://midb-hbcd-main-deid/derivatives/ses-<label>/cbrain_misc`. In the future, this will likely be replaced with a simple database in the S3 bucket that keeps track of these (and other) details more centrally.
+
+<object type="image/svg+xml" data="../images/fb-part2.svg" style="width: 100%; height: auto;">
+  Your browser does not support SVG
+</object>
+
+<div id="og-wf-fb" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Original WF Diagram</span>
+  <a class="anchor-link" href="#og-wf-fb" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<i>Note: Select <span class="blue-text">ⓘ <i>Click for Details</i></span> for a given step to be linked to the relevant section on this page with additional details.</i>
+<object type="image/svg+xml" data="../images/fb-proc-wf2.svg" width="100%"></object>
+</div>
+
+<table class="compact-table">
+<b><i>S3 Bucket Key</i></b>
+    <thead>
+    <thead>
+      <tr>
+        <th style="width: 20%;">Name</th>
+        <th style="width: 40%;">S3 URL</th>
+        <th style="width: 30%;">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>De-ID</td>
+      <td><code>s3://midb-hbcd-main-deid/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">De-identified raw BIDS, derivatives, and BrainSwipes data</td>
+    </tr>
+    <tr>
+      <td>Main PR</td>
       <td><code>s3://midb-hbcd-main-pr/</code></td>
       <td>Contains LORIS-curated BIDS data for the full HBCD study, including:<br>
        • De-identfied: <span class="tooltip">raw BIDS<span class="tooltiptext"><i>assembly_bids/</i></span></span> and <span class="tooltip">participant lists<span class="tooltiptext"><i>deidentification-lists/</i></span></span><br>
@@ -130,66 +223,101 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
       </td>
     </tr>
     <tr>
-      <td>Pre-Release S3</td>
-      <td><code>s3://midb-hbcd-prerelease-bids/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">Contains pre-release derivatives<br>
-      - This bucket holds de-identified data, both QC-passed and failed images per UCSD, sent to CBRAIN for processing<br>
-      - Derivatives are stored in session-specific folders (e.g., derivatives/ses-V02/bibsnet/)
-      </td>
-    </tr>
-    <tr>
-      <td>Lasso Prerelease S3</td>
+      <td>Lasso Prerelease</td>
       <td><code>s3://midb-hbcd-lasso-data-prerelease/br{BETA RELEASE#}/hbcd/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">Contains release version-specific data, including participant list to be included in the release (<code>rawdata/participants.tsv</code>). This is the final repository after de-identification and prior to Lasso ingestion.</td>
     </tr>
 </tbody>
 </table>
+
+##### Additional Details Linked to in Diagram:
+
+<div id="record-query" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Record Query Details</span>
+  <a class="anchor-link" href="#record-query" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
 </div>
-</p>
+<div class="collapsible-content">
+<p>After CBRAIN processing, previous processing records are queried against the contents of s3://midb-hbcd-main-deid/assembly_bids to ensure that processing is still up-to-date with the current BIDS data. For any cases where the derivative data has become out of sync with the assembly_bids data, the impacted derivative data along with CBRAIN processing task objects are deleted. The next time the query scripts are run that look for new subjects to process, the processing will be re-initiated for these subjects.</p>
+</div>
 
-### LORIS Formatting Updates
-LORIS makes changes to the `assembly_bids` metadata and formatting based on identified issues. This process happens irregularly, and includes changes from QC/DICOMS sent via UCSD, along with other related elements.
+<div id="copy-to-release" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Copying Release Data to Prerelease Bucket</span>
+  <a class="anchor-link" href="#copy-to-release" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>The details of this process are as follows:</p>
+<ol>
+<li>Find release-ready subject/sessions in <code>s3://midb-hbcd-main-deid/</code></li>
+<li>Edit assembly_bids structure like so:<ul>
+<li>Remove low-QC images/files that were not used for attempted processing</li>
+<li>Reconstruct <code>scans.tsv</code> files to only include entries for files included in the release</li>
+<li>Reconstruct <code>sessions.tsv</code> files to only include sessions from the release</li>
+</ul>
+</li>
+<li>Squash the derivatives folders across imaging sessions so that there is one common derivatives folder for all imaging sessions</li>
+<li>Copy the resulting assembly_bids and derivatives data to <code>rawdata/</code> and <code>derivatives/</code>, respectively, under:<br><code>s3://midb-hbcd-lasso-data-release-staging/&lt;release_identifier&gt;/hbcd/</code> </li>
+</ol>
+</div>
 
-### De-Identification
-De-identification is run daily to update `s3://midb-hbcd-main-deid/assembly_bids` from `s3://midb-hbcd-main-pr/assembly_bids` as well as tabulated data. In the process of de-identification, any DCCIDs/PSCIDs/Site IDs are removed or replaced with Release Candidate IDs and/or Anonymized Site IDs, where applicable. In addition to de-identifying new sessions, existing sessions are also updated.
+<div id="brainswipes" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">BrainSwipes</span>
+  <a class="anchor-link" href="#brainswipes" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>The workflow for BrainSwipes is unique compared to other data due to the fact that the quality control (QC) is performed post-CBRAIN processing and therefore must go through additional steps. Some details to note:</p>
+<ul>
+<li>After transfer of the visual reports used for QC to the Prerelease Derivatives S3 URL (<code>s3://midb-hbcd-prerelease-bids/derivatives/ses-V02/xcp_d/{{SUBJECT}}/figures/{{FILENAME}}.png</code>), a query is run to identify outputs that are out of date and either remove or archive records related to out-of-date files</li>
+<li><strong>TBD</strong>: Participant sessions that fail structural QC (based on XCP-D derivative visual reports) are flagged to perform manual corrections on the corresponding BIBSNet brain segmentations. The corrected segmentations will not be fed back into the main processing workflows, but are instead integrated into the training set for future BIBSNet models.</li>
+</ul>
+</div>
 
-### CBRAIN Processing
-Processing pipelines are run in CBRAIN and outputs are stored in session-specific folders on `s3://midb-hbcd-main-deid/derivatives`. When processing is launched, a record of which files were used for processing is stored under `s3://midb-hbcd-main-deid/derivatives/ses-<label>/cbrain_misc`. In the future, this will likely be replaced with a simple database in the S3 bucket that keeps track of these (and other) details more centrally.
+<div id="re-id" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Re-Identification</span>
+  <a class="anchor-link" href="#re-id" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>Following CBRAIN processing, processing records are queried for new derivative outputs ready to be re-identified. Re-identification involves replacing all release candidate IDs with DCCIDs in processing outputs and occurs in the process of copying the data from the source (<code>s3://midb-hbcd-main-deid/derivatives/</code>) to destination (<code>s3://midb-hbcd-main-pr/derivatives</code>) S3 paths.</p>
+<p>Duplicating the derivatives enables LORIS to (1) maintain QC dashboards for HBCD users based on processing outputs (primarily important for EEG) and (2) prepare tabulated summary outputs for Lasso ingestion.</p>
+<p>Prior to re-identification, <code>s3://midb-hbcd-main-pr/derivatives</code> is first queried to find and delete any data that either does not have associated files in <code>s3://midb-hbcd-main-deid/derivatives</code>. When there is a newer copy of derivative data available from the source bucket, these are deleted and repopulated. Finally, new derivative data that has never existed in the LORIS bucket is copied over.</p>
+</div>
 
-#### Record Query & Derivatives Cleanup
-After CBRAIN processing, previous processing records are queried against the contents of `s3://midb-hbcd-main-deid/assembly_bids` to ensure that processing is still up-to-date with the current BIDS data. For any cases where the derivative data has become out of sync with the assembly_bids data, the impacted derivative data along with CBRAIN processing task objects are deleted. The next time the query scripts are run that look for new subjects to process, the processing will be re-initiated for these subjects.
-
-### Copying Release Data to Staging Bucket
-The details of this process are as follows:
-
-1. Find release-ready subject/sessions in `s3://midb-hbcd-main-deid/`
-2. Edit assembly_bids structure like so:
-    - Remove low-QC images/files that were not used for attempted processing
-    - Reconstruct `scans.tsv` files to only include entries for files included in the release
-    - Reconstruct `sessions.tsv` files to only include sessions from the release
-3. Squash the derivatives folders across imaging sessions so that there is one common derivatives folder for all imaging sessions
-4. Copy the resulting assembly_bids and derivatives data to `rawdata/` and `derivatives/`, respectively, under:     
- `s3://midb-hbcd-lasso-data-release-staging/<release_identifier>/hbcd/` 
-
-### BrainSwipes
-The workflow for BrainSwipes is unique compared to other data due to the fact that the quality control (QC) is performed post-CBRAIN processing and therefore must go through additional steps. Some details to note:
-
-- After transfer of the visual reports used for QC to the Prerelease Derivatives S3 URL (`s3://midb-hbcd-prerelease-bids/derivatives/ses-V02/xcp_d/{{SUBJECT}}/figures/{{FILENAME}}.png`), a query is run to identify outputs that are out of date and either remove or archive records related to out-of-date files
-- **TBD**: Participant sessions that fail structural QC (based on XCP-D derivative visual reports) are flagged to perform manual corrections on the corresponding BIBSNet brain segmentations. The corrected segmentations will not be fed back into the main processing workflows, but are instead integrated into the training set for future BIBSNet models.
-
-### Re-Identification
-Following CBRAIN processing, processing records are queried for new derivative outputs ready to be re-identified. Re-identification involves replacing all release candidate IDs with DCCIDs in processing outputs and occurs in the process of copying the data from the source (`s3://midb-hbcd-main-deid/derivatives/`) to destination (`s3://midb-hbcd-main-pr/derivatives`) S3 paths.
-
-Duplicating the derivatives enables LORIS to (1) maintain QC dashboards for HBCD users based on processing outputs (primarily important for EEG) and (2) prepare tabulated summary outputs for Lasso ingestion.
-
-Prior to re-identification, `s3://midb-hbcd-main-pr/derivatives` is first queried to find and delete any data that either does not have associated files in `s3://midb-hbcd-main-deid/derivatives`. When there is a newer copy of derivative data available from the source bucket, these are deleted and repopulated. Finally, new derivative data that has never existed in the LORIS bucket is copied over.
-
-#### LORIS Ingestion of Re-Identified Derivatives
-LORIS updates their database from `s3://midb-hbcd-main-pr/derivatives` by:
-
-1. Removing any database entries related to derivative outputs that no longer exist
-2. Looking for cases where there are newer derivative outputs than what exists in LORIS records and replacing the old records with the new data
-3. Adding in records for any new subjects/sessions
-
+<div id="loris-ingestion" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">LORIS Ingestion of Re-Identified Derivatives</span>
+  <a class="anchor-link" href="#loris-ingestion" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>LORIS updates their database from <code>s3://midb-hbcd-main-pr/derivatives</code> by:</p>
+<ol>
+<li>Removing any database entries related to derivative outputs that no longer exist</li>
+<li>Looking for cases where there are newer derivative outputs than what exists in LORIS records and replacing the old records with the new data</li>
+<li>Adding in records for any new subjects/sessions</li>
+</ol>
+</div>
 
 <br>
+

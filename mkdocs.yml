@@ -77,7 +77,6 @@ nav:
     - Org Charts: orgcharts.md
     - Quality Control Procedures: workflows/qc.md
     - Data Processing Workflows: workflows/data-proc-wf.md
-    - ALT Data Processing Workflows: workflows/proc-wf.md
     - Release SOP: workflows/release-wf.md
   - Beta Release Notes: 
    # - 🚧 Pending & Upcoming Updates: changelog/pending.md
