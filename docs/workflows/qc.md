@@ -10,7 +10,7 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 
 ### Behavior, Biology, & Environment
 
-The majority HBCD data are provided as tabulated data, including [demographics & visit information](https://docs.hbcdstudy.org/latest/instruments/#demo) and [study instruments](https://docs.hbcdstudy.org/latest/instruments/#behavior-biology-environment). The QC processes outlined below describe processes for all HBCD Workgroups ([see details](https://hbcdstudy.org/workgroups-and-committees/)) unless otherwise specified. Note that, in the context of tabulated instrument data, "processing" refers to scoring the data where applicable. Instrument-specific QC procedures are documented on the HBCD Data Release Docs site under the <strong>Administration & Quality Control</strong> section for each instrument page (e.g. see <a href="https://docs.hbcdstudy.org/latest/instruments/bcgi/ecpromis/#administration-quality-control">here</a>). 
+The majority HBCD data are provided as tabulated data, including [demographics & visit information](https://docs.hbcdstudy.org/latest/instruments/#demo) and [study instruments](https://docs.hbcdstudy.org/latest/instruments/#behavior-biology-environment). The QC processes outlined below describe processes for all HBCD Workgroups ([see details](../orgcharts.md#hbcd-workgroups)) unless otherwise specified. Note that, in the context of tabulated instrument data, "processing" refers to scoring the data where applicable. Instrument-specific QC procedures are documented on the HBCD Data Release Docs site under the <strong>Administration & Quality Control</strong> section for each instrument page (e.g. see <a href="https://docs.hbcdstudy.org/latest/instruments/bcgi/ecpromis/#administration-quality-control">here</a>). 
 
 <div id="source-pheno" class="source-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -128,7 +128,7 @@ All variable names are parsed and validated against naming rules outlined <a hre
 </div>
 <div class="collapsible-content">
 <p>
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="https://hbcdstudy.org/workgroups-and-committees/">Workgroups</a>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#hbcd-workgroups">Workgroups</a>
 </span>
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#loris">LORIS</a>
 </span>
@@ -173,7 +173,7 @@ All variable names are parsed and validated against naming rules outlined <a hre
 </div>
 <div class="collapsible-content">
 <p><b>QC Dashboards</b>
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="https://hbcdstudy.org/workgroups-and-committees/">Workgroups</a>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#hbcd-workgroups">Workgroups</a>
 </span>
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a>
 </span>
@@ -229,7 +229,7 @@ Data ready for release is first ingested into Lasso. Errors in ingestion are add
 <p><b>Subject Matter Expert (SME) Sign-Off</b>
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a>
 </span>
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="https://hbcdstudy.org/workgroups-and-committees/">Workgroups</a>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#hbcd-workgroups">Workgroups</a>
 </span><br>
 Lasso obtains final sign-off from Workgroups on datasets in their release-ready form, with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a>, via the Lasso Pre-Release System:
 <ul>
@@ -448,7 +448,7 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 <div class="collapsible-content">
 <p>QC is performed on processed MR data using several automated and manual approaches:</p>
 <p><ul><b>AUTOMATED QC</b>
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="https://hbcdstudy.org/workgroups-and-committees/">MRI Workgroups</a>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#mri-subgroups">MRI Workgroups</a>
 </span>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
     <tbody>
@@ -504,10 +504,10 @@ We analyzed ALFF and ReHo measures from the Gordon cortical parcellation and Fre
 <p><strong><i>File-Based Imaging Data</i></strong><br>
 We also analyzed mean ROI-to-ROI functional connectivity maps from the same parcellations (Gordon cortical and Freesurfer subcortical, 352 ROIs). As with tabulated data, BrainSwipes QC outputs were used to assess data quality and its influence on connectivity estimates. A similar linear relationship was observed, and QC effects were minimized when only data with at least a 70% pass rate were included.</p> 
 <p><b>Diffusion MRI</b>
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="https://hbcdstudy.org/workgroups-and-committees/">dMRI Workgroup</a></span><br> 
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#hbcd-workgroups">dMRI Workgroup</a></span><br> 
 The dMRI Workgroup checked that automated QC metrics such as the neighboring DWI correlation (NDC) increase in preprocessed data compared to raw data. They also compared the Contrast to Noise Ratio (CNR) for each shell to the CNR values for the ABCC QSIPrep outputs, checking for approximately similar ranges per vendor. Postprocessed (QSIRecon) data was checked to be sure that most bundles were recovered for most scans.</p>
 <p><b>Magnetic Resonance Spectroscopy (MRS)</b>
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="https://hbcdstudy.org/workgroups-and-committees/">MRS Workgroup</a></span><br> 
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#hbcd-workgroups">MRS Workgroup</a></span><br> 
 MRS QC is based on tabulated data-derived distributions of Osprey derivatives. R-based scripts examine distributions of MRS-derived measures from tabulated data.</p> 
 <p>See <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#qc-summary-statistics">QC Summary Statistics</a> on the HBCD Data Release Docs for some findings from these analysis shared with users.</p>
 </div>
