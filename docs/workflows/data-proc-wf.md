@@ -4,10 +4,16 @@
 
 This section outlines the full HBCD processing workflows for [tabulated data](#tabulated-data) and [file-based data](#file-based-data), detailing each step from data capture at study sites to final ingestion into Lasso. Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [Org Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. 
 
-<div class="notification-banner static-banner">
+
+<div id="og-wf-fb" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
   <span class="text">
     Tabulated vs. File-Based Data
+  </span>
+  <a class="anchor-link" href="#og-wf-fb" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
   </span>
 </div>
 <div class="notification-static-content">
