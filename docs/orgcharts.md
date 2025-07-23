@@ -358,6 +358,7 @@ flowchart LR
 </tbody>
 </table>
 </div>
+<br>
 
 #### MIDB Informatics Hub & MSI
    
@@ -465,6 +466,7 @@ flowchart TB
 </tbody>
 </table>
 </div>
+<br>
 
 ### WashU    
 Washington University in St. Louis (WashU) has oversight of: *Electronic Medical Records (EMR)*, *[Ambra](#ambra)*, *[AirTable](#airtable)*, *[Ripple](#ripple)*,  and *HBCD Study Administrative Core (HCAC) coordination*.
@@ -685,6 +687,7 @@ flowchart TB
 </tbody>
 </table>
 </div>
+<br>
 
 
 #### Subcontractor Details
@@ -795,6 +798,7 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
       </tr>
 </table>
 </div>
+<br>
 
 ### McGill University
 
@@ -993,6 +997,7 @@ flowchart TB
     </tbody>
     </table>
 </div>
+<br>
 
 ## HBCD Workgroups
 
