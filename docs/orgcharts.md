@@ -1083,3 +1083,63 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     </td>
   </tr>
 </table>
+
+#### MRI Subgroups
+
+<table class="compact-table">
+  <caption>Modality Leads and Vendor Subject Matter Experts (SMEs)</caption>
+  <thead>
+    <tr>
+      <th rowspan="2" style="text-align: center;">Modality</th>
+      <th rowspan="2" style="text-align: center;">Leads</th>
+      <th colspan="3" style="text-align: center;">Vendor SMEs</th>
+    </tr>
+    <tr>
+      <th style="text-align: center;">Siemens</th>
+      <th style="text-align: center;">Philips</th>
+      <th style="text-align: center;">GE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Structural</th>
+      <td>Dylan Tisdall, Jed Elison</td>
+      <td>Dylan Tisdall</td>
+      <td>Allen Newton</td>
+      <td>Doug Dean</td>
+    </tr>
+    <tr>
+      <th scope="row">Functional</th>
+      <td>Tracy Riggins, Chad Sylvester</td>
+      <td>Michael Harms</td>
+      <td>Allen Newton</td>
+      <td>Doug Dean</td>
+    </tr>
+    <tr>
+      <th scope="row">Diffusion</th>
+      <td>Andy Alexander, Hao Huang</td>
+      <td>Hao Huang</td>
+      <td>Peter van Zilj, Jessica Wisnowski</td>
+      <td>Andy Alexander</td>
+    </tr>
+    <tr>
+      <th scope="row">Quantitative</th>
+      <td>Borjan Gagoski, Doug Dean</td>
+      <td>Borjan Gagoski</td>
+      <td>Mary-Kate Manhard</td>
+      <td>Doug Dean</td>
+    </tr>
+    <tr>
+      <th scope="row">Spectroscopy</th>
+      <td>Jessica Wisnowski, Richard Edden</td>
+      <td>Richard Edden, Pavi Manohar</td>
+      <td>Richard Edden, Steve Hui</td>
+      <td>Ralph Noeske</td>
+    </tr>
+    <tr>
+      <th scope="row">Scanning Young<br>Populations</th>
+      <td>Doug Dean, Brittany Howell</td>
+      <td colspan="3">—</td>
+    </tr>
+  </tbody>
+</table>
