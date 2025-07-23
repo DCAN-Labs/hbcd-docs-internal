@@ -42,8 +42,24 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
     </thead>
     <tbody>
         <tr>
-        <td>DCCID/PSCID</td>
-        <td style="word-wrap: break-word; white-space: normal;">These participant IDs are primarily used by LORIS and study sites, with PSCID being more commonly used by sites during the data collection and debugging process. The DCCID specifically is the original BIDS participant ID prior to de-identification (e.g. <code>sub-1234</code> where <code>1234</code> is the DCCID).</td>
+        <td>Release Candidate ID</td>
+        <td style="word-wrap: break-word; white-space: normal;">The anonymized ID that will be used as the BIDS subject label in any public releases.</td>
+        </tr>
+        <tr>
+        <td>DCCID and/or Candidate ID</td>
+        <td style="word-wrap: break-word; white-space: normal;">The original BIDS participant ID prior to de-identification (e.g. <code>sub-1234</code> where <code>1234</code> is the DCCID) in LORIS and other internal data sources.</td>
+        </tr>
+        <tr>
+        <td>PSCID</td>
+        <td style="word-wrap: break-word; white-space: normal;">An additional ID that is used in LORIS and during data collection. This ID will have begin with a five character sequence where the first two characters indicate participant status and the last three characters indicate the recruitment site.</td>
+        </tr>
+        <tr>
+        <td>de-identification/de-id</td>
+        <td style="word-wrap: break-word; white-space: normal;">The process/outputs associated with replacing DCCIDs/PSCIDs with Release Candidate IDs.</td>
+        </tr>
+        <tr>
+        <td>re-identification/re-id</td>
+        <td style="word-wrap: break-word; white-space: normal;">The process/outputs associated with replacing Release Candidate IDs with DCCIDs</td>
         </tr>
         <tr>
         <td>SCE</td>
@@ -53,6 +69,7 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
     </table>
 </div>
 </p>
+
 
 ## Tabulated Data 
 
