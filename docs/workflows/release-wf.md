@@ -84,3 +84,7 @@ If further QC action-items are found in the second-to-last BR during the one-on-
 When the final BR prior to public release is loaded into Lasso, Jen schedules one-on-one sign-off meetings with the remaining WGs/SMEs who were awaiting corrections to their data prior to sign off. During these meetings, Jen reviews the list of items that were identified in the last round of QC with the WGs/SMEs to ensure the correction is implemented as expected in the Lasso; the WGs/SMEs then sign off on their measures via the same google form above. 
 
 In the event that data issues remain, or new issues are identified in QC of the final BR during the one-on-one sign-off meetings, Jen collaborates with the WGs/SMEs and Luci Moore to document these as ‘Known Issues’ for the Data Release Documentation site. Jen reports the known issues on the HDCC centralized Monday Board so they can be prioritized for the Patch Release.
+
+## Approved Updates to Future Releases
+
+See the approved updates to release 2.0 in the Release Notes on the HBCD Data Release Docs site: [Release 2.0 (Release Date TBA)](https://docs.hbcdstudy.org/latest/changelog/pending/#release-20-release-date-tba).
