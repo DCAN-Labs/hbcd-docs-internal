@@ -128,7 +128,7 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
     <thead>
     <thead>
       <tr>
-        <th style="width: 20%; word-wrap: break-word; white-space: normal;"><span class="tooltip tooltip-right">Name<span class="tooltiptext"><i>as referenced in diagrams</i></span></span></th>
+        <th style="width: 20%;">Name</th>
         <th style="width: 40%;">S3 URL</th>
         <th style="width: 30%;">Description</th>
       </tr>
@@ -173,7 +173,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
     <thead>
     <thead>
       <tr>
-        <th style="width: 20%; word-wrap: break-word; white-space: normal;"><span class="tooltip tooltip-right">Name<span class="tooltiptext"><i>as referenced in diagrams</i></span></span></th>
+        <th style="width: 20%;">Name</th>
         <th style="width: 40%;">S3 URL</th>
         <th style="width: 30%;">Description</th>
       </tr>
