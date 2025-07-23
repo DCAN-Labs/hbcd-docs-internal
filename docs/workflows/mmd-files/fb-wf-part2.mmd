@@ -1,0 +1,62 @@
+---
+config:
+  layout: elk
+  look: neo
+  theme: redux
+---
+flowchart LR
+ subgraph s2["CBRAIN Processing<br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a>"]
+        n24["CBRAIN<br>Processing"]
+        n25["S3<br>De-ID<br><i>derivatives/</i>"]
+        n26@{ label: "Record Query<br><a href='../data-proc-wf/#record-query' target=\"_top\">Click for Details</a>" }
+  end
+ subgraph s3["Re-Identification for LORIS<br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a>"]
+        n27@{ label: "Re-ID<br><a href=\"../data-proc-wf/#re-id\" target=\"_top\">Click for Details</a>" }
+        n28@{ label: "<span style=\"color:\">Main PR S3</span><br style=\"color:\"><span style=\"color:\"><i>reid_brainswipes/<br>derivatives</i></span><i style=\"color:\">/</i>" }
+        n43@{ label: "LORIS<br>INGESTION<br><a href=\"../data-proc-wf/#loris-ingestion\" target=\"_top\">Click for Details</a>" }
+  end
+ subgraph s4["BrainSwipes<br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a><br><a href=../data-proc-wf/#brainswipes target=_top>Click for Details</a>"]
+        n32["QC Derivatives"]
+        n33@{ label: "<div style=\"color:\"><div>S3<br>De-ID<br></div><div></div></div><div style=\"color:\"><i style=\"background-color:\"><font style=\"font-size:\">brainswipes/</font></i></div>" }
+  end
+ subgraph s5["Release Staging<br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a>"]
+        n35@{ label: "Copy data to<br>pre-release bucket<br><a href=\"../data-proc-wf/#copy-to-release\" target=\"_top\">Click for Details</a>" }
+        n36@{ label: "<span style=\"background-color:\">S3<br>Lasso<br>Prerelease</span>" }
+  end
+    n24 --> n25
+    n25 --> n26 & n27 & n35 & n32
+    n26 --> n25
+    n27 --> n28
+    n32 --> n33
+    n33 --> n27
+    n35 --> n36
+    n36 --> n40@{ label: "<a href=\"../../orgcharts/#lasso\" rel=\"noopener\" target=\"_blank\"><b>LASSO</b></a><br><b>INGESTION</b>" }
+    n28 --> n43
+    n36 -- "participants.tsv" --> n35
+    n44>"<b>CBRAIN<br>PROCESSING<br><i>Continued</i></b>"] --> s2
+    n24@{ shape: rect}
+    n25@{ shape: disk}
+    n26@{ shape: rect}
+    n27@{ shape: rect}
+    n28@{ shape: disk}
+    n43@{ shape: rect}
+    n33@{ shape: disk}
+    n35@{ shape: rect}
+    n36@{ shape: disk}
+    n40@{ shape: circle}
+    style n24 fill:#FFCDD2
+    style n25 fill:#C8E6C9
+    style n26 fill:#FFCDD2
+    style n27 fill:#FFCDD2
+    style n28 fill:#C8E6C9
+    style n43 fill:#FFCDD2
+    style n32 fill:#FFCDD2
+    style n33 fill:#C8E6C9,color:#000000
+    style n35 fill:#FFCDD2
+    style n36 fill:#C8E6C9
+    style n40 fill:#FFD600
+    style n44 fill:#FFD600,color:#000000
+    style s2 fill:#E1BEE7
+    style s3 fill:#E1BEE7
+    style s4 fill:#E1BEE7
+    style s5 fill:#BBDEFB

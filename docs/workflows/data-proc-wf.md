@@ -286,7 +286,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <div class="collapsible-content">
 <p>The details of this process are as follows:</p>
 <ol>
-<li>Find release-ready subject/sessions in <code>s3://midb-hbcd-main-deid/</code></li>
+<li>Find release-ready subject/sessions (i.e. participants listed in the LORIS <code>par_visit_data</code> file) in <code>s3://midb-hbcd-main-deid/</code></li>
 <li>Edit <code>assembly_bids/</code> structure like so:<ul>
 <li>Remove low-QC images/files that were not used for attempted processing</li>
 <li>Reconstruct <code>scans.tsv</code> files to only include entries for files included in the release</li>
