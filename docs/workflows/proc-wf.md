@@ -123,6 +123,43 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
   Your browser does not support SVG
 </object>
 
+<table class="compact-table">
+<b><i>S3 Bucket Key</i></b>
+    <thead>
+    <thead>
+      <tr>
+        <th style="width: 20%; word-wrap: break-word; white-space: normal;"><span class="tooltip tooltip-right">Name<span class="tooltiptext"><i>as referenced in diagrams</i></span></span></th>
+        <th style="width: 40%;">S3 URL</th>
+        <th style="width: 30%;">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>JCVI DICOMs</td>
+      <td><code>s3://midb-hbcd-ucsd-main-pr-dicoms/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">JCVI DICOMs and raw data QC results</td>
+    </tr>
+    <tr>
+      <td>MRS BIDS</td>
+      <td><code>s3://midb-hbcd-main-pr-mrs/</code></td>
+      <td>MRS data post-BIDS conversion</td>
+    </tr>
+    <tr>
+      <td>De-ID</td>
+      <td><code>s3://midb-hbcd-main-deid/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">De-identified raw BIDS, derivatives, and BrainSwipes data</td>
+    </tr>
+    <tr>
+      <td>Main PR</td>
+      <td><code>s3://midb-hbcd-main-pr/</code></td>
+      <td>Contains LORIS-curated BIDS data for the full HBCD study, including:<br>
+       • De-identfied: <span class="tooltip">raw BIDS<span class="tooltiptext"><i>assembly_bids/</i></span></span> and <span class="tooltip">participant lists<span class="tooltiptext"><i>deidentification-lists/</i></span></span><br>
+       • Re-identfied: <span class="tooltip">derivatives<span class="tooltiptext"><i>derivatives/</i></span></span> and <span class="tooltip">BrainSwipes data<span class="tooltiptext"><i>reid_brainswipes/</i></span></span>
+      </td>
+    </tr>
+</tbody>
+</table>
+
 ### CBRAIN Processing, Re-Identification, & Lasso Ingestion
 
 Processing pipelines are run in CBRAIN and outputs are stored in session-specific folders on `s3://midb-hbcd-main-deid/derivatives`. When processing is launched, a record of which files were used for processing is stored under `s3://midb-hbcd-main-deid/derivatives/ses-<label>/cbrain_misc`. In the future, this will likely be replaced with a simple database in the S3 bucket that keeps track of these (and other) details more centrally.
@@ -131,7 +168,37 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
   Your browser does not support SVG
 </object>
 
-<br>
+<table class="compact-table">
+<b><i>S3 Bucket Key</i></b>
+    <thead>
+    <thead>
+      <tr>
+        <th style="width: 20%; word-wrap: break-word; white-space: normal;"><span class="tooltip tooltip-right">Name<span class="tooltiptext"><i>as referenced in diagrams</i></span></span></th>
+        <th style="width: 40%;">S3 URL</th>
+        <th style="width: 30%;">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>De-ID</td>
+      <td><code>s3://midb-hbcd-main-deid/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">De-identified raw BIDS, derivatives, and BrainSwipes data</td>
+    </tr>
+    <tr>
+      <td>Main PR</td>
+      <td><code>s3://midb-hbcd-main-pr/</code></td>
+      <td>Contains LORIS-curated BIDS data for the full HBCD study, including:<br>
+       • De-identfied: <span class="tooltip">raw BIDS<span class="tooltiptext"><i>assembly_bids/</i></span></span> and <span class="tooltip">participant lists<span class="tooltiptext"><i>deidentification-lists/</i></span></span><br>
+       • Re-identfied: <span class="tooltip">derivatives<span class="tooltiptext"><i>derivatives/</i></span></span> and <span class="tooltip">BrainSwipes data<span class="tooltiptext"><i>reid_brainswipes/</i></span></span>
+      </td>
+    </tr>
+    <tr>
+      <td>Lasso Prerelease</td>
+      <td><code>s3://midb-hbcd-lasso-data-prerelease/br{BETA RELEASE#}/hbcd/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">Contains release version-specific data, including participant list to be included in the release (<code>rawdata/participants.tsv</code>). This is the final repository after de-identification and prior to Lasso ingestion.</td>
+    </tr>
+</tbody>
+</table>
 
 **Additional Details Linked to in Diagram:**
 <div id="record-query" class="table-banner" onclick="toggleCollapse(this)">
