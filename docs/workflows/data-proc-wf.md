@@ -87,8 +87,13 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
     <tbody>
     <tr>
       <td>LORIS Production</td>
-      <td><code>????</code></td>
+      <td><code>s3://midb-hbcd-main-pr/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">LORIS Bucket that receives all tabulated data prior to staging and ingestion</td>
+    </tr>
+    <tr>
+      <td>LORIS Sandbox</td>
+      <td><code>s3://midb-hbcd-main-sb/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">LORIS Bucket for non-production system to test data flows on pilot data</td>
     </tr>
     <tr>
       <td>Lasso Staging</td>
@@ -155,7 +160,7 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 
 Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for MRI and MRS). LORIS data is subsequently transferred directly into the central S3 main PR bucket, which subsequently is sourced for CBRAIN processing. MRI and MRS must first be converted to BIDS format and MRI data also undergoes extensive raw data QC ([see details](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc)).
 
-<object type="image/svg+xml" data="../images/fb-wf.svg" style="width: 100%; height: auto;">
+<object type="image/svg+xml" data="../images/fb-proc-wf.svg" style="width: 100%; height: auto;">
   Your browser does not support SVG
 </object>
 
