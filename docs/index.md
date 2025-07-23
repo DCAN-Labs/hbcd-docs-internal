@@ -45,6 +45,18 @@ We use a multi-layered strategy to ensure data accuracy and consistency across a
 **Why this matters:**  
 Data quality is foundational for scientific integrity and usability. Multiple validation layers ensure we catch both systemic and isolated issues before public release. Laying out every update, change, and error for all members of the consortium to view can be difficult, but it provides a level of transparency and helps with speed to assure deadlines are met. 
 
+#### 3.Project Management
+
+Our release strategy is supported by coordinated project management personnel that unify communication, task tracking, and release milestones:
+Platform Integration: We use Monday.com to manage tasks, tickets, timelines, and dependencies across teams.
+
+ - **Roles & Responsibilities**: Each release has assigned leads (e.g., HDCC liaisons, WG coordinators) responsible for sign-offs, QA ownership, and timeline adherence.
+ - **Cross-Team Coordination**: HDCC liaisons attend working group meetings, assist with change request templates, and log/track requests through our centralized platform.
+ - **Release Readiness Reviews**: Structured workflows ensure that milestones like documentation completion, validation sign-offs, and stakeholder preview periods are met before public release.
+
+**Why this matters:**
+A well-run project management system ensures no detail or dependency is missed, enables visibility across groups, and makes coordination across dozens of stakeholders efficient and predictable.
+
 #### 3. Version Control
 
 All data, code, and pipelines are managed using robust versioning systems, primarily Git and DataLad. Releases are versioned with the Beta Releases. Each transformation step and release ‘snapshot’ is tracked, documented, and reproducible.
@@ -57,6 +69,8 @@ Version control ensures that every release can be reconstructed exactly, support
 Our data processing workflows are built to be fully reproducible by both internal and external teams:
 
 * **Reproducible Environments**: We use Docker, Conda, Puppet Orchestration, and Snakemake to containerize and automate our pipelines, ensuring consistency across computing environments.
+
+* **Version Control**: All data, code, and pipelines are tracked with Git and DataLad. Each release and transformation step is tagged, documented, and linked to its corresponding beta/public version.
 
 * **Standardized & Reviewed Code**: All code is standardized and undergoes independent secondary review by external partners, such as the [NMIND Consortium](https://docs.hbcdstudy.org/latest/datacuration/nmind/).
 
