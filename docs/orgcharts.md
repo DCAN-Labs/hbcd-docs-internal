@@ -1167,8 +1167,8 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
   <tr>
   <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 30%;">&nbsp;</td>
   <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Provide measure documentation for <a href="https://docs.hbcdstudy.org/latest/instruments/">data release notes</a></th>
-  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Perform ongoing QC via QC Dashboards<br><a href="../workflows/qc#proc-pheno"><i>See Details</i></a></th>
-  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Perform public release data QC<br><a href="../workflows/qc#pre-release-pheno"><i>See Details</i></a></th>
+  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Perform ongoing QC via QC Dashboards<br><a href="../workflows/qc#proc-pheno" target="_blank"><i>See Details</i></a></th>
+  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Perform public release data QC<br><a href="../workflows/qc#pre-release-pheno" target="_blank"><i>See Details</i></a></th>
   </tr>
 </thead>
 <tbody>
@@ -1199,7 +1199,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <tr>
 <td style="word-wrap: break-word; white-space: normal; text-align: center;"><span class="tooltip">EEG<span class="tooltiptext">Electroencephalography</span></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><a href="../workflows/qc#eeg-data"><i>See details</i></a></td>
+<td style="text-align: center;"><a href="../workflows/qc#eeg-data" target="_blank"><i>See details</i></a></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
@@ -1211,7 +1211,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <tr>
 <td style="word-wrap: break-word; white-space: normal; text-align: center;"><span class="tooltip">MRI<span class="tooltiptext">Magnetic Resonance Imaging</span></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><a href="../workflows/qc#mri-mrs-data"><i>See details</i></a></td>
+<td style="text-align: center;"><a href="../workflows/qc#mri-mrs-data" target="_blank"><i>See details</i></a></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
