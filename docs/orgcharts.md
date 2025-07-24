@@ -1143,3 +1143,86 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     </tr>
   </tbody>
 </table>
+
+#### TEMP
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<thead>
+  <tr>
+  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 30%;">&nbsp;</td>
+  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Provide measure documentation for data release</th>
+  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Perform ongoing QC via QC Dashboards</th>
+  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Perform release data QC</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Behavior and Caregiver-Child Interaction</td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Biospecimens and Omics</td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Biostatistics</td>
+<td style="text-align: center;"><span class="emoji" style="color: red;"><i class="fa-solid fa-xmark"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;"><span class="tooltip">EEG<span class="tooltiptext">Electroencephalography</span></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Geocoding and Linking External Data</td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;"><span class="tooltip">MRI<span class="tooltiptext">Magnetic Resonance Imaging</span></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Neurocognition and Language</td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Novel Technologies and Wearables</td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Physical Health</td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Pregnancy and Exposure</td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Social and Environmental Determinants</td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+</tbody>
+</table>
+
+
+
