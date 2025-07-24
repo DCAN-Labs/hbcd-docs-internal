@@ -1160,7 +1160,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
   </tbody>
 </table>
 
-#### TEMP
+#### HBCD Workgroup Connect Points with HDCC
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
