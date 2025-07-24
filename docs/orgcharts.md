@@ -1162,6 +1162,11 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 
 #### HBCD Workgroup Connect Points with HDCC
 
+
+<object type="image/svg+xml" data="../images/wg-hdcc.svg" width="60%"></object>
+
+<object type="image/svg+xml" data="../images/wg-hdcc-tb.svg" width="60%"></object>
+
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <thead>
   <tr>
@@ -1252,6 +1257,11 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 </tr>
 </tbody>
 </table>
+
+
+
+
+
 
 
 
