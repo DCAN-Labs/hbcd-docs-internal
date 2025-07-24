@@ -1160,7 +1160,13 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
   </tbody>
 </table>
 
-#### HBCD Workgroup Connect Points with HDCC
+#### HBCD Workgroup Connect Points with the HDCC
+
+All HBCD Workgroups interface heavily with the HDCC primarily for:
+
+ - **Data processing**: data processing workflows, from site capture to public release, are outlined under [Data Processing Workflows](workflows/data-proc-wf.md). Each stage indicates which HDCC entity is involved in the process.
+ - **Quality control**: HDCC provides the infrastructure for several stages of quality control for data within HBCD Workgroup domains, including pre-release QC and ongoing QC via dashboards. Details on these processes can be found in the [Quality Control Procedures](workflows/qc.md). Each stage indicates which HDCC entity is involved in the process where relevant.
+ - **Central documentation**: HDCC provides a central repository for documentation related to HBCD Workgroup data, including measure documentation and data release notes made available via the [HBCD Data Release Docs](https://docs.hbcdstudy.org/latest/), the private release Docs (available to DUC users), and this internal documentation site.
 
 <p>
 <style>
@@ -1192,7 +1198,8 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
   <thead>
     <tr>
       <th>&nbsp;</th>
-      <th>Provide measure documentation for<br><a href="https://docs.hbcdstudy.org/latest/instruments/">data release notes</a></th>
+      <th>Provide <a href="https://docs.hbcdstudy.org/latest/instruments/">data release notes</a><br>documentation for study measures<br>
+      <i class="fa-solid fa-house"></i> <a hre="#center-for-developmental-neuroimaging">CDNI (UMN)</a></th>
       <th>Ongoing QC via Dashboards<br><a href="../workflows/qc#proc-pheno" target="_blank"><i>See Details</i></a></th>
       <th>Public release data QC<br><a href="../workflows/qc#pre-release-pheno" target="_blank"><i>See Details</i></a></th>
     </tr>
@@ -1219,10 +1226,4 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 ##### Diagram Visual
 
 <object class="center" type="image/svg+xml" data="../images/wg-hdcc-tb.svg" width="100%"></object>
-
-
-
-
-
-
 
