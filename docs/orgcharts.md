@@ -1012,7 +1012,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     </td>
   </tr>
   <tr>
-    <th>Biospecimens and Omics</th>
+    <th>Biospecimens & Omics</th>
     <td>
       Julie Croff (Co-chair) – julie.croff@okstate.edu<br>
       Elinor Sullivan (Co-chair) – sullivel@ohsu.edu
@@ -1026,6 +1026,15 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     </td>
   </tr>
   <tr>
+    <th>Demographics</th>
+    <td>
+      Natalie Slopen<br> 
+      Heather Burris<br> 
+      Kathy Cole<br>
+      Stephanie Engel 
+    </td>
+  </tr>
+  <tr>
     <th>Electroencephalogram (EEG)</th>
     <td>
       Nathan Fox (Co-chair) – fox@umd.edu<br>
@@ -1033,7 +1042,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     </td>
   </tr>
   <tr>
-    <th>Geocoding and Linking External Data</th>
+    <th>Geocoding & Linking External Data</th>
     <td>
       Chun Fan (Chair) – chunchiehfan@gmail.com
     </td>
@@ -1047,14 +1056,14 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     </td>
   </tr>
   <tr>
-    <th>Neurocognition and Language</th>
+    <th>Neurocognition & Language</th>
     <td>
       Julie Kable (Co-chair) – jkabl01@emory.edu<br>
       Alexi Potter (Co-chair) – Alexandra.Potter@uvm.edu
     </td>
   </tr>
   <tr>
-    <th>Novel Technologies and Wearables</th>
+    <th>Novel Technologies & Wearables</th>
     <td>
       Bill Fifer (Co-chair) – wpf1@columbia.edu, wpf1@cumc.columbia.edu<br>
       Beth Smith (Co-chair) – bsmith@chla.usc.edu
@@ -1068,7 +1077,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     </td>
   </tr>
   <tr>
-    <th>Pregnancy and Exposure</th>
+    <th>Pregnancy & Exposure</th>
     <td>
       Gretchen Bandoli (Co-chair) – gbandoli@health.ucsd.edu<br>
       Claire Coles (Co-chair) – ccoles@emory.edu<br>
@@ -1076,7 +1085,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     </td>
   </tr>
   <tr>
-    <th>Social and Environmental Determinants</th>
+    <th>Social & Environmental Determinants</th>
     <td>
       Ashley Acheson (Co-chair) – awacheson@uams.edu<br>
       Lea Yerby (Co-chair) – yerby002@ua.edu
@@ -1150,20 +1159,20 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <thead>
   <tr>
   <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 30%;">&nbsp;</td>
-  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Provide measure documentation for data release</th>
+  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Provide measure documentation for <a href="https://docs.hbcdstudy.org/latest/instruments/">data release notes</a></th>
   <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Perform ongoing QC via QC Dashboards</th>
-  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Perform release data QC</th>
+  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Perform public release data QC</th>
   </tr>
 </thead>
 <tbody>
 <tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Behavior and Caregiver-Child Interaction</td>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Behavior & Caregiver-Child Interaction</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Biospecimens and Omics</td>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Biospecimens & Omics</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
@@ -1175,13 +1184,19 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Demographics</td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+</tr>
+<tr>
 <td style="word-wrap: break-word; white-space: normal; text-align: center;"><span class="tooltip">EEG<span class="tooltiptext">Electroencephalography</span></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Geocoding and Linking External Data</td>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Geocoding & Linking External Data</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
@@ -1193,13 +1208,13 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Neurocognition and Language</td>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Neurocognition & Language</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Novel Technologies and Wearables</td>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Novel Technologies & Wearables</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
@@ -1211,13 +1226,13 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Pregnancy and Exposure</td>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Pregnancy & Exposure</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Social and Environmental Determinants</td>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Social & Environmental Determinants</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
