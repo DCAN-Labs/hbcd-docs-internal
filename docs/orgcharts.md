@@ -1199,7 +1199,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <tr>
 <td style="word-wrap: break-word; white-space: normal; text-align: center;"><span class="tooltip">EEG<span class="tooltiptext">Electroencephalography</span></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;">???</td>
+<td style="text-align: center;"><a href="../workflows/qc#eeg-data"><i>See details</i></a></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
@@ -1211,7 +1211,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <tr>
 <td style="word-wrap: break-word; white-space: normal; text-align: center;"><span class="tooltip">MRI<span class="tooltiptext">Magnetic Resonance Imaging</span></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;">?????</td>
+<td style="text-align: center;"><a href="../workflows/qc#mri-mrs-data"><i>See details</i></a></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
