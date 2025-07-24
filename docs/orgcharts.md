@@ -1163,95 +1163,55 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 #### HBCD Workgroup Connect Points with HDCC
 
 <p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<thead>
-  <tr>
-  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 30%;">&nbsp;</td>
-  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Provide measure documentation for <a href="https://docs.hbcdstudy.org/latest/instruments/">data release notes</a></th>
-  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Perform ongoing QC via QC Dashboards<br><a href="../workflows/qc#proc-pheno" target="_blank"><i>See Details</i></a></th>
-  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Perform public release data QC<br><a href="../workflows/qc#pre-release-pheno" target="_blank"><i>See Details</i></a></th>
-  </tr>
-</thead>
-<tbody>
-<tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Behavior & Caregiver-Child Interaction</td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Biospecimens & Omics</td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Biostatistics</td>
-<td style="text-align: center;"><span class="emoji" style="color: red;"><i class="fa-solid fa-xmark"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Demographics</td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: red;"><i class="fa-solid fa-xmark"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;"><span class="tooltip">EEG<span class="tooltiptext">Electroencephalography</span></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><a href="../workflows/qc#eeg-data" target="_blank"><i>See details</i></a></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Geocoding & Linking External Data</td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;"><span class="tooltip">MRI<span class="tooltiptext">Magnetic Resonance Imaging</span></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><a href="../workflows/qc#mri-mrs-data" target="_blank"><i>See details</i></a></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Neurocognition & Language</td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Novel Technologies & Wearables</td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Physical Health</td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Pregnancy & Exposure</td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Social & Environmental Determinants</td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal; text-align: center;">Transitions in Care</td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-</tr>
-</tbody>
+<style>
+  .compact-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 13px; /* Reduced font size */
+  }
+  .compact-table th,
+  .compact-table td {
+    padding: 4px 6px; /* Tighter padding */
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  .compact-table th {
+    font-weight: 600;
+  }
+  .tooltip .tooltiptext {
+    font-size: 11px; /* Smaller hover text */
+    line-height: 1.2;
+    padding: 6px;
+  }
+</style>
+
+<table class="compact-table table-no-vertical-lines">
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th>Provide measure documentation for<br><a href="https://docs.hbcdstudy.org/latest/instruments/">data release notes</a></th>
+      <th>Ongoing QC via Dashboards<br><a href="../workflows/qc#proc-pheno" target="_blank"><i>See Details</i></a></th>
+      <th>Public release data QC<br><a href="../workflows/qc#pre-release-pheno" target="_blank"><i>See Details</i></a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Behavior & Caregiver-Child Interaction</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
+    <tr><td>Biospecimens & Omics</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
+    <tr><td>Biostatistics</td><td><i class="fa-solid fa-xmark" style="color: red;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
+    <tr><td>Demographics</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-xmark" style="color: red;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
+    <tr><td><span class="tooltip">EEG<span class="tooltiptext">Electroencephalography</span></span></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><a href="../workflows/qc#eeg-data" target="_blank"><i>See details</i></a></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
+    <tr><td>Geocoding & Linking External Data</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
+    <tr><td><span class="tooltip">MRI<span class="tooltiptext">Magnetic Resonance Imaging</span></span></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><a href="../workflows/qc#mri-mrs-data" target="_blank"><i>See details</i></a></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
+    <tr><td>Neurocognition & Language</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
+    <tr><td>Novel Technologies & Wearables</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
+    <tr><td>Physical Health</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
+    <tr><td>Pregnancy & Exposure</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
+    <tr><td>Social & Environmental Determinants</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
+    <tr><td>Transitions in Care</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
+  </tbody>
 </table>
 </p>
 
