@@ -1091,6 +1091,13 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
       Lea Yerby (Co-chair) – yerby002@ua.edu
     </td>
   </tr>
+    <tr>
+    <th>Transitions in Care</th>
+    <td>
+      Julie Poehlmann-Tynan (Co-Chair) - julie.poehlmanntynan@wisc.edu<br>
+      Rebecca Shlafer (Co-Chair) - shlaf002@umn.edu
+    </td>
+  </tr>
 </table>
 
 #### MRI Subgroups
@@ -1174,7 +1181,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <tr>
 <td style="word-wrap: break-word; white-space: normal; text-align: center;">Biospecimens & Omics</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span> HST</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
@@ -1186,25 +1193,25 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <tr>
 <td style="word-wrap: break-word; white-space: normal; text-align: center;">Demographics</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: red;"><i class="fa-solid fa-xmark"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal; text-align: center;"><span class="tooltip">EEG<span class="tooltiptext">Electroencephalography</span></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;">???</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal; text-align: center;">Geocoding & Linking External Data</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span> Ripple</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal; text-align: center;"><span class="tooltip">MRI<span class="tooltiptext">Magnetic Resonance Imaging</span></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;">?????</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
@@ -1236,6 +1243,13 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal; text-align: center;">Transitions in Care</td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span> Ripple</td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
+</tr>
 </tbody>
 </table>
 
