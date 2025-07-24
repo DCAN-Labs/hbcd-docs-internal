@@ -1167,8 +1167,8 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
   <tr>
   <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 30%;">&nbsp;</td>
   <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Provide measure documentation for <a href="https://docs.hbcdstudy.org/latest/instruments/">data release notes</a></th>
-  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Perform ongoing QC via QC Dashboards</th>
-  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Perform public release data QC</th>
+  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Perform ongoing QC via QC Dashboards<br><a href="../workflows/qc#proc-pheno"><i>See Details</i></a></th>
+  <th style="word-wrap: break-word; white-space: normal; text-align: center; width: 20%;">Perform public release data QC<br><a href="../workflows/qc#pre-release-pheno"><i>See Details</i></a></th>
   </tr>
 </thead>
 <tbody>
