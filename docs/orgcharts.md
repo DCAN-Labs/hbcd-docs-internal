@@ -1181,7 +1181,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <tr>
 <td style="word-wrap: break-word; white-space: normal; text-align: center;">Biospecimens & Omics</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span> HST</td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
@@ -1205,7 +1205,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <tr>
 <td style="word-wrap: break-word; white-space: normal; text-align: center;">Geocoding & Linking External Data</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span> Ripple</td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 <tr>
@@ -1247,7 +1247,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <tr>
 <td style="word-wrap: break-word; white-space: normal; text-align: center;">Transitions in Care</td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
-<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span> Ripple</td>
+<td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 <td style="text-align: center;"><span class="emoji" style="color: green;"><i class="fa-solid fa-check"></i></span></td>
 </tr>
 </tbody>
