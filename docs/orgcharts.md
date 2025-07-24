@@ -371,7 +371,7 @@ config:
 ---
 flowchart TB
     L["<b>Maren Macgregor-Hannah</b><br>HDCC Program Manager"] --- N(["<b>Advanced System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) & n8(["<b>Security &amp; Compliance</b>"])
-    N --- Q["<b>Jesse Erdmann</b><br>Senior SysOps<br><br><b>Kimberleigh Breen</b><br>Data Manager<br><br><b>Sriharshitha Anuganti<br>Alyssa Oksa</b><br>DevOps"]
+    N --- Q["<b>Jesse Erdmann</b><br>Senior SysOps<br><br><b>Kimberleigh Breen</b><br>Data Manager<br><br><b>Sriharshitha Anuganti<br>Alyssa Oksa<br>Anders Skaar</b><br>DevOps"]
     O --- n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead<br><br><b>Erik Lee</b><br>Pipeline Lead<br><br><b>Monalisa Biles</b><br>Analyst"]
     P --- n7["<b>Jeff Shi</b><br>Informatics Consultant<br><br><b>Borgne Raasch</b><br>Data Steward"]
     n8 --- n9["<b>Naomi Hospodarsky-Sutherland</b>"]
@@ -421,15 +421,20 @@ flowchart TB
     <tr>
     <td>Jesse Erdmann</td>
     <td>Systems Operations</td>
-    <td style="word-wrap: break-word; white-space: normal;">dvanced System Operations (ASO) oversight: Oversees the performance, reliability, and security of the MSI computational systems and infrastructure, for integration and support for Loris, large-scale data processing, and analysis workflows.</td>
+    <td style="word-wrap: break-word; white-space: normal;">Advanced System Operations (ASO) oversight: Oversees the performance, reliability, and security of the MSI computational systems and infrastructure, for integration and support for Loris, large-scale data processing, and analysis workflows.</td>
     </tr>
     <tr>
-    <td>Devin Willis</td>
+    <td>Sriharshitha Anuganti</td>
+    <td>DevOps Engineer</td>
+    <td style="word-wrap: break-word; white-space: normal;">Continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
+    </tr>
+        <tr>
+    <td>Alyssa Oksa</td>
     <td>DevOps Engineer</td>
     <td style="word-wrap: break-word; white-space: normal;">Continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
     </tr>
     <tr>
-    <td>Jesus Garcia</td>
+    <td>Anders Skaar</td>
     <td>DevOps Engineer</td>
     <td style="word-wrap: break-word; white-space: normal;">Continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
     </tr>
