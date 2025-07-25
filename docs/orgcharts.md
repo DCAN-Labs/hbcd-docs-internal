@@ -902,56 +902,9 @@ flowchart TB
 </div>
 </p>
 
-### LIBR
-
-The Laureate Institute for Brain Research (LIBR) houses the Biostatistics and Geolocation [HBCD Workgroups](#hbcd-workgroups) and provides support for the HDCC in the areas of biostatistics, geolocation, and data analysis.
-
-```mermaid
----
-config:
-  layout: fixed
----
-flowchart LR
-    n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
-    style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style n17 fill:#BBDEFB,stroke:#2962FF
-```
-
-<div id="libr-rr" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
-  <a class="anchor-link" href="#libr-rr" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
-    <thead>
-      <tr>
-        <th style="width: 25%;">Name</th>
-        <th style="width: 30%;">Title</th>
-        <th style="width: 45%;">Role on HDCC</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-      <td>Wesley K. Thompson, PhD</td>
-      <td>HDCC Assoc Dir, BioStatistics Chair</td>
-      <td>&nbsp;</td>
-      </tr>
-      <tr>
-      <td>Chun Fan, PhD</td>
-      <td>Geolocation Chair</td>
-      <td>&nbsp;</td>
-      </tr>
-</table>
-</div>
-
 ### University of Maryland
 
-<div style="width: 90%; margin: 0 auto;">
+<div style="width: 80%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -1038,6 +991,100 @@ flowchart TB
     </table>
 </div>
 <br>
+
+### LIBR
+
+The Laureate Institute for Brain Research (LIBR) houses the Biostatistics and Geolocation [HBCD Workgroups](#hbcd-workgroups) and provides support for the HDCC in the areas of biostatistics, geolocation, and data analysis.
+
+```mermaid
+---
+config:
+  layout: fixed
+---
+flowchart LR
+    n16["<b>Wesley K. Thompson, PhD</b><br>HDCC Assoc Dir, BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
+    style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
+    style n17 fill:#BBDEFB,stroke:#2962FF
+```
+
+<div id="libr-rr" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Roles & Responsibilities</span>
+  <a class="anchor-link" href="#libr-rr" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <thead>
+      <tr>
+        <th style="width: 25%;">Name</th>
+        <th style="width: 30%;">Title</th>
+        <th style="width: 45%;">Role on HDCC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>Wesley K. Thompson, PhD</td>
+      <td>HDCC Assoc Dir, BioStatistics Chair</td>
+      <td>&nbsp;</td>
+      </tr>
+      <tr>
+      <td>Chun Fan, PhD</td>
+      <td>Geolocation Chair</td>
+      <td>&nbsp;</td>
+      </tr>
+</table>
+</div>
+
+### Columbia University
+
+Columbia houses the Novel Technologies & Wearables [HBCD Workgroup](#hbcd-workgroups) and provides support for the HDCC in the areas of novel technologies, wearables, and data analysis.
+
+```mermaid
+---
+config:
+  layout: fixed
+---
+flowchart LR
+    n16["<b>William P. Fifer, PhD</b><br>Novel Tech & Wearables Co-Chair"] --- n17["<b>Nicolo Pini, PhD</b><br>Geolocation Chair"]
+    style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
+    style n17 fill:#BBDEFB,stroke:#2962FF
+```
+
+<div id="libr-rr" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Roles & Responsibilities</span>
+  <a class="anchor-link" href="#libr-rr" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <thead>
+      <tr>
+        <th style="width: 25%;">Name</th>
+        <th style="width: 30%;">Title</th>
+        <th style="width: 45%;">Role on HDCC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>William P. Fifer, PhD</td>
+      <td>Novel Tech & Wearables Co-Chair</td>
+      <td>&nbsp;</td>
+      </tr>
+      <tr>
+      <td>Nicolo Pini</td>
+      <td></td>
+      <td>&nbsp;</td>
+      </tr>
+</table>
+</div>
 
 ## HBCD Workgroups
 
