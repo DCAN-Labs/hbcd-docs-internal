@@ -21,7 +21,7 @@ config:
 ---
 flowchart TB
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<b>JCVI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & umn["<b>UMN</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n7["<b>LORIS</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n8["<b>UMD EEG Core</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n11["<b>Columbia</b>"]
+    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & umn["<b>UMN</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n7["<b>LORIS</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n8["<b>UMD EEG Core</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n11["<b>Columbia</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
     lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO"]
     n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<b>WashU</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & n12["<b>LIBR</b> <i class="fa-solid fa-link" style="color: blue;"></i>"] & lasso
     n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
@@ -77,6 +77,7 @@ flowchart TB
     click n27 "#health-sciences-technology"
     click n28 "#center-for-developmental-neuroimaging"
     click n12 "#libr"
+    click n11 "#columbia-university"
 ```
 
 ### University of Minnesota
@@ -1047,7 +1048,7 @@ config:
   layout: fixed
 ---
 flowchart LR
-    n16["<b>William P. Fifer, PhD</b><br>Novel Tech & Wearables Co-Chair"] --- n17["<b>Nicolo Pini, PhD</b><br>Geolocation Chair"]
+    n16["<b>William P. Fifer, PhD</b><br>Novel Tech & Wearables Co-Chair"] --- n17["<b>Nicolo Pini, PhD</b><br>?????"]
     style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style n17 fill:#BBDEFB,stroke:#2962FF
 ```
