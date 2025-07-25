@@ -206,7 +206,7 @@ The Data security model ensures data security by focusing on two key components:
 </div>
 </p>
 
-<div style="width: 90%; margin: 0 auto;">
+<div style="width: 80%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -299,7 +299,7 @@ flowchart TB
 #### MIDB Analytics Hub
 The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) works in coordination with the Biospecimens Workgroup to provide support for genomic data processing and analysis as part of the **HBCD Genomics Supplement**. 
 
-<div style="width: 70%; margin: 0 auto;">
+<div style="width: 60%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -365,6 +365,7 @@ flowchart LR
    
 The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://midb.umn.edu/research/informatics) and [Minnesota Supercomputing Institute (MSI)](https://msi.umn.edu/) at UMN provide the following services to the HBCD study: *System Administration*, *Loris Hosting*, *Computing*, *Processing*, and *Data Sharing*.
 
+<div style="width: 90%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -388,6 +389,7 @@ flowchart TB
     style n9 fill:#BBDEFB,stroke:#2962FF
     style n10 fill:#BBDEFB,stroke:#2962FF
 ```
+</div>
 <br>
 
 <div id="midb-msi-rr" class="table-banner" onclick="toggleCollapse(this)">
@@ -477,7 +479,7 @@ flowchart TB
 ### WashU    
 Washington University in St. Louis (WashU) has oversight of: *Electronic Medical Records (EMR)*, *[Ambra](#ambra)*, *[AirTable](#airtable)*, *[Ripple](#ripple)*,  and *HBCD Study Administrative Core (HCAC) coordination*.
 
-<div style="width: 80%; margin: 0 auto;">
+<div style="width: 70%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -591,7 +593,7 @@ Ripple is a data-driven innovative web-based technology that allows groups to co
 ### J. Craig Venter Institute 
 The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, FIONA, and the QC Dashboard.
 
-<div style="width: 90%; margin: 0 auto;">
+<div style="width: 80%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -697,8 +699,6 @@ flowchart TB
 
 
 #### Subcontractor Details
-
-🚧 **UPDATE FOLLOWING DESCRIPTIONS - these are first drafts and need to be reviewed/corrected by SMEs** 🚧
 
 ##### DEAP
 
@@ -812,6 +812,7 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
  
 [LORIS](https://mcin.ca/technology/loris/) (Longitudinal Online Research and Imaging System), developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)), is the core data management system for the HBCD Study. It is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
 
+<div style="width: 90%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -835,6 +836,7 @@ flowchart TB
     style M stroke:#2962FF,fill:#BBDEFB
     style n13 stroke:#2962FF,fill:#BBDEFB
 ```
+</div>
 <p>
 <div id="loris-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -914,6 +916,38 @@ flowchart LR
     style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style n17 fill:#BBDEFB,stroke:#2962FF
 ```
+
+<div id="libr-rr" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Roles & Responsibilities</span>
+  <a class="anchor-link" href="#libr-rr" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <thead>
+      <tr>
+        <th style="width: 25%;">Name</th>
+        <th style="width: 30%;">Title</th>
+        <th style="width: 45%;">Role on HDCC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>Wesley K. Thompson, PhD</td>
+      <td>HDCC Assoc Dir, BioStatistics Chair</td>
+      <td>&nbsp;</td>
+      </tr>
+      <tr>
+      <td>Chun Fan, PhD</td>
+      <td>Geolocation Chair</td>
+      <td>&nbsp;</td>
+      </tr>
+</table>
+</div>
 
 ### University of Maryland
 
