@@ -1,6 +1,6 @@
 #  HDCC Organizational Charts
 
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
+# <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
 
 ## HDCC Functional Structure
 
@@ -13,6 +13,9 @@ The larger organizational structure of the HBCD Data Coordinating Center (HDCC) 
     <span class="text"><b>NOTE:</b> These org charts emphasize functional structure within the context of HDCC, not reporting line details of individual organizations.</span>
 </div>
 <br>
+
+<object type="image/svg+xml" data="../images/overview.svg" width="100%"></object>
+
 
 ```mermaid
 ---
