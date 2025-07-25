@@ -1,6 +1,6 @@
 #  HDCC Organizational Charts
 
-# <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
 
 ## HDCC Functional Structure
 
@@ -13,9 +13,6 @@ The larger organizational structure of the HBCD Data Coordinating Center (HDCC) 
     <span class="text"><b>NOTE:</b> These org charts emphasize functional structure within the context of HDCC, not reporting line details of individual organizations.</span>
 </div>
 <br>
-
-<object type="image/svg+xml" data="../images/overview.svg" width="100%"></object>
-
 
 ```mermaid
 ---
@@ -34,6 +31,7 @@ flowchart TB
     umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n11 --- n18["<b>William P. Fifer, PhD</b><br>Novel Tech &<br>Wearables Co-Chair"]
+    n18 --> n34["<b>Nicolo Pini</b>"]
     reed --- n30["<b>Maren Macgregor-Hannah</b><br>Program Manager"]
     n30 --- n25["<b>MIDB Informatics</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
     n30 --- n27["<b>HST</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
@@ -69,6 +67,7 @@ flowchart TB
     style n31 fill:#C8E6C9,stroke:#00C853
     style n32 fill:#C8E6C9,stroke:#00C853
     style n33 fill:#C8E6C9,stroke:#00C853
+    style n34 fill:#C8E6C9,stroke:#00C853
     click jcvi "#j-craig-venter-institute"
     click lasso "#lasso"
     click umn "#university-of-minnesota"
