@@ -80,7 +80,7 @@ flowchart TB
 ```
 
 ### University of Minnesota
-
+<p>
 ```mermaid
 ---
 config:
@@ -102,12 +102,13 @@ flowchart TB
     click D "#midb-analytics-hub"
     click E "#midb-informatics-hub-msi"
 ```
+</p>
 
 #### Center for Developmental NeuroImaging
    
 The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
 
-<div style="width: 80%; margin: 0 auto;">
+<div style="width: 70%; margin: 0 auto;">
 ```mermaid
 ---
 config:
