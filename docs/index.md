@@ -14,7 +14,7 @@
 The HDCC is committed to a principled and transparent approach to data sharing. Our data release workflow emphasizes **clarity, quality, reproducibility, timeliness, and transparency**, drawing on international best practices and customized to the complexities of a large, multi-site longitudinal study (see [References](#references-and-frameworks)).
 
 
-#### 1. Clear Objectives and Scope
+#### <i class="fa-solid fa-bullseye" style="color: #6300d3;"></i> Clear Objectives and Scope
 
 Each data release begins with a clearly defined scope. We identify which data components will be made publicly available. This includes an organized document of instruments and visits to be released that is signed off by leadership groups across HDCC-HCAC, program, and HBCD Workgroups ([see details](orgcharts.md#hbcd-workgroups)). It is archived and versioned within the Docs pages. 
 
@@ -26,7 +26,7 @@ Each data release begins with a clearly defined scope. We identify which data co
 Defining clear goals and timelines that are documented, versioned, and available centrally to all parties for transparency. It also helps prevent scope creep and confusion about which data elements are production ready.
 
 
-#### 2. Data Quality Checks
+#### <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i> Data Quality Checks
 
 We use a multi-layered strategy to ensure data accuracy and consistency across all sites and modalities:
 
@@ -45,7 +45,7 @@ We use a multi-layered strategy to ensure data accuracy and consistency across a
 **Why this matters:**  
 Data quality is foundational for scientific integrity and usability. Multiple validation layers ensure we catch both systemic and isolated issues before public release. Laying out every update, change, and error for all members of the consortium to view can be difficult, but it provides a level of transparency and helps with speed to assure deadlines are met. 
 
-#### 3.Project Management
+#### <i class="fa-solid fa-diagram-project" style="color: #6300d3;"></i> Project Management
 
 Our release strategy is supported by coordinated project management personnel that unify communication, task tracking, and release milestones:
 Platform Integration: We use Monday.com to manage tasks, tickets, timelines, and dependencies across teams.
@@ -57,7 +57,7 @@ Platform Integration: We use Monday.com to manage tasks, tickets, timelines, and
 **Why this matters:**
 A well-run project management system ensures no detail or dependency is missed, enables visibility across groups, and makes coordination across dozens of stakeholders efficient and predictable.
 
-#### 4. Reproducibility
+#### <i class="fa-solid fa-code-compare" style="color: #6300d3;"></i> Reproducibility
 
 Our data processing workflows are built to be fully reproducible by both internal and external teams:
 
@@ -72,7 +72,7 @@ Our data processing workflows are built to be fully reproducible by both interna
 **Why this matters:**  
 Reproducibility is a cornerstone of modern science. It ensures that results derived from HBCD data can be verified, trusted, and extended by the broader research community. Every element of our code base is available for the community to utilize and identify improvements and contribute to improvements of the code base. This ensures high quality packages and modernization with a fast changing scientific landscape. 
 
-#### 5. Timeliness Planning
+#### <i class="fa-solid fa-clock" style="color: #6300d3;"></i> Timeliness Planning
 
 With the lessons learned from Release 1.0, we are now taking a proactive approach to timeline management and release readiness. The release timeline is now part of the approval process for the defined objectives and scope  (see [Release Timeline](workflows/release-wf.md#release-timeline)). 
 
@@ -85,7 +85,7 @@ With the lessons learned from Release 1.0, we are now taking a proactive approac
 **Why this matters:**  
 Timely releases and thoughtful approved timelines maintain community momentum and fulfill commitments. Early and iterative review avoids last-minute surprises and enables smoother rollout.
 
-#### 6. Transparency
+#### <i class="fa-solid fa-eye" style="color: #6300d3;"></i> Transparency
 
 We commit to open and honest communication with all data users:
 
