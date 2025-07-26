@@ -1,4 +1,4 @@
-# How To Request Updates to Documentation
+# How to Request Updates to Documentation
 
 HBCD Study documentation can be found in the following locations:
 
