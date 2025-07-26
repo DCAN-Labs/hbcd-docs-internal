@@ -13,6 +13,42 @@
 
 The HDCC is committed to a principled and transparent approach to data sharing. Our data release workflow emphasizes **clarity, quality, reproducibility, timeliness, and transparency**, drawing on international best practices and customized to the complexities of a large, multi-site longitudinal study (see [References](#references-and-frameworks)).
 
+<a href="#clear-objectives-and-scope" class="pill-link-wrapper">
+  <span class="pill-link">
+    <i class="fa-solid fa-bullseye" style="color: #6300d3;"></i>
+  </span>
+</a><span>Clear Objectives and Scope</span>
+
+<a href="#data-quality-checks" class="pill-link-wrapper">
+  <span class="pill-link">
+    <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
+  </span>
+</a><span>Data Quality Checks</span>
+
+<a href="#project-management" class="pill-link-wrapper">
+  <span class="pill-link">
+    <i class="fa-solid fa-diagram-project" style="color: #6300d3;"></i>
+  </span>
+</a><span>Project Management</span>
+
+<a href="#reproducibility" class="pill-link-wrapper">
+  <span class="pill-link">
+    <i class="fa-solid fa-code-compare" style="color: #6300d3;"></i>
+  </span>
+</a><span>Reproducibility</span>
+
+<a href="#timeliness-planning" class="pill-link-wrapper">
+  <span class="pill-link">
+    <i class="fa-solid fa-clock" style="color: #6300d3;"></i>
+  </span>
+</a><span>Timeliness Planning</span>
+
+<a href="#transparency" class="pill-link-wrapper">
+  <span class="pill-link">
+    <i class="fa-solid fa-eye" style="color: #6300d3;"></i>
+  </span>
+</a><span>Transparency</span>
+
 
 #### <i class="fa-solid fa-bullseye" style="color: #6300d3;"></i> Clear Objectives and Scope
 

@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   margin-top: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   gap: 6px;
 }
 .pill-link-wrapper {
