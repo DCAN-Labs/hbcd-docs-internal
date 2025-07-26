@@ -2,12 +2,12 @@
 
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
 
-
-<a href="../../#project-management" target="_blank" class="pill-link-wrapper">
+<a href="../#project-management" target="_blank" class="pill-link-wrapper">
   <span class="pill-link">
-    <i class="fa-solid fa-diagram-project"></i> Project Management
+    <span class="tooltip"><i class="fa-solid fa-diagram-project" style="color: #6300d3;"></i><span class="tooltiptext">Project Management<br><i>Click to learn more</i></span></span>
   </span>
 </a>
+
 
 ## HDCC Functional Structure
 

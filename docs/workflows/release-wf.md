@@ -6,6 +6,12 @@ This document outlines the staged workflow for selecting, releasing, and validat
 
 ## Release Timeline
 
+<a href="../../#timeliness-planning" target="_blank" class="pill-link-wrapper">
+  <span class="pill-link">
+    <span class="tooltip"><i class="fa-solid fa-clock" style="color: #6300d3;"></i><span class="tooltiptext">Timeliness Planning<br><i>Click to learn more</i></span></span>
+  </span>
+</a>
+
 <img src="../images/timeline.svg" alt="Tableau" width="100%" height="auto" class="center">
 
 ## Stages of the Release Workflow

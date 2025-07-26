@@ -1,10 +1,11 @@
-# HBCD Quality Control
+# HBCD Quality Control 
 
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
 
+
 <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
   <span class="pill-link">
-    <i class="fa-solid fa-clipboard-check"></i> Data Quality Checks
+    <span class="tooltip"><i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i><span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span></span>
   </span>
 </a>
 
@@ -679,6 +680,12 @@ After data is released, additional QC is conducted in response to user-reported 
 </div>
 
 ## Software Standards
+
+<a href="../../#reproducibility" target="_blank" class="pill-link-wrapper">
+  <span class="pill-link">
+    <span class="tooltip"><i class="fa-solid fa-code-compare" style="color: #6300d3;"></i><span class="tooltiptext">Reproducibility<br><i>Click to learn more</i></span></span>
+  </span>
+</a>
 
 The following procedures are performed to support transparency, reproducibility, and standard environments for our databases and systems controls:
 
