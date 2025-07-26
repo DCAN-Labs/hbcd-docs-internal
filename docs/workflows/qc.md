@@ -2,7 +2,16 @@
 
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
 
+<a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
+  <span class="pill-link">
+    <i class="fa-solid fa-clipboard-check"></i> Data Quality Checks
+  </span>
+</a>
+
+As part of one of the primary pillars of the HBCD Data Release Framework, we have a comprehensive quality control (QC) process that ensures all data released to the public is accurate, consistent, and reproducible. This process is designed to catch errors at multiple stages, from initial data entry through to final public release.
+
 ## Pre-Release QC: 5 Stages
+
 
 The following outlines the 5 stages of QC performed for all study data prior to release. Below we outline the specific details of each stage associated with tabulated [Behavior, Biology, & Environment](#behavior-biology-environment) data and file-based data for [MRI & MRS](#mri-mrs-data) and [EEG](#eeg-data).
 

@@ -4,6 +4,35 @@
 /* red: #be074c */ 
 /* black/gray: #6b6b6b */ 
 
+
+/* Pill styling for pillars of HDCC (on overview page and throughout)*/
+.pill-link-wrapper {
+  text-decoration: none;
+}
+
+.pill-link {
+  display: inline-block;
+  background-color: #f3e9ff;
+  color: #4b0082;
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.9em;
+  font-weight: 800;
+  border: 1px solid #ca9eff;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.pill-link i {
+  color: #6300d3;
+  margin-right: 5px;
+}
+
+.pill-link:hover {
+  background-color: #ead4ff;
+  color: #3a006b;
+  border-color: #b884ff;
+}
+
 /* styling text to make more subtle, e.g. "Click to Expand"*/
 .hint {
   color: #888;
