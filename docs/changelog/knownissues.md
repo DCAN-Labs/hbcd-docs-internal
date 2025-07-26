@@ -1,6 +1,14 @@
 # Known Issues
 
 <div class="pill-center">
+  <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip">
+        <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
+        <span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span>
+      </span>
+    </span>
+  </a>
   <a href="../../#transparency" target="_blank" class="pill-link-wrapper">
     <span class="pill-link">
       <span class="tooltip">

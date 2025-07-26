@@ -2,6 +2,30 @@
 
 # HBCD Data Processing Workflows
 
+<div class="pill-center">
+  <a href="../../#clear-objectives-and-scope" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip"><i class="fa-solid fa-bullseye" style="color: #6300d3;"></i><span class="tooltiptext">Clear objectives & scope<br><i>Click to learn more</i></span></span>
+    </span>
+  </a>
+  <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
+      <span class="pill-link">
+        <span class="tooltip">
+          <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
+          <span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span>
+        </span>
+      </span>
+  </a>
+  <a href="../../#reproducibility" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip">
+        <i class="fa-solid fa-code-compare" style="color: #6300d3;"></i>
+        <span class="tooltiptext">Reproducibility<br><i>Click to learn more</i></span>
+      </span>
+    </span>
+  </a>
+</div>
+
 This section outlines the full HBCD processing workflows for [tabulated data](#tabulated-data) and [file-based data](#file-based-data), detailing each step from data capture at study sites to final ingestion into Lasso. Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [Org Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. 
 
 
