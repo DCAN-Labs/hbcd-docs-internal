@@ -12,12 +12,35 @@ th, td {
     white-space: normal;
 }
 
+/* Compact Table Style */
+.compact-table {
+  font-size: 0.8em;
+  line-height: 1.2;
+  width: 100%;
+  border-collapse: collapse;
+}
+.compact-table th,
+.compact-table td {
+  vertical-align: top;
+  text-align: left;
+  padding: 0.3em 0.6em;
+  border: 1px solid #ddd;
+}
+.compact-table th {
+  background-color: #e3f2fd;
+  width: 20%;
+}
+.compact-table td {
+  background-color: #f9f9f9;
+}
+
+
 /* Collapsible tables */
 .table-banner {
   display: flex;
   align-items: center; /* Ensures vertical alignment of items */
   justify-content: space-between; /* Ensures proper spacing */
-  background-color: #d0dff0;
+  background-color: #f0f4ff;
   border: 1px solid #3333331a;
   padding: 8px 10px;
   border-radius: 5px;
@@ -81,6 +104,3 @@ th, td {
 .table-no-vertical-lines th {
   background-color: rgba(255, 255, 255, 0.6) !important;
 }
-
-
-

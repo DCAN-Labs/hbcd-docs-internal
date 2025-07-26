@@ -1,0 +1,48 @@
+---
+config:
+  layout: elk
+  look: neo
+  theme: redux
+---
+flowchart LR
+ subgraph s5["PreRelease<br>MSI"]
+        n35["Copy data<br>to pre-release bucket"]
+        n36@{ label: "<span style=\"background-color:\">Lasso Prerelease S3</span>" }
+  end
+ subgraph s6["Lasso"]
+        n40["LASSO INGESTION"]
+  end
+ subgraph s7["FILE-BASED DATA"]
+        n45@{ label: "<span style=\"text-wrap-mode:\">De-ID S3</span><br style=\"text-wrap-mode:\"><i style=\"text-wrap-mode:\">derivatives/</i>" }
+  end
+ subgraph s8["TABULATED DATA"]
+        n43["Copy data to staging bucket"]
+        n44["S3 Lasso Staging"]
+        n46@{ label: "<span style=\"text-wrap-mode:\">LORIS</span><br style=\"text-wrap-mode:\"><span style=\"text-wrap-mode:\">Production S3</span><br style=\"text-wrap-mode:\"><span style=\"text-wrap-mode:\">ADD BUCKET NAME</span>" }
+  end
+    n35 --> n36
+    n36 --> n40
+    n42@{ label: "<span style=\"--tw-scale-x:\">Lasso PR S3 participant list:</span><br style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><i>rawdata/participants.tsv</i></span>" } --> n35 & n43
+    n43 --> n44
+    n44 --> n35
+    n45 --> n35
+    n46 --> n43
+    n35@{ shape: rect}
+    n36@{ shape: disk}
+    n40@{ shape: rect}
+    n45@{ shape: disk}
+    n44@{ shape: disk}
+    n46@{ shape: disk}
+    n42@{ shape: disk}
+    style n35 fill:#FFCDD2
+    style n36 fill:#C8E6C9
+    style n40 fill:#FFCDD2
+    style n45 fill:#C8E6C9
+    style n43 fill:#FFCDD2
+    style n44 fill:#C8E6C9
+    style n46 fill:#C8E6C9
+    style n42 fill:#C8E6C9
+    style s5 fill:#E1BEE7
+    style s6 fill:#BBDEFB
+    style s8 fill:#FFD600
+    style s7 fill:#FFD600

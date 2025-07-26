@@ -1,0 +1,69 @@
+---
+config:
+  layout: elk
+  look: neo
+  theme: redux
+---
+flowchart LR
+ subgraph s2["CBRAIN Processing<br>MSI"]
+        n24["CBRAIN<br>Processing"]
+        n25["De-ID S3<br><i>derivatives/</i>"]
+        n26@{ label: "Record Query<br><a href="../data-proc-wf/#record-query" target=_blank><i>Click for Details</i></a>" }
+  end
+ subgraph s3["Re-Identification for LORIS<br>MSI"]
+        n27["Re-ID"]
+        n28@{ label: "<span style=\"color:\">Main PR S3</span><br style=\"color:\"><span style=\"color:\"><i>reid_brainswipes/<br>derivatives</i></span><i style=\"color:\">/</i>" }
+        n43["LORIS<br>INGESTION"]
+  end
+ subgraph s4["BrainSwipes<br>MSI"]
+        n31@{ label: "<div style=\"color:\">Prerelease S3<br></div><div style=\"color:\"><span style=\"font-size:\"><i>derivatives/</i></span></div>" }
+        n32["QC &amp; tabulated data generation"]
+        n33@{ label: "<div style=\"color:\"><div>De-ID S3<br></div><div></div></div><div style=\"color:\"><i style=\"background-color:\"><font style=\"font-size:\">brainswipes/</font></i></div>" }
+  end
+ subgraph s5["Release<br>MSI"]
+        n35["Copy data<br>to pre-release bucket"]
+        n36@{ label: "<span style=\"background-color:\">Lasso Prerelease S3</span>" }
+  end
+ subgraph s6["Lasso"]
+        n40["LASSO INGESTION"]
+  end
+    n24 --> n25
+    n25 --> n26 & n27 & n31 & n35
+    n26 --> n25
+    n27 --> n28
+    n31 --> n32
+    n32 --> n33
+    n33 --> n27
+    n35 --> n36
+    n36 --> n40
+    n42@{ label: "<span style=\"--tw-scale-x:\">Lasso Prerelease S3 participant list:</span><br style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\">rawdata/participants.tsv</span>" } --> n35
+    n28 --> n43
+    n24@{ shape: rect}
+    n25@{ shape: disk}
+    n26@{ shape: rect}
+    n27@{ shape: rect}
+    n28@{ shape: disk}
+    n31@{ shape: disk}
+    n33@{ shape: disk}
+    n35@{ shape: rect}
+    n36@{ shape: disk}
+    n40@{ shape: rect}
+    n42@{ shape: disk}
+    style n24 fill:#FFCDD2
+    style n25 fill:#C8E6C9
+    style n26 fill:#FFCDD2
+    style n27 fill:#FFCDD2
+    style n28 fill:#C8E6C9
+    style n43 fill:#FFCDD2
+    style n31 fill:#C8E6C9,color:#000000
+    style n32 fill:#FFCDD2
+    style n33 fill:#C8E6C9,color:#000000
+    style n35 fill:#FFCDD2
+    style n36 fill:#C8E6C9
+    style n40 fill:#FFCDD2
+    style n42 fill:#C8E6C9
+    style s2 fill:#E1BEE7
+    style s3 fill:#FFE0B2
+    style s4 fill:#FFE0B2
+    style s5 fill:#FFE0B2
+    style s6 fill:#BBDEFB

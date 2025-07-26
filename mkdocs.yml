@@ -1,4 +1,4 @@
-site_name: Internal HBCD Docs
+site_name: HBCD DCC Docs
 
 theme:
   name: readthedocs
@@ -72,8 +72,14 @@ plugins:
 docs_dir: docs
 
 nav: 
-  - CHANGE LOG: 
-    # - Pending & Upcoming Updates: changelog/pending.md
+  - Overview: index.md
+  - Workflows & SOPs:
+    - Org Charts: orgcharts.md
+    - Quality Control Procedures: workflows/qc.md
+    - Data Processing Workflows: workflows/data-proc-wf.md
+    - Release SOP: workflows/release-wf.md
+  - Beta Release Notes: 
+   # - 🚧 Pending & Upcoming Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md
     - Version History:    
         - Beta Release 15.1: changelog/versions/BR15.1.md
@@ -98,15 +104,8 @@ nav:
         - Beta Release 3.0: changelog/versions/v1.2.md
         - Beta Release 2.0: changelog/versions/v1.1.md
         - Beta Release 1.0: changelog/versions/v1.0.md
-  - Internal Data QC:
-      - Review Beta Data & Report Issues: internal/reportissues.md
-      # - Review Beta Data Release Site: internal/beta_release_site_review.md
-  - Resources:
-    - Slides: slides.md
-    # - Org Charts: orgcharts.md
-  - Workflows:
-    # - Data Processing Workflows: workflows/data-proc-wf.md
-    - S3 Buckets: workflows/s3.md
-    # - Release SOPs: workflows/release-wf.md
-    # - Web Development: workflows/webdev.md
-    
+  - Workgroup Instructions:
+      - Access BR Data: internal/br-review.md
+      - Report Issues: internal/reportissues.md
+      - Request Updates to Documentation: internal/docs-updates.md
+  - RESOURCES: resources.md    
