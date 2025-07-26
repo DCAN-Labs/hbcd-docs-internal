@@ -5,6 +5,13 @@
 /* black/gray: #6b6b6b */ 
 
 /* Pill styling for pillars of HDCC (on overview page and throughout) */
+.pill-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  gap: 10px;
+}
 .pill-link-wrapper {
   text-decoration: none;
 }
@@ -36,6 +43,9 @@
 .pill-link .tooltip:hover {
     border-bottom: none;
 }
+.pill-center .tooltip {
+    border-bottom: none;
+}
 
 /* styling text to make more subtle, e.g. "Click to Expand" */
 .hint {
@@ -47,7 +57,7 @@
 }
 
 /* styling for text with hyperlinks (not TOC, previous and next footer buttons, or images) */
-.rst-content a:not(.rst-footer-buttons a):not(:has(img)):not(.pill-link-wrapper a) {
+.rst-content a:not(.rst-footer-buttons a):not(:has(img)):not(.pill-link-wrapper a):not(.pill-center a) {
   color: #0066cc;
   font-weight: 500;
   text-decoration: underline dotted;
@@ -59,7 +69,7 @@
   border-radius: 2px;
   transition: background-color 0.2s ease;
 }
-.rst-content a:hover:not(.rst-footer-buttons a):not(:has(img)) {
+.rst-content a:hover:not(.rst-footer-buttons a):not(:has(img)):not(.pill-center a) {
   background-color: rgba(0, 102, 204, 0.15);
   text-decoration: underline;
 }

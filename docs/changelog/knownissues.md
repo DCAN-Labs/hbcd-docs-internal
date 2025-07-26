@@ -1,10 +1,15 @@
 # Known Issues
 
-<a href="../../#transparency" target="_blank" class="pill-link-wrapper">
-  <span class="pill-link">
-    <span class="tooltip"><i class="fa-solid fa-eye" style="color: #6300d3;"></i><span class="tooltiptext">Transparency<br><i>Click to learn more</i></span></span>
-  </span>
-</a>
+<div class="pill-center">
+  <a href="../../#transparency" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip">
+        <i class="fa-solid fa-eye" style="color: #6300d3;"></i>
+        <span class="tooltiptext">Transparency<br><i>Click to learn more</i></span>
+      </span>
+    </span>
+  </a>
+</div>
 
 ## BR15.1 Target Release for Fix
 

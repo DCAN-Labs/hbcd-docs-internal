@@ -1,15 +1,17 @@
 # How To Report Issues - Lasso Help Center
 
-<a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
-  <span class="pill-link">
-    <span class="tooltip"><i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i><span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span></span>
-  </span>
-</a>
-<a href="../../#transparency" target="_blank" class="pill-link-wrapper">
-  <span class="pill-link">
-    <span class="tooltip"><i class="fa-solid fa-eye" style="color: #6300d3;"></i><span class="tooltiptext">Transparency<br><i>Click to learn more</i></span></span>
-  </span>
-</a>
+<div class="pill-center">
+  <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip"><i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i><span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span></span>
+    </span>
+  </a>
+  <a href="../../#transparency" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip"><i class="fa-solid fa-eye" style="color: #6300d3;"></i><span class="tooltiptext">Transparency<br><i>Click to learn more</i></span></span>
+    </span>
+  </a>
+</div>
 
 HBCD Consortium members can submit help desks following the same process as other users via the [Lasso Help Center](https://nbdc-datashare.lassoinformatics.com/help-center). Detailed instructions for how to create and submit a ticket can be found [here](https://nbdc.lassoinformatics.com/issue-tracker).
 

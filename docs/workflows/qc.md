@@ -1,15 +1,27 @@
-# HBCD Quality Control 
-
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
 
+# HBCD Quality Control 
 
-<a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
-  <span class="pill-link">
-    <span class="tooltip"><i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i><span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span></span>
-  </span>
-</a>
+<div class="pill-center">
+  <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip">
+        <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
+        <span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span>
+      </span>
+    </span>
+  </a>
+  <a href="../../#reproducibility" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip">
+        <i class="fa-solid fa-code-compare" style="color: #6300d3;"></i>
+        <span class="tooltiptext">Reproducibility<br><i>Click to learn more</i></span>
+      </span>
+    </span>
+  </a>
+</div>
 
-As part of one of the primary pillars of the HBCD Data Release Framework, we have a comprehensive quality control (QC) process that ensures all data released to the public is accurate, consistent, and reproducible. This process is designed to catch errors at multiple stages, from initial data entry through to final public release.
+As part of one of the primary pillars of the **HBCD Data Release Framework**, we have a comprehensive quality control (QC) process that ensures all data released to the public is **accurate**, **consistent**, and **reproducible**. This process is designed to catch errors at multiple stages, from initial data entry through to final public release.
 
 ## Pre-Release QC: 5 Stages
 
@@ -681,11 +693,16 @@ After data is released, additional QC is conducted in response to user-reported 
 
 ## Software Standards
 
-<a href="../../#reproducibility" target="_blank" class="pill-link-wrapper">
-  <span class="pill-link">
-    <span class="tooltip"><i class="fa-solid fa-code-compare" style="color: #6300d3;"></i><span class="tooltiptext">Reproducibility<br><i>Click to learn more</i></span></span>
-  </span>
-</a>
+<div class="pill-center">
+  <a href="../../#reproducibility" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip">
+        <i class="fa-solid fa-code-compare" style="color: #6300d3;"></i>
+        <span class="tooltiptext">Reproducibility<br><i>Click to learn more</i></span>
+      </span>
+    </span>
+  </a>
+</div>
 
 The following procedures are performed to support transparency, reproducibility, and standard environments for our databases and systems controls:
 

@@ -1,10 +1,15 @@
 # Access Beta Release Data
 
-<a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
-  <span class="pill-link">
-    <span class="tooltip"><i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i><span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span></span>
-  </span>
-</a>
+<div class="pill-center">
+  <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip">
+        <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
+        <span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span>
+      </span>
+    </span>
+  </a>
+</div>
 
 The Beta Data Release Site is used for quality control so that HBCD Consortium members to review their data as it appears on the Lasso platform prior to inclusion in a release. 
 

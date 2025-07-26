@@ -1,16 +1,21 @@
-# Data Release Workflows & SOPs
-
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
+
+# Data Release Workflows & SOPs
 
 This document outlines the staged workflow for selecting, releasing, and validating data for public dissemination. Key stakeholders include the HCAC Project Manager (PM), HBCD Data Coordinating Center (HDCC), Oversight Group (OG), Workgroups (WGs), and Lasso.
 
 ## Release Timeline
 
-<a href="../../#timeliness-planning" target="_blank" class="pill-link-wrapper">
-  <span class="pill-link">
-    <span class="tooltip"><i class="fa-solid fa-clock" style="color: #6300d3;"></i><span class="tooltiptext">Timeliness Planning<br><i>Click to learn more</i></span></span>
-  </span>
-</a>
+<div class="pill-center">
+  <a href="../../#timeliness-planning" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip">
+        <i class="fa-solid fa-clock" style="color: #6300d3;"></i>
+        <span class="tooltiptext">Timeliness planning<br><i>Click to learn more</i></span>
+      </span>
+    </span>
+  </a>
+</div>
 
 <img src="../images/timeline.svg" alt="Tableau" width="100%" height="auto" class="center">
 
