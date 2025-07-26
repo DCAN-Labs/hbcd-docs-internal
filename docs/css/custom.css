@@ -4,13 +4,30 @@
 /* red: #be074c */ 
 /* black/gray: #6b6b6b */ 
 
-/* styling for text with hyperlinks */
-a {
-  color: #0066cc;               /* Use a distinguishable color */
-  font-weight: 600;             /* Optional: Slightly bolder text */
+/* styling text to make more subtle, e.g. "Click to Expand"*/
+.hint {
+  color: #888;
+  font-size: 90%;
+  font-style: normal;
+  font-weight: normal;
+  background-color: transparent; /* <--- critical */
 }
-/* Change appearance when hovering */
-a:hover {
+
+/* styling for text with hyperlinks (not TOC, previous and next footer buttons, or images) */
+.rst-content a:not(.rst-footer-buttons a):not(:has(img)) {
+  color: #0066cc;
+  font-weight: 500;
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+  text-decoration-thickness: thin; 
+  text-decoration-thickness: 0.3px; 
+  background-color: rgba(0, 102, 204, 0.031); /* Add slight color box around text with embedded links too */
+  padding: 0 2px;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
+}
+.rst-content a:hover:not(.rst-footer-buttons a):not(:has(img)) {
+  background-color: rgba(0, 102, 204, 0.15);
   text-decoration: underline;
 }
 
@@ -47,7 +64,6 @@ code, pre {
 #toggle-all-btn:hover {
   transform: scale(1.05); /* Slight zoom effect */
 }
-
 
 /* Style for folder tree display */
 .folder-tree {
@@ -136,5 +152,3 @@ code, pre {
 .button-link:hover {
   background-color: #25ae70; /* background color on hover */
 }
-
-
