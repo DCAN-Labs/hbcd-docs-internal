@@ -1,5 +1,11 @@
 # How to Request Updates to Documentation
 
+<a href="../../#clear-objectives-and-scope" target="_blank" class="pill-link-wrapper">
+  <span class="pill-link">
+    <i class="fa-solid fa-bullseye"></i> Clear Objectives and Scope
+  </span>
+</a>
+
 HBCD Study documentation can be found in the following locations:
 
 <table class="compact-table table-no-vertical-lines">
