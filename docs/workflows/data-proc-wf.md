@@ -65,10 +65,16 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
         <td>SCE</td>
         <td style="word-wrap: break-word; white-space: normal;">Secure computing environment at the UMN <a href="../../orgcharts/#health-sciences-technology">Health Sciences Technology</a> Office</td>
         </tr>
+        <tr>
+        <td>Third party</td>
+        <td style="word-wrap: break-word; white-space: normal;">Refers to external organizations or companies that provide proprietary assessments, scoring tools, or data systems used to collect standardized behavioral, cognitive, and developmental data across study sites</td>
+        </tr>
     </tbody>
     </table>
 </div>
 </p>
+
+
 
 
 ## Tabulated Data 
