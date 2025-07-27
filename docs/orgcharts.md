@@ -122,6 +122,23 @@ flowchart LR
    
 The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
 
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+    CDNI["<b>Damien Fair</b><br>HDCC Co-Director"] --- n2(["<b>MRI Acquisition</b>"]) & n5(["<b>Processed MRI Quality Control</b>"])
+    n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
+    n5 --- n6["<b>Eric Feczko, PhD</b><br>QC Lead<br><br><b>Lucille A. Moore, PhD</b><br>Neuroinformatics<br>
+    <b>Michael Anderson</b><br>Analyst"]
+    style CDNI fill:#BBDEFB,stroke:#2962FF
+    style n2 fill:#E1BEE7,stroke:#AA00FF
+    style n5 fill:#E1BEE7,stroke:#AA00FF
+    style n4 fill:#BBDEFB,stroke:#2962FF
+    style n6 fill:#BBDEFB,stroke:#2962FF
+```
+
 <div style="width: 70%; margin: 0 auto;">
 ```mermaid
 ---
