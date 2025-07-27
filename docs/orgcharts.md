@@ -102,10 +102,10 @@ config:
 ---
 flowchart LR
     A["<b>Damien Fair</b><br>HDCC Co-Director"] 
-    A --- B["<a href="#health-sciences-technology" target="_top"><b>Health Sciences Technology</b></a>"]
-    A --- C["<b>Center for Developmental Neuroimaging</b>"]
-    A --- D["<b>MIDB Analytics Hub</b>"]
-    A --- E["<b>MIDB Informatics Hub &amp; MSI</b>"]
+    A --- B["<a href="#health-sciences-technology" target="_top"><b>Health Sciences Technology (HST)</b></a>"]
+    A --- C["<a href="#center-for-developmental-neuroimaging" target="_top"><b>Center for Developmental Neuroimaging (CDNI)</b></a>"]
+    A --- D["<a href="#midb-analytics-hub" target="_top"><b>MIDB Analytics Hub</b></a>"]
+    A --- E["<a href="#midb-informatics-hub-msi" target="_top"><b>MIDB Informatics Hub & MSI</b></a>"]
     style A fill:#BBDEFB,stroke:#2962FF
     style B fill:#E1BEE7,stroke:#AA00FF
     style C fill:#E1BEE7,stroke:#AA00FF
@@ -128,12 +128,12 @@ The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN
 config:
   layout: elk
 ---
-flowchart LR
+flowchart TB
     CDNI["<b>Damien Fair</b><br>HDCC Co-Director"] --- n2(["<b>MRI Acquisition</b>"]) & n5(["<b>Processed MRI Quality Control</b>"])
     n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
     n5 --- n6["<b>Eric Feczko, PhD</b><br>QC Lead<br><br><b>Lucille A. Moore, PhD</b><br>Neuroinformatics<br>
     <b>Michael Anderson</b><br>Analyst"]
-    style CDNI fill:#E1BEE7,stroke:#AA00FF
+    style CDNI fill:#BBDEFB,stroke:#2962FF
     style n2 fill:#E1BEE7,stroke:#AA00FF
     style n5 fill:#E1BEE7,stroke:#AA00FF
     style n4 fill:#BBDEFB,stroke:#2962FF
