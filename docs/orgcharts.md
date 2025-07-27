@@ -123,10 +123,6 @@ flowchart LR
 The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
 
 ```mermaid
----
-config:
-  layout: elk
----
 flowchart TB
     CDNI["<b>Damien Fair</b><br>HDCC Co-Director"] --- n2(["<b>MRI Acquisition</b>"]) & n5(["<b>Processed MRI Quality Control</b>"])
     n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
@@ -139,7 +135,6 @@ flowchart TB
     style n6 fill:#BBDEFB,stroke:#2962FF
 ```
 
-<div style="width: 70%; margin: 0 auto;">
 ```mermaid
 ---
 config:
@@ -156,7 +151,6 @@ flowchart TB
     style n4 fill:#BBDEFB,stroke:#2962FF
     style n6 fill:#BBDEFB,stroke:#2962FF
 ```
-</div>
 
 <div id="cdni-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
