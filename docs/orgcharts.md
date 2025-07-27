@@ -100,12 +100,12 @@ flowchart TB
 config:
   layout: elk
 ---
-flowchart TB
+flowchart LR
     A["<b>Damien Fair</b><br>HDCC Co-Director"] 
-    A --- B["<b>Health Sciences Technology</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    A --- C["<b>Center for Developmental Neuroimaging</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    A --- D["<b>MIDB Analytics Hub</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    A --- E["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
+    A --- B["<b>Health Sciences Technology</b>"]
+    A --- C["<b>Center for Developmental Neuroimaging</b>"]
+    A --- D["<b>MIDB Analytics Hub</b>"]
+    A --- E["<b>MIDB Informatics Hub &amp; MSI</b>"]
     style A fill:#BBDEFB,stroke:#2962FF
     style B fill:#E1BEE7,stroke:#AA00FF
     style C fill:#E1BEE7,stroke:#AA00FF
