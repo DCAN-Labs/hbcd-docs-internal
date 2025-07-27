@@ -42,7 +42,7 @@ flowchart TB
     umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n11 --- n18["<b>William P. Fifer, PhD</b><br>Novel Tech &<br>Wearables Co-Chair"]
-    n18 --- n34[""<b>Nicolo Pini, PhD</b><br>Co-Investigator"]
+    n18 --- n34["<b>Nicolo Pini</b>"]
     reed --- n30["<b>Maren Macgregor-Hannah</b><br>Program Manager"]
     n30 --- n25["<b>MIDB Informatics</b>"]
     n30 --- n27["<b>HST</b>"]
@@ -1008,6 +1008,8 @@ flowchart LR
     style n17 fill:#BBDEFB,stroke:#2962FF
 ```
 
+the Data Exploration and Analysis Portal 2.0 (DEAP 2.0);
+
 <div id="libr-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text">Roles & Responsibilities</span>
@@ -1030,7 +1032,7 @@ flowchart LR
       <tr>
       <td>Wesley K. Thompson, PhD</td>
       <td style="word-wrap: break-word; white-space: normal;">HDCC Assoc Dir, BioStatistics Chair</td>
-      <td style="word-wrap: break-word; white-space: normal;">Provides guidance on statistical analysis, study design, and novel methods development for large, longitudinal, multi-site studies.</td>
+      <td style="word-wrap: break-word; white-space: normal;">Direction of statistical analyses for HBCD design and assessments. Co-supervise and lead the development and maintenance of the statistical aspects of DEAP. Assist in the geolocation of residences of HBCD participants, and linking these geolocated addresses with external databases.</td>
       </tr>
       <tr>
       <td>Chun Fan, PhD</td>
