@@ -74,9 +74,6 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 </div>
 </p>
 
-
-
-
 ## Tabulated Data 
 
 <object type="image/svg+xml" data="../images/tab-proc-wf.svg" width="100%"></object>

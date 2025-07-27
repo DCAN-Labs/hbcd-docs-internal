@@ -1252,9 +1252,22 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 
 All HBCD Workgroups interface heavily with the HDCC primarily for:
 
- - **Data processing**: data processing workflows, from site capture to public release, are outlined under [Data Processing Workflows](workflows/data-proc-wf.md). Each stage indicates which HDCC entity is involved in the process.
- - **Quality control**: HDCC provides the infrastructure for several stages of quality control for data within HBCD Workgroup domains, including pre-release QC and ongoing QC via dashboards. Details on these processes can be found in the [Quality Control Procedures](workflows/qc.md). Each stage indicates which HDCC entity is involved in the process where relevant.
- - **Central documentation**: HDCC provides a central repository for documentation related to HBCD Workgroup data, including measure documentation and data release notes made available via the [HBCD Data Release Docs](https://docs.hbcdstudy.org/latest/), the private release Docs (available to DUC users), and this internal documentation site.
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr>
+  <td><b>Data processing</b></td>
+  <td style="word-wrap: break-word; white-space: normal;">Processing workflows, from site capture to public release, are outlined under <a href="../workflows/data-proc-wf">Data Processing Workflows</a>. Each stage indicates which HDCC entity is involved in the process.</td>
+</tr>
+<tr>
+  <td><b>Quality control</b></td>
+  <td style="word-wrap: break-word; white-space: normal;">HDCC provides the infrastructure for several stages of quality control for data within HBCD Workgroup domains, including pre-release QC and ongoing QC via dashboards. Details on these processes can be found in the <a href="../workflows/qc">Quality Control Procedures</a>. Each stage indicates which HDCC entity is involved in the process where relevant.</td>
+</tr>
+<tr>
+  <td><b>Central documentation</b></td>
+  <td style="word-wrap: break-word; white-space: normal;">HDCC provides a central repository for documentation related to HBCD Workgroup data, including measure documentation and data release notes made available via the <a href="https://docs.hbcdstudy.org/latest/">HBCD Data Release Docs</a>, the private release Docs (available to DUC users), and this internal documentation site.</td>
+</tr>
+</tbody>
+</table>
 
 <p>
 <style>
