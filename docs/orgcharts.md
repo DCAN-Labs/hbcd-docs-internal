@@ -1248,9 +1248,17 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
   </tbody>
 </table>
 
-#### HBCD Workgroup Connect Points with the HDCC
+### HBCD Workgroup Connect Points with the HDCC
 
-All HBCD Workgroups interface heavily with the HDCC primarily for:
+***TO DO: model out workgroups and their connect points with HDCC (i.e., for QA, QC, releases, requests, etc)***
+
+#### Original diagram from Jen
+
+<img src="../images/jen-WGs-HDCC.drawio.png">
+
+#### ALT: display info from Jen's diagram in text and table format
+   
+All HBCD Workgroups interface heavily with the HDCC for:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
@@ -1280,7 +1288,7 @@ All HBCD Workgroups interface heavily with the HDCC primarily for:
   .compact-table th,
   .compact-table td {
     padding: 4px 6px; /* Tighter padding */
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
     word-wrap: break-word;
     white-space: normal;
@@ -1299,32 +1307,72 @@ All HBCD Workgroups interface heavily with the HDCC primarily for:
   <thead>
     <tr>
       <th>&nbsp;</th>
-      <th>Provide <a href="https://docs.hbcdstudy.org/latest/instruments/">data release notes</a><br>documentation for study measures<br>
+      <th style="text-align: center;">Provide <a href="https://docs.hbcdstudy.org/latest/instruments/">data release notes</a><br>documentation for study measures<br>
       <i class="fa-solid fa-house"></i> <a hre="#center-for-developmental-neuroimaging">CDNI (UMN)</a></th>
-      <th>Ongoing QC via Dashboards<br><a href="../workflows/qc#proc-pheno" target="_blank"><i>See Details</i></a></th>
-      <th>Public release data QC<br><a href="../workflows/qc#pre-release-pheno" target="_blank"><i>See Details</i></a></th>
+      <th style="text-align: center;">Ongoing QC via Dashboards<br><a href="../workflows/qc#proc-pheno" target="_blank"><i>See Details</i></a></th>
+      <th style="text-align: center;">Public release data QC<br>
+        <i class="fa-solid fa-house"></i> <a hre="#lasso">Lasso</a><br>
+        <a href="../workflows/qc#pre-release-pheno" target="_blank"><i>See Details</i></a></th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>Behavior & Caregiver-Child Interaction</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
-    <tr><td>Biospecimens & Omics</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
-    <tr><td>Biostatistics</td><td><i class="fa-solid fa-xmark" style="color: red;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
-    <tr><td>Demographics</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-xmark" style="color: red;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
-    <tr><td><span class="tooltip">EEG<span class="tooltiptext">Electroencephalography</span></span></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><a href="../workflows/qc#eeg-data" target="_blank"><i>See details</i></a></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
-    <tr><td>Geocoding & Linking External Data</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
-    <tr><td><span class="tooltip">MRI<span class="tooltiptext">Magnetic Resonance Imaging</span></span></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><a href="../workflows/qc#mri-mrs-data" target="_blank"><i>See details</i></a></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
-    <tr><td>Neurocognition & Language</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
-    <tr><td>Novel Technologies & Wearables</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
-    <tr><td>Physical Health</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
-    <tr><td>Pregnancy & Exposure</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
-    <tr><td>Social & Environmental Determinants</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
-    <tr><td>Transitions in Care</td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td><td><i class="fa-solid fa-check" style="color: green;"></i></td></tr>
+    <tr><td>Behavior & Caregiver-Child Interaction</td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#lasso">Tableau (Lasso)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+    <tr><td>Biospecimens & Omics</td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td> 
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#health-sciences-technology">HST Dashboard</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+    <tr><td>Biostatistics</td>
+      <td style="text-align: center;"><i class="fa-solid fa-xmark" style="color: red;"></i></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#lasso">Tableau (Lasso)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+    <tr><td>Demographics</td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+      <td style="text-align: center;"><i class="fa-solid fa-xmark" style="color: red;"></i></td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+    <tr><td>Electroencephalography</td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+      <td style="text-align: center;"><a href="../workflows/qc#eeg-data" target="_blank"><i>See details</i></a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+    <tr><td>Geocoding & Linking External Data</td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#ripple">Ripple (WashU)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+    <tr><td>Magnetic Resonance Imaging</td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+      <td style="text-align: center;"><a href="../workflows/qc#mri-mrs-data" target="_blank"><i>See details</i></a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+    <tr><td>Neurocognition & Language</td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#lasso">Tableau (Lasso)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+    <tr><td>Novel Technologies & Wearables</td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#lasso">Tableau (Lasso)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+    <tr><td>Physical Health</td>
+    <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+    <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#lasso">Tableau (Lasso)</a></td>
+    <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+    <tr><td>Pregnancy & Exposure</td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#lasso">Tableau (Lasso)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+    <tr><td>Social & Environmental Determinants</td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#lasso">Tableau (Lasso)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+    <tr><td>Transitions in Care</td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#ripple">Ripple (WashU)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
   </tbody>
 </table>
 </p>
 
-
-##### Diagram Visual
+#### ALT: mermaid diagram version
 
 <object class="center" type="image/svg+xml" data="../images/wg-hdcc-tb.svg" width="100%"></object>
 
