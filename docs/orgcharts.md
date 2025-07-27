@@ -31,7 +31,7 @@ config:
   layout: elk
 ---
 flowchart TB
-    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<a href="#j-craig-venter-institute" target="_top"><b>JCVI</b></a>"]
+    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<b>JCVI</b>"]
     E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
     lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO"]
     n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<b>WashU</b>"] & n12["<b>LIBR</b>"] & lasso
@@ -1002,10 +1002,6 @@ flowchart TB
 The Laureate Institute for Brain Research (LIBR) houses the Biostatistics and Geolocation [HBCD Workgroups](#hbcd-workgroups) and provides support for the HDCC in the areas of biostatistics, geolocation, and data analysis.
 
 ```mermaid
----
-config:
-  layout: fixed
----
 flowchart LR
     n16["<b>Wesley K. Thompson, PhD</b><br>HDCC Assoc Dir, BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
     style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
@@ -1033,13 +1029,13 @@ flowchart LR
     <tbody>
       <tr>
       <td>Wesley K. Thompson, PhD</td>
-      <td>HDCC Assoc Dir, BioStatistics Chair</td>
-      <td>&nbsp;</td>
+      <td style="word-wrap: break-word; white-space: normal;">HDCC Assoc Dir, BioStatistics Chair</td>
+      <td style="word-wrap: break-word; white-space: normal;">Provides guidance on statistical analysis, study design, and novel methods development for large, longitudinal, multi-site studies.</td>
       </tr>
       <tr>
       <td>Chun Fan, PhD</td>
-      <td>Geolocation Chair</td>
-      <td>&nbsp;</td>
+      <td style="word-wrap: break-word; white-space: normal;">Geolocation Chair</td>
+      <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
       </tr>
 </table>
 </div>
