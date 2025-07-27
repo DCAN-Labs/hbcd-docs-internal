@@ -135,23 +135,6 @@ flowchart TB
     style n6 fill:#BBDEFB,stroke:#2962FF
 ```
 
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    CDNI["<b>Damien Fair</b><br>HDCC Co-Director"] --- n2(["<b>MRI Acquisition</b>"]) & n5(["<b>Processed MRI Quality Control</b>"])
-    n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
-    n5 --- n6["<b>Eric Feczko, PhD</b><br>QC Lead<br><br><b>Lucille A. Moore, PhD</b><br>Neuroinformatics<br>
-    <b>Michael Anderson</b><br>Analyst"]
-    style CDNI fill:#BBDEFB,stroke:#2962FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#E1BEE7,stroke:#AA00FF
-    style n4 fill:#BBDEFB,stroke:#2962FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
-```
-
 <div id="cdni-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text">Roles & Responsibilities</span>
@@ -1066,14 +1049,11 @@ flowchart LR
 Columbia houses the Novel Technologies & Wearables [HBCD Workgroup](#hbcd-workgroups) and provides support for the HDCC in the areas of novel technologies, wearables, and data analysis.
 
 ```mermaid
----
-config:
-  layout: fixed
----
 flowchart LR
-    n16["<b>William P. Fifer, PhD</b><br>Novel Tech & Wearables Co-Chair"] --- n17["<b>Nicolo Pini, PhD</b><br>?????"]
+    n16["<b>William P. Fifer, PhD</b><br>Novel Tech &amp; Wearables Co-Chair"]
+    n16 --- n17["<b>Nicolo Pini, PhD</b><br>Co-Investigator"]
     style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style n17 fill:#BBDEFB,stroke:#2962FF
+    style n17 fill:#C8E6C9,stroke:#00C853
 ```
 
 <div id="libr-rr" class="table-banner" onclick="toggleCollapse(this)">
