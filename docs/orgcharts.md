@@ -1308,25 +1308,25 @@ All HBCD Workgroups interface heavily with the HDCC for:
     <tr>
       <th>&nbsp;</th>
       <th style="text-align: center;">Provide <a href="https://docs.hbcdstudy.org/latest/instruments/">data release notes</a><br>documentation for study measures<br>
-      <i class="fa-solid fa-house"></i> <a hre="#center-for-developmental-neuroimaging">CDNI (UMN)</a></th>
+      <i class="fa-solid fa-house"></i> <a href="#center-for-developmental-neuroimaging">CDNI (UMN)</a></th>
       <th style="text-align: center;">Ongoing QC via Dashboards<br><a href="../workflows/qc#proc-pheno" target="_blank"><i>See Details</i></a></th>
       <th style="text-align: center;">Public release data QC<br>
-        <i class="fa-solid fa-house"></i> <a hre="#lasso">Lasso</a><br>
+        <i class="fa-solid fa-house"></i> <a href="#lasso">Lasso</a><br>
         <a href="../workflows/qc#pre-release-pheno" target="_blank"><i>See Details</i></a></th>
     </tr>
   </thead>
   <tbody>
     <tr><td>Behavior & Caregiver-Child Interaction</td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#lasso">Tableau (Lasso)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#lasso">Tableau (Lasso)</a></td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
     <tr><td>Biospecimens & Omics</td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td> 
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#health-sciences-technology">HST Dashboard</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#health-sciences-technology">HST Dashboard</a></td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
     <tr><td>Biostatistics</td>
       <td style="text-align: center;"><i class="fa-solid fa-xmark" style="color: red;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#lasso">Tableau (Lasso)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#lasso">Tableau (Lasso)</a></td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
     <tr><td>Demographics</td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
@@ -1338,7 +1338,7 @@ All HBCD Workgroups interface heavily with the HDCC for:
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
     <tr><td>Geocoding & Linking External Data</td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#ripple">Ripple (WashU)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#ripple">Ripple (WashU)</a></td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
     <tr><td>Magnetic Resonance Imaging</td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
@@ -1346,27 +1346,27 @@ All HBCD Workgroups interface heavily with the HDCC for:
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
     <tr><td>Neurocognition & Language</td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#lasso">Tableau (Lasso)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#lasso">Tableau (Lasso)</a></td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
     <tr><td>Novel Technologies & Wearables</td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#lasso">Tableau (Lasso)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#lasso">Tableau (Lasso)</a></td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
     <tr><td>Physical Health</td>
     <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-    <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#lasso">Tableau (Lasso)</a></td>
+    <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#lasso">Tableau (Lasso)</a></td>
     <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
     <tr><td>Pregnancy & Exposure</td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#lasso">Tableau (Lasso)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#lasso">Tableau (Lasso)</a></td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
     <tr><td>Social & Environmental Determinants</td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#lasso">Tableau (Lasso)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#lasso">Tableau (Lasso)</a></td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
     <tr><td>Transitions in Care</td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a hre="#ripple">Ripple (WashU)</a></td>
+      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#ripple">Ripple (WashU)</a></td>
       <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
   </tbody>
 </table>
