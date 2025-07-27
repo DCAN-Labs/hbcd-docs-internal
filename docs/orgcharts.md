@@ -42,7 +42,7 @@ flowchart TB
     umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n11 --- n18["<b>William P. Fifer, PhD</b><br>Novel Tech &<br>Wearables Co-Chair"]
-    n18 --- n34["<b>Nicolo Pini</b>"]
+    n18 --- n34["<b>Nicolo Pini</b>, Co-Investigator"]
     reed --- n30["<b>Maren Macgregor-Hannah</b><br>Program Manager"]
     n30 --- n25["<b>MIDB Informatics</b>"]
     n30 --- n27["<b>HST</b>"]
@@ -1008,8 +1008,6 @@ flowchart LR
     style n17 fill:#BBDEFB,stroke:#2962FF
 ```
 
-the Data Exploration and Analysis Portal 2.0 (DEAP 2.0);
-
 <div id="libr-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text">Roles & Responsibilities</span>
@@ -1023,21 +1021,21 @@ the Data Exploration and Analysis Portal 2.0 (DEAP 2.0);
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
     <thead>
       <tr>
-        <th style="width: 25%;">Name</th>
-        <th style="width: 30%;">Title</th>
-        <th style="width: 45%;">Role on HDCC</th>
+        <th style="width: 10%;">Name</th>
+        <th style="width: 20%;">Title</th>
+        <th style="width: 60%;">Role on HDCC</th>
       </tr>
     </thead>
     <tbody>
       <tr>
       <td>Wesley K. Thompson, PhD</td>
       <td style="word-wrap: break-word; white-space: normal;">HDCC Assoc Dir, BioStatistics Chair</td>
-      <td style="word-wrap: break-word; white-space: normal;">Direction of statistical analyses for HBCD design and assessments. Co-supervise and lead the development and maintenance of the statistical aspects of DEAP. Assist in the geolocation of residences of HBCD participants, and linking these geolocated addresses with external databases.</td>
+      <td style="word-wrap: break-word; white-space: normal;">Provides statistical guidance on study design, analysis, and methods development for HBCD. Co-leads statistical design and maintenance of <span class="tooltip tooltip-left">DEAP 2.0<span class="tooltiptext">the Data Exploration and Analysis Portal 2.0</span></span>. Supports geolocation of participant residences and linkage to external data sources.</td>
       </tr>
       <tr>
       <td>Chun Fan, PhD</td>
       <td style="word-wrap: break-word; white-space: normal;">Geolocation Chair</td>
-      <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+      <td style="word-wrap: break-word; white-space: normal;">Co-leads HDCC efforts in curating and analyzing imaging, genomic, and geolocation exposure data. Supports expansion of <span class="tooltip tooltip-left">DEAP 2.0<span class="tooltiptext">the Data Exploration and Analysis Portal 2.0</span></span> for high-dimensional genomic, imaging, and exposure data analysis and harmonization with external studies, including development of a probabilistic ontology for cross-study comparisons.</td>
       </tr>
 </table>
 </div>
