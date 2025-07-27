@@ -307,6 +307,7 @@ flowchart TB
 #### MIDB Analytics Hub
 The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) works in coordination with the Biospecimens Workgroup to provide support for genomic data processing and analysis as part of the **HBCD Genomics Supplement**. 
 
+<div style="width: 70%;">
 ```mermaid
 flowchart TB
     B["<b>Annette Xenopoulos-Oddsson, MSc</b><br>Project Manager"] --- n3(["<b>Genomics</b>"])
@@ -317,6 +318,7 @@ flowchart TB
     style G fill:#BBDEFB,stroke:#2962FF
     style E fill:#BBDEFB,stroke:#2962FF
 ```
+</div>
 
 <div style="width: 60%; margin: 0 auto;">
 ```mermaid
