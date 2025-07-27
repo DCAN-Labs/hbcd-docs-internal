@@ -913,7 +913,7 @@ config:
   layout: elk
 ---
 flowchart TB
-    n16["<b>Nathan Fox</b>
+    n16["<b>Nathan Fox, PhD</b>
     Associate Dir, EEG Data Core"] --- n17(["<b>Preprocessing</b>"]) & n19(["<b>Coding &amp; Quality Control</b>"]) & n21(["<b>Pipeline Development</b>"]) & n29(["<b>Site Supervision</b>"])
     n17 --- n18["<b>Whitney Kasenetz</b><br>Preprocessing Liason w/ Lasso &amp; LORIS"]
     n21 --- n28["<b>Dylan Gilbreath</b><br>Pipeline Dev, Coding, &amp; QC"]
@@ -954,7 +954,7 @@ flowchart TB
     </thead>
     <tbody>
     <tr>
-    <td>Nathan Fox</td>
+    <td>Nathan Fox, PhD</td>
     <td>Associate Director</td>
     <td style="word-wrap: break-word; white-space: normal;">Provides strategic and scientific oversight for EEG data collection, preprocessing, and integration efforts across sites.</td>
     </tr>
