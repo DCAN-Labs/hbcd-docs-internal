@@ -31,8 +31,8 @@ config:
   layout: elk
 ---
 flowchart TB
-    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<b>JCVI</b>"]
-    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
+    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<a href="#j-craig-venter-institute" target="_top"><b>JCVI</b></a>"]
+    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<a href="#lasso" target="_top"><b>Lasso</b></a>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
     lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO"]
     n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<b>WashU</b>"] & n12["<b>LIBR</b>"] & lasso
     n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
@@ -42,7 +42,7 @@ flowchart TB
     umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n11 --- n18["<b>William P. Fifer, PhD</b><br>Novel Tech &<br>Wearables Co-Chair"]
-    n18 --- n34["<b>Nicolo Pini</b>"]
+    n18 --- n34[""<b>Nicolo Pini, PhD</b><br>Co-Investigator"]
     reed --- n30["<b>Maren Macgregor-Hannah</b><br>Program Manager"]
     n30 --- n25["<b>MIDB Informatics</b>"]
     n30 --- n27["<b>HST</b>"]
@@ -1056,10 +1056,10 @@ flowchart LR
     style n17 fill:#C8E6C9,stroke:#00C853
 ```
 
-<div id="libr-rr" class="table-banner" onclick="toggleCollapse(this)">
+<div id="columbia-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text">Roles & Responsibilities</span>
-  <a class="anchor-link" href="#libr-rr" title="Copy link">
+  <a class="anchor-link" href="#columbia-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -1069,21 +1069,22 @@ flowchart LR
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
     <thead>
       <tr>
-        <th style="width: 25%;">Name</th>
-        <th style="width: 30%;">Title</th>
-        <th style="width: 45%;">Role on HDCC</th>
+        <th style="width: 10%;">Name</th>
+        <th style="width: 20%;">Title</th>
+        <th style="width: 70%;">Role on HDCC</th>
       </tr>
     </thead>
     <tbody>
       <tr>
       <td>William P. Fifer, PhD</td>
-      <td>Novel Tech & Wearables Co-Chair</td>
-      <td>&nbsp;</td>
+      <td style="word-wrap: break-word; white-space: normal;">Novel Tech & Wearables Co-Chair</td>
+      <td style="word-wrap: break-word; white-space: normal;">Responsible for overall management of activities carried out by the subaward, including: serving as co-chair, supervision of automated sleep stage scoring and data analysis, and contributions to data analytics, writing, and review of manuscripts.</td>
       </tr>
       <tr>
-      <td>Nicolo Pini</td>
-      <td></td>
-      <td>&nbsp;</td>
+      <td>Nicolo Pini, PhD</td>
+      <td style="word-wrap: break-word; white-space: normal;">Co-Investigator</td>
+      <td style="word-wrap: break-word; white-space: normal;">Leading member of NT Workgroup. Develops pipelines necessary for extraction of derivatives, data upload, storage, and maintenance of the EKG data collected during EEG and the heart rate wearable sensor data. Coordinate recurring training at the HBCD sites in these two modalities. Supervise the quality control work performed by the Research Technician.
+</td>
       </tr>
 </table>
 </div>
