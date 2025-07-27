@@ -579,12 +579,11 @@ Electroencephalography data include both file-based and tabulated data for the t
 <li>Detecting multiple task runs and incomplete recordings.</li>
 <li>Confirming the use of correct E-Prime task versions.</li>
 </ul>
-<p>In addition to the post-acquisition checks performed by the EEG2BIDS Wizard, site staff complete an <strong>EEG Acquisition Form</strong> directly in LORIS at the time of the EEG visit to document key procedural and quality control details. This form captures real-time information on net placement, signal quality, and task completion status, ensuring protocol adherence and supporting downstream data evaluation.</p>
+<p>In addition to the post-acquisition checks performed by the EEG2BIDS Wizard, site staff complete an <strong>EEG Acquisition Form</strong> directly in LORIS at the time of the EEG visit to document key procedural and quality control details. This form captures real-time information on net placement, participant behavior that may influence signal quality, and task completion status, ensuring protocol adherence and supporting downstream data evaluation.</p>
 <p>The EEG Acquisition Form records:
 <ul>
-<li><strong>Net placement checks</strong> ensure electrodes are correctly positioned, using anatomical landmarks (nasion, inion, preauricular points), and that cables are secured and symmetrical. Visual inspections are done for impedance and physical fit.</li>
-<li><strong>EEG acquisition QC</strong> documents whether impedances are within acceptable limits, the number of channels with good signal, and issues like high noise or signal dropout.</li>
-<li><strong>For each phase</strong> (e.g., Resting State, VEP Task), the system tracks whether data were acquired, any problems occurred, and whether the segments are marked for review or re-collection.</li>
+<li><strong>Net placement checks</strong> ensure electrodes are correctly positioned, using anatomical landmarks (nasion, vertex, preauricular points), and that cables are secured and symmetrical. Visual inspections are done for impedance and physical fit.</li>
+<li><strong>For each phase</strong> (e.g., Resting State, VEP Task), the user reports whether data were acquired and if any problems occurred during data collection.</li>
 </ul>
 </p>
 </div>
@@ -599,15 +598,15 @@ Electroencephalography data include both file-based and tabulated data for the t
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The EEG2BIDS Wizard additionally facilitates the transfer of data to both a dedicated SCE (secure computing environment) housed at the University of Minnesota (UMN) and to an ASW S3 bucket, each of which facilitates different aspects of QC:<p>
+<p>The EEG2BIDS Wizard additionally facilitates the transfer of data to both a dedicated SCE (secure computing environment) housed at the University of Minnesota (UMN) and to an AWS S3 bucket, each of which facilitates different aspects of QC:<p>
 <p><b>UMN SCE</b>
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#university-of-minnesota">UMN</a>
 </span><br>
 The Wizard handles the transfer of <code>.mff</code> files containing raw EEG, metadata, and personally identifiable information (PII) to the SCE. PII includes video recordings of the EEG session and photographs of EEG cap placement from multiple angles, which are used to rate quality of cap placement according to a rubric.</p>
-<p><b>ASW S3 bucket</b>
+<p><b>AWS S3 bucket</b>
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#loris">LORIS</a>
 </span><br>
-A subset of data consisting of <code>.set</code> files, E-Prime stimuli files and associated non-PII metadata are uploaded to an AWS S3 bucket curated by the LORIS data management system where they are stored for subsequent processing and analysis. The contents of the ASW S3 bucket are represented on the EEG Quality Control dashboard, which is used by both study sites and the EEG Core team to access and monitor incoming EEG data and QC metrics, such as retained epochs and line noise levels.</p>
+A subset of data consisting of <code>.set</code> files, E-Prime stimuli files and associated non-PII metadata are uploaded to an AWS S3 bucket curated by the LORIS data management system where they are stored for subsequent processing and analysis. The contents of the AWS S3 bucket are represented on the EEG Quality Control dashboard, which is used by both study sites and the EEG Core team to access and monitor incoming EEG data and QC metrics, such as retained epochs and line noise levels.</p>
 </div>
 
 <div id="preproc-eeg" class="preproc-banner" onclick="toggleCollapse(this)">
