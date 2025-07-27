@@ -102,7 +102,7 @@ config:
 ---
 flowchart LR
     A["<b>Damien Fair</b><br>HDCC Co-Director"] 
-    A --- B["<b>Health Sciences Technology</b>"]
+    A --- B["<a href="#health-sciences-technology" target="_top"><b>Health Sciences Technology</b></a>"]
     A --- C["<b>Center for Developmental Neuroimaging</b>"]
     A --- D["<b>MIDB Analytics Hub</b>"]
     A --- E["<b>MIDB Informatics Hub &amp; MSI</b>"]
