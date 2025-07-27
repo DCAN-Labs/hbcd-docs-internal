@@ -42,7 +42,7 @@ flowchart TB
     umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n11 --- n18["<b>William P. Fifer, PhD</b><br>Novel Tech &<br>Wearables Co-Chair"]
-    n18 --- n34["<b>Nicolo Pini</b>, Co-Investigator"]
+    n18 --- n34["<b>Nicolo Pini</b><br>Co-Investigator"]
     reed --- n30["<b>Maren Macgregor-Hannah</b><br>Program Manager"]
     n30 --- n25["<b>MIDB Informatics</b>"]
     n30 --- n27["<b>HST</b>"]
