@@ -26,8 +26,7 @@
   </a>
 </div>
 
-This section outlines the full HBCD processing workflows for [tabulated data](#tabulated-data) and [file-based data](#file-based-data), detailing each step from data capture at study sites to final ingestion into Lasso. Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [Org Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. 
-
+This section outlines the full HBCD processing workflows for [tabulated data](#tabulated-data) and [file-based data](#file-based-data), detailing each step from data capture at study sites to final ingestion into Lasso. Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [HDCC Structure & Organizational Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. 
 
 <div id="fb-vs-tab" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -100,22 +99,10 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 
 ## Tabulated Data 
 
+Data is collected from sites and ultimately transferred to the central LORIS Production S3 bucket, where it is subsequently de-identified and staged for ingestion into Lasso. The tabulated data processing workflow is outlined in the diagram below, showing the specific workflows for different data types and identifying the HDCC organization responsible for each processing step. These steps include data capture, de-identification, staging, and ingestion into Lasso.
+
 <object type="image/svg+xml" data="../images/tab-proc-wf.svg" width="100%"></object>
 <small><b>NOTE</b>: <i>Genetics capture currently occurs via Sampled and BAH, but will be changed to only Sampled in the future.</i></small>
-
-<div id="og-wf-tab" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text">Original WF Diagram</span>
-  <a class="anchor-link" href="#og-wf-tab" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<object type="image/svg+xml" data="../images/tabulated-proc-WF.svg" width="100%"></object>
-<span class="blue-text"><b>**</b></span> <span><i>Third party includes: ERICA, CDI, Bayley, Vineland, NIH BTB, and BISQR.</i></span>
-</div>
 
 <table class="compact-table">
 <b><i>S3 Bucket Key</i></b>
