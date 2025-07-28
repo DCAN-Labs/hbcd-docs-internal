@@ -404,6 +404,10 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 
 ## Clinical Data Validation Procedure
 
+*Validation procedures for Electronic Health Records (EHR) data are performed as follows:*
+
+<img src="../images/EHR-wf.png">
+
 1. Load EHR data from the site into the Landing Zone within the Secure Computing Environment  
 2. Run a script to validate that the Landing Zone data was loaded correctly that checks for the following issues and coordinate with the site to correct these issues:  
     - Dates only sent when expecting date / time  
