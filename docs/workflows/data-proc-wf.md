@@ -430,6 +430,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
     </span>
   </a>
 </div>
+<p></p>
 
 *Validation procedures for Electronic Health Records (EHR) data are performed as follows:*
 
