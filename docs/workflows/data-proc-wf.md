@@ -404,6 +404,33 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 
 ## Clinical Data Validation Procedure
 
+<div class="pill-center">
+  <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip">
+        <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
+        <span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span>
+      </span>
+    </span>
+  </a>
+  <a href="../../#project-management" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip">
+        <i class="fa-solid fa-diagram-project" style="color: #6300d3;"></i>
+        <span class="tooltiptext">Project Management<br><i>Click to learn more</i></span>
+      </span>
+    </span>
+  </a>
+  <a href="../../#reproducibility" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip">
+        <i class="fa-solid fa-code-compare" style="color: #6300d3;"></i>
+        <span class="tooltiptext">Reproducibility<br><i>Click to learn more</i></span>
+      </span>
+    </span>
+  </a>
+</div>
+
 *Validation procedures for Electronic Health Records (EHR) data are performed as follows:*
 
 <img src="../images/EHR-wf.png">
