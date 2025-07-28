@@ -733,76 +733,76 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
     <thead>
       <tr>
-        <th style="width: 25%;">Name</th>
-        <th style="width: 30%;">Title</th>
-        <th style="width: 45%;">Role on HDCC</th>
+        <th style="width: 10%;">Name</th>
+        <th style="width: 20%;">Title</th>
+        <th style="width: 60%;">Role on HDCC</th>
       </tr>
     </thead>
     <tbody>
       <tr>
       <td>Leigh MacIntyre</td>
       <td>CEO</td>
-      <td>&nbsp;</td>
+      <td style="word-wrap: break-word; white-space: normal;">Provides strategic oversight and institutional accountability for HDCC/Lasso engagements.</td>
       </tr>
       <tr>
       <td>Fraser Glen</td>
       <td>CTO</td>
-      <td>&nbsp;</td>
+      <td style="word-wrap: break-word; white-space: normal;">Oversees technical architecture, scalability, and security of Lasso’s infrastructure in support of HDCC.</td>
       </tr>
       <tr>
       <td>Jen Zink</td>
-      <td>Director, Partnerships &amp; Grants</td>
-      <td>&nbsp;</td>
+      <td style="word-wrap: break-word; white-space: normal;">Director, Partnerships &amp; Grants</td>
+      <td style="word-wrap: break-word; white-space: normal;">Serves as the primary liaison between HBCD Working Groups (WGs) and the HDCC team, coordinating feedback, priorities, and cross-consortium communication. Plays a central role in developing standard operating procedures (SOPs) for QC workflows to ensure consistency, traceability, and transparency across releases. Primary SME for inbound HBCD tabulated data tickets from the user community.</td>
       </tr>
       <tr>
       <td>Jordan Stirling</td>
       <td>Lead Developer</td>
-      <td>Oversight of Lasso Development</td>
+      <td style="word-wrap: break-word; white-space: normal;">Oversees the development of the Lasso platform, ensuring technical alignment between product capabilities and HDCC requirements.</td>
       </tr>
       <tr>
       <td>Aarushi Chaudhry</td>
-      <td>Director, Customer Success</td>
-      <td>Answering tickets and providing documentation for release</td>
+      <td style="word-wrap: break-word; white-space: normal;">Director, Customer Success</td>
+      <td style="word-wrap: break-word; white-space: normal;">Supports user enablement for the Lasso product suite within HDCC, providing clear documentation and training sessions for new features in Lasso Data Share, Lasso QC, and Lasso SAFE. Ensures users understand platform changes, offers tailored onboarding materials, and channels feedback from support interactions back to product teams.</td>
       </tr>
       <tr>
       <td>Marion Fechino</td>
       <td>Data Analyst</td>
-      <td>Tableau Dashboard Updates for WG&rsquo;s</td>
+      <td style="word-wrap: break-word; white-space: normal;">Provides Tableau Dashboard updates for Workgroups.</td>
       </tr>
       <tr>
       <td>Laetitia Fesselier</td>
-      <td>Senior Lasso Developer</td>
-      <td>Data Loading Team Lead</td>
+      <td style="word-wrap: break-word; white-space: normal;">Senior Lasso Developer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Data Loading Lead: Oversees the full data ingestion lifecycle from ETL setup through schema validation. Leads the design and implementation of automated pipelines to ensure structural and semantic integrity of incoming datasets. Reviews and signs off on Lasso Data Loading Report Cards and Data Validation Report Cards prior to release. Coordinates across product and QC teams to integrate feedback into ETL improvements.</td>
       </tr>
       <tr>
       <td>Mateus Andre</td>
       <td>Lasso Developer</td>
-      <td>Data Loading Team</td>
+      <td style="word-wrap: break-word; white-space: normal;">Data Loading Team: Implements and maintains ETL scripts that transform raw data into formats compliant with Lasso’s ingestion schema. Performs initial data integrity checks and flags issues upstream to source systems or partner teams. Contributes to the creation of Data Loading Report Cards by compiling success/failure summaries and transformation logs.</td>
       </tr>
       <tr>
       <td>Edson Silva</td>
       <td>Lasso Developer</td>
-      <td>Data Loading Team</td>
+      <td style="word-wrap: break-word; white-space: normal;">Data Loading Team: Supports parallel ingestion efforts by validating dataset structure, types, and field completeness against expected specifications. Automates metrics collection for Data Validation Report Cards, including missingness, formatting errors, and derived field consistency. Participates in retrospective analysis to improve ETL resiliency and error handling in future releases.</td>
       </tr>
       <tr>
       <td>Vandana Sriram</td>
       <td>Lasso QC Engineer</td>
-      <td>QA/QC pipelines for new HDCC_QC features, and data loading sanity checks</td>
+      <td style="word-wrap: break-word; white-space: normal;">QA/QC: Verifies that all new features, pipelines, and infrastructure changes function as intended across the Lasso ecosystem used by HDCC. Their focus is both proactive (validating new features prior to release) and reactive (sanity checks after data is ingested or pipelines updated).</td>
       </tr>
       <tr>
       <td>Anjali Raj Katuri</td>
       <td>Lasso QC Engineer</td>
-      <td>QA/QC pipelines for new HDCC_QC features, and data loading sanity checks</td>
+      <td style="word-wrap: break-word; white-space: normal;">QQA/QC: Verifies that all new features, pipelines, and infrastructure changes function as intended across the Lasso ecosystem used by HDCC. Their focus is both proactive (validating new features prior to release) and reactive (sanity checks after data is ingested or pipelines updated).</td>
       </tr>
       <tr>
       <td>Andrew Sawaya</td>
       <td>UX/UI Lead Designer</td>
-      <td>UX design of new feature requests</td>
+      <td style="word-wrap: break-word; white-space: normal;">Leads the design of user interfaces and experiences across the Lasso platform as used by HDCC, ensuring tools like Lasso Data Share, Lasso QC, and Lasso SAFE are intuitive, accessible, and aligned with researcher workflows.</td>
       </tr>
       <tr>
       <td>Mehrafarin Ekhlaspour</td>
       <td>UX/UI Designer</td>
-      <td>UX design of new feature requests</td>
+      <td style="word-wrap: break-word; white-space: normal;">Supports the design and refinement of user interfaces across the Lasso ecosystem, contributing to wireframes, interaction flows, and visual components.</td>
       </tr>
 </table>
 </div>
