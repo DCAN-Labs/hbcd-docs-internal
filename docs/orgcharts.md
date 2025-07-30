@@ -123,16 +123,25 @@ flowchart LR
 The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
 
 ```mermaid
+---
+config:
+  layout: elk
+---
 flowchart TB
-    CDNI["<b>Damien Fair</b><br>HDCC Co-Director"] --- n2(["<b>MRI Acquisition</b>"]) & n5(["<b>Processed MRI Quality Control</b>"])
+    CDNI["<b>Damien Fair</b><br>HDCC Co-Director"] --- n2(["<b>MRI Acquisition</b>"]) & n3(["<b>Processed MRI QC</b>"]) & n7(["<b>MRI Pipeline Development</b>"]) & n10(["<b>HDCC Release Docs</b>"])
     n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
-    n5 --- n6["<b>Eric Feczko, PhD</b><br>QC Lead<br><br><b>Lucille A. Moore, PhD</b><br>Neuroinformatics<br>
-    <b>Michael Anderson</b><br>Analyst"]
+    n3 --- n5["<b>Eric Feczko, PhD</b><br>QC Lead"] & n6["<b>Michael Anderson</b><br>Analyst"] & n9["<b>Lucille A. Moore, PhD</b><br>HDCC Release Docs Lead &amp; Neuroinformatics"]
+    n7 --- n5 & n9
+    n10 --- n9
     style CDNI fill:#BBDEFB,stroke:#2962FF
     style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#E1BEE7,stroke:#AA00FF
+    style n3 fill:#E1BEE7,stroke:#AA00FF
+    style n7 fill:#E1BEE7,stroke:#AA00FF
+    style n10 fill:#E1BEE7,stroke:#AA00FF
     style n4 fill:#BBDEFB,stroke:#2962FF
+    style n5 fill:#BBDEFB,stroke:#2962FF
     style n6 fill:#BBDEFB,stroke:#2962FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
 ```
 
 <div id="cdni-rr" class="table-banner" onclick="toggleCollapse(this)">
@@ -166,13 +175,13 @@ flowchart TB
       </tr>
       <tr>
       <td>Eric Feczko</td>
-      <td>QC Lead</td>
+      <td>MRI Quality Control Lead</td>
       <td style="word-wrap: break-word; white-space: normal;">Leads the design and implementation of post-processing MRI quality control procedures, developing automated and manual QC metrics to assess data reliability and identify artifacts across modalities.</td>
       </tr>
       <tr>
       <td>Lucille A. Moore</td>
-      <td>Neuroinformatics</td>
-      <td style="word-wrap: break-word; white-space: normal;">Develops and maintains software tools for organizing, processing, and visualizing neuroimaging data, integrating processed outputs with metadata and quality metrics for centralized review and downstream analysis. Lead documentation across all HDCC release docs and works with director and HCAC to coordinate processes throughout HBCD. Developer and/or project manager for select HBCD processing pipelines.</td>
+      <td style="word-wrap: break-word; white-space: normal;">HDCC Release Docs Lead & Neuroinformatics</td>
+      <td style="word-wrap: break-word; white-space: normal;">Develops and maintains software tools for organizing, processing, and visualizing neuroimaging data, integrating processed outputs with metadata and quality metrics for centralized review and downstream analysis. Lead documentation across all HDCC release docs and works with director and HCAC to coordinate processes throughout HBCD.</td>
       </tr>
       <tr>
       <td>Michael Anderson</td>
