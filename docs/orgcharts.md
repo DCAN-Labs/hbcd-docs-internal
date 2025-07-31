@@ -97,7 +97,7 @@ flowchart TB
 
 The University of Minnesota (UMN) houses several core HDCC teams. Please click on each organization below to view their details.
 
-<object type="image/svg+xml" data="umn-OC.svg" width="100%"></object>
+<p><object type="image/svg+xml" data="umn-OC.svg" width="90%"></object></p>
 
 
 #### Center for Developmental NeuroImaging
@@ -105,10 +105,6 @@ The University of Minnesota (UMN) houses several core HDCC teams. Please click o
 The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
 
 ```mermaid
----
-config:
-  layout: elk
----
 flowchart TB
     CDNI["<b>Damien Fair</b><br>HDCC Co-Director"] --- n2(["<b>MRI Acquisition</b>"]) & n3(["<b>Processed MRI QC</b>"]) & n7(["<b>MRI Pipeline Development</b>"]) & n10(["<b>HDCC Release Docs</b>"])
     n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
