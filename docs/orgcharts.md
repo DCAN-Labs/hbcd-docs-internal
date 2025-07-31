@@ -184,7 +184,7 @@ The Data security model ensures data security by focusing on two key components:
 </div>
 </p>
 
-<p><object type="image/svg+xml" data="hst-OC.svg" width="60%"></object></p>
+<p><object type="image/svg+xml" data="hst-OC.svg" width="70%"></object></p>
 
 <div id="hst-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
