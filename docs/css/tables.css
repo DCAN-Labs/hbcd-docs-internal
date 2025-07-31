@@ -40,7 +40,7 @@ th, td {
   display: flex;
   align-items: center; /* Ensures vertical alignment of items */
   justify-content: space-between; /* Ensures proper spacing */
-  background-color: #f0f4ff;
+  background-color: rgba(0, 102, 255, 0.183);
   border: 1px solid #3333331a;
   padding: 8px 10px;
   border-radius: 5px;

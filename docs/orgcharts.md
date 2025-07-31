@@ -108,7 +108,7 @@ The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN
 
 <div id="cdni-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#cdni-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -213,7 +213,7 @@ flowchart TB
 
 <div id="hst-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#hst-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -293,7 +293,7 @@ flowchart TB
 
 <div id="midb-analytics-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#midb-analytics-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -367,7 +367,7 @@ flowchart TB
 
 <div id="midb-msi-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#midb-msi-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -481,7 +481,7 @@ flowchart TB
 <p>
 <div id="washu-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#washu-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -598,7 +598,7 @@ flowchart TB
 
 <div id="jcvi-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#jcvi-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -693,7 +693,7 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
 
 <div id="lasso-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#lasso-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -813,7 +813,7 @@ flowchart TB
 <p>
 <div id="loris-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#loris-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -907,7 +907,7 @@ flowchart TB
 
 <div id="umd-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#umd-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -977,7 +977,7 @@ flowchart LR
 
 <div id="libr-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#libr-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -1021,7 +1021,7 @@ flowchart LR
 
 <div id="columbia-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#columbia-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
