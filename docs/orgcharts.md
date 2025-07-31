@@ -184,7 +184,7 @@ The Data security model ensures data security by focusing on two key components:
 </div>
 </p>
 
-<p><object type="image/svg+xml" data="hst-OC.svg" width="70%"></object></p>
+<p><object type="image/svg+xml" data="hst-OC.svg" width="80%"></object></p>
 
 <div id="hst-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -303,7 +303,7 @@ The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) works in coord
    
 The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://midb.umn.edu/research/informatics) and [Minnesota Supercomputing Institute (MSI)](https://msi.umn.edu/) at UMN provide the following services to the HBCD study: *System Administration*, *Loris Hosting*, *Computing*, *Processing*, and *Data Sharing*.
 
-<p><object type="image/svg+xml" data="midb-informatics.svg" width="70%"></object></p>
+<p><object type="image/svg+xml" data="midb-informatics.svg" width="80%"></object></p>
 
 <div id="midb-msi-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
