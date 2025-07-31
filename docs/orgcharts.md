@@ -566,12 +566,12 @@ Ripple is a data-driven innovative web-based technology that allows groups to co
 ### J. Craig Venter Institute 
 The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, FIONA, and the QC Dashboard.
 
+
+<p><object type="image/svg+xml" data="jcvi-OC.svg" width="80%"></object></p>
+
+
 <div style="width: 80%; margin: 0 auto;">
 ```mermaid
----
-config:
-  layout: elk
----
 flowchart TB
     A["<b>Anders Dale, PhD</b>, PI/Director"] --- z(["<a href="#fiona"><b>FIONA</b></a>"])
     A --- n2(["<b>Raw MRI Quality Control</b>"])
