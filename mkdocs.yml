@@ -78,6 +78,8 @@ nav:
     - Quality Control Procedures: workflows/qc.md
     - Data Processing Workflows: workflows/data-proc-wf.md
     - Release SOP: workflows/release-wf.md
+  # - Standards & Conventions:
+  #  - Variable Naming: standards/naming-conventions.md
   - Beta Release Notes: 
    # - 🚧 Pending & Upcoming Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md
