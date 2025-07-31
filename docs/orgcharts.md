@@ -100,8 +100,8 @@ flowchart TB
 config:
   layout: elk
 ---
-flowchart LR
-    A["<b>Damien Fair</b><br>HDCC Co-Director"] 
+flowchart TB
+    A["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director"] 
     A --- B["<a href="#health-sciences-technology" target="_top"><b>Health Sciences Technology (HST)</b></a>"]
     A --- C["<a href="#center-for-developmental-neuroimaging" target="_top"><b>Center for Developmental Neuroimaging (CDNI)</b></a>"]
     A --- D["<a href="#midb-analytics-hub" target="_top"><b>MIDB Analytics Hub</b></a>"]
