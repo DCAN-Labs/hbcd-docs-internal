@@ -21,7 +21,7 @@ config:
 ---
 flowchart TB
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<b>JCVI</b>"]
-    jcvi --- jcviSC["Subcontractors"]
+    jcvi --- jcviSC["<b>Subcontractors</b><br>DEAP<br>FIONA<br>REDCap"]
     E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
     lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO"]
     n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<b>WashU</b>"] & n12["<b>LIBR</b>"] & lasso
@@ -40,6 +40,7 @@ flowchart TB
     n30 --- n29["<b>MIDB Analytics</b>"]
     n27 --- n31["<b>Karen Athy-Penrose</b><br>Project Manager"]
     n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
+    n32 --- washuSC["<b>Subcontractors</b><br>AirTable<br>AMBRA<br>Ripple"]
     n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
     style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style jcvi fill:#E1BEE7,stroke:#AA00FF
@@ -81,6 +82,8 @@ flowchart TB
     click n28 "#center-for-developmental-neuroimaging"
     click n12 "#libr"
     click n11 "#columbia-university"
+    click jcviSC "#subcontractor-details_1"
+    click washuSC "#subcontractor-details"
 ```
 
 ### University of Minnesota
