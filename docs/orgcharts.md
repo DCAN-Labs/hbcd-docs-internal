@@ -94,29 +94,11 @@ flowchart TB
 ```
 
 ### University of Minnesota
-<p>
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    A["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director"] 
-    A --- B["<a href="#health-sciences-technology" target="_top"><b>Health Sciences Technology (HST)</b></a>"]
-    A --- C["<a href="#center-for-developmental-neuroimaging" target="_top"><b>Center for Developmental Neuroimaging (CDNI)</b></a>"]
-    A --- D["<a href="#midb-analytics-hub" target="_top"><b>MIDB Analytics Hub</b></a>"]
-    A --- E["<a href="#midb-informatics-hub-msi" target="_top"><b>MIDB Informatics Hub & MSI</b></a>"]
-    style A fill:#BBDEFB,stroke:#2962FF
-    style B fill:#E1BEE7,stroke:#AA00FF
-    style C fill:#E1BEE7,stroke:#AA00FF
-    style D fill:#E1BEE7,stroke:#AA00FF
-    style E fill:#E1BEE7,stroke:#AA00FF
-    click B "#health-sciences-technology"
-    click C "#center-for-developmental-neuroimaging"
-    click D "#midb-analytics-hub"
-    click E "#midb-informatics-hub-msi"
-```
-</p>
+
+The University of Minnesota (UMN) houses several core HDCC teams. Please click on each organization below to view their details.
+
+<object type="image/svg+xml" data="umn-OC.svg" width="100%"></object>
+
 
 #### Center for Developmental NeuroImaging
    
