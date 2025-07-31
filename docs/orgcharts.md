@@ -697,31 +697,8 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
  
 [LORIS](https://mcin.ca/technology/loris/) (Longitudinal Online Research and Imaging System), developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)), is the core data management system for the HBCD Study. It is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
 
-<div style="width: 80%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    nl["<b>Santiago Torres</b><br>Study Officer"] --- C(["<b>CBRAIN</b>"]) & G(["<b>MRI BIDS Conversion &amp; Database Management</b>"]) & H(["<b>EEG &amp; Biospecimens</b>"]) & F(["<b>Systems Operations</b>"])
-    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; MCIN NeuroHub<br><br><b>Pierre Rioux</b><br>Lead Developer"]
-    F --- I["<b>Dave McFarlane</b><br>Lead Developer<br><br><b>Sruthy Matthew</b><br>Sr Backend Developer<br><br><b>Regis Ongaro-Carcy<br>George Murad<br>Moshood Abiola</b><br>Developers"]
-    G --- L["<b>Cecile Madjar</b><br>Lead Developer"]
-    H --- M["<b>Laetitia Faeselier</b><br>Lead Developer"]
-    n13["<b>Alan Evans</b>, PI<br><b>Samir Das</b>, MCIN Assoc Dir"]
-    style nl stroke:#00C853,fill:#C8E6C9
-    style C stroke:#AA00FF,fill:#E1BEE7
-    style G stroke:#AA00FF,fill:#E1BEE7
-    style H stroke:#AA00FF,fill:#E1BEE7
-    style F stroke:#AA00FF,fill:#E1BEE7
-    style n12 stroke:#2962FF,fill:#BBDEFB
-    style I stroke:#2962FF,fill:#BBDEFB
-    style L stroke:#2962FF,fill:#BBDEFB
-    style M stroke:#2962FF,fill:#BBDEFB
-    style n13 stroke:#2962FF,fill:#BBDEFB
-```
-</div>
+<p><object type="image/svg+xml" data="loris-OC.svg" width="80%"></object></p>
+
 <p>
 <div id="loris-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
