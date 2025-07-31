@@ -838,33 +838,7 @@ flowchart TB
 
 ### University of Maryland
 
-<div style="width: 80%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    n16["<b>Nathan Fox, PhD</b>
-    Associate Dir, EEG Data Core"] --- n17(["<b>Preprocessing</b>"]) & n19(["<b>Coding &amp; Quality Control</b>"]) & n21(["<b>Pipeline Development</b>"]) & n29(["<b>Site Supervision</b>"])
-    n17 --- n18["<b>Whitney Kasenetz</b><br>Preprocessing Liason w/ Lasso &amp; LORIS"]
-    n21 --- n28["<b>Dylan Gilbreath</b><br>Pipeline Dev, Coding, &amp; QC"]
-    n29 --- n30["<b>Trisha Maheswari</b><br>Site Supervision, Coding, &amp; QC<br>
-    <b>Elise Harris<br></b>Site Oversight, QC, &amp; Training"]
-    n19 --- n31["<b>Santiago Morales</b><br>Co-I &amp; Coding Lead"]
-    n31 --- n27["<b>Kira Ashton</b><br>Coding &amp; QC"] & n30 & n28
-    style n16 fill:#BBDEFB,stroke:#2962FF
-    style n17 fill:#E1BEE7,stroke:#AA00FF
-    style n19 fill:#E1BEE7,stroke:#AA00FF
-    style n21 fill:#E1BEE7,stroke:#AA00FF
-    style n29 fill:#E1BEE7,stroke:#AA00FF
-    style n18 fill:#BBDEFB,stroke:#2962FF
-    style n28 fill:#BBDEFB,stroke:#2962FF
-    style n30 fill:#BBDEFB,stroke:#2962FF
-    style n31 fill:#C8E6C9,stroke:#00C853
-    style n27 fill:#BBDEFB,stroke:#2962FF
-```
-</div>
+<p><object type="image/svg+xml" data="umd-OC.svg" width="70%"></object></p>
 
 <div id="umd-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
