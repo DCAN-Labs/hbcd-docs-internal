@@ -1,0 +1,34 @@
+---
+config:
+  layout: elk
+---
+flowchart TB
+    n5@{ label: "<a href=\"../orgcharts/#airtable\" target=\"_top\"><b>AirTable</b></a>" } --- n9["<b>Lynn Menchaca</b><br>AirTable Admin"]
+    ambra@{ label: "<a href=\"../orgcharts/#ambra\" target=\"_top\"><b>Ambra</b></a>" } --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br>----------<br><b>Dimitrios Alexopoulos</b><br>Data Manager"]
+    n15@{ label: "<a href=\"../orgcharts/#ripple\" target=\"_top\"><b>Ripple</b></a>" } --- n16["<b>Liliana Mueller</b><br>Ripple Admin<br>----------<br><b>Kevine Ngalula</b><br>Developer"]
+    n17["<b>Sauren Ravencroft</b><br>Project Manager"] --- n5 & ambra & n15
+    n14["<b>Chad Sylvester, PhD</b>, Co-I"] --- n17 & n18["<b>Nicole Venteris</b><br>EMR Project Manager"]
+    n18 --- n19(["<b>EMR Data Core</b>"])
+    n20["<b>Chris Smyser, MD</b>, PI"]
+    n21["<b>Chad Sylvester, PhD</b>, Co-I"]
+    n5@{ shape: stadium}
+    ambra@{ shape: stadium}
+    n15@{ shape: stadium}
+    n16@{ shape: rect}
+    n17@{ shape: rect}
+    n14@{ shape: anchor}
+    n18@{ shape: rect}
+    n20@{ shape: rect}
+    n21@{ shape: rect}
+    style n5 fill:#E1BEE7,stroke:#AA00FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
+    style ambra fill:#E1BEE7,stroke:#AA00FF
+    style n1 fill:#BBDEFB,stroke:#2962FF
+    style n15 fill:#E1BEE7,stroke:#AA00FF
+    style n16 fill:#BBDEFB,stroke:#2962FF
+    style n17 fill:#C8E6C9,stroke:#00C853
+    style n14 fill:#BBDEFB,stroke:#2962FF
+    style n18 fill:#C8E6C9,stroke:#00C853
+    style n19 fill:#E1BEE7,stroke:#AA00FF
+    style n20 fill:#BBDEFB,stroke:#2962FF
+    style n21 fill:#BBDEFB,stroke:#2962FF

@@ -392,31 +392,7 @@ The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://
 ### WashU    
 Washington University in St. Louis (WashU) has oversight of: *Electronic Medical Records (EMR)*, *[Ambra](#ambra)*, *[AirTable](#airtable)*, *[Ripple](#ripple)*,  and *HBCD Study Administrative Core (HCAC) coordination*.
 
-<div style="width: 70%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    A["<b>Sauren Ravencroft</b><br>Project Manager"] --- ambra(["<a href="#ambra"><b>Ambra</b></a>"])
-    A --- n5(["<a href="#airtable"><b>AirTable</b></a> & <a href="#ripple"><b>Ripple</b></a>"])
-    n13["<b>Nicole Venteris</b><br>EMR Project Manager"] --- C(["<b>EMR Data Core</b><br>"])
-    n5 --- n9["<b>Liliana Mueller</b><br>Ripple Admin<br><br><b>Kevine Ngalula</b><br>Ripple<br><br><b>Lynn Menchaca</b><br>AirTable Admin"]
-    ambra --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br><br><b>Dimitrios ('Jim') Alexopoulos</b><br>Data Manager"]
-    n14["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"]
-    style A fill:#C8E6C9,stroke:#00C853
-    style ambra fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#E1BEE7,stroke:#AA00FF
-    style n13 fill:#C8E6C9,stroke:#00C853
-    style C fill:#E1BEE7,stroke:#AA00FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n1 fill:#BBDEFB,stroke:#2962FF
-    style n14 fill:#BBDEFB,stroke:#2962FF
-    linkStyle 3 stroke:#000000,fill:none
-    linkStyle 4 stroke:#000000,fill:none
-```
-</div>
+<p><object type="image/svg+xml" data="washu.svg" width="80%"></object></p>
 
 <p>
 <div id="washu-rr" class="table-banner" onclick="toggleCollapse(this)">
