@@ -566,35 +566,7 @@ Ripple is a data-driven innovative web-based technology that allows groups to co
 ### J. Craig Venter Institute 
 The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, FIONA, and the QC Dashboard.
 
-
 <p><object type="image/svg+xml" data="jcvi-OC.svg" width="80%"></object></p>
-
-
-<div style="width: 80%; margin: 0 auto;">
-```mermaid
-flowchart TB
-    A["<b>Anders Dale, PhD</b>, PI/Director"] --- z(["<a href="#fiona"><b>FIONA</b></a>"])
-    A --- n2(["<b>Raw MRI Quality Control</b>"])
-    A --- n3(["<b>MRI Phantom Quality Control</b>"])
-    A --- n6(["<a href="#redcap"><b>REDCap</b></a><br><b>Data Science</b><br><a href="#deap"><b>DEAP</b></a>"])
-    n2 --- n9["<b>Donald Hagler, PhD</b><br>Raw MRI QC Lead<br><br><b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
-    n3 --- n10["<b>Josh Kuperman</b><br>MRI Phantom QC Lead"]
-    n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>Team Lead<br>
-    <b>Asef-Joseph Baligh</b><br>REDCap Server Admin<br>
-    <b>Erika Bolden<br>Laura Ziemer</b><br>REDCap Dev/Admin<b><br>
-    Biplabendu Das</b><br>Dashboard Backend<br><br><b>Olivier Celhay</b><br>Dashboard Frontend"]
-    z --- n8["<b>Rongguang Yang, PhD</b><br>FIONA Lead"]
-    style A fill:#BBDEFB,stroke:#2962FF
-    style z fill:#E1BEE7,stroke:#AA00FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n6 fill:#E1BEE7,stroke:#AA00FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n10 fill:#BBDEFB,stroke:#2962FF
-    style n4 fill:#BBDEFB,stroke:#2962FF
-```
-</div>
 
 <div id="jcvi-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
