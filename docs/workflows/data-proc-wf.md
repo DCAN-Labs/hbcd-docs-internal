@@ -109,39 +109,39 @@ Data is collected from sites and ultimately transferred to the central LORIS Pro
     <thead>
       <tr>
         <th style="width: 5%;">Name</th>
-        <th style="width: 10%;">S3 URL</th>
+        <th style="width: 15%;">S3 URL <code>s3://midb-hbcd-</code></th>
         <th style="width: 30%;">Description</th>
       </tr>
     </thead>
     <tbody>
     <tr>
       <td>LORIS Production</td>
-      <td><code>s3://midb-hbcd-main-pr/</code></td>
+      <td><code>main-pr/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">LORIS Bucket that receives all tabulated data prior to staging and ingestion</td>
     </tr>
     <tr>
       <td>LORIS Sandbox</td>
-      <td><code>s3://midb-hbcd-main-sb/</code></td>
+      <td><code>main-sb/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">LORIS Bucket for non-production system to test data flows on pilot data</td>
     </tr>
     <tr>
       <td>De-ID</td>
-      <td><code>s3://midb-hbcd-main-deid/</code></td>
+      <td><code>main-deid/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">De-identified raw BIDS, derivatives, and BrainSwipes data</td>
     </tr>
     <tr>
       <td>De-ID List</td>
-      <td><code>s3://midb-hbcd-main-pr-deidentification-list/</code></td>
+      <td><code>main-pr-deidentification-list/</code></td>
       <td>Contains de-identified participant list information used for de-identification step.</td>
     </tr>
     <tr>
       <td>Lasso Staging</td>
-      <td><code>s3://midb-hbcd-lasso-staging/</code></td>
+      <td><code>lasso-staging/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">Where LORIS deposits data after running data release script for each BR</td>
     </tr>
     <tr>
       <td>Lasso Prerelease</td>
-      <td><code>s3://midb-hbcd-lasso-data-prerelease/</code></td>
+      <td><code>lasso-data-prerelease/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">Contains release version-specific data housed under <code>br{BETA RELEASE#}/hbcd/</code> to be ingested into Lasso</td>
     </tr>
 </tbody>
