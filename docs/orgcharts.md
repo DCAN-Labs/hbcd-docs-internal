@@ -104,23 +104,7 @@ The University of Minnesota (UMN) houses several core HDCC teams. Please click o
    
 The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
 
-```mermaid
-flowchart TB
-    CDNI["<b>Damien Fair</b><br>HDCC Co-Director"] --- n2(["<b>MRI Acquisition</b>"]) & n3(["<b>Processed MRI QC</b>"]) & n7(["<b>MRI Pipeline Development</b>"]) & n10(["<b>HDCC Release Docs</b>"])
-    n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
-    n3 --- n5["<b>Eric Feczko, PhD</b><br>QC Lead"] & n6["<b>Michael Anderson</b><br>Analyst"] & n9["<b>Lucille A. Moore, PhD</b><br>HDCC Release Docs Lead &amp; Neuroinformatics"]
-    n7 --- n5 & n9
-    n10 --- n9
-    style CDNI fill:#BBDEFB,stroke:#2962FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n7 fill:#E1BEE7,stroke:#AA00FF
-    style n10 fill:#E1BEE7,stroke:#AA00FF
-    style n4 fill:#BBDEFB,stroke:#2962FF
-    style n5 fill:#BBDEFB,stroke:#2962FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-```
+<p><object type="image/svg+xml" data="cdni-OC.svg" width="80%"></object></p>
 
 <div id="cdni-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
