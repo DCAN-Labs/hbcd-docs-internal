@@ -209,29 +209,29 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
     <thead>
       <tr>
         <th style="width: 20%;">Name</th>
-        <th style="width: 40%;">S3 URL</th>
+        <th style="width: 40%;">S3 URL <code>s3://midb-hbcd-</code></th>
         <th style="width: 30%;">Description</th>
       </tr>
     </thead>
     <tbody>
     <tr>
       <td>JCVI DICOMs</td>
-      <td><code>s3://midb-hbcd-ucsd-main-pr-dicoms/</code></td>
+      <td><code>ucsd-main-pr-dicoms/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">JCVI DICOMs and raw data QC results</td>
     </tr>
     <tr>
       <td>MRS BIDS</td>
-      <td><code>s3://midb-hbcd-main-pr-mrs/</code></td>
+      <td><code>main-pr-mrs/</code></td>
       <td>MRS data post-BIDS conversion</td>
     </tr>
     <tr>
       <td>De-ID</td>
-      <td><code>s3://midb-hbcd-main-deid/</code></td>
+      <td><code>main-deid/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">De-identified raw BIDS, derivatives, and BrainSwipes data</td>
     </tr>
     <tr>
       <td>Main PR</td>
-      <td><code>s3://midb-hbcd-main-pr/</code></td>
+      <td><code>main-pr/</code></td>
       <td>Contains LORIS-curated BIDS data for the full HBCD study, including:<br>
        • De-identfied: <span class="tooltip">raw BIDS<span class="tooltiptext"><i>assembly_bids/</i></span></span> and <span class="tooltip">participant lists<span class="tooltiptext"><i>deidentification-lists/</i></span></span><br>
        • Re-identfied: <span class="tooltip">derivatives<span class="tooltiptext"><i>derivatives/</i></span></span> and <span class="tooltip">BrainSwipes data<span class="tooltiptext"><i>reid_brainswipes/</i></span></span>
@@ -239,7 +239,7 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
     </tr>
     <tr>
       <td>De-ID List</td>
-      <td><code>s3://midb-hbcd-main-pr-deidentification-list/</code></td>
+      <td><code>main-pr-deidentification-list/</code></td>
       <td>Contains de-identified participant list information used for de-identification step.</td>
     </tr>
 </tbody>
@@ -274,19 +274,19 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
     <thead>
       <tr>
         <th style="width: 20%;">Name</th>
-        <th style="width: 40%;">S3 URL</th>
+        <th style="width: 40%;">S3 URL <code>s3://midb-hbcd-</code></th>
         <th style="width: 30%;">Description</th>
       </tr>
     </thead>
     <tbody>
     <tr>
       <td>De-ID</td>
-      <td><code>s3://midb-hbcd-main-deid/</code></td>
+      <td><code>main-deid/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">De-identified raw BIDS, derivatives, and BrainSwipes data</td>
     </tr>
     <tr>
       <td>Main PR</td>
-      <td><code>s3://midb-hbcd-main-pr/</code></td>
+      <td><code>main-pr/</code></td>
       <td>Contains LORIS-curated BIDS data for the full HBCD study, including:<br>
        • De-identfied: <span class="tooltip">raw BIDS<span class="tooltiptext"><i>assembly_bids/</i></span></span> and <span class="tooltip">participant lists<span class="tooltiptext"><i>deidentification-lists/</i></span></span><br>
        • Re-identfied: <span class="tooltip">derivatives<span class="tooltiptext"><i>derivatives/</i></span></span> and <span class="tooltip">BrainSwipes data<span class="tooltiptext"><i>reid_brainswipes/</i></span></span>
@@ -294,7 +294,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
     </tr>
     <tr>
       <td>Lasso Prerelease</td>
-      <td><code>s3://midb-hbcd-lasso-data-prerelease/br{BETA RELEASE#}/hbcd/</code></td>
+      <td><code>lasso-data-prerelease/br{BETA RELEASE#}/hbcd/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">Contains release version-specific data, including participant list to be included in the release (<code>rawdata/participants.tsv</code>). This is the final repository after de-identification and prior to Lasso ingestion.</td>
     </tr>
 </tbody>
