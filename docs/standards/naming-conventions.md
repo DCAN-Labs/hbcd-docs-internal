@@ -1,8 +1,56 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
 
-# LORIS Naming Conventions
+# Naming Conventions: Internal Details
 
-Table Naming conventions as they appear in Lasso are documented on the HBCD Release Data Docs site under [Metadata & Naming Conventions](https://docs.hbcdstudy.org/latest/access/metadata/) > [Naming Conventions](https://docs.hbcdstudy.org/latest/access/metadata/#naming-conventions).
+Variable naming conventions for the release data is described on the HBCD Release Data Docs site on the *Metadata & Naming Conventions* under [Naming Conventions](https://docs.hbcdstudy.org/latest/access/metadata/#naming-conventions). The naming convention is applied when data is transferred from LORIS to Lasso for release staging.
+
+Prior to this step, instrument and fieldname conventions generally follow the REDCap naming standardization scheme, but may differ based on the source of the data, including:
+
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+    <thead>
+        <tr>
+            <th>Data Source</th>
+            <th>Naming Convention Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>REDCap surveys</b></td>
+            <td style="word-wrap: break-word; white-space: normal;">
+                Variables are named according to the conventions defined in REDCap and imported into LORIS via the REDCap Data Dictionary (DD). 
+                These variable names generally match those in the REDCap DD, as LORIS instruments are created directly from that dictionary.
+            </td>
+        </tr>
+        <tr>
+            <td><b>LORIS native forms</b></td>
+            <td style="word-wrap: break-word; white-space: normal;">
+                Initially coded using a flexible scheme, these instruments were later adapted to align with the REDCap naming convention. 
+                Field and instrument names now generally follow the REDCap standard, with only minor deviations in some cases.
+            </td>
+        </tr>
+       <tr>
+            <td><b>LORIS Core Fields</b></td>
+            <td style="word-wrap: break-word; white-space: normal;">
+                These fields are not associated with instruments and have their own pre-established names that may or may not be be adapted for the Data Release.
+            </td>
+        </tr>
+        <tr>
+            <td><b>Third-party instruments</b></td>
+            <td style="word-wrap: break-word; white-space: normal;">
+                Collected externally and imported into LORIS via parsing scripts, these instruments function like LORIS native forms and 
+                follow the same naming convention, typically adhering to the standardized REDCap scheme.
+            </td>
+        </tr>
+        <tr>
+            <td><b>Ripple / ETL fields</b></td>
+            <td style="word-wrap: break-word; white-space: normal;">
+                Fields related to screening, demographics, or other study metadata, such as <i>Transition in Care (TIC)</i>, 
+                <i>Alternate Caregiver (ACG)</i>, <i>Geocoding</i>, or <i>Study Navigator (SN)</i>, are collected or calculated in Ripple or via ETL then transferred to LORIS. These fields may not fully follow the REDCap naming convention and are usually stored at the 
+                participant or session level.
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Domain
 
