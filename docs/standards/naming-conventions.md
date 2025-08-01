@@ -1,10 +1,12 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
 
-# Naming Conventions: Internal Details
+# Naming Conventions
 
-Variable naming conventions for the release data is described on the HBCD Release Data Docs site on the *Metadata & Naming Conventions* under [Naming Conventions](https://docs.hbcdstudy.org/latest/access/metadata/#naming-conventions). The naming convention is applied when data is transferred from LORIS to Lasso for release staging.
+Variable naming conventions for the release data are described on the HBCD Release Data Docs site on the *Metadata & Naming Conventions* under [Naming Conventions](https://docs.hbcdstudy.org/latest/access/metadata/#naming-conventions). The naming convention is applied when data is transferred from LORIS to Lasso for release staging.
 
-Prior to this step, instrument and fieldname conventions generally follow the REDCap naming standardization scheme, but may differ based on the source of the data, including:
+## Source Data Naming Schemes
+
+Prior to staging in Lasso, instrument and fieldname conventions generally follow the REDCap naming standardization scheme, but may differ based on the source of the data, including:
 
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
     <thead>
@@ -52,13 +54,13 @@ Prior to this step, instrument and fieldname conventions generally follow the RE
     </tbody>
 </table>
 
-## Domain
+## Curation Procedures
 
- - For MRI data, `mri` is used in place of `img` within LORIS
+When data are transferred to Lasso for release staging, the variable names are updated to follow the naming conventions, mentioned above, described on the central HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/access/metadata/#naming-conventions). Here we describe certain aspects of how the naming conventions are instituted.
 
-## Correspondence to JSON Metadata
+### Update JSON Metadata
 
-The `domain` and `source` are also included in the JSON metadata and are typically derived from the corresponding sections of the instrument name. However, in some cases, data are collected directly into fields or tables that do not follow the standard naming convention. In those instances, the domain and source values are added later during the Data Release process.
+The `domain` and `source` are included in the JSON metadata and are typically derived from the corresponding sections of the instrument name. However, in some cases, data are collected directly into fields or tables that do not follow the standard naming convention. In those instances, the domain and source values are added later during the Data Release process.
 
 **This applies to:**
 
@@ -69,4 +71,4 @@ The `domain` and `source` are also included in the JSON metadata and are typical
 
 ## REDCap Naming Convention: `_i_` 
 
-Table names in Lasso using single ( `_` ) and double ( `__` ) underscores, as explained [here](https://docs.hbcdstudy.org/latest/access/metadata/#double-underscores). Note that, in REDCap, `_i_` is used in place of double underscores and used in LORIS for instruments and fieldnames to denote hierarchies for scales and sub-scales in the instrument name and field counters. For the Data Release, the `i` is removed, resulting in `__` instead of `_i_`. This naming convention conversion occurs when the data is transferred from LORIS to Lasso.
+Table names in Lasso using single ( `_` ) and double ( `__` ) underscores, as explained [here](https://docs.hbcdstudy.org/latest/access/metadata/#subcomponents). In REDCap and subsequently LORIS, `_i_` is used in place of double underscores for instruments and fieldnames to denote hierarchies for scales and sub-scales in the instrument name and field counters. For the Data Release, the `i` is removed, resulting in `__` instead of `_i_`. This naming convention conversion occurs when the data is transferred from LORIS to Lasso.
