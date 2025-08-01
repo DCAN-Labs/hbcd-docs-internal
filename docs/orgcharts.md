@@ -21,7 +21,7 @@ The larger organizational structure of the HBCD Data Coordinating Center (HDCC) 
 
 <div id="fyi" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text"><b>NOTE:</b> These org charts emphasize functional structure within the context of HDCC, not reporting line details of individual organizations.</span>
+    <span class="text"><b>NOTE:</b> These org charts emphasize functional structure within the context of HDCC, not reporting line details or roles within individual organizations.</span>
 </div>
 <br>
 
@@ -125,29 +125,29 @@ The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN
     </thead>
     <tbody>
       <tr>
-      <td>Damien Fair</td>
-      <td>PI</td>
+      <td>Damien Fair, PA-C, PhD</td>
+      <td>HDCC Co-Director</td>
       <td style="word-wrap: break-word; white-space: normal;">Provides scientific and operational leadership for the HBCD Data Coordinating Center, with direct oversight of MRI acquisition strategy, processing pipeline development, and quality control infrastructure at CDNI.</td>
       </tr>
       <tr>
-      <td>Kimberly Weldon</td>
+      <td>Kimberly Weldon, PhD</td>
       <td>Siemens Engineer</td>
       <td style="word-wrap: break-word; white-space: normal;">Supports MRI acquisition through scanner calibration, sequence optimization, and technical troubleshooting, ensuring harmonized imaging protocols across Siemens scanners and sites.</td>
       </tr>
       <tr>
-      <td>Eric Feczko</td>
+      <td>Eric Feczko, PhD</td>
       <td>MRI Quality Control Lead</td>
       <td style="word-wrap: break-word; white-space: normal;">Leads the design and implementation of post-processing MRI quality control procedures, developing automated and manual QC metrics to assess data reliability and identify artifacts across modalities.</td>
       </tr>
       <tr>
-      <td>Lucille A. Moore</td>
-      <td style="word-wrap: break-word; white-space: normal;">HDCC Release Docs Lead & Neuroinformatics</td>
-      <td style="word-wrap: break-word; white-space: normal;">Develops and maintains software tools for organizing, processing, and visualizing neuroimaging data, integrating processed outputs with metadata and quality metrics for centralized review and downstream analysis. Lead documentation across all HDCC release docs and works with director and HCAC to coordinate processes throughout HBCD.</td>
-      </tr>
-      <tr>
-      <td>Michael Anderson</td>
+      <td>Michael Anderson, PhD</td>
       <td>Analyst</td>
       <td style="word-wrap: break-word; white-space: normal;">Conducts data analysis and curation of processed MRI datasets, supports QC review and scoring workflows, and ensures alignment between data outputs and release standards.</td>
+      </tr>
+      <tr>
+      <td>Lucille A. Moore, PhD</td>
+      <td style="word-wrap: break-word; white-space: normal;">HDCC Release Docs Lead & Neuroinformatics</td>
+      <td style="word-wrap: break-word; white-space: normal;">Develops and maintains software tools for organizing, processing, and visualizing neuroimaging data, integrating processed outputs with metadata and quality metrics for centralized review and downstream analysis. Lead documentation across all HDCC release docs and works with director and HCAC to coordinate processes throughout HBCD.</td>
       </tr>
 </tbody>
 </table>
