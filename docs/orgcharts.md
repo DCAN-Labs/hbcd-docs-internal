@@ -765,7 +765,7 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
     <tbody>
     <tr>
     <td>Nathan Fox, PhD</td>
-    <td>Associate Director</td>
+    <td style="word-wrap: break-word; white-space: normal;">HDCC Associate Director & EEG Core Director</td>
     <td style="word-wrap: break-word; white-space: normal;">Provides strategic and scientific oversight for EEG data collection, preprocessing, and integration efforts across sites.</td>
     </tr>
     <tr>
