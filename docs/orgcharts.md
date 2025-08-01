@@ -769,28 +769,28 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
     <td style="word-wrap: break-word; white-space: normal;">Provides strategic and scientific oversight for EEG data collection, preprocessing, and integration efforts across sites.</td>
     </tr>
     <tr>
-    <td>Whitney Kasenetz</td>
-    <td style="word-wrap: break-word; white-space: normal;">Preprocessing Liason w/ Lasso &amp; LORIS</td>
-    <td style="word-wrap: break-word; white-space: normal;">Coordinates preprocessing workflows and serves as the primary liaison between the EEG team and the Lasso and LORIS development groups.</td>
-    </tr>
-    <tr>
-    <td>Dylan Gilbreath</td>
-    <td>Pipeline Developer</td>
-    <td style="word-wrap: break-word; white-space: normal;">Designs and implements automated EEG preprocessing and analysis pipelines, develops code for signal processing and feature extraction, and performs quality control checks to ensure accurate, standardized output across sites.</td>
-    </tr>
-    <tr>
-    <td>Santiago Morales</td>
+    <td>Santiago Morales, PhD</td>
     <td>Co-I &amp; Coding Lead</td>
     <td style="word-wrap: break-word; white-space: normal;">Leads EEG behavioral coding initiatives and quality assurance protocols, overseeing the alignment of coded variables with experimental design and coordinating validation efforts to maintain data integrity across cohorts.</td>
     </tr>
     <tr>
-    <td>Kira Ashton</td>
-    <td>Developer</td>
+    <td>Whitney Kasenetz</td>
+    <td style="word-wrap: break-word; white-space: normal;">Preprocessing Liason w/ Lasso & LORIS</td>
+    <td style="word-wrap: break-word; white-space: normal;">Coordinates preprocessing workflows and serves as the primary liaison between the EEG team and the Lasso and LORIS development groups.</td>
+    </tr>
+    <tr>
+    <td>Kira Ashton, PhD</td>
+    <td>Coding & QC Developer</td>
     <td style="word-wrap: break-word; white-space: normal;">Conducts EEG data annotation, behavioral coding, and quality control checks, ensuring consistent and accurate coding practices across participants and sessions.</td>
     </tr>
     <tr>
+    <td>Dylan Gilbreath, PhD</td>
+    <td>Pipeline Developer</td>
+    <td style="word-wrap: break-word; white-space: normal;">Designs and implements automated EEG preprocessing and analysis pipelines, develops code for signal processing and feature extraction, and performs quality control checks to ensure accurate, standardized output across sites.</td>
+    </tr>
+    <tr>
     <td>Trisha Maheswari</td>
-    <td>Site Supervisor</td>
+    <td>Site Oversight</td>
     <td style="word-wrap: break-word; white-space: normal;">Manages site-level EEG data collection processes, supervises staff and students involved in EEG acquisition and coding, and conducts local QC to maintain protocol compliance.</td>
     </tr>
     <tr>
