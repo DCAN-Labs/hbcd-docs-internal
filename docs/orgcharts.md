@@ -253,7 +253,7 @@ The Data security model ensures data security by focusing on two key components:
 #### MIDB Analytics Hub
 The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) works in coordination with the Biospecimens Workgroup to provide support for genomic data processing and analysis as part of the **HBCD Genomics Supplement**. 
 
-<p><object type="image/svg+xml" data="midb-analytics.svg" width="70%"></object></p>
+<p><object type="image/svg+xml" data="midb-analytics-oc.svg" width="70%"></object></p>
 
 <div id="midb-analytics-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
