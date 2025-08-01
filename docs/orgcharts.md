@@ -101,7 +101,7 @@ The University of Minnesota (UMN) houses several core HDCC teams. Please click o
 
 #### Center for Developmental NeuroImaging
    
-The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
+The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: development of MRI acquisition procedures; quality control for processed MRI data; MRI data processing consultation; support for MRI pipeline development; coordination of processing pipeline standardization ([see details](https://docs.hbcdstudy.org/latest/instruments/processing/standards/)); and development and maintenance of external and internal HDCC release documentation (e.g. [HBCD Data Release Docs](https://docs.hbcdstudy.org/latest/)).
 
 <p><object type="image/svg+xml" data="cdni-OC.svg" width="70%"></object></p>
 
