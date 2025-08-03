@@ -1,0 +1,89 @@
+---
+config:
+  layout: elk
+  look: neo
+  theme: redux
+---
+flowchart LR
+ subgraph Sites_Capture["<b>Sites Capture</b><br><a href=../../orgcharts/#fiona rel=noopener target=_blank><b>FIONA</b></a>"]
+        FIONA_KSI[/"DCM"/]
+        LORIS_ACM[/"MRS"/]
+        n15[/"K-Space"/]
+  end
+ subgraph Capture_JCVI["<b>Capture &amp; BIDS Conversion<br></b><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank><b>UMN MSI</b></a>"]
+        UMN@{ label: "UMN SCE<br>(<a href=\"../../orgcharts/#health-sciences-technology\" rel=\"noopener\" target=\"_blank\">HST</a>)" }
+        JCVI["Convert to BIDS"]
+        n1@{ label: "<span style=\"color:\"><b>MRS BIDS<br></b></span><i style=\"--tw-scale-x:\"><code style=\"--tw-scale-x:\">S3:main-pr-mrs/</code></i><span style=\"color:\"></span>" }
+  end
+ subgraph Capture_HST["<b>Capture &amp; BIDS Conversion<br></b><a href=../../orgcharts/#health-sciences-technology rel=noopener target=_blank><b>UMN HST</b></a>"]
+        n6["HBCD<br>Central"]
+        n9["QC Raw<br>MRI"]
+        n10["<b>JCVI DICOMs<br></b><i><code>S3:ucsd-main-<br>pr-dicoms/</code></i>"]
+        n11["Convert<br>to BIDS"]
+  end
+ subgraph Capture_LORIS["<b>Sites Capture</b><br><a href=../../orgcharts/#loris rel=noopener target=_blank><b>LORIS</b></a>"]
+        n12[/"EEG BIDSWizard"/]
+        n13[/"Axivity"/]
+        n14[/"GABI"/]
+  end
+ subgraph s1["<b style=white-space:>De-Identification<br></b><span style=white-space:>Run daily to replace any DCCIDs/PSCIDs/Site IDs with anonymized IDs</span>"]
+        n17["<b>De-ID</b>"]
+        n18@{ label: "<b><span style=\"text-wrap-mode:\">De-ID</span><br style=\"text-wrap-mode:\"></b><i style=\"--tw-scale-x:\"><code style=\"--tw-scale-x:\">S3:main-deid/<br>assembly_bids/</code></i>" }
+  end
+ subgraph s6["<b>NOTE</b>"]
+        legend@{ label: "<b>'S3:'</b> indicates<br>the prefix<span style=\"background-color:\"><br></span><span style=\"background-color:lightblue;\">s3://midb-hbcd-<br></span>for S3 bucket<br>names" }
+  end
+    LORIS_ACM --> UMN
+    UMN --> JCVI
+    JCVI --> n1
+    n1 --> RAW_BIDS@{ label: "<b>MAIN PR<br></b><i style=\"--tw-scale-x:\"><code style=\"--tw-scale-x:\">S3:main-pr/<br>assembly_bids/</code></i><i style=\"text-wrap-mode:\"></i><b></b>" }
+    n6 --> n9 & n10
+    n9 --> n10
+    n10 --> n11
+    n11 --> RAW_BIDS
+    n12 --> RAW_BIDS
+    n13 --> RAW_BIDS
+    n14 --> RAW_BIDS
+    n15 --> UMN
+    FIONA_KSI --> n6
+    n16@{ label: "<span style=\"color:\">LORIS updates to<br></span><i style=\"--tw-scale-x:\"><code style=\"--tw-scale-x:\">S3:main-pr/assembly_bids/<br></code></i><span style=\"color:\">metadata and formatting based on identified issues. Includes changes from QC/DICOMs sent from JCVI.</span>" } --> RAW_BIDS
+    RAW_BIDS --> n17
+    n17 --> n18
+    n19["<b>De-ID Lists</b><br><code><i>S3:main-pr-deidentification-list/</i></code>"] --> n17
+    n18 --> n20["<b>CBRAIN<br>PROCESSING</b>"]
+    UMN@{ shape: db}
+    JCVI@{ shape: rect}
+    n1@{ shape: disk}
+    n6@{ shape: db}
+    n9@{ shape: rect}
+    n10@{ shape: disk}
+    n11@{ shape: rect}
+    n18@{ shape: disk}
+    RAW_BIDS@{ shape: disk}
+    n16@{ shape: rect}
+    n19@{ shape: disk}
+    style FIONA_KSI fill:#FFD600
+    style LORIS_ACM fill:#FFD600
+    style n15 fill:#FFD600
+    style UMN fill:#FFD600
+    style JCVI fill:#FFD600,color:#000000
+    style n1 fill:#FFD600
+    style n6 fill:#FFD600,color:#000000
+    style n9 fill:#FFD600,color:#000000
+    style n10 fill:#FFD600,color:#000000
+    style n11 fill:#FFD600,color:#000000
+    style n12 fill:#FFD600
+    style n13 fill:#FFD600
+    style n14 fill:#FFD600
+    style n17 fill:#E1BEE7
+    style n18 fill:#E1BEE7
+    style legend stroke:none,fill:transparent
+    style RAW_BIDS fill:#BBDEFB
+    style n16 fill:#BBDEFB
+    style n19 fill:#BBDEFB
+    style n20 fill:#C8E6C9,stroke:#00C853,stroke-width:4px,stroke-dasharray: 0
+    style Capture_LORIS fill:#FFF9C4
+    style Sites_Capture fill:#FFF9C4
+    style Capture_JCVI fill:#FFF9C4
+    style Capture_HST fill:#FFF9C4
+    style s1 fill:#FAD9FF
