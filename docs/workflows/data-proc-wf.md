@@ -199,7 +199,7 @@ Data is collected from sites and ultimately transferred to the central LORIS Pro
 
 Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for MRI and MRS). LORIS data is subsequently transferred directly into the central S3 main PR bucket, which subsequently is sourced for CBRAIN processing. MRI and MRS must first be converted to BIDS format and MRI data also undergoes extensive raw data QC ([see details](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc)).
 
-<object type="image/svg+xml" data="../images/fb-proc-wf.svg" style="width: 100%; height: auto;">
+<object type="image/svg+xml" data="../images/fb-wf-1.svg" style="width: 100%; height: auto;">
   Your browser does not support SVG
 </object>
 
