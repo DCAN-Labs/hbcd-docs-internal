@@ -50,7 +50,7 @@ flowchart LR
     RAW_BIDS --> n17
     n17 --> n18
     n19["<b>De-ID Lists</b><br><code><i>S3:main-pr-deidentification-list/</i></code>"] --> n17
-    n18 --> n20["<b>CBRAIN<br>PROCESSING</b>"]
+    n18 --> n20["<b>CBRAIN<br>PROCESSING</b><br><a href="../data-proc-wf/#cbrain-processing-re-identification-lasso-ingestion" target="_top"<i>SEE NEXT STEPS</i></a>"]
     UMN@{ shape: db}
     JCVI@{ shape: rect}
     n1@{ shape: disk}
@@ -62,6 +62,7 @@ flowchart LR
     RAW_BIDS@{ shape: disk}
     n16@{ shape: rect}
     n19@{ shape: disk}
+    n20@{ shape: rect}
     style FIONA_KSI fill:#FFD600
     style LORIS_ACM fill:#FFD600
     style n15 fill:#FFD600
