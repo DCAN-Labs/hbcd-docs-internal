@@ -21,8 +21,16 @@ This document outlines the staged workflow for selecting, releasing, and validat
       </span>
     </span>
 </div>
+<br>
 
-<p><object type="image/svg+xml" data="../images/timeline.svg" width="100%"></object></p>
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+  <span class="text">
+    See timeline in PDF format to access embedded links - <a href="../images/timeline.pdf" target="_blank" rel="noopener noreferrer">CLICK HERE</a>
+  </span>
+</div>
+
+<object type="image/svg+xml" data="../images/timeline.svg" width="100%"></object>
 
 ## Stages of the Release Workflow
 
