@@ -249,9 +249,10 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
 
 Processing pipelines are run in CBRAIN and outputs are stored in session-specific folders on `s3://midb-hbcd-main-deid/derivatives`. When processing is launched, a record of which files were used for processing is stored under `s3://midb-hbcd-main-deid/derivatives/ses-<label>/cbrain_misc`. In the future, this will likely be replaced with a simple database in the S3 bucket that keeps track of these (and other) details more centrally.
 
-<object type="image/svg+xml" data="../images/fb-wf-part2.svg" style="width: 100%; height: auto;">
+<object type="image/svg+xml" data="../images/fb-wf-2.svg" style="width: 100%; height: auto;">
   Your browser does not support SVG
 </object>
+
 <small><b>NOTE</b>: <i>Currently, for release staging, the data is first copied to a separate staging bucket prior to being copied to the Lasso Prerelease bucket, but will soon be cut out to transfer directly to the Lasso Prerelease bucket as displayed in the diagram.</i></small>
 
 <div id="og-wf-fb" class="table-banner" onclick="toggleCollapse(this)">
