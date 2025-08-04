@@ -480,9 +480,9 @@ Ripple is a data-driven innovative web-based technology that allows groups to co
 
 
 ### J. Craig Venter Institute 
-The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, FIONA, and the QC Dashboard.
+The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for [raw MRI data quality control](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc) and acquisition QC via MRI phantom data. In addition, JCVI oversees [FIONA](#fiona) deployment as well as [REDCap](#redcap), [DEAP](#deap), and the QC Dashboard.
 
-<p><object type="image/svg+xml" data="jcvi-OC.svg" width="70%"></object></p>
+<p><object type="image/svg+xml" data="jcvi-OC.svg" width="80%"></object></p>
 
 <div id="jcvi-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -504,55 +504,66 @@ The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for
     </thead>
     <tbody>
     <tr>
-      <td>Janosch Linkersdoerfer</td>
-      <td>Team Lead</td>
-      <td style="word-wrap: break-word; white-space: normal;">Lead manager at UCSD who assists with the overall architecture planning of the HDCC. Oversees development and integration of REDCap, DEAP, and dashboard systems, for the HDCC.</td>
-      </tr>
-      <tr>
-      <td>Erika Bolden</td>
-      <td>Redcap Developer</td>
-      <td style="word-wrap: break-word; white-space: normal;">Develop, configure, and support REDCap instruments and workflows for structured data collection</td>
-      </tr>
-      <tr>
-      <td>Biplabendu Das</td>
-      <td>RBA Dashboard Developer</td>
-      <td style="word-wrap: break-word; white-space: normal;">Designs and maintains the QC and data dashboards, enabling dynamic visualization, reporting, and data access across platforms.</td>
-      </tr>
-      <tr>
-      <td>Josh Kuperman</td>
-      <td>MRI Phantom QC Lead</td>
-      <td style="word-wrap: break-word; white-space: normal;">Manages the acquisition, monitoring, and analysis of MRI phantom data across study sites to ensure scanner stability, calibration, and harmonization.</td>
-      </tr>
-      <tr>
-      <td>Donald Hagler</td>
-      <td>MRI QC</td>
+      <td>Anders Dale, PhD</td>
+      <td>HDCC Co-Director</td>
+      <td style="word-wrap: break-word; white-space: normal;">Provides scientific and operational leadership for the HBCD Data Coordinating Center, with direct oversight of quality control and data systems at JCVI.</td>
+    </tr>
+    <tr>
+      <td>Janosch Linkersdoerfer, PhD</td>
+      <td>Team Lead, Data Systems</td>
+      <td style="word-wrap: break-word; white-space: normal;">Lead manager who assists with the overall architecture planning of the HDCC. Oversees development and integration of REDCap, DEAP, and dashboard systems.</td>
+    </tr>
+    <tr>
+      <td>Donald Hagler, PhD</td>
+      <td>Raw MRI QC Lead</td>
       <td style="word-wrap: break-word; white-space: normal;">Directs the pipeline for raw MRI data quality assurance, including protocol compliance, artifact detection</td>
       </tr>
-      <tr>
-      <td>Rongguang Yang</td>
-      <td>FIONA Lead</td>
-      <td style="word-wrap: break-word; white-space: normal;">Leads the deployment and optimization of FIONA for transfer of imaging data from acquisition sites to the central data core.</td>
-      </tr>
-      <tr>
-      <td>Asef-Joseph Baligh</td>
-      <td>REDCap Server Admin</td>
-      <td style="word-wrap: break-word; white-space: normal;">Maintains and secures the REDCap server infrastructure</td>
-      </tr>
-      <tr>
-      <td>Olivier Celhay</td>
-      <td>Dashboard Frontend Developer</td>
-      <td style="word-wrap: break-word; white-space: normal;">Builds and maintains user-facing interfaces for data dashboards, enhancing usability and responsiveness for QC tracking, metrics visualization</td>
-      </tr>
-      <tr>
+    <tr>
+    <tr>
       <td>Tyler Berkness</td>
       <td>Protocol Violation QC</td>
       <td style="word-wrap: break-word; white-space: normal;">Monitors and flags protocol deviations in incoming MRI datasets</td>
-      </tr>
-      <tr>
+    </tr>
+    <tr>
       <td>Sejal Shanbhag</td>
       <td>Issue Handling</td>
       <td style="word-wrap: break-word; white-space: normal;">Manages the triage and resolution of quality control issues related to raw MRI data</td>
-      </tr>
+    </tr>
+    <tr>
+      <td>Josh Kuperman, PhD</td>
+      <td>MRI Phantom QC Lead</td>
+      <td style="word-wrap: break-word; white-space: normal;">Manages the acquisition, monitoring, and analysis of MRI phantom data across study sites to ensure scanner stability, calibration, and harmonization.</td>
+    </tr>
+    <tr>
+      <td>Rongguang Yang, PhD</td>
+      <td>FIONA Lead</td>
+      <td style="word-wrap: break-word; white-space: normal;">Leads the deployment and optimization of FIONA for transfer of imaging data from acquisition sites to the central data core.</td>
+    </tr>
+    <tr>
+      <td>Asef-Joseph Baligh</td>
+      <td>REDCap Server Admin</td>
+      <td style="word-wrap: break-word; white-space: normal;">Maintains and secures the REDCap server infrastructure</td>
+    </tr>
+    <tr>
+      <td>Erika Bolden</td>
+      <td>REDCap Form Developer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Develop, configure, and support REDCap instruments and workflows for structured data collection</td>
+    </tr>
+    <tr>
+      <td>Laura Ziemer</td>
+      <td>REDCap Form Developer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Develop, configure, and support REDCap instruments and workflows for structured data collection</td>
+    </tr>
+    <tr>
+      <td>Biplabendu Das</td>
+      <td>Dashboard Backend Developer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Designs and maintains the QC and data dashboards, enabling dynamic visualization, reporting, and data access across platforms.</td>
+    </tr>
+    <tr>
+      <td>Olivier Celhay</td>
+      <td>Dashboard Frontend Developer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Builds and maintains user-facing interfaces for data dashboards, enhancing usability and responsiveness for QC tracking, metrics visualization</td>
+    </tr>
 </tbody>
 </table>
 </div>

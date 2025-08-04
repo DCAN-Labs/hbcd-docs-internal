@@ -4,39 +4,42 @@ config:
 ---
 flowchart TB
     A["<b>Anders Dale, PhD</b><br>PI / Director"] --- QC["<b>QUALITY CONTROL</b>"] & Systems["<b>DATA SYSTEMS</b>"]
-    QC --- n2(["<b>Raw MRI Quality Control</b>"]) & n3(["<b>MRI Phantom QC</b>"])
-    n2 --- n9["<b>Donald Hagler, PhD</b><br>Raw MRI QC Lead
+    QC --- n3(["<b>MRI Phantom QC</b>"]) & n16@{ label: "<span style=\"--tw-scale-x:\"><b>Donald Hagler, PhD</b></span><br style=\"--tw-scale-x:\"><span style=\"background-color:\">Raw MRI QC Lead</span>" }
+    n2(["<b>Raw MRI Quality Control</b>"]) --- n9["<b>Donald Hagler, PhD</b><br>Raw MRI QC Lead
     -------------
     <b>Tyler Berkness</b><br>Protocol Violations
     -------
     <b>Sejal Shanbhag</b><br>Issue Handling"]
-    n3 --- n10["<b>Josh Kuperman</b><br>MRI Phantom QC Lead"]
-    Systems --- z["<a href="../orgcharts/#fiona" target="_top"><b>FIONA</b></a>"]
-    Systems --- n6["<a href="../orgcharts/#redcap" target="_top"><b>REDCap</b></a> & <a href="../orgcharts/#deap"><b>DEAP</b></a>"]
-    z --- n8["<b>Rongguang Yang, PhD</b><br>FIONA Lead"]
-    n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>Team Lead
-    -------------
-    <b>Asef-Joseph Baligh</b><br>REDCap Server 
-    -------
-    <b>Erika Bolden<br>Laura Ziemer</b><br>REDCap Dev/Admin
-    -------
-    <b>Biplabendu Das</b><br>Dashboard Backend
+    Systems --- n12@{ label: "<span style=\"--tw-scale-x:\"><b>Janosch Linkersdörfer, PhD<br></b>Team Lead</span>" } & n8["<b>Rongguang Yang, PhD</b><br>FIONA Lead"]
+    n6@{ label: "<a href=\"../orgcharts/#redcap\" target=\"_top\"><b>REDCap</b></a>" } --- n4["<b>Asef-Joseph Baligh</b><br>Server Admin<br>-------<br><b>Erika Bolden<br>Laura Ziemer</b><br>Form Developers"]
+    n12 --- n6 & n13(["<b>QC Dashboard</b>"])
+    n8 --- z@{ label: "<a href=\"../orgcharts/#fiona\" target=\"_top\"><b>FIONA</b></a>" }
+    n13 --- n15["<b>Biplabendu Das</b><br>Dashboard Backend
     -------
     <b>Olivier Celhay</b><br>Dashboard Frontend"]
+    n16 --- n2
+    n3 --- n10["<b>Josh Kuperman, PhD</b><br>MRI Phantom<br>QC Lead"]
     n11["<b>Anders Dale, PhD</b><br>HDCC Co-Director"]
     A@{ shape: anchor}
-    z@{ shape: stadium}
+    n16@{ shape: rect}
+    n12@{ shape: rect}
     n6@{ shape: stadium}
+    z@{ shape: stadium}
+    n15@{ shape: rect}
     n11@{ shape: rect}
     style A fill:#BBDEFB,stroke:#2962FF
     style QC fill:#FFFFFF,stroke:#AA00FF,stroke-dasharray: 5 5
     style Systems fill:#ffffff,stroke:#AA00FF,stroke-dasharray: 5 5
-    style n2 fill:#E1BEE7,stroke:#AA00FF
     style n3 fill:#E1BEE7,stroke:#AA00FF
+    style n16 fill:#C8E6C9,stroke:#00C853
+    style n2 fill:#E1BEE7,stroke:#AA00FF
     style n9 fill:#BBDEFB,stroke:#2962FF
-    style n10 fill:#BBDEFB,stroke:#2962FF
-    style z fill:#E1BEE7,stroke:#AA00FF
+    style n12 fill:#C8E6C9,stroke:#00C853
+    style n8 fill:#C8E6C9,stroke:#00C853
     style n6 fill:#E1BEE7,stroke:#AA00FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
     style n4 fill:#BBDEFB,stroke:#2962FF
+    style n13 fill:#E1BEE7,stroke:#AA00FF
+    style z fill:#E1BEE7,stroke:#AA00FF
+    style n15 fill:#BBDEFB,stroke:#2962FF
+    style n10 fill:#BBDEFB,stroke:#2962FF
     style n11 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
