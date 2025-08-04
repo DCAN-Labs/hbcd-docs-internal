@@ -13,7 +13,7 @@ flowchart TB
     <b>Sejal Shanbhag</b><br>Issue Handling"]
     Systems --- n12@{ label: "<span style=\"--tw-scale-x:\"><b>Janosch Linkersdörfer, PhD<br></b>Team Lead</span>" } & n8["<b>Rongguang Yang, PhD</b><br>FIONA Lead"]
     n6@{ label: "<a href=\"../orgcharts/#redcap\" target=\"_top\"><b>REDCap</b></a>" } --- n4["<b>Asef-Joseph Baligh</b><br>Server Admin<br>-------<br><b>Erika Bolden<br>Laura Ziemer</b><br>Form Developers"]
-    n12 --- n6 & n13(["<b>QC Dashboard</b>"])
+    n12 --- n6 & n13(["<b>QC Dashboard</b>"]) & D@{ label: "<a href=\"../orgcharts/#deap\" target=\"_top\"><b>DEAP</b></a>" }
     n8 --- z@{ label: "<a href=\"../orgcharts/#fiona\" target=\"_top\"><b>FIONA</b></a>" }
     n13 --- n15["<b>Biplabendu Das</b><br>Dashboard Backend
     -------
@@ -24,6 +24,7 @@ flowchart TB
     n16@{ shape: rect}
     n12@{ shape: rect}
     n6@{ shape: stadium}
+    D@{ shape: stadium}
     z@{ shape: stadium}
     n15@{ shape: rect}
     n11@{ shape: rect}
@@ -40,6 +41,7 @@ flowchart TB
     style n6 fill:#E1BEE7,stroke:#AA00FF
     style n4 fill:#BBDEFB,stroke:#2962FF
     style n13 fill:#E1BEE7,stroke:#AA00FF
+    style D fill:#E1BEE7,stroke:#AA00FF
     style z fill:#E1BEE7,stroke:#AA00FF
     style n15 fill:#BBDEFB,stroke:#2962FF
     style n11 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
