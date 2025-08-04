@@ -29,8 +29,8 @@ flowchart LR
         n26["<b>De-ID<br></b><code><i>S3:main-deid/</i></code>"]
   end
  subgraph s5["<b>Release Staging for Lasso</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a>"]
-        n27["<b>Staging</b><br><code><i>S3:lasso-staging/</i></code>"]
-        n28@{ label: "<b>Prerelease<br></b><code><i><span style=\"background-color:\">S3:</span>lasso-prerelease/</i></code>" }
+        n27["<b>Staging</b><br><code><i>S3:lasso-<br>staging/</i></code>"]
+        n28@{ label: "<b>Prerelease<br></b><code><i><span style=\"background-color:\">S3:</span>lasso-<br>prerelease/</i></code>" }
   end
  subgraph s6["<b>NOTE</b>"]
         legend@{ label: "<b>'S3:'</b> indicates the<br>prefix <span style=\"background-color:lightblue;\">s3://midb-hbcd-<br></span>for S3 bucket names" }
@@ -48,7 +48,7 @@ flowchart LR
     n25 --> n26
     n27 --> n28
     n26 --> n27
-    n29["<b>De-ID List<br></b><code><i>S3:main-pr-deidentification-list/</i></code>"] --> n25
+    n29["<b>De-ID List<br></b><code><i>S3:main-pr-deidentification-<br>list/</i></code>"] --> n25
     n28 --> n30@{ label: "<a href=\"../../orgcharts/#lasso\" rel=\"noopener\" target=\"_blank\"><b>LASSO</a><br>INGESTION</b>" }
     n13@{ shape: lean-r}
     n14@{ shape: lean-r}
@@ -63,7 +63,7 @@ flowchart LR
     n23@{ shape: disk}
     n25@{ shape: rect}
     n26@{ shape: disk}
-    n27@{ shape: db}
+    n27@{ shape: disk}
     n28@{ shape: disk}
     legend@{ shape: text}
     n29@{ shape: disk}
