@@ -480,9 +480,9 @@ Ripple is a data-driven innovative web-based technology that allows groups to co
 
 
 ### J. Craig Venter Institute 
-The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for [raw MRI data quality control](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc) and acquisition QC via MRI phantom data. In addition, JCVI oversees [FIONA](#fiona) deployment as well as [REDCap](#redcap), [DEAP](#deap), and the QC Dashboard.
+The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for [raw MRI data quality control](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc) and acquisition QC via MRI phantom data. In addition, JCVI oversees [FIONA](#fiona) deployment as well as [REDCap](#redcap), [DEAP](#deap), and the RBA Dashboards.
 
-<p><object type="image/svg+xml" data="jcvi-alt.svg" width="90%"></object></p>
+<p><object type="image/svg+xml" data="jcvi.svg" width="90%"></object></p>
 
 <div id="jcvi-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -556,12 +556,12 @@ The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for
     </tr>
     <tr>
       <td>Biplabendu Das</td>
-      <td>Dashboard Backend Developer</td>
+      <td style="word-wrap: break-word; white-space: normal;">RBA Dashboard Backend Developer</td>
       <td style="word-wrap: break-word; white-space: normal;">Designs and maintains the QC and data dashboards, enabling dynamic visualization, reporting, and data access across platforms.</td>
     </tr>
     <tr>
       <td>Olivier Celhay</td>
-      <td>Dashboard Frontend Developer</td>
+      <td style="word-wrap: break-word; white-space: normal;">RBA Dashboard Frontend Developer</td>
       <td style="word-wrap: break-word; white-space: normal;">Builds and maintains user-facing interfaces for data dashboards, enhancing usability and responsiveness for QC tracking, metrics visualization</td>
     </tr>
 </tbody>
