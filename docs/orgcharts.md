@@ -480,7 +480,7 @@ Ripple is a data-driven innovative web-based technology that allows groups to co
 
 
 ### J. Craig Venter Institute 
-The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for [raw MRI data quality control](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc) and acquisition QC via MRI phantom data. In addition, JCVI oversees [FIONA](#fiona) deployment as well as [REDCap](#redcap), [DEAP](#deap), and the RBA Dashboards.
+The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for [raw MRI data quality control](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc) and acquisition QC via MRI phantom data. In addition, JCVI oversees [FIONA](#fiona) deployment as well as [REDCap](#redcap), [DEAP](#deap), and the <span class="tooltip">RBA<span class="tooltiptext">results-based accountability</span></span> Dashboards.
 
 <p><object type="image/svg+xml" data="jcvi.svg" width="90%"></object></p>
 
