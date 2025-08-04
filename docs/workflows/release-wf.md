@@ -22,7 +22,7 @@ This document outlines the staged workflow for selecting, releasing, and validat
     </span>
 </div>
 
-<img src="../images/timeline.svg" alt="Tableau" width="100%" height="auto" class="center">
+<p><object type="image/svg+xml" data="../images/timeline.svg" width="100%"></object></p>
 
 ## Stages of the Release Workflow
 
@@ -219,6 +219,18 @@ If further QC action-items are found in the second-to-last BR during the one-on-
 When the final BR prior to public release is loaded into Lasso, Jen schedules one-on-one sign-off meetings with the remaining WGs/SMEs who were awaiting corrections to their data prior to sign off. During these meetings, Jen reviews the list of items that were identified in the last round of QC with the WGs/SMEs to ensure the correction is implemented as expected in the Lasso; the WGs/SMEs then sign off on their measures via the same google form above. 
 
 In the event that data issues remain, or new issues are identified in QC of the final BR during the one-on-one sign-off meetings, Jen collaborates with the WGs/SMEs and Luci Moore to document these as ‘Known Issues’ for the Data Release Documentation site. Jen reports the known issues on the HDCC centralized Monday Board so they can be prioritized for the Patch Release.
+
+## Patch Releases
+
+Patch releases occur only to address “Known Issues” in the current public data release; they are not intended for releasing additional sessions/visits, protocol elements, or participants. Known issues are either identified via the HDCC, WGs/SMEs, or the scientific community (users of the public release data via the Lasso ticketing system). Once they are identified and reported to HDCC, they are then placed on the centralized Monday Board for prioritization. 
+
+When known issues are addressed, HDCC sends samples of the corrected data to the respective WGs/SMEs for their confirmation. Once the data fixes are confirmed by SMEs, the corrected data elements are then ingested into the Lasso QC environment (where the BRs are QCed). Jen further QC’s the data in the Lasso environment to ensure all fixes are implemented appropriately and schedules one-on-one sign-off meetings with each WG with a measure in the patch release. 
+
+During these sign off meetings, the following is covered:
+
+1. The WG confirmation the data issues are addressed (in Lasso)  
+2. Jen confirmation the data issues are addressed (in Lasso)  
+3. WG sign-off (via google form) 
 
 ## Approved Updates to Future Releases
 
