@@ -20,11 +20,6 @@ config:
   layout: elk
 ---
 flowchart TB
- subgraph s1["<b>Subcontractors</b>"]
-        n35["<b>AirTable</b>"]
-        n36["<b>Ambra</b>"]
-        n37["<b>Ripple</b>"]
-    end
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<b>JCVI</b>"]
     jcvi --- jcviSC["<b>Subcontractors</b><br>DEAP<br>FIONA<br>REDCap"]
     E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
@@ -90,6 +85,95 @@ flowchart TB
     click n11 "#columbia-university"
     click jcviSC "#subcontractor-details_1"
     click washuSC "#subcontractor-details"
+```
+
+### ALT
+
+<div id="fyi" class="notification-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+    <span class="text"><b>NOTE:</b> These org charts emphasize functional structure within the context of HDCC, not reporting line details of individual organizations.</span>
+</div>
+<br>
+
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+ subgraph s1["<b>Subcontractors</b>"]
+        n35["<b>AirTable</b>"]
+        n36["<b>Ambra</b>"]
+        n37["<b>Ripple</b>"]
+    end
+  subgraph s2["<b>Subcontractors</b>"]
+        n38["<b>DEAP</b>"]
+        n39["<b>FIONA</b>"]
+        n40["<b>REDCap</b>"]
+    end
+    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<b>JCVI</b>"]
+    jcvi --- s2
+    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
+    lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO"]
+    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<b>WashU</b>"] & n12["<b>LIBR</b>"] & lasso
+    n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
+    n12 --- n16
+    n8 --- n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc Dir"]
+    n7 --- n20["<b>Alan Evans</b>, PI<br><b>Samir Das</b><br><a href="https://mcin.ca/about-mcin/" target="_blank">MCIN</a> Assoc Dir"]
+    umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
+    n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
+    n11 --- n18["<b>William P. Fifer, PhD</b><br>Novel Tech &<br>Wearables Co-Chair"]
+    n18 --- n34["<b>Nicolo Pini</b>"]
+    reed --- n30["<b>Maren Macgregor-Hannah</b><br>Program Manager"]
+    n30 --- n25["<b>MIDB Informatics</b>"]
+    n30 --- n27["<b>HST</b>"]
+    n30 --- n28["<b>CDNI</b>"]
+    n30 --- n29["<b>MIDB Analytics</b>"]
+    n27 --- n31["<b>Karen Athy-Penrose</b><br>Project Manager"]
+    n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
+    n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
+    n32 --> s1
+    style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
+    style jcvi fill:#E1BEE7,stroke:#AA00FF
+    style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
+    style lasso fill:#E1BEE7,stroke:#AA00FF
+    style umn fill:#E1BEE7,stroke:#AA00FF
+    style n7 fill:#E1BEE7,stroke:#AA00FF
+    style n8 fill:#E1BEE7,stroke:#AA00FF
+    style n11 fill:#E1BEE7,stroke:#AA00FF
+    style lasso1 fill:#BBDEFB,stroke:#2962FF
+    style n1 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
+    style n10 fill:#E1BEE7,stroke:#AA00FF
+    style n12 fill:#E1BEE7,stroke:#AA00FF
+    style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
+    style n17 fill:#BBDEFB,stroke:#2962FF
+    style n19 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
+    style n20 fill:#BBDEFB,stroke:#2962FF
+    style reed fill:#BBDEFB,stroke:#2962FF
+    style n22 fill:#BBDEFB,stroke:#2962FF
+    style n18 fill:#BBDEFB,stroke:#2962FF
+    style n25 fill:#E1BEE7,stroke:#AA00FF
+    style n27 fill:#E1BEE7,stroke:#AA00FF
+    style n28 fill:#E1BEE7,stroke:#AA00FF
+    style n29 fill:#E1BEE7,stroke:#AA00FF
+    style n30 fill:#C8E6C9,stroke:#00C853
+    style n31 fill:#C8E6C9,stroke:#00C853
+    style n32 fill:#C8E6C9,stroke:#00C853
+    style n33 fill:#C8E6C9,stroke:#00C853
+    style n34 fill:#C8E6C9,stroke:#00C853
+    click jcvi "#j-craig-venter-institute"
+    click lasso "#lasso"
+    click umn "#university-of-minnesota"
+    click n7 "#loris"
+    click n8 "#university-of-maryland"
+    click n10 "#washu"
+    click n25 "#midb-informatics-hub-msi"
+    click n29 "#midb-analytics-hub"
+    click n27 "#health-sciences-technology"
+    click n28 "#center-for-developmental-neuroimaging"
+    click n12 "#libr"
+    click n11 "#columbia-university"
+    click jcviSC "#subcontractor-details_1"
 ```
 
 ### University of Minnesota
