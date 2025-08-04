@@ -6,27 +6,27 @@ config:
 ---
 flowchart LR
  subgraph Sites_Capture["<b>Sites Capture</b><br><a href=../../orgcharts/#fiona rel=noopener target=_blank><b>FIONA</b></a>"]
-        FIONA_KSI[/"DCM"/]
-        LORIS_ACM[/"MRS"/]
-        n15[/"K-Space"/]
+        FIONA_KSI[/"<b>DCM</b>"/]
+        LORIS_ACM[/"<b>MRS</b>"/]
+        n15[/"<b>K-Space</b>"/]
   end
  subgraph Capture_JCVI["<b>Capture &amp; BIDS Conversion<br></b><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank><b>UMN MSI</b></a>"]
-        UMN@{ label: "UMN SCE<br>(<a href=\"../../orgcharts/#health-sciences-technology\" rel=\"noopener\" target=\"_blank\">HST</a>)" }
+        UMN@{ label: "<b>UMN SCE</b> (<a href=\"../../orgcharts/#health-sciences-technology\" rel=\"noopener\" target=\"_blank\">HST</a>)" }
         JCVI["Convert to BIDS"]
         n1@{ label: "<span style=\"color:\"><b>MRS BIDS<br></b></span><i style=\"--tw-scale-x:\"><code style=\"--tw-scale-x:\">S3:main-pr-mrs/</code></i><span style=\"color:\"></span>" }
   end
  subgraph Capture_HST["<b>Capture &amp; BIDS Conversion<br></b><a href=../../orgcharts/#health-sciences-technology rel=noopener target=_blank><b>UMN HST</b></a>"]
         n6["HBCD<br>Central"]
         n9["QC Raw<br>MRI"]
-        n10["<b>JCVI DICOMs<br></b><i><code>S3:ucsd-main-<br>pr-dicoms/</code></i>"]
+        n10["<b>JCVI<br>DICOMs<br></b><i><code>S3:ucsd-main-<br>pr-dicoms/</code></i>"]
         n11["Convert<br>to BIDS"]
   end
  subgraph Capture_LORIS["<b>Sites Capture</b><br><a href=../../orgcharts/#loris rel=noopener target=_blank><b>LORIS</b></a>"]
-        n12[/"EEG BIDSWizard"/]
-        n13[/"Axivity"/]
-        n14[/"GABI"/]
+        n12[/"<b>EEG BIDSWizard</b>"/]
+        n13[/"<b>Axivity</b>"/]
+        n14[/"<b>GABI</b>"/]
   end
- subgraph s1["<b style=white-space:>De-Identification<br></b><span style=white-space:>Run daily to replace any DCCIDs/PSCIDs/Site IDs with anonymized IDs</span>"]
+ subgraph s1["<b style=white-space:>De-Identification</br></b><span style=white-space:>Run daily to replace DCCIDs/PSCIDs/Site IDs with anonymized IDs</span>"]
         n17["<b>De-ID</b>"]
         n18@{ label: "<b><span style=\"text-wrap-mode:\">De-ID</span><br style=\"text-wrap-mode:\"></b><i style=\"--tw-scale-x:\"><code style=\"--tw-scale-x:\">S3:main-deid/<br>assembly_bids/</code></i>" }
   end
@@ -49,8 +49,8 @@ flowchart LR
     n16@{ label: "<span style=\"color:\">LORIS updates to<br></span><i style=\"--tw-scale-x:\"><code style=\"--tw-scale-x:\">S3:main-pr/assembly_bids/<br></code></i><span style=\"color:\">metadata and formatting based on identified issues. Includes changes from QC/DICOMs sent from JCVI.</span>" } --> RAW_BIDS
     RAW_BIDS --> n17
     n17 --> n18
-    n19["<b>De-ID Lists</b><br><code><i>S3:main-pr-deidentification-list/</i></code>"] --> n17
-    n18 --> n20["<b>CBRAIN<br>PROCESSING</b><br><a href="../data-proc-wf/#cbrain-processing-re-identification-lasso-ingestion" target="_top"<i>SEE NEXT STEPS</i></a>"]
+    n19["<b>De-ID Lists</b><br><code><i>S3:main-pr-deidentification-<br>list/</i></code>"] --> n17
+    n18 --> n20@{ label: "<b>CBRAIN<br>PROCESSING</b><br><a href=\"../data-proc-wf/#cbrain-processing-re-identification-lasso-ingestion\" target=\"_top\"><i>SEE NEXT STEPS</i></a>" }
     UMN@{ shape: db}
     JCVI@{ shape: rect}
     n1@{ shape: disk}
