@@ -101,9 +101,9 @@ The University of Minnesota (UMN) houses several core HDCC teams. Please click o
 
 #### Center for Developmental NeuroImaging
    
-The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: development of MRI acquisition procedures; quality control for processed MRI data; MRI data processing consultation; support for MRI pipeline development; coordination of processing pipeline standardization ([see details](https://docs.hbcdstudy.org/latest/instruments/processing/standards/)); and development and maintenance of external and internal HDCC release documentation (e.g. [HBCD Data Release Docs](https://docs.hbcdstudy.org/latest/)).
+The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: development of MRI acquisition procedures; quality control for processed MRI data; MRI data processing consultation; support for MRI pipeline development; coordination of processing pipeline standardization ([see details](https://docs.hbcdstudy.org/latest/instruments/processing/standards/)); and development and maintenance of HDCC release documentation (including the [HBCD Data Release Docs](https://docs.hbcdstudy.org/latest/)).
 
-<p><object type="image/svg+xml" data="cdni-OC.svg" width="70%"></object></p>
+<p><object type="image/svg+xml" data="cdni.svg" width="80%"></object></p>
 
 <div id="cdni-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -131,7 +131,7 @@ The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN
       </tr>
       <tr>
       <td>Kimberly Weldon, PhD</td>
-      <td>Siemens Engineer</td>
+      <td>MR Specialist (Siemens)</td>
       <td style="word-wrap: break-word; white-space: normal;">Supports MRI acquisition through scanner calibration, sequence optimization, and technical troubleshooting, ensuring harmonized imaging protocols across Siemens scanners and sites.</td>
       </tr>
       <tr>
