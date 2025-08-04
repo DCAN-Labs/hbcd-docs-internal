@@ -20,6 +20,11 @@ config:
   layout: elk
 ---
 flowchart TB
+ subgraph s1["<b>Subcontractors</b>"]
+        n35["<b>AirTable</b>"]
+        n36["<b>Ambra</b>"]
+        n37["<b>Ripple</b>"]
+    end
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<b>JCVI</b>"]
     jcvi --- jcviSC["<b>Subcontractors</b><br>DEAP<br>FIONA<br>REDCap"]
     E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
@@ -42,6 +47,7 @@ flowchart TB
     n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
     n32 --- washuSC["<b>Subcontractors</b><br>AirTable<br>AMBRA<br>Ripple"]
     n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
+    n32 --> s1
     style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style jcvi fill:#E1BEE7,stroke:#AA00FF
     style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
