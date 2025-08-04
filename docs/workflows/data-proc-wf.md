@@ -255,20 +255,6 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 
 <small><b>NOTE</b>: <i>Currently, for release staging, the data is first copied to a separate staging bucket prior to being copied to the Lasso Prerelease bucket, but will soon be cut out to transfer directly to the Lasso Prerelease bucket as displayed in the diagram.</i></small>
 
-<div id="og-wf-fb" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text">Original WF Diagram</span>
-  <a class="anchor-link" href="#og-wf-fb" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<i>Note: Select <span class="blue-text">ⓘ <i>Click for Details</i></span> for a given step to be linked to the relevant section on this page with additional details.</i>
-<object type="image/svg+xml" data="../images/fb-proc-wf2.svg" width="100%"></object>
-</div>
-
 <table class="compact-table">
 <b><i>S3 Bucket Key</i></b>
     <thead>
