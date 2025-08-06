@@ -341,23 +341,28 @@ The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://
     </tr>
     <tr>
     <td>Jesse Erdmann</td>
-    <td>Systems Operations</td>
+    <td>DevOps Manager & Architect</td>
     <td style="word-wrap: break-word; white-space: normal;">Advanced System Operations (ASO) oversight: Oversees the performance, reliability, and security of the MSI computational systems and infrastructure, for integration and support for Loris, large-scale data processing, and analysis workflows.</td>
+    </tr>
+    <tr>
+      <td>Kimberleigh Breen</td>
+      <td>DevOps Engineer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Data engineering, continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
     </tr>
     <tr>
     <td>Sriharshitha Anuganti</td>
     <td>DevOps Engineer</td>
-    <td style="word-wrap: break-word; white-space: normal;">Continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
+    <td style="word-wrap: break-word; white-space: normal;">Data engineering, continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
     </tr>
         <tr>
     <td>Alyssa Oksa</td>
     <td>DevOps Engineer</td>
-    <td style="word-wrap: break-word; white-space: normal;">Continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
+    <td style="word-wrap: break-word; white-space: normal;">Data engineering, continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
     </tr>
     <tr>
     <td>Anders Skaar</td>
     <td>DevOps Engineer</td>
-    <td style="word-wrap: break-word; white-space: normal;">Continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
+    <td style="word-wrap: break-word; white-space: normal;">Data engineering, continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
     </tr>
     <tr>
     <td>Timothy Hendrickson</td>
@@ -371,13 +376,8 @@ The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://
     </tr>
     <tr>
     <td>Monalisa Biles</td>
-    <td>&nbsp;</td>
+    <td>Analyst</td>
     <td style="word-wrap: break-word; white-space: normal;">Analyst: Assistant to Pipeline lead for high throughput processing and incident response.</td>
-    </tr>
-    <tr>
-    <td>Kimberleigh Breen</td>
-    <td>Data Manager</td>
-    <td style="word-wrap: break-word; white-space: normal;">Data Manager: Responsible for designing and implementing data management plans with IG lead, storage, version control using DataLad.</td>
     </tr>
     <tr>
   <td>Borgne Raasch</td>

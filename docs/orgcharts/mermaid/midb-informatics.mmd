@@ -3,12 +3,8 @@ config:
   layout: elk
 ---
 flowchart TB
-    L["<b>Maren Macgregor-Hannah</b><br>HDCC Program Manager"] --- N(["<b>Advanced System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) & n8(["<b>Security &amp; Compliance</b>"])
-    N --- Q["<b>Jesse Erdmann</b><br>Senior SysOps
-    ----------
-    <b>Kimberleigh Breen</b><br>Data Manager
-    ----------
-    <b>Sriharshitha Anuganti<br>Alyssa Oksa<br>Anders Skaar</b><br>DevOps"]
+    L["<b>Maren Macgregor-Hannah</b><br>HDCC Program Manager"] --- N(["<b>DevOps</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) & n8(["<b>Security &amp; Compliance</b>"])
+    N --- Q@{ label: "<b>Jesse Erdmann</b><br><span style=\"color:\">DevOps Manager &amp; Architect<br></span>----------<br><b>Kimberleigh Breen<br></b><b>Sriharshitha Anuganti<br>Alyssa Oksa<br>Anders Skaar</b><br>DevOps" }
     O --- n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead
     ----------
     <b>Erik Lee</b><br>Pipeline Lead
@@ -21,6 +17,7 @@ flowchart TB
     n10["<b>Thomas Pengo, PhD</b><br>Co-Director, Informatics"]
     n11["<b>Maren Macgregor-Hannah</b><br>HDCC Program Manager"]
     L@{ shape: anchor}
+    Q@{ shape: rect}
     n11@{ shape: rect}
     style L fill:#C8E6C9,stroke:#00C853
     style N fill:#E1BEE7,stroke:#AA00FF
