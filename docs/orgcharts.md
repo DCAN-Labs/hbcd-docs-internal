@@ -626,7 +626,7 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
       </tr>
       <tr>
       <td>Jen Zink</td>
-      <td style="word-wrap: break-word; white-space: normal;">Director, Partnerships &amp; Grants</td>
+      <td style="word-wrap: break-word; white-space: normal;">Director, Partnerships & Grants</td>
       <td style="word-wrap: break-word; white-space: normal;">Serves as the primary liaison between HBCD Working Groups (WGs) and the HDCC team, coordinating feedback, priorities, and cross-consortium communication. Plays a central role in developing standard operating procedures (SOPs) for QC workflows to ensure consistency, traceability, and transparency across releases. Primary SME for inbound HBCD tabulated data tickets from the user community.</td>
       </tr>
       <tr>
@@ -637,7 +637,7 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
       <tr>
       <td>Aarushi Chaudhry</td>
       <td style="word-wrap: break-word; white-space: normal;">Director, Customer Success</td>
-      <td style="word-wrap: break-word; white-space: normal;">Supports user enablement for the Lasso product suite within HDCC, providing clear documentation and training sessions for new features in Lasso Data Share, Lasso QC, and Lasso SAFE. Ensures users understand platform changes, offers tailored onboarding materials, and channels feedback from support interactions back to product teams.</td>
+      <td style="word-wrap: break-word; white-space: normal;">Supports user enablement for the Lasso product suite within HDCC, providing clear documentation and training sessions for new features in Lasso Data Share, Lasso QC, and Lasso SAFE. Ensures users understand platform changes, offers tailored onboarding materials, and channels feedback from support interactions back to product teams.</td> 
       </tr>
       <tr>
       <td>Marion Fechino</td>
@@ -647,7 +647,7 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
       <tr>
       <td>Laetitia Fesselier</td>
       <td style="word-wrap: break-word; white-space: normal;">Senior Lasso Developer</td>
-      <td style="word-wrap: break-word; white-space: normal;">Data Loading Lead: Oversees the full data ingestion lifecycle from ETL setup through schema validation. Leads the design and implementation of automated pipelines to ensure structural and semantic integrity of incoming datasets. Reviews and signs off on Lasso Data Loading Report Cards and Data Validation Report Cards prior to release. Coordinates across product and QC teams to integrate feedback into ETL improvements.</td>
+      <td style="word-wrap: break-word; white-space: normal;">Data Loading Lead: Oversees the full data ingestion lifecycle from ETL setup through schema validation. Leads the design and implementation of automated pipelines to ensure structural and semantic integrity of incoming datasets.<br>Reviews and signs off on Lasso Data Loading Report Cards and Data Validation Report Cards prior to release. Coordinates across product and QC teams to integrate feedback into ETL improvements.</td>
       </tr>
       <tr>
       <td>Mateus Andre</td>
