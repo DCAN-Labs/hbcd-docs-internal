@@ -290,7 +290,7 @@ The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) works in coord
         <td style="word-wrap: break-word; white-space: normal;">Developing the genomics pipelines, documentation, running the genomic data analysis</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Christian Coffman, MS</td>
+        <td style="word-wrap: break-word; white-space: normal;">Christian Coffman, PhD</td>
         <td style="word-wrap: break-word; white-space: normal;">Data Scientist & Analyst</td>
         <td style="word-wrap: break-word; white-space: normal;">Support for pipeline development, documentation, and genomic data analysis</td>
     </tr>
