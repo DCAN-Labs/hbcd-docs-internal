@@ -253,7 +253,7 @@ The Data security model ensures data security by focusing on two key components:
 #### MIDB Analytics Hub
 The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) works in coordination with the Biospecimens Workgroup to provide support for genomic data processing and analysis as part of the **HBCD Genomics Supplement**. 
 
-<p><object type="image/svg+xml" data="midb-analytics-oc.svg" width="70%"></object></p>
+<p><object type="image/svg+xml" data="midb-analytics.svg" width="70%"></object></p>
 
 <div id="midb-analytics-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -290,9 +290,14 @@ The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) works in coord
         <td style="word-wrap: break-word; white-space: normal;">Developing the genomics pipelines, documentation, running the genomic data analysis</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Christian Coffman</td>
+        <td style="word-wrap: break-word; white-space: normal;">Christian Coffman, MS</td>
         <td style="word-wrap: break-word; white-space: normal;">Data Scientist & Analyst</td>
         <td style="word-wrap: break-word; white-space: normal;">Support for pipeline development, documentation, and genomic data analysis</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Kody DeGolie, MS</td>
+        <td style="word-wrap: break-word; white-space: normal;">Research Associate</td>
+        <td style="word-wrap: break-word; white-space: normal;">Support for development, documentation, and analysis</td>
     </tr>
 </tbody>
 </table>

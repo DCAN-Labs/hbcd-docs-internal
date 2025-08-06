@@ -3,16 +3,21 @@ config:
   layout: elk
 ---
 flowchart TB
-    n3(["<b>Genomics</b>"]) --- G@{ label: "<span style=\"font-size: 80%\"><b>Michael Anderson, PhD</b><br>Genomics Data Scientist<br></span>" } & n5@{ label: "<span style=\"font-size: 80%\"><b>Christian Coffman</b><br>Data Scientist &amp; Analyst</span>" }
-    E@{ label: "<span style=\"font-size: 80%\"><b>Saonli Basu, PhD</b><br>Co-I, HBCD Genomics</span>" }
-    n4@{ label: "<span style=\"font-size: 80%\"><b>Annette Xenopoulos-Oddsson, MSc</b><br>Project Manager</span>" }
+    n3["<b>Genomics</b>"] --- G["<span><b>Michael Anderson, PhD</b><br>Genomics Data Scientist<br></span>"] & n5["<span><b>Christian Coffman, MS</b><br>Data Scientist &amp; Analyst</span>"] & n6["<span><b>Kody DeGolier, MS<br></b>Research Associate</span>"]
+    n7(["<b>Genomics</b>"]) --> G
+    E["<span><b>Saonli Basu, PhD</b><br>Co-I, HBCD Genomics</span>"]
+    n4["<span><b>Annette Xenopoulos-Oddsson, MSc</b><br>Project Manager</span>"]
+    n3@{ shape: anchor}
     G@{ shape: rect}
     n5@{ shape: rect}
+    n6@{ shape: rect}
     E@{ shape: rect}
     n4@{ shape: rect}
     style n3 fill:#E1BEE7,stroke:#AA00FF
     style G fill:#BBDEFB,stroke:#2962FF
     style n5 fill:#BBDEFB,stroke:#2962FF
+    style n6 fill:#BBDEFB,stroke:#2962FF
+    style n7 fill:#E1BEE7,stroke:#AA00FF
     style E fill:#BBDEFB,stroke:#2962FF
     style n4 fill:#C8E6C9,stroke:#00C853
-
+    linkStyle 3 stroke:none
