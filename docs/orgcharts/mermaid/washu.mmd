@@ -3,32 +3,36 @@ config:
   layout: elk
 ---
 flowchart TB
-    n5@{ label: "<a href=\"../orgcharts/#airtable\" target=\"_top\"><b>AirTable</b></a>" } --- n9["<b>Lynn Menchaca</b><br>AirTable Admin"]
-    ambra@{ label: "<a href=\"../orgcharts/#ambra\" target=\"_top\"><b>Ambra</b></a>" } --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br>----------<br><b>Dimitrios Alexopoulos</b><br>Data Manager"]
-    n15@{ label: "<a href=\"../orgcharts/#ripple\" target=\"_top\"><b>Ripple</b></a>" } --- n16["<b>Liliana Mueller</b><br>Ripple Admin<br>----------<br><b>Kevine Ngalula</b><br>Developer"]
-    n17["<b>Sauren Ravencroft</b><br>Project Manager"] --- n5 & ambra & n15
+    n5@{ label: "<a href=\"../orgcharts/#airtable\" target=\"_top\"><b>AirTable</b></a>" } --- n9["<b>Lynn Menchaca</b><br>AirTable Admin"] & n22["<b>Kevine Ngalula<br></b>Developer"]
+    n17["<b>Sauren Ravencroft</b><br>Project Manager"] --- n5 & n15@{ label: "<a href=\"../orgcharts/#ripple\" target=\"_top\"><b>Ripple</b></a>" } & n23@{ label: "<a href=\"https://www.mermaidchart.com/app/projects/4f81a1a6-5f43-40aa-9f44-d23b80ccefb3/diagrams/f1e11327-9b5e-4c64-9817-365959035667/version/orgcharts/#ambra\" style=\"--tw-scale-x:\" target=\"_top\"><span style=\"--tw-scale-x:\"><b>Ambra</b></span></a>" }
     n14["<b>Chad Sylvester, PhD</b>, Co-I"] --- n17 & n18["<b>Nicole Venteris</b><br>EMR Project Manager"]
-    n18 --- n19(["<b>EMR Data Core</b>"])
+    n15 --- n22 & n16["<b>Liliana Mueller</b><br>Ripple Admin<br>"]
+    n23 --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br>----------<br><b>Dimitrios Alexopoulos</b><br>Data Manager"]
+    n18 --- n24(["<b>EMR Data Core</b>"])
+    n24 --> n25@{ label: "<span style=\"color:\"><b>Albert Lai, PhD<br></b></span><span style=\"color:\"><b>Philip Payne, PhD<br></b>Co-Is</span><span style=\"color:\"><br></span>_______<br><span style=\"color:\"><b>Sherry Lassa-Claxton<br>Steve Austin</b></span><span style=\"color:\"></span>" }
     n20["<b>Chris Smyser, MD</b>, PI"]
     n21["<b>Chad Sylvester, PhD</b>, Co-I"]
     n5@{ shape: stadium}
-    ambra@{ shape: stadium}
-    n15@{ shape: stadium}
-    n16@{ shape: rect}
     n17@{ shape: rect}
+    n15@{ shape: stadium}
+    n23@{ shape: stadium}
     n14@{ shape: anchor}
     n18@{ shape: rect}
+    n16@{ shape: rect}
+    n25@{ shape: rect}
     n20@{ shape: rect}
     n21@{ shape: rect}
     style n5 fill:#E1BEE7,stroke:#AA00FF
     style n9 fill:#BBDEFB,stroke:#2962FF
-    style ambra fill:#E1BEE7,stroke:#AA00FF
-    style n1 fill:#BBDEFB,stroke:#2962FF
-    style n15 fill:#E1BEE7,stroke:#AA00FF
-    style n16 fill:#BBDEFB,stroke:#2962FF
+    style n22 fill:#BBDEFB,stroke:#2962FF
     style n17 fill:#C8E6C9,stroke:#00C853
+    style n15 fill:#E1BEE7,stroke:#AA00FF
+    style n23 fill:#E1BEE7,stroke:#AA00FF
     style n14 fill:#BBDEFB,stroke:#2962FF
     style n18 fill:#C8E6C9,stroke:#00C853
-    style n19 fill:#E1BEE7,stroke:#AA00FF
+    style n16 fill:#BBDEFB,stroke:#2962FF
+    style n1 fill:#BBDEFB,stroke:#2962FF
+    style n24 stroke:#AA00FF,fill:#E1BEE7
+    style n25 fill:#BBDEFB,stroke:#2962FF
     style n20 fill:#BBDEFB,stroke:#2962FF
     style n21 fill:#BBDEFB,stroke:#2962FF

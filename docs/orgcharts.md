@@ -430,14 +430,19 @@ Washington University in St. Louis (WashU) has oversight of: *Electronic Medical
     <td style="word-wrap: break-word; white-space: normal;">Coordinates implementation, integration, development, and maintenance of the AirTable and Ripple platforms</td>
     </tr>
     <tr>
+    <td>Lynne Menchaca</td>
+    <td>AirTable Admin</td>
+    <td style="word-wrap: break-word; white-space: normal;">Manages and configures AirTable databases to manage access controls and personnel across the study</td>
+    </tr>
+    <tr>
+    <td>Kevine Ngalula</td>
+    <td>Developer</td>
+    <td style="word-wrap: break-word; white-space: normal;">Supports customization and maintenance of Ripple and AirTable</td>
+    </tr>
+    <tr>
     <td>Lilliana Mueller</td>
     <td>Ripple Admin</td>
     <td style="word-wrap: break-word; white-space: normal;">Administers Ripple platform operations and coordinates communication on MRI feedback to sites</td>
-    </tr>
-    <tr>
-    <td>Nicole Venteris</td>
-    <td>EMR Project Manager</td>
-    <td style="word-wrap: break-word; white-space: normal;">Oversees development and implementation of workflows for integrating and managing structured EMR data across study sites</td>
     </tr>
     <tr>
     <td>Bob McKinstry</td>
@@ -455,14 +460,29 @@ Washington University in St. Louis (WashU) has oversight of: *Electronic Medical
     <td style="word-wrap: break-word; white-space: normal;">Manages Ambra workflows and consults on all MRI QC and processing workflows</td>
     </tr>
     <tr>
-    <td>Kevine Ngalula</td>
-    <td>Ripple Developer</td>
-    <td style="word-wrap: break-word; white-space: normal;">Supports customization and maintenance of Ripple</td>
+      <td>Nicole Venteris</td>
+      <td>EMR Project Manager</td>
+      <td style="word-wrap: break-word; white-space: normal;">Oversees development and implementation of workflows for integrating and managing structured EMR data across study sites</td>
     </tr>
     <tr>
-    <td>Lynne Menchaca</td>
-    <td>AirTable Admin</td>
-    <td style="word-wrap: break-word; white-space: normal;">Manages and configures AirTable databases to manage access controls and personnel across the study</td>
+      <td>Albert Lai, PhD</td>
+      <td>Co-Investigator</td>
+      <td style="word-wrap: break-word; white-space: normal;">EMR Data Core oversight</td>
+    </tr>
+    <tr>
+      <td>Philip Payne, PhD</td>
+      <td>Co-Investigator, EMR Data Core</td>
+      <td style="word-wrap: break-word; white-space: normal;">EMR Data Core oversight</td>
+    </tr>
+    <tr>
+      <td>Sherry Lassa-Claxton</td>
+      <td>EMR Data Core</td>
+      <td style="word-wrap: break-word; white-space: normal;">EMR Data Core support</td>
+    </tr>
+    <tr>
+      <td>Steve Austin</td>
+      <td>EMR Data Core</td>
+      <td style="word-wrap: break-word; white-space: normal;">EMR Data Core support</td>
     </tr>
 </tbody>
 </table>
