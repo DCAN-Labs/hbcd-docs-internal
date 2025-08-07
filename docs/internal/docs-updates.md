@@ -59,10 +59,11 @@ Each study instrument or measure has its own dedicated page on the [HBCD Data Re
 Workgroups can submit either updates to existing page or new page content (for instruments approved to be included in an upcoming release) like so:
 
 <table class="table-no-vertical-lines"> <tbody>
+<tr> <td><strong>New Instrument Pages</strong></td> <td style="word-wrap: break-word; white-space: normal;">Submit this Google Form: <a href="https://forms.gle/fgXTAkPhZbx2qjoH6">https://forms.gle/fgXTAkPhZbx2qjoH6</a></td> </tr>
 <tr>
     <td><strong>Updates to Existing Instrument Pages</strong></td>
-    <td style="word-wrap: break-word; white-space: normal;">Follow the instructions provided in the first tab of this <a href="https://docs.google.com/document/d/14Bbyr4kwqwM91AGKwi1_Im31e-mkZd1s6wWfCsHMMrA/edit?usp=sharing">centralized collaborative document</a></td> 
+    <td style="word-wrap: break-word; white-space: normal;">Follow the instructions provided in the first tab of this <a href="https://docs.google.com/document/d/14Bbyr4kwqwM91AGKwi1_Im31e-mkZd1s6wWfCsHMMrA/edit?usp=sharing">centralized collaborative document</a>. This includes instrument pages that are currently published on the main site (see <a href="https://docs.hbcdstudy.org/latest/instruments/#instruments-by-domain">Study Instruments</a>) as well as new instrument pages being constructed based on the google form submissions.</a></td> 
 </tr>
-<tr> <td><strong>New Instrument Pages</strong></td> <td style="word-wrap: break-word; white-space: normal;">Submit this Google Form: <a href="https://forms.gle/fgXTAkPhZbx2qjoH6">https://forms.gle/fgXTAkPhZbx2qjoH6</a></td> </tr> </tbody> </table>
+</tbody> </table>
 
 
