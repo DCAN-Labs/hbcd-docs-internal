@@ -73,24 +73,25 @@ The `domain` and `source` are included in the JSON metadata and are typically de
 
 ## Known Issues 
 
-Below is a running list of variables that need to be updated to conform to the naming standards. Note that variable names are fairly internally consistent within tables (as they are often dictated by the conventions of the source platform), so the issues and examples below will generally apply to all of the variable names within a given instrument.
-
-### Summary
-
-There appear to be 2 main naming conventions in the Release 1.0 data:
-
-Type 1 = `domain_source_table_item` - matches [ABCD naming conventions](https://docs.abcdstudy.org/latest/documentation/curation/naming.html)       
-Type 2 = `domain_source_table_scale_item` - seems to follow existing, but potentially out-of-date, [REDCap standardization documentation](https://docs.google.com/document/d/1_xj8TPDRmb5-fQAQ3KZW87yzft-bA5Kt8HLNwMwm_MA/edit?tab=t.0#heading=h.6j8c7yy6p6t4)
-
-A rough estimate from a simple parsing script shows the majority of variables currently follow Type 2 convention:       
-Type 1 - 965 variables           
-Type 2 - 3531 variables
+Below is a running list of variables that need to be updated to conform to naming conventions aligned with ABCD (see outline of current naming standards [here](https://docs.hbcdstudy.org/latest/access/metadata/#naming-conventions)). Note that variable names are fairly internally consistent within tables (as they are often dictated by the conventions of the source platform), so the issues and examples below will generally apply to all of the variable names within a given instrument (which should make implementing changes towards standardization a more straightforward process). 
 
 See [this spreadsheet](https://docs.google.com/spreadsheets/d/1AM7BJiKpZIDdcCFdkZnFg4jr6ZN48ZPtbFMevfNrPWo/edit?usp=sharing) for additional notes and details.
 
-#### Issue 1: Scale should be a subcomponent of table
+### Issue 1: Scale should be a subcomponent of table
 
-Scale is currently its own main component. This makes the number of naming components across variables inconsistent because not all variables have scales, and is also inconsistent with ABCD conventions, which use double underscores to make scale a subcomponent of the table component. 
+As described [here](https://docs.hbcdstudy.org/latest/access/metadata/#naming-conventions), `scale` is currently included in the Release 1.0 variables as a main naming component (separated by single underscores): 
+
+<p style="font-size: 1.2em; font-weight: bold; padding: 10px;" align="center">
+<code>domain_source_table_<span style="color: teal;">{scale}</span>_item</code>
+</p>
+
+This perhaps follows this [REDCap standardization documentation](https://docs.google.com/document/d/1_xj8TPDRmb5-fQAQ3KZW87yzft-bA5Kt8HLNwMwm_MA/edit?tab=t.0#heading=h.6j8c7yy6p6t4). However, it makes the number of naming components across variables inconsistent (i.e. a mixture of 4 or 5), because not all variables have scales. It is also inconsistent with [ABCD naming conventions](https://docs.abcdstudy.org/latest/documentation/curation/naming.html), which uses double underscores to make `scale` a subcomponent of `table`, resulting in 4 consistent main components across variables:
+
+<p style="font-size: 1.2em; font-weight: bold; padding: 10px;" align="center">
+<code>domain_source_table_item</code>
+</p>
+
+A rough estimate from a simple parsing script shows the majority of variables in R1.0 currently follow the convention that includes `scale` as a main component (3531 vs. 965). Below are impacted instruments with examples variables and fixes:
 
 <table class="compact-table">
 <thead>
@@ -169,8 +170,11 @@ Scale is currently its own main component. This makes the number of naming compo
 </tbody>
 </table>
 
+<br>
 
-#### Issue 2: Scale should be a subcomponent of table (*Issue 1*) + Add double underscores for item components
+### Issue 2: Scale should be a subcomponent of table (*Issue 1*) + Add double underscores for item components
+
+The following are table variables that have `scale` as a separate main component and also require additional double underscores in order to nest the item subcomponents:
 
 <table class="compact-table">
 <thead>
@@ -185,7 +189,7 @@ Scale is currently its own main component. This makes the number of naming compo
 <tbody>
 <tr>
 <td>NT</td>
-<td>Infant Questionaire</td>
+<td>Infant Questionnaire</td>
 <td>nt_ch_sens__qtn_1</td>
 <td>nt_ch_sens__qtn_1_beh_002</td>
 <td>__1__</td>
@@ -228,6 +232,8 @@ Scale is currently its own main component. This makes the number of naming compo
 </tbody>
 </table>
 
-#### Issue 3: Admin and summary score variables - Replace frequent single underscores 
+<br>
+
+### Issue 3: Admin and summary score variables - Replace frequent single underscores 
 
 Admin and summary score variables often have single underscores that should be replaced by double underscores, e.g., `date_taken`, `candidate_age`, `gestational_age`, `adjusted_age`, `summary_score`, `total_score`, etc. See [HBCD Docs](https://docs.hbcdstudy.org/latest/access/metadata/#administrative-summary-score-variables) for additional details.
