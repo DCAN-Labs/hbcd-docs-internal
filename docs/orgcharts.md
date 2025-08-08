@@ -397,7 +397,7 @@ The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://
 ### WashU    
 Washington University in St. Louis (WashU) has oversight of: *Electronic Medical Records (EMR)*, *[Ambra](#ambra)*, *[AirTable](#airtable)*, *[Ripple](#ripple)*,  and *HBCD Study Administrative Core (HCAC) coordination*.
 
-<p><object type="image/svg+xml" data="washu.svg" width="80%"></object></p>
+<p><object type="image/svg+xml" data="washu.svg" width="100%"></object></p>
 
 <p>
 <div id="washu-rr" class="table-banner" onclick="toggleCollapse(this)">
@@ -483,6 +483,26 @@ Washington University in St. Louis (WashU) has oversight of: *Electronic Medical
       <td>Steve Austin</td>
       <td>EMR Data Core</td>
       <td style="word-wrap: break-word; white-space: normal;">EMR Data Core support</td>
+    </tr>
+    <tr>
+      <td>Cat Camacho, PhD</td>
+      <td>fMRI Piloting Lead</td>
+      <td style="word-wrap: break-word; white-space: normal;">fMRI piloting lead</td>
+    </tr>
+    <tr>
+      <td>Shelby Kessler</td>
+      <td>Study Coordinator</td>
+      <td style="word-wrap: break-word; white-space: normal;">fMRI piloting study coordinator</td>
+    </tr>
+    <tr>
+      <td>Alyssa Weinrich</td>
+      <td>Data Collection</td>
+      <td style="word-wrap: break-word; white-space: normal;">fMRI piloting data collection</td>
+    </tr>
+    <tr>
+      <td>Mia Sawicki</td>
+      <td>Data Collection</td>
+      <td style="word-wrap: break-word; white-space: normal;">fMRI piloting data collection</td>
     </tr>
 </tbody>
 </table>
@@ -1054,7 +1074,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     </tr>
     <tr>
       <th scope="row">Functional</th>
-      <td>Tracy Riggins, Chad Sylvester</td>
+      <td>Jennifer Vannest, Chad Sylvester</td>
       <td>Michael Harms</td>
       <td>Allen Newton</td>
       <td>Doug Dean</td>
