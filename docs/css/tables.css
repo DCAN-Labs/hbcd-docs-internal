@@ -104,6 +104,27 @@ th, td {
   background-color: rgba(255, 255, 255, 0.6) !important;
 }
 
+/* Compact table with no vertical lines */
+.compact-table-no-vertical-lines {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+.compact-table-no-vertical-lines th,
+.compact-table-no-vertical-lines td {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: none !important;
+  border-right: none !important;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.6) !important; 
+  vertical-align: top;
+  padding: 0.1em 0.1em;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
 /* Special table with no vertical lines for core concepts on front page - set embedded link styling (a) to not underline text*/
 .overview-table-no-vertical-lines {
   border-collapse: collapse;

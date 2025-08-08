@@ -243,3 +243,544 @@ During these sign off meetings, the following is covered:
 ## Approved Updates to Future Releases
 
 See the approved updates to release 2.0 in the Release Notes on the HBCD Data Release Docs site: [Release 2.0 (Release Date TBA)](https://docs.hbcdstudy.org/latest/changelog/pending/#release-20-release-date-tba).
+
+## Responsibility Assignment Matrices
+
+Below we outline the individuals responsible for various stages of the release across data modalities via RACI matrices, which outline the following:
+
+<table class="compact-table-no-vertical-lines" style="margin: 0 auto;">
+<thead>
+  <tr>
+    <th></th>
+    <th>Meaning</th>
+    <th>Definition</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+<td><b>R</b></td><td>Responsible</td><td style="word-wrap: break-word; white-space: normal;">Individual doing a piece of the work to complete this task.</td>
+</tr>
+<tr><td><b>A</b></td><td>Accountable</td><td style="word-wrap: break-word; white-space: normal;">1 person only who is ultimately answerable for the correct and thorough completion of the deliverable or task.</td>
+</tr>
+<tr>
+<td><b>C</b></td><td>Consulted</td><td style="word-wrap: break-word; white-space: normal;">People who provide input or advice before the work is done.</td>
+</tr>
+<tr><td><b>I</b></td><td>Informed</td><td style="word-wrap: break-word; white-space: normal;">People who need to be kept updated on progress or decisions, but do not need to be consulted or perform tasks.</td>
+</tr>
+</tbody>
+</table>
+
+
+<div id="tab-raci" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> Tabulated Data</span>
+  <a class="anchor-link" href="#tab-raci" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table">
+<thead>
+  <tr>
+    <th>Study Stage</th>
+    <th>Step</th>
+    <th>Location</th>
+    <th>Responsible</th>
+    <th>Accountable</th>
+    <th>Consulted</th>
+    <th>Informed</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Set Up</td>
+<td style="word-wrap: break-word; white-space: normal;">Testing and Validation of questions &amp; scoring</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Collection</td>
+<td style="word-wrap: break-word; white-space: normal;">Transfer of data to LORIS</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC</td>
+<td style="word-wrap: break-word; white-space: normal;">Review of Dashboards and Completeness</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Santiago (LORIS), Jen Z (Lasso), Sauren (Ripple), Stephanie (HCAC)</td>
+<td style="word-wrap: break-word; white-space: normal;">WG Lead</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Conversion</td>
+<td style="word-wrap: break-word; white-space: normal;">Add missingness and shadow matrix</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Santiago</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Conversion</td>
+<td style="word-wrap: break-word; white-space: normal;">Re-ID</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Harshitha</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Ingestion/Transfer</td>
+<td style="word-wrap: break-word; white-space: normal;">Transfer release data to bucket for Lasso to pick up</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Maren</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Ingestion</td>
+<td style="word-wrap: break-word; white-space: normal;">Ingestion to Lasso</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Laetitia</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC</td>
+<td style="word-wrap: break-word; white-space: normal;">Review of data and corresponding shadow matrix</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Santiago (LORIS), Jen Z (Lasso), Sauren (Ripple), Stephanie (HCAC)</td>
+<td style="word-wrap: break-word; white-space: normal;">WG Lead</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Pre-Release</td>
+<td style="word-wrap: break-word; white-space: normal;">Sign Off on Release Candidate</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Jen Z, WG Lead</td>
+<td style="word-wrap: break-word; white-space: normal;">Damien</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<div id="img-raci" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> Imaging Data</span>
+  <a class="anchor-link" href="#img-raci" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table">
+<thead>
+  <tr>
+    <th>Study Stage</th>
+    <th>Step</th>
+    <th>Location</th>
+    <th>Responsible</th>
+    <th>Accountable</th>
+    <th>Consulted</th>
+    <th>Informed</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep</td>
+<td style="word-wrap: break-word; white-space: normal;">Determine Release Candidate and Process with Sign Off</td>
+<td style="word-wrap: break-word; white-space: normal;">WashU</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Chris Smyser</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Collection</td>
+<td style="word-wrap: break-word; white-space: normal;">Participant Source Data Acquisition: DCMs, eCRF population (MRI Acquisition Form)</td>
+<td style="word-wrap: break-word; white-space: normal;">FIONA &amp; LORIS</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies by site)</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">QC at Source Data Acquisition: eCRF populated properly, DCM header checks, naming convention checks</td>
+<td style="word-wrap: break-word; white-space: normal;">Fiona Box</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies by site)</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">QC at Source: Check acquisition/protocol adherence</td>
+<td style="word-wrap: break-word; white-space: normal;">JCVI</td>
+<td style="word-wrap: break-word; white-space: normal;">Josh Kuperman (MRI Phantom QC Lead)</td>
+<td style="word-wrap: break-word; white-space: normal;">Anders Dale</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">Transfer acquisition/protocol adherence (both DCM acquisition and MRI Acquisition Form) to DCC</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Process</td>
+<td style="word-wrap: break-word; white-space: normal;">Scan De-Identification send confirmation to DCC</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">Validate metadata, de-id, and scan completeness: send confirmation to DCC</td>
+<td style="word-wrap: break-word; white-space: normal;">FIONA</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Collection</td>
+<td style="word-wrap: break-word; white-space: normal;">Convert DICOMs to BIDS/NIfTI</td>
+<td style="word-wrap: break-word; white-space: normal;">UMN MSI</td>
+<td style="word-wrap: break-word; white-space: normal;">Cecile Madjar</td>
+<td style="word-wrap: break-word; white-space: normal;">Samir Das</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">QC of the DCM ot BIDs Conversion: Correct BIDS errors</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">Check for protocol deviations (based on BIDS)</td>
+<td style="word-wrap: break-word; white-space: normal;">JCVI</td>
+<td style="word-wrap: break-word; white-space: normal;">Don Hagler &amp; team</td>
+<td style="word-wrap: break-word; white-space: normal;">Anders Dale</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Injestoin</td>
+<td style="word-wrap: break-word; white-space: normal;">Ingestion and catelogue DICOMs in Lasso</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">QC of ingestion</td>
+<td style="word-wrap: break-word; white-space: normal;">JCVI &amp; HST</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">Initial QC raw data (e.g. manual, automated)</td>
+<td style="word-wrap: break-word; white-space: normal;">JCVI</td>
+<td style="word-wrap: break-word; white-space: normal;">Don Hagler &amp; team</td>
+<td style="word-wrap: break-word; white-space: normal;">Anders Dale</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">Dashboard Inspection of QC Pipeline Output and site notification</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Process</td>
+<td style="word-wrap: break-word; white-space: normal;">Run anatomical pipelines (freesurfer, qsiprep, qsirecon, mcribs)</td>
+<td style="word-wrap: break-word; white-space: normal;">MIDB Informatics &amp; MSI (UMN)</td>
+<td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">Post-processing QC (manual, automated)</td>
+<td style="word-wrap: break-word; white-space: normal;">CDNI (UMN)</td>
+<td style="word-wrap: break-word; white-space: normal;">Michael Anderson</td>
+<td style="word-wrap: break-word; white-space: normal;">Eric Feczko</td>
+<td style="word-wrap: break-word; white-space: normal;">Lucille Moore</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Process</td>
+<td style="word-wrap: break-word; white-space: normal;">Index source BIDS to platform</td>
+<td style="word-wrap: break-word; white-space: normal;">MIDB Informatics &amp; MSI (UMN)</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Process</td>
+<td style="word-wrap: break-word; white-space: normal;">Index raw BIDS to platform</td>
+<td style="word-wrap: break-word; white-space: normal;">MIDB Informatics &amp; MSI (UMN)</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Process</td>
+<td style="word-wrap: break-word; white-space: normal;">Index derivatives BIDS to platform</td>
+<td style="word-wrap: break-word; white-space: normal;">MIDB Informatics &amp; MSI (UMN)</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">SMEs review data</td>
+<td style="word-wrap: break-word; white-space: normal;">Various</td>
+<td style="word-wrap: break-word; white-space: normal;">MRI Workgroup SMEs</td>
+<td style="word-wrap: break-word; white-space: normal;">MRI Workgroup Leads</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">Data corrections</td>
+<td style="word-wrap: break-word; white-space: normal;">Various</td>
+<td style="word-wrap: break-word; white-space: normal;">MRI Workgroup SMEs</td>
+<td style="word-wrap: break-word; white-space: normal;">MRI Workgroup Leads</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Sign Off</td>
+<td style="word-wrap: break-word; white-space: normal;">SMEs sign off on data</td>
+<td style="word-wrap: break-word; white-space: normal;">Lasso</td>
+<td style="word-wrap: break-word; white-space: normal;">Jen Zink</td>
+<td style="word-wrap: break-word; white-space: normal;">MRI Workgroup Leads</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<div id="sensors-raci" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> Wearable Sensors</span>
+  <a class="anchor-link" href="#sensors-raci" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table">
+<thead>
+  <tr>
+    <th>Study Stage</th>
+    <th>Step</th>
+    <th>Location</th>
+    <th>Responsible</th>
+    <th>Accountable</th>
+    <th>Consulted</th>
+    <th>Informed</th>
+  </tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+
+<div id="biospec-raci" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> Biospecimens</span>
+  <a class="anchor-link" href="#biospec-raci" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table">
+<thead>
+  <tr>
+    <th>Step</th>
+    <th>Location</th>
+    <th>Responsible</th>
+    <th>Accountable</th>
+    <th>Consulted</th>
+    <th>Informed</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+<td>Acquisition of sample</td>
+<td>Site</td>
+<td>&nbsp;</td>
+<td>Site Staff</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Population of meta data form</td>
+<td>LORIS</td>
+<td>&nbsp;</td>
+<td>Site Coordinator</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>QC of form population</td>
+<td>WG Co-Chairs</td>
+<td>&nbsp;</td>
+<td>Elinor</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Shipment of sample</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Site Staff</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>QC: Ensuring sample was received</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Charles Hevi</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>QC: deviation code of sample at Sampled</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Charles Hevi</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>QC: deviation code of sample at USDTL</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Priti</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Analysis of sample at Sampled</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Charles Hevi</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Analysis of sample at USDTL</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Priti</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>QC of analysis of sample</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Gretchen</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>QC of data acquisition</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Elinor</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>QC of analysis</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Gretchen</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<div id="eeg-raci" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> EEG</span>
+  <a class="anchor-link" href="#eeg-raci" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table">
+<thead>
+  <tr>
+    <th>Study Stage</th>
+    <th>Step</th>
+    <th>Location</th>
+    <th>Responsible</th>
+    <th>Accountable</th>
+    <th>Consulted</th>
+    <th>Informed</th>
+  </tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+
+<br>
