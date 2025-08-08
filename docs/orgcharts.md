@@ -1,6 +1,17 @@
-#  HDCC Organizational Charts
-
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
+
+#  HDCC Structure & Organizational Charts
+
+<div class="pill-center">
+  <a href="../#project-management" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip">
+        <i class="fa-solid fa-diagram-project" style="color: #6300d3;"></i>
+        <span class="tooltiptext">Project Management<br><i>Click to learn more</i></span>
+      </span>
+    </span>
+  </a>
+</div>
 
 ## HDCC Functional Structure
 
@@ -10,7 +21,7 @@ The larger organizational structure of the HBCD Data Coordinating Center (HDCC) 
 
 <div id="fyi" class="notification-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text"><b>NOTE:</b> These org charts emphasize functional structure within the context of HDCC, not reporting line details of individual organizations.</span>
+    <span class="text"><b>NOTE:</b> These org charts emphasize functional structure within the context of HDCC, not reporting line details or roles within individual organizations.</span>
 </div>
 <br>
 
@@ -20,11 +31,10 @@ config:
   layout: elk
 ---
 flowchart TB
-    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<b>JCVI</b>"]
-    jcvi --- jcviSC["<b>Subcontractors</b><br>DEAP<br>FIONA<br>REDCap"]
-    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
+    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<a href="#j-craig-venter-institute" target="_top"><b>JCVI</b></a>"]
+    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<a href="#lasso" target="_top"><b>Lasso</b></a>"] & umn["<a href="#university-of-minnesota" target="_top"><b>UMN</b></a>"] & n7["<a href="#loris" target="_top"><b>LORIS</b></a>"] & n8["<a href="#university-of-maryland" target="_top"><b>UMD EEG Core</b></a>"] & n11["<a href="#columbia-university" target="_top"><b>Columbia</b></a>"]
     lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO"]
-    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<b>WashU</b>"] & n12["<b>LIBR</b>"] & lasso
+    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<a href="#washu" target="_top"><b>WashU</b></a>"] & n12["<a href="#libr" target="_top"><b>LIBR</b></a>"] & lasso
     n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
     n12 --- n16
     n8 --- n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc Dir"]
@@ -32,15 +42,14 @@ flowchart TB
     umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n11 --- n18["<b>William P. Fifer, PhD</b><br>Novel Tech &<br>Wearables Co-Chair"]
-    n18 --- n34["<b>Nicolo Pini</b>"]
+    n18 --- n34["<b>Nicolo Pini</b><br>Co-Investigator"]
     reed --- n30["<b>Maren Macgregor-Hannah</b><br>Program Manager"]
-    n30 --- n25["<b>MIDB Informatics</b>"]
-    n30 --- n27["<b>HST</b>"]
-    n30 --- n28["<b>CDNI</b>"]
-    n30 --- n29["<b>MIDB Analytics</b>"]
+    n30 --- n25["<a href="#midb-informatics-hub-msi" target="_top"><b>MIDB Informatics</b></a>"]
+    n30 --- n27["<a href="#health-sciences-technology" target="_top"><b>HST</b></a>"]
+    n30 --- n28["<a href="#center-for-developmental-neuroimaging" target="_top"><b>CDNI</b></a>"]
+    n30 --- n29["<a href="#midb-analytics-hub" target="_top"><b>MIDB Analytics</b></a>"]
     n27 --- n31["<b>Karen Athy-Penrose</b><br>Project Manager"]
     n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
-    n32 --- washuSC["<b>Subcontractors</b><br>AirTable<br>AMBRA<br>Ripple"]
     n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
     style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style jcvi fill:#E1BEE7,stroke:#AA00FF
@@ -82,150 +91,23 @@ flowchart TB
     click n28 "#center-for-developmental-neuroimaging"
     click n12 "#libr"
     click n11 "#columbia-university"
-    click jcviSC "#subcontractor-details_1"
-    click washuSC "#subcontractor-details"
-```
-
-### ALT
-
-<div id="fyi" class="notification-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-    <span class="text"><b>NOTE:</b> These org charts emphasize functional structure within the context of HDCC, not reporting line details of individual organizations.</span>
-</div>
-<br>
-
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
- subgraph s1["<b>Subcontractors</b>"]
-        n35["<b>AirTable</b>"]
-        n36["<b>Ambra</b>"]
-        n37["<b>Ripple</b>"]
-    end
-  subgraph s2["<b>Subcontractors</b>"]
-        n38["<b>DEAP</b>"]
-        n39["<b>FIONA</b>"]
-        n40["<b>REDCap</b>"]
-    end
-    n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<b>JCVI</b>"]
-    jcvi --- s2
-    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<b>Lasso</b>"] & umn["<b>UMN</b>"] & n7["<b>LORIS</b>"] & n8["<b>UMD EEG Core</b>"] & n11["<b>Columbia</b>"]
-    lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO"]
-    n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<b>WashU</b>"] & n12["<b>LIBR</b>"] & lasso
-    n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
-    n12 --- n16
-    n8 --- n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc Dir"]
-    n7 --- n20["<b>Alan Evans</b>, PI<br><b>Samir Das</b><br><a href="https://mcin.ca/about-mcin/" target="_blank">MCIN</a> Assoc Dir"]
-    umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
-    n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
-    n11 --- n18["<b>William P. Fifer, PhD</b><br>Novel Tech &<br>Wearables Co-Chair"]
-    n18 --- n34["<b>Nicolo Pini</b>"]
-    reed --- n30["<b>Maren Macgregor-Hannah</b><br>Program Manager"]
-    n30 --- n25["<b>MIDB Informatics</b>"]
-    n30 --- n27["<b>HST</b>"]
-    n30 --- n28["<b>CDNI</b>"]
-    n30 --- n29["<b>MIDB Analytics</b>"]
-    n27 --- n31["<b>Karen Athy-Penrose</b><br>Project Manager"]
-    n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
-    n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
-    n32 --> s1
-    style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style jcvi fill:#E1BEE7,stroke:#AA00FF
-    style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style lasso fill:#E1BEE7,stroke:#AA00FF
-    style umn fill:#E1BEE7,stroke:#AA00FF
-    style n7 fill:#E1BEE7,stroke:#AA00FF
-    style n8 fill:#E1BEE7,stroke:#AA00FF
-    style n11 fill:#E1BEE7,stroke:#AA00FF
-    style lasso1 fill:#BBDEFB,stroke:#2962FF
-    style n1 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style n10 fill:#E1BEE7,stroke:#AA00FF
-    style n12 fill:#E1BEE7,stroke:#AA00FF
-    style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style n17 fill:#BBDEFB,stroke:#2962FF
-    style n19 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style n20 fill:#BBDEFB,stroke:#2962FF
-    style reed fill:#BBDEFB,stroke:#2962FF
-    style n22 fill:#BBDEFB,stroke:#2962FF
-    style n18 fill:#BBDEFB,stroke:#2962FF
-    style n25 fill:#E1BEE7,stroke:#AA00FF
-    style n27 fill:#E1BEE7,stroke:#AA00FF
-    style n28 fill:#E1BEE7,stroke:#AA00FF
-    style n29 fill:#E1BEE7,stroke:#AA00FF
-    style n30 fill:#C8E6C9,stroke:#00C853
-    style n31 fill:#C8E6C9,stroke:#00C853
-    style n32 fill:#C8E6C9,stroke:#00C853
-    style n33 fill:#C8E6C9,stroke:#00C853
-    style n34 fill:#C8E6C9,stroke:#00C853
-    click jcvi "#j-craig-venter-institute"
-    click lasso "#lasso"
-    click umn "#university-of-minnesota"
-    click n7 "#loris"
-    click n8 "#university-of-maryland"
-    click n10 "#washu"
-    click n25 "#midb-informatics-hub-msi"
-    click n29 "#midb-analytics-hub"
-    click n27 "#health-sciences-technology"
-    click n28 "#center-for-developmental-neuroimaging"
-    click n12 "#libr"
-    click n11 "#columbia-university"
-    click jcviSC "#subcontractor-details_1"
 ```
 
 ### University of Minnesota
-<p>
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    A["<b>Damien Fair</b><br>HDCC Co-Director"] 
-    A --- B["<b>Health Sciences Technology</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    A --- C["<b>Center for Developmental Neuroimaging</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    A --- D["<b>MIDB Analytics Hub</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    A --- E["<b>MIDB Informatics Hub &amp; MSI</b> <i class="fa-solid fa-link" style="color: blue;"></i>"]
-    style A fill:#BBDEFB,stroke:#2962FF
-    style B fill:#E1BEE7,stroke:#AA00FF
-    style C fill:#E1BEE7,stroke:#AA00FF
-    style D fill:#E1BEE7,stroke:#AA00FF
-    style E fill:#E1BEE7,stroke:#AA00FF
-    click B "#health-sciences-technology"
-    click C "#center-for-developmental-neuroimaging"
-    click D "#midb-analytics-hub"
-    click E "#midb-informatics-hub-msi"
-```
-</p>
+
+The University of Minnesota (UMN) houses several core HDCC teams. Please click on each organization below to view their details.
+
+<p><object type="image/svg+xml" data="umn-OC.svg" width="90%"></object></p>
 
 #### Center for Developmental NeuroImaging
    
-The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: *Processing*, *Software Development*, and *Deployment* of imaging data. 
+The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: development of MRI acquisition procedures; quality control for processed MRI data; coordination of [processing pipeline standardization](https://docs.hbcdstudy.org/latest/instruments/processing/standards/); and development and maintenance of HDCC release documentation (including the [HBCD Data Release Docs](https://docs.hbcdstudy.org/latest/)). CDNI members additionally work with the Informatics & Processing team at [MIDB Informatics Hub and MSI](#midb-informatics-hub--msi) to provide support and/or consultation for MRI data processing and MRI pipeline development as needed.
 
-<div style="width: 70%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart LR
-    CDNI["<b>Damien Fair</b><br>HDCC Co-Director"] --- n2(["<b>MRI Acquisition</b>"]) & n5(["<b>Processed MRI Quality Control</b>"])
-    n2 --- n4["<b>Kimberly Weldon, PhD</b><br>Seimens Engineer"]
-    n5 --- n6["<b>Eric Feczko, PhD</b><br>QC Lead<br><br><b>Lucille A. Moore, PhD</b><br>Neuroinformatics<br>
-    <b>Michael Anderson</b><br>Analyst"]
-    style CDNI fill:#E1BEE7,stroke:#AA00FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#E1BEE7,stroke:#AA00FF
-    style n4 fill:#BBDEFB,stroke:#2962FF
-    style n6 fill:#BBDEFB,stroke:#2962FF
-```
-</div>
+<p><object type="image/svg+xml" data="cdni.svg" width="80%"></object></p>
 
 <div id="cdni-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#cdni-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -243,29 +125,29 @@ flowchart LR
     </thead>
     <tbody>
       <tr>
-      <td>Damien Fair</td>
-      <td>PI</td>
+      <td>Damien Fair, PA-C, PhD</td>
+      <td>HDCC Co-Director</td>
       <td style="word-wrap: break-word; white-space: normal;">Provides scientific and operational leadership for the HBCD Data Coordinating Center, with direct oversight of MRI acquisition strategy, processing pipeline development, and quality control infrastructure at CDNI.</td>
       </tr>
       <tr>
-      <td>Kimberly Weldon</td>
-      <td>Siemens Engineer</td>
+      <td>Kimberly Weldon, PhD</td>
+      <td>MR Specialist (Siemens)</td>
       <td style="word-wrap: break-word; white-space: normal;">Supports MRI acquisition through scanner calibration, sequence optimization, and technical troubleshooting, ensuring harmonized imaging protocols across Siemens scanners and sites.</td>
       </tr>
       <tr>
-      <td>Eric Feczko</td>
-      <td>QC Lead</td>
+      <td>Eric Feczko, PhD</td>
+      <td>MRI Quality Control Lead</td>
       <td style="word-wrap: break-word; white-space: normal;">Leads the design and implementation of post-processing MRI quality control procedures, developing automated and manual QC metrics to assess data reliability and identify artifacts across modalities.</td>
       </tr>
       <tr>
-      <td>Lucille A. Moore</td>
-      <td>Neuroinformatics</td>
-      <td style="word-wrap: break-word; white-space: normal;">Develops and maintains software tools for organizing, processing, and visualizing neuroimaging data, integrating processed outputs with metadata and quality metrics for centralized review and downstream analysis. Lead documentation across all HDCC release docs and works with director and HCAC to coordinate processes throughout HBCD. Developer and/or project manager for select HBCD processing pipelines.</td>
+      <td>Michael Anderson, PhD</td>
+      <td>MRI QC Analyst</td>
+      <td style="word-wrap: break-word; white-space: normal;">Conducts data analysis and curation of processed MRI datasets, supports QC review and scoring workflows, and ensures alignment between data outputs and release standards.</td>
       </tr>
       <tr>
-      <td>Michael Anderson</td>
-      <td>Analyst</td>
-      <td style="word-wrap: break-word; white-space: normal;">Conducts data analysis and curation of processed MRI datasets, supports QC review and scoring workflows, and ensures alignment between data outputs and release standards.</td>
+      <td>Lucille A. Moore, PhD</td>
+      <td style="word-wrap: break-word; white-space: normal;">HDCC Release Docs Lead & Neuroinformatics</td>
+      <td style="word-wrap: break-word; white-space: normal;">Develops and maintains software tools for organizing, processing, and visualizing neuroimaging data, integrating processed outputs with metadata and quality metrics for centralized review and downstream analysis. Lead documentation across all HDCC release docs and works with director and HCAC to coordinate processes throughout HBCD.</td>
       </tr>
 </tbody>
 </table>
@@ -302,35 +184,11 @@ The Data security model ensures data security by focusing on two key components:
 </div>
 </p>
 
-<div style="width: 80%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    B["<b>Karen Athy-Penrose</b><br>Project Manager"] --- n2(["<b>Development Operations</b>"]) & n3(["<b>MRI Quality Control Dashboard</b>"]) & n4(["<b>Electronic Health Records</b>"])
-    n2 --- F["<b>Dan Duhon<br>Derek Thompson<br>Saranya Subramanian<br>Brett Weaver</b>"]
-    n3 --- G["<b>Haley Hutala</b><br>Tableau Engineer<br><br><b>Sanjana Madakshire</b><br>Quality Control"]
-    H["<b>Steve Johnson</b><br>Dir Informatics Innovation<br><br><b>Tim Meyer</b><br>Informatics Engineer"] --- n5["<b>WashU EMR Data Core<br></b><i>Click to view org chart</i>"]
-    n4 --- H
-    E["<b>Reed McEwan, MS</b><br>HDCC Architect &amp; Data Manager"]
-    style B fill:#C8E6C9,stroke:#00C853
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n4 fill:#E1BEE7,stroke:#AA00FF
-    style F fill:#BBDEFB,stroke:#2962FF
-    style G fill:#BBDEFB,stroke:#2962FF
-    style E fill:#BBDEFB,stroke:#2962FF
-    style H fill:#BBDEFB,stroke:#2962FF
-    style n5 fill:#E1BEE7,stroke:#AA00FF
-    click n5 "#washu"
-```
-</div>
+<p><object type="image/svg+xml" data="hst-OC.svg" width="80%"></object></p>
 
 <div id="hst-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#hst-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -395,26 +253,11 @@ flowchart TB
 #### MIDB Analytics Hub
 The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) works in coordination with the Biospecimens Workgroup to provide support for genomic data processing and analysis as part of the **HBCD Genomics Supplement**. 
 
-<div style="width: 60%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart LR
-    B["<b>Annette Xenopoulos-Oddsson, MSc</b><br>Project Manager"] --- n3(["<b>Genomics</b>"])
-    n3 --- G["<b>Michael Anderson, PhD</b><br>Genomics Data Scientist<br><br><b>Christian Coffman</b><br>Data Scientist &amp; Analyst"]
-    E["<b>Saonli Basu, PhD</b><br>Co-I, HBCD Genomics Faculty Lead"]
-    style B fill:#C8E6C9,stroke:#00C853
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style G fill:#BBDEFB,stroke:#2962FF
-    style E fill:#BBDEFB,stroke:#2962FF
-```
-</div>
+<p><object type="image/svg+xml" data="midb-analytics.svg" width="70%"></object></p>
 
 <div id="midb-analytics-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#midb-analytics-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -447,9 +290,14 @@ flowchart LR
         <td style="word-wrap: break-word; white-space: normal;">Developing the genomics pipelines, documentation, running the genomic data analysis</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Christian Coffman</td>
+        <td style="word-wrap: break-word; white-space: normal;">Christian Coffman, PhD</td>
         <td style="word-wrap: break-word; white-space: normal;">Data Scientist & Analyst</td>
         <td style="word-wrap: break-word; white-space: normal;">Support for pipeline development, documentation, and genomic data analysis</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Kody DeGolie, MS</td>
+        <td style="word-wrap: break-word; white-space: normal;">Research Associate</td>
+        <td style="word-wrap: break-word; white-space: normal;">Support for development, documentation, and analysis</td>
     </tr>
 </tbody>
 </table>
@@ -460,35 +308,11 @@ flowchart LR
    
 The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://midb.umn.edu/research/informatics) and [Minnesota Supercomputing Institute (MSI)](https://msi.umn.edu/) at UMN provide the following services to the HBCD study: *System Administration*, *Loris Hosting*, *Computing*, *Processing*, and *Data Sharing*.
 
-<div style="width: 90%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    L["<b>Maren Macgregor-Hannah</b><br>HDCC Program Manager"] --- N(["<b>Advanced System Operations</b>"]) & O(["<b>Informatics &amp; Processing</b>"]) & P(["<b>Data Steward</b>"]) & n8(["<b>Security &amp; Compliance</b>"])
-    N --- Q["<b>Jesse Erdmann</b><br>Senior SysOps<br><br><b>Kimberleigh Breen</b><br>Data Manager<br><br><b>Sriharshitha Anuganti<br>Alyssa Oksa<br>Anders Skaar</b><br>DevOps"]
-    O --- n4["<b>Timothy Hendrickson</b><br>Neuroimaging Lead<br><br><b>Erik Lee</b><br>Pipeline Lead<br><br><b>Monalisa Biles</b><br>Analyst"]
-    P --- n7["<b>Jeff Shi</b><br>Informatics Consultant<br><br><b>Borgne Raasch</b><br>Data Steward"]
-    n8 --- n9["<b>Naomi Hospodarsky-Sutherland</b>"]
-    n10["<b>Thomas Pengo, PhD</b><br>Co-Director, Informatics Group"]
-    style L fill:#C8E6C9,stroke:#00C853
-    style N fill:#E1BEE7,stroke:#AA00FF
-    style O fill:#E1BEE7,stroke:#AA00FF
-    style P fill:#E1BEE7,stroke:#AA00FF
-    style n8 fill:#E1BEE7,stroke:#AA00FF
-    style Q fill:#BBDEFB,stroke:#2962FF
-    style n4 fill:#BBDEFB,stroke:#2962FF
-    style n7 fill:#BBDEFB,stroke:#2962FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n10 fill:#BBDEFB,stroke:#2962FF
-```
-</div>
+<p><object type="image/svg+xml" data="midb-informatics.svg" width="80%"></object></p>
 
 <div id="midb-msi-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#midb-msi-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -517,23 +341,28 @@ flowchart TB
     </tr>
     <tr>
     <td>Jesse Erdmann</td>
-    <td>Systems Operations</td>
+    <td>DevOps Manager & Architect</td>
     <td style="word-wrap: break-word; white-space: normal;">Advanced System Operations (ASO) oversight: Oversees the performance, reliability, and security of the MSI computational systems and infrastructure, for integration and support for Loris, large-scale data processing, and analysis workflows.</td>
+    </tr>
+    <tr>
+      <td>Kimberleigh Breen</td>
+      <td>DevOps Engineer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Data engineering, continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
     </tr>
     <tr>
     <td>Sriharshitha Anuganti</td>
     <td>DevOps Engineer</td>
-    <td style="word-wrap: break-word; white-space: normal;">Continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
+    <td style="word-wrap: break-word; white-space: normal;">Data engineering, continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
     </tr>
         <tr>
     <td>Alyssa Oksa</td>
     <td>DevOps Engineer</td>
-    <td style="word-wrap: break-word; white-space: normal;">Continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
+    <td style="word-wrap: break-word; white-space: normal;">Data engineering, continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
     </tr>
     <tr>
     <td>Anders Skaar</td>
     <td>DevOps Engineer</td>
-    <td style="word-wrap: break-word; white-space: normal;">Continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
+    <td style="word-wrap: break-word; white-space: normal;">Data engineering, continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
     </tr>
     <tr>
     <td>Timothy Hendrickson</td>
@@ -547,13 +376,8 @@ flowchart TB
     </tr>
     <tr>
     <td>Monalisa Biles</td>
-    <td>&nbsp;</td>
+    <td>Analyst</td>
     <td style="word-wrap: break-word; white-space: normal;">Analyst: Assistant to Pipeline lead for high throughput processing and incident response.</td>
-    </tr>
-    <tr>
-    <td>Kimberleigh Breen</td>
-    <td>Data Manager</td>
-    <td style="word-wrap: break-word; white-space: normal;">Data Manager: Responsible for designing and implementing data management plans with IG lead, storage, version control using DataLad.</td>
     </tr>
     <tr>
   <td>Borgne Raasch</td>
@@ -573,36 +397,12 @@ flowchart TB
 ### WashU    
 Washington University in St. Louis (WashU) has oversight of: *Electronic Medical Records (EMR)*, *[Ambra](#ambra)*, *[AirTable](#airtable)*, *[Ripple](#ripple)*,  and *HBCD Study Administrative Core (HCAC) coordination*.
 
-<div style="width: 70%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    A["<b>Sauren Ravencroft</b><br>Project Manager"] --- ambra(["<a href="#ambra"><b>Ambra</b></a>"])
-    A --- n5(["<a href="#airtable"><b>AirTable</b></a> & <a href="#ripple"><b>Ripple</b></a>"])
-    n13["<b>Nicole Venteris</b><br>EMR Project Manager"] --- C["<b>EMR Data Core</b><br>"]
-    n5 --- n9["<b>Liliana Mueller</b><br>Ripple Admin<br><br><b>Kevine Ngalula</b><br>Ripple<br><br><b>Lynn Menchaca</b><br>AirTable Admin"]
-    ambra --- n1["<b>Bob McKinstry</b><br><b>Josh Shimony</b><br>Co-Is &amp; Neuroradiologists<br><br><b>Dimitrios ('Jim') Alexopoulos</b><br>Data Manager"]
-    n14["<b>Chris Smyser, MD</b>, PI<br><b>Chad Sylvester, PhD</b>, Co-I"]
-    style A fill:#C8E6C9,stroke:#00C853
-    style ambra fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#E1BEE7,stroke:#AA00FF
-    style n13 fill:#C8E6C9,stroke:#00C853
-    style C fill:#E1BEE7,stroke:#AA00FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n1 fill:#BBDEFB,stroke:#2962FF
-    style n14 fill:#BBDEFB,stroke:#2962FF
-    linkStyle 3 stroke:#000000,fill:none
-    linkStyle 4 stroke:#000000,fill:none
-```
-</div>
+<p><object type="image/svg+xml" data="washu.svg" width="100%"></object></p>
 
 <p>
 <div id="washu-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#washu-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -630,14 +430,19 @@ flowchart TB
     <td style="word-wrap: break-word; white-space: normal;">Coordinates implementation, integration, development, and maintenance of the AirTable and Ripple platforms</td>
     </tr>
     <tr>
+    <td>Lynne Menchaca</td>
+    <td>AirTable Admin</td>
+    <td style="word-wrap: break-word; white-space: normal;">Manages and configures AirTable databases to manage access controls and personnel across the study</td>
+    </tr>
+    <tr>
+    <td>Kevine Ngalula</td>
+    <td>Developer</td>
+    <td style="word-wrap: break-word; white-space: normal;">Supports customization and maintenance of Ripple and AirTable</td>
+    </tr>
+    <tr>
     <td>Lilliana Mueller</td>
     <td>Ripple Admin</td>
     <td style="word-wrap: break-word; white-space: normal;">Administers Ripple platform operations and coordinates communication on MRI feedback to sites</td>
-    </tr>
-    <tr>
-    <td>Nicole Venteris</td>
-    <td>EMR Project Manager</td>
-    <td style="word-wrap: break-word; white-space: normal;">Oversees development and implementation of workflows for integrating and managing structured EMR data across study sites</td>
     </tr>
     <tr>
     <td>Bob McKinstry</td>
@@ -655,14 +460,49 @@ flowchart TB
     <td style="word-wrap: break-word; white-space: normal;">Manages Ambra workflows and consults on all MRI QC and processing workflows</td>
     </tr>
     <tr>
-    <td>Kevine Ngalula</td>
-    <td>Ripple Developer</td>
-    <td style="word-wrap: break-word; white-space: normal;">Supports customization and maintenance of Ripple</td>
+      <td>Nicole Venteris</td>
+      <td>EMR Project Manager</td>
+      <td style="word-wrap: break-word; white-space: normal;">Oversees development and implementation of workflows for integrating and managing structured EMR data across study sites</td>
     </tr>
     <tr>
-    <td>Lynne Menchaca</td>
-    <td>AirTable Admin</td>
-    <td style="word-wrap: break-word; white-space: normal;">Manages and configures AirTable databases to manage access controls and personnel across the study</td>
+      <td>Albert Lai, PhD</td>
+      <td>Co-Investigator</td>
+      <td style="word-wrap: break-word; white-space: normal;">EMR Data Core oversight</td>
+    </tr>
+    <tr>
+      <td>Philip Payne, PhD</td>
+      <td>Co-Investigator, EMR Data Core</td>
+      <td style="word-wrap: break-word; white-space: normal;">EMR Data Core oversight</td>
+    </tr>
+    <tr>
+      <td>Sherry Lassa-Claxton</td>
+      <td>EMR Data Core</td>
+      <td style="word-wrap: break-word; white-space: normal;">EMR Data Core support</td>
+    </tr>
+    <tr>
+      <td>Steve Austin</td>
+      <td>EMR Data Core</td>
+      <td style="word-wrap: break-word; white-space: normal;">EMR Data Core support</td>
+    </tr>
+    <tr>
+      <td>Cat Camacho, PhD</td>
+      <td>fMRI Piloting Lead</td>
+      <td style="word-wrap: break-word; white-space: normal;">fMRI piloting lead</td>
+    </tr>
+    <tr>
+      <td>Shelby Kessler</td>
+      <td>Study Coordinator</td>
+      <td style="word-wrap: break-word; white-space: normal;">fMRI piloting study coordinator</td>
+    </tr>
+    <tr>
+      <td>Alyssa Weinrich</td>
+      <td>Data Collection</td>
+      <td style="word-wrap: break-word; white-space: normal;">fMRI piloting data collection</td>
+    </tr>
+    <tr>
+      <td>Mia Sawicki</td>
+      <td>Data Collection</td>
+      <td style="word-wrap: break-word; white-space: normal;">fMRI piloting data collection</td>
     </tr>
 </tbody>
 </table>
@@ -685,41 +525,13 @@ Ripple is a data-driven innovative web-based technology that allows groups to co
 
 
 ### J. Craig Venter Institute 
-The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for MRI quality control, REDCap, FIONA, and the QC Dashboard.
+The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for [raw MRI data quality control](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc) and acquisition QC via MRI phantom data. In addition, JCVI oversees [FIONA](#fiona) deployment as well as [REDCap](#redcap), [DEAP](#deap), and the <span class="tooltip">RBA<span class="tooltiptext">results-based accountability</span></span> Dashboards.
 
-<div style="width: 80%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    A["<b>Anders Dale, PhD</b>, PI/Director"] --- z(["<a href="#fiona"><b>FIONA</b></a>"])
-    A --- n2(["<b>Raw MRI Quality Control</b>"])
-    A --- n3(["<b>MRI Phantom Quality Control</b>"])
-    A --- n6(["<a href="#redcap"><b>REDCap</b></a><br><b>Data Science</b><br><a href="#deap"><b>DEAP</b></a>"])
-    n2 --- n9["<b>Donald Hagler, PhD</b><br>Raw MRI QC Lead<br><br><b>Tyler Berkness</b><br>Protocol Violations<br><br><b>Sejal Shanbhag</b><br>Issue Handling"]
-    n3 --- n10["<b>Josh Kuperman</b><br>MRI Phantom QC Lead"]
-    n6 --- n4["<b>Janosch Linkersdörfer, PhD</b><br>Team Lead<br>
-    <b>Asef-Joseph Baligh</b><br>REDCap Server Admin<br>
-    <b>Erika Bolden<br>Laura Ziemer</b><br>REDCap Dev/Admin<b><br>
-    Biplabendu Das</b><br>Dashboard Backend<br><br><b>Olivier Celhay</b><br>Dashboard Frontend"]
-    z --- n8["<b>Rongguang Yang, PhD</b><br>FIONA Lead"]
-    style A fill:#BBDEFB,stroke:#2962FF
-    style z fill:#E1BEE7,stroke:#AA00FF
-    style n2 fill:#E1BEE7,stroke:#AA00FF
-    style n3 fill:#E1BEE7,stroke:#AA00FF
-    style n6 fill:#E1BEE7,stroke:#AA00FF
-    style n8 fill:#BBDEFB,stroke:#2962FF
-    style n9 fill:#BBDEFB,stroke:#2962FF
-    style n10 fill:#BBDEFB,stroke:#2962FF
-    style n4 fill:#BBDEFB,stroke:#2962FF
-```
-</div>
+<p><object type="image/svg+xml" data="jcvi.svg" width="90%"></object></p>
 
 <div id="jcvi-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#jcvi-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -737,55 +549,66 @@ flowchart TB
     </thead>
     <tbody>
     <tr>
-      <td>Janosch Linkersdoerfer</td>
-      <td>Team Lead</td>
-      <td style="word-wrap: break-word; white-space: normal;">Lead manager at UCSD who assists with the overall architecture planning of the HDCC. Oversees development and integration of REDCap, DEAP, and dashboard systems, for the HDCC.</td>
-      </tr>
-      <tr>
-      <td>Erika Bolden</td>
-      <td>Redcap Developer</td>
-      <td style="word-wrap: break-word; white-space: normal;">Develop, configure, and support REDCap instruments and workflows for structured data collection</td>
-      </tr>
-      <tr>
-      <td>Biplabendu Das</td>
-      <td>RBA Dashboard Developer</td>
-      <td style="word-wrap: break-word; white-space: normal;">Designs and maintains the QC and data dashboards, enabling dynamic visualization, reporting, and data access across platforms.</td>
-      </tr>
-      <tr>
-      <td>Josh Kuperman</td>
-      <td>MRI Phantom QC Lead</td>
-      <td style="word-wrap: break-word; white-space: normal;">Manages the acquisition, monitoring, and analysis of MRI phantom data across study sites to ensure scanner stability, calibration, and harmonization.</td>
-      </tr>
-      <tr>
-      <td>Donald Hagler</td>
-      <td>MRI QC</td>
+      <td>Anders Dale, PhD</td>
+      <td>HDCC Co-Director</td>
+      <td style="word-wrap: break-word; white-space: normal;">Provides scientific and operational leadership for the HBCD Data Coordinating Center, with direct oversight of quality control and data systems at JCVI.</td>
+    </tr>
+    <tr>
+      <td>Janosch Linkersdoerfer, PhD</td>
+      <td>Team Lead, Data Systems</td>
+      <td style="word-wrap: break-word; white-space: normal;">Lead manager who assists with the overall architecture planning of the HDCC. Oversees development and integration of REDCap, DEAP, and dashboard systems.</td>
+    </tr>
+    <tr>
+      <td>Donald Hagler, PhD</td>
+      <td>Raw MRI QC Lead</td>
       <td style="word-wrap: break-word; white-space: normal;">Directs the pipeline for raw MRI data quality assurance, including protocol compliance, artifact detection</td>
       </tr>
-      <tr>
-      <td>Rongguang Yang</td>
-      <td>FIONA Lead</td>
-      <td style="word-wrap: break-word; white-space: normal;">Leads the deployment and optimization of FIONA for transfer of imaging data from acquisition sites to the central data core.</td>
-      </tr>
-      <tr>
-      <td>Asef-Joseph Baligh</td>
-      <td>REDCap Server Admin</td>
-      <td style="word-wrap: break-word; white-space: normal;">Maintains and secures the REDCap server infrastructure</td>
-      </tr>
-      <tr>
-      <td>Olivier Celhay</td>
-      <td>Dashboard Frontend Developer</td>
-      <td style="word-wrap: break-word; white-space: normal;">Builds and maintains user-facing interfaces for data dashboards, enhancing usability and responsiveness for QC tracking, metrics visualization</td>
-      </tr>
-      <tr>
+    <tr>
+    <tr>
       <td>Tyler Berkness</td>
       <td>Protocol Violation QC</td>
       <td style="word-wrap: break-word; white-space: normal;">Monitors and flags protocol deviations in incoming MRI datasets</td>
-      </tr>
-      <tr>
+    </tr>
+    <tr>
       <td>Sejal Shanbhag</td>
       <td>Issue Handling</td>
       <td style="word-wrap: break-word; white-space: normal;">Manages the triage and resolution of quality control issues related to raw MRI data</td>
-      </tr>
+    </tr>
+    <tr>
+      <td>Josh Kuperman, PhD</td>
+      <td>MRI Phantom QC Lead</td>
+      <td style="word-wrap: break-word; white-space: normal;">Manages the acquisition, monitoring, and analysis of MRI phantom data across study sites to ensure scanner stability, calibration, and harmonization.</td>
+    </tr>
+    <tr>
+      <td>Rongguang Yang, PhD</td>
+      <td>FIONA Lead</td>
+      <td style="word-wrap: break-word; white-space: normal;">Leads the deployment and optimization of FIONA for transfer of imaging data from acquisition sites to the central data core.</td>
+    </tr>
+    <tr>
+      <td>Asef-Joseph Baligh</td>
+      <td>REDCap Server Admin</td>
+      <td style="word-wrap: break-word; white-space: normal;">Maintains and secures the REDCap server infrastructure</td>
+    </tr>
+    <tr>
+      <td>Erika Bolden</td>
+      <td>REDCap Form Developer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Develop, configure, and support REDCap instruments and workflows for structured data collection</td>
+    </tr>
+    <tr>
+      <td>Laura Ziemer</td>
+      <td>REDCap Form Developer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Develop, configure, and support REDCap instruments and workflows for structured data collection</td>
+    </tr>
+    <tr>
+      <td>Biplabendu Das</td>
+      <td style="word-wrap: break-word; white-space: normal;">RBA Dashboard Backend Developer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Designs and maintains the QC and data dashboards, enabling dynamic visualization, reporting, and data access across platforms.</td>
+    </tr>
+    <tr>
+      <td>Olivier Celhay</td>
+      <td style="word-wrap: break-word; white-space: normal;">RBA Dashboard Frontend Developer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Builds and maintains user-facing interfaces for data dashboards, enhancing usability and responsiveness for QC tracking, metrics visualization</td>
+    </tr>
 </tbody>
 </table>
 </div>
@@ -810,11 +633,11 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
 
 [Lasso](https://www.lassoinformatics.com/) DataShare is a secure data management platform for multi-modal data, streamlining secure data access, searching, filtering, merging, sharing and downloading. Lasso Data Share and Lasso Professional Services serve several core functions in HDCC, including developing dashboards for ongoing workgroup data QC, supporting pre-release data QC,  developing QC workflows, and being the data release platform where the scientific community can access all publicly available HBCD Study data (file-based and tabulated data). Lasso Data Share is fully compliant with (NIST) 800-53 and FISMA-low security standards.
 
-![](images/lasso-org-chart.svg)
+<p><object type="image/svg+xml" data="lasso.svg" width="100%"></object></p>
 
 <div id="lasso-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#lasso-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -825,76 +648,76 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
     <thead>
       <tr>
-        <th style="width: 25%;">Name</th>
-        <th style="width: 30%;">Title</th>
-        <th style="width: 45%;">Role on HDCC</th>
+        <th style="width: 10%;">Name</th>
+        <th style="width: 20%;">Title</th>
+        <th style="width: 60%;">Role on HDCC</th>
       </tr>
     </thead>
     <tbody>
       <tr>
       <td>Leigh MacIntyre</td>
       <td>CEO</td>
-      <td>&nbsp;</td>
+      <td style="word-wrap: break-word; white-space: normal;">Provides strategic oversight and institutional accountability for HDCC/Lasso engagements.</td>
       </tr>
       <tr>
       <td>Fraser Glen</td>
       <td>CTO</td>
-      <td>&nbsp;</td>
+      <td style="word-wrap: break-word; white-space: normal;">Oversees technical architecture, scalability, and security of Lasso’s infrastructure in support of HDCC.</td>
       </tr>
       <tr>
       <td>Jen Zink</td>
-      <td>Director, Partnerships &amp; Grants</td>
-      <td>&nbsp;</td>
+      <td style="word-wrap: break-word; white-space: normal;">Director, Partnerships & Grants</td>
+      <td style="word-wrap: break-word; white-space: normal;">Serves as the primary liaison between HBCD Working Groups (WGs) and the HDCC team, coordinating feedback, priorities, and cross-consortium communication. Plays a central role in developing standard operating procedures (SOPs) for QC workflows to ensure consistency, traceability, and transparency across releases. Primary SME for inbound HBCD tabulated data tickets from the user community.</td>
       </tr>
       <tr>
       <td>Jordan Stirling</td>
       <td>Lead Developer</td>
-      <td>Oversight of Lasso Development</td>
+      <td style="word-wrap: break-word; white-space: normal;">Oversees the development of the Lasso platform, ensuring technical alignment between product capabilities and HDCC requirements.</td>
       </tr>
       <tr>
       <td>Aarushi Chaudhry</td>
-      <td>Director, Customer Success</td>
-      <td>Answering tickets and providing documentation for release</td>
+      <td style="word-wrap: break-word; white-space: normal;">Director, Customer Success</td>
+      <td style="word-wrap: break-word; white-space: normal;">Supports user enablement for the Lasso product suite within HDCC, providing clear documentation and training sessions for new features in Lasso Data Share, Lasso QC, and Lasso SAFE. Ensures users understand platform changes, offers tailored onboarding materials, and channels feedback from support interactions back to product teams.</td> 
       </tr>
       <tr>
       <td>Marion Fechino</td>
       <td>Data Analyst</td>
-      <td>Tableau Dashboard Updates for WG&rsquo;s</td>
+      <td style="word-wrap: break-word; white-space: normal;">Provides Tableau Dashboard updates for Workgroups.</td>
       </tr>
       <tr>
       <td>Laetitia Fesselier</td>
-      <td>Senior Lasso Developer</td>
-      <td>Data Loading Team Lead</td>
+      <td style="word-wrap: break-word; white-space: normal;">Senior Lasso Developer</td>
+      <td style="word-wrap: break-word; white-space: normal;">Data Loading Lead: Oversees the full data ingestion lifecycle from ETL setup through schema validation. Leads the design and implementation of automated pipelines to ensure structural and semantic integrity of incoming datasets.<br>Reviews and signs off on Lasso Data Loading Report Cards and Data Validation Report Cards prior to release. Coordinates across product and QC teams to integrate feedback into ETL improvements.</td>
       </tr>
       <tr>
       <td>Mateus Andre</td>
       <td>Lasso Developer</td>
-      <td>Data Loading Team</td>
+      <td style="word-wrap: break-word; white-space: normal;">Data Loading Team: Implements and maintains ETL scripts that transform raw data into formats compliant with Lasso’s ingestion schema. Performs initial data integrity checks and flags issues upstream to source systems or partner teams. Contributes to the creation of Data Loading Report Cards by compiling success/failure summaries and transformation logs.</td>
       </tr>
       <tr>
       <td>Edson Silva</td>
       <td>Lasso Developer</td>
-      <td>Data Loading Team</td>
+      <td style="word-wrap: break-word; white-space: normal;">Data Loading Team: Supports parallel ingestion efforts by validating dataset structure, types, and field completeness against expected specifications. Automates metrics collection for Data Validation Report Cards, including missingness, formatting errors, and derived field consistency. Participates in retrospective analysis to improve ETL resiliency and error handling in future releases.</td>
       </tr>
       <tr>
       <td>Vandana Sriram</td>
       <td>Lasso QC Engineer</td>
-      <td>QA/QC pipelines for new HDCC_QC features, and data loading sanity checks</td>
+      <td style="word-wrap: break-word; white-space: normal;">QA/QC: Verifies that all new features, pipelines, and infrastructure changes function as intended across the Lasso ecosystem used by HDCC. Their focus is both proactive (validating new features prior to release) and reactive (sanity checks after data is ingested or pipelines updated).</td>
       </tr>
       <tr>
       <td>Anjali Raj Katuri</td>
       <td>Lasso QC Engineer</td>
-      <td>QA/QC pipelines for new HDCC_QC features, and data loading sanity checks</td>
+      <td style="word-wrap: break-word; white-space: normal;">QQA/QC: Verifies that all new features, pipelines, and infrastructure changes function as intended across the Lasso ecosystem used by HDCC. Their focus is both proactive (validating new features prior to release) and reactive (sanity checks after data is ingested or pipelines updated).</td>
       </tr>
       <tr>
       <td>Andrew Sawaya</td>
       <td>UX/UI Lead Designer</td>
-      <td>UX design of new feature requests</td>
+      <td style="word-wrap: break-word; white-space: normal;">Leads the design of user interfaces and experiences across the Lasso platform as used by HDCC, ensuring tools like Lasso Data Share, Lasso QC, and Lasso SAFE are intuitive, accessible, and aligned with researcher workflows.</td>
       </tr>
       <tr>
       <td>Mehrafarin Ekhlaspour</td>
       <td>UX/UI Designer</td>
-      <td>UX design of new feature requests</td>
+      <td style="word-wrap: break-word; white-space: normal;">Supports the design and refinement of user interfaces across the Lasso ecosystem, contributing to wireframes, interaction flows, and visual components.</td>
       </tr>
 </table>
 </div>
@@ -906,35 +729,12 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
  
 [LORIS](https://mcin.ca/technology/loris/) (Longitudinal Online Research and Imaging System), developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)), is the core data management system for the HBCD Study. It is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
 
-<div style="width: 80%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    nl["<b>Santiago Torres</b><br>Study Officer"] --- C(["<b>CBRAIN</b>"]) & G(["<b>MRI BIDS Conversion &amp; Database Management</b>"]) & H(["<b>EEG &amp; Biospecimens</b>"]) & F(["<b>Systems Operations</b>"])
-    C --- n12["<b>Bryan Caron</b><br>Director, CBRAIN<br>&amp; MCIN NeuroHub<br><br><b>Pierre Rioux</b><br>Lead Developer"]
-    F --- I["<b>Dave McFarlane</b><br>Lead Developer<br><br><b>Sruthy Matthew</b><br>Sr Backend Developer<br><br><b>Regis Ongaro-Carcy<br>George Murad<br>Moshood Abiola</b><br>Developers"]
-    G --- L["<b>Cecile Madjar</b><br>Lead Developer"]
-    H --- M["<b>Laetitia Faeselier</b><br>Lead Developer"]
-    n13["<b>Alan Evans</b>, PI<br><b>Samir Das</b>, MCIN Assoc Dir"]
-    style nl stroke:#00C853,fill:#C8E6C9
-    style C stroke:#AA00FF,fill:#E1BEE7
-    style G stroke:#AA00FF,fill:#E1BEE7
-    style H stroke:#AA00FF,fill:#E1BEE7
-    style F stroke:#AA00FF,fill:#E1BEE7
-    style n12 stroke:#2962FF,fill:#BBDEFB
-    style I stroke:#2962FF,fill:#BBDEFB
-    style L stroke:#2962FF,fill:#BBDEFB
-    style M stroke:#2962FF,fill:#BBDEFB
-    style n13 stroke:#2962FF,fill:#BBDEFB
-```
-</div>
+<p><object type="image/svg+xml" data="loris-oc.svg" width="80%"></object></p>
+
 <p>
 <div id="loris-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#loris-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -998,38 +798,11 @@ flowchart TB
 
 ### University of Maryland
 
-<div style="width: 80%; margin: 0 auto;">
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
-    n16["<b>Nathan Fox</b>
-    Associate Dir, EEG Data Core"] --- n17(["<b>Preprocessing</b>"]) & n19(["<b>Coding &amp; Quality Control</b>"]) & n21(["<b>Pipeline Development</b>"]) & n29(["<b>Site Supervision</b>"])
-    n17 --- n18["<b>Whitney Kasenetz</b><br>Preprocessing Liason w/ Lasso &amp; LORIS"]
-    n21 --- n28["<b>Dylan Gilbreath</b><br>Pipeline Dev, Coding, &amp; QC"]
-    n29 --- n30["<b>Trisha Maheswari</b><br>Site Supervision, Coding, &amp; QC<br>
-    <b>Elise Harris<br></b>Site Oversight, QC, &amp; Training"]
-    n19 --- n31["<b>Santiago Morales</b><br>Co-I &amp; Coding Lead"]
-    n31 --- n27["<b>Kira Ashton</b><br>Coding &amp; QC"] & n30 & n28
-    style n16 fill:#BBDEFB,stroke:#2962FF
-    style n17 fill:#E1BEE7,stroke:#AA00FF
-    style n19 fill:#E1BEE7,stroke:#AA00FF
-    style n21 fill:#E1BEE7,stroke:#AA00FF
-    style n29 fill:#E1BEE7,stroke:#AA00FF
-    style n18 fill:#BBDEFB,stroke:#2962FF
-    style n28 fill:#BBDEFB,stroke:#2962FF
-    style n30 fill:#BBDEFB,stroke:#2962FF
-    style n31 fill:#C8E6C9,stroke:#00C853
-    style n27 fill:#BBDEFB,stroke:#2962FF
-```
-</div>
-
+<p><object type="image/svg+xml" data="umd-OC.svg" width="70%"></object></p>
 
 <div id="umd-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#umd-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -1047,33 +820,33 @@ flowchart TB
     </thead>
     <tbody>
     <tr>
-    <td>Nathan Fox</td>
-    <td>Associate Director</td>
+    <td>Nathan Fox, PhD</td>
+    <td style="word-wrap: break-word; white-space: normal;">HDCC Associate Director & EEG Core Director</td>
     <td style="word-wrap: break-word; white-space: normal;">Provides strategic and scientific oversight for EEG data collection, preprocessing, and integration efforts across sites.</td>
     </tr>
     <tr>
-    <td>Whitney Kasenetz</td>
-    <td style="word-wrap: break-word; white-space: normal;">Preprocessing Liason w/ Lasso &amp; LORIS</td>
-    <td style="word-wrap: break-word; white-space: normal;">Coordinates preprocessing workflows and serves as the primary liaison between the EEG team and the Lasso and LORIS development groups.</td>
-    </tr>
-    <tr>
-    <td>Dylan Gilbreath</td>
-    <td>Pipeline Developer</td>
-    <td style="word-wrap: break-word; white-space: normal;">Designs and implements automated EEG preprocessing and analysis pipelines, develops code for signal processing and feature extraction, and performs quality control checks to ensure accurate, standardized output across sites.</td>
-    </tr>
-    <tr>
-    <td>Santiago Morales</td>
+    <td>Santiago Morales, PhD</td>
     <td>Co-I &amp; Coding Lead</td>
     <td style="word-wrap: break-word; white-space: normal;">Leads EEG behavioral coding initiatives and quality assurance protocols, overseeing the alignment of coded variables with experimental design and coordinating validation efforts to maintain data integrity across cohorts.</td>
     </tr>
     <tr>
-    <td>Kira Ashton</td>
-    <td>Developer</td>
+    <td>Whitney Kasenetz</td>
+    <td style="word-wrap: break-word; white-space: normal;">Preprocessing Liason w/ Lasso & LORIS</td>
+    <td style="word-wrap: break-word; white-space: normal;">Coordinates preprocessing workflows and serves as the primary liaison between the EEG team and the Lasso and LORIS development groups.</td>
+    </tr>
+    <tr>
+    <td>Kira Ashton, PhD</td>
+    <td>Coding & QC Developer</td>
     <td style="word-wrap: break-word; white-space: normal;">Conducts EEG data annotation, behavioral coding, and quality control checks, ensuring consistent and accurate coding practices across participants and sessions.</td>
     </tr>
     <tr>
+    <td>Dylan Gilbreath, PhD</td>
+    <td>Pipeline Developer</td>
+    <td style="word-wrap: break-word; white-space: normal;">Designs and implements automated EEG preprocessing and analysis pipelines, develops code for signal processing and feature extraction, and performs quality control checks to ensure accurate, standardized output across sites.</td>
+    </tr>
+    <tr>
     <td>Trisha Maheswari</td>
-    <td>Site Supervisor</td>
+    <td>Site Oversight</td>
     <td style="word-wrap: break-word; white-space: normal;">Manages site-level EEG data collection processes, supervises staff and students involved in EEG acquisition and coding, and conducts local QC to maintain protocol compliance.</td>
     </tr>
     <tr>
@@ -1091,10 +864,6 @@ flowchart TB
 The Laureate Institute for Brain Research (LIBR) houses the Biostatistics and Geolocation [HBCD Workgroups](#hbcd-workgroups) and provides support for the HDCC in the areas of biostatistics, geolocation, and data analysis.
 
 ```mermaid
----
-config:
-  layout: fixed
----
 flowchart LR
     n16["<b>Wesley K. Thompson, PhD</b><br>HDCC Assoc Dir, BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
     style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
@@ -1103,7 +872,7 @@ flowchart LR
 
 <div id="libr-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
   <a class="anchor-link" href="#libr-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -1114,21 +883,21 @@ flowchart LR
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
     <thead>
       <tr>
-        <th style="width: 25%;">Name</th>
-        <th style="width: 30%;">Title</th>
-        <th style="width: 45%;">Role on HDCC</th>
+        <th style="width: 10%;">Name</th>
+        <th style="width: 20%;">Title</th>
+        <th style="width: 60%;">Role on HDCC</th>
       </tr>
     </thead>
     <tbody>
       <tr>
       <td>Wesley K. Thompson, PhD</td>
-      <td>HDCC Assoc Dir, BioStatistics Chair</td>
-      <td>&nbsp;</td>
+      <td style="word-wrap: break-word; white-space: normal;">HDCC Assoc Dir, BioStatistics Chair</td>
+      <td style="word-wrap: break-word; white-space: normal;">Provides statistical guidance on study design, analysis, and methods development for HBCD. Co-leads statistical design and maintenance of <span class="tooltip tooltip-left">DEAP 2.0<span class="tooltiptext">the Data Exploration and Analysis Portal 2.0</span></span>. Supports geolocation of participant residences and linkage to external data sources.</td>
       </tr>
       <tr>
       <td>Chun Fan, PhD</td>
-      <td>Geolocation Chair</td>
-      <td>&nbsp;</td>
+      <td style="word-wrap: break-word; white-space: normal;">Geolocation Chair</td>
+      <td style="word-wrap: break-word; white-space: normal;">Co-leads HDCC efforts in curating and analyzing imaging, genomic, and geolocation exposure data. Supports expansion of <span class="tooltip tooltip-left">DEAP 2.0<span class="tooltiptext">the Data Exploration and Analysis Portal 2.0</span></span> for high-dimensional genomic, imaging, and exposure data analysis and harmonization with external studies, including development of a probabilistic ontology for cross-study comparisons.</td>
       </tr>
 </table>
 </div>
@@ -1138,20 +907,17 @@ flowchart LR
 Columbia houses the Novel Technologies & Wearables [HBCD Workgroup](#hbcd-workgroups) and provides support for the HDCC in the areas of novel technologies, wearables, and data analysis.
 
 ```mermaid
----
-config:
-  layout: fixed
----
 flowchart LR
-    n16["<b>William P. Fifer, PhD</b><br>Novel Tech & Wearables Co-Chair"] --- n17["<b>Nicolo Pini, PhD</b><br>?????"]
+    n16["<b>William P. Fifer, PhD</b><br>Novel Tech &amp; Wearables Co-Chair"]
+    n16 --- n17["<b>Nicolo Pini, PhD</b><br>Co-Investigator"]
     style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style n17 fill:#BBDEFB,stroke:#2962FF
+    style n17 fill:#C8E6C9,stroke:#00C853
 ```
 
-<div id="libr-rr" class="table-banner" onclick="toggleCollapse(this)">
+<div id="columbia-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Roles & Responsibilities</span>
-  <a class="anchor-link" href="#libr-rr" title="Copy link">
+  <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
+  <a class="anchor-link" href="#columbia-rr" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -1161,21 +927,22 @@ flowchart LR
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
     <thead>
       <tr>
-        <th style="width: 25%;">Name</th>
-        <th style="width: 30%;">Title</th>
-        <th style="width: 45%;">Role on HDCC</th>
+        <th style="width: 10%;">Name</th>
+        <th style="width: 20%;">Title</th>
+        <th style="width: 70%;">Role on HDCC</th>
       </tr>
     </thead>
     <tbody>
       <tr>
       <td>William P. Fifer, PhD</td>
-      <td>Novel Tech & Wearables Co-Chair</td>
-      <td>&nbsp;</td>
+      <td style="word-wrap: break-word; white-space: normal;">Novel Tech & Wearables Co-Chair</td>
+      <td style="word-wrap: break-word; white-space: normal;">Responsible for overall management of activities carried out by the subaward, including: serving as co-chair, supervision of automated sleep stage scoring and data analysis, and contributions to data analytics, writing, and review of manuscripts.</td>
       </tr>
       <tr>
-      <td>Nicolo Pini</td>
-      <td></td>
-      <td>&nbsp;</td>
+      <td>Nicolo Pini, PhD</td>
+      <td style="word-wrap: break-word; white-space: normal;">Co-Investigator</td>
+      <td style="word-wrap: break-word; white-space: normal;">Leading member of NT Workgroup. Develops pipelines necessary for extraction of derivatives, data upload, storage, and maintenance of the EKG data collected during EEG and the heart rate wearable sensor data. Coordinate recurring training at the HBCD sites in these two modalities. Supervise the quality control work performed by the Research Technician.
+</td>
       </tr>
 </table>
 </div>
@@ -1307,7 +1074,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     </tr>
     <tr>
       <th scope="row">Functional</th>
-      <td>Tracy Riggins, Chad Sylvester</td>
+      <td>Jennifer Vannest, Chad Sylvester</td>
       <td>Michael Harms</td>
       <td>Allen Newton</td>
       <td>Doug Dean</td>
@@ -1343,129 +1110,6 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 
 ### HBCD Workgroup Connect Points with the HDCC
 
-***TO DO: model out workgroups and their connect points with HDCC (i.e., for QA, QC, releases, requests, etc)***
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
 
-#### Original diagram from Jen
-
-<img src="../images/jen-WGs-HDCC.drawio.png">
-
-#### ALT: display info from Jen's diagram in text and table format
-   
-All HBCD Workgroups interface heavily with the HDCC for:
-
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr>
-  <td><b>Data processing</b></td>
-  <td style="word-wrap: break-word; white-space: normal;">Processing workflows, from site capture to public release, are outlined under <a href="../workflows/data-proc-wf">Data Processing Workflows</a>. Each stage indicates which HDCC entity is involved in the process.</td>
-</tr>
-<tr>
-  <td><b>Quality control</b></td>
-  <td style="word-wrap: break-word; white-space: normal;">HDCC provides the infrastructure for several stages of quality control for data within HBCD Workgroup domains, including pre-release QC and ongoing QC via dashboards. Details on these processes can be found in the <a href="../workflows/qc">Quality Control Procedures</a>. Each stage indicates which HDCC entity is involved in the process where relevant.</td>
-</tr>
-<tr>
-  <td><b>Central documentation</b></td>
-  <td style="word-wrap: break-word; white-space: normal;">HDCC provides a central repository for documentation related to HBCD Workgroup data, including measure documentation and data release notes made available via the <a href="https://docs.hbcdstudy.org/latest/">HBCD Data Release Docs</a>, the private release Docs (available to DUC users), and this internal documentation site.</td>
-</tr>
-</tbody>
-</table>
-
-<p>
-<style>
-  .compact-table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    font-size: 13px; /* Reduced font size */
-  }
-  .compact-table th,
-  .compact-table td {
-    padding: 4px 6px; /* Tighter padding */
-    text-align: left;
-    vertical-align: middle;
-    word-wrap: break-word;
-    white-space: normal;
-  }
-  .compact-table th {
-    font-weight: 600;
-  }
-  .tooltip .tooltiptext {
-    font-size: 11px; /* Smaller hover text */
-    line-height: 1.2;
-    padding: 6px;
-  }
-</style>
-
-<table class="compact-table table-no-vertical-lines">
-  <thead>
-    <tr>
-      <th>&nbsp;</th>
-      <th style="text-align: center;">Provide <a href="https://docs.hbcdstudy.org/latest/instruments/">data release notes</a><br>documentation for study measures<br>
-      <i class="fa-solid fa-house"></i> <a href="#center-for-developmental-neuroimaging">CDNI (UMN)</a></th>
-      <th style="text-align: center;">Ongoing QC via Dashboards<br><a href="../workflows/qc#proc-pheno" target="_blank"><i>See Details</i></a></th>
-      <th style="text-align: center;">Public release data QC<br>
-        <i class="fa-solid fa-house"></i> <a href="#lasso">Lasso</a><br>
-        <a href="../workflows/qc#pre-release-pheno" target="_blank"><i>See Details</i></a></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Behavior & Caregiver-Child Interaction</td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#lasso">Tableau (Lasso)</a></td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-    <tr><td>Biospecimens & Omics</td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td> 
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#health-sciences-technology">HST Dashboard</a></td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-    <tr><td>Biostatistics</td>
-      <td style="text-align: center;"><i class="fa-solid fa-xmark" style="color: red;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#lasso">Tableau (Lasso)</a></td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-    <tr><td>Demographics</td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-xmark" style="color: red;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-    <tr><td>Electroencephalography</td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><a href="../workflows/qc#eeg-data" target="_blank"><i>See details</i></a></td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-    <tr><td>Geocoding & Linking External Data</td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#ripple">Ripple (WashU)</a></td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-    <tr><td>Magnetic Resonance Imaging</td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><a href="../workflows/qc#mri-mrs-data" target="_blank"><i>See details</i></a></td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-    <tr><td>Neurocognition & Language</td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#lasso">Tableau (Lasso)</a></td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-    <tr><td>Novel Technologies & Wearables</td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#lasso">Tableau (Lasso)</a></td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-    <tr><td>Physical Health</td>
-    <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-    <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#lasso">Tableau (Lasso)</a></td>
-    <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-    <tr><td>Pregnancy & Exposure</td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#lasso">Tableau (Lasso)</a></td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-    <tr><td>Social & Environmental Determinants</td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#lasso">Tableau (Lasso)</a></td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-    <tr><td>Transitions in Care</td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-      <td style="text-align: center;"><i class="fa-solid fa-house"></i> <a href="#ripple">Ripple (WashU)</a></td>
-      <td style="text-align: center;"><i class="fa-solid fa-check" style="color: green;"></i></td>
-  </tbody>
-</table>
-</p>
-
-#### ALT: mermaid diagram version
-
-<object class="center" type="image/svg+xml" data="../images/wg-hdcc-tb.svg" width="100%"></object>
 

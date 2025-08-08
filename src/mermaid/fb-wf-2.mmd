@@ -1,0 +1,76 @@
+---
+config:
+  layout: elk
+  look: neo
+  theme: redux
+---
+flowchart LR
+ subgraph s2["<b>CBRAIN Processing</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a>"]
+        n24["<b>CBRAIN<br>Processing</b>"]
+        n25["<b>De-ID<br></b><i><code>S3:main-deid/<br>derivatives/</code></i>"]
+        n26@{ label: "<b>Record Query<br></b><a href=\"../data-proc-wf/#record-query\" target=\"_top\"><i>Click for Details</i></a>" }
+  end
+ subgraph s3["<b>Re-Identification for LORIS<br></b><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a>"]
+        n27@{ label: "<b>Re-ID<br>derivatives</b><br><a href=\"../data-proc-wf/#re-id\" target=\"_top\"><i>Click for Details</i></a>" }
+        n28@{ label: "<b><span style=\"color:\">Main PR<br></span></b><i><code>S3:main-pr/<br>derivatives/</code></i>" }
+        n43@{ label: "<b>LORIS<br>ingestion</b><br><a href=\"../data-proc-wf/#loris-ingestion\" target=\"_top\"><i>Click for Details</i></a>" }
+        n45["<b>Re-ID<br>BrainSwipes</b><br>"]
+        n46["<b>Main PR</b><br><i><code>S3:main-pr/<br>reid_<br>brainswipes/</code></i>"]
+  end
+ subgraph s4["<b>BrainSwipes<br></b><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a><br><a href=../data-proc-wf/#brainswipes target=_top><i>Click for Details</i></a>"]
+        n32["<b>QC MRI<br>derivatives</b>"]
+        n33@{ label: "<div style=\"color:\"><div><b>De-ID<br></b><i><code>S3:main-deid/<br>brainswipes/</code></i></div></div>" }
+  end
+ subgraph s5["<b>Release Staging for Lasso<br></b><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a>"]
+        n35@{ label: "<b>Copy release data</b><br><a href=\"../data-proc-wf/#copy-to-release\" target=\"_top\"><i>Click for Details</i></a>" }
+        n36["<b>Lasso<br>Prerelease</b><br><i><code>S3:lasso-data-<br>prerelease/</code></i>"]
+  end
+ subgraph s6["<b>NOTE</b>"]
+        legend@{ label: "<b>'S3:'</b> indicates<br>the prefix<span style=\"background-color:\"><br></span><span style=\"background-color:lightblue;\">s3://midb-hbcd-<br></span>for S3 bucket names" }
+  end
+ subgraph s7["<br>"]
+        n40(("<b>LASSO<br>INGESTION</b>"))
+  end
+    n24 --> n25
+    n25 --> n26 & n27 & n35 & n32
+    n26 --> n25
+    n27 --> n28
+    n32 --> n33
+    n35 --> n36
+    n28 --> n43
+    n44["<b>CBRAIN Processing<br><i>CONTINUED</i></b>"] --> n24
+    n33 --> n45
+    n45 --> n46
+    n46 --> n43
+    n36 --> n40
+    n24@{ shape: rect}
+    n25@{ shape: disk}
+    n26@{ shape: rect}
+    n27@{ shape: rect}
+    n28@{ shape: disk}
+    n43@{ shape: rect}
+    n45@{ shape: rect}
+    n46@{ shape: disk}
+    n33@{ shape: disk}
+    n35@{ shape: rect}
+    n36@{ shape: disk}
+    n44@{ shape: rect}
+    style n24 fill:#E1BEE7
+    style n25 fill:#E1BEE7
+    style n26 fill:#E1BEE7
+    style n27 fill:#BBDEFB
+    style n28 fill:#BBDEFB
+    style n43 fill:#BBDEFB
+    style n45 fill:#BBDEFB
+    style n46 fill:#BBDEFB
+    style n32 fill:#FFD600
+    style n33 fill:#FFD600,color:#000000
+    style n35 fill:#C8E6C9
+    style n36 fill:#C8E6C9
+    style n40 fill:#C8E6C9,stroke:#00C853,stroke-width:4px,stroke-dasharray: 0
+    style n44 fill:#C8E6C9,stroke-width:4px,stroke-dasharray: 0,stroke:#00C853
+    style s5 fill:#EBFFEB
+    style s2 fill:#FAD9FF
+    style s3 fill:#E3F2FD
+    style s4 fill:#FFF9C4
+    style s7 stroke:none,fill:transparent

@@ -4,7 +4,50 @@
 /* red: #be074c */ 
 /* black/gray: #6b6b6b */ 
 
-/* styling text to make more subtle, e.g. "Click to Expand"*/
+/* Pill styling for pillars of HDCC (on overview page and throughout) */
+.pill-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  gap: 6px;
+}
+.pill-link-wrapper {
+  text-decoration: none;
+}
+.pill-link {
+  display: inline-flex; /* change from inline-block to flex for centering */
+  align-items: center;
+  justify-content: center;
+  background-color: #f3e9ff;
+  color: #4b0082;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.9em;
+  font-weight: 800;
+  border: 1px solid #ca9eff;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  width: 36px;
+  height: 36px;
+}
+.pill-link:hover {
+  background-color: #ead4ff;
+  color: #3a006b;
+  border-color: #b884ff;
+}
+
+/* Remove tooltip styling for the pill boxes specifically */
+.pill-link .tooltip {
+    border-bottom: none;
+}
+.pill-link .tooltip:hover {
+    border-bottom: none;
+}
+.pill-center .tooltip {
+    border-bottom: none;
+}
+
+/* styling text to make more subtle, e.g. "Click to Expand" */
 .hint {
   color: #888;
   font-size: 90%;
@@ -14,7 +57,7 @@
 }
 
 /* styling for text with hyperlinks (not TOC, previous and next footer buttons, or images) */
-.rst-content a:not(.rst-footer-buttons a):not(:has(img)) {
+.rst-content a:not(.rst-footer-buttons a):not(:has(img)):not(.pill-link-wrapper a):not(.pill-center a) {
   color: #0066cc;
   font-weight: 500;
   text-decoration: underline dotted;
@@ -26,7 +69,7 @@
   border-radius: 2px;
   transition: background-color 0.2s ease;
 }
-.rst-content a:hover:not(.rst-footer-buttons a):not(:has(img)) {
+.rst-content a:hover:not(.rst-footer-buttons a):not(:has(img)):not(.pill-center a) {
   background-color: rgba(0, 102, 204, 0.15);
   text-decoration: underline;
 }

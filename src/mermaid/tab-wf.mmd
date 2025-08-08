@@ -9,20 +9,31 @@ flowchart LR
         n13@{ label: "REDCap (<a href=\"../../orgcharts/#j-craig-venter-institute\" rel=\"noopener\" target=\"_blank\">JCVI</a>)" }
         n14@{ label: "TLFB (<a href=\"../../orgcharts/#j-craig-venter-institute\" rel=\"noopener\" target=\"_blank\">JCVI</a>)" }
         n16@{ label: "<a href=\"../../orgcharts/#ripple\" rel=\"noopener\" target=\"_blank\">Ripple</a>" }
-        n17@{ label: "<a href=\"../proc-wf/#third-party\" target=\"_top\">Third Party</a>" }
+        n17@{ label: "<a href=\"#third-party\" target=\"_top\">Third Party</a>" }
         n18["Biospecimens"]
         n19["Genetics"]
   end
- subgraph s1["Processing<br><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a>"]
-        n15["LORIS<br>Production S3<br>ADD BUCKET NAME"]
+ subgraph s1["<b>Production</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a>"]
+        n15@{ label: "<b>LORIS<br>Production</b><br><span style=\"color:\"><code><i>S3:main-pr/</i></code></span>" }
   end
- subgraph s2["Capture<br><a href="../../orgcharts/#health-sciences-technology" target="_blank">UMN HST</a>"]
-        n20["Sampled"]
-        n21["UMN SCE (Secure Computing Environment)"]
-        n22["USDTL"]
+ subgraph s2["<b>Capture</b><br><a href=../../orgcharts/#health-sciences-technology rel=noopener target=_blank>UMN HST</a>"]
+        n20@{ label: "<a href=\"https://sampled.com/\">Sampled</a>" }
+        n21["UMN SCE"]
+        n22@{ label: "<a href=\"https://www.usdtl.com/\">USDTL</a>" }
   end
- subgraph s3["Non-Production System Testing"]
-        n23["LORIS Sandbox"]
+ subgraph s3["<b>Non-Production</b>"]
+        n23["<b>LORIS<br>Sandbox</b><br><code><i>S3:main-sb/</i></code>"]
+  end
+ subgraph s4["<b>De-Identification</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a>"]
+        n25["De-ID"]
+        n26["<b>De-ID<br></b><code><i>S3:main-deid/</i></code>"]
+  end
+ subgraph s5["<b>Release Staging for Lasso</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a>"]
+        n27["<b>Lasso<br>Staging</b><br><code><i>S3:lasso-<br>staging/</i></code>"]
+        n28@{ label: "<b>Lasso<br>Prerelease<br></b><code><i><span style=\"background-color:\">S3:</span>lasso-<br>prerelease/</i></code>" }
+  end
+ subgraph s6["<b>NOTE</b>"]
+        legend@{ label: "<b>'S3:'</b> indicates the<br>prefix <span style=\"background-color:lightblue;\">s3://midb-hbcd-<br></span>for S3 bucket names" }
   end
     n13 --> n15
     n14 --> n15
@@ -33,7 +44,12 @@ flowchart LR
     n20 --> n21
     n22 --> n21
     n21 --> n15 & n23
-    n15 --> n24["<b>LASSO STAGING AND INGESTION</b>"]
+    n15 --> n25
+    n25 --> n26
+    n27 --> n28
+    n26 --> n27
+    n29["<b>De-ID List<br></b><code><i>S3:main-pr-deidentification-<br>list/</i></code>"] --> n25
+    n28 --> n30@{ label: "<a href=\"../../orgcharts/#lasso\" rel=\"noopener\" target=\"_blank\"><b>LASSO</a><br>INGESTION</b>" }
     n13@{ shape: lean-r}
     n14@{ shape: lean-r}
     n16@{ shape: lean-r}
@@ -41,23 +57,40 @@ flowchart LR
     n18@{ shape: lean-r}
     n19@{ shape: lean-r}
     n15@{ shape: disk}
-    n20@{ shape: disk}
-    n21@{ shape: disk}
-    n22@{ shape: disk}
+    n20@{ shape: db}
+    n21@{ shape: db}
+    n22@{ shape: db}
     n23@{ shape: disk}
+    n25@{ shape: rect}
+    n26@{ shape: disk}
+    n27@{ shape: disk}
+    n28@{ shape: disk}
+    legend@{ shape: text}
+    n29@{ shape: disk}
+    n30@{ shape: circle}
+    s4@{ shape: rect}
+    s5@{ shape: rect}
     style n13 fill:#FFD600
     style n14 fill:#FFD600
     style n16 fill:#FFD600
     style n17 fill:#FFD600
     style n18 fill:#FFD600
     style n19 fill:#FFD600
-    style n15 fill:#C8E6C9
-    style n20 fill:#C8E6C9
-    style n21 fill:#C8E6C9
-    style n22 fill:#C8E6C9
-    style n23 fill:#C8E6C9
-    style n24 fill:#AA00FF,color:#FFFFFF
+    style n15 fill:#BBDEFB
+    style n20 fill:#FFD600
+    style n21 fill:#FFD600
+    style n22 fill:#FFD600
+    style n23 fill:#BBDEFB
+    style n25 fill:#E1BEE7,stroke:#AA00FF,stroke-width:4px,stroke-dasharray: 0
+    style n26 fill:#E1BEE7
+    style n27 fill:#C8E6C9
+    style n28 fill:#C8E6C9
+    style n29 fill:#E1BEE7
+    style n30 fill:#C8E6C9,stroke:#00C853,stroke-width:4px,stroke-dasharray: 0
+    style s4 fill:#FAD9FF
+    style s5 fill:#EBFFEB
     style Capture_LORIS fill:#FFF9C4
-    style s1 fill:#E1BEE7
-    style s2 fill:#BBDEFB
-    style s3 fill:#BBDEFB
+    style s1 fill:#E3F2FD
+    style s2 fill:#FFF9C4
+    style s3 fill:#E3F2FD
+    style s6 color:#000000,stroke:#757575

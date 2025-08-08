@@ -40,7 +40,7 @@ th, td {
   display: flex;
   align-items: center; /* Ensures vertical alignment of items */
   justify-content: space-between; /* Ensures proper spacing */
-  background-color: #f0f4ff;
+  background-color: rgba(0, 102, 255, 0.183);
   border: 1px solid #3333331a;
   padding: 8px 10px;
   border-radius: 5px;
@@ -99,8 +99,30 @@ th, td {
   padding: 8px;
   text-align: left;
   background-color: rgba(255, 255, 255, 0.6) !important; 
-
 }
 .table-no-vertical-lines th {
   background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Special table with no vertical lines for core concepts on front page - set embedded link styling (a) to not underline text*/
+.overview-table-no-vertical-lines {
+  border-collapse: collapse;
+  width: 100%;
+}
+.overview-table-no-vertical-lines th,
+.overview-table-no-vertical-lines td {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: none !important;
+  border-right: none !important;
+  padding: 8px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.6) !important; 
+
+}
+.overview-table-no-vertical-lines th {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+.overview-table-no-vertical-lines a {
+  text-decoration: none !important;
 }
