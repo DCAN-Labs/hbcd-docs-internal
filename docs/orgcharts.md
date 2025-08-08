@@ -386,6 +386,48 @@ The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) works in coord
 
 <p><object type="image/svg+xml" data="midb-analytics.svg" width="70%"></object></p>
 
+<div id="analytics-raci" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> RACI</span>
+  <a class="anchor-link" href="#analytics-raci" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+  <thead style="background-color: #f2f2f2;">
+    <tr>
+      <th>Person</th>
+      <th>Genomics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Michael Anderson, PhD</strong><br><small>Genomics Data Scientist</small></td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td><strong>Christian Coffman, PhD</strong><br><small>Data Scientist &amp; Analyst</small></td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td><strong>Kody DeGolier, MS</strong><br><small>Research Associate</small></td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td><strong>Saonli Basu, PhD</strong><br><small>Co-I, HBCD Genomics</small></td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td><strong>Annette Xenopoulos-Oddsson, MSc</strong><br><small>Project Manager</small></td>
+      <td>C</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 <div id="midb-analytics-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
