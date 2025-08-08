@@ -105,6 +105,66 @@ The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN
 
 <p><object type="image/svg+xml" data="cdni.svg" width="80%"></object></p>
 
+<div id="cdni-raci" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> RACI</span>
+  <a class="anchor-link" href="#cdni-raci" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+  <thead>
+    <tr>
+      <th>Person</th>
+      <th>MRI Acquisition</th>
+      <th>Processed MRI QC</th>
+      <th>Pipeline Standardization</th>
+      <th>HDCC Release Docs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Damien Fair</strong></td>
+      <td>A</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td><strong>Kimberly Weldon</strong></td>
+      <td>R</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Eric Feczko</strong></td>
+      <td>C</td>
+      <td>A</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td><strong>Michael Anderson</strong></td>
+      <td>-</td>
+      <td>R</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Lucille Moore</strong></td>
+      <td>-</td>
+      <td>C</td>
+      <td>A/R</td>
+      <td>A/R</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 <div id="cdni-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i> Roles & Responsibilities</span>
@@ -185,6 +245,77 @@ The Data security model ensures data security by focusing on two key components:
 </p>
 
 <p><object type="image/svg+xml" data="hst-OC.svg" width="80%"></object></p>
+
+<div id="hst-raci" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> RACI</span>
+  <a class="anchor-link" href="#hst-raci" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+    <tr>
+      <th>Person</th>
+      <th>Development Operations</th>
+      <th>MRI QC Dashboard</th>
+      <th>Electronic Health Records</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Karen Athy-Penrose</strong><br><small>Project Manager</small></td>
+      <td>A</td>
+      <td>A</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td><strong>Dan Duhon<br>Derek Thompson<br>Saranya Subramanian<br>Brett Weaver</strong><br><small>Developers</small></td>
+      <td>R</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Haley Hutala</strong><br><small>Tableau Engineer</small></td>
+      <td>-</td>
+      <td>R</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Sanjana Madakshire</strong><br><small>QC Developer</small></td>
+      <td>-</td>
+      <td>R</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Steve Johnson</strong><br><small>Dir Informatics Innovation</small></td>
+      <td>-</td>
+      <td>-</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td><strong>Tim Meyer</strong><br><small>Informatics Engineer</small></td>
+      <td>-</td>
+      <td>-</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td><strong>Reed McEwan</strong><br><small>HDCC Architect</small></td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td><strong>WashU EMR Core</strong></td>
+      <td>-</td>
+      <td>-</td>
+      <td>C</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 <div id="hst-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
