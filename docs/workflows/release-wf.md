@@ -284,13 +284,13 @@ Below we outline the individuals responsible for various stages of the release a
 <table class="compact-table">
 <thead>
   <tr>
-    <th>Study Stage</th>
-    <th>Step</th>
-    <th>Location</th>
-    <th>Responsible</th>
-    <th>Accountable</th>
-    <th>Consulted</th>
-    <th>Informed</th>
+    <th style="width: 20%; text-align: center">Study Stage</th>
+    <th style="text-align: center">Step</th>
+    <th style="text-align: center">Location</th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>R</b><span class="tooltiptext">Responsible</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>A</b><span class="tooltiptext">Accountable</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
   </tr>
 </thead>
 <tbody>
@@ -393,15 +393,14 @@ Below we outline the individuals responsible for various stages of the release a
 <table class="compact-table">
 <thead>
   <tr>
-    <th>Study Stage</th>
-    <th>Step</th>
-    <th>Location</th>
-    <th>Responsible</th>
-    <th>Accountable</th>
-    <th>Consulted</th>
-    <th>Informed</th>
+    <th style="width: 20%; text-align: center">Study Stage</th>
+    <th style="text-align: center">Step</th>
+    <th style="text-align: center">Location</th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>R</b><span class="tooltiptext">Responsible</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>A</b><span class="tooltiptext">Accountable</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
   </tr>
-</thead>
 <tbody>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep</td>
@@ -619,15 +618,14 @@ Below we outline the individuals responsible for various stages of the release a
 <table class="compact-table">
 <thead>
   <tr>
-    <th>Study Stage</th>
-    <th>Step</th>
-    <th>Location</th>
-    <th>Responsible</th>
-    <th>Accountable</th>
-    <th>Consulted</th>
-    <th>Informed</th>
+    <th style="width: 20%; text-align: center">Study Stage</th>
+    <th style="text-align: center">Step</th>
+    <th style="text-align: center">Location</th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>R</b><span class="tooltiptext">Responsible</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>A</b><span class="tooltiptext">Accountable</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
   </tr>
-</thead>
 <tbody>
 </tbody>
 </table>
@@ -646,14 +644,13 @@ Below we outline the individuals responsible for various stages of the release a
 <table class="compact-table">
 <thead>
   <tr>
-    <th>Step</th>
-    <th>Location</th>
-    <th>Responsible</th>
-    <th>Accountable</th>
-    <th>Consulted</th>
-    <th>Informed</th>
+    <th style="text-align: center">Step</th>
+    <th style="text-align: center">Location</th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>R</b><span class="tooltiptext">Responsible</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>A</b><span class="tooltiptext">Accountable</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
   </tr>
-</thead>
 <tbody>
 <tr>
 <td>Acquisition of sample</td>
@@ -769,13 +766,13 @@ Below we outline the individuals responsible for various stages of the release a
 <table class="compact-table">
 <thead>
   <tr>
-    <th>Study Stage</th>
-    <th>Step</th>
-    <th>Location</th>
-    <th>Responsible</th>
-    <th>Accountable</th>
-    <th>Consulted</th>
-    <th>Informed</th>
+    <th style="width: 20%; text-align: center">Study Stage</th>
+    <th style="text-align: center">Step</th>
+    <th style="text-align: center">Location</th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>R</b><span class="tooltiptext">Responsible</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>A</b><span class="tooltiptext">Accountable</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
   </tr>
 </thead>
 <tbody>
