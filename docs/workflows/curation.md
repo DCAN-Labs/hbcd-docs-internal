@@ -1,8 +1,8 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
-
 # Curation Procedures: Naming Conventions
 
 Variable naming conventions for the release data are described on the HBCD Release Data Docs site on the *Metadata & Naming Conventions* under [Naming Conventions](https://docs.hbcdstudy.org/latest/access/metadata/#naming-conventions). The naming convention is applied when data is transferred from LORIS to Lasso for release staging.
+
+**Full standardization is still a work in progress - see [this spreadsheet](https://docs.google.com/spreadsheets/d/1AM7BJiKpZIDdcCFdkZnFg4jr6ZN48ZPtbFMevfNrPWo/edit?usp=sharing) for a running list of issues/variables names that require standardization.**
 
 ## Source Data Naming Schemes
 
@@ -17,34 +17,34 @@ Prior to staging in Lasso, instrument and fieldname conventions generally follow
     </thead>
     <tbody>
         <tr>
-            <td><b>REDCap surveys</b></td>
+            <td style="word-wrap: break-word; white-space: normal;"><b>REDCap surveys</b></td>
             <td style="word-wrap: break-word; white-space: normal;">
                 Variables are named according to the conventions defined in REDCap and imported into LORIS via the REDCap Data Dictionary (DD). 
                 These variable names generally match those in the REDCap DD, as LORIS instruments are created directly from that dictionary.
             </td>
         </tr>
         <tr>
-            <td><b>LORIS native forms</b></td>
+            <td style="word-wrap: break-word; white-space: normal;"><b>LORIS native forms</b></td>
             <td style="word-wrap: break-word; white-space: normal;">
                 Initially coded using a flexible scheme, these instruments were later adapted to align with the REDCap naming convention. 
                 Field and instrument names now generally follow the REDCap standard, with only minor deviations in some cases.
             </td>
         </tr>
        <tr>
-            <td><b>LORIS Core Fields</b></td>
+            <td style="word-wrap: break-word; white-space: normal;"><b>LORIS Core Fields</b></td>
             <td style="word-wrap: break-word; white-space: normal;">
                 These fields are not associated with instruments and have their own pre-established names that may or may not be be adapted for the Data Release.
             </td>
         </tr>
         <tr>
-            <td><b>Third-party instruments</b></td>
+            <td style="word-wrap: break-word; white-space: normal;"><b>Third-party instruments</b></td>
             <td style="word-wrap: break-word; white-space: normal;">
                 Collected externally and imported into LORIS via parsing scripts, these instruments function like LORIS native forms and 
                 follow the same naming convention, typically adhering to the standardized REDCap scheme.
             </td>
         </tr>
         <tr>
-            <td><b>Ripple / ETL fields</b></td>
+            <td style="word-wrap: break-word; white-space: normal;"><b>Ripple / ETL fields</b></td>
             <td style="word-wrap: break-word; white-space: normal;">
                 Fields related to screening, demographics, or other study metadata, such as <i>Transition in Care (TIC)</i>, 
                 <i>Alternate Caregiver (ACG)</i>, <i>Geocoding</i>, or <i>Study Navigator (SN)</i>, are collected or calculated in Ripple or via ETL then transferred to LORIS. These fields may not fully follow the REDCap naming convention and are usually stored at the 
@@ -73,3 +73,163 @@ The `domain` and `source` are included in the JSON metadata and are typically de
  - Some session-level elements (e.g. `informantID`)
  - Participant-level data
 
+## Known Issues 
+
+Below is a running list of variables that need to be updated to conform to the naming standards. Note that variable names are fairly internally consistent within tables (as they are often dictated by the conventions of the source platform), so the issues and examples below will generally apply to all of the variable names within a given instrument.
+
+### Summary
+
+There appear to be 2 main naming conventions in the Release 1.0 data:
+
+Type 1 = `domain_source_table_item` - matches [ABCD naming conventions](https://docs.abcdstudy.org/latest/documentation/curation/naming.html)       
+Type 2 = `domain_source_table_scale_item` - seems to follow existing, but potentially out-of-date, [REDCap standardization documentation](https://docs.google.com/document/d/1_xj8TPDRmb5-fQAQ3KZW87yzft-bA5Kt8HLNwMwm_MA/edit?tab=t.0#heading=h.6j8c7yy6p6t4)
+
+A rough estimate from a simple parsing script shows the majority of variables currently follow Type 2 convention:       
+Type 1 - 965 variables           
+Type 2 - 3531 variables
+
+See [this spreadsheet](https://docs.google.com/spreadsheets/d/1AM7BJiKpZIDdcCFdkZnFg4jr6ZN48ZPtbFMevfNrPWo/edit?usp=sharing) for additional notes and details.
+
+#### Issue 1: Scale should be a subcomponent of table
+
+Scale is currently its own main component. This makes the number of naming components across variables inconsistent because not all variables have scales, and is also inconsistent with ABCD conventions, which use double underscores to make scale a subcomponent of the table component. 
+
+<table class="compact-table">
+<thead>
+<tr>
+<th style="width: 10%">Domain</th>
+<th style="width: 10%;">Table</th>
+<th style="width: 20%">Table Name</th>
+<th style="width: 20%">Example Variable</th>
+<th style="width: 10%">Example Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">BCGI</td>
+<td style="word-wrap: break-word; white-space: normal;">IBQ-R (VSF)+BI</td>
+<td style="word-wrap: break-word; white-space: normal;">mh_cg_ibqr</td>
+<td style="word-wrap: break-word; white-space: normal;">mh_cg_ibqr_efrt_011</td>
+<td style="word-wrap: break-word; white-space: normal;">__efrt</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">NCL</td>
+<td style="word-wrap: break-word; white-space: normal;">SPM-2</td>
+<td style="word-wrap: break-word; white-space: normal;">ncl_cg_spm2__inf</td>
+<td style="word-wrap: break-word; white-space: normal;">ncl_cg_spm2__inf_soc_001</td>
+<td style="word-wrap: break-word; white-space: normal;">__soc</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">PH</td>
+<td style="word-wrap: break-word; white-space: normal;">Growth</td>
+<td style="word-wrap: break-word; white-space: normal;">ph_ch_anthro</td>
+<td style="word-wrap: break-word; white-space: normal;">ph_ch_anthro_head_001__01</td>
+<td style="word-wrap: break-word; white-space: normal;">__head</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">PEX</td>
+<td style="word-wrap: break-word; white-space: normal;">ALL preg health tables, eg Chronic conditions:</td>
+<td style="word-wrap: break-word; white-space: normal;">pex_bm_health_preg__chroncond</td>
+<td style="word-wrap: break-word; white-space: normal;">pex_bm_health_preg__chroncond_001___1</td>
+<td style="word-wrap: break-word; white-space: normal;">__preg</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">PEX</td>
+<td style="word-wrap: break-word; white-space: normal;">FAM MH</td>
+<td style="word-wrap: break-word; white-space: normal;">pex_bm_psych</td>
+<td style="word-wrap: break-word; white-space: normal;">pex_bm_psych_bf_001</td>
+<td style="word-wrap: break-word; white-space: normal;">__bf</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">PEX</td>
+<td style="word-wrap: break-word; white-space: normal;">ASSISTV1/2/3</td>
+<td style="word-wrap: break-word; white-space: normal;">pex_bm_assistv1</td>
+<td style="word-wrap: break-word; white-space: normal;">pex_bm_assistv1_lt__use_001</td>
+<td style="word-wrap: break-word; white-space: normal;">__lt</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">SED</td>
+<td style="word-wrap: break-word; white-space: normal;">BFY</td>
+<td style="word-wrap: break-word; white-space: normal;">sed_bm_bfy</td>
+<td style="word-wrap: break-word; white-space: normal;">sed_bm_bfy_econstr_008</td>
+<td style="word-wrap: break-word; white-space: normal;">__econstr</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">SED</td>
+<td style="word-wrap: break-word; white-space: normal;">Demographics</td>
+<td style="word-wrap: break-word; white-space: normal;">sed_bm_demo</td>
+<td style="word-wrap: break-word; white-space: normal;">sed_bm_demo_herit_002__06___2</td>
+<td style="word-wrap: break-word; white-space: normal;">__herit</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">SED</td>
+<td style="word-wrap: break-word; white-space: normal;">PROMIS</td>
+<td style="word-wrap: break-word; white-space: normal;">sed_bm_strsup</td>
+<td style="word-wrap: break-word; white-space: normal;">sed_bm_strsup_socspprt_001</td>
+<td style="word-wrap: break-word; white-space: normal;">__socspprt</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Issue 2: Scale should be a subcomponent of table (*Issue 1*) + Add double underscores for item components
+
+<table class="compact-table">
+<thead>
+<tr>
+<th style="width: 10%">Domain</th>
+<th style="width: 10%;">Table</th>
+<th style="width: 20%">Table Name</th>
+<th style="width: 20%">Example Variable</th>
+<th style="width: 10%">Example Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NT</td>
+<td>Infant Questionaire</td>
+<td>nt_ch_sens__qtn_1</td>
+<td>nt_ch_sens__qtn_1_beh_002</td>
+<td>__1__</td>
+</tr>
+<tr>
+<td>PEX</td>
+<td>APA 1/2</td>
+<td>pex_bm_apa</td>
+<td>pex_bm_apa_1_depr_001</td>
+<td>__1__</td>
+</tr>
+<tr>
+<td>PEX</td>
+<td>TLFB</td>
+<td>pex_ch_tlfb</td>
+<td>pex_ch_tlfb_alc_wk_01</td>
+<td>__alc_wk__</td>
+</tr>
+<tr>
+<td>Biospec</td>
+<td>Nails</td>
+<td>bio_bm_biosample_nails_results</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Biospec</td>
+<td>Nails</td>
+<td>bio_bm_biosample_nails_type</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Biospec</td>
+<td>Urine</td>
+<td>bio_bm_biosample_urine</td>
+<td>bio_bm_biosample_urine_bio_c_pcp_u</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+
+#### Issue 3: Admin and summary score variables - Replace frequent single underscores 
+
+Admin and summary score variables often have single underscores that should be replaced by double underscores, e.g., `date_taken`, `candidate_age`, `gestational_age`, `adjusted_age`, `summary_score`, `total_score`, etc. See [HBCD Docs](https://docs.hbcdstudy.org/latest/access/metadata/#administrative-summary-score-variables) for additional details.
