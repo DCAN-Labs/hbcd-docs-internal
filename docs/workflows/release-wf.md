@@ -505,7 +505,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
 <td style="word-wrap: break-word; white-space: normal;">QC of ingestion</td>
-<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span> &amp; HST</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#health-sciences-technology" target="_blank">HST</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -541,7 +541,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
 <td style="word-wrap: break-word; white-space: normal;">Post-processing QC (manual, automated)</td>
-<td style="word-wrap: break-word; white-space: normal;">CDNI (UMN)</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#center-for-developmental-neuroimaging" target="_blank">CDNI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Michael Anderson</td>
 <td style="word-wrap: break-word; white-space: normal;">Eric Feczko</td>
 <td style="word-wrap: break-word; white-space: normal;">Lucille Moore</td>
