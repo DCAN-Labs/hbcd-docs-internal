@@ -2,8 +2,6 @@
 
 Variable naming conventions for the release data are described on the HBCD Release Data Docs site on the *Metadata & Naming Conventions* under [Naming Conventions](https://docs.hbcdstudy.org/latest/access/metadata/#naming-conventions). The naming convention is applied when data is transferred from LORIS to Lasso for release staging.
 
-**Full standardization is still a work in progress - see [this spreadsheet](https://docs.google.com/spreadsheets/d/1AM7BJiKpZIDdcCFdkZnFg4jr6ZN48ZPtbFMevfNrPWo/edit?usp=sharing) for a running list of issues/variables names that require standardization.**
-
 ## Source Data Naming Schemes
 
 Prior to staging in Lasso, instrument and fieldname conventions generally follow the REDCap naming standardization scheme, but may differ based on the source of the data, including:
