@@ -316,7 +316,7 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;">Data QC</td>
 <td style="word-wrap: break-word; white-space: normal;">Review of Dashboards and Completeness</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
-<td style="word-wrap: break-word; white-space: normal;">Santiago (LORIS), Jen Z (Lasso), Sauren (Ripple), Stephanie (HCAC)</td>
+<td style="word-wrap: break-word; white-space: normal;">Santiago Torres, Jen Z (Lasso), Sauren (Ripple), Stephanie (HCAC)</td>
 <td style="word-wrap: break-word; white-space: normal;">WG Lead</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -406,7 +406,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep</td>
 <td style="word-wrap: break-word; white-space: normal;">Determine Release Candidate and Process with Sign Off</td>
-<td style="word-wrap: break-word; white-space: normal;">WashU</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#washu" target="_blank">WashU</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">Chris Smyser</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -415,7 +415,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data Collection</td>
 <td style="word-wrap: break-word; white-space: normal;">Participant Source Data Acquisition: DCMs, eCRF population (MRI Acquisition Form)</td>
-<td style="word-wrap: break-word; white-space: normal;">FIONA &amp; LORIS</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#fiona" target="_blank">FIONA</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies by site)</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -424,7 +424,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
 <td style="word-wrap: break-word; white-space: normal;">QC at Source Data Acquisition: eCRF populated properly, DCM header checks, naming convention checks</td>
-<td style="word-wrap: break-word; white-space: normal;">Fiona Box</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#fiona" target="_blank">FIONA</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies by site)</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -433,7 +433,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
 <td style="word-wrap: break-word; white-space: normal;">QC at Source: Check acquisition/protocol adherence</td>
-<td style="word-wrap: break-word; white-space: normal;">JCVI</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Josh Kuperman (MRI Phantom QC Lead)</td>
 <td style="word-wrap: break-word; white-space: normal;">Anders Dale</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -460,7 +460,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
 <td style="word-wrap: break-word; white-space: normal;">Validate metadata, de-id, and scan completeness: send confirmation to DCC</td>
-<td style="word-wrap: break-word; white-space: normal;">FIONA</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#fiona" target="_blank">FIONA</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -469,7 +469,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data Collection</td>
 <td style="word-wrap: break-word; white-space: normal;">Convert DICOMs to BIDS/NIfTI</td>
-<td style="word-wrap: break-word; white-space: normal;">UMN MSI</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Cecile Madjar</td>
 <td style="word-wrap: break-word; white-space: normal;">Samir Das</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -487,7 +487,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
 <td style="word-wrap: break-word; white-space: normal;">Check for protocol deviations (based on BIDS)</td>
-<td style="word-wrap: break-word; white-space: normal;">JCVI</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Don Hagler &amp; team</td>
 <td style="word-wrap: break-word; white-space: normal;">Anders Dale</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -505,7 +505,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
 <td style="word-wrap: break-word; white-space: normal;">QC of ingestion</td>
-<td style="word-wrap: break-word; white-space: normal;">JCVI &amp; HST</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span> &amp; HST</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -514,7 +514,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
 <td style="word-wrap: break-word; white-space: normal;">Initial QC raw data (e.g. manual, automated)</td>
-<td style="word-wrap: break-word; white-space: normal;">JCVI</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Don Hagler &amp; team</td>
 <td style="word-wrap: break-word; white-space: normal;">Anders Dale</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -532,7 +532,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data Process</td>
 <td style="word-wrap: break-word; white-space: normal;">Run anatomical pipelines (freesurfer, qsiprep, qsirecon, mcribs)</td>
-<td style="word-wrap: break-word; white-space: normal;">MIDB Informatics &amp; MSI (UMN)</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -550,7 +550,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data Process</td>
 <td style="word-wrap: break-word; white-space: normal;">Index source BIDS to platform</td>
-<td style="word-wrap: break-word; white-space: normal;">MIDB Informatics &amp; MSI (UMN)</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -559,7 +559,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data Process</td>
 <td style="word-wrap: break-word; white-space: normal;">Index raw BIDS to platform</td>
-<td style="word-wrap: break-word; white-space: normal;">MIDB Informatics &amp; MSI (UMN)</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -568,7 +568,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data Process</td>
 <td style="word-wrap: break-word; white-space: normal;">Index derivatives BIDS to platform</td>
-<td style="word-wrap: break-word; white-space: normal;">MIDB Informatics &amp; MSI (UMN)</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -595,7 +595,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Sign Off</td>
 <td style="word-wrap: break-word; white-space: normal;">SMEs sign off on data</td>
-<td style="word-wrap: break-word; white-space: normal;">Lasso</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Jen Zink</td>
 <td style="word-wrap: break-word; white-space: normal;">MRI Workgroup Leads</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
@@ -665,7 +665,7 @@ Below we outline the individuals responsible for various stages of the release a
 </tr>
 <tr>
 <td>Population of meta data form</td>
-<td>LORIS</td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span></td>
 <td>&nbsp;</td>
 <td>Site Coordinator</td>
 <td>&nbsp;</td>
