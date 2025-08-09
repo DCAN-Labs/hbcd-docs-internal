@@ -379,7 +379,6 @@ Below we outline the individuals responsible for various stages of the release a
 </table>
 </div>
 
-
 <div id="img-raci" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> Imaging Data</span>
@@ -776,6 +775,96 @@ Below we outline the individuals responsible for various stages of the release a
   </tr>
 </thead>
 <tbody>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep</td>
+<td style="word-wrap: break-word; white-space: normal;">Determine Release Candidate and Process with Sign Off</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Program</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Monthly Net Inventory/Equipment QC</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Site</td>
+<td style="word-wrap: break-word; white-space: normal;">RA/site staff</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">EEG Acquisition</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Site</td>
+<td style="word-wrap: break-word; white-space: normal;">Ra/Site staff</td>
+<td style="word-wrap: break-word; white-space: normal;">Trisha Maheswari, Elise Harris</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Populate EEG Acquisition Form</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Site</td>
+<td style="word-wrap: break-word; white-space: normal;">RA/site staff</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">QC Acquisition form population</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Site</td>
+<td style="word-wrap: break-word; white-space: normal;">RA/site staff</td>
+<td style="word-wrap: break-word; white-space: normal;">Trisha Maheswari, Elise Harris</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">De-Identification &amp; Flags (pre-LORIS)</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Site</td>
+<td style="word-wrap: break-word; white-space: normal;">RA/site staff</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">BIDs Wizard (LORIS??)</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">QC pre-processed EEG</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Santiago Morales, Kira Ashton, Dylan Gilbreath, Trisha Maheswari, Elise Harris</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Run MADE Pipeline</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
+<td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">QC Pre-release data</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Santiago Morales</td>
+<td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Program</td>
+</tr>
 </tbody>
 </table>
 </div>
