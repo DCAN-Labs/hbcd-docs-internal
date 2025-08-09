@@ -383,7 +383,7 @@ Below we outline the individuals responsible for various stages of the release a
 <thead>
   <tr>
     <th style="width: 15%; text-align: center">Study Stage</th>
-    <th style="width: 25%; text-align: center">Step</th>
+    <th style="width: 20%; text-align: center">Step</th>
     <th style="width: 20%; text-align: center">Location</th>
     <th style="width: 15%; text-align: center"><span class="tooltip tooltip-left"><b>R</b><span class="tooltiptext">Responsible</span></span></th>
     <th style="width: 15%; text-align: center"><span class="tooltip tooltip-left"><b>A</b><span class="tooltiptext">Accountable</span></span></th>
@@ -622,8 +622,7 @@ Below we outline the individuals responsible for various stages of the release a
     <th style="text-align: center">Location</th>
     <th style="text-align: center"><span class="tooltip tooltip-left"><b>R</b><span class="tooltiptext">Responsible</span></span></th>
     <th style="text-align: center"><span class="tooltip tooltip-left"><b>A</b><span class="tooltiptext">Accountable</span></span></th>
-    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span></th>
-    <th style="text-align: center"><span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
   </tr>
 <tbody>
 <tr>
@@ -632,14 +631,12 @@ Below we outline the individuals responsible for various stages of the release a
 <td>&nbsp;</td>
 <td></td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
 </tr>
 <tr>
 <td>Acquisition of sample</td>
 <td>Site</td>
 <td>&nbsp;</td>
 <td>Site Staff</td>
-<td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
@@ -648,14 +645,12 @@ Below we outline the individuals responsible for various stages of the release a
 <td>&nbsp;</td>
 <td>Site Coordinator</td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
 </tr>
 <tr>
 <td>QC of form population</td>
 <td></td>
 <td>WG Co-Chairs</td>
 <td>Elinor Sullivan (Co-Chair)</td>
-<td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
@@ -664,14 +659,12 @@ Below we outline the individuals responsible for various stages of the release a
 <td>&nbsp;</td>
 <td>Site Staff</td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
 </tr>
 <tr>
 <td>QC: Ensuring sample was received</td>
 <td>&nbsp;</td>
 <td>Charles Hevi</td>
 <td>Charles Hevi</td>
-<td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
@@ -680,14 +673,12 @@ Below we outline the individuals responsible for various stages of the release a
 <td>Charles Hevi</td>
 <td>Charles Hevi</td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
 </tr>
 <tr>
 <td>QC: deviation code of sample at USDTL</td>
 <td>&nbsp;</td>
 <td>Priti Soni</td>
 <td>Priti Soni</td>
-<td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
@@ -696,14 +687,12 @@ Below we outline the individuals responsible for various stages of the release a
 <td>Charles Hevi</td>
 <td>Charles Hevi</td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
 </tr>
 <tr>
 <td>Analysis of sample at USDTL</td>
 <td>&nbsp;</td>
 <td>Priti Soni</td>
 <td>Priti Soni</td>
-<td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
@@ -712,7 +701,6 @@ Below we outline the individuals responsible for various stages of the release a
 <td>&nbsp;</td>
 <td>Gretchen Bandoli</td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
 </tr>
 <tr>
 <td>QC of data acquisition</td>
@@ -720,14 +708,12 @@ Below we outline the individuals responsible for various stages of the release a
 <td>&nbsp;</td>
 <td>Elinor Sullivan (Co-Chair)</td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
 </tr>
 <tr>
 <td>QC of analysis</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>Gretchen Bandoli</td>
-<td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 </tbody>
