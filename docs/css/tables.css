@@ -147,3 +147,35 @@ th, td {
 .overview-table-no-vertical-lines a {
   text-decoration: none !important;
 }
+
+
+/* RACI Table with no vertical lines */
+.raci-table-no-vertical-lines {
+  border-collapse: collapse;
+  width: 100%;
+}
+.raci-table-no-vertical-lines th,
+.raci-table-no-vertical-lines td {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: none !important;
+  border-right: none !important;
+  padding: 8px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6) !important; 
+}
+.raci-table-no-vertical-lines th {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+.raci-table-no-vertical-lines td:contains(A) {
+    color: blue;
+    font-weight: bold;
+}
+.raci-table-no-vertical-lines td:contains("C") {
+  color: green;
+  font-weight: bold;
+}
+.raci-table-no-vertical-lines td:contains("R") {
+  color: red;
+  font-weight: bold;
+}

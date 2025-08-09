@@ -105,6 +105,8 @@ The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN
 
 <p><object type="image/svg+xml" data="cdni.svg" width="80%"></object></p>
 
+
+
 <div id="cdni-raci" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> RACI</span>
@@ -115,51 +117,51 @@ The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
   <thead>
     <tr>
-      <th>Person</th>
-      <th>MRI Acquisition</th>
-      <th>Processed MRI QC</th>
-      <th>Pipeline Standardization</th>
-      <th>HDCC Release Docs</th>
+      <th style="text-align: center;">Person</th>
+      <th style="text-align: center;">MRI Acquisition</th>
+      <th style="text-align: center;">Processed MRI QC</th>
+      <th style="text-align: center;">Pipeline Standardization</th>
+      <th style="text-align: center;">HDCC Release Docs</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><strong>Damien Fair</strong></td>
-      <td>A</td>
-      <td>C</td>
-      <td>C</td>
-      <td>C</td>
+      <td style="color: blue; text-align: center;">A</td>
+      <td style="color: green; text-align: center;">C</td>
+      <td style="color: green; text-align: center;">C</td>
+      <td style="color: green; text-align: center;">C</td>
     </tr>
     <tr>
       <td><strong>Kimberly Weldon</strong></td>
-      <td>R</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
+      <td style="color: red; text-align: center;">R</td>
+      <td style="text-align: center;">-</td>
+      <td style="text-align: center;">-</td>
+      <td style="text-align: center;">-</td>
     </tr>
     <tr>
       <td><strong>Eric Feczko</strong></td>
-      <td>C</td>
-      <td>A</td>
-      <td>C</td>
-      <td>C</td>
+      <td style="color: green; text-align: center;">C</td>
+      <td style="color: blue; text-align: center;">A</td>
+      <td style="color: green; text-align: center;">C</td>
+      <td style="color: green; text-align: center;">C</td>
     </tr>
     <tr>
       <td><strong>Michael Anderson</strong></td>
-      <td>-</td>
-      <td>R</td>
-      <td>-</td>
-      <td>-</td>
+      <td style="text-align: center;">-</td>
+      <td style="color: red; text-align: center;">R</td>
+      <td style="text-align: center;">-</td>
+      <td style="text-align: center;">-</td>
     </tr>
     <tr>
       <td><strong>Lucille Moore</strong></td>
-      <td>-</td>
-      <td>C</td>
-      <td>A/R</td>
-      <td>A/R</td>
+      <td style="text-align: center;">-</td>
+      <td style="color: green; text-align: center;">C</td>
+      <td style="text-align: center;"><span style="color: blue;">A</span>/<span style="color: red;">R</span></td>
+      <td style="text-align: center;"><span style="color: blue;">A</span>/<span style="color: red;">R</span></td>
     </tr>
   </tbody>
 </table>
