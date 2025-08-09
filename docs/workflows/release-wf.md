@@ -738,8 +738,7 @@ Below we outline the individuals responsible for various stages of the release a
     <th style="text-align: center">Location</th>
     <th style="text-align: center"><span class="tooltip tooltip-left"><b>R</b><span class="tooltiptext">Responsible</span></span></th>
     <th style="text-align: center"><span class="tooltip tooltip-left"><b>A</b><span class="tooltiptext">Accountable</span></span></th>
-    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span></th>
-    <th style="text-align: center"><span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
   </tr>
 </thead>
 <tbody>
@@ -748,15 +747,13 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
 <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
-<td style="word-wrap: break-word; white-space: normal;">Program</td>
+<td style="word-wrap: break-word; white-space: normal;">[<b>I</b>] Program</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Monthly Net Inventory/Equipment QC</td>
 <td style="word-wrap: break-word; white-space: normal;">Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 </tr>
 <tr>
@@ -765,14 +762,12 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Trisha Maheswari, Elise Harris</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Populate EEG Acquisition Form</td>
 <td style="word-wrap: break-word; white-space: normal;">Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 </tr>
 <tr>
@@ -781,14 +776,12 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Trisha Maheswari, Elise Harris</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">De-Identification &amp; Flags (pre-LORIS)</td>
 <td style="word-wrap: break-word; white-space: normal;">Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 </tr>
 <tr>
@@ -797,14 +790,12 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">QC pre-processed EEG</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Santiago Morales, Kira Ashton, Dylan Gilbreath, Trisha Maheswari, Elise Harris</td>
 <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 </tr>
 <tr>
@@ -813,15 +804,13 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">QC Pre-release data</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Santiago Morales</td>
 <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
-<td style="word-wrap: break-word; white-space: normal;">Program</td>
+<td style="word-wrap: break-word; white-space: normal;">[<b>I</b>] Program</td>
 </tr>
 </tbody>
 </table>
