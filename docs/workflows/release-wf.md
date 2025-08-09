@@ -789,7 +789,7 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
-<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Laetitia Fesselier</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">QC pre-processed EEG</td>
