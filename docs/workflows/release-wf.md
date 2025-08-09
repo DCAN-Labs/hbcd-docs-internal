@@ -734,11 +734,11 @@ Below we outline the individuals responsible for various stages of the release a
 <table class="compact-table">
 <thead>
   <tr>
-    <th style="width: 25%; text-align: center">Study Stage</th>
+    <th style="width: 20%; text-align: center">Study Stage</th>
     <th style="width: 10%; text-align: center">Location</th>
     <th style="width: 20%; text-align: center"><span class="tooltip tooltip-left"><b>R</b><span class="tooltiptext">Responsible</span></span></th>
     <th style="width: 20%; text-align: center"><span class="tooltip tooltip-left"><b>A</b><span class="tooltiptext">Accountable</span></span></th>
-    <th style="width: 10%; text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
+    <th style="width: 15%; text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
   </tr>
 </thead>
 <tbody>
@@ -803,7 +803,7 @@ Below we outline the individuals responsible for various stages of the release a
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
-<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+<td>[<b>C</b>] Whitney Kasenetz</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">QC Pre-release data</td>
