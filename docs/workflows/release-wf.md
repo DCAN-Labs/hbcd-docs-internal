@@ -734,11 +734,11 @@ Below we outline the individuals responsible for various stages of the release a
 <table class="compact-table">
 <thead>
   <tr>
-    <th style="width: 20%; text-align: center">Study Stage</th>
-    <th style="text-align: center">Location</th>
-    <th style="text-align: center"><span class="tooltip tooltip-left"><b>R</b><span class="tooltiptext">Responsible</span></span></th>
-    <th style="text-align: center"><span class="tooltip tooltip-left"><b>A</b><span class="tooltiptext">Accountable</span></span></th>
-    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
+    <th style="width: 25%; text-align: center">Study Stage</th>
+    <th style="width: 10%; text-align: center">Location</th>
+    <th style="width: 20%; text-align: center"><span class="tooltip tooltip-left"><b>R</b><span class="tooltiptext">Responsible</span></span></th>
+    <th style="width: 20%; text-align: center"><span class="tooltip tooltip-left"><b>A</b><span class="tooltiptext">Accountable</span></span></th>
+    <th style="width: 10%; text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
   </tr>
 </thead>
 <tbody>
@@ -760,7 +760,7 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;">EEG Acquisition</td>
 <td style="word-wrap: break-word; white-space: normal;">Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
-<td style="word-wrap: break-word; white-space: normal;">Trisha Maheswari, Elise Harris</td>
+<td style="word-wrap: break-word; white-space: normal;">Trisha Maheswari<br>Elise Harris</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 <tr>
@@ -774,7 +774,7 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;">QC Acquisition form population</td>
 <td style="word-wrap: break-word; white-space: normal;">Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
-<td style="word-wrap: break-word; white-space: normal;">Trisha Maheswari, Elise Harris</td>
+<td style="word-wrap: break-word; white-space: normal;">Trisha Maheswari<br>Elise Harris</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 <tr>
