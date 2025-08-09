@@ -460,7 +460,7 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Cecile Madjar</td>
 <td style="word-wrap: break-word; white-space: normal;">Cecile Madjar</td>
-<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Lucille Moore<br>[<b>C</b>] Timothy Hendrickson</td>
+<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>]<br>Lucille Moore<br>Timothy Hendrickson</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
@@ -508,7 +508,7 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
-<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Timothy Hendrickson<br>[<b>C</b>] Lucille Moore<br>[<b>C</b>] Eric Feczko</td>
+<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>]<br>Timothy Hendrickson<br>Lucille Moore<br>Eric Feczko</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
