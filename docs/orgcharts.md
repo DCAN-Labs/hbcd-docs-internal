@@ -1125,101 +1125,108 @@ flowchart LR
 HBCD Workgroups that interface heavily with HDCC include the following (the full list of Workgroups can be found on the HBCD Study site [here](https://hbcdstudy.org/workgroups-and-committees/)). While co-chairs at listed below, subject matter experts (SMEs) are also critically involved as liaisons with HDCC - a full list of SMEs and additional Workgroup information can be found on AirTable [here](https://airtable.com/appn4aOIu0MgKDF5I/shrE5KLPOKWinGcWH/tblGJaQwPti6T61J1).
 
 <table class="compact-table">
+<thead>
+  <tr>
+    <th style="text-align: center">HBCD Workgroup</th>
+    <th style="text-align: center">Workgroup Chair(s)</th>
+    <th style="text-align: center">Primary HDCC Liaison</th>
+  </tr>
+</thead>
+<tbody>
+  <!-- Jen Zink (Lasso) -->
   <tr>
     <th>Behavior and Caregiver-Child Interaction</th>
-    <td>
-      Renee Edwards (Co-chair) – renee.edwards@northwestern.edu<br>
-      Beth Planalp (Co-chair) – bplanalp@medicine.wisc.edu
-    </td>
-  </tr>
-  <tr>
-    <th>Biospecimens & Omics</th>
-    <td>
-      Julie Croff (Co-chair) – julie.croff@okstate.edu<br>
-      Elinor Sullivan (Co-chair) – sullivel@ohsu.edu
+    <td>Renee Edwards – renee.edwards@northwestern.edu<br>
+        Beth Planalp – bplanalp@medicine.wisc.edu</td>
+    <td rowspan="9">Jen Zink 
+      <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;">
+        <i class="fas fa-home" style="margin-right: 2px; color: blue;"></i>
+        <a href="../../orgcharts/#lasso" target="_blank">Lasso</a>
+      </span>
     </td>
   </tr>
   <tr>
     <th>Biostatistics</th>
-    <td>
-      Wesley Thompson (Co-chair) – wes.stat@gmail.com<br>
-      Yajuan Si (Co-chair) – yajuan@umich.edu
-    </td>
+    <td>Wesley Thompson – wes.stat@gmail.com<br>
+        Yajuan Si – yajuan@umich.edu</td>
   </tr>
   <tr>
     <th>Demographics</th>
-    <td>
-      Natalie Slopen<br> 
-      Heather Burris<br> 
-      Kathy Cole<br>
-      Stephanie Engel 
-    </td>
+    <td>Natalie Slopen<br> 
+        Heather Burris<br> 
+        Kathy Cole<br>
+        Stephanie Engel</td>
   </tr>
   <tr>
-    <th>Electroencephalogram (EEG)</th>
-    <td>
-      Nathan Fox (Co-chair) – fox@umd.edu<br>
-      Koraly Perez-Edgar (Co-chair) – kxp24@psu.edu
+    <th>Neurocognition & Language</th>
+    <td>Julie Kable – jkabl01@emory.edu<br>
+        Alexi Potter – Alexandra.Potter@uvm.edu</td>
+  </tr>
+  <tr>
+    <th>Novel Technologies & Wearables</th>
+    <td>Bill Fifer – wpf1@columbia.edu<br>
+        Beth Smith – bsmith@chla.usc.edu</td>
+  </tr>
+  <tr>
+    <th>Physical Health</th>
+    <td>Leigh-Anne Cioffredi – leigh-anne.cioffredi@uvm.edu<br>
+        Sara DeMauro – demauro@chop.edu</td>
+  </tr>
+  <tr>
+    <th>Pregnancy & Exposure</th>
+    <td>Gretchen Bandoli – gbandoli@health.ucsd.edu<br>
+        Claire Coles – ccoles@emory.edu<br>
+        Lynne Smith - Smith@lundquist.org</td>
+  </tr>
+  <tr>
+    <th>Social & Environmental Determinants</th>
+    <td>Ashley Acheson – awacheson@uams.edu<br>
+        Lea Yerby – yerby002@ua.edu</td>
+  </tr>
+  <tr>
+    <th>Transitions in Care</th>
+    <td>Julie Poehlmann-Tynan - julie.poehlmanntynan@wisc.edu<br>
+        Rebecca Shlafer - shlaf002@umn.edu</td>
+  </tr>
+
+  <!-- Karen Athy-Penrose (HST) -->
+  <tr>
+    <th>Biospecimens & Omics</th>
+    <td>Julie Croff – julie.croff@okstate.edu<br>
+        Elinor Sullivan – sullivel@ohsu.edu</td>
+    <td rowspan="2">Karen Athy-Penrose
+      <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;">
+        <i class="fas fa-home" style="margin-right: 2px; color: blue;"></i>
+        <a href="../../orgcharts/#health-sciences-technology" target="_blank">HST</a>
+      </span>
     </td>
   </tr>
   <tr>
     <th>Geocoding & Linking External Data</th>
-    <td>
-      Chun Fan (Chair) – chunchiehfan@gmail.com
+    <td>Chun Fan – chunchiehfan@gmail.com</td>
+  </tr>
+
+  <!-- Maren Macgregor-Hannah (UMN) -->
+  <tr>
+    <th>Electroencephalogram (EEG)</th>
+    <td>Nathan Fox – fox@umd.edu<br>
+        Koraly Perez-Edgar – kxp24@psu.edu</td>
+    <td rowspan="2">Maren Macgregor-Hannah
+      <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;">
+        <i class="fas fa-home" style="margin-right: 2px; color: blue;"></i>
+        <a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a>
+      </span>
     </td>
   </tr>
   <tr>
     <th>Magnetic Resonance Imaging (MRI)</th>
-    <td>
-      Chris Smyser (HDCC) – smyserc@neuro.wustl.edu<br>
-      Anders Dale (Co-chair) – andersmdale@gmail.com<br>
-      Damien Fair (Co-chair) – faird@umn.edu
-    </td>
+    <td>Chris Smyser – smyserc@neuro.wustl.edu<br>
+        Anders Dale – andersmdale@gmail.com<br>
+        Damien Fair – faird@umn.edu</td>
   </tr>
-  <tr>
-    <th>Neurocognition & Language</th>
-    <td>
-      Julie Kable (Co-chair) – jkabl01@emory.edu<br>
-      Alexi Potter (Co-chair) – Alexandra.Potter@uvm.edu
-    </td>
-  </tr>
-  <tr>
-    <th>Novel Technologies & Wearables</th>
-    <td>
-      Bill Fifer (Co-chair) – wpf1@columbia.edu, wpf1@cumc.columbia.edu<br>
-      Beth Smith (Co-chair) – bsmith@chla.usc.edu
-    </td>
-  </tr>
-  <tr>
-    <th>Physical Health</th>
-    <td>
-      Leigh-Anne Cioffredi (Co-chair) – leigh-anne.cioffredi@uvm.edu<br>
-      Sara DeMauro (Co-chair) – demauro@chop.edu
-    </td>
-  </tr>
-  <tr>
-    <th>Pregnancy & Exposure</th>
-    <td>
-      Gretchen Bandoli (Co-chair) – gbandoli@health.ucsd.edu<br>
-      Claire Coles (Co-chair) – ccoles@emory.edu<br>
-      Lynne Smith (Co-chair) – Smith@lundquist.org
-    </td>
-  </tr>
-  <tr>
-    <th>Social & Environmental Determinants</th>
-    <td>
-      Ashley Acheson (Co-chair) – awacheson@uams.edu<br>
-      Lea Yerby (Co-chair) – yerby002@ua.edu
-    </td>
-  </tr>
-    <tr>
-    <th>Transitions in Care</th>
-    <td>
-      Julie Poehlmann-Tynan (Co-Chair) - julie.poehlmanntynan@wisc.edu<br>
-      Rebecca Shlafer (Co-Chair) - shlaf002@umn.edu
-    </td>
-  </tr>
+</tbody>
 </table>
+
 
 #### MRI Subgroups
 
@@ -1280,9 +1287,3 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     </tr>
   </tbody>
 </table>
-
-### HBCD Workgroup Connect Points with the HDCC
-
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
-
-
