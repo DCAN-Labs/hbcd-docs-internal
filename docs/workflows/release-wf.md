@@ -652,6 +652,14 @@ Below we outline the individuals responsible for various stages of the release a
   </tr>
 <tbody>
 <tr>
+<td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep: Determine Release Candidate and Process with Sign Off</td>
+<td></td>
+<td>&nbsp;</td>
+<td></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
 <td>Acquisition of sample</td>
 <td>Site</td>
 <td>&nbsp;</td>
@@ -669,9 +677,9 @@ Below we outline the individuals responsible for various stages of the release a
 </tr>
 <tr>
 <td>QC of form population</td>
+<td></td>
 <td>WG Co-Chairs</td>
-<td>&nbsp;</td>
-<td>Elinor</td>
+<td>Elinor Sullivan (Co-Chair)</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
@@ -686,7 +694,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td>QC: Ensuring sample was received</td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
+<td>Charles Hevi</td>
 <td>Charles Hevi</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -694,7 +702,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td>QC: deviation code of sample at Sampled</td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
+<td>Charles Hevi</td>
 <td>Charles Hevi</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -702,15 +710,15 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td>QC: deviation code of sample at USDTL</td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>Priti</td>
+<td>Priti Soni</td>
+<td>Priti Soni</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
 <td>Analysis of sample at Sampled</td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
+<td>Charles Hevi</td>
 <td>Charles Hevi</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -718,8 +726,8 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td>Analysis of sample at USDTL</td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>Priti</td>
+<td>Priti Soni</td>
+<td>Priti Soni</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
@@ -727,7 +735,7 @@ Below we outline the individuals responsible for various stages of the release a
 <td>QC of analysis of sample</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td>Gretchen</td>
+<td>Gretchen Bandoli</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
@@ -735,7 +743,7 @@ Below we outline the individuals responsible for various stages of the release a
 <td>QC of data acquisition</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td>Elinor</td>
+<td>Elinor Sullivan (Co-Chair)</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
@@ -743,7 +751,7 @@ Below we outline the individuals responsible for various stages of the release a
 <td>QC of analysis</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td>Gretchen</td>
+<td>Gretchen Bandoli</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 </tr>
@@ -766,7 +774,6 @@ Below we outline the individuals responsible for various stages of the release a
 <thead>
   <tr>
     <th style="width: 20%; text-align: center">Study Stage</th>
-    <th style="text-align: center">Step</th>
     <th style="text-align: center">Location</th>
     <th style="text-align: center"><span class="tooltip tooltip-left"><b>R</b><span class="tooltiptext">Responsible</span></span></th>
     <th style="text-align: center"><span class="tooltip tooltip-left"><b>A</b><span class="tooltiptext">Accountable</span></span></th>
@@ -776,80 +783,71 @@ Below we outline the individuals responsible for various stages of the release a
 </thead>
 <tbody>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep</td>
-<td style="word-wrap: break-word; white-space: normal;">Determine Release Candidate and Process with Sign Off</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep: Determine Release Candidate and Process with Sign Off</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
+<td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">Program</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Monthly Net Inventory/Equipment QC</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">Site</td>
-<td style="word-wrap: break-word; white-space: normal;">RA/site staff</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">EEG Acquisition</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">Site</td>
-<td style="word-wrap: break-word; white-space: normal;">Ra/Site staff</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Trisha Maheswari, Elise Harris</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Populate EEG Acquisition Form</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">Site</td>
-<td style="word-wrap: break-word; white-space: normal;">RA/site staff</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">QC Acquisition form population</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">Site</td>
-<td style="word-wrap: break-word; white-space: normal;">RA/site staff</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Trisha Maheswari, Elise Harris</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">De-Identification &amp; Flags (pre-LORIS)</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">Site</td>
-<td style="word-wrap: break-word; white-space: normal;">RA/site staff</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">BIDs Wizard (LORIS??)</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">BIDs Wizard Population and Execution</td>
 <td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span></td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">QC pre-processed EEG</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Santiago Morales, Kira Ashton, Dylan Gilbreath, Trisha Maheswari, Elise Harris</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Run MADE Pipeline</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
@@ -858,7 +856,6 @@ Below we outline the individuals responsible for various stages of the release a
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">QC Pre-release data</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Santiago Morales</td>
 <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
