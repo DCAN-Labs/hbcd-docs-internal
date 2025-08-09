@@ -760,8 +760,8 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;">EEG Acquisition</td>
 <td style="word-wrap: break-word; white-space: normal;">Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
-<td style="word-wrap: break-word; white-space: normal;">Trisha Maheswari<br>Elise Harris</td>
-<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
+<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Trisha Maheswari<br>[<b>C</b>]Elise Harris</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Populate EEG Acquisition Form</td>
@@ -774,8 +774,8 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;">QC Acquisition form population</td>
 <td style="word-wrap: break-word; white-space: normal;">Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
-<td style="word-wrap: break-word; white-space: normal;">Trisha Maheswari<br>Elise Harris</td>
-<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
+<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Trisha Maheswari<br>[<b>C</b>]Elise Harris</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">De-Identification &amp; Flags (pre-LORIS)</td>
