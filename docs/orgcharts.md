@@ -1303,3 +1303,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 </div>
 
 ![](orgcharts/cdni.svg)
+
+<svg viewBox="0 0 WIDTH HEIGHT">
+
+test
