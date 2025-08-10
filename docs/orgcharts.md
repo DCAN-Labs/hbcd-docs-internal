@@ -1305,7 +1305,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 ![](orgcharts/cdni.svg)
 
 
-remove height and width in svg:
+remove height and width in svg, also remove `style="max-width: 928.701416015625px;"`
 
 
 <div class="svg-wrapper">
@@ -1315,3 +1315,6 @@ remove height and width in svg:
 mardkown:
 
 ![](orgcharts/cdni-test.svg)
+
+
+
