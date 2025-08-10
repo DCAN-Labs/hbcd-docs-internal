@@ -108,8 +108,6 @@ The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN
 
 <p><object type="image/svg+xml" data="cdni.svg" width="80%"></object></p>
 
-
-
 <div id="cdni-raci" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> RACI</span>
@@ -1292,3 +1290,9 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     </tr>
   </tbody>
 </table>
+
+
+
+<p><object type="image/svg+xml" data="cdni.svg"></object></p>
+
+<p><object type="image/svg+xml" data="cdni.svg" width="80%"></object></p>
