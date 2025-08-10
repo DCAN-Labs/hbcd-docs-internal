@@ -14,6 +14,12 @@
     display: block;
 }
 
+img[src$=".svg"] {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 /* Pill styling for pillars of HDCC (on overview page and throughout) */
 .pill-center {
