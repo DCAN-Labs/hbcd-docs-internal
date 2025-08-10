@@ -1296,3 +1296,8 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <p><object type="image/svg+xml" data="cdni.svg"></object></p>
 
 <p><object type="image/svg+xml" data="cdni.svg" width="80%"></object></p>
+
+
+<div class="svg-wrapper">
+  <img src="cdni.svg" alt="My Diagram">
+</div>

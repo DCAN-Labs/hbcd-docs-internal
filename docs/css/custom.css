@@ -4,6 +4,17 @@
 /* red: #be074c */ 
 /* black/gray: #6b6b6b */ 
 
+.svg-wrapper {
+    overflow: visible;
+}
+
+.svg-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 /* Pill styling for pillars of HDCC (on overview page and throughout) */
 .pill-center {
   display: flex;
