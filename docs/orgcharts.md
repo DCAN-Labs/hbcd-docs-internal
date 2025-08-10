@@ -1,4 +1,7 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
+<div class="admonition warning">
+  <p class="admonition-title">Warning</p>
+  <p>SVG images may not display correctly in Safari. It is recommended to view this page in Chrome or Firefox.</p>
+</div>
 
 #  HDCC Structure & Organizational Charts
 
