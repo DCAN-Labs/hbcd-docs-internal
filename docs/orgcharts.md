@@ -1301,3 +1301,5 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <div class="svg-wrapper">
   <img src="cdni.svg" alt="My Diagram">
 </div>
+
+![](orgcharts/cdni.svg)
