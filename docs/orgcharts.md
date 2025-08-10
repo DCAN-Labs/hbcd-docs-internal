@@ -1307,3 +1307,10 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 <svg viewBox="0 0 WIDTH HEIGHT">
 
 test
+
+remove height and width in svg:
+
+
+<div class="svg-wrapper">
+  <img src="cdni-test.svg" alt="My Diagram">
+</div>
