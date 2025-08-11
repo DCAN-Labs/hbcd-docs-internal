@@ -11,6 +11,7 @@
 /* Default Tooltip (Above the Text) */
 .tooltip .tooltiptext {
     visibility: hidden;
+    width: 200px;
     background-color: #333;
     color: #fff;
     text-align: center;
