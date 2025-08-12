@@ -862,53 +862,45 @@ There are several regular calls where release action items are discussed and tra
 
 <table class="compact-table-no-vertical-lines" style="margin: 0 auto;">
 <thead>
-  <th>Title</th>
-  <th>Schedule</th>
-  <th>Agenda/Notes</th>
-  <th>Stakeholders Present</th>
+  <th style="text-align: center;">Meeting Title (<i>Agenda Linked</i>)</th>
+  <th style="text-align: center;">Schedule</th>
+  <th style="text-align: center;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i> Stakeholders Present</th>
 </thead>
 <tbody>
 <tr>
-  <td>HDCC Data Release WG</td>
+  <td><a href="https://docs.google.com/document/d/1CQNtqezeXOiTg_13XIFn0v7u4aymY40JyKAXI4QU4Hk/edit?pli=1&tab=t.0">HDCC Data Release WG</a></td>
   <td>Mondays 11 AM CT</td>
-  <td><a href="https://docs.google.com/document/d/1CQNtqezeXOiTg_13XIFn0v7u4aymY40JyKAXI4QU4Hk/edit?pli=1&tab=t.0">Agenda/Minutes</a></td>
-  <td>UMN, LORIS, Lasso</td>
-</tr>
-<tr>
-  <td>AI (?)</td>
-  <td>Tuesdays XX XX CT</td>
-  <td><a href="">ADD LINK</a></td>
-  <td>UMN, LORIS, Lasso</td>
-</tr>
-<tr>
-  <td>ABCD-HBCD Release</td>
-  <td>Tuesdays 10 AM CT</td>
-  <td><i>NA</i></td>
-  <td>ABCD team, UMN, LORIS, Lasso</td>
-</tr>
-<tr>
-  <td>HBCD LORIS Implementation</td>
-  <td>Wednesdays 1:30 PM CT</td>
-  <td><a href="https://docs.google.com/document/d/1e9sutOlHjfevRgCBVjyl-hy-PxnS5Ee8IVDn8TPyirY/edit?tab=t.0">Agenda/Minutes</a></td>
-  <td>UMN, LORIS, Lasso</td>
-</tr>
-<tr>
-  <td>ABCD-HBCD Imaging Monthly Sync</td>
-  <td style="word-wrap: break-word; white-space: normal;">3rd Thursday of each month at 2 PM CT</td>
-  <td><i>NA</i></td>
-  <td>ABCD, UMN, LORIS</td>
-</tr>
-<tr>
-  <td>IT (?)</td>
-  <td>Fridays XX XX CT</td>
-  <td><a href="">ADD LINK</a></td>
-  <td>Lasso, LORIS</td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#libr" target="_blank">LIBR</a></span></td>
 </tr>
 <tr>
   <td>HBCD Workgroup calls</td>
   <td>Varies by Workgroup</td>
-  <td style="word-wrap: break-word; white-space: normal;"><i>NA</i> (first 10 min of all WG calls are dedicated to discussing ongoing QC with Jen Zink)</td>
-  <td>HBCD Workgroups, Lasso</td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#hbcd-workgroups" target="_blank">HBCD Workgroups</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
+</tr>
+<tr>
+  <td>ABCD-HBCD Release</td>
+  <td>Tuesdays 10 AM CT</td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI (ABCD team)</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
+</tr>
+<tr>
+  <td>ABCD-HBCD Sync</td>
+  <td>Thursday 2 PM CT (Biweekly)</td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI (ABCD team)</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span></td>
+</tr>
+<tr>
+  <td><a href="https://docs.google.com/document/d/1kFCWVpvdSXFVzBajmfffIVk-LhGtFF8KP0Ifv4mJwQg/edit?tab=t.0">HDCC Architecture and Implementation</a></td>
+  <td>Tuesdays 3:30 PM CT</td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#libr" target="_blank">LIBR</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span></td>
+</tr>
+<tr>
+  <td><a href="https://docs.google.com/document/d/1e9sutOlHjfevRgCBVjyl-hy-PxnS5Ee8IVDn8TPyirY/edit?tab=t.0">HBCD LORIS Implementation</a></td>
+  <td>Wednesdays 1:30 PM CT</td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
+</tr>
+<tr>
+  <td><a href="https://docs.google.com/document/d/1_GMbyzbhkEeS1mFHdClFOWjo6V_XC7QHtzTiIT6GUfw/edit?tab=t.0">HDCC IT Workgroup</a></td>
+  <td>Fridays 3 PM CT</td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#libr" target="_blank">LIBR</a></span></td>
 </tr>
 </tbody>
 </table>
