@@ -111,4 +111,6 @@ nav:
       - Access BR Data: internal/br-review.md
       - Report Issues: internal/reportissues.md
       - Request Updates to Documentation: internal/docs-updates.md
-  - RESOURCES: resources.md    
+  - Resources: 
+      - General: resources/index.md  
+      - HBCD & SCE Governance: resources/hst-sce-governance.md  
