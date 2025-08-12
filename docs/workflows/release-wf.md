@@ -63,7 +63,11 @@ This document outlines the staged workflow for selecting, releasing, and validat
 The HCAC PM (Stephanie Averill) collaborates with the HDCC to generate a comprehensive list of potential measures for the upcoming data release.
 
  - Leadership, the Oversight Group (OG), and Workgroups review and approve the proposed measures.
- - The full list is circulated to all Workgroups and subject matter experts (SMEs), who mark each variable as INCLUDE or NOT INCLUDED in the following form: [Measure Inclusion Form (Google Sheet)](https://docs.google.com/spreadsheets/d/171oj0PLLtVgp5OSReBD5J6Ir4U56QQrWEwu92ZwttrM/edit?usp=sharing)
+ - The full list is circulated to all Workgroups and subject matter experts (SMEs), who mark each variable as INCLUDE or NOT INCLUDED in the following form: [Measure Inclusion Form (Google Sheet)](https://docs.google.com/spreadsheets/d/171oj0PLLtVgp5OSReBD5J6Ir4U56QQrWEwu92ZwttrM/edit?usp=sharing).
+
+**Release sign off [RACI](#responsibility-assignment-matrices):**
+<img src="../images/release-stage1-raci.png" alt="lasso" width="50%" height="auto" class="center">
+
 
 ### Stage 2: Integrate Planned Measures in Beta Releases
 
