@@ -60,10 +60,11 @@ This document outlines the staged workflow for selecting, releasing, and validat
   </a>
 </div>
 
-The HCAC PM (Stephanie Averill) collaborates with the HDCC to generate a comprehensive list of potential measures for the upcoming data release.
+The HCAC PM (Stephanie Averill) collaborates with the HDCC WG Liaison (Jen Zink)  to generate a comprehensive list of potential variables for the upcoming data release.
 
- - Leadership, the Oversight Group (OG), and Workgroups review and approve the proposed measures.
  - The full list is circulated to all Workgroups and subject matter experts (SMEs), who mark each variable as INCLUDE or NOT INCLUDED in the following form: [Measure Inclusion Form (Google Sheet)](https://docs.google.com/spreadsheets/d/171oj0PLLtVgp5OSReBD5J6Ir4U56QQrWEwu92ZwttrM/edit?usp=sharing).
+ - From this list, a [Measure Inclusion Form](https://docs.google.com/spreadsheets/d/1ABh8u6s4R3jUKUcfj2xA_nRyO1r1kQRVfwDDJRWwVq0/edit?usp=sharing) is generated for HDCC/HCAC Leadership to review the proposed measures to be included/excluded from public release.
+ - Proposed public release measures is then brought to the Steering Committee for final sign-off. 
 
 **Release sign off [RACI](#responsibility-assignment-matrices):**
 <img src="../images/release-stage1-raci.png" alt="lasso" width="50%" height="auto" class="center">
