@@ -854,4 +854,82 @@ Below we outline the individuals responsible for various stages of the release a
 </table>
 </div>
 
+## Release Management & Utilities
+
+### Data Management & Release Meetings
+
+There are several regular calls where release action items are discussed and tracked:
+
+<table class="compact-table-no-vertical-lines" style="margin: 0 auto;">
+<thead>
+  <th>Title</th>
+  <th>Schedule</th>
+  <th>Agenda/Notes</th>
+  <th>Stakeholders Present</th>
+</thead>
+<tbody>
+<tr>
+  <td>HDCC Data Release WG</td>
+  <td>Mondays 11 AM CT</td>
+  <td><a href="https://docs.google.com/document/d/1CQNtqezeXOiTg_13XIFn0v7u4aymY40JyKAXI4QU4Hk/edit?pli=1&tab=t.0">Agenda/Minutes</a></td>
+  <td>UMN, LORIS, Lasso</td>
+</tr>
+<tr>
+  <td>AI (?)</td>
+  <td>Tuesdays XX XX CT</td>
+  <td><a href="">ADD LINK</a></td>
+  <td>UMN, LORIS, Lasso</td>
+</tr>
+<tr>
+  <td>ABCD-HBCD Release</td>
+  <td>Tuesdays 10 AM CT</td>
+  <td><i>NA</i></td>
+  <td>ABCD team, UMN, LORIS, Lasso</td>
+</tr>
+<tr>
+  <td>HBCD LORIS Implementation</td>
+  <td>Wednesdays 1:30 PM CT</td>
+  <td><a href="https://docs.google.com/document/d/1e9sutOlHjfevRgCBVjyl-hy-PxnS5Ee8IVDn8TPyirY/edit?tab=t.0">Agenda/Minutes</a></td>
+  <td>UMN, LORIS, Lasso</td>
+</tr>
+<tr>
+  <td>ABCD-HBCD Imaging Monthly Sync</td>
+  <td style="word-wrap: break-word; white-space: normal;">3rd Thursday of each month at 2 PM CT</td>
+  <td><i>NA</i></td>
+  <td>ABCD, UMN, LORIS</td>
+</tr>
+<tr>
+  <td>IT (?)</td>
+  <td>Fridays XX XX CT</td>
+  <td><a href="">ADD LINK</a></td>
+  <td>Lasso, LORIS</td>
+</tr>
+<tr>
+  <td>HBCD Workgroup calls</td>
+  <td>Varies by Workgroup</td>
+  <td style="word-wrap: break-word; white-space: normal;"><i>NA</i> (first 10 min of all WG calls are dedicated to discussing ongoing QC with Jen Zink)</td>
+  <td>HBCD Workgroups, Lasso</td>
+</tr>
+</tbody>
+</table>
+
+### Project Management Utilities
+
+<table class="table-no-vertical-lines" style="margin: 0 auto;">
+<thead>
+  <th>Platform</th>
+  <th>Use Case(s)</th>
+</thead>
+<tbody>
+<tr>
+  <td><a href="https://ucsd-actri.monday.com/boards/6045591843">Monday.com board</a></td>
+  <td>Tracking release actions items</td>
+</tr>
+<tr>
+  <td>Confluence</td>
+  <td>Storage of all internal documentation and protocols</td>
+</tr>
+</tbody>
+</table>
+
 <br>
