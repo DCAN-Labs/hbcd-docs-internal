@@ -935,7 +935,7 @@ There are several regular calls where release action items are discussed and tra
 </tr>
 <tr>
   <td>Google Docs</td>
-  <td style="word-wrap: break-word; white-space: normal;">Meeting agendas/notes</td>
+  <td style="word-wrap: break-word; white-space: normal;">Meeting agendas/notes; holds historical documentation of workflows, context of decision-making, etc.</td>
 </tr>
 </tbody>
 </table>
