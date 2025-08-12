@@ -106,67 +106,7 @@ The University of Minnesota (UMN) houses several core HDCC teams. Please click o
    
 The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: development of MRI acquisition procedures; quality control for processed MRI data; coordination of [processing pipeline standardization](https://docs.hbcdstudy.org/latest/instruments/processing/standards/); and development and maintenance of HDCC release documentation (including the [HBCD Data Release Docs](https://docs.hbcdstudy.org/latest/)). CDNI members additionally work with the Informatics & Processing team at [MIDB Informatics Hub and MSI](#midb-informatics-hub-msi) to provide support and/or consultation for MRI data processing and MRI pipeline development as needed.
 
-<img src="cdni.svg" alt="CDNI org chart" width="80%"/>
-
-<div id="cdni-raci" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> RACI</span>
-  <a class="anchor-link" href="#cdni-raci" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
-  <thead>
-    <tr>
-      <th style="text-align: center;">Person</th>
-      <th style="text-align: center;">MRI Acquisition</th>
-      <th style="text-align: center;">Processed MRI QC</th>
-      <th style="text-align: center;">Pipeline Standardization</th>
-      <th style="text-align: center;">HDCC Release Docs</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Damien Fair</strong></td>
-      <td style="color: blue; text-align: center;">A</td>
-      <td style="color: green; text-align: center;">C</td>
-      <td style="color: green; text-align: center;">C</td>
-      <td style="color: green; text-align: center;">C</td>
-    </tr>
-    <tr>
-      <td><strong>Kimberly Weldon</strong></td>
-      <td style="color: red; text-align: center;">R</td>
-      <td style="text-align: center;">-</td>
-      <td style="text-align: center;">-</td>
-      <td style="text-align: center;">-</td>
-    </tr>
-    <tr>
-      <td><strong>Eric Feczko</strong></td>
-      <td style="color: green; text-align: center;">C</td>
-      <td style="color: blue; text-align: center;">A</td>
-      <td style="color: green; text-align: center;">C</td>
-      <td style="color: green; text-align: center;">C</td>
-    </tr>
-    <tr>
-      <td><strong>Michael Anderson</strong></td>
-      <td style="text-align: center;">-</td>
-      <td style="color: red; text-align: center;">R</td>
-      <td style="text-align: center;">-</td>
-      <td style="text-align: center;">-</td>
-    </tr>
-    <tr>
-      <td><strong>Lucille Moore</strong></td>
-      <td style="text-align: center;">-</td>
-      <td style="color: green; text-align: center;">C</td>
-      <td style="text-align: center;"><span style="color: blue;">A</span>/<span style="color: red;">R</span></td>
-      <td style="text-align: center;"><span style="color: blue;">A</span>/<span style="color: red;">R</span></td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<img src="cdni.png" alt="CDNI org chart" width="80%"/>
 
 <div id="cdni-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -388,48 +328,6 @@ The Data security model ensures data security by focusing on two key components:
 The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) works in coordination with the Biospecimens Workgroup to provide support for genomic data processing and analysis as part of the **HBCD Genomics Supplement**. 
 
 <p><object type="image/svg+xml" data="midb-analytics.svg" width="70%"></object></p>
-
-<div id="analytics-raci" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> RACI</span>
-  <a class="anchor-link" href="#analytics-raci" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
-  <thead style="background-color: #f2f2f2;">
-    <tr>
-      <th>Person</th>
-      <th>Genomics</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Michael Anderson, PhD</strong><br><small>Genomics Data Scientist</small></td>
-      <td>R</td>
-    </tr>
-    <tr>
-      <td><strong>Christian Coffman, PhD</strong><br><small>Data Scientist &amp; Analyst</small></td>
-      <td>R</td>
-    </tr>
-    <tr>
-      <td><strong>Kody DeGolier, MS</strong><br><small>Research Associate</small></td>
-      <td>R</td>
-    </tr>
-    <tr>
-      <td><strong>Saonli Basu, PhD</strong><br><small>Co-I, HBCD Genomics</small></td>
-      <td>A</td>
-    </tr>
-    <tr>
-      <td><strong>Annette Xenopoulos-Oddsson, MSc</strong><br><small>Project Manager</small></td>
-      <td>C</td>
-    </tr>
-  </tbody>
-</table>
-</div>
 
 <div id="midb-analytics-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
