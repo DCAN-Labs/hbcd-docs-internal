@@ -925,6 +925,18 @@ There are several regular calls where release action items are discussed and tra
   <td>AirTable</td>
   <td style="word-wrap: break-word; white-space: normal;">Study coordination and oversight, neuroimaging workflow tracking, cross-team communication, and quality control and reporting - <a href="../../orgcharts/#airtable"><i>see details</i></a></td>
 </tr>
+<tr>
+  <td>Slack</td>
+  <td style="word-wrap: break-word; white-space: normal;">Team and topic-specific communication/coordination</td>
+</tr>
+<tr>
+  <td><a href="https://hbcd-docs-internal.readthedocs.io/">HBCD DCC Internal Docs</a> (<i>this site</i>)</td>
+  <td style="word-wrap: break-word; white-space: normal;">Organized, curated, and centralized internal documentation</td>
+</tr>
+<tr>
+  <td>Google Docs</td>
+  <td style="word-wrap: break-word; white-space: normal;">Meeting agendas/notes</td>
+</tr>
 </tbody>
 </table>
 
