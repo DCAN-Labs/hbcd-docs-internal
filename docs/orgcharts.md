@@ -1141,7 +1141,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     <th>Behavior and Caregiver-Child Interaction</th>
     <td>Renee Edwards – renee.edwards@northwestern.edu<br>
         Beth Planalp – bplanalp@medicine.wisc.edu</td>
-    <td rowspan="9">Jen Zink 
+    <td style="word-wrap: break-word; white-space: normal;" rowspan="9">Jen Zink - <br><i>Faciliates discussion of QC/release during first 10 min of <a href="../workflows/release-wf/#data-management-release-meetings" target="_blank">WG calls</a></i><br>
       <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;">
         <i class="fas fa-home" style="margin-right: 2px; color: blue;"></i>
         <a href="../../orgcharts/#lasso" target="_blank">Lasso</a>
