@@ -67,7 +67,8 @@ The HCAC PM (Stephanie Averill) collaborates with the HDCC WG Liaison (Jen Zink)
  - Proposed public release measures are then brought to the Steering Committee for final sign-off. 
 
 **Release measure inclusion sign off [RACI](#responsibility-assignment-matrices):**
-<img src="../images/release-stage1-raci.png" alt="lasso" width="50%" height="auto" class="center">
+
+<img src="../images/release-stage1-raci.png" alt="lasso" width="60%" height="auto">
 
 
 ### Stage 2: Integrate Planned Measures in Beta Releases
