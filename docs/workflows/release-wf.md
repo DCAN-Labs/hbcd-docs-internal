@@ -860,7 +860,7 @@ Below we outline the individuals responsible for various stages of the release a
 
 There are several regular calls where release action items are discussed and tracked:
 
-<table class="compact-table-no-vertical-lines" style="margin: 0 auto;">
+<table class="table-no-vertical-lines" style="margin: 0 auto;">
 <thead>
   <th style="text-align: center;">Meeting Title (<i>Agenda Linked</i>)</th>
   <th style="text-align: center;">Schedule</th>
