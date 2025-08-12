@@ -928,8 +928,8 @@ There are several regular calls where release action items are discussed and tra
   <td>Storage of all internal documentation and protocols</td>
 </tr>
 <tr>
-  <td>AirTable</td>
-  <td style="word-wrap: break-word; white-space: normal;">Study coordination and oversight, neuroimaging workflow tracking, cross-team communication, and quality control and reporting - <a href="../../orgcharts/#airtable"><i>see details</i></a></td>
+  <td><a href="../../orgcharts/#airtable" target="_blank">AirTable</a></td>
+  <td style="word-wrap: break-word; white-space: normal;">Document current protocol, change requests (REDCap or Responsible Conduct request modifications), IRB approvals, initial list of included measures in data releases, QC pages, SC approval, etc. Also used to keep track of staff member item-level access to different working platforms and related required paperworks.</td>
 </tr>
 <tr>
   <td>Slack</td>

@@ -689,7 +689,7 @@ Washington University in St. Louis (WashU) has oversight of: *Electronic Medical
 
 ##### AirTable 
 
-AirTable is a cloud-based collaborative platform and database service that combines the features of a database and a spreadsheet. It allows users to organize, track, and collaborate on structured data using customizable tables, forms, views, and automation. In the HBCD Study, Airtable is widely used as a centralized project management and tracking tool, including study coordination and oversight, neuroimaging workflow tracking, cross-team communication, and quality control and reporting.
+AirTable is a cloud-based collaborative platform and database service that combines the features of a database and a spreadsheet. It allows users to organize, track, and collaborate on structured data using customizable tables, forms, views, and automation. In the HBCD Study, AirTable is widely used as a centralized project management and tracking tool, including protocol tracking, IRB approvals, staff member access levels, and data access paperwork.
 
 ##### Ambra 
 
