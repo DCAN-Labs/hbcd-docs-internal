@@ -63,7 +63,7 @@
   text-decoration: underline dotted;
   text-underline-offset: 2px;
   text-decoration-thickness: thin; 
-  text-decoration-thickness: 0.3px; 
+  text-decoration-thickness: 0.1px; 
   background-color: rgba(0, 102, 204, 0.031); /* Add slight color box around text with embedded links too */
   padding: 0 2px;
   border-radius: 2px;
