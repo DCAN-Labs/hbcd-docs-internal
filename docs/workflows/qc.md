@@ -269,7 +269,7 @@ Data ready for release is first ingested into Lasso. Errors in ingestion are add
 </span>
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#hbcd-workgroups">Workgroups</a>
 </span><br>
-Lasso obtains final sign-off from Workgroups on datasets in their release-ready form, with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a>, via the Lasso Pre-Release System:
+Lasso obtains final sign-off from Workgroups on datasets in their release-ready form, with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a>, via the <a href="hbcd-hdcc-qc.lassoinformatics.com">Lasso Pre-Release System</a>:
 <ul>
 <li>All SMEs review data in Lasso pre-release system and sign off prior to public release  <ul>
 <li>Instrument scoring, mins/maxes/BIV   </li>
@@ -523,7 +523,8 @@ Data is selection for manual review based on multivariate prediction and Bayesia
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Prior to inclusion in the release data, the following checks are performed:</p>
+<p>Lasso obtains final sign-off from the MRI Workgroups on datasets in their release-ready form, with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a>, via the <a href="hbcd-hdcc-qc.lassoinformatics.com">Lasso Pre-Release System</a>. The following checks are performed:
+</p>
 <p><b>Structural MRI</b>
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/center-for-developmental-neuroimaging">CDNI</a>
 </span><br> 
@@ -662,7 +663,7 @@ A subset of data consisting of <code>.set</code> files, E-Prime stimuli files an
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a>
 </span>
 </p>
-<p>The EEG Workgroup performs a final review of the data to be included in the release via the Lasso Pre-Release System and provides official sign off that the data is ready for release. Known issues are documented as needed on the HBCD Data Release Docs site.</p>
+<p>The EEG Workgroup performs a final review of the data to be included in the release via the <a href="hbcd-hdcc-qc.lassoinformatics.com">Lasso Pre-Release System</a> and provides official sign off that the data is ready for release. Known issues are documented as needed on the HBCD Data Release Docs site.</p>
 </div>
 
 ## Post-Release QC
