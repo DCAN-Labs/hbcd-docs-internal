@@ -34,7 +34,7 @@ This document outlines the staged workflow for selecting, releasing, and validat
 
 ## Stages of the Release Workflow
 
-### Stage 1: Determine Measures to Include in Release
+### Stage 1: Determine Variables to Include in Release
 
 <div class="pill-center">
   <a href="../../#clear-objectives-and-scope" target="_blank" class="pill-link-wrapper">
