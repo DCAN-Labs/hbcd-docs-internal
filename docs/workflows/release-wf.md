@@ -921,7 +921,12 @@ There are several regular calls where release action items are discussed and tra
   <td>Confluence</td>
   <td>Storage of all internal documentation and protocols</td>
 </tr>
+<tr>
+  <td>AirTable</td>
+  <td style="word-wrap: break-word; white-space: normal;">Study coordination and oversight, neuroimaging workflow tracking, cross-team communication, and quality control and reporting - <a href="../../orgcharts/#airtable"><i>see details</i></a></td>
+</tr>
 </tbody>
 </table>
+
 
 <br>
