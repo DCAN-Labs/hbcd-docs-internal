@@ -1058,42 +1058,42 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
   <tbody>
     <tr>
       <th scope="row">Structural</th>
-      <td>Dylan Tisdall<br>Jed Elison</td>
+      <td>Dylan Tisdall, Jed Elison</td>
       <td>Dylan Tisdall</td>
       <td>Allen Newton</td>
       <td>Doug Dean</td>
     </tr>
     <tr>
       <th scope="row">Functional</th>
-      <td>Jennifer Vannest<br>Chad Sylvester</td>
+      <td>Jennifer Vannest, Chad Sylvester</td>
       <td>Michael Harms</td>
       <td>Allen Newton</td>
       <td>Doug Dean</td>
     </tr>
     <tr>
       <th scope="row">Diffusion</th>
-      <td>Andy Alexander<br>Hao Huang</td>
+      <td>Andy Alexander, Hao Huang</td>
       <td>Hao Huang</td>
       <td>Peter van Zilj, Jessica Wisnowski</td>
       <td>Andy Alexander</td>
     </tr>
     <tr>
       <th scope="row">Quantitative</th>
-      <td>Borjan Gagoski<br>Doug Dean</td>
+      <td>Borjan Gagoski, Doug Dean</td>
       <td>Borjan Gagoski</td>
       <td>Mary-Kate Manhard</td>
       <td>Doug Dean</td>
     </tr>
     <tr>
       <th scope="row">Spectroscopy</th>
-      <td>Jessica Wisnowski<br>Richard Edden</td>
+      <td>Jessica Wisnowski, Richard Edden</td>
       <td>Richard Edden, Pavi Manohar</td>
       <td>Richard Edden, Steve Hui</td>
       <td>Ralph Noeske</td>
     </tr>
     <tr>
       <th scope="row">Scanning Young<br>Populations</th>
-      <td>Doug Dean<br>Brittany Howell</td>
+      <td>Doug Dean, Brittany Howell</td>
       <td colspan="3">—</td>
     </tr>
   </tbody>
