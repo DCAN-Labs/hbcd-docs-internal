@@ -937,7 +937,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
 
 <table class="compact-table-no-vertical-lines">
 <thead>
-  <tr>
+  <tr style="border-bottom: 1.5px solid black; border-top: 1.5px solid black;">
     <th style="width: 40%; text-align: center">HBCD Workgroup</th>
     <th style="width: 60%; text-align: center">Workgroup Chair(s)</th>
     <th style="width: 10%; text-align: center">Primary HDCC Liaison</th>
@@ -994,7 +994,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     <td>Ashley Acheson – awacheson@uams.edu<br>
         Lea Yerby – yerby002@ua.edu</td>
   </tr>
-  <tr>
+  <tr style="border-bottom: 1.5px solid black;">
     <th>Transitions in Care</th>
     <td>Julie Poehlmann-Tynan - julie.poehlmanntynan@wisc.edu<br>
         Rebecca Shlafer - shlaf002@umn.edu</td>
@@ -1012,7 +1012,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
       </span>
     </td>
   </tr>
-  <tr>
+  <tr style="border-bottom: 1.3px solid black;">
     <th>Geocoding & Linking External Data</th>
     <td>Chun Fan – chunchiehfan@gmail.com</td>
   </tr>
@@ -1029,7 +1029,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
       </span>
     </td>
   </tr>
-  <tr>
+  <tr style="border-bottom: 1.3px solid black;">
     <th>Magnetic Resonance Imaging (MRI)</th>
     <td>Chris Smyser – smyserc@neuro.wustl.edu<br>
         Anders Dale – andersmdale@gmail.com<br>
@@ -1058,42 +1058,42 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
   <tbody>
     <tr>
       <th scope="row">Structural</th>
-      <td>Dylan Tisdall, Jed Elison</td>
+      <td>Dylan Tisdall<br>Jed Elison</td>
       <td>Dylan Tisdall</td>
       <td>Allen Newton</td>
       <td>Doug Dean</td>
     </tr>
     <tr>
       <th scope="row">Functional</th>
-      <td>Jennifer Vannest, Chad Sylvester</td>
+      <td>Jennifer Vannest<br>Chad Sylvester</td>
       <td>Michael Harms</td>
       <td>Allen Newton</td>
       <td>Doug Dean</td>
     </tr>
     <tr>
       <th scope="row">Diffusion</th>
-      <td>Andy Alexander, Hao Huang</td>
+      <td>Andy Alexander<br>Hao Huang</td>
       <td>Hao Huang</td>
       <td>Peter van Zilj, Jessica Wisnowski</td>
       <td>Andy Alexander</td>
     </tr>
     <tr>
       <th scope="row">Quantitative</th>
-      <td>Borjan Gagoski, Doug Dean</td>
+      <td>Borjan Gagoski<br>Doug Dean</td>
       <td>Borjan Gagoski</td>
       <td>Mary-Kate Manhard</td>
       <td>Doug Dean</td>
     </tr>
     <tr>
       <th scope="row">Spectroscopy</th>
-      <td>Jessica Wisnowski, Richard Edden</td>
+      <td>Jessica Wisnowski<br>Richard Edden</td>
       <td>Richard Edden, Pavi Manohar</td>
       <td>Richard Edden, Steve Hui</td>
       <td>Ralph Noeske</td>
     </tr>
     <tr>
       <th scope="row">Scanning Young<br>Populations</th>
-      <td>Doug Dean, Brittany Howell</td>
+      <td>Doug Dean<br>Brittany Howell</td>
       <td colspan="3">—</td>
     </tr>
   </tbody>
