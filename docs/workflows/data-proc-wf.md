@@ -28,14 +28,9 @@
 
 This section outlines the full HBCD processing workflows for [tabulated data](#tabulated-data) and [file-based data](#file-based-data), detailing each step from data capture at study sites to final ingestion into Lasso. Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [HDCC Structure & Organizational Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. 
 
-<div id="fb-vs-tab" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
+<div id="fb-vs-tab" class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">Tabulated vs. File-Based Data</span>
-  <a class="anchor-link" href="#fb-vs-tab" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
 </div>
 <div class="notification-static-content">
 <p>HBCD Study data includes both <strong>tabulated data</strong> and <strong>file-based data</strong> (see <a href="https://docs.hbcdstudy.org/latest/datacuration/overview/">overview of data structure</a>):</p>
@@ -48,7 +43,7 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 <p>
 <div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Definition of Terms</span>
+  <span class="text"><b>Definition of Terms</b></span>
   <a class="anchor-link" href="#def-terms" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -146,8 +141,6 @@ Data is collected from sites and ultimately transferred to the central LORIS Pro
     </tr>
 </tbody>
 </table>
-
-##### Additional Details Linked to in Diagram:
 
 <div id="third-party" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">

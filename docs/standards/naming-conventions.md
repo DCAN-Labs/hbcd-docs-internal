@@ -1,5 +1,3 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
-
 # LORIS Naming Conventions
 
 Table Naming conventions as they appear in Lasso are documented on the HBCD Release Data Docs site under [Metadata & Naming Conventions](https://docs.hbcdstudy.org/latest/access/metadata/) > [Naming Conventions](https://docs.hbcdstudy.org/latest/access/metadata/#naming-conventions).
