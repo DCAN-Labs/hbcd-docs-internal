@@ -933,7 +933,9 @@ flowchart LR
 
 ## HBCD Workgroups
 
-HBCD Workgroups that interface heavily with HDCC include the following (the full list of Workgroups can be found on the HBCD Study site [here](https://hbcdstudy.org/workgroups-and-committees/)). While co-chairs at listed below, subject matter experts (SMEs) are also critically involved as liaisons with HDCC - a full list of SMEs and additional Workgroup information can be found on AirTable [here](https://airtable.com/appn4aOIu0MgKDF5I/shrE5KLPOKWinGcWH/tblGJaQwPti6T61J1).
+HBCD Workgroups (WG) that interface heavily with HDCC include the following (the full list of Workgroups can be found on the HBCD Study site [here](https://hbcdstudy.org/workgroups-and-committees/)). In addition to WG chairs (listed below), subject matter experts (**SMEs**) are also critically involved with interfacing with the HDCC - a full list of SMEs and additional Workgroup information can be found on AirTable [here](https://airtable.com/appn4aOIu0MgKDF5I/shrE5KLPOKWinGcWH/tblGJaQwPti6T61J1).
+
+#### WG Chairs & Primary HDCC Liaisons
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -963,10 +965,10 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
   </tr>
   <tr>
     <th>Demographics</th>
-    <td>Natalie Slopen<br> 
-        Heather Burris<br> 
-        Kathy Cole<br>
-        Stephanie Engel</td>
+    <td>Natalie Slopen - nslopen@hsph.harvard.edu<br> 
+        Heather Burris - burrish@email.chop.edu<br> 
+        Kathy Cole - katherine.cole@nih.gov<br>
+        Stephanie Engel - stephanie.engel@unc.edu</td>
   </tr>
   <tr>
     <th>Neurocognition & Language</th>
