@@ -782,7 +782,7 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
 
 ### University of Maryland
 
-<p><object type="image/svg+xml" data="umd-OC.svg" width="70%"></object></p>
+<img src="umd.png" alt="MIDB Analytics Hub Org Chart" width="70%"/>
 
 <div id="umd-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -935,12 +935,12 @@ flowchart LR
 
 HBCD Workgroups that interface heavily with HDCC include the following (the full list of Workgroups can be found on the HBCD Study site [here](https://hbcdstudy.org/workgroups-and-committees/)). While co-chairs at listed below, subject matter experts (SMEs) are also critically involved as liaisons with HDCC - a full list of SMEs and additional Workgroup information can be found on AirTable [here](https://airtable.com/appn4aOIu0MgKDF5I/shrE5KLPOKWinGcWH/tblGJaQwPti6T61J1).
 
-<table class="compact-table">
+<table class="compact-table-no-vertical-lines">
 <thead>
   <tr>
-    <th style="text-align: center">HBCD Workgroup</th>
-    <th style="text-align: center">Workgroup Chair(s)</th>
-    <th style="text-align: center">Primary HDCC Liaison</th>
+    <th style="width: 40%; text-align: center">HBCD Workgroup</th>
+    <th style="width: 60%; text-align: center">Workgroup Chair(s)</th>
+    <th style="width: 10%; text-align: center">Primary HDCC Liaison</th>
   </tr>
 </thead>
 <tbody>
@@ -949,7 +949,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     <th>Behavior and Caregiver-Child Interaction</th>
     <td>Renee Edwards – renee.edwards@northwestern.edu<br>
         Beth Planalp – bplanalp@medicine.wisc.edu</td>
-    <td style="word-wrap: break-word; white-space: normal;" rowspan="9">Jen Zink - <br><i>Faciliates discussion of QC/release during first 10 min of <a href="../workflows/release-wf/#data-management-release-meetings" target="_blank">WG calls</a></i><br>
+    <td style="word-wrap: break-word; white-space: normal; text-align: center" rowspan="9"><b>Jen Zink</b><br><i>Faciliates discussion of QC/release during first 10 min of <a href="../workflows/release-wf/#data-management-release-meetings" target="_blank">WG calls</a></i><br>
       <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;">
         <i class="fas fa-home" style="margin-right: 2px; color: blue;"></i>
         <a href="../../orgcharts/#lasso" target="_blank">Lasso</a>
@@ -1005,7 +1005,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     <th>Biospecimens & Omics</th>
     <td>Julie Croff – julie.croff@okstate.edu<br>
         Elinor Sullivan – sullivel@ohsu.edu</td>
-    <td rowspan="2">Karen Athy-Penrose
+    <td rowspan="2" style="text-align: center"><b>Karen Athy-Penrose</b><br>
       <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;">
         <i class="fas fa-home" style="margin-right: 2px; color: blue;"></i>
         <a href="../../orgcharts/#health-sciences-technology" target="_blank">HST</a>
@@ -1022,7 +1022,7 @@ HBCD Workgroups that interface heavily with HDCC include the following (the full
     <th>Electroencephalogram (EEG)</th>
     <td>Nathan Fox – fox@umd.edu<br>
         Koraly Perez-Edgar – kxp24@psu.edu</td>
-    <td rowspan="2">Maren Macgregor-Hannah
+    <td rowspan="2" style="text-align: center"><b>Maren Macgregor-Hannah</b><br>
       <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;">
         <i class="fas fa-home" style="margin-right: 2px; color: blue;"></i>
         <a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a>
