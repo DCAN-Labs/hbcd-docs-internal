@@ -1,0 +1,47 @@
+---
+config:
+  layout: elk
+---
+flowchart TB
+    A["<b>Anders Dale, PhD</b><br>PI / Director"] --- QC["<b>QUALITY CONTROL</b>"] & Systems["<b>DATA SYSTEMS</b>"]
+    QC --- B(["<b>MRI Phantom QC</b>"]) & n16@{ label: "<span style=\"--tw-scale-x:\"><b>Donald Hagler, PhD</b></span><br style=\"--tw-scale-x:\"><span style=\"background-color:\">Raw MRI QC Lead</span>" }
+    B --- C["<b>Josh Kuperman, PhD</b><br>MRI Phantom<br>QC Lead"]
+    n2(["<b>Raw MRI Quality Control</b>"]) --- n9["<b>Donald Hagler, PhD</b><br>Raw MRI QC Lead
+    -------------
+    <b>Tyler Berkness</b><br>Protocol Violations
+    -------
+    <b>Sejal Shanbhag</b><br>Issue Handling"]
+    Systems --- n12@{ label: "<span style=\"--tw-scale-x:\"><b>Janosch Linkersdörfer, PhD<br></b>Team Lead</span>" } & n8["<b>Rongguang Yang, PhD</b><br>FIONA Lead"]
+    n6@{ label: "<a href=\"../orgcharts/#redcap\" target=\"_top\"><b>REDCap</b></a>" } --- n4["<b>Asef-Joseph Baligh</b><br>Server Admin<br>-------<br><b>Erika Bolden<br>Laura Ziemer</b><br>Form Developers"]
+    n12 --- n6 & n13(["<b>RBA Dashboards</b>"]) & D@{ label: "<a href=\"../orgcharts/#deap\" target=\"_top\"><b>DEAP</b></a>" }
+    n8 --- z@{ label: "<a href=\"../orgcharts/#fiona\" target=\"_top\"><b>FIONA</b></a>" }
+    n13 --- n15["<b>Biplabendu Das</b><br>Backend Developer
+    -------
+    <b>Olivier Celhay</b><br>Frontend Developer"]
+    n16 --- n2
+    n11["<b>Anders Dale, PhD</b><br>HDCC Co-Director"]
+    A@{ shape: anchor}
+    n16@{ shape: rect}
+    n12@{ shape: rect}
+    n6@{ shape: stadium}
+    D@{ shape: stadium}
+    z@{ shape: stadium}
+    n15@{ shape: rect}
+    n11@{ shape: rect}
+    style A fill:#BBDEFB,stroke:#2962FF
+    style QC fill:#FFFFFF,stroke:#AA00FF,stroke-dasharray: 5 5
+    style Systems fill:#ffffff,stroke:#AA00FF,stroke-dasharray: 5 5
+    style B fill:#E1BEE7,stroke:#AA00FF
+    style n16 fill:#C8E6C9,stroke:#00C853
+    style C stroke:#2962FF,fill:#BBDEFB
+    style n2 fill:#E1BEE7,stroke:#AA00FF
+    style n9 fill:#BBDEFB,stroke:#2962FF
+    style n12 fill:#C8E6C9,stroke:#00C853
+    style n8 fill:#C8E6C9,stroke:#00C853
+    style n6 fill:#E1BEE7,stroke:#AA00FF
+    style n4 fill:#BBDEFB,stroke:#2962FF
+    style n13 fill:#E1BEE7,stroke:#AA00FF
+    style D fill:#E1BEE7,stroke:#AA00FF
+    style z fill:#E1BEE7,stroke:#AA00FF
+    style n15 fill:#BBDEFB,stroke:#2962FF
+    style n11 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
