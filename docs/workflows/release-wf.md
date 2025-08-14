@@ -276,10 +276,10 @@ Below we outline the individuals responsible for various stages of the release a
 
 <p style="text-align: center; font-size: 1.3em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
 
-<div id="tabulated-raci" class="table-banner" onclick="toggleCollapse(this)">
+<div id="tab-raci" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i>Responsibility Assignment Matrix</span>
-  <a class="anchor-link" href="#tabulated-raci" title="Copy link">
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i>Tabulated Data</span>
+  <a class="anchor-link" href="#tab-raci" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
   </span>
