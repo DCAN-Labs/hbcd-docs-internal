@@ -518,18 +518,11 @@ Below we outline the individuals responsible for various stages of the release a
 </thead>
 <tbody>
 <tr>
-<td>QC pre-processed EEG</td>
-<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
-<td style="word-wrap: break-word; white-space: normal;">Kira Ashton, Dylan Gilbreath, Trisha Maheswari, Elise Harris</td>
-<td style="word-wrap: break-word; white-space: normal;">Santiago Morales</td>
-<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">Run MADE Pipeline</td>
-<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
-<td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
-<td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
-<td>[<b>C</b>] Whitney Kasenetz</td>
+  <td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep: Determine Release Candidate and Process with Sign Off</td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Santiago Morales, EEG WG</td>
+  <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
+  <td style="word-wrap: break-word; white-space: normal;">[<b>I</b>] Program</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">QC Pre-release data</td>

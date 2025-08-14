@@ -560,13 +560,6 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 </thead>
 <tbody>
 <tr>
-  <td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep: Determine Release Candidate and Process with Sign Off</td>
-  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
-  <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
-  <td style="word-wrap: break-word; white-space: normal;">[<b>I</b>] Program</td>
-</tr>
-<tr>
 <td style="word-wrap: break-word; white-space: normal;">Monthly Net Inventory/Equipment QC</td>
 <td>Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
@@ -614,6 +607,20 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <td style="word-wrap: break-word; white-space: normal;">Laetitia Fesselier</td>
 <td style="word-wrap: break-word; white-space: normal;">Laetitia Fesselier</td>
 <td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] EEG Workgroup</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Run MADE Pipeline</td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
+<td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
+<td>[<b>C</b>] Whitney Kasenetz</td>
+</tr>
+<tr>
+<td>QC pre-processed EEG</td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Kira Ashton, Dylan Gilbreath, Trisha Maheswari, Elise Harris</td>
+<td style="word-wrap: break-word; white-space: normal;">Santiago Morales</td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 </tbody>
 </table>
