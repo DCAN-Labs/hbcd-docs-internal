@@ -314,6 +314,14 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;">WG Leads</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Pre-Release</td>
+<td style="word-wrap: break-word; white-space: normal;">Sign Off on Release Candidate</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Jen Zink, WG Leads</td>
+<td style="word-wrap: break-word; white-space: normal;">Damien Fair</td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
 </tbody>
 </table>
 </div>
