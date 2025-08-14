@@ -591,6 +591,13 @@ Below we outline the individuals responsible for various stages of the release a
 <td>Gretchen Bandoli</td>
 <td>&nbsp;</td>
 </tr>
+<tr>
+<td>QC & sign off for prerelease data</td>
+<td>&nbsp;</td>
+<td>Workgroup SMEs</td>
+<td>Jen Zink</td>
+<td>&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </div>
