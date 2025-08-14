@@ -615,6 +615,70 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <td style="word-wrap: break-word; white-space: normal;">Laetitia Fesselier</td>
 <td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] EEG Workgroup</td>
 </tr>
+<tr>
+<td rowspan="9">Biospec</td>
+<td>Acquisition of sample</td>
+<td>Site</td>
+<td>&nbsp;</td>
+<td>Site Staff</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Population of meta data form</td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span></td>
+<td>&nbsp;</td>
+<td>Site Coordinator</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>QC of form population</td>
+<td></td>
+<td>WG Co-Chairs</td>
+<td>Elinor Sullivan (Co-Chair)</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Shipment of sample</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Site Staff</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>QC: Ensuring sample was received</td>
+<td>&nbsp;</td>
+<td>Charles Hevi</td>
+<td>Charles Hevi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>QC: deviation code of sample at Sampled</td>
+<td>&nbsp;</td>
+<td>Charles Hevi</td>
+<td>Charles Hevi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>QC: deviation code of sample at USDTL</td>
+<td>&nbsp;</td>
+<td>Priti Soni</td>
+<td>Priti Soni</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Analysis of sample at Sampled</td>
+<td>&nbsp;</td>
+<td>Charles Hevi</td>
+<td>Charles Hevi</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Analysis of sample at USDTL</td>
+<td>&nbsp;</td>
+<td>Priti Soni</td>
+<td>Priti Soni</td>
+<td>&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </div>
