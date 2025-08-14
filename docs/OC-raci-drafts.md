@@ -1,5 +1,7 @@
 # Draft RACI tables for org charts page
 
+
+
 <div id="general-raci" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> General</span>

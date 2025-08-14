@@ -186,6 +186,57 @@ Data is collected from sites and ultimately transferred to the central LORIS Pro
 </table>
 </div>
 
+
+<div id="tabulated-raci" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i>Responsibility Assignment Matrix</span>
+  <a class="anchor-link" href="#tabulated-raci" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table">
+<thead>
+  <tr>
+    <th style="width: 15%; text-align: center">Study Stage</th>
+    <th style="width: 20%; text-align: center">Step</th>
+    <th style="width: 25%; text-align: center">Location</th>
+    <th style="width: 20%; text-align: center">Responsible</th>
+    <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep</td>
+<td style="word-wrap: break-word; white-space: normal;">Determine Release Candidate and Process with Sign Off</td>
+<td style="word-wrap: break-word; white-space: normal;"></td>
+<td style="word-wrap: break-word; white-space: normal;"></td>
+<td style="word-wrap: break-word; white-space: normal;"></td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC</td>
+<td style="word-wrap: break-word; white-space: normal;">Review of Dashboards and Completeness</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#ripple" target="_blank">Ripple</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts" target="_blank">HCAC</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Santiago Torres (LORIS)<br>Jen Zink (Lasso)<br>Sauren Ravencroft (Ripple)<br>Stephanie Averill (HCAC)</td>
+<td style="word-wrap: break-word; white-space: normal;">WG Leads</td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep</td>
+  <td style="word-wrap: break-word; white-space: normal;">Generate Release Candidate IDs for Public Release</td>
+  <td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#health-sciences-technology" target="_blank">UMN HST</a></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Reed McEwan</td>
+  <td style="word-wrap: break-word; white-space: normal;">Reed McEwan</td>
+  <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
+</tbody>
+</table>
+</div>
+
 ## File-Based Data
 
 ### Site Capture, BIDS Conversion, & De-Identification
@@ -280,8 +331,6 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 </tbody>
 </table>
 
-##### Additional Details Linked to in Diagram:
-
 <div id="record-query" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text">Record Query Details</span>
@@ -367,6 +416,204 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <li>Looking for cases where there are newer derivative outputs than what exists in LORIS records and replacing the old records with the new data</li>
 <li>Adding in records for any new subjects/sessions</li>
 </ol>
+</div>
+
+
+### Responsibility Assignment Matrices By Modality 
+
+<div id="imaging-raci" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i>Imaging</span>
+  <a class="anchor-link" href="#imaging-raci" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table">
+<thead>
+  <tr>
+    <th style="width: 15%; text-align: center">Study Stage</th>
+    <th style="width: 20%; text-align: center">Step</th>
+    <th style="width: 25%; text-align: center">Location</th>
+    <th style="width: 20%; text-align: center">Responsible</th>
+    <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Collection</td>
+<td style="word-wrap: break-word; white-space: normal;">Participant Source Data Acquisition: DCMs, eCRF population (MRI Acquisition Form)</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#fiona" target="_blank">FIONA</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff<br>(Varies by site)</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff<br>(Varies by site)</td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">QC at Source Data Acquisition: eCRF populated properly, DCM header checks, naming convention checks</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#fiona" target="_blank">FIONA</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff<br>(Varies by site)</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff<br>(Varies by site)</td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">QC at Source: Check acquisition/protocol adherence</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Josh Kuperman</td>
+<td style="word-wrap: break-word; white-space: normal;">Anders Dale</td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">Transfer acquisition/protocol adherence (both DCM acquisition and MRI Acquisition Form) to DCC</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Ron Yang<br>Don Hagler</td>
+<td style="word-wrap: break-word; white-space: normal;">Don Hagler</td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Collection</td>
+<td style="word-wrap: break-word; white-space: normal;">Convert DICOMs to BIDS/NIfTI</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Cecile Madjar</td>
+<td style="word-wrap: break-word; white-space: normal;">Cecile Madjar</td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;">Data Collection</td>
+  <td style="word-wrap: break-word; white-space: normal;">Convert MRS data to BIDS</td>
+  <td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#health-sciences-technology" target="_blank">UMN HST</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Reed McEwan<br>Cecile Madjar</td>
+  <td style="word-wrap: break-word; white-space: normal;">Reed McEwan</td>
+  <td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Helge Zoellner<br>[<b>C</b>] Erik Lee<br>[<b>C</b>] Georg Oeltzschner</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">QC of the DCM ot BIDs Conversion: Correct BIDS errors</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Cecile Madjar</td>
+<td style="word-wrap: break-word; white-space: normal;">Cecile Madjar</td>
+<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Erik Lee<br>[<b>C</b>] Lucille Moore<br>[<b>C</b>] Tim Hendrickson</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">Check for protocol deviations (based on BIDS)</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">MRI QC Workgroup</td>
+<td style="word-wrap: break-word; white-space: normal;">Don Hagler</td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data Ingestion</td>
+<td style="word-wrap: break-word; white-space: normal;">Ingestion and catalogue DICOMs in Lasso</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">QC of ingestion</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#health-sciences-technology" target="_blank">HST</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
+<td style="word-wrap: break-word; white-space: normal;">Initial QC raw data (e.g. manual, automated)</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">MRI QC Workgroup</td>
+<td style="word-wrap: break-word; white-space: normal;">Don Hagler</td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="eeg-raci" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> EEG</span>
+  <a class="anchor-link" href="#eeg-raci" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table">
+<thead>
+  <tr>
+    <th style="width: 15%; text-align: center">Study Stage</th>
+    <th style="width: 25%; text-align: center">Location</th>
+    <th style="width: 20%; text-align: center">Responsible</th>
+    <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep: Determine Release Candidate and Process with Sign Off</td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
+  <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
+  <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
+  <td style="word-wrap: break-word; white-space: normal;">[<b>I</b>] Program</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Monthly Net Inventory/Equipment QC</td>
+<td style="word-wrap: break-word; white-space: normal;">Site</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">EEG Acquisition</td>
+<td style="word-wrap: break-word; white-space: normal;">Site</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
+<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Trisha Maheswari<br>[<b>C</b>]Elise Harris</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Populate EEG Acquisition Form</td>
+<td style="word-wrap: break-word; white-space: normal;">Site</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">QC Acquisition form population</td>
+<td style="word-wrap: break-word; white-space: normal;">Site</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
+<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Trisha Maheswari<br>[<b>C</b>]Elise Harris</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">De-Identification &amp; Flags (pre-LORIS)</td>
+<td style="word-wrap: break-word; white-space: normal;">Site</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
+<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">BIDs Wizard Population and Execution</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
+<td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
+<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Laetitia Fesselier</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">Convert EEG data to BIDS</td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Laetitia Fesselier</td>
+<td style="word-wrap: break-word; white-space: normal;">Laetitia Fesselier</td>
+<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] EEG Workgroup</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 ## Clinical Data Validation Procedure
