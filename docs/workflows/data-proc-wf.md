@@ -578,7 +578,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <td>Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
-<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Trisha Maheswari<br>[<b>C</b>]Elise Harris</td>
+<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Trisha Maheswari<br>[<b>C</b>] Elise Harris</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Populate EEG Acquisition Form</td>
@@ -592,7 +592,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <td>Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
-<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Trisha Maheswari<br>[<b>C</b>]Elise Harris</td>
+<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Trisha Maheswari<br>[<b>C</b>] Elise Harris</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">De-Identification &amp; Flags (pre-LORIS)</td>
