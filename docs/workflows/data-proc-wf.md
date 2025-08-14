@@ -441,7 +441,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
     <th style="width: 20%; text-align: center">Step</th>
     <th style="width: 25%; text-align: center">Location</th>
     <th style="width: 20%; text-align: center">Responsible</th>
-    <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
+    <th style="background-color: #ff00088b; width: 10%; text-align: center">Accountable</th>
     <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
   </tr>
 </thead>
@@ -474,7 +474,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
 <td style="word-wrap: break-word; white-space: normal;">Transfer acquisition/protocol adherence (both DCM acquisition and MRI Acquisition Form) to DCC</td>
 <td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span></td>
-<td style="word-wrap: break-word; white-space: normal;">Ron Yang<br>Don Hagler</td>
+<td style="word-wrap: break-word; white-space: normal;">Ron Yang, Don Hagler</td>
 <td style="word-wrap: break-word; white-space: normal;">Don Hagler</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
@@ -540,7 +540,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 
 <div id="eeg-raci" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i>EEG, Biospecimens, & Wearable Sensors</span>
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i>EEG</span>
   <a class="anchor-link" href="#eeg-raci" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -551,17 +551,15 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <table class="compact-table">
 <thead>
   <tr>
-    <th style="width: 5%; text-align: center">Modality</th>
     <th style="width: 15%; text-align: center">Study Stage</th>
     <th style="width: 5%; text-align: center">Location</th>
     <th style="width: 20%; text-align: center">Responsible</th>
     <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
-    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
+    <th style="width: 10%; text-align: center; text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
   </tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="8">EEG</td>
   <td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep: Determine Release Candidate and Process with Sign Off</td>
   <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
   <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
@@ -580,7 +578,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <td>Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
-<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Trisha Maheswari<br>[<b>C</b>] Elise Harris</td>
+<td>C</b>] Trisha Maheswari<br>[<b>C</b>] Elise Harris</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Populate EEG Acquisition Form</td>
@@ -594,7 +592,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <td>Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
-<td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Trisha Maheswari<br>[<b>C</b>] Elise Harris</td>
+<td>[<b>C</b>] Trisha Maheswari<br>[<b>C</b>] Elise Harris</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">De-Identification &amp; Flags (pre-LORIS)</td>
@@ -617,20 +615,45 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <td style="word-wrap: break-word; white-space: normal;">Laetitia Fesselier</td>
 <td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] EEG Workgroup</td>
 </tr>
+</tbody>
+</table>
+</div>
+
+
+<div id="biospec-raci" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i>Biospecimens</span>
+  <a class="anchor-link" href="#biospec-raci" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table">
+<thead>
+  <tr>
+    <th style="width: 15%; text-align: center">Study Stage</th>
+    <th style="width: 5%; text-align: center">Location</th>
+    <th style="width: 20%; text-align: center">Responsible</th>
+    <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
+    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
+  </tr>
+</thead>
+<tbody>
 <tr>
-<td rowspan="9">Biospec</td>
-<td>Acquisition of sample</td>
-<td>Site</td>
-<td>&nbsp;</td>
-<td>Site Staff</td>
-<td>&nbsp;</td>
+  <td>Acquisition of sample</td>
+  <td>Site</td>
+  <td>&nbsp;</td>
+  <td>Site Staff</td>
+  <td>&nbsp;</td>
 </tr>
 <tr>
-<td>Population of meta data form</td>
-<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span></td>
-<td>&nbsp;</td>
-<td>Site Coordinator</td>
-<td>&nbsp;</td>
+  <td>Population of meta data form</td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span></td>
+  <td>&nbsp;</td>
+  <td>Site Coordinator</td>
+  <td>&nbsp;</td>
 </tr>
 <tr>
 <td>QC of form population</td>

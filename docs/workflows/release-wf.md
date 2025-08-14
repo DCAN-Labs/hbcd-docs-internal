@@ -440,7 +440,7 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;">Data Process</td>
 <td style="word-wrap: break-word; white-space: normal;">Move source BIDS to platform</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
-<td style="word-wrap: break-word; white-space: normal;">Erik Lee, Tim Hendrickson, Lasso</td>
+<td style="word-wrap: break-word; white-space: normal;">Erik Lee, Tim Hendrickson, Data Loading Team (Lasso)</td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
@@ -448,7 +448,7 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;">Data Process</td>
 <td style="word-wrap: break-word; white-space: normal;">Move BIDS phenotype files to platform</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
-<td style="word-wrap: break-word; white-space: normal;">Harshitha Anuganti, Erik Lee, Tim Hendrickson, Jesse , Lasso</td>
+<td style="word-wrap: break-word; white-space: normal;">Harshitha Anuganti, Erik Lee, Tim Hendrickson, Jesse Erdmann, Data Loading Team (Lasso)</td>
 <td style="word-wrap: break-word; white-space: normal;">Harshitha Anuganti</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
