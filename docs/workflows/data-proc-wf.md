@@ -422,6 +422,8 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 
 ### Responsibility Assignment Matrices By Modality 
 
+<p style="text-align: center; font-size: 1.3em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
+
 <div id="imaging-raci" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i>Imaging</span>
