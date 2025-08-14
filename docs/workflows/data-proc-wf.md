@@ -418,8 +418,9 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 </ol>
 </div>
 
+<br>
 
-### Responsibility Assignment Matrices By Modality 
+#### Responsibility Assignment Matrices By Modality 
 
 <div id="imaging-raci" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -537,7 +538,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 
 <div id="eeg-raci" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> EEG</span>
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i>EEG, Biospecimens, & Wearable Sensors</span>
   <a class="anchor-link" href="#eeg-raci" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -548,8 +549,9 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <table class="compact-table">
 <thead>
   <tr>
+    <th style="width: 5%; text-align: center">Modality</th>
     <th style="width: 15%; text-align: center">Study Stage</th>
-    <th style="width: 25%; text-align: center">Location</th>
+    <th style="width: 5%; text-align: center">Location</th>
     <th style="width: 20%; text-align: center">Responsible</th>
     <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
     <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
@@ -557,6 +559,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 </thead>
 <tbody>
 <tr>
+  <td rowspan="8">EEG</td>
   <td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep: Determine Release Candidate and Process with Sign Off</td>
   <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
   <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
@@ -565,49 +568,49 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Monthly Net Inventory/Equipment QC</td>
-<td style="word-wrap: break-word; white-space: normal;">Site</td>
+<td>Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">EEG Acquisition</td>
-<td style="word-wrap: break-word; white-space: normal;">Site</td>
+<td>Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
 <td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Trisha Maheswari<br>[<b>C</b>]Elise Harris</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Populate EEG Acquisition Form</td>
-<td style="word-wrap: break-word; white-space: normal;">Site</td>
+<td>Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">QC Acquisition form population</td>
-<td style="word-wrap: break-word; white-space: normal;">Site</td>
+<td>Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
 <td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Trisha Maheswari<br>[<b>C</b>]Elise Harris</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">De-Identification &amp; Flags (pre-LORIS)</td>
-<td style="word-wrap: break-word; white-space: normal;">Site</td>
+<td>Site</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">BIDs Wizard Population and Execution</td>
-<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span></td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site), EEG Core, HDCC, LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Site Staff (Varies Per Site)</td>
 <td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] Laetitia Fesselier</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Convert EEG data to BIDS</td>
-<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Laetitia Fesselier</td>
 <td style="word-wrap: break-word; white-space: normal;">Laetitia Fesselier</td>
 <td style="word-wrap: break-word; white-space: normal;">[<b>C</b>] EEG Workgroup</td>
