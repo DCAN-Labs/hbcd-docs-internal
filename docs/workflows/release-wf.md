@@ -625,6 +625,30 @@ Below we outline the individuals responsible for various stages of the release a
   </tr>
 </thead>
 <tbody>
+<tr>
+  <td>Data Collection</td>
+  <td>Convert Axivity data to BIDS</td>
+  <td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+  <td>Cecile Madjar</td>
+  <td>Cecile Madjar</td>
+  <td>[<b>C</b>] Jinseok Oh<br>[<b>C</b>] Beth Smith<br>[<b>C</b>] Erik Lee</td>
+</tr>
+<tr>
+  <td>QC preprocessed data</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Run Axtivity Pipeline</td>
+  <td></td>
+  <td>Erik Lee</td>
+  <td>Erik Lee</td>
+  <td></td>
+  <td></td>
+</tr>
 </tbody>
 </table>
 </div>
