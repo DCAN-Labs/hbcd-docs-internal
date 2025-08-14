@@ -420,7 +420,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 
 <br>
 
-#### Responsibility Assignment Matrices By Modality 
+### Responsibility Assignment Matrices By Modality 
 
 <div id="imaging-raci" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
