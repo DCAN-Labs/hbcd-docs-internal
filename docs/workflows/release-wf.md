@@ -609,8 +609,7 @@ Below we outline the individuals responsible for various stages of the release a
 <table class="compact-table">
 <thead>
   <tr>
-    <th style="width: 15%; text-align: center">Study Stage</th>
-    <th style="width: 20%; text-align: center">Step</th>
+    <th style="width: 15%; text-align: center">Study Stage Step</th>
     <th style="width: 25%; text-align: center">Location</th>
     <th style="width: 20%; text-align: center">Responsible</th>
     <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
@@ -619,26 +618,16 @@ Below we outline the individuals responsible for various stages of the release a
 </thead>
 <tbody>
 <tr>
-  <td>Data Collection</td>
-  <td>Convert Axivity data to BIDS</td>
-  <td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
-  <td>Cecile Madjar</td>
-  <td>Cecile Madjar</td>
-  <td>[<b>C</b>] Jinseok Oh<br>[<b>C</b>] Beth Smith<br>[<b>C</b>] Erik Lee</td>
-</tr>
-<tr>
-  <td>QC preprocessed data</td>
-  <td></td>
+  <td>Pre-Release Prep: Determine Release Candidate and Process with Sign Off</td>
   <td></td>
   <td></td>
   <td></td>
   <td></td>
 </tr>
 <tr>
-  <td>Run Axtivity Pipeline</td>
+  <td>QC Pre-release data</td>
   <td></td>
-  <td>Erik Lee</td>
-  <td>Erik Lee</td>
+  <td></td>
   <td></td>
   <td></td>
 </tr>
