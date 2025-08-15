@@ -30,6 +30,15 @@ This document outlines the staged workflow for selecting, releasing, and validat
 
 <object type="image/svg+xml" data="../images/timeline.svg" width="100%"></object>
 
+The release timeline is determined as follows:
+
+1. HDCC proposes a timeline 
+2. HCAC leadership approves proposed timeline
+3. Program approves proposed timeline
+4. Feedback is acquired from Workgroups
+
+The form for timeline proposals, feedback, and sign off is currently under construction, but will be linked here when available.
+
 ## Stages of the Release Workflow
 
 ### Stage 1: Determine Variables to Include in Release
