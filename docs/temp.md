@@ -26,6 +26,8 @@ flowchart TB
     n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
     n36["<span style="display: inline-block; border-top: 4px dashed red; width: 40px; vertical-align: middle; margin-right: 8px;"></span><span>Tabulated Data</span>"]
     n37["<span style="display: inline-block; border-top: 4px solid red; width: 40px; vertical-align: middle; margin-right: 8px;"></span><span>File-Based Data</span>"]
+    style n36 fill:#FFFFFF
+    style n37 fill:#FFFFFF
     style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style jcvi fill:#E1BEE7,stroke:#AA00FF
     style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
