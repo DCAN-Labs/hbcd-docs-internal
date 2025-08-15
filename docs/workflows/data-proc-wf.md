@@ -786,6 +786,12 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 </table>
 </div>
 
+### New Pipeline Integration
+
+The workflow for the integration of new processing pipelines into processing file-based data involves performing an initial review to sign off on testing the integration, ensuring the pipeline meets [HBCD Pipeline & Analytic Standards](https://docs.hbcdstudy.org/latest/instruments/processing/standards/), analysis and review of the integration testing, and a final sign off by the Workgroup subject matter experts. 
+
+The steps and integration status for each pipeline can be viewed [here](https://docs.google.com/spreadsheets/d/17jad-Majiveg0vngXDQEpkSrQ7TC08Z_yaGnIr5BN_o/edit?usp=sharing).
+
 ## Clinical Data Validation Procedure
 
 <div class="pill-center">
