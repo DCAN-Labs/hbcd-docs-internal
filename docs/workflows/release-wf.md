@@ -320,7 +320,7 @@ Below we outline the individuals responsible for various stages of the release a
 <td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Jen Zink, WG Leads</td>
 <td style="word-wrap: break-word; white-space: normal;">Damien Fair</td>
-<td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
+<td style="text-align: center;">-/-</td>
 </tr>
 </tbody>
 </table>
@@ -469,7 +469,7 @@ Below we outline the individuals responsible for various stages of the release a
 <table class="compact-table">
 <thead>
   <tr>
-    <th style="width: 15%; text-align: center">Study Stage Step</th>
+    <th style="width: 50%; text-align: center">Study Stage Step</th>
     <th>Location</th>
     <th style="width: 20%; text-align: center">Responsible</th>
     <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
@@ -480,16 +480,16 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
   <td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep: Determine Release Candidate and Process with Sign Off</td>
   <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
-  <td style="word-wrap: break-word; white-space: normal;">Santiago Morales, EEG WG</td>
+  <td>Santiago Morales, EEG WG</td>
   <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
-  <td style="word-wrap: break-word; white-space: normal;">[<b>I</b>] Program</td>
+  <td>[<b>I</b>] Program</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">QC Pre-release data</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Santiago Morales</td>
 <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
-<td style="word-wrap: break-word; white-space: normal;">[<b>I</b>] Program</td>
+<td>[<b>I</b>] Program</td>
 </tr>
 </tbody>
 </table>
@@ -508,10 +508,10 @@ Below we outline the individuals responsible for various stages of the release a
 <table class="compact-table">
 <thead>
   <tr>
-    <th style="width: 15%; text-align: center">Study Stage Step</th>
+    <th style="width: 50%; text-align: center">Study Stage Step</th>
     <th style="width: 25%; text-align: center">Location</th>
     <th style="width: 20%; text-align: center">Responsible</th>
-    <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
+    <th style="background-color: #ff00088b; width: 5%; text-align: center">Accountable</th>
     <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
   </tr>
 </thead>
@@ -521,35 +521,35 @@ Below we outline the individuals responsible for various stages of the release a
 <td></td>
 <td>&nbsp;</td>
 <td></td>
-<td>&nbsp;</td>
+<td style="text-align: center;">-/-</td>
 </tr>
 <tr>
 <td>QC of analysis of sample</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>Gretchen Bandoli</td>
-<td>&nbsp;</td>
+<td style="text-align: center;">-/-</td>
 </tr>
 <tr>
 <td>QC of data acquisition</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>Elinor Sullivan (Co-Chair)</td>
-<td>&nbsp;</td>
+<td style="text-align: center;">-/-</td>
 </tr>
 <tr>
 <td>QC of analysis</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>Gretchen Bandoli</td>
-<td>&nbsp;</td>
+<td style="text-align: center;">-/-</td>
 </tr>
 <tr>
 <td>QC & sign off for prerelease data</td>
-<td>&nbsp;</td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
 <td>Workgroup SMEs</td>
 <td>Jen Zink</td>
-<td>&nbsp;</td>
+<td style="text-align: center;">-/-</td>
 </tr>
 </tbody>
 </table>
