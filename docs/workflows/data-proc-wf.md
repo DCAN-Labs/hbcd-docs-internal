@@ -583,7 +583,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <table class="compact-table">
 <thead>
   <tr>
-    <th style="width: 15%; text-align: center">Study Stage</th>
+    <th style="width: 15%; text-align: center">Study Stage Step</th>
     <th style="width: 5%; text-align: center">Location</th>
     <th style="width: 20%; text-align: center">Responsible</th>
     <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
@@ -672,7 +672,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <table class="compact-table">
 <thead>
   <tr>
-    <th style="width: 15%; text-align: center">Study Stage</th>
+    <th style="width: 15%; text-align: center">Study Stage Step</th>
     <th style="width: 5%; text-align: center">Location</th>
     <th style="width: 20%; text-align: center">Responsible</th>
     <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
@@ -683,65 +683,51 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <tr>
   <td>Acquisition of sample</td>
   <td>Site</td>
-  <td>&nbsp;</td>
   <td>Site Staff</td>
-  <td>&nbsp;</td>
+  <td>Site Staff</td>
+  <td style="text-align: center;">-/-</td>
 </tr>
 <tr>
   <td>Population of meta data form</td>
   <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span></td>
-  <td>&nbsp;</td>
+  <td>Site Staff</td>
   <td>Site Coordinator</td>
-  <td>&nbsp;</td>
+  <td style="text-align: center;">-/-</td>
 </tr>
 <tr>
 <td>QC of form population</td>
-<td></td>
+<td><span class="tooltip">OHSU<span class="tooltiptext">Oregon Health and Science University</span></span></td>
 <td>WG Co-Chairs</td>
 <td>Elinor Sullivan (Co-Chair)</td>
-<td>&nbsp;</td>
+<td style="text-align: center;">-/-</td>
 </tr>
 <tr>
 <td>Shipment of sample</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td>Site</td>
 <td>Site Staff</td>
-<td>&nbsp;</td>
+<td>Site Staff</td>
+<td style="text-align: center;">-/-</td>
 </tr>
 <tr>
 <td>QC: Ensuring sample was received</td>
-<td>&nbsp;</td>
-<td>Charles Hevi</td>
-<td>Charles Hevi</td>
-<td>&nbsp;</td>
+<td>Sampled/USDTL</td>
+<td>Charles Hevi (Sampled)<br>Priti Soni (USDTL)</td>
+<td>Charles Hevi (Sampled)<br>Priti Soni (USDTL)</td>
+<td style="text-align: center;">-/-</td>
 </tr>
 <tr>
-<td>QC: deviation code of sample at Sampled</td>
-<td>&nbsp;</td>
-<td>Charles Hevi</td>
-<td>Charles Hevi</td>
-<td>&nbsp;</td>
+<td>QC: deviation code of sample</td>
+<td>Sampled/USDTL</td>
+<td>Charles Hevi (Sampled)<br>Priti Soni (USDTL)</td>
+<td>Charles Hevi (Sampled)<br>Priti Soni (USDTL)</td>
+<td style="text-align: center;">-/-</td>
 </tr>
 <tr>
-<td>QC: deviation code of sample at USDTL</td>
-<td>&nbsp;</td>
-<td>Priti Soni</td>
-<td>Priti Soni</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Analysis of sample at Sampled</td>
-<td>&nbsp;</td>
-<td>Charles Hevi</td>
-<td>Charles Hevi</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>Analysis of sample at USDTL</td>
-<td>&nbsp;</td>
-<td>Priti Soni</td>
-<td>Priti Soni</td>
-<td>&nbsp;</td>
+<td>Analysis of sample</td>
+<td>Sampled/USDTL</td>
+<td>Charles Hevi (Sampled)<br>Priti Soni (USDTL)</td>
+<td>Charles Hevi (Sampled)<br>Priti Soni (USDTL)</td>
+<td style="text-align: center;">-/-</td>
 </tr>
 </tbody>
 </table>
