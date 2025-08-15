@@ -24,8 +24,8 @@ flowchart TB
     n27 --- n31["<b>Tim Meyer</b>"]
     n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
     n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
-    n36["<span style="display: inline-block; border-top: 4px dashed red; width: 40px; vertical-align: middle; margin-right: 8px;"></span><span>Tabulated Data</span>"]
-    n37["<span style="display: inline-block; border-top: 4px solid red; width: 40px; vertical-align: middle; margin-right: 8px;"></span><span>File-Based Data</span>"]
+    n36["<span style="display: inline-block; border-top: 4px dashed red; width: 40px; vertical-align: middle; margin-right: 8px;"></span><span><b>Tabulated Data</b></span>"]
+    n37["<span style="display: inline-block; border-top: 4px solid red; width: 40px; vertical-align: middle; margin-right: 8px;"></span><span><b>File-Based Data</b></span>"]
     style n36 fill:#FFFFFF
     style n37 fill:#FFFFFF
     style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
