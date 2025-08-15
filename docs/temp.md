@@ -96,8 +96,8 @@ flowchart TB
     n30 --- n29["<a href="#midb-analytics-hub" target="_top"><b>MIDB Analytics</b></a>"]
     n27 --- n31["<b>Tim Meyer</b>"]
     n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
-    n32 --- n36["<span style="display: inline-block; border-top: 4px dashed red; width: 40px; vertical-align: middle; margin-right: 8px;"></span><span><b>Tabulated Data</b></span>"]
-    n32 --- n37["<span style="display: inline-block; border-top: 4px solid red; width: 40px; vertical-align: middle; margin-right: 8px;"></span><span><b>File-Based Data</b></span>"]
+    n32 ~~~ n36["<span style="display: inline-block; border-top: 4px dashed red; width: 40px; vertical-align: middle; margin-right: 8px;"></span><span><b>Tabulated Data</b></span>"]
+    n32 ~~~ n37["<span style="display: inline-block; border-top: 4px solid red; width: 40px; vertical-align: middle; margin-right: 8px;"></span><span><b>File-Based Data</b></span>"]
     n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
     style n36 fill:#FFFFFF,stroke:#FFFFFF
     style n37 fill:#FFFFFF,stroke:#FFFFFF
