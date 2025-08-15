@@ -1,0 +1,76 @@
+---
+config:
+  layout: elk
+---
+flowchart TB
+    n2["<b>Anders Dale, PhD</b><br>HDCC Co-Director<br>JCVI"] --- jcvi@{ label: "<a href=\"#j-craig-venter-institute\" target=\"_top\"><b>JCVI</b></a>" } & n10@{ label: "<a href=\"#washu\" target=\"_top\"><b>WashU</b></a>" }
+    n1["<b>Christopher Smyser, MD</b><br>HDCC Co-Director<br>WashU"] --- n12@{ label: "<a href=\"#libr\" target=\"_top\"><b>LIBR</b></a>" } & lasso@{ label: "<a href=\"#lasso\" target=\"_top\"><b>Lasso</b></a>" } & n10
+    E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- n7@{ label: "<a href=\"#loris\" target=\"_top\"><b>LORIS</b></a>" } & n11@{ label: "<a href=\"#columbia-university\" target=\"_top\"><b>Columbia</b></a>" } & umn@{ label: "<a href=\"#university-of-minnesota\" target=\"_top\"><b>UMN</b></a>" } & lasso & n8@{ label: "<a href=\"#university-of-maryland\" target=\"_top\"><b>UMD EEG Core</b></a>" }
+    n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
+    n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
+    n12 --- n16["<b>Wesley K. Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"]
+    n16 --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
+    lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO"]
+    n7 --- n20@{ label: "<b>Alan Evans</b>, PI<br><b>Samir Das</b><br><a href=\"https://mcin.ca/about-mcin/\" rel=\"noopener\" target=\"_blank\">MCIN</a> Assoc Dir" }
+    n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
+    n11 --- n18["<b>William P. Fifer, PhD</b><br>Novel Tech &amp;<br>Wearables Co-Chair"]
+    n18 --- n34["<b>Nicolo Pini</b><br>Co-Investigator"]
+    umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
+    reed --- n30["<b>Maren Macgregor-Hannah</b><br>Program Manager"]
+    n30 --- n28@{ label: "<a href=\"#center-for-developmental-neuroimaging\" target=\"_top\"><b>CDNI</b></a>" } & n25@{ label: "<a href=\"#midb-informatics-hub-msi\" target=\"_top\"><b>MIDB Informatics</b></a>" } & n27@{ label: "<a href=\"#health-sciences-technology\" target=\"_top\"><b>HST</b></a>" } & n29@{ label: "<a href=\"#midb-analytics-hub\" target=\"_top\"><b>MIDB Analytics</b></a>" }
+    n27 --- n31["<b>Tim Meyer</b>"]
+    n8 --- n35@{ label: "<b><span style=\"--tw-scale-x:\">Nathan Fox, PhD</span><br style=\"--tw-scale-x:\"></b><span style=\"background-color:\">HDCC Assoc Dir</span>" }
+    jcvi@{ shape: rect}
+    n10@{ shape: rect}
+    n12@{ shape: rect}
+    lasso@{ shape: rect}
+    n7@{ shape: rect}
+    n11@{ shape: rect}
+    umn@{ shape: rect}
+    n8@{ shape: rect}
+    n20@{ shape: rect}
+    n28@{ shape: rect}
+    n25@{ shape: rect}
+    n27@{ shape: rect}
+    n29@{ shape: rect}
+    n35@{ shape: rect}
+    style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
+    style jcvi fill:#E1BEE7,stroke:#AA00FF
+    style n10 fill:#E1BEE7,stroke:#AA00FF
+    style n1 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
+    style n12 fill:#E1BEE7,stroke:#AA00FF
+    style lasso fill:#E1BEE7,stroke:#D50000,stroke-width:2px,stroke-dasharray: 2
+    style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
+    style n7 fill:#E1BEE7,stroke:#D50000,stroke-width:2px,stroke-dasharray: 2
+    style n11 fill:#E1BEE7,stroke:#D50000
+    style umn fill:#E1BEE7,stroke:#D50000
+    style n8 fill:#E1BEE7,stroke:#D50000
+    style n22 fill:#BBDEFB,stroke:#2962FF
+    style n32 fill:#C8E6C9,stroke:#00C853
+    style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px,stroke-dasharray: 0
+    style n17 fill:#BBDEFB,stroke:#2962FF
+    style lasso1 fill:#BBDEFB,stroke:#2962FF
+    style n20 fill:#BBDEFB,stroke:#2962FF
+    style n33 fill:#C8E6C9,stroke:#00C853
+    style n18 fill:#BBDEFB,stroke:#2962FF
+    style n34 fill:#C8E6C9,stroke:#00C853
+    style reed fill:#BBDEFB,stroke:#2962FF
+    style n30 fill:#C8E6C9,stroke:#00C853
+    style n28 fill:#E1BEE7,stroke:#AA00FF
+    style n25 fill:#E1BEE7,stroke:#AA00FF
+    style n27 fill:#E1BEE7,stroke:#AA00FF
+    style n29 fill:#E1BEE7,stroke:#AA00FF
+    style n31 fill:#C8E6C9,stroke:#00C853
+    style n35 fill:#BBDEFB,stroke:#2962FF
+    click jcvi "#j-craig-venter-institute"
+    click n10 "#washu"
+    click n12 "#libr"
+    click lasso "#lasso"
+    click n7 "#loris"
+    click n11 "#columbia-university"
+    click umn "#university-of-minnesota"
+    click n8 "#university-of-maryland"
+    click n28 "#center-for-developmental-neuroimaging"
+    click n25 "#midb-informatics-hub-msi"
+    click n27 "#health-sciences-technology"
+    click n29 "#midb-analytics-hub"
