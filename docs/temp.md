@@ -70,7 +70,7 @@ flowchart TB
     click n11 "#columbia-university"
 ```
 
-## order under sauren
+## order under sauren and make edges white
 ```mermaid
 ---
 config:
@@ -141,6 +141,8 @@ flowchart TB
     click n28 "#center-for-developmental-neuroimaging"
     click n12 "#libr"
     click n11 "#columbia-university"
+    linkStyle 25 stroke:#FFFFFF
+    linkStyle 26 stroke:#FFFFFF,fill:none
 ```
     
 
