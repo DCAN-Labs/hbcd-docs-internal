@@ -30,6 +30,8 @@ This document outlines the staged workflow for selecting, releasing, and validat
 
 <object type="image/svg+xml" data="../images/timeline.svg" width="100%"></object>
 
+### Process for Determination of Release Timeline
+
 The release timeline is determined as follows:
 
 1. HDCC proposes a timeline 
