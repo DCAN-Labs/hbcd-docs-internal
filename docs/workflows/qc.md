@@ -745,6 +745,12 @@ The following procedures are performed to support transparency, reproducibility,
 
 See the full details on the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/#processing-analytic-standards). This includes the use of standardized processing pipelines for MRI, EEG, and other modalities, as well as the use of standardized analytic approaches across sites. Independent code review is performed for all processing pipelines via the NMIND Coding Standards Checklist, with a focus on ensuring that the code is well-documented, reproducible, and follows best practices in software development. This includes version control of all internal and public-facing code bases, including the documentation websites.
 
+#### New Pipeline Integration
+
+The workflow for the integration of new processing pipelines into processing file-based data involves performing an initial review to sign off on testing the integration, ensuring the pipeline meets [HBCD Pipeline & Analytic Standards](https://docs.hbcdstudy.org/latest/instruments/processing/standards/), analysis and review of the integration testing, and a final sign off by the Workgroup subject matter experts. 
+
+The steps and integration status for each pipeline can be viewed [here](https://docs.google.com/spreadsheets/d/17jad-Majiveg0vngXDQEpkSrQ7TC08Z_yaGnIr5BN_o/edit?usp=sharing).
+
 ### Data Storage and Backup
 
  - Large data files are stored in MSI's Tier 2 Ceph storage system, while the LORIS systems operate off of the storage in MSI's OpenStack cloud environment.
