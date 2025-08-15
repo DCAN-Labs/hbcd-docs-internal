@@ -4,6 +4,8 @@ config:
   layout: elk
 ---
 flowchart TB
+    n36["<span style="display: inline-block; border-top: 4px dashed red; width: 40px; vertical-align: middle; margin-right: 8px;"></span><span><b>Tabulated Data</b></span>"]
+    n37["<span style="display: inline-block; border-top: 4px solid red; width: 40px; vertical-align: middle; margin-right: 8px;"></span><span><b>File-Based Data</b></span>"]
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<a href="#j-craig-venter-institute" target="_top"><b>JCVI</b></a>"]
     E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<a href="#lasso" target="_top"><b>Lasso</b></a>"] & umn["<a href="#university-of-minnesota" target="_top"><b>UMN</b></a>"] & n7["<a href="#loris" target="_top"><b>LORIS</b></a>"] & n8["<a href="#university-of-maryland" target="_top"><b>UMD EEG Core</b></a>"] & n11["<a href="#columbia-university" target="_top"><b>Columbia</b></a>"]
     lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO"]
@@ -24,10 +26,8 @@ flowchart TB
     n27 --- n31["<b>Tim Meyer</b>"]
     n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
     n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
-    n36["<span style="display: inline-block; border-top: 4px dashed red; width: 40px; vertical-align: middle; margin-right: 8px;"></span><span><b>Tabulated Data</b></span>"]
-    n37["<span style="display: inline-block; border-top: 4px solid red; width: 40px; vertical-align: middle; margin-right: 8px;"></span><span><b>File-Based Data</b></span>"]
-    style n36 fill:#FFFFFF
-    style n37 fill:#FFFFFF
+    style n36 fill:#FFFFFF,stroke:#FFFFFF
+    style n37 fill:#FFFFFF,stroke:#FFFFFF
     style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style jcvi fill:#E1BEE7,stroke:#AA00FF
     style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
