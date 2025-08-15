@@ -11,7 +11,7 @@
   </a>
 </div>
 
-The <b><a href="hbcd-hdcc-qc.lassoinformatics.com">Lasso Pre-Release System</a></b> is used for quality control so that HBCD Consortium members to review their data as it appears on the Lasso platform prior to inclusion in a release. 
+The <b><a href="https://hbcd-hdcc-qc.lassoinformatics.com/" target="_blank">Lasso Pre-Release System</a></b> is used for quality control so that HBCD Consortium members to review their data as it appears on the Lasso platform prior to inclusion in a release. 
 
 ***HBCD Consortium members are HIGHLY ENCOURAGED to perform a detailed review of their data as soon as it is available so that any issues can be resolved in time before its inclusion in the release data.***
 

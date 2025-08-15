@@ -132,7 +132,7 @@ The HDCC implements the measures marked as INCLUDE and begins the first versione
 
 #### Lasso Ingestion
 
-Once the BR Hot Sheet is finalized, the HDCC sends it to Lasso to initiate BR ingestion, which includes [Lasso ingestion QA](qc.md#pre-release-pheno). After ingestion is complete, the HDCC liaison (Jen Zink) notifies WGs that data are available in Lasso and requests they complete Quality Control (QC) reviews. Lasso obtains final sign-off from Workgroups on datasets in their release-ready form, with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a>, via the <a href="hbcd-hdcc-qc.lassoinformatics.com">Lasso Pre-Release System</a>.
+Once the BR Hot Sheet is finalized, the HDCC sends it to Lasso to initiate BR ingestion, which includes [Lasso ingestion QA](qc.md#pre-release-pheno). After ingestion is complete, the HDCC liaison (Jen Zink) notifies WGs that data are available in Lasso and requests they complete Quality Control (QC) reviews. Lasso obtains final sign-off from Workgroups on datasets in their release-ready form, with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a>, via the <a href="https://hbcd-hdcc-qc.lassoinformatics.com/" target="_blank">Lasso Pre-Release System</a>.
   
 ### Stage 3: Data Quality Issue Identification, Reporting, and Handling  
 
