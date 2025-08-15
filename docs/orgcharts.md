@@ -51,7 +51,7 @@ flowchart TB
     n30 --- n27["<a href="#health-sciences-technology" target="_top"><b>HST</b></a>"]
     n30 --- n28["<a href="#center-for-developmental-neuroimaging" target="_top"><b>CDNI</b></a>"]
     n30 --- n29["<a href="#midb-analytics-hub" target="_top"><b>MIDB Analytics</b></a>"]
-    n27 --- n31["<b>Karen Athy-Penrose</b><br>Project Manager"]
+    n27 --- n31["<b>Tim Meyer</b>"]
     n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
     n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
     style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
@@ -161,7 +161,7 @@ The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN
   
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Electronic Health Records (EHR)*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
 
-<p><object type="image/svg+xml" data="hst-OC.svg" width="80%"></object></p>
+<p><object type="image/svg+xml" data="hst.svg" width="80%"></object></p>
 
 <div id="hst-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -188,32 +188,27 @@ The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN
     <td style="word-wrap: break-word; white-space: normal;">Oversees the design and implementation of secure data infrastructure for the HBCD Data Core, including data shelter, PHI protection, system architecture, and integration across platforms.</td>
     </tr>
     <tr>
-    <td>Karen Athy-Penrose</td>
-    <td>Project Manger</td>
-    <td style="word-wrap: break-word; white-space: normal;">Coordinates cross-functional efforts across HST teams, ensuring timely progress on dashboard development, EHR integration, and data governance activities related to PHI and third-party tools.</td>
+    <td>Tim Meyers</td>
+    <td>Informatics Engineer</td>
+    <td style="word-wrap: break-word; white-space: normal;">Maintains the design and implementation of secure data infrastructure for the HBCD Data Core, including data shelter, PHI protection, system architecture, and integration across platforms.</td>
     </tr>
     <tr>
     <td>Haley Hutala</td>
-    <td>Tableau Engineer</td>
+    <td>Tableau Engineer, Data Analyst</td>
     <td style="word-wrap: break-word; white-space: normal;">Designs and maintains interactive data visualizations in Tableau to monitor MRI quality metrics, enabling real-time insights and reporting for QC stakeholders.</td>
     </tr>
     <tr>
     <td>Sanjana Madakshire</td>
-    <td>QC</td>
+    <td>QC, Data Analyst</td>
     <td style="word-wrap: break-word; white-space: normal;">Performs data validation and quality assurance tasks for MRI datasets, collaborating with dashboard and data teams to ensure accuracy in visualized metrics.</td>
     </tr>
     <tr>
-    <td>Dan Duhon,</td>
+    <td>Dan Duhon</td>
     <td>Developer</td>
     <td style="word-wrap: break-word; white-space: normal;">Maintain the infrastructure, APIs, and backend services supporting HST platforms, including data ingestion, automation pipelines, authentication systems, and secure data exchange between HBCD components. Lead ETL developer</td>
     </tr>
     <tr>
-    <td>Derek Thompson,</td>
-    <td>Developer</td>
-    <td style="word-wrap: break-word; white-space: normal;">Maintain the infrastructure, APIs, and backend services supporting HST platforms, including data ingestion, automation pipelines, authentication systems, and secure data exchange between HBCD components.</td>
-    </tr>
-    <tr>
-    <td>Saranya Subramanian,</td>
+    <td>Derek Thompson</td>
     <td>Developer</td>
     <td style="word-wrap: break-word; white-space: normal;">Maintain the infrastructure, APIs, and backend services supporting HST platforms, including data ingestion, automation pipelines, authentication systems, and secure data exchange between HBCD components.</td>
     </tr>
