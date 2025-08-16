@@ -842,13 +842,20 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
 
 ### LIBR
 
-The Laureate Institute for Brain Research (LIBR) houses the Biostatistics and Geolocation [HBCD Workgroups](#hbcd-workgroups) and provides support for the HDCC in the areas of biostatistics, geolocation, and data analysis.
+The Laureate Institute for Brain Research (LIBR) houses the **Biostatistics** and **Geocoding & Linking External Data** [HBCD Workgroups](#hbcd-workgroups), providing support for the HDCC in the areas of biostatistics, geolocation, and data analysis.
 
 ```mermaid
-flowchart LR
-    n16["<b>Wesley K. Thompson, PhD</b><br>HDCC Assoc Dir, BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
+flowchart TB
+    n16["<b>Wesley K. Thompson, PhD</b><br>HDCC Assoc Dir, Biostatistics Chair"] --- n20(["<b>Biostatistics</b>"])
+    n20 --- n18["<b>[TBD]</b><br>Biostatistician"]
+    n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"] --- n21(["<b>Geocoding</b>"])
+    n21 --- n19["<b>Wenjie Zheng</b><br>Geocoding Developer"]
     style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
+    style n20 fill:#E1BEE7,stroke:#AA00FF
+    style n18 fill:#BBDEFB,stroke:#2962FF
     style n17 fill:#BBDEFB,stroke:#2962FF
+    style n21 stroke:#AA00FF,fill:#E1BEE7
+    style n19 fill:#BBDEFB,stroke:#2962FF
 ```
 
 <div id="libr-rr" class="table-banner" onclick="toggleCollapse(this)">
@@ -872,13 +879,23 @@ flowchart LR
     <tbody>
       <tr>
       <td>Wesley K. Thompson, PhD</td>
-      <td style="word-wrap: break-word; white-space: normal;">HDCC Assoc Dir, BioStatistics Chair</td>
+      <td style="word-wrap: break-word; white-space: normal;">HDCC Assoc Dir, Biostatistics WG Chair</td>
       <td style="word-wrap: break-word; white-space: normal;">Provides statistical guidance on study design, analysis, and methods development for HBCD. Co-leads statistical design and maintenance of <span class="tooltip tooltip-left">DEAP 2.0<span class="tooltiptext">the Data Exploration and Analysis Portal 2.0</span></span>. Supports geolocation of participant residences and linkage to external data sources.</td>
       </tr>
       <tr>
-      <td>Chun Fan, PhD</td>
-      <td style="word-wrap: break-word; white-space: normal;">Geolocation Chair</td>
-      <td style="word-wrap: break-word; white-space: normal;">Co-leads HDCC efforts in curating and analyzing imaging, genomic, and geolocation exposure data. Supports expansion of <span class="tooltip tooltip-left">DEAP 2.0<span class="tooltiptext">the Data Exploration and Analysis Portal 2.0</span></span> for high-dimensional genomic, imaging, and exposure data analysis and harmonization with external studies, including development of a probabilistic ontology for cross-study comparisons.</td>
+        <td>TBD</td>
+        <td style="word-wrap: break-word; white-space: normal;">Biostatistician</td>
+        <td style="word-wrap: break-word; white-space: normal;">Support the HBCD Biostatistics Workgroup.</td>
+      </tr>
+      <tr>
+        <td>Chun Fan, PhD</td>
+        <td style="word-wrap: break-word; white-space: normal;">Gecoding & Linking External Data WG Chair</td>
+        <td style="word-wrap: break-word; white-space: normal;">Co-leads HDCC efforts in curating and analyzing imaging, genomic, and geolocation exposure data. Supports expansion of <span class="tooltip tooltip-left">DEAP 2.0<span class="tooltiptext">the Data Exploration and Analysis Portal 2.0</span></span> for high-dimensional genomic, imaging, and exposure data analysis and harmonization with external studies, including development of a probabilistic ontology for cross-study comparisons.</td>
+      </tr>
+      <tr>
+        <td>Wenjie Zheng</td>
+        <td style="word-wrap: break-word; white-space: normal;">Geocoding Developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Development/programming of the PII computation in place (i.e., geocoding).</td>
       </tr>
 </table>
 </div>
