@@ -902,12 +902,15 @@ flowchart TB
 
 ### Columbia University
 
-Columbia houses the Novel Technologies & Wearables [HBCD Workgroup](#hbcd-workgroups) and provides support for the HDCC in the areas of novel technologies, wearables, and data analysis.
+Columbia houses the **Novel Technologies & Wearable Sensors** [HBCD Workgroup](#hbcd-workgroups) and provides support for the HDCC in the areas of novel technologies, wearables, and data analysis.
 
 ```mermaid
-flowchart LR
-    n16["<b>William P. Fifer, PhD</b><br>Novel Tech &amp; Wearables Co-Chair"]
-    n16 --- n17["<b>Nicolo Pini, PhD</b><br>Co-Investigator"]
+flowchart TB
+    n18(["<b>Novel Tech &amp; Wearable Sensors</b>"])
+    n16["<b>William P. Fifer, PhD</b><br>Novel Tech & Wearables Co-Chair"]
+    n17["<b>Nicolo Pini, PhD</b><br>Co-Investigator"]
+
+    style n18 fill:#E1BEE7,stroke:#AA00FF
     style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style n17 fill:#C8E6C9,stroke:#00C853
 ```
