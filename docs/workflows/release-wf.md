@@ -675,7 +675,7 @@ There are several regular calls where release action items are discussed and tra
   <td>Tracking release actions items</td>
 </tr>
 <tr>
-  <td>Confluence</td>
+  <td><a href="https://hbcdstudy.atlassian.net/wiki/x/kYB4">Confluence</a></td>
   <td>Storage of all internal documentation and protocols</td>
 </tr>
 <tr>
