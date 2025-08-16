@@ -849,7 +849,7 @@ flowchart TB
     n16["<b>Wesley K. Thompson, PhD</b><br>HDCC Assoc Dir, Biostatistics Chair"] --- n20(["<b>Biostatistics</b>"])
     n20 --- n18["<b>[TBD]</b><br>Biostatistician"]
     n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"] --- n21(["<b>Geocoding</b>"])
-    n21 --- n19["<b>Wenjie Zheng</b><br>Geocoding Developer"]
+    n21 --- n19["<b>Wenjie Zheng, PhD</b><br>Geocoding Developer"]
     style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style n20 fill:#E1BEE7,stroke:#AA00FF
     style n18 fill:#BBDEFB,stroke:#2962FF
@@ -893,7 +893,7 @@ flowchart TB
         <td style="word-wrap: break-word; white-space: normal;">Co-leads HDCC efforts in curating and analyzing imaging, genomic, and geolocation exposure data. Supports expansion of <span class="tooltip tooltip-left">DEAP 2.0<span class="tooltiptext">the Data Exploration and Analysis Portal 2.0</span></span> for high-dimensional genomic, imaging, and exposure data analysis and harmonization with external studies, including development of a probabilistic ontology for cross-study comparisons.</td>
       </tr>
       <tr>
-        <td>Wenjie Zheng</td>
+        <td>Wenjie Zheng, PhD</td>
         <td style="word-wrap: break-word; white-space: normal;">Geocoding Developer</td>
         <td style="word-wrap: break-word; white-space: normal;">Development/programming of the PII computation in place (i.e., geocoding).</td>
       </tr>
