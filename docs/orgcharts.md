@@ -909,13 +909,11 @@ Columbia houses the **Novel Technologies & Wearable Sensors** [HBCD Workgroup](#
 config:
   layout: elk
 ---
-flowchart LR
-    A(["<b>Novel Tech &amp; Wearable Sensors</b>"])
-    B["<b>William P. Fifer, PhD</b><br>Novel Tech & Wearables Co-Chair"]
+flowchart TB
+    B["<b>William P. Fifer, PhD</b><br>Novel Tech &amp; Wearables Co-Chair"] --- A(["<b>Novel Tech &amp; Wearable Sensors</b>"])
     C["<b>Nicolo Pini, PhD</b><br>Co-Investigator"]
-
-    style A fill:#E1BEE7,stroke:#AA00FF
     style B fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
+    style A fill:#E1BEE7,stroke:#AA00FF
     style C fill:#C8E6C9,stroke:#00C853
 ```
 
@@ -925,7 +923,7 @@ config:
   layout: elk
 ---
 flowchart TB
-    B["<b>William P. Fifer, PhD</b><br>Novel Tech &amp; Wearables Co-Chair"] --- A(["<b>Novel Tech &amp; Wearable Sensors</b>"])
+    B["<b>William P. Fifer, PhD</b><br>Novel Tech WG Co-Chair"] --- A(["<b>Novel Tech &amp; Wearable Sensors</b>"])
     C["<b>Nicolo Pini, PhD</b><br>Co-Investigator"]
     style B fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style A fill:#E1BEE7,stroke:#AA00FF
