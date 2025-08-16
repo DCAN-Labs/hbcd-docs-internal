@@ -906,7 +906,7 @@ Columbia houses the **Novel Technologies & Wearable Sensors** [HBCD Workgroup](#
 
 ```mermaid
 flowchart TB
-    A(["<b>Novel Tech &amp; Wearable Sensors</b>"])
+    A(["<b>Novel Tech &amp;<br>Wearable Sensors</b>"])
     B["<b>William P. Fifer, PhD</b><br>Novel Tech & Wearables Co-Chair"]
     C["<b>Nicolo Pini, PhD</b><br>Co-Investigator"]
 
