@@ -963,7 +963,7 @@ flowchart TB
     B["<b>William P. Fifer, PhD</b><br>Novel Tech &amp; Wearables Co-Chair"] --- A(["<b>Novel Tech &amp; Wearable Sensors</b>"])
     C["<b>Nicolo Pini, PhD</b><br>Co-Investigator"]
     style B fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style A fill:#E1BEE7,stroke:#AA00FF
+    style A fill:#E1BEE7,stroke:#FF1FF4,stroke-width:4px,stroke-dasharray: 0
     style C fill:#C8E6C9,stroke:#00C853
 ```
 
