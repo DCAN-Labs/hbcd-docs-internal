@@ -1,0 +1,84 @@
+---
+config:
+  theme: redux
+  layout: elk
+---
+flowchart LR
+ subgraph s4["<br><b>Ongoing QC<br><i class="fas fa-home" style="margin-right: 2px; color: purple;"></i> HST</b>"]
+        n19["<b>QC Dashboard</b><br>"]
+        n20["<b>Ripple</b><br>"]
+  end
+ subgraph s5["<br><i class="fas fa-home" style="margin-right: 2px; color: orange;"></i> <b>HBCD Workgroups</b>"]
+        n16(["<b>Geocoding</b>"])
+        n17(["<b>TLC</b>"])
+        n8(["<b>NCL</b>"])
+        n18["Tableau"]
+        n9(["<b>SED</b>"])
+        n10(["<b>PH</b>"])
+        n11(["<b>Demo</b>"])
+        n12(["<b>BCGI</b>"])
+        n13(["<b>Biostats</b>"])
+        n14(["<b>PEX</b>"])
+        n22(["<b>Biospec</b>"])
+  end
+ subgraph s6["<br><b>Ongoing QC<br><i class="fas fa-home" style="margin-right: 2px; color: green;"></i> Lasso</b>"]
+        n21["<b>Tableau</b><br>"]
+  end
+    n16 --> n20
+    n17 --> n20
+    n8 --- n18
+    n9 --- n18
+    n10 --- n18
+    n11 --- n18
+    n12 --- n18
+    n13 --- n18
+    n14 --- n18
+    n18 ==> n21
+    n22 --> n19
+    n23["<b>ALL WORKGROUPS</b>"] --- n7["temp"]
+    s5 --- n23
+    n7 --> n24@{ label: "<b>Final release QC &amp; sign off<br> <i class="fas fa-home" style="margin-right: 2px; color: green;"></i></i> Lasso</b>" }
+    n7 --> n25@{ label: "<b>Provide documentation for HBCD Data Release Docs <a href=\"https://docs.hbcdstudy.org/latest/instruments/#instruments-by-domain\" rel=\"noopener\" target=\"_blank\">study instrument pages</a><br><i class="fas fa-home" style="margin-right: 2px; color: blue;"></i> CDNI</b>" }
+    n19@{ shape: rect}
+    n20@{ shape: rect}
+    n18@{ shape: anchor}
+    n21@{ shape: rect}
+    n23@{ shape: text}
+    n7@{ shape: anchor}
+    n24@{ shape: rect}
+    n25@{ shape: rect}
+    style n19 fill:#E1BEE7,stroke:#E1BEE7
+    style n20 fill:#E1BEE7,stroke:#E1BEE7
+    style n16 fill:#FFE0B2,stroke:#FF6D00
+    style n17 fill:#FFE0B2,stroke:#FF6D00
+    style n8 fill:#FFE0B2,stroke:#FF6D00
+    style n9 fill:#FFE0B2,stroke:#FF6D00
+    style n10 fill:#FFE0B2,stroke:#FF6D00
+    style n11 fill:#FFE0B2,stroke:#FF6D00
+    style n12 fill:#FFE0B2,stroke:#FF6D00
+    style n13 fill:#FFE0B2,stroke:#FF6D00
+    style n14 stroke:#FF6D00,fill:#FFE0B2
+    style n22 fill:#FFE0B2,stroke:#FF6D00
+    style n21 fill:#C8E6C9,stroke:#C8E6C9
+    style n23 color:#FF6D00
+    style n7 stroke:#00C853,fill:#EBFFEB
+    style s5 fill:#FFF9C4,stroke:#FF6D00
+    style n25 fill:#E3F2FD,stroke:#2962FF
+    style n24 stroke:#00C853,fill:#EBFFEB
+    style s4 fill:#FAD9FF,stroke:#AA00FF
+    style s6 fill:#EBFFEB,stroke:#00C853
+    linkStyle 0 stroke:#AA00FF,fill:none
+    linkStyle 1 stroke:#AA00FF,fill:none
+    linkStyle 2 stroke:#00C853,fill:none
+    linkStyle 3 stroke:#00C853,fill:none
+    linkStyle 4 stroke:#00C853,fill:none
+    linkStyle 5 stroke:#00C853,fill:none
+    linkStyle 6 stroke:#00C853,fill:none
+    linkStyle 7 stroke:#00C853,fill:none
+    linkStyle 8 stroke:#00C853,fill:none
+    linkStyle 9 stroke:#00C853,fill:none
+    linkStyle 10 stroke:#AA00FF,fill:none
+    linkStyle 11 stroke:#FF6D00,fill:none
+    linkStyle 12 stroke:#FF6D00,fill:none
+    linkStyle 13 stroke:#FF6D00,fill:none
+    linkStyle 14 stroke:#FF6D00,fill:none
