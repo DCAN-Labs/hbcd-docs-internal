@@ -4,6 +4,21 @@
 <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px; vertical-align: middle; margin-right: 8px;"></span><span>Tabulated Data</span><br>
 <span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px; vertical-align: middle; margin-right: 8px;"></span><span>File-Based Data</span>
 
+<b>Release Architecture Labels:</b>     <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px; vertical-align: middle; margin-right: 8px;"></span><span>Tabulated Data</span>         <span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px; vertical-align: middle; margin-right: 8px;"></span><span>File-Based Data</span>
+
+<div style="display: flex; align-items: center; gap: 30px; font-size: 0.8em;">
+  <b>Release Architecture Labels:</b>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px;"></span>
+    <span>Tabulated Data</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px;"></span>
+    <span>File-Based Data</span>
+  </div>
+</div>
+
+
 ```mermaid
 ---
 config:
