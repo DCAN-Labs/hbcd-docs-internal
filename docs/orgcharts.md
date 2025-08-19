@@ -116,7 +116,19 @@ flowchart TB
 
 The University of Minnesota (UMN) houses several core HDCC teams. Please click on each organization below to view their details.
 
-<p><object type="image/svg+xml" data="umn-OC.svg" width="90%"></object></p>
+<p><object type="image/svg+xml" data="umn.svg" width="90%"></object></p>
+<div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.8em; padding: 8px 12px; border: 2px solid #ccc; border-radius: 6px; background-color: #fafafa;">
+  <b>Release Architecture Labels:</b>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px;"></span>
+    <span>Tabulated Data</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px;"></span>
+    <span>File-Based Data</span>
+  </div>
+</div>
+<br>
 
 #### Center for Developmental NeuroImaging
    
