@@ -749,6 +749,7 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
 [LORIS](https://mcin.ca/technology/loris/) (Longitudinal Online Research and Imaging System), developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)), is the core data management system for the HBCD Study. It is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
 
 <img src="loris.png" alt="MIDB Analytics Hub Org Chart" width="70%"/>
+<br>
 
 <p>
 <div id="loris-rr" class="table-banner" onclick="toggleCollapse(this)">

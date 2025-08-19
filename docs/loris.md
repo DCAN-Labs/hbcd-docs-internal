@@ -2,33 +2,26 @@
  
 [LORIS](https://mcin.ca/technology/loris/) (Longitudinal Online Research and Imaging System), developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)), is the core data management system for the HBCD Study. It is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
 
-
-
-<div style="display: flex; justify-content: center; margin-top: 20px;">
-  <div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.9em; padding: 8px 12px; border: 2px solid #ccc; border-radius: 6px; background-color: #fafafa;">
-    <b>Release Architecture Labels:</b>
-    <div style="display: flex; align-items: center; gap: 6px;">
-      <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px;"></span>
-      <span>Tabulated Data</span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 6px;">
-      <span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px;"></span>
-      <span>File-Based Data</span>
-    </div>
-  </div>
-</div>
-
-
-
-##### 1: Org chart provided by LORIS
-
-<img src="../orgcharts/loris-orig.png" alt="MIDB Analytics Hub Org Chart" width="70%"/>
-
-##### 2: ORIGINAL DRAFT
+#### 1: Orig org chart on site
 <img src="../orgcharts/loris.png" alt="MIDB Analytics Hub Org Chart" width="70%"/>
 
+##### 2: Org chart provided by LORIS
+
+<img src="../orgcharts/loris-orig.png" alt="MIDB Analytics Hub Org Chart" width="90%"/>
+
 ##### Potential combination of 1 and 2
-<img src="../orgcharts/loris-alt.png" alt="MIDB Analytics Hub Org Chart" width="70%"/>
+<img src="../orgcharts/loris-alt.svg" alt="MIDB Analytics Hub Org Chart" width="100%"/>
+<div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.8em; padding: 8px 12px; border: 2px solid #ccc; border-radius: 6px; background-color: #fafafa;">
+  <b>Release Architecture Labels:</b>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px;"></span>
+    <span>Tabulated Data</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px;"></span>
+    <span>File-Based Data</span>
+  </div>
+</div>
 
 <p>
 <div id="loris-rr" class="table-banner" onclick="toggleCollapse(this)">

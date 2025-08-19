@@ -2,40 +2,39 @@
 config:
   layout: elk
 ---
-flowchart TB
-    n1["<b>Alan Evans, PhD<br></b>MCIN Dir"] --- n2["Samir"] & n8(["<b>CBRAIN/Processing</b>"])
-    n2 --- n5["<b>Samir Das<br></b>MCIN Assoc. Dir."]
-    n2 ~~~ n6@{ label: "<b><span style=\"--tw-scale-x:\">Santiago Torres</span><br style=\"--tw-scale-x:\"></b><span style=\"background-color:\">Study Officer</span>" }
-    n8 --- n9@{ label: "<b><span style=\"--tw-scale-x:\">Bryan Caron</span><br style=\"--tw-scale-x:\"></b><span style=\"background-color:\">Director, CBRAIN</span><br style=\"--tw-scale-x:\"><span style=\"background-color:\">&amp; MCIN NeuroHub</span><br style=\"--tw-scale-x:\"><br style=\"--tw-scale-x:\"><b><span style=\"--tw-scale-x:\">Pierre Rioux</span><br style=\"--tw-scale-x:\"></b><span style=\"background-color:\">Lead Developer</span><br style=\"--tw-scale-x:\"><br style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b><span style=\"--tw-scale-x:\">Natacha Beck</span><br style=\"--tw-scale-x:\"></b></span><span style=\"background-color:\">Developer</span>" }
-    n5 --- n10(["<b>LORIS</b>"])
-    n10 --- n11["<b>Core</b>"] & n12["<b>Development</b>"]
+flowchart LR
+    n10(["<b>LORIS</b>"]) --- n11["<b>SysOps</b>"] & n12["<b>Development</b>"]
     n11 --- n13@{ label: "<b><span style=\"--tw-scale-x:\">Dave McFarlane</span><br style=\"--tw-scale-x:\"></b><span style=\"background-color:\">Lead Developer</span><br style=\"--tw-scale-x:\"><br style=\"--tw-scale-x:\"><span style=\"background-color:\"><b>Shen Wang</b></span><span style=\"--tw-scale-x:\"><b><b><br style=\"--tw-scale-x:\"></b>Moshood Abiola</b></span><b><br style=\"--tw-scale-x:\"></b><span style=\"background-color:\">Developers</span>" }
     n12 --- n14(["<b>BHV/Database</b>"]) & n15(["<b>MRI</b>"]) & n16(["<b>EEG/Biospecimens</b>"])
-    n6 ~~~ n10
+    n6@{ label: "<span style=\"background-color:\"><b>Samir Das<br></b>MCIN Assoc. Dir.</span>" } ~~~ n10
     n14 --- n17@{ label: "<span style=\"--tw-scale-x:\"><b><span style=\"color:\">Regis Ongaro-Carcy</span><br>Sruthy Matthew</b></span><b><br style=\"--tw-scale-x:\"></b><span style=\"background-color:\">Sr Backend Developers</span><br style=\"--tw-scale-x:\"><br style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b>George Murad<br style=\"--tw-scale-x:\"></b></span><span style=\"background-color:\">Developer</span>" }
     n15 --- n18@{ label: "<b><span style=\"--tw-scale-x:\">Cecile Madjar</span><br style=\"--tw-scale-x:\"></b><span style=\"background-color:\">Lead Developer</span>" }
     n16 --- n19@{ label: "<b><span style=\"--tw-scale-x:\">Laetitia Faeselier</span><br style=\"--tw-scale-x:\"></b><span style=\"background-color:\">Lead Developer</span>" }
-    n2@{ shape: anchor}
-    n6@{ shape: rect}
-    n9@{ shape: rect}
+    n6 --- n10
+    n5["<b>Santiago Torres<br></b>Study Officer"] ~~~ n10
+    n1["<b>Alan Evans, PhD<br></b>MCIN Dir"] --- n20(["<b>CBRAIN/Computing</b>"]) & n6
+    n1 ~~~ n5
+    n20 --- n21@{ label: "<span style=\"--tw-scale-x:\"><b><span style=\"--tw-scale-x:\">Bryan Caron</span><br style=\"--tw-scale-x:\"></b></span><span style=\"--tw-scale-x:\">CBRAIN</span><br style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\">&amp; MCIN NeuroHub Director</span><br style=\"--tw-scale-x:\"><br style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b><span style=\"--tw-scale-x:\">Pierre Rioux</span><br style=\"--tw-scale-x:\"></b></span><span style=\"--tw-scale-x:\">Lead Developer</span><br style=\"--tw-scale-x:\"><br style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b><span style=\"--tw-scale-x:\">Natacha Beck</span><br style=\"--tw-scale-x:\"></b></span><span style=\"--tw-scale-x:\">Developer</span>" }
     n11@{ shape: rect}
     n12@{ shape: rect}
     n13@{ shape: rect}
+    n6@{ shape: rect}
     n17@{ shape: rect}
     n18@{ shape: rect}
     n19@{ shape: rect}
-    style n1 fill:#BBDEFB
-    style n8 fill:#E1BEE7,stroke:#AA00FF
-    style n5 fill:#BBDEFB,stroke:#2962FF
-    style n6 fill:#C8E6C9,stroke:#00C853
-    style n9 fill:#BBDEFB,stroke:#2962FF
+    n21@{ shape: rect}
     style n10 fill:#E1BEE7,stroke:#AA00FF
-    style n11 fill:#FFFFFF,stroke:#AA00FF,stroke-width:4px,stroke-dasharray: 5
-    style n12 fill:#FFFFFF,stroke:#AA00FF,stroke-width:4px,stroke-dasharray: 5
+    style n11 fill:#FFFFFF,stroke:#AA00FF,stroke-width:1px,stroke-dasharray: 1
+    style n12 fill:#FFFFFF,stroke:#AA00FF,stroke-width:1px,stroke-dasharray: 1
     style n13 fill:#BBDEFB,stroke:#2962FF
-    style n14 fill:#E1BEE7,stroke:#AA00FF
+    style n14 fill:#E1BEE7,stroke:#FF1FF4,stroke-width:4px,stroke-dasharray: 5
     style n15 fill:#E1BEE7,stroke:#AA00FF
     style n16 fill:#E1BEE7,stroke:#AA00FF
+    style n6 fill:#BBDEFB,stroke:#2962FF
     style n17 fill:#BBDEFB,stroke:#2962FF
     style n18 stroke:#2962FF,fill:#BBDEFB
     style n19 fill:#BBDEFB,stroke:#2962FF
+    style n5 fill:#C8E6C9,stroke:#00C853
+    style n1 fill:#BBDEFB,stroke:#2962FF
+    style n20 fill:#E1BEE7,stroke:#AA00FF
+    style n21 fill:#BBDEFB,stroke:#2962FF
