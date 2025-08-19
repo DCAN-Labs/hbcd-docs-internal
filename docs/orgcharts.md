@@ -27,7 +27,6 @@ The larger organizational structure of the HBCD Data Coordinating Center (HDCC) 
     <span class="text"><b>NOTE:</b> These org charts emphasize functional structure within the context of HDCC, not reporting line details or roles within individual organizations.</span>
 </div>
 <br>
-
 ```mermaid
 ---
 config:
@@ -37,7 +36,6 @@ flowchart TB
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<a href="#j-craig-venter-institute" target="_top"><b>JCVI</b></a>"]
     E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<a href="#lasso" target="_top"><b>Lasso</b></a>"] & umn["<a href="#university-of-minnesota" target="_top"><b>UMN</b></a>"] & n7["<a href="#loris" target="_top"><b>LORIS</b></a>"] & n8["<a href="#university-of-maryland" target="_top"><b>UMD EEG Core</b></a>"] & n11["<a href="#columbia-university" target="_top"><b>Columbia</b></a>"]
     lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO"]
-    n36["<span style="display: inline-block; border-top: 4px dashed #FF52F4; width: 40px; vertical-align: middle; margin-right: 8px;"></span><span><b>Tabulated Data</b></span><br><span style="display: inline-block; border-top: 4px solid #FF52F4; width: 45px; vertical-align: middle; margin-right: 8px;"></span><span><b>File-Based Data</b></span>"]
     n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<a href="#washu" target="_top"><b>WashU</b></a>"] & n12["<a href="#libr" target="_top"><b>LIBR</b></a>"] & lasso
     n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
     n12 --- n16
@@ -55,15 +53,14 @@ flowchart TB
     n27 --- n31["<b>Tim Meyer</b>"]
     n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
     n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
-    style n36 fill:#FFFFFF,stroke:#FFFFFF
     style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style jcvi fill:#E1BEE7,stroke:#AA00FF
     style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style lasso fill:#E1BEE7,stroke:#FF52F4,stroke-width:3px,stroke-dasharray: 5
-    style umn fill:#E1BEE7,stroke:#FF52F4,stroke-width:3px,stroke-dasharray: 0
-    style n7 fill:#E1BEE7,stroke:#FF52F4,stroke-width:3px,stroke-dasharray: 5
-    style n8 fill:#E1BEE7,stroke:#FF52F4,stroke-width:3px,stroke-dasharray: 0
-    style n11 fill:#E1BEE7,stroke:#FF52F4,stroke-width:3px,stroke-dasharray: 0
+    style lasso fill:#E1BEE7,stroke:#FF1FF4,stroke-width:3px,stroke-dasharray: 5
+    style umn fill:#E1BEE7,stroke:#FF1FF4,stroke-width:3px,stroke-dasharray: 0
+    style n7 fill:#E1BEE7,stroke:#FF1FF4,stroke-width:3px,stroke-dasharray: 5
+    style n8 fill:#E1BEE7,stroke:#FF1FF4,stroke-width:3px,stroke-dasharray: 0
+    style n11 fill:#E1BEE7,stroke:#FF1FF4,stroke-width:3px,stroke-dasharray: 0
     style lasso1 fill:#BBDEFB,stroke:#2962FF
     style n1 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style n10 fill:#E1BEE7,stroke:#AA00FF
@@ -97,6 +94,17 @@ flowchart TB
     click n12 "#libr"
     click n11 "#columbia-university"
 ```
+<div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.9em; padding: 8px 12px; border: 2px solid #ccc; border-radius: 6px; background-color: #fafafa;">
+  <b>Release Architecture Labels:</b>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px;"></span>
+    <span>Tabulated Data</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px;"></span>
+    <span>File-Based Data</span>
+  </div>
+</div>
 
 ### University of Minnesota
 

@@ -1,4 +1,4 @@
-<div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.9em; padding: 8px 12px; border: 2px solid #ccc; border-radius: 6px; background-color: #fafafa;">
+<div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.9em; padding: 8px 12px; border: 1px solid #ccc; border-radius: 6px; background-color: #fafafa;">
   <b>Release Architecture Labels:</b>
   <div style="display: flex; align-items: center; gap: 6px;">
     <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px;"></span>
