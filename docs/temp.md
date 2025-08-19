@@ -1,6 +1,8 @@
+<b>Release Architecture</b> <font color='#FF1FF4'>- - - -</font> Tabulated Data<br> <font color='#FF1FF4'>- - - -</font> File-Based Data<br>
 
-<font color='#FF1FF4'>- - - -</font> <b>Tabulated Data</b>
-
+<b>Release Architecture</b><br> 
+<span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px; vertical-align: middle; margin-right: 8px;"></span><span>Tabulated Data</span><br>
+<span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px; vertical-align: middle; margin-right: 8px;"></span><span>File-Based Data</span>
 
 ```mermaid
 ---
@@ -11,8 +13,6 @@ flowchart TB
     n2["<b>Anders Dale, PhD<br></b>HDCC Co-Director<br>JCVI"] --- jcvi["<a href="#j-craig-venter-institute" target="_top"><b>JCVI</b></a>"]
     E["<b>Damien Fair, PA-C, PhD</b><br>HDCC Co-Director<br>University of Minnesota"] --- lasso["<a href="#lasso" target="_top"><b>Lasso</b></a>"] & umn["<a href="#university-of-minnesota" target="_top"><b>UMN</b></a>"] & n7["<a href="#loris" target="_top"><b>LORIS</b></a>"] & n8["<a href="#university-of-maryland" target="_top"><b>UMD EEG Core</b></a>"] & n11["<a href="#columbia-university" target="_top"><b>Columbia</b></a>"]
     lasso --- lasso1["<b>Leigh MacIntyre</b><br>Lasso CEO"]
-    n36["RELEASE ARCHITECTURE<br>
-    <font color='#FF1FF4'>- - -</font> <b>Tabulated Data</b><br><font color='#FF1FF4'>───</font> <b>File-Based Data</b>"]
     n1["<b>Christopher Smyser, MD<br></b>HDCC Co-Director<br>WashU"] --- n10["<a href="#washu" target="_top"><b>WashU</b></a>"] & n12["<a href="#libr" target="_top"><b>LIBR</b></a>"] & lasso
     n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
     n12 --- n16
@@ -30,7 +30,6 @@ flowchart TB
     n27 --- n31["<b>Tim Meyer</b>"]
     n22 --- n32["<b>Sauren Ravencroft<br>Nicole Venteris</b><br>Project Managers"]
     n20 --- n33["<b>Santiago Torres</b><br>Study Officer"]
-    style n36 fill:#FFFFFF,stroke:#FFFFFF
     style n2 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
     style jcvi fill:#E1BEE7,stroke:#AA00FF
     style E fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
