@@ -966,6 +966,18 @@ flowchart TB
     style A fill:#E1BEE7,stroke:#FF1FF4,stroke-width:4px,stroke-dasharray: 0
     style C fill:#C8E6C9,stroke:#00C853
 ```
+<div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.8em; padding: 8px 12px; border: 2px solid #ccc; border-radius: 6px; background-color: #fafafa;">
+  <b>Release Architecture Labels:</b>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px;"></span>
+    <span>Tabulated Data</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px;"></span>
+    <span>File-Based Data</span>
+  </div>
+</div>
+<br>
 
 <div id="columbia-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
