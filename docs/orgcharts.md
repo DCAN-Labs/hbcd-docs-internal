@@ -27,6 +27,19 @@ The larger organizational structure of the HBCD Data Coordinating Center (HDCC) 
     <span class="text"><b>NOTE:</b> These org charts emphasize functional structure within the context of HDCC, not reporting line details or roles within individual organizations.</span>
 </div>
 <br>
+
+<div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.9em; padding: 8px 12px; border: 2px solid #ccc; border-radius: 6px; background-color: #fafafa;">
+  <b>Release Architecture Labels:</b>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px;"></span>
+    <span>Tabulated Data</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px;"></span>
+    <span>File-Based Data</span>
+  </div>
+</div>
+
 ```mermaid
 ---
 config:
@@ -94,17 +107,6 @@ flowchart TB
     click n12 "#libr"
     click n11 "#columbia-university"
 ```
-<div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.9em; padding: 8px 12px; border: 2px solid #ccc; border-radius: 6px; background-color: #fafafa;">
-  <b>Release Architecture Labels:</b>
-  <div style="display: flex; align-items: center; gap: 6px;">
-    <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px;"></span>
-    <span>Tabulated Data</span>
-  </div>
-  <div style="display: flex; align-items: center; gap: 6px;">
-    <span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px;"></span>
-    <span>File-Based Data</span>
-  </div>
-</div>
 
 ### University of Minnesota
 
