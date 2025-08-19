@@ -122,6 +122,7 @@ The University of Minnesota (UMN) houses several core HDCC teams. Please click o
    
 The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN is responsible for: development of MRI acquisition procedures; quality control for processed MRI data; coordination of [processing pipeline standardization](https://docs.hbcdstudy.org/latest/instruments/processing/standards/); and development and maintenance of HDCC release documentation (including the [HBCD Data Release Docs](https://docs.hbcdstudy.org/latest/)). CDNI members additionally work with the Informatics & Processing team at [MIDB Informatics Hub and MSI](#midb-informatics-hub-msi) to provide support and/or consultation for MRI data processing and MRI pipeline development as needed.
 
+<img src="cdni.png" alt="CDNI org chart" width="80%"/>
 <div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.8em; padding: 8px 12px; border: 2px solid #ccc; border-radius: 6px; background-color: #fafafa;">
   <b>Release Architecture Labels:</b>
   <div style="display: flex; align-items: center; gap: 6px;">
@@ -133,7 +134,7 @@ The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN
     <span>File-Based Data</span>
   </div>
 </div>
-<img src="cdni.png" alt="CDNI org chart" width="80%"/>
+<br>
 
 <div id="cdni-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -804,7 +805,19 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
 
 ### University of Maryland
 
-<img src="umd.png" alt="MIDB Analytics Hub Org Chart" width="70%"/>
+<img src="umd.png" alt="MIDB Analytics Hub Org Chart" width="80%" style="display: block; margin: 0; padding: 0;" />
+<div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.8em; padding: 8px 12px; border: 2px solid #ccc; border-radius: 6px; background-color: #fafafa; margin-top: 0;">
+  <b>Release Architecture Labels:</b>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px;"></span>
+    <span>Tabulated Data</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px;"></span>
+    <span>File-Based Data</span>
+  </div>
+</div>
+<br>
 
 <div id="umd-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -841,7 +854,7 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
     <td style="word-wrap: break-word; white-space: normal;">Coordinates preprocessing workflows and serves as the primary liaison between the EEG team and the Lasso and LORIS development groups.</td>
     </tr>
     <tr>
-    <td>Kira Ashton, PhD</td>
+    <td>Alicia Vallorani, PhD</td>
     <td>Coding & QC Developer</td>
     <td style="word-wrap: break-word; white-space: normal;">Conducts EEG data annotation, behavioral coding, and quality control checks, ensuring consistent and accurate coding practices across participants and sessions.</td>
     </tr>

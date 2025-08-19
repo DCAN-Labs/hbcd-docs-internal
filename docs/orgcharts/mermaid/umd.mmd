@@ -5,16 +5,17 @@ config:
 flowchart TB
     n16["<b>Nathan Fox, PhD</b><br>Associate Dir, EEG Data Core"] --- n17(["<b>Preprocessing Workflows</b>"]) & n19(["<b>Coding &amp; QC</b>"]) & n29(["<b>Site Supervision</b>"])
     n17 --- n18["<b>Whitney Kasenetz</b><br>Preprocessing Liaison"]
-    n19 --- n27["<b>Kira Ashton, PhD</b><br>Coding &amp; QC Developer"] & n28["<b>Dylan Gilbreath, PhD</b><br>Pipeline Developer"] & n30["<b>Trisha Maheswari</b><br><b>Elise Harris</b><br>Site Oversight"]
+    n19 --- n27@{ label: "<b><span style=\"background-color:\">Alicia Vallorani</span>, PhD<br></b>Coding &amp; QC Developer" } & n28["<b>Dylan Gilbreath, PhD</b><br>Pipeline Developer"] & n30["<b>Trisha Maheswari</b><br><b>Elise Harris</b><br>Site Oversight"]
     n29 --- n30
     n32@{ label: "<b>Nathan Fox, PhD</b><br><span style=\"color:\">HDCC Assoc. Director,<br>EEG Core Director</span>" }
     n33["<b>Santiago Morales, PhD</b><br>Co-I &amp; Coding Lead"]
     n16@{ shape: anchor}
+    n27@{ shape: rect}
     n32@{ shape: rect}
     n33@{ shape: rect}
     style n16 fill:#BBDEFB,stroke:#2962FF
     style n17 fill:#E1BEE7,stroke:#AA00FF
-    style n19 fill:#E1BEE7,stroke:#AA00FF
+    style n19 fill:#E1BEE7,stroke:#FF1FF4,stroke-width:4px,stroke-dasharray: 0
     style n29 fill:#E1BEE7,stroke:#AA00FF
     style n18 fill:#BBDEFB,stroke:#2962FF
     style n27 fill:#BBDEFB,stroke:#2962FF
