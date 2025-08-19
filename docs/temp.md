@@ -1,12 +1,9 @@
-<b>Release Architecture</b> <font color='#FF1FF4'>- - - -</font> Tabulated Data<br> <font color='#FF1FF4'>- - - -</font> File-Based Data<br>
-
 <b>Release Architecture</b><br> 
 <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px; vertical-align: middle; margin-right: 8px;"></span><span>Tabulated Data</span><br>
 <span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px; vertical-align: middle; margin-right: 8px;"></span><span>File-Based Data</span>
 
-<b>Release Architecture Labels:</b>     <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px; vertical-align: middle; margin-right: 8px;"></span><span>Tabulated Data</span>         <span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px; vertical-align: middle; margin-right: 8px;"></span><span>File-Based Data</span>
 
-<div style="display: flex; align-items: center; gap: 30px; font-size: 0.8em;">
+<div style="display: flex; align-items: center; gap: 20px; font-size: 0.9em;">
   <b>Release Architecture Labels:</b>
   <div style="display: flex; align-items: center; gap: 6px;">
     <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px;"></span>
@@ -86,3 +83,14 @@ flowchart TB
     click n12 "#libr"
     click n11 "#columbia-university"
 ```
+<div style="display: flex; align-items: center; gap: 20px; font-size: 0.9em;">
+  <b>Release Architecture Labels:</b>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px;"></span>
+    <span>Tabulated Data</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px;"></span>
+    <span>File-Based Data</span>
+  </div>
+</div>
