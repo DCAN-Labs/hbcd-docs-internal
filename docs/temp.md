@@ -1,9 +1,4 @@
-<b>Release Architecture</b><br> 
-<span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px; vertical-align: middle; margin-right: 8px;"></span><span>Tabulated Data</span><br>
-<span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px; vertical-align: middle; margin-right: 8px;"></span><span>File-Based Data</span>
-
-
-<div style="display: flex; align-items: center; gap: 20px; font-size: 0.9em;">
+<div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.9em; padding: 8px 12px; border: 2px solid #ccc; border-radius: 6px; background-color: #fafafa;">
   <b>Release Architecture Labels:</b>
   <div style="display: flex; align-items: center; gap: 6px;">
     <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px;"></span>
@@ -14,6 +9,7 @@
     <span>File-Based Data</span>
   </div>
 </div>
+
 
 
 ```mermaid
