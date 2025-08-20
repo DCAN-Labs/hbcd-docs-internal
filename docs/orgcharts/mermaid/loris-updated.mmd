@@ -1,0 +1,34 @@
+---
+config:
+  layout: elk
+---
+flowchart TB
+    nl["<b>Santiago Torres</b><br>Study Officer"] --- C(["<b>CBRAIN</b>"]) & G(["<b>MRI</b>"]) & H(["<b>EEG &amp; Biospecimens</b>"]) & F(["<b>Core/SysOps</b>"]) & n16(["<b>BHV/Database</b>"])
+    C --- n12@{ label: "<b>Bryan Caron</b><br>CBRAIN<br>&amp; MCIN NeuroHub Director<br><br><b>Pierre Rioux</b><br>Lead Developer<br><br><span style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b><span style=\"--tw-scale-x:\">Natacha Beck</span><br style=\"--tw-scale-x:\"></b></span></span><span style=\"--tw-scale-x:\">Developer</span>" }
+    G --- L["<b>Cecile Madjar</b><br>Lead Developer"]
+    H --- M["<b>Laetitia Faeselier</b><br>Lead Developer"]
+    F --- I@{ label: "<span style=\"--tw-scale-x:\"><b><span style=\"--tw-scale-x:\">Dave McFarlane</span><br style=\"--tw-scale-x:\"></b></span><span style=\"--tw-scale-x:\">Lead Developer</span><br style=\"--tw-scale-x:\"><br style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b>Shen Wang</b></span></span><span style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b><br style=\"--tw-scale-x:\"></b></span><b>Moshood Abiola</b></span></span><span style=\"--tw-scale-x:\"><b><br style=\"--tw-scale-x:\"></b></span><span style=\"--tw-scale-x:\">Developers</span>" }
+    n16 --- n17@{ label: "<span style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b><span style=\"--tw-scale-x:\">Regis Ongaro-Carcy</span><br style=\"--tw-scale-x:\">Sruthy Matthew</b></span></span><span style=\"--tw-scale-x:\"><b><br style=\"--tw-scale-x:\"></b></span><span style=\"--tw-scale-x:\">Sr Backend Developers</span><br style=\"--tw-scale-x:\"><br style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><span style=\"--tw-scale-x:\"><b>George Murad<br style=\"--tw-scale-x:\"></b></span></span><span style=\"--tw-scale-x:\">Developer</span>" }
+    n13["<b>Alan Evans, PhD<br></b>MCIN Director<b></b>"]
+    n14@{ label: "<span style=\"--tw-scale-x:\"><b>Samir Das<br></b></span><span style=\"background-color:\">MCIN Assoc Dir,<br>LORIS Director</span>" }
+    n15@{ label: "<b><span style=\"--tw-scale-x:\">Santiago Torres</span><br style=\"--tw-scale-x:\"></b><span style=\"background-color:\">Study Officer</span>" }
+    nl@{ shape: anchor}
+    n12@{ shape: rect}
+    I@{ shape: rect}
+    n17@{ shape: rect}
+    n14@{ shape: rect}
+    n15@{ shape: rect}
+    style nl stroke:#00C853,fill:#C8E6C9
+    style C stroke:#AA00FF,fill:#E1BEE7
+    style G stroke:#AA00FF,fill:#E1BEE7
+    style H stroke:#AA00FF,fill:#E1BEE7
+    style F stroke:#AA00FF,fill:#E1BEE7
+    style n16 fill:#E1BEE7,stroke:#AA00FF
+    style n12 stroke:#2962FF,fill:#BBDEFB
+    style L stroke:#2962FF,fill:#BBDEFB
+    style M stroke:#2962FF,fill:#BBDEFB
+    style I stroke:#2962FF,fill:#BBDEFB
+    style n17 stroke:#2962FF,fill:#BBDEFB
+    style n13 stroke:#2962FF,fill:#BBDEFB
+    style n14 stroke:#2962FF,fill:#BBDEFB
+    style n15 fill:#C8E6C9,stroke:#FF1FF4,stroke-width:4px,stroke-dasharray: 5

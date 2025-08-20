@@ -773,8 +773,18 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
  
 [LORIS](https://mcin.ca/technology/loris/) (Longitudinal Online Research and Imaging System), developed and maintained by research teams within the McGill Centre for Integrative Neuroscience ([MCIN](https://mcin.ca/)), is the core data management system for the HBCD Study. It is a web-based data management system designed for large-scale, multi-site neuroscience research. It supports the collection, curation, and sharing of diverse data types, including neuroimaging, behavioral, and clinical data. LORIS emphasizes data standardization, quality control, and longitudinal tracking across participants and timepoints.
 
-<img src="loris.png" alt="MIDB Analytics Hub Org Chart" width="70%"/>
-<br>
+<object type="image/svg+xml" data="loris.svg" width="85%"></object>
+<div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.8em; padding: 8px 12px; border: 2px solid #ccc; border-radius: 6px; background-color: #fafafa;">
+  <b>Release Architecture Labels:</b>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px dashed #FF1FF4; width: 35px;"></span>
+    <span>Tabulated Data</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 6px;">
+    <span style="display: inline-block; border-top: 4px solid #FF1FF4; width: 35px;"></span>
+    <span>File-Based Data</span>
+  </div>
+</div>
 
 <p>
 <div id="loris-rr" class="table-banner" onclick="toggleCollapse(this)">
@@ -797,8 +807,13 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
     </thead>
     <tbody>
     <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Alan Evans, PhD</td>
+        <td style="word-wrap: break-word; white-space: normal;">MCIN Director</td>
+        <td style="word-wrap: break-word; white-space: normal;">Oversight of CBRAIN and LORIS.</td>
+    </tr>
+    <tr>
         <td style="word-wrap: break-word; white-space: normal;">Samir Das</td>
-        <td style="word-wrap: break-word; white-space: normal;">Director, LORIS</td>
+        <td style="word-wrap: break-word; white-space: normal;">MCIN Associate Director, LORIS Director</td>
         <td style="word-wrap: break-word; white-space: normal;">Leads the strategic development, deployment, and oversight of the LORIS data management and capture system, ensuring it supports scalable, secure, and interoperable workflows for data acquisition, curation, quality control, and multi-site collaboration across HBCD.</td>
     </tr>
     <tr>
@@ -807,9 +822,9 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
         <td style="word-wrap: break-word; white-space: normal;">Coordinates cross-functional teams, timelines, and deliverables to support the LORIS in implementing system enhancements, managing user requirements, facilitating stakeholder communication, and ensuring the successful integration of LORIS across research sites and the HDCC.</td>
     </tr>
     <tr>
-        <td style="word-wrap: break-word; white-space: normal;">Cecile Madjar</td>
-        <td style="word-wrap: break-word; white-space: normal;">Lead MRI developer</td>
-        <td style="word-wrap: break-word; white-space: normal;">Designs and implements pipelines to integrate raw and processed MRI data, quality control metrics, and imaging metadata into the LORIS platform, ensuring robust, automated, and reproducible data flow from acquisition through curation within a scalable research infrastructure.</td>
+        <td style="word-wrap: break-word; white-space: normal;">Bryan Caron</td>
+        <td style="word-wrap: break-word; white-space: normal;">CBRAIN & MCIN NeuroHub Director</td>
+        <td style="word-wrap: break-word; white-space: normal;">Oversight of CBRAIN.</td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Pierre Rioux</td>
@@ -817,9 +832,34 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
         <td style="word-wrap: break-word; white-space: normal;">CBRAIN configuration, tool containerization, design computing and analysis workflows, system interoperability</td>
     </tr>
     <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Natacha Beck</td>
+        <td style="word-wrap: break-word; white-space: normal;">CBRAIN Developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Assists with CBRAIN configuration, tool containerization, design computing and analysis workflows, system interoperability</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Cecile Madjar</td>
+        <td style="word-wrap: break-word; white-space: normal;">Lead MRI developer</td>
+        <td style="word-wrap: break-word; white-space: normal;">Designs and implements pipelines to integrate raw and processed MRI data, quality control metrics, and imaging metadata into the LORIS platform, ensuring robust, automated, and reproducible data flow from acquisition through curation within a scalable research infrastructure.</td>
+    </tr>
+    <tr>
         <td style="word-wrap: break-word; white-space: normal;">Laetitia Faeselier</td>
         <td style="word-wrap: break-word; white-space: normal;">Lead Biospecimens & EEG Developer</td>
         <td style="word-wrap: break-word; white-space: normal;">Development and implementation of LORIS Biospecimens & EEG features, including data ingestion, quality control, tracking systems, and Dashboard innovations</td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Dave McFarlane</td>
+        <td style="word-wrap: break-word; white-space: normal;">Lead Developer, Core</td>
+        <td style="word-wrap: break-word; white-space: normal;"></td>
+    </tr>
+    <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Shen Wang</td>
+        <td style="word-wrap: break-word; white-space: normal;">Developer, Core</td>
+        <td style="word-wrap: break-word; white-space: normal;"></td>
+    </tr>
+        <tr>
+        <td style="word-wrap: break-word; white-space: normal;">Moshood Abiola</td>
+        <td style="word-wrap: break-word; white-space: normal;">Developer, Core</td>
+        <td style="word-wrap: break-word; white-space: normal;"></td>
     </tr>
     <tr>
         <td style="word-wrap: break-word; white-space: normal;">Regis Ongaro-Carcy</td>
