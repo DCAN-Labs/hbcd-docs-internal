@@ -22,11 +22,15 @@
 
 The larger organizational structure of the HBCD Data Coordinating Center (HDCC) is as follows, with the HDCC Co-Directors listed at the top and the institutions/organizations listed below- ***click on individual teams to be directed to their organizational charts***. Please visit the [HDCC page](https://hbcdstudy.org/hbcd-data-coordinating-center/) of the HBCD Study website for a full list of all HDCC members. 
 
-<div class="notification-banner static-banner">
+<div id="fyi" class="notification-banner static-banner">
+<span class="text-with-link">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">
-    These org charts emphasize functional structure within the context of HDCC, not reporting line details or roles within individual organizations.
-  </span>
+  <span class="text">Org Chart Diagram Interpretation</span>
+  <a class="anchor-link" href="#fyi" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+</div>
+<div class="notification-static-content">
+<p>These org charts emphasize functional structure within the context of HDCC, not reporting line details or roles within individual organizations.<br>Organizations that handle stages of the release for tabulated and/or file-based data are outlined with dashed pink (<span style="display: inline-block; border-top: 2px dashed #FF1FF4; width: 20px;"></span>) and solid pink (<span style="display: inline-block; border-top: 2px solid #FF1FF4; width: 20px;"></span>) lines, respectively. See the data release responsibility assignment matrices <a href="../workflows/release-wf/#responsibility-assignment-matrices">here</a> for more details.</p>
 </div>
 <br>
 
