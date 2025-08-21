@@ -19,6 +19,18 @@
   </a>
 </div>
 
+## General/System Issues
+
+<br>
+<div id="warning" class="warning-banner">
+<span class="text-with-link">
+  <span class="emoji">⚠️</span>
+  <span class="text">Shadow matrix downloads are currently not working on the Lasso Pre-Release System.</span>
+  <a class="anchor-link" href="#warning" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+</div>
+<br>
+
 ## BR15.1 Target Release for Fix
 
 BR15.1 aligns with the interim public Release 1.1 - please refer to the Known Issues section of the official [Release 1.0](https://docs.hbcdstudy.org/latest/changelog/knownissues) Docs site and see issues noted with: *Expected Fix: Release 1.1*.
