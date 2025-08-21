@@ -285,6 +285,8 @@ Below we outline the individuals responsible for various stages of the release a
 </tbody>
 </table>
 
+**Note that items outlined below pertain specifically to the data release stage. Responsibility matrices for general processing and quality control stages can be found on under Data Processing Workflows (see RACIs for [tabulated data](data-proc-wf.md#tab-raci) and [file-based data](data-proc-wf.md#responsibility-assignment-matrices-by-modality) by modality).**
+
 <p style="text-align: center; font-size: 1.3em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
 
 <div id="tab-raci" class="table-banner" onclick="toggleCollapse(this)">
