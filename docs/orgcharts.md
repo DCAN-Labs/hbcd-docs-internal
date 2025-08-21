@@ -34,7 +34,7 @@ The larger organizational structure of the HBCD Data Coordinating Center (HDCC) 
 These org charts emphasize <strong>functional structure within the context of HDCC</strong>, not reporting line details or roles within individual organizations. The colors/shapes correspond to the following:</p>
 <p><object type="image/svg+xml" data="legend.svg" width="100%"></object></p>
 <p><b>Release Architecture Labels</b><br>
-Organizations that handle stages of the release for tabulated and/or file-based data are additionally delineated as follows. See the data release responsibility assignment matrices <a href="../workflows/release-wf/#responsibility-assignment-matrices" target="_blank">here</a> for more details.</p> 
+Organizations and/or individuals central to handling stages of the data release for tabulated and/or file-based data are additionally delineated as follows. See the data release responsibility assignment matrices <a href="../workflows/release-wf/#responsibility-assignment-matrices" target="_blank">here</a> for more details.</p> 
 <div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.9em; padding: 8px 12px; border-radius: 6px; background-color: #fafafa;">
   <div style="display: flex; align-items: center; gap: 6px;">
     <span style="display: inline-block; border-top: 2px dashed #FF1FF4; width: 20px;"></span>
