@@ -633,7 +633,7 @@ There are several regular calls where release action items are discussed and tra
 </tr>
 <tr>
   <td>ABCD-HBCD Release<br><i>Tuesdays 10 AM CT</i></td>
-  <td>Sammy Berman</td>
+  <td>Deanna Barch</td>
   <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">ABCD team (JCVI)</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
 </tr>
 <tr>
