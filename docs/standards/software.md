@@ -38,11 +38,13 @@ The following procedures are performed to support transparency, reproducibility,
 
 See the full details on the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/#processing-analytic-standards). This includes the use of standardized processing pipelines for MRI, EEG, and other modalities, as well as the use of standardized analytic approaches across sites. Independent code review is performed for all processing pipelines via the NMIND Coding Standards Checklist, with a focus on ensuring that the code is well-documented, reproducible, and follows best practices in software development. This includes version control of all internal and public-facing code bases, including the documentation websites.
 
-## New Pipeline Integration
-
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
 
-Integrating new pipelines into HBCD’s file-based data processing workflow involves three main phases:
+## Processing Pipelines
+
+### New Pipeline Integration
+
+Integrating new pipelines into HBCD’s file-based data processing workflow involves three main phases (further broken down into 6 stages [below](#hbcd-pipeline-integration-proposal-h-pip-stages)):
 
 - **Approval**: Review and sign-off to begin integration testing
 - **Integration & Testing**: Implementation and evaluation against [HBCD Pipeline & Analytic Standards](https://docs.hbcdstudy.org/latest/instruments/processing/standards/)
@@ -102,6 +104,25 @@ Integrating new pipelines into HBCD’s file-based data processing workflow invo
     </tr>
 </tbody>
 </table>
+
+### Pipeline-Specific Workflows
+
+#### BIBSNet Model Updates
+
+[BIBSNet](https://bibsnet.readthedocs.io/) model updates are performed based on the following steps:
+
+<input type="checkbox"> HBCD dataset run through BIBSnet<br>
+<input type="checkbox"> HBCD BIBSnet segmentations uploaded to BrainSwipes<br>
+<input type="checkbox"> HBCD BIBSnet brainswipes QC performed  <br>
+<input type="checkbox"> HBCD BIBSnet failed participants sent for manual segmentation  <br>
+<input type="checkbox"> HBCD BIBSnet manual segmentations sent to BIBSnet team  <br>
+<input type="checkbox"> Manual segmentations integrated into BIBSnet model   <br>
+<input type="checkbox"> BIBSnet model integrated into CBRAIN  <br>
+<input type="checkbox"> HBCD dataset run through new model  <br>
+<input type="checkbox"> HBCD data QCed using old vs. new model  <br>
+<input type="checkbox"> HBCD report internally reviewed  <br>
+<input type="checkbox"> HBCD QC presented to MRI WG for signoff <br>
+
 
 ## Data Storage and Backup
 
