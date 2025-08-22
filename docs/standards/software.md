@@ -42,7 +42,7 @@ See the full details on the HBCD Data Release Docs site [here](https://docs.hbcd
 
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
 
-Integrating new processing pipelines into HBCD’s file-based data involves three main phases:
+Integrating new pipelines into HBCD’s file-based data processing workflow involves three main phases:
 
 - **Approval**: Review and sign-off to begin integration testing
 - **Integration & Testing**: Implementation and evaluation against [HBCD Pipeline & Analytic Standards](https://docs.hbcdstudy.org/latest/instruments/processing/standards/)
