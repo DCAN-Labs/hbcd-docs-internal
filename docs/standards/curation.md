@@ -60,7 +60,7 @@ When data are transferred to Lasso for release staging, the variable names are u
 
 Table names in Lasso using single ( `_` ) and double ( `__` ) underscores, as explained [here](https://docs.hbcdstudy.org/latest/access/metadata/#subcomponents). In REDCap and subsequently LORIS, `_i_` is used in place of double underscores for instruments and fieldnames to denote hierarchies for scales and sub-scales in the instrument name and field counters. For the Data Release, the `i` is removed, resulting in `__` instead of `_i_`. This naming convention conversion occurs when the data is transferred from LORIS to Lasso.
 
-### Update JSON Metadata
+### Correspondence to JSON Metadata
 
 The `domain` and `source` are included in the JSON metadata and are typically derived from the corresponding sections of the instrument name. However, in some cases, data are collected directly into fields or tables that do not follow the standard naming convention. In those instances, the domain and source values are added later during the Data Release process.
 

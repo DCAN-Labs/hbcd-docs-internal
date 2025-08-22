@@ -80,7 +80,9 @@ nav:
     - Quality Control Procedures: workflows/qc.md
     - Data Processing Workflows: workflows/data-proc-wf.md
     - Release SOP: workflows/release-wf.md
-    - Curation Procedures: workflows/curation.md
+  - Standards & Curation:
+    - Data Curation Procedures: standards/curation.md
+    - Software & Analytic Standards: standards/software.md
   - Beta Release Notes: 
    # - 🚧 Pending & Upcoming Updates: changelog/pending.md
     - Known Issues: changelog/knownissues.md
