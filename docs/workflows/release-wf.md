@@ -19,16 +19,24 @@ This document outlines the staged workflow for selecting, releasing, and validat
       </span>
     </span>
 </div>
-<br>
+<p></p>
+
+The release timeline for study instrument documentation and final QC of data as available via the [Lasso Pre-Release System](https://hbcd-hdcc-qc.lassoinformatics.com/) is as follows:
+
+<img src="../images/timeline.png" alt="Release timeline" width="100%" height="auto" class="center">
+
+HBCD Study instruments/measures each have a dedicated page for documentation (e.g. QC issues, responsible use concerns, modifications made to the measure for the HBCD Study, etc.) on the HBCD Data Release Docs site - see list of instruments with links to pages [here](https://docs.hbcdstudy.org/latest/instruments/#instruments-by-domain). These are generated based on "READMEs" provided by Workgroups via the [HBCD Release Docs Measure Documentation Form](https://docs.google.com/forms/d/e/1FAIpQLSdtnLe3W35SsCjOFksJwnLO9G_D0uokTlZGER_2UBM361C21g/viewform). *Note: see instructions [here](../internal/docs-updates.md#instrument-documentation-readmes-provided-by-workgroups) for making updates to existing instrument pages.*
 
 <div class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-regular fa-lightbulb"></i></span>
-  <span class="text">
-    See timeline in PDF format to access embedded links - <a href="../images/timeline.pdf" target="_blank" rel="noopener noreferrer">CLICK HERE</a>
-  </span>
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">Useful Links</span>
 </div>
-
-<object type="image/svg+xml" data="../images/timeline.svg" width="100%"></object>
+<div class="notification-static-content">
+  <ul>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdtnLe3W35SsCjOFksJwnLO9G_D0uokTlZGER_2UBM361C21g/viewform">Google Form</a> to submit README templates for new instruments/measures to be included in a release</li>
+    <li><a href="https://docs.google.com/spreadsheets/d/171oj0PLLtVgp5OSReBD5J6Ir4U56QQrWEwu92ZwttrM/edit?gid=0#gid=0">Measure Inclusion Form</a> tracking the list of variables to be included in upcoming release</li>
+  </ul> 
+</div>
 
 ### Process for Determination of Release Timeline
 
