@@ -93,7 +93,7 @@ The HCAC PM (Stephanie Averill) collaborates with the HDCC WG Liaison (Jen Zink)
 
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
 
-In addition to deciding which variables to include in the release, the HDCC, HCAC, and Workgroups collaborate to determine general administrative inclusion/exclusion filters to be applied to the data release. The relevant filters include higher-level, administrative filters as opposed to specific variable filter (which are tracked elsewhere). This includes, but is not limited to:
+In addition to deciding which variables to include in the release, the HDCC, HCAC, and Workgroups collaborate to determine general administrative inclusion/exclusion filters (*as opposed to specific variable filters, which are tracked elsewhere*) to be applied to the data release. This includes, but is not limited to:
 
  - Site exclusions (e.g., Florida)
  - Cell size per site
@@ -101,7 +101,7 @@ In addition to deciding which variables to include in the release, the HDCC, HCA
  - Outlier or "impossible value" removal (yes/no) 
  - etc.
 
-For example, the data filters applied to Release 1.0 are described in detail on the R1.0 Release Notes under [Exclusion Criteria & Filters](https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters).
+Data filters applied to Release 1.0 are described in detail on the R1.0 Release Notes under [Exclusion Criteria & Filters](https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters).
  
  <div class="notification-banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
