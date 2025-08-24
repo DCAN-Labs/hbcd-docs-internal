@@ -31,9 +31,9 @@ The release timeline for determination of variables to include in the release, s
 </div>
 <div class="notification-static-content">
   <ul>
-    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdtnLe3W35SsCjOFksJwnLO9G_D0uokTlZGER_2UBM361C21g/viewform">HBCD Release Docs Measure Documentation Form</a> to submit README templates for new instruments/measures to be included in a release</li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdtnLe3W35SsCjOFksJwnLO9G_D0uokTlZGER_2UBM361C21g/viewform">HBCD Release Docs Measure Documentation Form</a> to submit documentation/"READMEs" for new instruments/measures to be included in a release (<a href="../../internal/readmes" target="_blank">see details</a>)</li>
     <li><a href="https://docs.google.com/spreadsheets/d/171oj0PLLtVgp5OSReBD5J6Ir4U56QQrWEwu92ZwttrM/edit?gid=0#gid=0">Measure Inclusion Form</a> tracking the list of variables to be included in upcoming release</li>
-    <li><a href="https://docs.google.com/spreadsheets/d/1YkBeu8PpY2hTDq4_2X2SmI6vYaD6ib9mA-s3h4jALq0/edit?usp=sharing">Release Timeline Sign-Off</a></li>
+    <li><a href="https://docs.google.com/spreadsheets/d/1YkBeu8PpY2hTDq4_2X2SmI6vYaD6ib9mA-s3h4jALq0/edit?usp=sharing">Release Timeline Sign-Off Form</a></li>
   </ul> 
 </div>
 
