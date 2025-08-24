@@ -112,7 +112,7 @@ nav:
   - Workgroup Instructions:
       - Access BR Data: internal/br-review.md
       - Report Issues: internal/reportissues.md
-      - Request Updates to Documentation: internal/docs-updates.md
+      - Measure Documentation ("READMEs"): internal/readmes.md
   - Resources: 
       - General: resources/index.md  
       - HBCD & SCE Governance: resources/hst-sce-governance.md  
