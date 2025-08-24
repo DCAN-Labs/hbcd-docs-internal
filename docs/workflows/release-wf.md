@@ -50,7 +50,7 @@ The form for timeline proposals, feedback, and sign off is currently under const
 
 ## Stages of the Release Workflow
 
-### Stage 1: Determine Variables to Include in Release
+### Stage 1: Determine Variables to Include & Data Filters for Release
 
 <div class="pill-center">
   <a href="../../#clear-objectives-and-scope" target="_blank" class="pill-link-wrapper">
@@ -76,16 +76,38 @@ The form for timeline proposals, feedback, and sign off is currently under const
   </a>
 </div>
 
+#### Variable Inclusion Sign-Off
+
 The HCAC PM (Stephanie Averill) collaborates with the HDCC WG Liaison (Jen Zink)  to generate a comprehensive list of potential variables for the upcoming data release.
 
- - The full list is circulated to all Workgroups and subject matter experts (SMEs), who mark each variable as INCLUDE or NOT INCLUDED in the following form: [Variable Inclusion Form (Google Sheet)](https://docs.google.com/spreadsheets/d/171oj0PLLtVgp5OSReBD5J6Ir4U56QQrWEwu92ZwttrM/edit?usp=sharing).
- - From this list, a [Variable Inclusion Form](https://docs.google.com/spreadsheets/d/1ABh8u6s4R3jUKUcfj2xA_nRyO1r1kQRVfwDDJRWwVq0/edit?usp=sharing) is generated for HDCC/HCAC Leadership to review the proposed measures to be included/excluded from public release.
+ - The full list is circulated to all Workgroups and subject matter experts (SMEs), who mark each variable as INCLUDE or NOT INCLUDED in the  [Variable Inclusion Form](https://docs.google.com/spreadsheets/d/171oj0PLLtVgp5OSReBD5J6Ir4U56QQrWEwu92ZwttrM/edit?usp=sharing).
+ - From this list, a [Variable Inclusion Sign-Off Form](https://docs.google.com/spreadsheets/d/1ABh8u6s4R3jUKUcfj2xA_nRyO1r1kQRVfwDDJRWwVq0/edit?usp=sharing) is generated for HDCC/HCAC Leadership to review the proposed measures to be included/excluded from public release.
  - Proposed public release measures are then brought to the Steering Committee for final sign-off. 
 
 **Release measure inclusion sign off [RACI](#responsibility-assignment-matrices):**
 
 <img src="../images/release-stage1-raci.png" alt="lasso" width="60%" height="auto">
 
+
+#### Data Filters Sign-Off
+
+<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
+
+In addition to deciding which variables to include in the release, the HDCC, HCAC, and Workgroups collaborate to determine any inclusion/exclusion filters to be applied to the data release, including but not limited to:
+
+ - Site exclusions (e.g., Florida)
+ - Cell size per site
+ - Cohort (e.g., post-natal recruitment)
+ - Outlier or "impossible value" removal (yes/no) 
+ - etc.
+
+For example, the data filters applied to Release 1.0 are described in detail on the R1.0 Release Notes under [Exclusion Criteria & Filters](https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters).
+ 
+ <div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">Status Tracker: View the latest status of filter sign-offs in the <a href="https://docs.google.com/spreadsheets/d/1M_QuEVgUoVAOdzXlY8FMTZvgLRtGUx2ykevUo8iUnr8/edit?usp=sharing">Data Filters Sign Off Form</a></span>
+</div>
+<br>
 
 ### Stage 2: Integrate Planned Measures in Beta Releases
 
