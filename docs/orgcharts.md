@@ -37,11 +37,11 @@ These org charts emphasize <strong>functional structure within the context of HD
 Organizations and/or individuals central to handling stages of the data release for tabulated and/or file-based data are additionally delineated as follows. See the data release responsibility assignment matrices <a href="../workflows/release-wf/#responsibility-assignment-matrices" target="_blank">here</a> for more details.</p> 
 <div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.9em; padding: 8px 12px; border-radius: 6px; background-color: #fafafa;">
   <div style="display: flex; align-items: center; gap: 6px;">
-    <span style="display: inline-block; border-top: 2px dashed #FF1FF4; width: 20px;"></span>
+    <span style="display: inline-block; border-top: 3px dashed #FF1FF4; width: 30px;"></span>
     <span>Tabulated Data</span>
   </div>
   <div style="display: flex; align-items: center; gap: 6px;">
-    <span style="display: inline-block; border-top: 2px solid #FF1FF4; width: 20px;"></span>
+    <span style="display: inline-block; border-top: 3px solid #FF1FF4; width: 30px;"></span>
     <span>File-Based Data</span>
   </div>
 </div>
