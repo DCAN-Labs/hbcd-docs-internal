@@ -134,7 +134,7 @@ We commit to open and honest communication with all data users:
 
 * **Known Issues**: Known problems, caveats, and limitations are explicitly listed in each release.
 
-* **Feedback Channels**: Users can report problems or request clarifications via the Lasso Help Center; all tickets are logged, triaged, and tracked in Monday’s.
+* **Feedback Channels**: Users can report problems or request clarifications via the NBDC Data Access Platform Help Center; all tickets are logged, triaged, and tracked in Monday’s.
 
 * Working groups also have access to our HDCC liaison who attends WG meetings, assists with filling our change requests templates (also logged and documented), and directly triages and tracks the change request in our project management platform Monday’s. 
 

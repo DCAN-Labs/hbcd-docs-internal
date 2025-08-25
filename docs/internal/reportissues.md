@@ -20,7 +20,7 @@ HBCD Consortium members can submit help desks following the same process as othe
 - Any issues with your data.
 - Any issues in the Data Dictionary for your WG’s measures.
 - Any feedback or feature requests to improve the ease and effectiveness of querying and analyzing data. 
-- Any bugs that you may encounter in Lasso.
+- Any bugs that you may encounter in Lasso/NBDC Data Access Platform.
 - Updates needed to the documentation on the [HBCD Data Release Docs](https://docs.hbcdstudy.org/latest/) website (*select "Documentation" under Category*).
 
-If you are having trouble accessing the help center in Lasso, please reach out to **jzink@lassoinformatics.com** or **achaudhry@lassoinformatics.com**.
+If you are having trouble accessing the help center in Lasso/NBDC Data Access Platform, please reach out to **jzink@lassoinformatics.com** or **achaudhry@lassoinformatics.com**.

@@ -26,7 +26,7 @@
   </a>
 </div>
 
-This section outlines the full HBCD processing workflows for [tabulated data](#tabulated-data) and [file-based data](#file-based-data), detailing each step from data capture at study sites to final ingestion into Lasso. Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [HDCC Structure & Organizational Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. 
+This section outlines the full HBCD processing workflows for [tabulated data](#tabulated-data) and [file-based data](#file-based-data), detailing each step from data capture at study sites to final ingestion into Lasso (the NBDC Data Access Platform). Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [HDCC Structure & Organizational Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. 
 
 <div id="fb-vs-tab" class="notification-banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
@@ -94,7 +94,7 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
 
 ## Tabulated Data 
 
-Data is collected from sites and ultimately transferred to the central LORIS Production S3 bucket, where it is subsequently de-identified and staged for ingestion into Lasso. The tabulated data processing workflow is outlined in the diagram below, showing the specific workflows for different data types and identifying the HDCC organization responsible for each processing step. These steps include data capture, de-identification, staging, and ingestion into Lasso.
+Data is collected from sites and ultimately transferred to the central LORIS Production S3 bucket, where it is subsequently de-identified and staged for ingestion into Lasso (NBDC Data Access Platform). The tabulated data processing workflow is outlined in the diagram below, showing the specific workflows for different data types and identifying the HDCC organization responsible for each processing step. These steps include data capture, de-identification, staging, and ingestion into Lasso.
 
 <object type="image/svg+xml" data="../images/tab-proc-wf.svg" width="100%"></object>
 <small><b>NOTE</b>: <i>Genetics capture currently occurs via Sampled and BAH, but will be changed to only Sampled in the future.</i></small>
