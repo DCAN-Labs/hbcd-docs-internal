@@ -91,8 +91,6 @@ The HCAC PM (Stephanie Averill) collaborates with the HDCC WG Liaison (Jen Zink)
 
 #### Data Filters Sign-Off
 
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
-
 In addition to deciding which variables to include in the release, the HDCC, HCAC, and Workgroups collaborate to determine general administrative inclusion/exclusion filters (*as opposed to specific variable filters, which are tracked elsewhere*) to be applied to the data release. This includes, but is not limited to:
 
  - Site exclusions (e.g., Florida)
