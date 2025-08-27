@@ -688,6 +688,16 @@ There are several regular calls where release action items are discussed and tra
   <td>Site monitors</td>
   <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;">HCAC</span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#washu" target="_blank">WashU</a></span></td>
 </tr>
+<tr>
+  <td>Geocoding<br><i>Monday 3 PM CT (biweekly)</i></td>
+  <td>TBD</td>
+  <td>
+  <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#hbcd-workgroups" target="_blank">Geocoding Workgroup<a></span>
+  <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span>
+  <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#health-sciences-technology" target="_blank">HST</a></span></td>
+  <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#libr" target="_blank">LIBR</a></span></td>
+  <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#washu" target="_blank">WashU</a></span></td>
+</tr>
 </tbody>
 </table>
 
