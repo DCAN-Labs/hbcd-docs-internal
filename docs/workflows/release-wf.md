@@ -659,6 +659,20 @@ There are several regular calls where release action items are discussed and tra
   <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#hbcd-workgroups" target="_blank">HBCD Workgroups</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
 </tr>
 <tr>
+  <td>MRI QC<br><i>Wednesdays 4 PM CT (biweekly)</i></td>
+  <td>Don Hagler</td>
+  <td>
+    <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
+      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span>
+    <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
+      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span>
+    <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
+      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#health-sciences-technology" target="_blank">HST</a></span>
+    <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
+      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">MIDB</a></span>
+  </td>
+</tr>
+<tr>
   <td>ABCD-HBCD Release<br><i>Tuesdays 10 AM CT</i></td>
   <td>Deanna Barch</td>
   <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">ABCD team (JCVI)</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
@@ -689,14 +703,33 @@ There are several regular calls where release action items are discussed and tra
   <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;">HCAC</span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#washu" target="_blank">WashU</a></span></td>
 </tr>
 <tr>
-  <td>Geocoding<br><i>Monday 3 PM CT (biweekly)</i></td>
-  <td>TBD</td>
+  <td>EMR<br><i>Mondays 4 PM CT (biweekly)</i></td>
+  <td>Nicole Venteris</td>
   <td>
-  <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#hbcd-workgroups" target="_blank">Geocoding Workgroup<a></span>
-  <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span>
-  <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#health-sciences-technology" target="_blank">HST</a></span></td>
-  <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#libr" target="_blank">LIBR</a></span></td>
-  <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#washu" target="_blank">WashU</a></span></td>
+    <span style="display: inline-block; background-color: #f0f8ff; color: #333;
+      border-radius: 12px; padding: 1px 5px; font-size: 1em;
+      border: 1px solid #d0e7ff;"><a href="../../orgcharts/#health-sciences-technology" target="_blank">HST</a></span>
+    <span style="display: inline-block; background-color: #f0f8ff; color: #333;
+      border-radius: 12px; padding: 1px 5px; font-size: 1em;
+      border: 1px solid #d0e7ff;"><a href="../../orgcharts/#hbcd-workgroups" target="_blank">HBCD Workgroup</a></span>
+    <span style="display: inline-block; background-color: #f0f8ff; color: #333;
+      border-radius: 12px; padding: 1px 5px; font-size: 1em;
+      border: 1px solid #d0e7ff;"><a href="../../orgcharts/#libr" target="_blank">LIBR</a></span>
+  </td>
+</tr>
+<tr>
+  <td>NIH-BTB<br><i>Wednesday 11 AM CT (monthly)</i></td>
+  <td>Maren Macgregor-Hannah</td>
+  <td>
+    <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
+      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span>
+    <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
+      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#health-sciences-technology" target="_blank">HST</a></span>
+    <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
+      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#hbcd-workgroups" target="_blank">HBCD Workgroup</a></span>
+    <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
+      font-size: 1em; border: 1px solid #d0e7ff;">App Devs</span>
+  </td>
 </tr>
 </tbody>
 </table>
