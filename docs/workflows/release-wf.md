@@ -272,6 +272,13 @@ In the event that data issues remain, or new issues are identified in QC of the 
 
 ## Patch Releases
 
+<p>
+<div class="notification-banner static-banner">
+  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
+  <span class="text">See the procedures for patch release BR15.1, including timelines and responsible parties, <a href="https://docs.google.com/document/d/1rVvzBA7eu_ZuTpD9Mbp_Hg8sTzAYT9R6cp3AGtHNhYg/edit?tab=t.0">here</a>.</span>
+</div>
+</p>
+
 Patch releases occur only to address “Known Issues” in the current public data release; they are not intended for releasing additional sessions/visits, protocol elements, or participants. Known issues are either identified via the HDCC, WGs/SMEs, or the scientific community (users of the public release data via the Lasso ticketing system). Once they are identified and reported to HDCC, they are then placed on the centralized Monday Board for prioritization. 
 
 When known issues are addressed, HDCC sends samples of the corrected data to the respective WGs/SMEs for their confirmation. Once the data fixes are confirmed by SMEs, the corrected data elements are then ingested into the Lasso QC environment (where the BRs are QCed). Jen further QC’s the data in the Lasso environment to ensure all fixes are implemented appropriately and schedules one-on-one sign-off meetings with each WG with a measure in the patch release. 
