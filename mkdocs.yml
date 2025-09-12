@@ -80,7 +80,7 @@ nav:
     - Quality Control Procedures: workflows/qc.md
     - Data Processing Workflows: workflows/data-proc-wf.md
     - Release SOP: workflows/release-wf.md
-    - MRI Workflow: workflows/mri-issue-wf.md
+    - MRI Workflows: workflows/mri-issue-wf.md
   - Standards & Curation:
     - Software & Analytic Standards: standards/software.md
     - Data Curation Procedures: standards/curation.md

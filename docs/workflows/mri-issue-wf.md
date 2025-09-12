@@ -18,7 +18,7 @@ Finalize from source doc <a href="https://docs.google.com/document/d/1EYMx3GtJ7o
 
 * Ron update ticket to ‘Acknowledged’  
 * Ron checks pipeline systems to verify the current location of the MR data.  
-  * FIONA 🡪 LORIS 🡪 AMBRA 🡪
+    * FIONA → LORIS → AMBRA
 
 ## 4. Data Transfer: Imaging Pipeline
 
