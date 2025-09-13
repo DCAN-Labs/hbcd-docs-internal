@@ -8,23 +8,19 @@
   </a>
 </div>
 
-
 ## Instrument Documentation ("READMEs") Provided by Workgroups
 
 **Each study instrument or measure has its own dedicated page on the [HBCD Data Release Docs](https://docs.hbcdstudy.org/)** that includes documentation of QC issues, responsible use concerns, modifications made to the measure for the HBCD Study, etc. To view these pages, expand the domains under [Study Instruments](https://docs.hbcdstudy.org/latest/instruments/#instruments-by-domain) and click the instrument names listed in the tables.
 
-**Workgroups submit new page content (for new instruments to be included in an upcoming release) or updates to existing pages as follows:**
+***Submit new instrument page content to be included in an upcoming release or updates to existing pages as follows:***
 
-<table class="table-no-vertical-lines"> <tbody>
-<tr> 
-    <td ><b>New instrument pages</b></td> <td style="word-wrap: break-word; white-space: normal;">Submit instrument documentation ("README") via the <a href="https://forms.gle/fgXTAkPhZbx2qjoH6">HBCD Release Docs Measure Documentation Form</a></td>
-</tr>
-<tr>
-    <td style="word-wrap: break-word; white-space: normal;"><b>Updates to existing instrument pages</b></td>
-    <td style="word-wrap: break-word; white-space: normal;">Follow the instructions provided in the first tab of this <a href="https://docs.google.com/document/d/14Bbyr4kwqwM91AGKwi1_Im31e-mkZd1s6wWfCsHMMrA/edit?usp=sharing">centralized collaborative document</a>. This includes instrument pages that are currently published on the main site (see <a href="https://docs.hbcdstudy.org/latest/instruments/#instruments-by-domain">Study Instruments</a>) as well as new instrument pages being constructed based on the google form submissions.</a></td> 
-</tr>
-</tbody>
-</table>
+#### How to submit new instrument page documentation
+
+Submit instrument documentation ("README") via the <a href="https://forms.gle/fgXTAkPhZbx2qjoH6">HBCD Release Docs Measure Documentation Form</a>
+
+#### How to make updates to existing instrument pages
+
+Follow the instructions provided in the first tab of this <a href="https://docs.google.com/document/d/14Bbyr4kwqwM91AGKwi1_Im31e-mkZd1s6wWfCsHMMrA/edit?usp=sharing">centralized collaborative document</a>. This includes instrument pages that are currently published on the main site (see <a href="https://docs.hbcdstudy.org/latest/instruments/#instruments-by-domain">Study Instruments</a>) as well as new instrument pages being constructed based on the google form submissions.</a>
 
 ## General Information: HBCD Study Websites
 
