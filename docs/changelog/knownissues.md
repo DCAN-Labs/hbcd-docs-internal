@@ -22,7 +22,7 @@
 ## Neurocognition & Language
 ###### <span class="emoji" style="color: #9d4edd;"><i class="fas fa-bug"></i></span> SPM-2 Age Fields Missing
 Age fields not available for the SPM-2 in BR15.2. Please refer to corresponding age fields available from related datasets for the same time point.    
-***Expected Fix: BR15.3***   
+***Expected Fix: TBD***   
 
 ----------------
 
