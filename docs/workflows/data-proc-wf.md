@@ -136,7 +136,7 @@ Data is collected from sites and ultimately transferred to the central LORIS Pro
     </tr>
     <tr>
       <td>Lasso Prerelease</td>
-      <td><code>lasso-data-prerelease/</code></td>
+      <td><code>lasso-hdcc-qc-br/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">Contains release version-specific data housed under <code>br{BETA RELEASE#}/hbcd/</code> to be ingested into Lasso</td>
     </tr>
 </tbody>
@@ -357,7 +357,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
     </tr>
     <tr>
       <td>Lasso Prerelease</td>
-      <td><code>lasso-data-prerelease/br{BETA RELEASE#}/hbcd/</code></td>
+      <td><code>lasso-hdcc-qc-br/br{BETA RELEASE#}/hbcd/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">Contains release version-specific data, including participant list to be included in the release (<code>rawdata/participants.tsv</code>). This is the final repository after de-identification and prior to Lasso ingestion.</td>
     </tr>
 </tbody>
@@ -386,18 +386,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>The details of this process are as follows:</p>
-<ol>
-<li>Find release-ready subject/sessions (i.e. participants listed in the LORIS <code>par_visit_data</code> file) in <code>s3://midb-hbcd-main-deid/</code></li>
-<li>Edit <code>assembly_bids/</code> structure like so:<ul>
-<li>Remove low-QC images/files that were not used for attempted processing</li>
-<li>Reconstruct <code>scans.tsv</code> files to only include entries for files included in the release</li>
-<li>Reconstruct <code>sessions.tsv</code> files to only include sessions from the release</li>
-</ul>
-</li>
-<li>Squash the derivatives folders across imaging sessions so that there is one common derivatives folder for all imaging sessions</li>
-<li>Copy the resulting assembly_bids and derivatives data to <code>rawdata/</code> and <code>derivatives/</code>, respectively, under:<br><code>s3://midb-hbcd-lasso-data-release-staging/&lt;release_identifier&gt;/hbcd/</code> </li>
-</ol>
+<p>Derivative folders are squashed across imaging sessions to create one common folder. The resulting assembly_bids and derivatives are copied to <code>rawdata/</code> and <code>derivatives/</code>, respectively, under <code> s3://midb-hbcd-hdcc-qc-br/br{BETA RELEASE#}/hbcd/</code>.</p>
 </div>
 
 <div id="brainswipes" class="table-banner" onclick="toggleCollapse(this)">
@@ -427,7 +416,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Following CBRAIN processing, processing records are queried for new derivative outputs ready to be re-identified. Re-identification involves replacing all release candidate IDs with DCCIDs in processing outputs and occurs in the process of copying the data from the source (<code>s3://midb-hbcd-main-deid/derivatives/</code>) to destination (<code>s3://midb-hbcd-main-pr/derivatives</code>) S3 paths.</p>
+<p>Following CBRAIN processing, processing records are queried for new derivative outputs ready to be re-identified. Re-identification involves replacing all release candidate IDs with DCCIDs in processing outputs and occurs in the process of copying the data from <code>s3://midb-hbcd-main-deid/derivatives/</code> to <code>s3://midb-hbcd-main-pr/reid_derivatives/</code>.</p>
 <p>Duplicating the derivatives enables LORIS to (1) maintain QC dashboards for HBCD users based on processing outputs (primarily important for EEG) and (2) prepare tabulated summary outputs for Lasso ingestion.</p>
 <p>Prior to re-identification, <code>s3://midb-hbcd-main-pr/derivatives</code> is first queried to find and delete any data that either does not have associated files in <code>s3://midb-hbcd-main-deid/derivatives</code>. When there is a newer copy of derivative data available from the source bucket, these are deleted and repopulated. Finally, new derivative data that has never existed in the LORIS bucket is copied over.</p>
 </div>
