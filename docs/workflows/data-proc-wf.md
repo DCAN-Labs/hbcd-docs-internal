@@ -348,7 +348,7 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
 <p>The Lasso HDCC QC environment includes:</p>
 <ol>
 <li>The <strong>Lasso Prerelease</strong> S3 bucket (<code>s3://midb-hbcd-lasso-hdcc-qc-br</code>) containing release version-specific data housed under <code>br{BETA RELEASE#}/hbcd/</code> to be ingested into Lasso</li>
-<li>The <strong>Ongoing QC</strong> S3 bucket (<code>s3://midb-hbcd-lasso-hdcc-qc-ongoing-dccid</code>), which mimics of the structure of the release buckets, but excludes the <code>br{BETA RELEASE#}</code> prefix. The data contains DCCIDs/PSCIDs and is updated with both release and non-release participant data regularly, including:<ul>
+<li>The <strong>Ongoing QC</strong> S3 bucket (<code>s3://midb-hbcd-lasso-hdcc-qc-ongoing-dccid</code>), which mimics of the structure of the release buckets, but excludes the <code>br{BETA RELEASE#}</code> prefix. The data contains DCCIDs/PSCIDs and is updated with both release and non-release main study participant data regularly, including:<ul>
 <li>Tabulated data provided by LASSO</li>
 <li>Raw BIDS copied from <code>s3://midb-hbcd-main-pr/assembly_bids</code></li>
 <li>Derivatives (re-identified) copied from <code>s3://midb-hbcd-main-pr/reid_derivatives</code></li>
