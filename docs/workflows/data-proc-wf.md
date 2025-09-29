@@ -332,6 +332,11 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
       <td><code>main-pr-deidentification-list/</code></td>
       <td>Contains de-identified participant list information used for de-identification step.</td>
     </tr>
+    <tr>
+      <td>QC Environment</td>
+      <td><code>lasso-hdcc-qc-ongoing-dccid/</code></td>
+      <td>Lasso HDCC environment for ongoing QC (<a href="#lasso-hdcc-qc-environment">see details)</td>
+    </tr>
 </tbody>
 </table>
 </div>
@@ -404,6 +409,11 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
       <td>Lasso Prerelease</td>
       <td><code>lasso-hdcc-qc-br/br{BETA RELEASE#}/hbcd/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">Contains release version-specific data, including participant list to be included in the release (<code>rawdata/participants.tsv</code>). This is the final repository after de-identification and prior to Lasso ingestion.</td>
+    </tr>
+    <tr>
+      <td>QC Environment</td>
+      <td><code>lasso-hdcc-qc-ongoing-dccid/</code></td>
+      <td>Lasso HDCC environment for ongoing QC (<a href="#lasso-hdcc-qc-environment">see details)</td>
     </tr>
 </tbody>
 </table>
