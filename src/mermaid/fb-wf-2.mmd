@@ -1,4 +1,4 @@
- ---
+---
 config:
   layout: elk
   look: neo
@@ -10,7 +10,7 @@ flowchart LR
         n25["<b>De-ID<br></b><i><code>S3:main-deid/<br>derivatives/</code></i>"]
         n26@{ label: "<b>Record Query<br></b><a href=\"../data-proc-wf/#record-query\" target=\"_top\"><i>Click for Details</i></a>" }
   end
- subgraph s3["<b>Re-Identification for LORIS<br></b><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a>"]
+ subgraph s3["<b>Re-Identification for LORIS<br></b><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener>UMN MSI</a>"]
         n27@{ label: "<b>Re-ID<br>derivatives</b><br><a href=\"../data-proc-wf/#re-id\" target=\"_top\"><i>Click for Details</i></a>" }
         n28@{ label: "<b><span style=\"color:\">Main PR<br></span></b><i><code>S3:main-pr/<br>reid_<br>derivatives/</code></i>" }
         n43@{ label: "<b>LORIS<br>ingestion</b><br><a href=\"../data-proc-wf/#loris-ingestion\" target=\"_top\"><i>Click for Details</i></a>" }
@@ -31,13 +31,16 @@ flowchart LR
  subgraph s7["<br>"]
         n40(("<b>LASSO<br>INGESTION</b>"))
   end
+ subgraph s8["<b>Lasso HDCC</br>Ongoing QC</b></br><a href="../data-proc-wf/#lasso-hdcc-qc-environment" target="_top"><i>Click for Details</i></a>"]
+        n48@{ label: "<b><span style=\"color:\">QC Env<br></span></b><i><code>S3:lasso-hdcc-<br>qc-ongoing-<br>dccid<br></code></i>" }
+  end
     n24 --> n25
     n25 --> n26 & n27 & n35 & n32
     n26 --> n25
     n27 --> n28
     n32 --> n33
     n35 --> n36
-    n28 --> n43
+    n28 --> n43 & n48
     n44["<b>CBRAIN Processing<br><i>CONTINUED</i></b>"] --> n24
     n33 --> n45
     n45 --> n46
@@ -54,6 +57,7 @@ flowchart LR
     n33@{ shape: disk}
     n35@{ shape: rect}
     n36@{ shape: disk}
+    n48@{ shape: disk}
     n44@{ shape: rect}
     style n24 fill:#E1BEE7
     style n25 fill:#E1BEE7
@@ -68,9 +72,11 @@ flowchart LR
     style n35 fill:#C8E6C9
     style n36 fill:#C8E6C9
     style n40 fill:#C8E6C9,stroke:#00C853,stroke-width:4px,stroke-dasharray: 0
+    style n48 fill:#FFCDD2,stroke:#000000
     style n44 fill:#C8E6C9,stroke-width:4px,stroke-dasharray: 0,stroke:#00C853
     style s5 fill:#EBFFEB
     style s2 fill:#FAD9FF
     style s3 fill:#E3F2FD
     style s4 fill:#FFF9C4
     style s7 stroke:none,fill:transparent
+    style s8 fill:#ffe9eb

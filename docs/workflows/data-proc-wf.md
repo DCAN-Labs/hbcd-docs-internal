@@ -28,22 +28,10 @@
 
 This section outlines the full HBCD processing workflows for [tabulated data](#tabulated-data) and [file-based data](#file-based-data), detailing each step from data capture at study sites to final ingestion into Lasso (the NBDC Data Access Platform). Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [HDCC Structure & Organizational Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. 
 
-<div id="fb-vs-tab" class="notification-banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">Tabulated vs. File-Based Data</span>
-</div>
-<div class="notification-static-content">
-<p>HBCD Study data includes both <strong>tabulated data</strong> and <strong>file-based data</strong> (see <a href="https://docs.hbcdstudy.org/latest/datacuration/overview/">overview of data structure</a>):</p>
-<ul>
-<li><strong>Tabulated data</strong> are in table format and include behavior, demographics, visit data, toxicology results, and tabulated data associated with brain imaging and other file-based data (<a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">see details</a>). </li>
-<li><strong>File-based data</strong> are in BIDS format and include both <span><i class="fas fa-hammer"></i> <b>Raw BIDS</b></span> (<a href="https://docs.hbcdstudy.org/latest/datacuration/rawbids/">details</a>) and processed <span><i class="fas fa-cog"></i> <b>Derivatives</b></span> (<a href="https://docs.hbcdstudy.org/latest/datacuration/derivatives/">details</a>) for MRI, MRS, EEG, and motion/accelerometry. </li>
-</ul>
-</div>
-
 <p>
 <div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="text"><b>Definition of Terms</b></span>
+  <span class="table-text"><i class="fas fa-book" style="margin-right: 6px; color: blue;"></i> Definition of Terms</span>
   <a class="anchor-link" href="#def-terms" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -59,6 +47,14 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td>Tabulated data</td>
+        <td style="word-wrap: break-word; white-space: normal;">In standardized HBCD table format, includes behavior & biology, demographics, visit data, and tabulated derivatives. See <a href="https://docs.hbcdstudy.org/latest/datacuration/overview/">Data Structure Overview</a> on the main Docs site for an overview of tabulated vs. file-based data.</td>
+      </tr>
+      <tr>
+        <td>File-based data</td>
+        <td style="word-wrap: break-word; white-space: normal;">In varied formats, includes raw BIDS and processed derivatives for MRI, MRS, EEG, and wearable sensor data. See <a href="https://docs.hbcdstudy.org/latest/datacuration/overview/">Data Structure Overview</a> on the main Docs site for an overview of tabulated vs. file-based data.</td>
+      </tr>
         <tr>
         <td>Release Candidate ID</td>
         <td style="word-wrap: break-word; white-space: normal;">The anonymized ID that will be used as the BIDS subject label in any public releases.</td>
@@ -99,8 +95,17 @@ Data is collected from sites and ultimately transferred to the central LORIS Pro
 <object type="image/svg+xml" data="../images/tab-proc-wf.svg" width="100%"></object>
 <small><b>NOTE</b>: <i>Genetics capture currently occurs via Sampled and BAH, but will be changed to only Sampled in the future.</i></small>
 
+<div id="s3buckets-tab" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-key" style="margin-right: 6px; color: blue;"></i> S3 Bucket Key</span>
+  <a class="anchor-link" href="#s3buckets-tab" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table class="compact-table">
-<b><i>S3 Bucket Key</i></b>
     <thead>
       <tr>
         <th style="width: 5%;">Name</th>
@@ -141,10 +146,11 @@ Data is collected from sites and ultimately transferred to the central LORIS Pro
     </tr>
 </tbody>
 </table>
+</div>
 
 <div id="third-party" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text">Third Party Tools</span>
+  <span class="table-text"><i class="fas fa-globe" style="margin-right: 6px; color: blue;"></i> Third Party Tools</span>
   <a class="anchor-link" href="#third-party" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -186,10 +192,9 @@ Data is collected from sites and ultimately transferred to the central LORIS Pro
 </table>
 </div>
 
-
 <div id="tab-raci" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> Tabulated Data</span>
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> RACI for Tabulated Data</span>
   <a class="anchor-link" href="#tab-raci" title="Copy link">
   <i class="fa-solid fa-link"></i>
   </a>
@@ -279,8 +284,17 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
   Your browser does not support SVG
 </object>
 
+<div id="s3buckets-fb1" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-key" style="margin-right: 6px; color: blue;"></i> S3 Bucket Key</span>
+  <a class="anchor-link" href="#s3buckets-fb1" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table class="compact-table">
-<b><i>S3 Bucket Key</i></b>
     <thead>
     <thead>
       <tr>
@@ -320,6 +334,28 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
     </tr>
 </tbody>
 </table>
+</div>
+<div id="lasso-hdcc-qc-environment" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fa-solid fa-clipboard-check" style="margin-right: 6px; color: blue;"></i> Lasso HDCC QC Environment</span>
+  <a class="anchor-link" href="#lasso-hdcc-qc-environment" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="collapsible-content">
+<p>The Lasso HDCC QC environment includes:</p>
+<ol>
+<li>The <strong>Lasso Prerelease</strong> S3 bucket (<code>s3://midb-hbcd-lasso-hdcc-qc-br</code>) containing release version-specific data housed under <code>br{BETA RELEASE#}/hbcd/</code> to be ingested into Lasso</li>
+<li>The <strong>Ongoing QC</strong> S3 bucket (<code>s3://midb-hbcd-lasso-hdcc-qc-ongoing-dccid</code>), which mimics of the structure of the release buckets, but excludes the <code>br{BETA RELEASE#}</code> prefix. The data contains DCCIDs/PSCIDs and is updated with both release and non-release participant data regularly, including:<ul>
+<li>Tabulated data provided by LASSO</li>
+<li>Raw BIDS copied from <code>s3://midb-hbcd-main-pr/assembly_bids</code></li>
+<li>Derivatives (re-identified) copied from <code>s3://midb-hbcd-main-pr/reid_derivatives</code></li>
+</ul>
+</li>
+</ol>
+</div>
 
 ### CBRAIN Processing, Re-Identification, & Lasso Ingestion
 
@@ -331,8 +367,17 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 
 <small><b>NOTE</b>: <i>Currently, for release staging, the data is first copied to a separate staging bucket prior to being copied to the Lasso Prerelease bucket, but will soon be cut out to transfer directly to the Lasso Prerelease bucket as displayed in the diagram.</i></small>
 
+<div id="s3buckets-fb2" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-key" style="margin-right: 6px; color: blue;"></i> S3 Bucket Key</span>
+  <a class="anchor-link" href="#s3buckets-fb2" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table class="compact-table">
-<b><i>S3 Bucket Key</i></b>
     <thead>
     <thead>
       <tr>
@@ -362,6 +407,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
     </tr>
 </tbody>
 </table>
+</div>
 
 <div id="record-query" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
@@ -440,7 +486,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 </div>
 
 <br>
-
+      
 ### Responsibility Assignment Matrices By Modality 
 
 <p style="text-align: center; font-size: 1.3em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
@@ -647,7 +693,6 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 </table>
 </div>
 
-
 <div id="biospec-raci" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i>Biospecimens</span>
@@ -774,6 +819,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 </tbody>
 </table>
 </div>
+
 
 ## Clinical Data Validation Procedure
 

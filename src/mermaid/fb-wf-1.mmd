@@ -5,7 +5,7 @@ config:
   theme: redux
 ---
 flowchart LR
- subgraph Sites_Capture["<b>Sites Capture</b><br><a href=../../orgcharts/#fiona rel=noopener target=_blank><b>FIONA</b></a>"]
+ subgraph Sites_Capture["<b>Sites Capture<br><a href=../../orgcharts/#fiona rel=noopener target=_blank><b>FIONA</b></a></b>"]
         FIONA_KSI[/"<b>DCM</b>"/]
         LORIS_ACM[/"<b>MRS</b>"/]
         n15[/"<b>K-Space</b>"/]
@@ -26,12 +26,15 @@ flowchart LR
         n13[/"<b>Axivity</b>"/]
         n14[/"<b>GABI</b>"/]
   end
- subgraph s1["<b style=white-space:>De-Identification</br></b><span style=white-space:>Run daily to replace DCCIDs/PSCIDs/Site IDs with anonymized IDs</span>"]
+ subgraph s1["<b style=white-space:>De-Identification<br></b><span style=white-space:>Run daily to replace DCCIDs/PSCIDs/Site IDs with anonymized IDs</span>"]
         n17["<b>De-ID</b>"]
         n18@{ label: "<b><span style=\"text-wrap-mode:\">De-ID</span><br style=\"text-wrap-mode:\"></b><i style=\"--tw-scale-x:\"><code style=\"--tw-scale-x:\">S3:main-deid/<br>assembly_bids/</code></i>" }
   end
  subgraph s6["<b>NOTE</b>"]
         legend@{ label: "<b>'S3:'</b> indicates<br>the prefix<span style=\"background-color:\"><br></span><span style=\"background-color:lightblue;\">s3://midb-hbcd-<br></span>for S3 bucket<br>names" }
+  end
+ subgraph s7["<span style=white-space:><b>Lasso HDCC Ongoing QC</b><br><a href=../data-proc-wf/#lasso-hdcc-qc-environment target=_top><i>Click for Details</i></a></span>"]
+        n22@{ label: "<span><i><code>S3:lasso-hdcc-<br>qc-ongoing-<br>dccid<br></code></i></span>" }
   end
     LORIS_ACM --> UMN
     UMN --> JCVI
@@ -47,7 +50,7 @@ flowchart LR
     n15 --> UMN
     FIONA_KSI --> n6
     n16@{ label: "<span style=\"color:\">LORIS updates to<br></span><i style=\"--tw-scale-x:\"><code style=\"--tw-scale-x:\">S3:main-pr/assembly_bids/<br></code></i><span style=\"color:\">metadata and formatting based on identified issues. Includes changes from QC/DICOMs sent from JCVI.</span>" } --> RAW_BIDS
-    RAW_BIDS --> n17
+    RAW_BIDS --> n17 & s7
     n17 --> n18
     n19["<b>De-ID Lists</b><br><code><i>S3:main-pr-deidentification-<br>list/</i></code>"] --> n17
     n18 --> n20@{ label: "<b>CBRAIN<br>PROCESSING</b><br><a href=\"../data-proc-wf/#cbrain-processing-re-identification-lasso-ingestion\" target=\"_top\"><i>SEE NEXT STEPS</i></a>" }
@@ -59,8 +62,10 @@ flowchart LR
     n10@{ shape: disk}
     n11@{ shape: rect}
     n18@{ shape: disk}
+    n22@{ shape: disk}
     RAW_BIDS@{ shape: disk}
     n16@{ shape: rect}
+    s7@{ shape: rect}
     n19@{ shape: disk}
     n20@{ shape: rect}
     style FIONA_KSI fill:#FFD600
@@ -79,8 +84,10 @@ flowchart LR
     style n17 fill:#E1BEE7
     style n18 fill:#E1BEE7
     style legend stroke:none,fill:transparent
+    style n22 fill:#FFCDD2
     style RAW_BIDS fill:#BBDEFB
     style n16 fill:#BBDEFB
+    style s7 fill:#ffe9eb
     style n19 fill:#BBDEFB
     style n20 fill:#C8E6C9,stroke:#00C853,stroke-width:4px,stroke-dasharray: 0
     style Capture_LORIS fill:#FFF9C4
