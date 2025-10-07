@@ -79,6 +79,7 @@ nav:
     - HDCC Structure: orgcharts.md
     - Quality Control Procedures: workflows/qc.md
     - Data Processing Workflows: workflows/data-proc-wf.md
+    - UMN De-Identification & Pipeline Processing: workflows/umn-proc-wf.md 
     - Release SOP: workflows/release-wf.md
     - MRI Workflows: workflows/mri-issue-wf.md
   - Standards & Curation:
