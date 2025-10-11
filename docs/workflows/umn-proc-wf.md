@@ -78,14 +78,14 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   <li>Update session metadata (<code>sessions.&lt;tsv|json&gt;</code>) in de-ID bucket</li>
   <li>Tag each file with its <code>loris-versionid</code> (corresponds to <code>VersionId</code> in original LORIS files) for traceability</li>
 </ul>
-<br>
-<br>
-<p><strong>REMOVED/RETAINED IDENTIFIERS</strong></p>
+<br><br>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr>
-  <td><strong>Removed</strong></td>
-  <td>
+  <td><b>REMOVED/RETAINED IDENTIFIERS:</b></td>
+</tr>
+<tr>
+  <td><strong>Removed</strong><br>
 <ul>
   <li>PSCIDs, DCCIDs, and Site IDs</li>
   <li>Manually populated fields (and thus prone to typos) that may contain these identifiers</li>
@@ -93,8 +93,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   </td>
 </tr>
 <tr>
-  <td><strong>Retained</strong></td>
-  <td>
+  <td><strong>Retained</strong><br>
     <ul>
     <li>Jittered patient age at acquisition</li>
     <li>Acquisition dates/times</li>
@@ -104,12 +103,13 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 </tr>
 </tbody>
 </table>
-<p><strong>FILE COVERAGE:</strong></p>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; padding-top; 0; margin-top: 0;">
 <tbody>
 <tr>
-  <td style="word-wrap: break-word; white-space: normal;"><b>BIDS metadata</b><br>(<code>scans</code>/<code>session</code> tsv & JSONs)</td>
-  <td>
+  <td><b>FILE COVERAGE:</b></td>
+</tr>
+<tr>
+  <td><b>BIDS metadata</b> (<code>scans</code>/<code>session</code> tsv & JSONs)<br>
       <ul>
       <li>Remove <code>PatientName</code> and <code>PatientBirthDate</code> from JSONs</li>
       <li>Replace site info with anonymized site IDs via mapping file</li>
@@ -118,15 +118,10 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   </td>
 </tr>
 <tr>
-  <td style="word-wrap: break-word; white-space: normal;">
-  <b>EEG sourcedata</b><br>(<code>eventlogs.txt</code>)</td>
-  <td>
-    <ul><li>Anonymize entries for <code>DataFile.Basename</code>, <code>DCCID</code>, and <code>Subject</code> columns</li></ul>
-  </td>
-</tr>
-<tr>
-  <td style="word-wrap: break-word; white-space: normal;"><b>EEG .set files:</b></td>
-  <td style="word-wrap: break-word; white-space: normal;">
+  <td><b>EEG</b><br>
+    <ul>
+    <li><b>sourcedata</b> (<code>eventlogs.txt</code>): Anonymize entries for <code>DataFile.Basename</code>, <code>DCCID</code>, and <code>Subject</code> columns</li>
+    <li><b>.set files:</b><br>
     <ul>
       <li>Replace nested DCCIDs/PSCIDs with Release Candidate IDs</li>
       <li>Replace unapproved manual entries with “Anonymized”</li>
@@ -134,8 +129,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   </td>
 </tr>
 <tr>
-  <td><b>MRS NIfTI files:</b></td>
-  <td>
+  <td><b>MRS NIfTI files:</b><br>
     <ul>
       <li>Remove <code>InstitutionName</code>, <code>InstitutionAddress</code>, <code>PatientSex</code>, and <code>PatientWeight</code> using <code>spec2nii</code></li>
     </ul>
