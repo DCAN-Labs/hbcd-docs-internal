@@ -132,7 +132,7 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 <p><strong>Caveats / Notes:</strong>  </p>
 <ul>
 <li>CBRAIN task IDs are unique—duplicates pose no issue.  </li>
-<li>Only failed tasks require log saving; successful ones already include <code>.cbrain</code> logs in their output directories.  </li>
+<li>Saving logs is only necessary when processing fails: successful ones already include <code>.cbrain</code> logs in their output directories. CBRAIN only sends processing outputs to S3 when processing is successful. </li>
 </ul>
 </div>
 
