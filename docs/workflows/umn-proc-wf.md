@@ -136,28 +136,37 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 </ul>
 </div>
 
-### Clean-up Routines for Out-of-sync Raw and Derived Data
 
-**Goal of workflow:** Detect and clean up raw and derivative BIDS data when the LORIS and de-id buckets become out of sync.
+<div id="6" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Clean-up routines for out-of-sync raw BIDS data between LORIS and de-id buckets</span>
+  <a class="anchor-link" href="#6" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><strong>Goal of workflow:</strong> Detect and clean up raw BIDS data when the LORIS and de-id buckets become out of sync, followed by cleanup of various data elements to set the stage for updated data.</p>
+<p><strong>Process:</strong></p>
+<ol>
+<li>Compare file counts between de-id and LORIS session folders</li>
+<li>If files counts are the same, compare the loris-version id of the de-id files to ensure they match</li>
+<li>If counts differ or <code>loris-versionid</code> mismatches, delete: all derivative files for that session, CBRAIN task processing record, and associated raw BIDS</li>
+</ol>
+<p><strong>Relevant contacts:</strong> Erik Lee, Monalisa Bilas<br>
+<strong>Frequency:</strong> Runs daily. Unclear what the worst case performance is for how long the job will take to run.Runs daily (runtime varies by data volume)<br>
+<strong>Inputs:</strong>  </p>
+<ul>
+<li>Raw BIDS data: <code>s3://midb-hbcd-main-deid/assembly_bids</code> and <code>s3://midb-hbcd-main-pr/assembly_bids</code>  </li>
+<li>Derivatives: <code>s3://midb-hbcd-main-deid/derivatives</code>  </li>
+<li>CBRAIN records of userfiles and tasks  </li>
+</ul>
+<p><strong>Outputs:</strong> N/A<br>
+<strong>Caveats / Notes:</strong> Following the completion of this workflow, any raw BIDS data from sessions with ‘out of sync’ files will be removed. This sets the stage for the de-id routines to be rerun for the given session.</p>
+</div>
 
-**Process:**
 
-1. Compare file counts between de-id and LORIS session folders  
-2. If counts differ or `loris-versionid` mismatches:  
-   - Delete all derivative files for that session  
-   - Delete related CBRAIN user files and task records  
-   - Delete raw BIDS data for the affected session  
-
-**Relevant contacts:** Erik Lee, Monalisa Bilas         
-**Frequency:** Runs daily (runtime varies by data volume)
-
-**Inputs:**  
-- Raw data: `s3://midb-hbcd-main-deid/assembly_bids` and `s3://midb-hbcd-main-pr/assembly_bids`  
-- Derivatives: `s3://midb-hbcd-main-deid/derivatives`  
-- CBRAIN records of userfiles and tasks  
-
-**Outputs:** N/A          
-**Caveats / Notes:** After cleanup, sessions with removed data are reprocessed via the de-id routines.
 
 ### Re-insertion of DCCIDs into Post-processing Derivatives (for LORIS)
 
