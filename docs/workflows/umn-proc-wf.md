@@ -26,7 +26,7 @@ This documentation describes how UMN handles imaging data after it has been cura
 
 ### General limitations of current workflows
 
-The incoming data elements from a session, ranging from MRI (initial scans along with any rescans), EEG, Axivity, GABI, and manual QC ratings may come into the LORIS assembly\_bids structure over the course of a few weeks. Processing of any pipeline will not become stable until the last data element of a session comes in. Therefore, certain processing workflows that are intended for automated QC will be slowed down while other data elements are coming in.
+The incoming data elements from a session, ranging from MRI (initial scans along with any rescans), EEG, Axivity, GABI, and manual QC ratings may come into the LORIS assembly_bids structure over the course of a few weeks. Processing of any pipeline will not become stable until the last data element of a session comes in. Therefore, certain processing workflows that are intended for automated QC will be slowed down while other data elements are coming in.
 
 
 ## Individual Workflows
@@ -177,7 +177,7 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 </div>
 <div class="table-collapsible-content">
 <p><strong>Goal of workflow:</strong> Make de-identified derivative files available in LORIS by replacing Release Candidate IDs with DCCIDs (“re-iding”).</p>
-<p><strong>Process - if a folder of interest is empty, copy the folder to <code>s3://midb-hbcd-main-pr/reid_derivatives</code> using the following procedure:</strong></p>
+<p><strong>Process:</strong></p>
 <ul>
 <li>Download the de-id derivatives and replace Release Candidate IDs with DCCIDs (in both file names and file contents, with specific routines for specific file types). Also replace anonymized with real site IDs</li>
 <li>Upload resulting files to <code>s3://midb-hbcd-main-pr/reid_derivatives</code> with the metadata field <code>cbrain-timestamp</code> (from original file’s <code>LastModified</code> time)</li>
@@ -185,7 +185,7 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 <p><strong>Relevant contacts:</strong> Sriharshitha Anuganti, Erik Lee<br>
 <strong>Frequency:</strong> Runs daily<br>
 <strong>Inputs:</strong> Derived BIDS data <code>s3://midb-hbcd-main-deid/derivatives</code><br>
-<strong>Outputs:</strong> Derived BIDS data <code>s3://midb-hbcd-main-pr/reid_derivatives</code></p>
+<strong>Outputs:</strong> Derived BIDS data <code>s3://midb-hbcd-main-pr/reid_derivatives</code></p><br>
 <p><strong>Caveats / Notes:</strong>  </p>
 <ul>
 <li>Update routines whenever pipeline filenames change.  </li>
@@ -219,7 +219,7 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 
 ## Further Details on De-Id Routines
 
-The de-identification described here covers the procedures used on s3://midb-hbcd-main-pr/assembly\_bids, which is ‘raw BIDS’ and uses DCCID’s as subject labels. During de-identification the following features are removed:
+The de-identification described here covers the procedures used on s3://midb-hbcd-main-pr/assembly_bids, which is ‘raw BIDS’ and uses DCCIDs as subject labels. During de-identification the following features are removed:
 
 * PSCIDs  
 * DCCIDs  
@@ -234,51 +234,44 @@ Other features that are of interest but are not removed include:
 
 The de-identification procedures of raw BIDS data largely covers the following groups of files:
 
-* Standard BIDS metadata text sources such as scans.tsv, session.tsv, JSON files  
-  * In motion files, any JSON fields with PatientName or PatientBirthDate are deleted  
-  * In scans/sessions tsv/json files, the site information is replaced with anonymized site IDs based on a site mapping file.  
-  * All other JSON files known to contain site IDs have InstitutionAddress, InstitutionalDepartmentName, and InstitutionName deleted  
-* EEG eventlogs.txt sourcedata files  
-  * Custom routines anonymize entries for DataFile.Basename, DCCID, and Subject columns  
+* Standard BIDS metadata text sources such as `scans.tsv`, `session.tsv`, JSON files  
+    * In motion files, any JSON fields with `PatientName` or `PatientBirthDate` are deleted  
+    * In scans/sessions tsv/json files, the site information is replaced with anonymized site IDs based on a site mapping file.  
+    * All other JSON files known to contain site IDs have `InstitutionAddress`, `InstitutionalDepartmentName`, and `InstitutionName` deleted  
+* EEG `eventlogs.txt` sourcedata files: Custom routines anonymize entries for `DataFile.Basename`, `DCCID`, and `Subject` columns  
 * EEG .set files  
-  * Custom routines recursively search through nested fields and replaces DCCIDs/PSCIDs with Release Candidate IDs  
-  * Certain fields likely to contain manually entered information such as DCCID/PSCID have their text replaced with ‘Anonymized’  
-  * Other fields likely to contain manually entered information have values outside of a pre-approved list of strings replaced with ‘Anonymized’  
-* MRS Nifti files:  
-  * Fields InstitutionName, InstitutionAddress, PatientSex, and PatientWeight are removed from nifti headers using spec2nii
+    * Custom routines recursively search through nested fields and replaces DCCIDs/PSCIDs with Release Candidate IDs  
+    * Certain fields likely to contain manually entered information such as DCCID/PSCID have their text replaced with ‘Anonymized’  
+    * Other fields likely to contain manually entered information have values outside of a pre-approved list of strings replaced with ‘Anonymized’  
+* **MRS Nifti files:** Fields `InstitutionName`, `InstitutionAddress`, `PatientSex`, and `PatientWeight` are removed from nifti headers using spec2nii
 
-Some files are not currently supported by de-identification routines and have thus far not been copied to any of the de-identified data stores:
-
-* Files from the EEG sourcedata directory (i.e. sub-\<label\>/ses-\<label\>/eeg/sourcedata)  
-  * eventlogs.edat3 files, eeg\_flags.json files
+Some files are not currently supported by de-identification routines and have thus far not been copied to any of the de-identified data stores. This includes files from the EEG sourcedata directory (i.e. `sub-{ID}/ses-{V0X}/eeg/sourcedata`): `eventlogs.edat3` and `eeg_flags.json` files
 
 ## Further Details on Re-Id Routines
 
 The re-identification procedures described here apply to the following derivatives pipelines:
 
 * bibsnet  
-* bme\_x  
-* hbcd\_motion  
+* bme_x  
+* hbcd_motion  
 * made  
 * mriqc  
 * mrsqc  
 * nibabies  
 * osprey  
-* qmri\_postproc  
+* qmri_postproc  
 * qsiprep  
 * qsirecon-DIPYDKI  
 * qsirecon-DSIStudio  
-* qsirecon-TORTOISE\_model-MAPMRI  
-* asirecon-TORTOISE\_model-tensor  
+* qsirecon-TORTOISE_model-MAPMRI  
+* asirecon-TORTOISE_model-tensor  
 * symri  
-* xcp\_d
+* xcp_d
 
 These pipelines are present in the *s3://midb-hbcd-main-deid/derivatives* bucket, which contains de-identified data. Specifically, this bucket uses *release candidate IDs* as subject labels. At a high level, the re-identification routines replace these release candidate IDs with the corresponding *candidate IDs (DCCIDs)*.
 
 The re-identification routines process two types of files:
 
-1. Standard text-based files(.csv, .html, .json, .txt, .toml, .tsv, .log)  
-* In these files, all occurrences of release candidate IDs are replaced with the corresponding DCCIDs.  
-2. EEG .set files(with .set and .mat extensions)  
-* These routines recursively search through nested fields within the file structure to identify and replace release candidate IDs with DCCIDs.
+1. **Standard text-based files** (.csv, .html, .json, .txt, .toml, .tsv, .log): In these files, all occurrences of release candidate IDs are replaced with the corresponding DCCIDs.  
+2. **EEG .set files** (with .set and .mat extensions): These routines recursively search through nested fields within the file structure to identify and replace release candidate IDs with DCCIDs.
 
