@@ -3,35 +3,6 @@
 
 ## Detailed Workflows
 
-
----
-
-### 3. CBRAIN Subject Registration
-**Goal:** Register de-identified subjects for processing within CBRAIN.  
-**Frequency:** Daily (<1 hour)  
-**Inputs:** `s3://midb-hbcd-main-deid/assembly_bids`  
-**Outputs:** Internal CBRAIN records linking subject sessions  
-**Contacts:** Monalisa Bilas, Erik Lee  
-**Notes:** Each subject has a single CBRAIN *BidsSubject File Collection*, though sessions process independently.
-
----
-
-### 4. Post-Processing of De-Identified Data
-**Goal:** Run containerized post-processing (e.g., `Nibabies`, `BIBSNet`, `QSIPrep`) to generate derivatives.  
-**Steps:**
-1. Detect available sessions in CBRAIN  
-2. Check for existing outputs  
-3. Verify required inputs pass QC  
-4. Select files by modality rules (e.g., best T1w, all fMRI passing QC)  
-5. Ensure dependencies between pipelines (e.g., `BIBSNet` → `Nibabies`)  
-6. Launch CBRAIN jobs with predefined configurations  
-
-**Outputs:** `s3://midb-hbcd-main-deid/derivatives/ses-{V0X}`  
-**Contacts:** Erik Lee, Monalisa Bilas  
-**Frequency:** Daily (jobs may take ~1 day)  
-**Code:** [GitHub Repo](https://github.com/erikglee/HBCD_CBRAIN_PROCESSING) • [Docs](https://hbcd-cbrain-processing.readthedocs.io/latest/index.html)  
-**Notes:** CBRAIN logs and file collections are stored internally for traceability.
-
 ---
 
 ### 5. Saving CBRAIN stdout/stderr Logs

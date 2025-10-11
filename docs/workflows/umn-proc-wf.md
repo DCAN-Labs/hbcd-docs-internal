@@ -38,7 +38,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 
 <div id="1" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fa-solid fa-gears" style="margin-right: 6px; color: blue;"></i> Creation of Release Candidate IDs for Anonymization</span>
+  <span class="table-text"><i class="fa-solid fa-1" style="margin-right: 6px; color: blue;"></i> Creation of Release Candidate IDs for Anonymization</span>
   <a class="anchor-link" href="#1" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -55,10 +55,9 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 <strong>Caveats / Notes:</strong> Phantom data may not yet be included.</p>
 </div>
 
-
 <div id="2" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fa-solid fa-gears" style="margin-right: 6px; color: blue;"></i> Raw BIDS Data De-identification</span>
+  <span class="table-text"><i class="fa-solid fa-2" style="margin-right: 6px; color: blue;"></i> Raw BIDS Data De-identification</span>
   <a class="anchor-link" href="#2" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -92,20 +91,21 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 
 <div id="3" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fa-solid fa-gears" style="margin-right: 6px; color: blue;"></i> Registration of Subjects from Raw BIDS Data into CBRAIN</span>
-  <a class="anchor-link" href="#3" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
+  <span class="table-text"><i class="fa-solid fa-3" style="margin-right: 6px; color: blue;"></i> Registration of Subjects from Raw BIDS Data into CBRAIN</span><a class="anchor-link" href="#3" title="Copy link"><i class="fa-solid fa-link"></i></a></span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Goal of workflow:</strong> Make CBRAIN aware of subjects available for processing.<br><strong>Contacts:</strong> Monalisa Bilas, Erik Lee<br><strong>Frequency:</strong> Runs daily (takes less than one hour to complete)<br><strong>Inputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code><br><strong>Outputs:</strong> Internal records in CBRAIN indicating subject folder existence within the BIDS directory<br><strong>Caveats / Notes:</strong>  Each subject has a single CBRAIN <em>BidsSubject File Collection</em> linking all sessions, though each session is processed independently.</p>
+<p><strong>Goal of workflow:</strong> Make CBRAIN aware of subjects available for processing.<br>
+<strong>Contacts:</strong> Monalisa Bilas, Erik Lee<br>
+<strong>Frequency:</strong> Daily (&lt;1 hour)<br>
+<strong>Inputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code><br>
+<strong>Outputs:</strong> Internal CBRAIN records indicating existence of subject folder within BIDS directory<br>
+<strong>Caveats / Notes:</strong>  Each subject has a single CBRAIN <em>BidsSubject File Collection</em> linking all sessions, though sessions are processed independently.</p>
 </div>
 
 <div id="4" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fa-solid fa-gears" style="margin-right: 6px; color: blue;"></i> Post-processing of De-identified Data</span>
+  <span class="table-text"><i class="fa-solid fa-4" style="margin-right: 6px; color: blue;"></i> Pipeline processing of De-identified Data</span>
   <a class="anchor-link" href="#4" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -114,29 +114,28 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 </div>
 <div class="table-collapsible-content">
 <p>
-<strong>Goal of workflow:</strong> Initiate processing of de-identified BIDS data through post-processing BIDS Apps in CBRAIN (e.g., <code>Nibabies</code>, <code>BIBSNet</code>, <code>QSIPrep</code>, etc.) to produce derivatives.</p>
+<strong>Goal:</strong> Run de-identified BIDS data through BIDS App pipelines in CBRAIN (e.g., `Nibabies`, `BIBSNet`, `QSIPrep`) to generate derivatives.</p>
 <p><strong>Workflow Steps:</strong></p>
-<ul>
-<li>Identify available subjects and sessions in the BIDS directory and CBRAIN  </li>
+<ol>
+<li>Detect available sessions sessions in the BIDS directory and CBRAIN  </li>
 <li>Check for existing outputs or prior processing attempts  </li>
 <li>For sessions without outputs or attempted processing, verify that required prerequisite files exist and pass QC (from <code>scans.tsv</code>)  </li>
-<li>Select files for processing based on modality-specific rules. <em>Example:</em> Use only the best T1w image or all fMRI images passing QC</li>
-<li>For sessions with requisite files present for processing, confirm dependencies between pipelines (e.g., BIBSNet outputs are required by Nibabies)</li>
+<li>Select files for processing based on modality-specific rules (e.g., best T1w image only, all fMRI images passing QC</li>
+<li>Confirm dependencies between pipelines (e.g., BIBSNet outputs are required by Nibabies)</li>
 <li>Launch CBRAIN processing tasks using predefined settings and including only files selected for processing  </li>
-<li>CBRAIN uploads outputs from successful jobs to S3 and stores internal records of the processing ‘task’ and the created ‘file collections’ stemming from processing.</li>
-</ul>
+</ol>
 <p>
 <strong>Contacts:</strong> Erik Lee, Monalisa Bilas<br>
-<strong>Frequency:</strong> Runs daily (initial routine &lt;1 hour; processing jobs may take ~1 day)<br>        
+<strong>Frequency:</strong> Daily (initial routine &lt;1 hour; processing jobs may take ~1 day)<br>        
 <strong>Inputs:</strong> Raw BIDS data under s3://midb-hbcd-main-deid/assembly_bids<br>
-<strong>Outputs:</strong> Derivative BIDS data (post-processing outputs) located in session specific folders under s3://midb-hbcd-main-deid/derivatives/ses-{V0X}<br>
-<strong>Caveats / Notes:</strong> The code that manages processing is available in this <a href="https://github.com/erikglee/HBCD_CBRAIN_PROCESSING">GitHub Repository</a> and <a href="https://hbcd-cbrain-processing.readthedocs.io/latest/index.html#">ReadTheDocs Documentation</a></p>
+<strong>Outputs:</strong> CBRAIN uploads outputs from successful jobs to session-specific folders on S3 (s3://midb-hbcd-main-deid/derivatives/ses-{V0X}) and stores internal records of the processing ‘task’ and the created ‘file collections’ stemming from processing. <br>
+<strong>Caveats / Notes:</strong> The code that manages processing is available in this <a href="https://github.com/erikglee/HBCD_CBRAIN_PROCESSING">GitHub Repository</a> and <a href="https://hbcd-cbrain-processing.readthedocs.io/latest/index.html#">ReadTheDocs Documentation</a>. CBRAIN logs and file collections are stored internally for traceability.</p>
 </ul>
 </div>
 
 <div id="5" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fa-solid fa-gears" style="margin-right: 6px; color: blue;"></i> Saving stdout/stderr Files for Failed CBRAIN Processing Tasks</span>
+  <span class="table-text"><i class="fa-solid fa-5" style="margin-right: 6px; color: blue;"></i> Saving stdout/stderr Files for Failed CBRAIN Processing Tasks</span>
   <a class="anchor-link" href="#5" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -155,7 +154,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 
 <div id="6" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fa-solid fa-gears" style="margin-right: 6px; color: blue;"></i> Clean-up routines for out-of-sync raw BIDS data between LORIS and de-id buckets</span>
+  <span class="table-text"><i class="fa-solid fa-6" style="margin-right: 6px; color: blue;"></i> Clean-up routines for out-of-sync raw BIDS data between LORIS and de-id buckets</span>
   <a class="anchor-link" href="#6" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -184,7 +183,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 
 <div id="7" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fa-solid fa-gears" style="margin-right: 6px; color: blue;"></i> Re-insertion of DCCIDs into Derivatives for LORIS Ingestion </span>
+  <span class="table-text"><i class="fa-solid fa-7" style="margin-right: 6px; color: blue;"></i> Re-insertion of DCCIDs into Derivatives for LORIS Ingestion </span>
   <a class="anchor-link" href="#7" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -212,7 +211,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 
 <div id="8" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fa-solid fa-gears" style="margin-right: 6px; color: blue;"></i> Clean-up Routines for Out-of-sync Derivatives in LORIS Bucket</span>
+  <span class="table-text"><i class="fa-solid fa-8" style="margin-right: 6px; color: blue;"></i> Clean-up Routines for Out-of-sync Derivatives in LORIS Bucket</span>
   <a class="anchor-link" href="#8" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
