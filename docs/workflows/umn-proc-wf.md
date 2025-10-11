@@ -167,8 +167,8 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 <strong>Contacts:</strong> Erik Lee, Monalisa Bilas<br>
 <strong>Frequency:</strong> Daily (initial routine &lt;1 hour; processing jobs may take ~1 day)<br>        
 <strong>Inputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code> (raw BIDS data)<br>
-<strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/derivatives/ses-{V0X}</code> (session-specific subject folders)) <br>
-<strong>Notes:</strong> The code that manages processing is available in this <a href="https://github.com/erikglee/HBCD_CBRAIN_PROCESSING">GitHub Repository</a> and <a href="https://hbcd-cbrain-processing.readthedocs.io/latest/index.html#">ReadTheDocs Documentation</a>. CBRAIN logs and file collections are stored internally for traceability.</p>
+<strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/derivatives/ses-{V0X}</code> (session-specific subject folders with Release Candidate IDs)<br>
+<strong>Notes:</strong> See the <a href="https://github.com/erikglee/HBCD_CBRAIN_PROCESSING">GitHub repository</a> and <a href="https://hbcd-cbrain-processing.readthedocs.io/latest/index.html#">Documentation</a> for the code that manages processing. CBRAIN logs and file collections are stored internally for traceability.</p>
 </ul>
 </div>
 
@@ -221,7 +221,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 
 <div id="7" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fa-solid fa-7" style="margin-right: 6px; color: blue;"></i> Re-insertion of DCCIDs into Derivatives for LORIS Ingestion </span>
+  <span class="table-text"><i class="fa-solid fa-7" style="margin-right: 6px; color: blue;"></i> Re-identification of Derivatives (i.e. re-insertion of DCCIDs) for LORIS</span>
   <a class="anchor-link" href="#7" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -229,27 +229,40 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Goal:</strong> Make de-identified derivative files available in LORIS by replacing Release Candidate IDs with DCCIDs (“re-iding”).</p>
+<p><strong>Goal:</strong> Re-identify de-identified derivatives by replacing Release Candidate IDs with DCCIDs, enabling upload to LORIS. <i>Ensures derivatives are accurately linked back to participant DCCIDs for downstream data integration.</i></p>
 <p><strong>Process:</strong></p>
 <ul>
-<li>Download the de-id derivatives and replace Release Candidate IDs with DCCIDs (in both file names and file contents, with specific routines for specific file types). Also replace anonymized with real site IDs.</li>
-<li>Upload resulting files to <code>s3://midb-hbcd-main-pr/reid_derivatives</code> with the metadata field <code>cbrain-timestamp</code> (from original file’s <code>LastModified</code> time)</li>
+  <li>Download de-identified derivatives from <code>s3://midb-hbcd-main-deid/derivatives</code>.</li>
+  <li>Replace all Release Candidate IDs with corresponding DCCIDs in both filenames and file contents (using file type–specific routines) for <b>(1)text-based files</b> (<code>.csv</code>, <code>.html</code>, <code>.json</code>, <code>.txt</code>, <code>.toml</code>, <code>.tsv</code>, <code>.log</code>) and <b>(2) EEG .set files</b> (<code>.set</code>, <code>.mat</code>)</li>
+  <li>Replace anonymized site IDs with real site IDs.</li>
+  <li>Upload re-identified files to <code>s3://midb-hbcd-main-pr/reid_derivatives</code> and set the metadata field <code>cbrain-timestamp</code> based on the original file’s <code>LastModified</code> value.</li>
 </ul>
+<p><i>Re-identification is performed on derivatives for the following pipelines:</i></p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+<tbody>
+<tr>
+<td>bibsnet<br>bme_x<br>hbcd_motion<br></td>
+<td>made<br>mriqc<br>mrsqc</td>
+<td>nibabies<br>osprey<br>qmri_postproc</td>
+<td>qsiprep<br>qsirecon-DIPYDKI<br>qsirecon-DSIStudio</td>
+<td>qsirecon-TORTOISE_model-&lt;MAPMRI|tensor&gt;<br>symri<br>xcp_d</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Contacts:</strong> Sriharshitha Anuganti, Erik Lee<br>
 <strong>Frequency:</strong> Runs daily<br>
-<strong>Inputs:</strong> Derived BIDS data <code>s3://midb-hbcd-main-deid/derivatives</code><br>
-<strong>Outputs:</strong> Derived BIDS data <code>s3://midb-hbcd-main-pr/reid_derivatives</code></p><br>
-<p><strong>Notes:</strong> </p><br>
+<strong>Inputs:</strong> <code>s3://midb-hbcd-main-deid/derivatives</code> (de-identified derivatives)<br>
+<strong>Outputs:</strong> <code>s3://midb-hbcd-main-pr/reid_derivatives</code> (re-identified derivatives)</p>
 <ul>
-<li>Update routines whenever pipeline filenames change.  </li>
-<li>See “Further Details on Re-ID Routines” for more information.  </li>
-<li>Older documentation referenced <code>VersionId</code>; now replaced by <code>LastModified</code> due to non-versioned de-id bucket.</li>
+<strong>Notes:</strong>
+  <li>Update re-ID routines whenever pipeline filenames or formats change.</li>
+  <li>Previous documentation referenced <code>VersionId</code> metadata; this has been replaced with <code>LastModified</code> since the de-ID bucket is non-versioned.</li>
 </ul>
 </div>
 
 <div id="8" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fa-solid fa-8" style="margin-right: 6px; color: blue;"></i> Clean-up Routines for Out-of-sync Derivatives in LORIS Bucket</span>
+  <span class="table-text"><i class="fa-solid fa-8" style="margin-right: 6px; color: blue;"></i> Cleanup for Out-of-Sync Derivatives in LORIS Bucket</span>
   <a class="anchor-link" href="#8" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -264,50 +277,9 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 <li>If number of files or timestamp fields are mismatched, delete the corresponding re-id data from LORIS (<code>s3://midb-hbcd-main-pr</code>)</li>
 </ul>
 <p><strong>Contacts:</strong> Sriharshitha Anuganti, Monalisa Bilas, Erik Lee<br>
-<strong>Frequency:</strong> Runs daily<br>
+<strong>Frequency:</strong> Daily<br>
 <strong>Inputs:</strong> Derived BIDS data located at <code>s3://midb-hbcd-main-pr/reid_derivatives</code> and <code>s3://midb-hbcd-main-deid/derivatives</code><br>
 <strong>Outputs:</strong> N/A<br>
 <strong>Notes:</strong> Ensures only synchronized derivatives remain in LORIS.</p>
 </div>
-
-## Further Details on Re-Id Routines
-
-The re-identification procedures described here apply to the following derivatives pipelines:
-
-<div id="pipeline" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text">Pipelines</span>
-  <a class="anchor-link" href="#pipelines" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<ul>
-<li>bibsnet  </li>
-<li>bme_x  </li>
-<li>hbcd_motion  </li>
-<li>made  </li>
-<li>mriqc  </li>
-<li>mrsqc  </li>
-<li>nibabies  </li>
-<li>osprey  </li>
-<li>qmri_postproc  </li>
-<li>qsiprep  </li>
-<li>qsirecon-DIPYDKI  </li>
-<li>qsirecon-DSIStudio  </li>
-<li>qsirecon-TORTOISE_model-MAPMRI  </li>
-<li>asirecon-TORTOISE_model-tensor  </li>
-<li>symri  </li>
-<li>xcp_d</li>
-</ul>
-</div>
-
-Pipeline outputs are present in the *s3://midb-hbcd-main-deid/derivatives* bucket, which contains de-identified data. Specifically, this bucket uses *release candidate IDs* as subject labels. At a high level, the re-identification routines replace these release candidate IDs with the corresponding *candidate IDs (DCCIDs)*.
-
-The re-identification routines process two types of files:
-
-1. **Standard text-based files** (.csv, .html, .json, .txt, .toml, .tsv, .log): In these files, all occurrences of release candidate IDs are replaced with the corresponding DCCIDs.  
-2. **EEG .set files** (with .set and .mat extensions): These routines recursively search through nested fields within the file structure to identify and replace release candidate IDs with DCCIDs.
-
+<br>
