@@ -52,7 +52,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 <strong>Frequency:</strong> Daily (&lt;1 hour)<br>
 <strong>Inputs:</strong> N/A<br>
 <strong>Outputs:</strong> <code>s3://midb-hbcd-main-pr-deidentification-list/release_identifiers.csv</code><br>
-<strong>Caveats / Notes:</strong> Phantom data may not yet be included.</p>
+<strong>Notes:</strong> Phantom data may not yet be included.</p>
 </div>
 
 <div id="2" class="table-banner" onclick="toggleCollapse(this)">
@@ -65,14 +65,15 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Goal:</strong> De-identify and upload raw BIDS sessions that meet the following criteria:</p>
+<p><strong>Goal:</strong> De-identify and upload raw BIDS sessions</p><br>
+<p><b>Criteria for De-identification:</b></p><br>
 <ul>
   <li>Subject is listed in the release ID mapping</li>
   <li>No existing session files in the de-ID bucket</li>
   <li>Session files are available in the LORIS bucket and are ≥1 day old</li>
 </ul>
 <br>
-<p><strong>When conditions are met:</strong></p>
+<p><strong>De-identification Procedure Overview:</strong></p>
 <ul>
   <li>De-identify and upload all supported session files to the de-ID bucket</li>
   <li>Update session metadata (<code>sessions.&lt;tsv|json&gt;</code>) in de-ID bucket</li>
@@ -82,31 +83,20 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr>
-  <td><b>REMOVED/RETAINED IDENTIFIERS:</b></td>
+  <td><i>REMOVED/RETAINED IDENTIFIERS:</i></td>
 </tr>
 <tr>
-  <td><strong>Removed</strong><br>
-<ul>
-  <li>PSCIDs, DCCIDs, and Site IDs</li>
-  <li>Manually populated fields (and thus prone to typos) that may contain these identifiers</li>
-</ul>
-  </td>
+  <td><strong>Removed</strong>: PSCIDs, DCCIDs, and Site IDs & manually populated fields (prone to typos) that commonly contain these identifiers</td>
 </tr>
 <tr>
-  <td><strong>Retained</strong><br>
-    <ul>
-    <li>Jittered patient age at acquisition</li>
-    <li>Acquisition dates/times</li>
-    <li>Acquisition device serial numbers</li>
-    </ul>
-  </td>
+  <td><strong>Retained</strong>: Jittered patient age at acquisition, Acquisition dates/times, and & Acquisition device serial numbers </td>
 </tr>
 </tbody>
 </table>
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed; padding-top; 0; margin-top: 0;">
 <tbody>
 <tr>
-  <td><b>FILE COVERAGE:</b></td>
+  <td><i>FILE COVERAGE:</i></td>
 </tr>
 <tr>
   <td><b>BIDS metadata</b> (<code>scans</code>/<code>session</code> tsv & JSONs)<br>
@@ -118,22 +108,15 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   </td>
 </tr>
 <tr>
-  <td><b>EEG</b><br>
-    <ul>
-    <li><b>sourcedata</b> (<code>eventlogs.txt</code>): Anonymize entries for <code>DataFile.Basename</code>, <code>DCCID</code>, and <code>Subject</code> columns</li>
-    <li><b>.set files:</b><br>
-    <ul>
-      <li>Replace nested DCCIDs/PSCIDs with Release Candidate IDs</li>
-      <li>Replace unapproved manual entries with “Anonymized”</li>
-    </ul>
-  </td>
+<td><b>EEG</b><br>
+  <ul>
+  <li><b>sourcedata</b> (<code>eventlogs.txt</code>): Anonymize entries for <code>DataFile.Basename</code>, <code>DCCID</code>, and <code>Subject</code> columns</li>
+  <li><b>.set files:</b> Replace <b>(1)</b> All DCCIDs/PSCIDs with Release Candidate IDs & <b>(2)</b> Unapproved manual entries with “Anonymized”</li>
+  </ul>
+</td>
 </tr>
 <tr>
-  <td><b>MRS NIfTI files:</b><br>
-    <ul>
-      <li>Remove <code>InstitutionName</code>, <code>InstitutionAddress</code>, <code>PatientSex</code>, and <code>PatientWeight</code> using <code>spec2nii</code></li>
-    </ul>
-  </td>
+  <td><b>MRS NIfTI files:</b><br><ul><li>Remove <code>InstitutionName</code>, <code>InstitutionAddress</code>, <code>PatientSex</code>, and <code>PatientWeight</code> using <code>spec2nii</code></li></ul></td>
 </tr>
 </tbody>
 </table>
@@ -155,7 +138,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 <strong>Frequency:</strong> Daily (&lt;1 hour)<br>
 <strong>Inputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code><br>
 <strong>Outputs:</strong> Internal CBRAIN records indicating existence of subject folder within BIDS directory<br>
-<strong>Caveats / Notes:</strong>  Each subject has a single CBRAIN <em>BidsSubject File Collection</em> linking all sessions, though sessions are processed independently.</p>
+<strong>Notes:</strong>  Each subject has a single CBRAIN <em>BidsSubject File Collection</em> linking all sessions, though sessions are processed independently.</p>
 </div>
 
 <div id="4" class="table-banner" onclick="toggleCollapse(this)">
@@ -175,22 +158,23 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 <li>Detect available sessions sessions in the BIDS directory and CBRAIN  </li>
 <li>Check for existing outputs or prior processing attempts  </li>
 <li>For sessions without outputs or attempted processing, verify that required prerequisite files exist and pass QC (from <code>scans.tsv</code>)  </li>
-<li>Select files for processing based on modality-specific rules (e.g., best T1w image only, all fMRI images passing QC</li>
+<li>Select files for processing based on modality-specific rules (e.g., best T1w image only, all fMRI images passing QC)</li>
 <li>Confirm dependencies between pipelines (e.g., BIBSNet outputs are required by Nibabies)</li>
 <li>Launch CBRAIN processing tasks using predefined settings and including only files selected for processing  </li>
+<li>CBRAIN uploads successful job outputs to session-specific folders on S3 and records the corresponding processing tasks and generated file collections internally.</li>
 </ol>
 <p>
 <strong>Contacts:</strong> Erik Lee, Monalisa Bilas<br>
 <strong>Frequency:</strong> Daily (initial routine &lt;1 hour; processing jobs may take ~1 day)<br>        
-<strong>Inputs:</strong> Raw BIDS data under s3://midb-hbcd-main-deid/assembly_bids<br>
-<strong>Outputs:</strong> CBRAIN uploads outputs from successful jobs to session-specific folders on S3 (s3://midb-hbcd-main-deid/derivatives/ses-{V0X}) and stores internal records of the processing ‘task’ and the created ‘file collections’ stemming from processing. <br>
-<strong>Caveats / Notes:</strong> The code that manages processing is available in this <a href="https://github.com/erikglee/HBCD_CBRAIN_PROCESSING">GitHub Repository</a> and <a href="https://hbcd-cbrain-processing.readthedocs.io/latest/index.html#">ReadTheDocs Documentation</a>. CBRAIN logs and file collections are stored internally for traceability.</p>
+<strong>Inputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code> (raw BIDS data)<br>
+<strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/derivatives/ses-{V0X}</code> (session-specific subject folders)) <br>
+<strong>Notes:</strong> The code that manages processing is available in this <a href="https://github.com/erikglee/HBCD_CBRAIN_PROCESSING">GitHub Repository</a> and <a href="https://hbcd-cbrain-processing.readthedocs.io/latest/index.html#">ReadTheDocs Documentation</a>. CBRAIN logs and file collections are stored internally for traceability.</p>
 </ul>
 </div>
 
 <div id="5" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fa-solid fa-5" style="margin-right: 6px; color: blue;"></i> Saving stdout/stderr Files for Failed CBRAIN Processing Tasks</span>
+  <span class="table-text"><i class="fa-solid fa-5" style="margin-right: 6px; color: blue;"></i>Saving stdout/stderr Logs for Failed CBRAIN Processing Tasks</span>
   <a class="anchor-link" href="#5" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -198,18 +182,17 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Goal:</strong> Ensure permanent records of all CBRAIN processing logs. Since jobs are deleted a few weeks after completion, this preserves failure records.</p>
-<p><strong>Contacts:</strong> Monalisa Bilas, Erik Lee<br><strong>Frequency:</strong> Runs daily (takes less than one hour)<br><strong>Inputs:</strong> CBRAIN task directories stored at <code>/scratch.global</code> (MSI)<br><strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/cbrain_std_logs/</code> (Files named <code>&lt;CBRAIN_Task_ID&gt;.out</code> and <code>&lt;CBRAIN_Task_ID&gt;.err</code>)</p>
-<p><strong>Caveats / Notes:</strong>  </p>
-<ul>
-<li>CBRAIN task IDs are unique—duplicates pose no issue.  </li>
-<li>Saving logs is only necessary when processing fails: successful ones already include <code>.cbrain</code> logs in their output directories. CBRAIN only sends processing outputs to S3 when processing is successful. </li>
-</ul>
+<p><strong>Goal:</strong> Preserve CBRAIN processing logs for failed tasks before the jobs are deleted (a few weeks after completion). Logs from successful jobs are already archived in the <code>.cbrain</code> logs included with the S3 outputs. Note that CBRAIN only transfers outputs to S3 for successful jobs.<br>
+<strong>Contacts:</strong> Monalisa Bilas, Erik Lee<br>
+<strong>Frequency:</strong> Daily (&lt;1 hour)<br>
+<strong>Inputs:</strong> CBRAIN task directories stored on MSI under <code>/scratch.global</code><br>
+<strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/cbrain_std_logs/</code> (Files named <code>{CBRAIN_Task_ID}.&lt;out|err&gt;.out</code>)<br>
+<strong>Notes:</strong> CBRAIN task IDs are unique, so duplicates pose no issue.
 </div>
 
 <div id="6" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fa-solid fa-6" style="margin-right: 6px; color: blue;"></i> Clean-up routines for out-of-sync raw BIDS data between LORIS and de-id buckets</span>
+  <span class="table-text"><i class="fa-solid fa-6" style="margin-right: 6px; color: blue;"></i> Cleanup for Out-of-Sync Raw BIDS Data (between LORIS & de-id buckets)</span>
   <a class="anchor-link" href="#6" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -217,23 +200,23 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Goal:</strong> Detect and clean up raw BIDS data when the LORIS and de-id buckets become out of sync, followed by cleanup of various data elements to set the stage for updated data.</p>
-<p><strong>Process:</strong></p>
+<p><strong>Goal:</strong> Detect and remove sessions where LORIS and de-ID data diverge.</p>
 <ol>
+<strong>Process:</strong>
 <li>Compare file counts between de-id and LORIS session folders</li>
-<li>If files counts are the same, compare the loris-version id of the de-id files to ensure they match</li>
-<li>If counts differ or <code>loris-versionid</code> mismatches, delete: all derivative files for that session, CBRAIN task processing record, and associated raw BIDS</li>
+<li>If files counts are the same, compare the <code>loris-versionid</code> of the de-id files to ensure they match</li>
+<li>If session counts or <code>loris-versionid</code> mismatch, delete all associated derivatives, CBRAIN task records, and raw BIDS data</li>
 </ol>
 <p><strong>Contacts:</strong> Erik Lee, Monalisa Bilas<br>
-<strong>Frequency:</strong> Runs daily. Unclear what the worst case performance is for how long the job will take to run.Runs daily (runtime varies by data volume)<br>
-<strong>Inputs:</strong>  </p>
+<strong>Frequency:</strong> Daily (runtime varies by data volume)<br>
 <ul>
+<strong>Inputs:</strong>
 <li>Raw BIDS data: <code>s3://midb-hbcd-main-deid/assembly_bids</code> and <code>s3://midb-hbcd-main-pr/assembly_bids</code>  </li>
 <li>Derivatives: <code>s3://midb-hbcd-main-deid/derivatives</code>  </li>
 <li>CBRAIN records of userfiles and tasks  </li>
 </ul>
 <p><strong>Outputs:</strong> N/A<br>
-<strong>Caveats / Notes:</strong> Following the completion of this workflow, any raw BIDS data from sessions with ‘out of sync’ files will be removed. This sets the stage for the de-id routines to be rerun for the given session.</p>
+<strong>Notes:</strong> Cleanup enables the next de-ID workflow to rerun cleanly for that session.</p>
 </div>
 
 <div id="7" class="table-banner" onclick="toggleCollapse(this)">
@@ -256,7 +239,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 <strong>Frequency:</strong> Runs daily<br>
 <strong>Inputs:</strong> Derived BIDS data <code>s3://midb-hbcd-main-deid/derivatives</code><br>
 <strong>Outputs:</strong> Derived BIDS data <code>s3://midb-hbcd-main-pr/reid_derivatives</code></p><br>
-<p><strong>Caveats / Notes:</strong>  </p>
+<p><strong>Notes:</strong> </p><br>
 <ul>
 <li>Update routines whenever pipeline filenames change.  </li>
 <li>See “Further Details on Re-ID Routines” for more information.  </li>
@@ -284,7 +267,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 <strong>Frequency:</strong> Runs daily<br>
 <strong>Inputs:</strong> Derived BIDS data located at <code>s3://midb-hbcd-main-pr/reid_derivatives</code> and <code>s3://midb-hbcd-main-deid/derivatives</code><br>
 <strong>Outputs:</strong> N/A<br>
-<strong>Caveats / Notes:</strong> Ensures only synchronized derivatives remain in LORIS.</p>
+<strong>Notes:</strong> Ensures only synchronized derivatives remain in LORIS.</p>
 </div>
 
 ## Further Details on Re-Id Routines
@@ -321,7 +304,7 @@ The re-identification procedures described here apply to the following derivativ
 </ul>
 </div>
 
-These pipelines are present in the *s3://midb-hbcd-main-deid/derivatives* bucket, which contains de-identified data. Specifically, this bucket uses *release candidate IDs* as subject labels. At a high level, the re-identification routines replace these release candidate IDs with the corresponding *candidate IDs (DCCIDs)*.
+Pipeline outputs are present in the *s3://midb-hbcd-main-deid/derivatives* bucket, which contains de-identified data. Specifically, this bucket uses *release candidate IDs* as subject labels. At a high level, the re-identification routines replace these release candidate IDs with the corresponding *candidate IDs (DCCIDs)*.
 
 The re-identification routines process two types of files:
 
