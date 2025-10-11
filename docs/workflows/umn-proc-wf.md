@@ -47,7 +47,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 </div>
 <div class="table-collapsible-content">
 <p>
-<strong>Goal of workflow:</strong> Maintain an up-to-date mapping of identifiers for de-identification workflows.<br>
+<strong>Goal:</strong> Maintain an up-to-date mapping of identifiers for de-identification workflows.<br>
 <strong>Contacts:</strong> Reed McEwan, Dan Duhon<br>
 <strong>Frequency:</strong> Daily (&lt;1 hour)<br>
 <strong>Inputs:</strong> N/A<br>
@@ -57,7 +57,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 
 <div id="2" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fa-solid fa-2" style="margin-right: 6px; color: blue;"></i> Raw BIDS Data De-identification</span>
+  <span class="table-text"><i class="fa-solid fa-2" style="margin-right: 6px; color: blue;"></i> Raw BIDS De-identification</span>
   <a class="anchor-link" href="#2" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -65,28 +65,89 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Goal of workflow:</strong><br>Identify and process imaging sessions that meet the following conditions:</p>
+<p><strong>Goal:</strong> De-identify and upload raw BIDS sessions that meet the following criteria:</p>
 <ul>
-<li>Subject listed in the release ID mapping  </li>
-<li>No existing session files in the de-ID bucket  </li>
-<li>Session files exist in the LORIS bucket and are ≥1 day old </li>
+  <li>Subject is listed in the release ID mapping</li>
+  <li>No existing session files in the de-ID bucket</li>
+  <li>Session files are available in the LORIS bucket and are ≥1 day old</li>
 </ul>
 <br>
-<p>When these conditions are met:</p>
+<p><strong>When conditions are met:</strong></p>
 <ul>
-<li>De-identify and upload all supported session files to the de-id bucket </li>
-<li>Update session-level metadata (<code>sessions.tsv</code> and <code>sessions.json</code>) in the de-id bucket  </li>
-<li>For traceability, tag each file with <code>loris-versionid</code>, which corresponds to the <code>VersionId</code> of the original LORIS file prior to de-identification</li>
+  <li>De-identify and upload all supported session files to the de-ID bucket</li>
+  <li>Update session metadata (<code>sessions.&lt;tsv|json&gt;</code>) in de-ID bucket</li>
+  <li>Tag each file with its <code>loris-versionid</code> (corresponds to <code>VersionId</code> in original LORIS files) for traceability</li>
 </ul>
+<br>
+<br>
+<p><strong>REMOVED/RETAINED IDENTIFIERS</strong></p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr>
+  <td><strong>Removed</strong></td>
+  <td>
+<ul>
+  <li>PSCIDs, DCCIDs, and Site IDs</li>
+  <li>Manually populated fields (and thus prone to typos) that may contain these identifiers</li>
+</ul>
+  </td>
+</tr>
+<tr>
+  <td><strong>Retained</strong></td>
+  <td>
+    <ul>
+    <li>Jittered patient age at acquisition</li>
+    <li>Acquisition dates/times</li>
+    <li>Acquisition device serial numbers</li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
+<p><strong>FILE COVERAGE:</strong></p>
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;"><b>BIDS metadata</b><br>(<code>scans</code>/<code>session</code> tsv & JSONs)</td>
+  <td>
+      <ul>
+      <li>Remove <code>PatientName</code> and <code>PatientBirthDate</code> from JSONs</li>
+      <li>Replace site info with anonymized site IDs via mapping file</li>
+      <li>Remove <code>InstitutionAddress</code>, <code>InstitutionalDepartmentName</code>, and <code>InstitutionName</code></li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;">
+  <b>EEG sourcedata</b><br>(<code>eventlogs.txt</code>)</td>
+  <td>
+    <ul><li>Anonymize entries for <code>DataFile.Basename</code>, <code>DCCID</code>, and <code>Subject</code> columns</li></ul>
+  </td>
+</tr>
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;"><b>EEG .set files:</b></td>
+  <td style="word-wrap: break-word; white-space: normal;">
+    <ul>
+      <li>Replace nested DCCIDs/PSCIDs with Release Candidate IDs</li>
+      <li>Replace unapproved manual entries with “Anonymized”</li>
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td><b>MRS NIfTI files:</b></td>
+  <td>
+    <ul>
+      <li>Remove <code>InstitutionName</code>, <code>InstitutionAddress</code>, <code>PatientSex</code>, and <code>PatientWeight</code> using <code>spec2nii</code></li>
+    </ul>
+  </td>
+</tr>
+</tbody>
+</table>
 <p><strong>Contacts:</strong> Sriharshitha Anuganti, Erik Lee<br>
-<strong>Frequency:</strong> Daily at PM CST (processes may need to be put into place to ensure workflow ends within 24 hours)<br>
-<strong>Inputs:</strong> <code>s3://midb-hbcd-main-pr/assembly_bids</code> (raw BIDS data, contain DCCIDs and other identifying information)<br>
-<strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code> (contains Release Candidate IDs)<br>
-<strong>Caveats / Notes:</strong>  </p>
-<ul>
-<li>Additional details about file-specific de-identification procedures (file type specific details, types of information that is removed) are provided in the <strong>De-Identification Details</strong> section.  </li>
-<li>Certain rare or low-priority EEG files are currently excluded.</li>
-</ul>
+<strong>Frequency:</strong> Daily (PM CST; ensure completion within 24 hours)<br>
+<strong>Inputs:</strong> <code>s3://midb-hbcd-main-pr/assembly_bids</code> (raw BIDS data with DCCIDs)<br>
+<strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code> (with Release Candidate IDs)<br>
+<strong>Notes:</strong> EEG sourcedata files <code>eventlogs.edat3</code> and <code>eeg_flags.json</code> are not yet supported.</p>
 </div>
 
 <div id="3" class="table-banner" onclick="toggleCollapse(this)">
@@ -95,7 +156,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Goal of workflow:</strong> Make CBRAIN aware of subjects available for processing.<br>
+<p><strong>Goal:</strong> Make CBRAIN aware of subjects available for processing.<br>
 <strong>Contacts:</strong> Monalisa Bilas, Erik Lee<br>
 <strong>Frequency:</strong> Daily (&lt;1 hour)<br>
 <strong>Inputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code><br>
@@ -143,7 +204,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Goal of workflow:</strong> Ensure permanent records of all CBRAIN processing logs. Since jobs are deleted a few weeks after completion, this preserves failure records.</p>
+<p><strong>Goal:</strong> Ensure permanent records of all CBRAIN processing logs. Since jobs are deleted a few weeks after completion, this preserves failure records.</p>
 <p><strong>Contacts:</strong> Monalisa Bilas, Erik Lee<br><strong>Frequency:</strong> Runs daily (takes less than one hour)<br><strong>Inputs:</strong> CBRAIN task directories stored at <code>/scratch.global</code> (MSI)<br><strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/cbrain_std_logs/</code> (Files named <code>&lt;CBRAIN_Task_ID&gt;.out</code> and <code>&lt;CBRAIN_Task_ID&gt;.err</code>)</p>
 <p><strong>Caveats / Notes:</strong>  </p>
 <ul>
@@ -162,7 +223,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Goal of workflow:</strong> Detect and clean up raw BIDS data when the LORIS and de-id buckets become out of sync, followed by cleanup of various data elements to set the stage for updated data.</p>
+<p><strong>Goal:</strong> Detect and clean up raw BIDS data when the LORIS and de-id buckets become out of sync, followed by cleanup of various data elements to set the stage for updated data.</p>
 <p><strong>Process:</strong></p>
 <ol>
 <li>Compare file counts between de-id and LORIS session folders</li>
@@ -191,7 +252,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Goal of workflow:</strong> Make de-identified derivative files available in LORIS by replacing Release Candidate IDs with DCCIDs (“re-iding”).</p>
+<p><strong>Goal:</strong> Make de-identified derivative files available in LORIS by replacing Release Candidate IDs with DCCIDs (“re-iding”).</p>
 <p><strong>Process:</strong></p>
 <ul>
 <li>Download the de-id derivatives and replace Release Candidate IDs with DCCIDs (in both file names and file contents, with specific routines for specific file types). Also replace anonymized with real site IDs.</li>
@@ -219,7 +280,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Goal of workflow:</strong> Remove re-id derivatives from LORIS when they become out of sync with the de-id derivatives.</p>
+<p><strong>Goal:</strong> Remove re-id derivatives from LORIS when they become out of sync with the de-id derivatives.</p>
 <p><strong>Process:</strong> For each subject/session/pipeline:  </p>
 <ul>
 <li>Compare <code>LastModified</code> and <code>cbrain-timestamp</code> values between <code>s3://midb-hbcd-main-pr/reid_derivatives</code> and <code>s3://midb-hbcd-main-deid/derivatives</code>  </li>
@@ -231,36 +292,6 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 <strong>Outputs:</strong> N/A<br>
 <strong>Caveats / Notes:</strong> Ensures only synchronized derivatives remain in LORIS.</p>
 </div>
-
-## Further Details on De-Id Routines
-
-The de-identification described here covers the procedures used on s3://midb-hbcd-main-pr/assembly_bids, which is ‘raw BIDS’ and uses DCCIDs as subject labels. During de-identification the following features are removed:
-
-* PSCIDs  
-* DCCIDs  
-* Site IDs  
-* Fields that commonly contain PSCIDs/DCCIDs/Site IDs, that are manually populated and therefore prone to typos
-
-Other features that are of interest but are not removed include:
-
-* Patient age at acquisition (available in jittered form)  
-* Acquisition dates/times for different study elements  
-* Acquisition device serial numbers
-
-The de-identification procedures of raw BIDS data largely covers the following groups of files:
-
-* Standard BIDS metadata text sources such as `scans.tsv`, `session.tsv`, JSON files  
-    * In motion files, any JSON fields with `PatientName` or `PatientBirthDate` are deleted  
-    * In scans/sessions tsv/json files, the site information is replaced with anonymized site IDs based on a site mapping file.  
-    * All other JSON files known to contain site IDs have `InstitutionAddress`, `InstitutionalDepartmentName`, and `InstitutionName` deleted  
-* EEG `eventlogs.txt` sourcedata files: Custom routines anonymize entries for `DataFile.Basename`, `DCCID`, and `Subject` columns  
-* EEG .set files  
-    * Custom routines recursively search through nested fields and replaces DCCIDs/PSCIDs with Release Candidate IDs  
-    * Certain fields likely to contain manually entered information such as DCCID/PSCID have their text replaced with ‘Anonymized’  
-    * Other fields likely to contain manually entered information have values outside of a pre-approved list of strings replaced with ‘Anonymized’  
-* **MRS Nifti files:** Fields `InstitutionName`, `InstitutionAddress`, `PatientSex`, and `PatientWeight` are removed from nifti headers using spec2nii
-
-Some files are not currently supported by de-identification routines and have thus far not been copied to any of the de-identified data stores. This includes files from the EEG sourcedata directory (i.e. `sub-{ID}/ses-{V0X}/eeg/sourcedata`): `eventlogs.edat3` and `eeg_flags.json` files
 
 ## Further Details on Re-Id Routines
 
