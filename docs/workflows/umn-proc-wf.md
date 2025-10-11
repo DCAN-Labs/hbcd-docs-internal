@@ -4,7 +4,7 @@
 
 ## Overview
 
-This documentation describes how UMN handles imaging data after it has been curated by LORIS into BIDS format. At a high level, UMN’s manipulations of the BIDS data mostly involves de-identification of the data and post-processing with containerized pipelines (such as nibabies). The workflow is largely designed in 8 independent components that rely on the actions or outputs of one another to curate processing. Briefly, these workflows are as follows:
+This documentation describes how UMN handles imaging data after it has been curated by LORIS into BIDS format. At a high level, UMN’s manipulations of the BIDS data mostly involves de-identification of the data and post-processing with containerized pipelines (such as Nibabies). The workflow is largely designed in 8 independent components that rely on the actions or outputs of one another to curate processing. Briefly, these workflows are as follows:
 
 1. Creation of Release Candidate IDs that will be used for anonymization  
 2. De-identification routines for the raw BIDS data  
@@ -28,66 +28,12 @@ This documentation describes how UMN handles imaging data after it has been cura
 
 The incoming data elements from a session, ranging from MRI (initial scans along with any rescans), EEG, Axivity, GABI, and manual QC ratings may come into the LORIS assembly\_bids structure over the course of a few weeks. Processing of any pipeline will not become stable until the last data element of a session comes in. Therefore, certain processing workflows that are intended for automated QC will be slowed down while other data elements are coming in.
 
-### Relevant Terms
-
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
-<thead>
-    <th>Term/Location Name</th>
-    <th>Definition/Description</th>
-</thead>
-<tbody>
-<tr>
-<td>Release Candidate ID</td>
-<td style="word-wrap: break-word; white-space: normal;">Anonymized ID used as the BIDS subject label in any public releases</td>
-</tr>
-<tr>
-<td>DCCID and/or Candidate ID</td>
-<td style="word-wrap: break-word; white-space: normal;">ID used as the BIDS subject label in LORIS and other internal data sources</td>
-</tr>
-<tr>
-<td>PSCID</td>
-<td style="word-wrap: break-word; white-space: normal;">Additional ID used in LORIS and during data collection. This ID will have begin with a five character sequence where the first two characters indicate participant status and the last three characters indicate the recruitment site</td>
-</tr>
-<tr>
-<td>s3://midb-hbcd-main-pr/assembly_bids</td>
-<td style="word-wrap: break-word; white-space: normal;">The location of raw BIDS data curated by LORIS. This data utilizes DCCIDs for subject labels.</td>
-</tr>
-<tr>
-<td>s3://midb-hbcd-main-deid/assembly_bids</td>
-<td style="word-wrap: break-word; white-space: normal;">The location of the anonymized raw BIDS data. This data utilizes Release Candidate IDs for subject labels</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">s3://midb-hbcd-main-pr-deidentification-list/release_identifiers_YYYYMMDD.csv</td>
-<td style="word-wrap: break-word; white-space: normal;">The location of the ID mapping file, showing the relationship between the various types of IDs used in HBCD. A new version of this file is created daily.&nbsp;</td>
-</tr>
-<tr>
-<td>de-id</td>
-<td style="word-wrap: break-word; white-space: normal;">The process/outputs associated with replacing DCCIDs/PSCIDs with Release Candidate IDs</td>
-</tr>
-<tr>
-<td>re-id</td>
-<td style="word-wrap: break-word; white-space: normal;">The process/outputs associated with replacing Release Candidate IDs with DCCIDs</td>
-</tr>
-<tr>
-<td>Post-processing pipelines, BIDS Apps</td>
-<td style="word-wrap: break-word; white-space: normal;">Terms used to denote pipelines whose goal is to take imaging, eeg, or other data organized in BIDS and run numerical algorithms to create outputs that can be used for further processing or for statistical analyses. The outputs of these pipelines are referred to as derivatives or imaging-derived phenotypes depending on the context.</td>
-</tr>
-<tr>
-<td>derivatives</td>
-<td style="word-wrap: break-word; white-space: normal;">Any files produced by a post-processing pipeline. In other words, the outputs of containerized pipelines or BIDS Apps (such as Nibabies) that are run in CBRAIN.</td>
-</tr>
-<tr>
-<td>Imaging-derived phenotypes</td>
-<td style="word-wrap: break-word; white-space: normal;">Scalar values that are output from a pipeline (such as brain volume) that can be concatenated across subjects and used for statistical analyses</td>
-</tr>
-</tbody>
-</table>
 
 ## Individual Workflows
 
 ### Creation of Release Candidate IDs that will be used for anonymization
 
-**Goal of workflow:** Upload new versions of the release identifier mapping spreadsheet as the study progresses, so that new subjects can be included in de-identified processing workflows.            
+**Goal of workflow:** Upload new versions of the release identifier mapping spreadsheet as the study progresses, so that new subjects can be included in de-identified processing workflows.    
 **Relevant contacts:** Reed McEwan, Dan Duhon           
 **Frequency:** Runs daily (takes less than one hour to complete)            
 **Inputs:** N/A             
@@ -105,10 +51,9 @@ Identify and process imaging sessions that meet the following conditions:
 
 When these conditions are met:
 
-1. All supported files are de-identified and added to the de-id bucket  
+1. All supported files under the session prefix are de-identified and added to the de-id bucket  
 2. The subject’s `sessions.tsv` and `sessions.json` files are updated in the de-id bucket  
-3. De-identified outputs include metadata for tracking synchronization with LORIS  
-   - Each file includes the S3 metadata field `loris-versionid`, which corresponds to the `VersionId` of the original LORIS file
+3. De-identified outputs include metadata for tracking synchronization with LORIS: Each file includes the S3 metadata field `loris-versionid`, which corresponds to the `VersionId` of the original LORIS file prior to de-identification
 
 **Relevant contacts:** Sriharshitha Anuganti, Erik Lee          
 **Frequency:** Runs daily at **11:00 PM CST**, Workflow should complete within 24 hours         

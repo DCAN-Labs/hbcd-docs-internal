@@ -65,7 +65,7 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
         </tr>
         <tr>
         <td>PSCID</td>
-        <td style="word-wrap: break-word; white-space: normal;">An additional ID that is used in LORIS and during data collection. This ID will have begin with a five character sequence where the first two characters indicate participant status and the last three characters indicate the recruitment site.</td>
+        <td style="word-wrap: break-word; white-space: normal;">Additional ID used in LORIS and during data collection. This ID begins with a five character sequence where the first two characters indicate participant status and the last three characters indicate the recruitment site.</td>
         </tr>
         <tr>
         <td>de-identification/de-id</td>
@@ -83,6 +83,30 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
         <td>Third party</td>
         <td style="word-wrap: break-word; white-space: normal;">Refers to external organizations or companies that provide proprietary assessments, scoring tools, or data systems used to collect standardized behavioral, cognitive, and developmental data across study sites</td>
         </tr>
+        <tr>
+          <td>s3://midb-hbcd-main-pr/assembly_bids</td>
+          <td style="word-wrap: break-word; white-space: normal;">The location of raw BIDS data curated by LORIS. This data utilizes DCCIDs for subject labels.</td>
+        </tr>
+        <tr>
+      <td>s3://midb-hbcd-main-deid/assembly_bids</td>
+      <td style="word-wrap: break-word; white-space: normal;">The location of the anonymized raw BIDS data. This data utilizes Release Candidate IDs for subject labels</td>
+      </tr>
+      <tr>
+      <td style="word-wrap: break-word; white-space: normal;">s3://midb-hbcd-main-pr-deidentification-list/release_identifiers_YYYYMMDD.csv</td>
+      <td style="word-wrap: break-word; white-space: normal;">The location of the ID mapping file, showing the relationship between the various types of IDs used in HBCD. A new version of this file is created daily.&nbsp;</td>
+      </tr>
+<tr>
+<td>Post-processing pipelines, BIDS Apps</td>
+<td style="word-wrap: break-word; white-space: normal;">Terms used to denote pipelines whose goal is to take imaging, eeg, or other data organized in BIDS and run numerical algorithms to create outputs that can be used for further processing or for statistical analyses. The outputs of these pipelines are referred to as derivatives or imaging-derived phenotypes depending on the context.</td>
+</tr>
+<tr>
+<td>derivatives</td>
+<td style="word-wrap: break-word; white-space: normal;">Any files produced by a post-processing pipeline. In other words, the outputs of containerized pipelines or BIDS Apps (such as Nibabies) that are run in CBRAIN.</td>
+</tr>
+<tr>
+<td>Imaging-derived phenotypes</td>
+<td style="word-wrap: break-word; white-space: normal;">Scalar values that are output from a pipeline (such as brain volume) that can be concatenated across subjects and used for statistical analyses</td>
+</tr>
     </tbody>
     </table>
 </div>
