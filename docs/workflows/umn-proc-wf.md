@@ -271,15 +271,20 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 </div>
 <div class="table-collapsible-content">
 <p><strong>Goal:</strong> Remove re-identified derivatives from LORIS when they become out of sync with corresponding de-identified derivatives.</p>
-<p><strong>Process:</strong> For each subject/session/pipeline:  </p>
+<p><strong>Process:</strong></p>
 <ul>
-<li>Compare <code>LastModified</code> and <code>cbrain-timestamp</code> values between <code>s3://midb-hbcd-main-pr/reid_derivatives</code> and <code>s3://midb-hbcd-main-deid/derivatives</code>  </li>
-<li>If number of files or timestamp fields are mismatched, delete the corresponding re-id data from LORIS (<code>s3://midb-hbcd-main-pr</code>)</li>
+  <li>For each subject/session/pipeline, compare <code>LastModified</code> (de-ID) and <code>cbrain-timestamp</code> (re-ID) values between:
+    <ul>
+      <li><code>s3://midb-hbcd-main-deid/derivatives</code></li>
+      <li><code>s3://midb-hbcd-main-pr/reid_derivatives</code></li>
+    </ul>
+  </li>
+  <li>If the number of files or timestamps differ, delete the corresponding re-identified data from <code>s3://midb-hbcd-main-pr</code>.</li>
 </ul>
 <p><strong>Contacts:</strong> Sriharshitha Anuganti, Monalisa Bilas, Erik Lee<br>
 <strong>Frequency:</strong> Daily<br>
-<strong>Inputs:</strong> Derived BIDS data located at <code>s3://midb-hbcd-main-pr/reid_derivatives</code> and <code>s3://midb-hbcd-main-deid/derivatives</code><br>
+<strong>Inputs:</strong> <code>s3://midb-hbcd-main-pr/reid_derivatives</code> and <code>s3://midb-hbcd-main-deid/derivatives</code><br>
 <strong>Outputs:</strong> N/A<br>
-<strong>Notes:</strong> Ensures only synchronized derivatives remain in LORIS.</p>
+<strong>Notes:</strong> Ensures only synchronized derivatives remain in LORIS and prevents outdated or mismatched data from being used.</p>
 </div>
 <br>
