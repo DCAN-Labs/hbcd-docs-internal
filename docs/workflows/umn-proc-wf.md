@@ -229,7 +229,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Goal:</strong> Re-identify de-identified derivatives by replacing Release Candidate IDs with DCCIDs, enabling upload to LORIS. <i>Ensures derivatives are accurately linked back to participant DCCIDs for downstream data integration.</i></p>
+<p><strong>Goal:</strong> Re-identify de-identified derivatives by replacing Release Candidate IDs with DCCIDs, enabling upload to LORIS. <i>Ensures derivatives are accurately linked back to participant DCCIDs to facilitate internal QC with Workgroups and tabulation of derivatives.</i></p>
 <p><strong>Process:</strong></p>
 <ul>
   <li>Download de-identified derivatives from <code>s3://midb-hbcd-main-deid/derivatives</code>.</li>
@@ -270,7 +270,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<p><strong>Goal:</strong> Remove re-id derivatives from LORIS when they become out of sync with the de-id derivatives.</p>
+<p><strong>Goal:</strong> Remove re-identified derivatives from LORIS when they become out of sync with corresponding de-identified derivatives.</p>
 <p><strong>Process:</strong> For each subject/session/pipeline:  </p>
 <ul>
 <li>Compare <code>LastModified</code> and <code>cbrain-timestamp</code> values between <code>s3://midb-hbcd-main-pr/reid_derivatives</code> and <code>s3://midb-hbcd-main-deid/derivatives</code>  </li>

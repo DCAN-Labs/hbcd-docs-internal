@@ -1,18 +1,7 @@
 
-
-
-
-
-
-
-
-
-
-
-
 # 8
 
-<p><strong>Goal:</strong> Remove re-identified derivatives from LORIS when they become out of sync with corresponding de-identified derivatives.</p>
+
 
 <p><strong>Process:</strong></p>
 <ul>
