@@ -4,34 +4,30 @@
 
 ## Overview
 
-This documentation outlines how UMN processes imaging data after it has been curated by LORIS into BIDS format.  
-The workflow consists of **eight interdependent components** that handle de-identification, pipeline processing, synchronization, and cleanup of imaging data.
+This documentation describes how UMN handles imaging data after it has been curated by LORIS into BIDS format. At a high level, UMN’s manipulations of the BIDS data mostly involves de-identification of the data and post-processing with containerized pipelines (such as Nibabies). The workflow is largely designed in 8 independent components that rely on the actions or outputs of one another to curate processing. Briefly, these workflows are as follows:
 
-### Primary Goals, Functionalities, & Constraints
-- Ensure only anonymized data (using Release Candidate IDs) is released publicly  
-- Prevent overlap of Release Candidate IDs and DCCIDs/PSCIDs within the same dataset 
-- The raw BIDS data curated by LORIS will be periodically updated. These updates include changes to BIDS metadata, which may or may not impact processing pipelines. They also include changes to the data files themselves and changes to QC values.   
-- The derived processing outputs released to the public must be from the same processing stream that internal HBCD investigators use for QC purposes.  
-- Limit unnecessary reprocessing while ensuring updates are reflected appropriately. For example, if ses-V03 becomes available for a given subject, this should not initiate re-processing of ses-V02 data. However if new files or updated QC becomes available for ses-V02 then ses-V02 reprocessing should occur.  
-- Provide LORIS with access to derived outputs for internal QC and tabulation of derivatives   
+1. Creation of Release Candidate IDs that will be used for anonymization  
+2. De-identification routines for the raw BIDS data  
+3. ‘Registration’ of subjects from the raw BIDS data into CBRAIN  
+4. Post-processing of de-identified data  
+5. Saving stdout/stderr files for failed CBRAIN processing tasks to S3  
+6. Clean-up routines that remove raw and derived data when the LORIS and BIDS data become out of sync.  
+7. Routines that re-insert DCCIDs into the outputs of post-processing derivatives so that they can be ingested and viewed in LORIS   
+8. Clean-up routines that remove out-of-sync post-processing derivatives from LORIS’ bucket  
 
-### General Limitations
+**These workflows operate together to facilitate a processing system with the following desired functionalities and constraints:**
+
+* Only anonymized data using Release Candidate IDs is allowed for public release  
+* Release Candidate IDs and DCCIDs/PSCIDs should never be found in the same data structure. However if they ever are found in the same structure, it is better for this to be in an internal facing data store.  
+* The raw BIDS data curated by LORIS will be periodically updated. These updates include changes to BIDS metadata, which may or may not impact processing pipelines. They also include changes to the data files themselves and changes to QC values.  
+* The derived processing outputs released to the public must be from the same processing stream that internal HBCD investigators use for QC purposes.  
+* LORIS must have access to derived data outputs for creating tabulated versions of imaging derived phenotypes, and for facilitating internal QC for the consortium.  
+* Data should be re-processed as infrequently as possible while still maintaining integrity between inputs/outputs. For example, if ses-V03 becomes available for a given subject, this should not initiate re-processing of data from ses-V02. However if new files or updated QC becomes available for ses-V02 then ses-V02 reprocessing should occur.
+
+### General limitations of current workflows
+
 The incoming data elements from a session, ranging from MRI (initial scans along with any rescans), EEG, Axivity, GABI, and manual QC ratings may come into the LORIS assembly_bids structure over the course of a few weeks. Processing of any pipeline will not become stable until the last data element of a session comes in. Therefore, certain processing workflows that are intended for automated QC will be slowed down while other data elements are coming in.
 
-## Workflow Summary
-
-| # | Workflow | Core Function | Frequency |
-|---|-----------|----------------|------------|
-| 1 | **Release Candidate ID Creation** | Uploads updated release ID mappings for new subjects | Daily |
-| 2 | **Raw BIDS De-Identification** | Removes identifiers and uploads anonymized data to de-ID bucket | Daily |
-| 3 | **CBRAIN Subject Registration** | Registers de-identified subjects in CBRAIN for processing | Daily |
-| 4 | **Post-Processing of De-ID Data** | Runs pipelines (e.g., Nibabies, QSIPrep) on de-identified BIDS | Daily |
-| 5 | **CBRAIN Log Preservation** | Archives failed task logs for permanent tracking | Daily |
-| 6 | **Raw BIDS Sync Cleanup** | Removes outdated data when LORIS and de-ID buckets diverge | Daily |
-| 7 | **Re-ID for LORIS** | Replaces Release Candidate IDs with DCCIDs for LORIS ingestion | Daily |
-| 8 | **Derivative Sync Cleanup** | Removes outdated re-ID derivatives from LORIS bucket | Daily |
-
----
 
 ## Individual Workflows
 
