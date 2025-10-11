@@ -73,7 +73,6 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 </ul>
 </div>
 
-
 <div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text">Registration of Subjects from Raw BIDS Data into CBRAIN</span>
@@ -88,31 +87,42 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 </div>
 
 
-
-### Post-processing of De-identified Data
-
-**Goal of workflow:** Initiate processing of de-identified BIDS data through post-processing BIDS Apps in CBRAIN (e.g., `nibabies`, `bibsnet`, `qsiprep`) to produce derivatives.
-
-**Workflow Steps:**
-
-1. Identify available subjects and sessions in the BIDS directory and CBRAIN  
-2. Check for existing outputs or prior processing attempts  
-3. Verify that required files exist and pass QC (from `scans.tsv`)  
-4. Select files for processing based on modality-specific rules  
-   - *Example:* Use only the best T1w image or all fMRI images passing QC  
-5. Confirm dependencies between pipelines (e.g., `bibsnet` outputs required by `nibabies`)  
-6. Launch CBRAIN processing tasks using predefined settings  
-7. Upload successful outputs to S3 and record tasks in CBRAIN  
-
-**Relevant contacts:** Erik Lee, Monalisa Bilas         
-**Frequency:** Runs daily (initial routine <1 hour; processing jobs may take ~1 day)        
+<div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Post-processing of De-identified Data</span>
+  <a class="anchor-link" href="#def-terms" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p>
+<strong>Goal of workflow:</strong> Initiate processing of de-identified BIDS data through post-processing BIDS Apps in CBRAIN (e.g., <code>Nibabies</code>, <code>BIBSNet</code>, <code>QSIPrep</code>, etc.) to produce derivatives.</p>
+<p><strong>Workflow Steps:</strong></p>
+<ol>
+<li>Identify available subjects and sessions in the BIDS directory and CBRAIN  </li>
+<li>Check for existing outputs or prior processing attempts  </li>
+<li>For sessions without outputs or attempted processing, verify that required prerequisite files exist and pass QC (from <code>scans.tsv</code>)  </li>
+<li>Select files for processing based on modality-specific rules. <em>Example:</em> Use only the best T1w image or all fMRI images passing QC</li>
+<li>For sessions with requisite files present for processing, confirm dependencies between pipelines (e.g., BIBSNet outputs are required by Nibabies)</li>
+<li>Launch CBRAIN processing tasks using predefined settings and including only files selected for processing  </li>
+<li>CBRAIN uploads outputs from successful jobs to S3 and stores internal records of the processing ‘task’ and the created ‘file collections’ stemming from processing.</li>
+</ol>
+<p><strong>Relevant contacts:</strong> Erik Lee, Monalisa Bilas<br><strong>Frequency:</strong> Runs daily (initial routine <1 hour; processing jobs may take ~1 day)        
 **Inputs:** `s3://midb-hbcd-main-deid/assembly_bids`        
-**Outputs:** `s3://midb-hbcd-main-deid/derivatives/ses-<label>`  
+**Outputs:** `s3://midb-hbcd-main-deid/derivatives/ses-<label>`  </p>
+<p><strong>Caveats / Notes:</strong>  </p>
+<ul>
+<li>Workflow code and documentation:  <ul>
+<li><a href="https://github.com/erikglee/HBCD_CBRAIN_PROCESSING">GitHub Repository</a>  </li>
+<li><a href="https://hbcd-cbrain-processing.readthedocs.io/latest/index.html#">ReadTheDocs Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
 
-**Caveats / Notes:**  
-- Workflow code and documentation:  
-  - [GitHub Repository](https://github.com/erikglee/HBCD_CBRAIN_PROCESSING)  
-  - [ReadTheDocs Documentation](https://hbcd-cbrain-processing.readthedocs.io/latest/index.html#)
+
 
 ### Saving stdout/stderr Files for Failed CBRAIN Processing Tasks
 
