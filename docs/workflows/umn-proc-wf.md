@@ -31,46 +31,63 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 
 ## Individual Workflows
 
-### Creation of Release Candidate IDs that will be used for anonymization
+<div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Creation of Release Candidate IDs used for anonymization</span>
+  <a class="anchor-link" href="#def-terms" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><strong>Goal of workflow:</strong> Upload new versions of the release identifier mapping spreadsheet as the study progresses, so that new subjects can be included in de-identified processing workflows.<br><strong>Relevant contacts:</strong> Reed McEwan, Dan Duhon<br><strong>Frequency:</strong> Runs daily (takes less than one hour to complete)<br><strong>Inputs:</strong> N/A<br><strong>Outputs:</strong> <code>s3://midb-hbcd-main-pr-deidentification-list/release_identifiers.csv</code><br><strong>Caveats / Notes:</strong> Phantom data is (probably) not currently included in the output file.</p>
+</div>
 
-**Goal of workflow:** Upload new versions of the release identifier mapping spreadsheet as the study progresses, so that new subjects can be included in de-identified processing workflows.    
-**Relevant contacts:** Reed McEwan, Dan Duhon           
-**Frequency:** Runs daily (takes less than one hour to complete)            
-**Inputs:** N/A             
-**Outputs:** `s3://midb-hbcd-main-pr-deidentification-list/release_identifiers.csv`         
-**Caveats / Notes:** Phantom data is (probably) not currently included in the output file.
+<div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">De-identification routines for the raw BIDS data</span>
+  <a class="anchor-link" href="#def-terms" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><strong>Goal of workflow:</strong><br>Identify and process imaging sessions that meet the following conditions:</p>
+<ul>
+<li>Session belongs to a subject listed in the identifier mapping file  </li>
+<li>Session does <em>not</em> have existing files in the de-id bucket  </li>
+<li>Session <em>does</em> have files in the LORIS bucket, with all files at least one day old  </li>
+</ul>
+<p>When these conditions are met:</p>
+<ol>
+<li>All supported files under the session prefix are de-identified and added to the de-id bucket  </li>
+<li>The subject’s <code>sessions.tsv</code> and <code>sessions.json</code> files are updated in the de-id bucket  </li>
+<li>De-identified outputs include metadata for tracking synchronization with LORIS: Each file includes the S3 metadata field <code>loris-versionid</code>, which corresponds to the <code>VersionId</code> of the original LORIS file prior to de-identification</li>
+</ol>
+<p><strong>Relevant contacts:</strong> Sriharshitha Anuganti, Erik Lee<br><strong>Frequency:</strong> Runs daily at 11 PM CST, processes may need to be put into place to ensure workflow ends within 24 hours<br><strong>Inputs:</strong> <code>s3://midb-hbcd-main-pr/assembly_bids</code> (raw BIDS data, contain DCCIDs and other identifying information)<br><strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code> (contains Release Candidate IDs)<br><strong>Caveats / Notes:</strong>  </p>
+<ul>
+<li>Additional details about file-specific de-identification procedures (file type specific details, types of information that is removed) are provided in the <strong>De-Identification Details</strong> section.  </li>
+<li>Certain rare or lower-priority EEG files are not currently included in the de-id routines.</li>
+</ul>
+</div>
 
-### De-identification routines for the raw BIDS data
 
-**Goal of workflow:**  
-Identify and process imaging sessions that meet the following conditions:
+<div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Registration of Subjects from Raw BIDS Data into CBRAIN</span>
+  <a class="anchor-link" href="#def-terms" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><strong>Goal of workflow:</strong> Make CBRAIN aware of subjects available for processing.<br><strong>Relevant contacts:</strong> Monalisa Bilas, Erik Lee<br><strong>Frequency:</strong> Runs daily (takes less than one hour to complete)<br><strong>Inputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code><br><strong>Outputs:</strong> Internal records in CBRAIN indicating subject folder existence within the BIDS directory<br><strong>Caveats / Notes:</strong>  Each subject has a single CBRAIN <em>BidsSubject File Collection</em> linking all sessions, though each session is processed independently.</p>
+</div>
 
-- Session belongs to a subject listed in the identifier mapping file  
-- Session does *not* have existing files in the de-id bucket  
-- Session *does* have files in the LORIS bucket, with all files at least one day old  
 
-When these conditions are met:
-
-1. All supported files under the session prefix are de-identified and added to the de-id bucket  
-2. The subject’s `sessions.tsv` and `sessions.json` files are updated in the de-id bucket  
-3. De-identified outputs include metadata for tracking synchronization with LORIS: Each file includes the S3 metadata field `loris-versionid`, which corresponds to the `VersionId` of the original LORIS file prior to de-identification
-
-**Relevant contacts:** Sriharshitha Anuganti, Erik Lee          
-**Frequency:** Runs daily at **11:00 PM CST**, Workflow should complete within 24 hours         
-**Inputs:** `s3://midb-hbcd-main-pr/assembly_bids` (contains DCCIDs and other identifying information)      
-**Outputs:** `s3://midb-hbcd-main-deid/assembly_bids` (contains Release Candidate IDs)      
-**Caveats / Notes:**  
-- Additional details about file-specific de-identification procedures are provided in the **De-Identification Details** section.  
-- Certain rare or lower-priority EEG files are not currently included in the de-id routines.
-
-### Registration of Subjects from Raw BIDS Data into CBRAIN
-
-**Goal of workflow:** Make CBRAIN aware of subjects available for processing.       
-**Relevant contacts:** Monalisa Bilas, Erik Lee         
-**Frequency:** Runs daily (takes less than one hour to complete)        
-**Inputs:** `s3://midb-hbcd-main-deid/assembly_bids`        
-**Outputs:** Internal records in CBRAIN indicating subject folder existence within the BIDS directory       
-**Caveats / Notes:**  Each subject has a single CBRAIN *BidsSubject File Collection* linking all sessions, though each session is processed independently.
 
 ### Post-processing of De-identified Data
 
