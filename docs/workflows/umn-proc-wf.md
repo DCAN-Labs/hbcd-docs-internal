@@ -55,9 +55,10 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 <strong>Caveats / Notes:</strong> Phantom data may not yet be included.</p>
 </div>
 
+
 <div id="2" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
-  <span class="table-text"><i class="fa-solid fa-gears" style="margin-right: 6px; color: blue;"></i> De-identification routines for the raw BIDS data</span>
+  <span class="table-text"><i class="fa-solid fa-gears" style="margin-right: 6px; color: blue;"></i> Raw BIDS Data De-identification</span>
   <a class="anchor-link" href="#2" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -67,21 +68,25 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 <div class="table-collapsible-content">
 <p><strong>Goal of workflow:</strong><br>Identify and process imaging sessions that meet the following conditions:</p>
 <ul>
-<li>Session belongs to a subject listed in the identifier mapping file  </li>
-<li>Session does <em>not</em> have existing files in the de-id bucket  </li>
-<li>Session <em>does</em> have files in the LORIS bucket, with all files at least one day old  </li>
+<li>Subject listed in the release ID mapping  </li>
+<li>No existing session files in the de-ID bucket  </li>
+<li>Session files exist in the LORIS bucket and are ≥1 day old </li>
 </ul>
 <br>
 <p>When these conditions are met:</p>
 <ul>
-<li>All supported files under the session prefix are de-identified and added to the de-id bucket  </li>
-<li>The subject’s <code>sessions.tsv</code> and <code>sessions.json</code> files are updated in the de-id bucket  </li>
-<li>De-identified outputs include metadata for tracking synchronization with LORIS: Each file includes the S3 metadata field <code>loris-versionid</code>, which corresponds to the <code>VersionId</code> of the original LORIS file prior to de-identification</li>
+<li>De-identify and upload all supported session files to the de-id bucket </li>
+<li>Update session-level metadata (<code>sessions.tsv</code> and <code>sessions.json</code>) in the de-id bucket  </li>
+<li>For traceability, tag each file with <code>loris-versionid</code>, which corresponds to the <code>VersionId</code> of the original LORIS file prior to de-identification</li>
 </ul>
-<p><strong>Contacts:</strong> Sriharshitha Anuganti, Erik Lee<br><strong>Frequency:</strong> Runs daily at 11 PM CST, processes may need to be put into place to ensure workflow ends within 24 hours<br><strong>Inputs:</strong> <code>s3://midb-hbcd-main-pr/assembly_bids</code> (raw BIDS data, contain DCCIDs and other identifying information)<br><strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code> (contains Release Candidate IDs)<br><strong>Caveats / Notes:</strong>  </p>
+<p><strong>Contacts:</strong> Sriharshitha Anuganti, Erik Lee<br>
+<strong>Frequency:</strong> Daily at PM CST (processes may need to be put into place to ensure workflow ends within 24 hours)<br>
+<strong>Inputs:</strong> <code>s3://midb-hbcd-main-pr/assembly_bids</code> (raw BIDS data, contain DCCIDs and other identifying information)<br>
+<strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code> (contains Release Candidate IDs)<br>
+<strong>Caveats / Notes:</strong>  </p>
 <ul>
 <li>Additional details about file-specific de-identification procedures (file type specific details, types of information that is removed) are provided in the <strong>De-Identification Details</strong> section.  </li>
-<li>Certain rare or lower-priority EEG files are not currently included in the de-id routines.</li>
+<li>Certain rare or low-priority EEG files are currently excluded.</li>
 </ul>
 </div>
 

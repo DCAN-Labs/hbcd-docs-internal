@@ -3,39 +3,6 @@
 
 ## Detailed Workflows
 
-Each section below summarizes goals, inputs, outputs, and key notes.
-
----
-
-### 1. Creation of Release Candidate IDs
-**Goal:** Maintain an up-to-date mapping of identifiers for de-identification workflows.  
-**Frequency:** Daily (<1 hour)  
-**Inputs:** N/A  
-**Outputs:** `s3://midb-hbcd-main-pr-deidentification-list/release_identifiers.csv`  
-**Contacts:** Reed McEwan, Dan Duhon  
-**Notes:** Phantom data may not yet be included.
-
----
-
-### 2. De-Identification of Raw BIDS Data
-**Goal:** Identify sessions eligible for anonymization and upload de-identified versions.  
-**Conditions:**
-- Subject listed in the release ID mapping  
-- No existing files in the de-ID bucket  
-- Files exist in the LORIS bucket and are ≥1 day old  
-
-**Actions:**
-- De-identify and upload all supported session files to `s3://midb-hbcd-main-deid/assembly_bids`  
-- Update session-level metadata (`sessions.tsv` / `sessions.json`)  
-- Tag each file with `loris-versionid` metadata for traceability  
-
-**Contacts:** Sriharshitha Anuganti, Erik Lee  
-**Frequency:** Daily at 11 PM CST (completion within 24 hrs)  
-**Inputs:** `s3://midb-hbcd-main-pr/assembly_bids`  
-**Outputs:** `s3://midb-hbcd-main-deid/assembly_bids`  
-**Notes:**
-- See [De-Identification Details](#further-details-on-de-id-routines) for file-specific info.  
-- Some rare EEG files are currently excluded.
 
 ---
 
