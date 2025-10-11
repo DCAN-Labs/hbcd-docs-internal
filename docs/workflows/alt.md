@@ -1,39 +1,5 @@
 <p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧</p>
 
-# UMN De-Identification & Pipeline Processing
-
-## Overview
-
-This documentation outlines how UMN processes imaging data after it has been curated by LORIS into BIDS format.  
-The workflow consists of **eight interdependent components** that handle de-identification, post-processing, synchronization, and cleanup of imaging data.
-
-### Primary Goals
-- Ensure only anonymized data (using Release Candidate IDs) is released publicly  
-- Prevent overlap of Release Candidate IDs and DCCIDs/PSCIDs within the same dataset  
-- Maintain data integrity and consistency between LORIS and post-processing outputs  
-- Limit unnecessary reprocessing while ensuring updates are reflected appropriately  
-- Provide LORIS with access to derived outputs for internal QC and phenotype tabulation  
-
-### General Limitations
-Incoming session data (MRI, EEG, Axivity, GABI, and manual QC ratings) often arrive over several weeks.  
-Automated QC and processing routines may be delayed until all expected elements for a session are available.
-
----
-
-## Workflow Summary
-
-| # | Workflow | Core Function | Frequency |
-|---|-----------|----------------|------------|
-| 1 | **Release Candidate ID Creation** | Uploads updated release ID mappings for new subjects | Daily |
-| 2 | **Raw BIDS De-Identification** | Removes identifiers and uploads anonymized data to de-ID bucket | Daily |
-| 3 | **CBRAIN Subject Registration** | Registers de-identified subjects in CBRAIN for processing | Daily |
-| 4 | **Post-Processing of De-ID Data** | Runs pipelines (e.g., Nibabies, QSIPrep) on de-identified BIDS | Daily |
-| 5 | **CBRAIN Log Preservation** | Archives failed task logs for permanent tracking | Daily |
-| 6 | **Raw BIDS Sync Cleanup** | Removes outdated data when LORIS and de-ID buckets diverge | Daily |
-| 7 | **Re-ID for LORIS** | Replaces Release Candidate IDs with DCCIDs for LORIS ingestion | Daily |
-| 8 | **Derivative Sync Cleanup** | Removes outdated re-ID derivatives from LORIS bucket | Daily |
-
----
 
 ## Detailed Workflows
 
