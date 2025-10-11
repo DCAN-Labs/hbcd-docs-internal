@@ -86,7 +86,6 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 <p><strong>Goal of workflow:</strong> Make CBRAIN aware of subjects available for processing.<br><strong>Relevant contacts:</strong> Monalisa Bilas, Erik Lee<br><strong>Frequency:</strong> Runs daily (takes less than one hour to complete)<br><strong>Inputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code><br><strong>Outputs:</strong> Internal records in CBRAIN indicating subject folder existence within the BIDS directory<br><strong>Caveats / Notes:</strong>  Each subject has a single CBRAIN <em>BidsSubject File Collection</em> linking all sessions, though each session is processed independently.</p>
 </div>
 
-
 <div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text">Post-processing of De-identified Data</span>
@@ -100,7 +99,7 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 <p>
 <strong>Goal of workflow:</strong> Initiate processing of de-identified BIDS data through post-processing BIDS Apps in CBRAIN (e.g., <code>Nibabies</code>, <code>BIBSNet</code>, <code>QSIPrep</code>, etc.) to produce derivatives.</p>
 <p><strong>Workflow Steps:</strong></p>
-<ol>
+<ul>
 <li>Identify available subjects and sessions in the BIDS directory and CBRAIN  </li>
 <li>Check for existing outputs or prior processing attempts  </li>
 <li>For sessions without outputs or attempted processing, verify that required prerequisite files exist and pass QC (from <code>scans.tsv</code>)  </li>
@@ -108,7 +107,7 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 <li>For sessions with requisite files present for processing, confirm dependencies between pipelines (e.g., BIBSNet outputs are required by Nibabies)</li>
 <li>Launch CBRAIN processing tasks using predefined settings and including only files selected for processing  </li>
 <li>CBRAIN uploads outputs from successful jobs to S3 and stores internal records of the processing ‘task’ and the created ‘file collections’ stemming from processing.</li>
-</ol>
+</ul>
 <p>
 <strong>Relevant contacts:</strong> Erik Lee, Monalisa Bilas<br>
 <strong>Frequency:</strong> Runs daily (initial routine &lt;1 hour; processing jobs may take ~1 day)<br>        
@@ -118,20 +117,24 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 </ul>
 </div>
 
-
-
-### Saving stdout/stderr Files for Failed CBRAIN Processing Tasks
-
-**Goal of workflow:** Ensure permanent records of all CBRAIN processing logs. Since jobs are deleted a few weeks after completion, this preserves failure records.
-
-**Relevant contacts:** Monalisa Bilas, Erik Lee         
-**Frequency:** Runs daily (takes less than one hour)        
-**Inputs:** CBRAIN task directories stored at `/scratch.global` (MSI)       
-**Outputs:** `s3://midb-hbcd-main-deid/cbrain_std_logs/` (Files named `<CBRAIN_Task_ID>.out` and `<CBRAIN_Task_ID>.err`)
-
-**Caveats / Notes:**  
-- CBRAIN task IDs are unique—duplicates pose no issue.  
-- Only failed tasks require log saving; successful ones already include `.cbrain` logs in their output directories.  
+<div id="5" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Saving stdout/stderr Files for Failed CBRAIN Processing Tasks</span>
+  <a class="anchor-link" href="#5" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><strong>Goal of workflow:</strong> Ensure permanent records of all CBRAIN processing logs. Since jobs are deleted a few weeks after completion, this preserves failure records.</p>
+<p><strong>Relevant contacts:</strong> Monalisa Bilas, Erik Lee<br><strong>Frequency:</strong> Runs daily (takes less than one hour)<br><strong>Inputs:</strong> CBRAIN task directories stored at <code>/scratch.global</code> (MSI)<br><strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/cbrain_std_logs/</code> (Files named <code>&lt;CBRAIN_Task_ID&gt;.out</code> and <code>&lt;CBRAIN_Task_ID&gt;.err</code>)</p>
+<p><strong>Caveats / Notes:</strong>  </p>
+<ul>
+<li>CBRAIN task IDs are unique—duplicates pose no issue.  </li>
+<li>Only failed tasks require log saving; successful ones already include <code>.cbrain</code> logs in their output directories.  </li>
+</ul>
+</div>
 
 ### Clean-up Routines for Out-of-sync Raw and Derived Data
 
