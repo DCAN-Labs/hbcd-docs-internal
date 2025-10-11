@@ -109,16 +109,12 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 <li>Launch CBRAIN processing tasks using predefined settings and including only files selected for processing  </li>
 <li>CBRAIN uploads outputs from successful jobs to S3 and stores internal records of the processing ‘task’ and the created ‘file collections’ stemming from processing.</li>
 </ol>
-<p><strong>Relevant contacts:</strong> Erik Lee, Monalisa Bilas<br><strong>Frequency:</strong> Runs daily (initial routine <1 hour; processing jobs may take ~1 day)        
-**Inputs:** `s3://midb-hbcd-main-deid/assembly_bids`        
-**Outputs:** `s3://midb-hbcd-main-deid/derivatives/ses-<label>`  </p>
-<p><strong>Caveats / Notes:</strong>  </p>
-<ul>
-<li>Workflow code and documentation:  <ul>
-<li><a href="https://github.com/erikglee/HBCD_CBRAIN_PROCESSING">GitHub Repository</a>  </li>
-<li><a href="https://hbcd-cbrain-processing.readthedocs.io/latest/index.html#">ReadTheDocs Documentation</a></li>
-</ul>
-</li>
+<p>
+<strong>Relevant contacts:</strong> Erik Lee, Monalisa Bilas<br>
+<strong>Frequency:</strong> Runs daily (initial routine &lt;1 hour; processing jobs may take ~1 day)<br>        
+<strong>Inputs:</strong> Raw BIDS data under s3://midb-hbcd-main-deid/assembly_bids<br>
+<strong>Outputs:</strong> Derivative BIDS data (post-processing outputs) located in session specific folders under s3://midb-hbcd-main-deid/derivatives/ses-{V0X}<br>
+<strong>Caveats / Notes:</strong> The code that manages processing is available in this <a href="https://github.com/erikglee/HBCD_CBRAIN_PROCESSING">GitHub Repository</a> and <a href="https://hbcd-cbrain-processing.readthedocs.io/latest/index.html#">ReadTheDocs Documentation</a></p>
 </ul>
 </div>
 
