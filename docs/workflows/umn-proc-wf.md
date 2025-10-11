@@ -31,10 +31,10 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 
 ## Individual Workflows
 
-<div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
+<div id="1" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text">Creation of Release Candidate IDs used for anonymization</span>
-  <a class="anchor-link" href="#def-terms" title="Copy link">
+  <a class="anchor-link" href="#1" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -44,10 +44,10 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 <p><strong>Goal of workflow:</strong> Upload new versions of the release identifier mapping spreadsheet as the study progresses, so that new subjects can be included in de-identified processing workflows.<br><strong>Relevant contacts:</strong> Reed McEwan, Dan Duhon<br><strong>Frequency:</strong> Runs daily (takes less than one hour to complete)<br><strong>Inputs:</strong> N/A<br><strong>Outputs:</strong> <code>s3://midb-hbcd-main-pr-deidentification-list/release_identifiers.csv</code><br><strong>Caveats / Notes:</strong> Phantom data is (probably) not currently included in the output file.</p>
 </div>
 
-<div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
+<div id="2" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text">De-identification routines for the raw BIDS data</span>
-  <a class="anchor-link" href="#def-terms" title="Copy link">
+  <a class="anchor-link" href="#2" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -60,12 +60,13 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 <li>Session does <em>not</em> have existing files in the de-id bucket  </li>
 <li>Session <em>does</em> have files in the LORIS bucket, with all files at least one day old  </li>
 </ul>
+<br>
 <p>When these conditions are met:</p>
-<ol>
+<ul>
 <li>All supported files under the session prefix are de-identified and added to the de-id bucket  </li>
 <li>The subject’s <code>sessions.tsv</code> and <code>sessions.json</code> files are updated in the de-id bucket  </li>
 <li>De-identified outputs include metadata for tracking synchronization with LORIS: Each file includes the S3 metadata field <code>loris-versionid</code>, which corresponds to the <code>VersionId</code> of the original LORIS file prior to de-identification</li>
-</ol>
+</ul>
 <p><strong>Relevant contacts:</strong> Sriharshitha Anuganti, Erik Lee<br><strong>Frequency:</strong> Runs daily at 11 PM CST, processes may need to be put into place to ensure workflow ends within 24 hours<br><strong>Inputs:</strong> <code>s3://midb-hbcd-main-pr/assembly_bids</code> (raw BIDS data, contain DCCIDs and other identifying information)<br><strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code> (contains Release Candidate IDs)<br><strong>Caveats / Notes:</strong>  </p>
 <ul>
 <li>Additional details about file-specific de-identification procedures (file type specific details, types of information that is removed) are provided in the <strong>De-Identification Details</strong> section.  </li>
@@ -73,10 +74,10 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 </ul>
 </div>
 
-<div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
+<div id="3" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text">Registration of Subjects from Raw BIDS Data into CBRAIN</span>
-  <a class="anchor-link" href="#def-terms" title="Copy link">
+  <a class="anchor-link" href="#3" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -86,10 +87,10 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 <p><strong>Goal of workflow:</strong> Make CBRAIN aware of subjects available for processing.<br><strong>Relevant contacts:</strong> Monalisa Bilas, Erik Lee<br><strong>Frequency:</strong> Runs daily (takes less than one hour to complete)<br><strong>Inputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code><br><strong>Outputs:</strong> Internal records in CBRAIN indicating subject folder existence within the BIDS directory<br><strong>Caveats / Notes:</strong>  Each subject has a single CBRAIN <em>BidsSubject File Collection</em> linking all sessions, though each session is processed independently.</p>
 </div>
 
-<div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
+<div id="4" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text">Post-processing of De-identified Data</span>
-  <a class="anchor-link" href="#def-terms" title="Copy link">
+  <a class="anchor-link" href="#4" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
   </span>
@@ -136,7 +137,6 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 </ul>
 </div>
 
-
 <div id="6" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text">Clean-up routines for out-of-sync raw BIDS data between LORIS and de-id buckets</span>
@@ -166,48 +166,56 @@ The incoming data elements from a session, ranging from MRI (initial scans along
 <strong>Caveats / Notes:</strong> Following the completion of this workflow, any raw BIDS data from sessions with ‘out of sync’ files will be removed. This sets the stage for the de-id routines to be rerun for the given session.</p>
 </div>
 
+<div id="7" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Re-insertion of DCCIDs into Derivatives for LORIS Ingestion </span>
+  <a class="anchor-link" href="#7" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><strong>Goal of workflow:</strong> Make de-identified derivative files available in LORIS by replacing Release Candidate IDs with DCCIDs (“re-iding”).</p>
+<p><strong>Process - if a folder of interest is empty, copy the folder to <code>s3://midb-hbcd-main-pr/reid_derivatives</code> using the following procedure:</strong></p>
+<ul>
+<li>Download the de-id derivatives and replace Release Candidate IDs with DCCIDs (in both file names and file contents, with specific routines for specific file types). Also replace anonymized with real site IDs</li>
+<li>Upload resulting files to <code>s3://midb-hbcd-main-pr/reid_derivatives</code> with the metadata field <code>cbrain-timestamp</code> (from original file’s <code>LastModified</code> time)</li>
+</ul>
+<p><strong>Relevant contacts:</strong> Sriharshitha Anuganti, Erik Lee<br>
+<strong>Frequency:</strong> Runs daily<br>
+<strong>Inputs:</strong> Derived BIDS data <code>s3://midb-hbcd-main-deid/derivatives</code><br>
+<strong>Outputs:</strong> Derived BIDS data <code>s3://midb-hbcd-main-pr/reid_derivatives</code></p>
+<p><strong>Caveats / Notes:</strong>  </p>
+<ul>
+<li>Update routines whenever pipeline filenames change.  </li>
+<li>See “Further Details on Re-ID Routines” for more information.  </li>
+<li>Older documentation referenced <code>VersionId</code>; now replaced by <code>LastModified</code> due to non-versioned de-id bucket.</li>
+</ul>
+</div>
 
-
-### Re-insertion of DCCIDs into Post-processing Derivatives (for LORIS)
-
-**Goal of workflow:** Make de-identified derivative files available in LORIS by replacing Release Candidate IDs with DCCIDs (“re-iding”).
-
-**Process:**
-
-1. Check for corresponding LORIS folders for each subject/session/pipeline  
-2. If LORIS folder is empty:  
-   - Download de-id derivatives  
-   - Replace Release Candidate IDs and anonymized site IDs with DCCIDs and real site IDs  
-   - Upload to `s3://midb-hbcd-main-pr/reid_derivatives`  
-   - Include metadata field `cbrain-timestamp` (from original file’s `LastModified` time)
-
-**Relevant contacts:** Sriharshitha Anuganti, Erik Lee          
-**Frequency:** Runs daily       
-**Inputs:** `s3://midb-hbcd-main-deid/derivatives`      
-**Outputs:** `s3://midb-hbcd-main-pr/reid_derivatives`
-
-**Caveats / Notes:**  
-- Update routines whenever pipeline filenames change.  
-- See “Further Details on Re-ID Routines” for more information.  
-- Older documentation referenced `VersionId`; now replaced by `LastModified` due to non-versioned de-id bucket.
-
-### Clean-up Routines for Out-of-sync Post-processing Derivatives (LORIS)
-
-**Goal of workflow:** Remove re-id derivatives from LORIS when they become out of sync with the de-id derivatives.
-
-**Process:**
-
-1. For each subject/session/pipeline:  
-   - Compare `LastModified` and `cbrain-timestamp` values between  
-     - `s3://midb-hbcd-main-pr/reid_derivatives`  
-     - `s3://midb-hbcd-main-deid/derivatives`  
-   - If mismatched, delete the corresponding re-id data from LORIS
-
-**Relevant contacts:** Sriharshitha Anuganti, Monalisa Bilas, Erik Lee          
-**Frequency:** Runs daily       
-**Inputs:** `s3://midb-hbcd-main-pr/reid_derivatives` and `s3://midb-hbcd-main-deid/derivatives`        
-**Outputs:** N/A        
-**Caveats / Notes:** Ensures only synchronized derivatives remain in LORIS.
+<div id="8" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Clean-up Routines for Out-of-sync Derivatives in LORIS Bucket</span>
+  <a class="anchor-link" href="#8" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<p><strong>Goal of workflow:</strong> Remove re-id derivatives from LORIS when they become out of sync with the de-id derivatives.</p>
+<p><strong>Process:</strong> For each subject/session/pipeline:  </p>
+<ul>
+<li>Compare <code>LastModified</code> and <code>cbrain-timestamp</code> values between <code>s3://midb-hbcd-main-pr/reid_derivatives</code> and <code>s3://midb-hbcd-main-deid/derivatives</code>  </li>
+<li>If number of files or timestamp fields are mismatched, delete the corresponding re-id data from LORIS (<code>s3://midb-hbcd-main-pr</code>)</li>
+</ul>
+<p><strong>Relevant contacts:</strong> Sriharshitha Anuganti, Monalisa Bilas, Erik Lee<br>
+<strong>Frequency:</strong> Runs daily<br>
+<strong>Inputs:</strong> Derived BIDS data located at <code>s3://midb-hbcd-main-pr/reid_derivatives</code> and <code>s3://midb-hbcd-main-deid/derivatives</code><br>
+<strong>Outputs:</strong> N/A<br>
+<strong>Caveats / Notes:</strong> Ensures only synchronized derivatives remain in LORIS.</p>
+</div>
 
 ## Further Details on De-Id Routines
 
