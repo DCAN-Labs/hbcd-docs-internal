@@ -73,7 +73,7 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
 
 ## Part 2: De-Identification, CBRAIN Processing, & Lasso Ingestion
 
-Processing pipelines are run in CBRAIN and outputs are stored in session-specific folders on `s3://midb-hbcd-main-deid/derivatives`. When processing is launched, a record of which files were used for processing is stored under `s3://midb-hbcd-main-deid/derivatives/ses-<label>/cbrain_misc`. In the future, this will likely be replaced with a simple database in the S3 bucket that keeps track of these (and other) details more centrally.
+For a detailed breakdown of de-identification, CBRAIN pipeline processing, re-identification, etc., see the [UMN De-Identification & Pipeline Processing](#umn-de-identification-pipeline-processing) section below.
 
 <object type="image/svg+xml" data="../images/fb-wf-2-alt.svg" style="width: 100%; height: auto;">
   Your browser does not support SVG
@@ -148,24 +148,6 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <li>After transfer of the visual reports used for QC to the Prerelease Derivatives S3 URL (<code>s3://midb-hbcd-prerelease-bids/derivatives/ses-V02/xcp_d/{{SUBJECT}}/figures/{{FILENAME}}.png</code>), a query is run to identify outputs that are out of date and either remove or archive records related to out-of-date files</li>
 <li><strong>TBD</strong>: Participant sessions that fail structural QC (based on XCP-D derivative visual reports) are flagged to perform manual corrections on the corresponding BIBSNet brain segmentations. The corrected segmentations will not be fed back into the main processing workflows, but are instead integrated into the training set for future BIBSNet models.</li>
 </ul>
-</div>
-
-<div id="loris-ingestion" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text">LORIS Ingestion of Re-Identified Derivatives</span>
-  <a class="anchor-link" href="#loris-ingestion" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>LORIS updates their database from <code>s3://midb-hbcd-main-pr/derivatives</code> by:</p>
-<ol>
-<li>Removing any database entries related to derivative outputs that no longer exist</li>
-<li>Looking for cases where there are newer derivative outputs than what exists in LORIS records and replacing the old records with the new data</li>
-<li>Adding in records for any new subjects/sessions</li>
-</ol>
 </div>
       
 ### Responsibility Assignment Matrices By Modality 

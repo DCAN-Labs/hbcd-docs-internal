@@ -26,7 +26,7 @@
   </a>
 </div>
 
-This section outlines the full HBCD processing workflows for [tabulated data](#tabulated-data) and [file-based data](#file-based-data), detailing each step from data capture at study sites to final ingestion into Lasso (the NBDC Data Access Platform). Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [HDCC Structure & Organizational Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. 
+This section outlines the full HBCD processing workflows for [tabulated data](tab-wf.md) and [file-based data](fb-data-proc-wf.md), detailing each step from data capture at study sites to final ingestion into Lasso (the NBDC Data Access Platform). Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [HDCC Structure & Organizational Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. 
 
 <div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
