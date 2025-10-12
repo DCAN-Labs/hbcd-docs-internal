@@ -26,11 +26,12 @@
   </a>
 </div>
 
-This section outlines the full HBCD processing workflows for [tabulated data](tab-wf.md) and [file-based data](fb-data-proc-wf.md), detailing each step from data capture at study sites to final ingestion into Lasso (the NBDC Data Access Platform). Each subsection of the workflow diagram includes the name of the responsible organization in the lower left-hand corner. Clicking on an organization name directs you to its corresponding section on the [HDCC Structure & Organizational Charts](../orgcharts.md) page, where you can find more information about that organization's role in the HBCD Study and its team members. 
+This section provides an overview of the complete HBCD processing workflows for both [tabulated data](tab-wf.md) and [file-based data](fb-data-proc-wf.md), detailing key processing steps, data storage locations (on S3 and other systems), and the responsible teams (see [HDCC Structure & Organizational Charts](../orgcharts.md)).
 
 <div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-book"></i></span>
   <span class="text-with-link">
-  <span class="table-text"><i class="fas fa-book" style="margin-right: 6px; color: blue;"></i> Definition of Terms</span>
+  <span class="table-text">Definition of Terms</span>
   <a class="anchor-link" href="#def-terms" title="Copy link">
     <i class="fa-solid fa-link"></i>
   </a>
@@ -98,8 +99,17 @@ This section outlines the full HBCD processing workflows for [tabulated data](ta
     </table>
 </div>
 
-### S3 Bucket Object Descriptions
-
+<div id="def-s3" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="emoji"><i class="fas fa-book"></i></span>
+  <span class="text-with-link">
+  <span class="table-text">S3 Bucket Descriptions</span>
+  <a class="anchor-link" href="#def-s3" title="Copy link">
+    <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr>
@@ -163,6 +173,7 @@ This section outlines the full HBCD processing workflows for [tabulated data](ta
 </tr>
 </tbody>
 </table>
+</div>
 
 
 <br>
