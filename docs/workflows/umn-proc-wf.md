@@ -205,7 +205,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 <strong>Process:</strong>
 <li>Compare file counts between de-id and LORIS session folders</li>
 <li>If files counts are the same, compare the <code>loris-versionid</code> of the de-id files to ensure they match</li>
-<li>If session counts or <code>loris-versionid</code> mismatch, delete all associated derivatives, CBRAIN task records, and raw BIDS data</li>
+<li>If session counts or <code>loris-versionid</code> mismatch, delete all associated derivatives, CBRAIN task records, and raw BIDS data. The next time the query scripts are run that look for new subjects to process, the processing will be re-initiated for these subjects.</li>
 </ol>
 <p><strong>Contacts:</strong> Erik Lee, Monalisa Bilas<br>
 <strong>Frequency:</strong> Daily (runtime varies by data volume)<br>

@@ -443,18 +443,7 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 </table>
 </div>
 
-<div id="record-query" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text">Record Query Details</span>
-  <a class="anchor-link" href="#record-query" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>After CBRAIN processing, previous processing records are queried against the contents of s3://midb-hbcd-main-deid/assembly_bids to ensure that processing is still up-to-date with the current BIDS data. For any cases where the derivative data has become out of sync with the assembly_bids data, the impacted derivative data along with CBRAIN processing task objects are deleted. The next time the query scripts are run that look for new subjects to process, the processing will be re-initiated for these subjects.</p>
-</div>
+
 
 <div id="copy-to-release" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
