@@ -390,58 +390,71 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
 
 Processing pipelines are run in CBRAIN and outputs are stored in session-specific folders on `s3://midb-hbcd-main-deid/derivatives`. When processing is launched, a record of which files were used for processing is stored under `s3://midb-hbcd-main-deid/derivatives/ses-<label>/cbrain_misc`. In the future, this will likely be replaced with a simple database in the S3 bucket that keeps track of these (and other) details more centrally.
 
-<object type="image/svg+xml" data="../images/fb-wf-2.svg" style="width: 100%; height: auto;">
+<object type="image/svg+xml" data="../images/fb-wf-2-alt.svg" style="width: 70%; height: auto;">
   Your browser does not support SVG
 </object>
 
-<small><b>NOTE</b>: <i>Currently, for release staging, the data is first copied to a separate staging bucket prior to being copied to the Lasso Prerelease bucket, but will soon be cut out to transfer directly to the Lasso Prerelease bucket as displayed in the diagram.</i></small>
-
-<div id="s3buckets-fb2" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text"><i class="fas fa-key" style="margin-right: 6px; color: blue;"></i> S3 Bucket Key</span>
-  <a class="anchor-link" href="#s3buckets-fb2" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="compact-table">
-    <thead>
+##### S3 Bucket Key
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
     <thead>
       <tr>
-        <th style="width: 20%;">Name</th>
-        <th style="width: 40%;">S3 URL <code>s3://midb-hbcd-</code></th>
-        <th style="width: 30%;">Description</th>
+        <th>Name</th>
+        <th>S3 URL</th>
       </tr>
     </thead>
     <tbody>
     <tr>
-      <td>De-ID</td>
-      <td><code>main-deid/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">De-identified raw BIDS, derivatives, and BrainSwipes data</td>
+      <td>De-ID / Derivatives</td>
+      <td><code>s3://midb-hbcd-main-deid/derivatives/</code></td>
     </tr>
     <tr>
-      <td>Main PR</td>
-      <td><code>main-pr/</code></td>
-      <td>Contains LORIS-curated BIDS data for the full HBCD study, including:<br>
-       • De-identfied: <span class="tooltip">raw BIDS<span class="tooltiptext"><i>assembly_bids/</i></span></span> and <span class="tooltip">participant lists<span class="tooltiptext"><i>deidentification-lists/</i></span></span><br>
-       • Re-identfied: <span class="tooltip">derivatives<span class="tooltiptext"><i>derivatives/</i></span></span> and <span class="tooltip">BrainSwipes data<span class="tooltiptext"><i>reid_brainswipes/</i></span></span>
-      </td>
+      <td>De-ID / BrainSwipes</td>
+      <td><code>s3://midb-hbcd-main-deid/brainswipes/</code></td>
+    </tr>
+    <tr>
+      <td>Main PR / Derivatives</td>
+      <td><code>s3://midb-hbcd-main-pr/reid_derivatives/</code></td>
+    </tr>
+     <tr>
+      <td>Main PR / BrainSwipes</td>
+      <td><code>s3://midb-hbcd-main-pr/reid_brainswipes/</code></td>
     </tr>
     <tr>
       <td>Lasso Prerelease</td>
-      <td><code>lasso-hdcc-qc-br/br{BETA RELEASE#}/hbcd/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">Contains release version-specific data, including participant list to be included in the release (<code>rawdata/participants.tsv</code>). This is the final repository after de-identification and prior to Lasso ingestion.</td>
+      <td><code>s3://midb-hbcd-lasso-hdcc-qc-br/br{BETA RELEASE#}/hbcd/</code></td>
     </tr>
     <tr>
       <td>QC Environment</td>
-      <td><code>lasso-hdcc-qc-ongoing-dccid/</code></td>
-      <td>Lasso HDCC environment for ongoing QC (<a href="#lasso-hdcc-qc-environment">see details)</td>
+      <td><code>s3://midb-hbcd-lasso-hdcc-qc-ongoing-dccid/</code></td>
     </tr>
 </tbody>
 </table>
-</div>
+
+##### S3 Bucket Object Descriptions
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<tbody>
+<tr>
+  <td><b>De-ID (<code>s3://midb-hbcd-main-deid/</code>)</b><br>De-identified raw BIDS, derivatives, and BrainSwipes data</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">
+<b>Main PR (<code>s3://midb-hbcd-main-pr/</code>)</b><br>
+LORIS-curated BIDS data for the full HBCD study, including:<br>
+  • De-identfied: <span class="tooltip">raw BIDS<span class="tooltiptext"><i>assembly_bids/</i></span></span> and <span class="tooltip">participant lists<span class="tooltiptext"><i>deidentification-lists/</i></span></span><br>
+  • Re-identfied: <span class="tooltip">derivatives<span class="tooltiptext"><i>derivatives/</i></span></span> and <span class="tooltip">BrainSwipes data<span class="tooltiptext"><i>reid_brainswipes/</i></span></span>
+</td>
+</tr>
+<tr>
+<td style="word-wrap: break-word; white-space: normal;">
+<b>Lasso Prerelease (<code>s3://midb-hbcd-lasso-hdcc-qc-br/br{BETA RELEASE#}/hbcd/</code>)</b><br>
+Release version-specific data, including participant list to be included in the release (<code>rawdata/participants.tsv</code>). This is the final repository after de-identification and prior to Lasso ingestion.</td>
+</tr>
+<tr>
+<td><b>QC Environment (<code>s3://midb-hbcd-lasso-hdcc-qc-ongoing-dccid/</code>)</b><br>
+Lasso HDCC environment for ongoing QC (<a href="#lasso-hdcc-qc-environment">see details)</td>
+</tr>
+</tbody>
+</table>
 
 <div id="brainswipes" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
