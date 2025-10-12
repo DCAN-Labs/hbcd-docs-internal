@@ -98,16 +98,8 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
     </table>
 </div>
 
-<div id="def-s3" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text"><i class="fas fa-book" style="margin-right: 6px; color: blue;"></i> S3 Bucket Object Descriptions</span>
-  <a class="anchor-link" href="#def-s3" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
+### S3 Bucket Object Descriptions
+
 <table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
 <tbody>
 <tr>
@@ -155,9 +147,22 @@ This section outlines the full HBCD processing workflows for [tabulated data](#t
   <b>Description:</b> Lasso HDCC environment for ongoing QC (<a href="#lasso-hdcc-qc-environment">see details).
   </td>
 </tr>
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;">
+  <b>S3 Object:</b> <code>s3://midb-hbcd-ucsd-main-pr-dicoms/</code><br>
+  <b>Diagram Key Name:</b> JCVI<br>
+  <b>Description:</b> JCVI DICOMs and raw data QC results.
+  </td>
+</tr>
+<tr>
+  <td style="word-wrap: break-word; white-space: normal;">
+  <b>S3 Object:</b> <code>s3://midb-hbcd-main-pr-mrs/</code><br>
+  <b>Diagram Key Name:</b> MRS BIDS<br>
+  <b>Description:</b> MRS data post-BIDS conversion.
+  </td>
+</tr>
 </tbody>
 </table>
-</div>
 
 
 <br>

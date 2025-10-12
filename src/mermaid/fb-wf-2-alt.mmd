@@ -12,16 +12,16 @@ flowchart LR
         n28["<i>S3:<br>Main PR / Derivatives</i>"]
         n46["<i>S3:<br>Main PR / BrainSwipes</i>"]
   end
- subgraph s4["<b>Perform BrainSwipes QC of MRI Derivatives<br></b><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener>UMN MSI</a><br><a href=../data-proc-wf/#brainswipes><i>Click for Details</i></a>"]
+ subgraph s4["<b>Perform BrainSwipes QC of MRI Derivatives<br></b><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener>UMN MSI</a>"]
         n33["<i>S3:<br>De-ID / BrainSwipes</i>"]
   end
- subgraph s5["<b>Release Data Copied to Lasso Staging Environment</b><br><a href=../../orgcharts/#midb-informatics-hub-msi>UMN MSI</a><br><a href=../data-proc-wf/#copy-to-release target=_top><i>Click for Details</i></a>"]
+ subgraph s5["<b>Release Data Copied to Lasso Staging Environment</b><br><a href=../../orgcharts/#midb-informatics-hub-msi>UMN MSI</a>"]
         n36["<i>S3: Lasso PR</i>"]
   end
  subgraph s7["<br>"]
         n40(("<b>LASSO<br>INGESTION</b>"))
   end
- subgraph s8["<b>Re-ID Derivatives Copied to Lasso HDCC for<br>Ongoing QC</b><br><a href=../data-proc-wf/#lasso-hdcc-qc-environment><i>Click for Details</i></a>"]
+ subgraph s8["<b>Re-ID Derivatives Copied to Lasso HDCC for<br>Ongoing QC</b>"]
         n48["<i>S3: QC Env</i>"]
   end
  subgraph s9["<b>Raw BIDS De-Identified Before CBRAIN Processing</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener>UMN MSI</a>"]

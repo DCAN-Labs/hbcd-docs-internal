@@ -20,54 +20,35 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
   </a>
   </span>
   <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="compact-table">
-    <thead>
+</div><div class="table-collapsible-content">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
     <thead>
       <tr>
-        <th style="width: 20%;">Name</th>
-        <th style="width: 40%;">S3 URL <code>s3://midb-hbcd-</code></th>
-        <th style="width: 30%;">Description</th>
+        <th>Key Name in Diagram</th>
+        <th>S3 URL</th>
       </tr>
     </thead>
     <tbody>
     <tr>
       <td>JCVI</td>
-      <td><code>ucsd-main-pr-dicoms/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">JCVI DICOMs and raw data QC results</td>
+      <td><code>s3://midb-hbcd-ucsd-main-pr-dicoms/</code></td>
     </tr>
     <tr>
       <td>MRS BIDS</td>
-      <td><code>main-pr-mrs/</code></td>
-      <td>MRS data post-BIDS conversion</td>
+      <td><code>s3://midb-hbcd-main-pr-mrs/</code></td>
     </tr>
     <tr>
-      <td>De-ID</td>
-      <td><code>main-deid/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">De-identified raw BIDS, derivatives, and BrainSwipes data</td>
+      <td>Main PR / BIDS</td>
+      <td><code>s3://midb-hbcd-main-pr/assembly_bids/</code></td>
     </tr>
     <tr>
-      <td>Main PR</td>
-      <td><code>main-pr/</code></td>
-      <td>Contains LORIS-curated BIDS data for the full HBCD study, including:<br>
-       • De-identfied: <span class="tooltip">raw BIDS<span class="tooltiptext"><i>assembly_bids/</i></span></span> and <span class="tooltip">participant lists<span class="tooltiptext"><i>deidentification-lists/</i></span></span><br>
-       • Re-identfied: <span class="tooltip">derivatives<span class="tooltiptext"><i>derivatives/</i></span></span> and <span class="tooltip">BrainSwipes data<span class="tooltiptext"><i>reid_brainswipes/</i></span></span>
-      </td>
+      <td>QC Env</td>
+      <td><code>s3://midb-hbcd-lasso-hdcc-qc-ongoing-dccid/</code></td>
     </tr>
-    <tr>
-      <td>De-ID List</td>
-      <td><code>main-pr-deidentification-list/</code></td>
-      <td>Contains de-identified participant list information used for de-identification step.</td>
-    </tr>
-    <tr>
-      <td>QC Environment</td>
-      <td><code>lasso-hdcc-qc-ongoing-dccid/</code></td>
-      <td>Lasso HDCC environment for ongoing QC (<a href="#lasso-hdcc-qc-environment">see details)</td>
-    </tr>
-</tbody>
-</table>
+  </tbody>
+  </table>
 </div>
+
 <div id="lasso-hdcc-qc-environment" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text"><i class="fa-solid fa-clipboard-check" style="margin-right: 6px; color: blue;"></i> Lasso HDCC QC Environment</span>
@@ -167,21 +148,6 @@ Processing pipelines are run in CBRAIN and outputs are stored in session-specifi
 <li>After transfer of the visual reports used for QC to the Prerelease Derivatives S3 URL (<code>s3://midb-hbcd-prerelease-bids/derivatives/ses-V02/xcp_d/{{SUBJECT}}/figures/{{FILENAME}}.png</code>), a query is run to identify outputs that are out of date and either remove or archive records related to out-of-date files</li>
 <li><strong>TBD</strong>: Participant sessions that fail structural QC (based on XCP-D derivative visual reports) are flagged to perform manual corrections on the corresponding BIBSNet brain segmentations. The corrected segmentations will not be fed back into the main processing workflows, but are instead integrated into the training set for future BIBSNet models.</li>
 </ul>
-</div>
-
-<div id="re-id" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text">Re-Identification</span>
-  <a class="anchor-link" href="#re-id" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>Following CBRAIN processing, processing records are queried for new derivative outputs ready to be re-identified. Re-identification involves replacing all release candidate IDs with DCCIDs in processing outputs and occurs in the process of copying the data from <code>s3://midb-hbcd-main-deid/derivatives/</code> to <code>s3://midb-hbcd-main-pr/reid_derivatives/</code>.</p>
-<p>Duplicating the derivatives enables LORIS to (1) maintain QC dashboards for HBCD users based on processing outputs (primarily important for EEG) and (2) prepare tabulated summary outputs for Lasso ingestion.</p>
-<p>Prior to re-identification, <code>s3://midb-hbcd-main-pr/derivatives</code> is first queried to find and delete any data that either does not have associated files in <code>s3://midb-hbcd-main-deid/derivatives</code>. When there is a newer copy of derivative data available from the source bucket, these are deleted and repopulated. Finally, new derivative data that has never existed in the LORIS bucket is copied over.</p>
 </div>
 
 <div id="loris-ingestion" class="table-banner" onclick="toggleCollapse(this)">
