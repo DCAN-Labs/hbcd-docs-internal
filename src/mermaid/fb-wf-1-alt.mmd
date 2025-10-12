@@ -1,0 +1,79 @@
+---
+config:
+  layout: elk
+  look: neo
+  theme: redux
+---
+flowchart LR
+ subgraph Sites_Capture["<b>Sites Capture [<a href=../../orgcharts/#fiona rel=noopener target=_blank><b>FIONA</b></a>]</b>"]
+        FIONA_KSI[/"<b>DCM</b>"/]
+        LORIS_ACM[/"<b>MRS</b>"/]
+        n15[/"<b>K-Space</b>"/]
+  end
+ subgraph Capture_JCVI["<b>Capture &amp; BIDS Conversion</b> [<a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener><b>UMN MSI</b></a>]"]
+        UMN@{ label: "UMN SCE (<a href=\"../../orgcharts/#health-sciences-technology\" rel=\"noopener\" target=\"_blank\">HST</a>)" }
+        JCVI["Convert to BIDS"]
+        n1["<span><i>S3: MRS BIDS</i></span>"]
+  end
+ subgraph Capture_HST["<b>Capture &amp; BIDS Conversion</b> [<a href=../../orgcharts/#health-sciences-technology rel=noopener><b>UMN HST</b></a>]"]
+        n6["HBCD<br>Central"]
+        n9["Raw MR<br>Data QC"]
+        n10["<i>S3: JCVI</i>"]
+        n11["Convert to BIDS"]
+  end
+ subgraph Capture_LORIS["<b>Sites Capture</b> [<a href=../../orgcharts/#loris rel=noopener target=_blank><b>LORIS</b></a>]"]
+        n12[/"<b>EEG BIDSWizard</b>"/]
+        n13[/"<b>Axivity</b>"/]
+        n14[/"<b>GABI</b>"/]
+  end
+ subgraph s7["<span style=white-space:><b>Raw BIDS Copied to Lasso HDCC Ongoing QC Environment</b><br><a href=../data-proc-wf/#lasso-hdcc-qc-environment><i>Click for Details</i></a></span>"]
+        n22@{ label: "<i style=\"--tw-scale-x:\">S3: QC Env</i>" }
+  end
+    LORIS_ACM --> UMN
+    UMN --> JCVI
+    JCVI --> n1
+    n1 --> RAW_BIDS["<b><i>S3:<br>Main PR / BIDS</i></b>"]
+    n6 --> n9 & n10
+    n9 --> n10
+    n10 --> n11
+    n11 --> RAW_BIDS
+    n15 --> UMN
+    FIONA_KSI --> n6
+    n16["<span>LORIS updates metadata/formatting to resolve issues, including QC/DICOM updates from JCVI</span>"] --> RAW_BIDS
+    RAW_BIDS --> s7 & n20["<b>SEE PART 2 BELOW</b>"]
+    Capture_LORIS ~~~ Capture_HST
+    Capture_LORIS --> RAW_BIDS
+    UMN@{ shape: db}
+    JCVI@{ shape: text}
+    n1@{ shape: disk}
+    n6@{ shape: db}
+    n9@{ shape: text}
+    n10@{ shape: disk}
+    n11@{ shape: text}
+    n22@{ shape: disk}
+    RAW_BIDS@{ shape: disk}
+    n16@{ shape: text}
+    s7@{ shape: rect}
+    n20@{ shape: rect}
+    style FIONA_KSI fill:#FFD600
+    style LORIS_ACM fill:#FFD600
+    style n15 fill:#FFD600
+    style UMN fill:#E1BEE7
+    style JCVI fill:#E1BEE7,color:#000000
+    style n1 fill:#E1BEE7
+    style n6 fill:#E1BEE7,color:#000000
+    style n9 fill:#E1BEE7,color:#000000,stroke:#FF6D00
+    style n10 fill:#E1BEE7,color:#000000
+    style n11 fill:#E1BEE7,color:#000000
+    style n12 fill:#FFD600
+    style n13 fill:#FFD600
+    style n14 fill:#FFD600
+    style n22 fill:#FFCDD2
+    style RAW_BIDS fill:#BBDEFB
+    style n16 fill:#BBDEFB
+    style s7 fill:#ffe9eb
+    style n20 fill:#C8E6C9,stroke:#00C853,stroke-width:4px,stroke-dasharray: 0
+    style Capture_LORIS fill:#FFF9C4
+    style Capture_HST fill:#FAD9FF
+    style Sites_Capture fill:#FFF9C4
+    style Capture_JCVI fill:#FAD9FF

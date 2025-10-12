@@ -65,7 +65,11 @@ th, td {
   display: block;
   overflow-x: auto; 
 }
-
+.table-banner .emoji {
+  font-size: 0.9rem; 
+  margin-right: 10px;
+  color: blue;
+}
 .table-collapsible-content table {
   background-color: #ffffff;
 }

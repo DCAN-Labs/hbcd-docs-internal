@@ -78,8 +78,11 @@ nav:
   - Workflows & SOPs:
     - HDCC Structure: orgcharts.md
     - Quality Control Procedures: workflows/qc.md
-    - Data Processing Workflows: workflows/data-proc-wf.md
-    - UMN De-Identification & Pipeline Processing: workflows/umn-proc-wf.md 
+    - Data Processing Workflows: 
+        - Overview: workflows/data-proc-wf.md
+        - Tabulated Data: workflows/tab-wf.md
+        - File-Based Data: workflows/fb-data-proc-wf.md
+        - Clinical Data Validation: workflows/clinical-wf.md
     - Release SOP: workflows/release-wf.md
     - MRI Workflows: workflows/mri-issue-wf.md
   - Standards & Curation:
