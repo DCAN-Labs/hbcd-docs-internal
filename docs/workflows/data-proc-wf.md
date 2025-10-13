@@ -28,6 +28,7 @@
 
 This section provides an overview of the complete HBCD processing workflows for both [tabulated data](tab-wf.md) and [file-based data](fb-data-proc-wf.md), detailing key processing steps, data storage locations (on S3 and other systems), and the responsible teams (see [HDCC Structure & Organizational Charts](../orgcharts.md)).
 
+<p>
 <div id="def-terms" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-book"></i></span>
   <span class="text-with-link">
@@ -98,82 +99,77 @@ This section provides an overview of the complete HBCD processing workflows for 
     </tbody>
     </table>
 </div>
+</p>
 
-<div id="def-s3" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="emoji"><i class="fas fa-book"></i></span>
-  <span class="text-with-link">
-  <span class="table-text">S3 Bucket Descriptions</span>
-  <a class="anchor-link" href="#def-s3" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-<tbody>
-<tr>
-  <td>
-  <b>S3 Object:</b> <code>s3://midb-hbcd-main-pr/</code><br>
-  <b>Diagram Key Name:</b> Main PR<br>
-  <b>Description:</b> LORIS-curated BIDS data for the full HBCD study, see -<br>
-  <ul>
-    <li><code>s3://midb-hbcd-main-pr/assembly_bids</code>: Raw BIDS curated by LORIS (DCCIDs used for subject labels)</li>
-    <li><code>s3://midb-hbcd-main-pr/derivatives/</code>: Re-identified derivatives</li>
-    <li><code>s3://midb-hbcd-main-pr/reid_brainswipes/</code>: Re-identified BrainSwipes data</li>
-  </ul>
-  </td>
-</tr>
-<tr>
-  <td>
-  <b>S3 Object:</b> <code>s3://midb-hbcd-main-deid/</code><br>
-  <b>Diagram Key Name:</b> De-ID<br>
-  <b>Description:</b> De-identified/anonymized (Release Candidate IDs used for subject labels)  see -<br>
-  <ul>
-    <li><code>s3://midb-hbcd-main-deid/assembly_bids/</code>: Raw BIDS</li>
-    <li><code>s3://midb-hbcd-main-deid/derivatives/</code>: Derivatives</li>
-    <li><code>s3://midb-hbcd-main-deid/brainswipes/</code>: BrainSwipes data</li>
-  </ul>
-  </td>
-</tr>
-<tr>
-  <td style="word-wrap: break-word; white-space: normal;">
-  <b>S3 Object:</b> <code>s3://midb-hbcd-main-pr-deidentification-list/release_identifiers_YYYYMMDD.csv</code><br>
-  <b>Diagram Key Name:</b> De-Id-List<br>
-  <b>Description:</b> ID mapping file, re-created daily, showing the relationship between the various types of IDs used in HBCD.
-  </td>
-</tr>
-<tr>
-  <td style="word-wrap: break-word; white-space: normal;">
-  <b>S3 Object:</b> <code>s3://midb-hbcd-lasso-hdcc-qc-br/br{BETA RELEASE#}/hbcd/</code><br>
-  <b>Diagram Key Name:</b> Lasso Prerelease<br>
-  <b>Description:</b> Release version-specific data, including participant list to be included in the release (<code>rawdata/participants.tsv</code>). This is the final repository after de-identification and prior to Lasso ingestion.
-  </td>
-</tr>
-<tr>
-  <td style="word-wrap: break-word; white-space: normal;">
-  <b>S3 Object:</b> <code>s3://midb-hbcd-lasso-hdcc-qc-ongoing-dccid/</code><br>
-  <b>Diagram Key Name:</b> QC Env<br>
-  <b>Description:</b> Lasso HDCC environment for ongoing QC (<a href="#lasso-hdcc-qc-environment">see details).
-  </td>
-</tr>
-<tr>
-  <td style="word-wrap: break-word; white-space: normal;">
-  <b>S3 Object:</b> <code>s3://midb-hbcd-ucsd-main-pr-dicoms/</code><br>
-  <b>Diagram Key Name:</b> JCVI<br>
-  <b>Description:</b> JCVI DICOMs and raw data QC results.
-  </td>
-</tr>
-<tr>
-  <td style="word-wrap: break-word; white-space: normal;">
-  <b>S3 Object:</b> <code>s3://midb-hbcd-main-pr-mrs/</code><br>
-  <b>Diagram Key Name:</b> MRS BIDS<br>
-  <b>Description:</b> MRS data post-BIDS conversion.
-  </td>
-</tr>
-</tbody>
+#### S3 Bucket Descriptions
+
+<table class="compact-table" style="width:100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+  <thead>
+    <tr>
+      <th style="width: 1%;">Diagram Key</th>
+      <th style="width: 30%;">S3 Object <code>s3://midb-hbcd*</code></th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Main PR</td>
+      <td><code>-main-pr/</code></td>
+      <td>
+        LORIS-curated BIDS data for the full HBCD study, including:<br>
+        <ul>
+          <li><code>assembly_bids/</code>: Raw BIDS curated by LORIS (DCCIDs used for subject labels)</li>
+          <li><code>derivatives/</code>: Re-identified derivatives</li>
+          <li><code>reid_brainswipes/</code>: Re-identified BrainSwipes data</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>De-ID</td>
+      <td><code>-main-deid/</code></td>
+      <td>
+        De-identified/anonymized data (Release Candidate IDs used for subject labels), including:<br>
+        <ul>
+          <li><code>assembly_bids/</code>: Raw BIDS</li>
+          <li><code>derivatives/</code>: Derivatives</li>
+          <li><code>brainswipes/</code>: BrainSwipes data</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>De-Id-List</td>
+      <td><code>-main-pr-deidentification-list/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">ID mapping file <code>release_identifiers_YYYYMMDD.csv</code>, re-created daily, showing relationships between the various ID types used in HBCD.</td>
+    </tr>
+    <tr>
+      <td>Lasso PR**</td>
+      <td><code>-lasso-hdcc-qc-br/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">De-identified release version-specific data housed under <code>/br{BETA RELEASE#}/hbcd/</code> prior to Lasso ingestion.</td>
+    </tr>
+    <tr>
+      <td>QC Env**</td>
+      <td><code>-lasso-hdcc-qc-ongoing-dccid/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">Lasso HDCC environment for ongoing QC; mimics the structure of the release buckets, but excludes the br{BETA RELEASE#} prefix. The data contains DCCIDs/PSCIDs and is updated with both release and non-release main study participant data regularly, including:<br>
+      <ul>
+        <li>Tabulated data provided by LASSO</li>
+        <li>Raw BIDS copied from s3://midb-hbcd-main-pr/assembly_bids</li>
+        <li>Re-identified derivatives from s3://midb-hbcd-main-pr/reid_derivatives</li>
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>JCVI</td>
+      <td><code>-ucsd-main-pr-dicoms/</code></td>
+      <td>JCVI DICOMs and raw data QC results.</td>
+    </tr>
+    <tr>
+      <td>MRS BIDS</td>
+      <td><code>-main-pr-mrs/</code></td>
+      <td>MRS data post-BIDS conversion.</td>
+    </tr>
+  </tbody>
 </table>
-</div>
+<tfoot>** <i>Lasso PR and QC Env S3 buckets collectively form the <b>Lasso HDCC QC environment</b></i></tfoot>
 
 
 <br>

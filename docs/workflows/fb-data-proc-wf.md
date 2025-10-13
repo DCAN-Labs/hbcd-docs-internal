@@ -49,28 +49,6 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
   </table>
 </div>
 
-<div id="lasso-hdcc-qc-environment" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text"><i class="fa-solid fa-clipboard-check" style="margin-right: 6px; color: blue;"></i> Lasso HDCC QC Environment</span>
-  <a class="anchor-link" href="#lasso-hdcc-qc-environment" title="Copy link">
-    <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="collapsible-content">
-<p>The Lasso HDCC QC environment includes:</p>
-<ol>
-<li>The <strong>Lasso Prerelease</strong> S3 bucket (<code>s3://midb-hbcd-lasso-hdcc-qc-br</code>) containing release version-specific data housed under <code>br{BETA RELEASE#}/hbcd/</code> to be ingested into Lasso</li>
-<li>The <strong>Ongoing QC</strong> S3 bucket (<code>s3://midb-hbcd-lasso-hdcc-qc-ongoing-dccid</code>), which mimics of the structure of the release buckets, but excludes the <code>br{BETA RELEASE#}</code> prefix. The data contains DCCIDs/PSCIDs and is updated with both release and non-release main study participant data regularly, including:<ul>
-<li>Tabulated data provided by LASSO</li>
-<li>Raw BIDS copied from <code>s3://midb-hbcd-main-pr/assembly_bids</code></li>
-<li>Derivatives (re-identified) copied from <code>s3://midb-hbcd-main-pr/reid_derivatives</code></li>
-</ul>
-</li>
-</ol>
-</div>
-
 ## Part 2: De-Identification, CBRAIN Processing, & Lasso Ingestion
 
 For a detailed breakdown of de-identification, CBRAIN pipeline processing, re-identification, etc., see the [UMN De-Identification & Pipeline Processing](#umn-de-identification-pipeline-processing) section below.      

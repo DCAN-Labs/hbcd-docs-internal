@@ -12,26 +12,31 @@ th, td {
     white-space: normal;
 }
 
-/* Compact Table Style */
-.compact-table {
-  font-size: 0.8em;
-  line-height: 1.1;
-  width: 100%;
-  border-collapse: collapse;
-}
 .compact-table th,
 .compact-table td {
-  vertical-align: top;
   text-align: left;
-  padding: 0.1em 0.1em;
+  padding: 0.2em 0.4em;
   border: 1px solid #ddd;
+  vertical-align: top; /* 🔑 aligns all cell content at the top */
 }
-.compact-table th {
-  background-color: #e3f2fd;
-  width: 20%;
+/* Make lists behave more like normal text blocks */
+.compact-table ul {
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0;
+  padding-left: 1.2em;
+  display: block;
 }
-.compact-table td {
-  background-color: #f9f9f9;
+/* Reduce bottom space between last list item and table border */
+.compact-table ul:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* Optional: normalize list item alignment */
+.compact-table li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
 }
 
 
