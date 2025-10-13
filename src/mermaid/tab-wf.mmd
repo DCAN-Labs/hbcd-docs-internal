@@ -6,28 +6,25 @@ config:
 ---
 flowchart LR
  subgraph Capture_LORIS["<b>Sites Capture</b><br>"]
-        n13@{ label: "REDCap (<a href=\"../../orgcharts/#j-craig-venter-institute\" rel=\"noopener\" target=\"_blank\">JCVI</a>)" }
-        n14@{ label: "TLFB (<a href=\"../../orgcharts/#j-craig-venter-institute\" rel=\"noopener\" target=\"_blank\">JCVI</a>)" }
+        n13@{ label: "REDCap<br>(<a href=\"../../orgcharts/#j-craig-venter-institute\" rel=\"noopener\">JCVI</a>)" }
+        n14@{ label: "TLFB<br>(<a href=\"../../orgcharts/#j-craig-venter-institute\" rel=\"noopener\">JCVI</a>)" }
         n16@{ label: "<a href=\"../../orgcharts/#ripple\" rel=\"noopener\" target=\"_blank\">Ripple</a>" }
-        n17@{ label: "<a href=\"#third-party\" target=\"_top\">Third Party</a>" }
-        n18["Biospecimens"]
+        n17@{ label: "<a href=\"#third-party\">Third Party</a>" }
+        n18["Biospec"]
         n19["Genetics"]
   end
- subgraph s1["<b>Transfer data to LORIS production bucket</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener>UMN MSI</a>"]
+ subgraph s1["<b>Transfer Data</b></br>to LORIS</br>production</br>bucket*</br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener>UMN MSI</a>"]
         n15["<i>S3 Main PR</i>"]
   end
  subgraph s2["<b>Capture</b><br><a href=../../orgcharts/#health-sciences-technology rel=noopener target=_blank>UMN HST</a>"]
-        n20@{ label: "<a href="https://sampled.com/" target="_blank">Sampled</a>" }
-        n21["UMN SCE"]
+        n20@{ label: "<a href='https://sampled.com/' target='_blank'>Sampled</a>" }
+        n21["UMN<br>SCE"]
         n22@{ label: "<a href='https://www.usdtl.com/' target='_blank'>USDTL</a>" }
   end
- subgraph s3["<b>Transfer data to non-production LORIS sandbox</b>"]
-        n23["<i>S3 Sandbox</i>"]
-  end
- subgraph s4["<b>De-Identify tabulated data based on de-ID list</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener>UMN MSI</a>"]
+ subgraph s4["<b>De-Identification</b><br>De-id data w/<br>de-ID list<br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener>UMN MSI</a>"]
         n26["<i>S3 De-ID</i>"]
   end
- subgraph s5["<b>Release Staging for Lasso</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a>"]
+ subgraph s5["<b>Release Staging for Lasso</b><br>Transfer data to staging then release bucket<br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener>UMN MSI</a>"]
         n27["<i>S3 Lasso<br>Staging</i>"]
         n28["<i>S3 Lasso<br>PR</i>"]
   end
@@ -39,23 +36,22 @@ flowchart LR
     n18 --> n22
     n20 --> n21
     n22 --> n21
-    n21 --> n15 & n23
+    n21 --> n15
     n27 --> n28
     n26 --> n27
-    n28 --> n30@{ label: "<a href=\"../../orgcharts/#lasso\" rel=\"noopener\" target=\"_blank\"><b>LASSO</a><br>INGESTION</b>" }
+    n28 --> n30["<b>LASSO INGESTION</b>"]
     n29["<i>S3 De-ID-List</i>"] --> n26
     n15 --> n26
-    n13@{ shape: lean-r}
-    n14@{ shape: lean-r}
-    n16@{ shape: lean-r}
-    n17@{ shape: lean-r}
-    n18@{ shape: lean-r}
-    n19@{ shape: lean-r}
+    n13@{ shape: rounded}
+    n14@{ shape: rounded}
+    n16@{ shape: rounded}
+    n17@{ shape: rounded}
+    n18@{ shape: rounded}
+    n19@{ shape: rounded}
     n15@{ shape: db}
     n20@{ shape: db}
     n21@{ shape: db}
     n22@{ shape: db}
-    n23@{ shape: db}
     n26@{ shape: db}
     n27@{ shape: db}
     n28@{ shape: db}
@@ -73,7 +69,6 @@ flowchart LR
     style n20 fill:#FFD600
     style n21 fill:#FFD600
     style n22 fill:#FFD600
-    style n23 fill:#BBDEFB
     style n26 fill:#E1BEE7
     style n27 fill:#C8E6C9
     style n28 fill:#C8E6C9
@@ -84,4 +79,3 @@ flowchart LR
     style Capture_LORIS fill:#FFF9C4
     style s1 fill:#E3F2FD
     style s2 fill:#FFF9C4
-    style s3 fill:#E3F2FD

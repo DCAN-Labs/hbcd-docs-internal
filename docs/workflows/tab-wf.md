@@ -2,10 +2,11 @@
 
 # Tabulated Data Processing Workflow
 
-Data is collected from sites and ultimately transferred to the central LORIS Production S3 bucket, where it is subsequently de-identified and staged for ingestion into Lasso (NBDC Data Access Platform). The tabulated data processing workflow is outlined in the diagram below, showing the specific workflows for different data types and identifying the HDCC organization responsible for each processing step. These steps include data capture, de-identification, staging, and ingestion into Lasso.
+Data collected from sites is transferred to the central **LORIS Production S3 bucket**, where it is **de-identified** and **staged for ingestion into Lasso (NBDC Data Access Platform)**. The diagram below outlines the tabulated data processing workflow, showing the steps for each data type and the HDCC group responsible for each stage: **capture**, **de-identification**, **staging**, and **ingestion**.     
+*Note: Genetics data capture currently occurs via Sampled and BAH but will transition to Sampled only, as shown in the diagram.*
 
 <object type="image/svg+xml" data="../images/tab-wf.svg" width="100%"></object>
-<small><b>NOTE</b>: <i>Genetics capture currently occurs via Sampled and BAH, but will be changed to only Sampled in the future.</i></small>
+<i><b>*</b> All tabulated data from the UMN SCE is also copied to a LORIS Sandbox (non-production) bucket.</i>
 
 <div id="s3buckets-tab" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
