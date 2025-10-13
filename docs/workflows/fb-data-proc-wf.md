@@ -73,7 +73,8 @@ Data is collected from sites into LORIS (EEG, Axivity, and GABI) or FIONA (for M
 
 ## Part 2: De-Identification, CBRAIN Processing, & Lasso Ingestion
 
-For a detailed breakdown of de-identification, CBRAIN pipeline processing, re-identification, etc., see the [UMN De-Identification & Pipeline Processing](#umn-de-identification-pipeline-processing) section below.
+For a detailed breakdown of de-identification, CBRAIN pipeline processing, re-identification, etc., see the [UMN De-Identification & Pipeline Processing](#umn-de-identification-pipeline-processing) section below.      
+**All of the processes below are performed by [UMN/MSI](../orgcharts.md#midb-informatics-hub-msi):** 
 
 <object type="image/svg+xml" data="../images/fb-wf-2-alt.svg" style="width: 100%; height: auto;">
   Your browser does not support SVG

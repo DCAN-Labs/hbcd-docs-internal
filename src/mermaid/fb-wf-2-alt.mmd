@@ -5,58 +5,56 @@ config:
   theme: redux
 ---
 flowchart LR
- subgraph s2["<b>Pipeline Processing of Raw BIDS Data via CBRAIN</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener>UMN MSI</a>"]
-        n25["<i>S3:<br>De-ID / Derivatives</i>"]
+ subgraph s2["<b>Process raw BIDS via CBRAIN pipelines</b>"]
+        n25["<i>S3 De-ID / Derivatives</i>"]
   end
- subgraph s3["<b>Derivatives &amp; BrainSwipes QC Data Re-Identified for LORIS<br></b><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener>UMN MSI</a>"]
-        n28["<i>S3:<br>Main PR / Derivatives</i>"]
-        n46["<i>S3:<br>Main PR / BrainSwipes</i>"]
+ subgraph s3["<b>Re-identify derivatives &amp; BrainSwipes QC Data for LORIS</b>"]
+        n28["<i>S3 Main PR / Derivatives</i>"]
+        n46["<i>S3 Main PR / BrainSwipes</i>"]
   end
- subgraph s4["<b>Perform BrainSwipes QC of MRI Derivatives<br></b><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener>UMN MSI</a>"]
-        n33["<i>S3:<br>De-ID / BrainSwipes</i>"]
+ subgraph s4["<b>Perform MRI derivatives QC via BrainSwipes</b>"]
+        n33["<i>S3 De-ID / BrainSwipes</i>"]
   end
- subgraph s5["<b>Release Data Copied to Lasso Staging Environment</b><br><a href=../../orgcharts/#midb-informatics-hub-msi>UMN MSI</a>"]
-        n36["<i>S3: Lasso PR</i>"]
+ subgraph s5["<b>Copy release data to Lasso staging environment</b>"]
+        n36["<i>S3 Lasso PR</i>"]
   end
  subgraph s7["<br>"]
-        n40(("<b>LASSO<br>INGESTION</b>"))
+        n40["<b>LASSO INGESTION</b>"]
   end
- subgraph s8["<b>Re-ID Derivatives Copied to Lasso HDCC for<br>Ongoing QC</b>"]
-        n48["<i>S3: QC Env</i>"]
+ subgraph s8["<b>Copy re-ID data to Lasso HDCC for ongoing QC</b>"]
+        n48["<i>S3 QC Env</i>"]
   end
- subgraph s9["<b>Raw BIDS De-Identified Before CBRAIN Processing</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener>UMN MSI</a>"]
-        n50["<i>S3:<br>De-ID / BIDS</i>"]
+ subgraph s9["<b>De-Identify raw BIDS data based on de-ID list</b>"]
+        n50["<i>S3 De-ID / BIDS</i>"]
   end
     n25 --> n28 & n36 & n33
     n28 --> n48
     n36 --> n40
     n33 --> n46
     n50 --> n25
-    n51["<i><b>S3:<br>Main PR / BIDS</b><br></i>"] --> n50
-    n52@{ label: "<i style=\"--tw-scale-x:\">S3: De-ID-List</i>" } --> n50
-    n25@{ shape: disk}
-    n28@{ shape: disk}
-    n46@{ shape: disk}
-    n33@{ shape: disk}
-    n36@{ shape: disk}
-    n48@{ shape: disk}
-    n50@{ shape: disk}
-    n51@{ shape: disk}
-    n52@{ shape: disk}
+    n51@{ label: "<b>INPUT 1: Raw BIDS data</b><br><i>S3 Main PR / BIDS<br></i><br><b><span style=\"--tw-scale-x:\">INPUT 2: De-id lists</span><br style=\"--tw-scale-x:\"></b><i style=\"--tw-scale-x:\">S3 De-ID-List</i>" } --> n50
+    n25@{ shape: db}
+    n28@{ shape: db}
+    n46@{ shape: db}
+    n33@{ shape: db}
+    n36@{ shape: db}
+    n40@{ shape: rounded}
+    n48@{ shape: db}
+    n50@{ shape: db}
+    n51@{ shape: db}
     style n25 fill:#E1BEE7
-    style n28 fill:#BBDEFB
-    style n46 fill:#BBDEFB
-    style n33 fill:#FFD600,color:#000000
+    style n28 fill:#FFD600
+    style n46 fill:#FFD600
+    style n33 fill:#E1BEE7,color:#000000
     style n36 fill:#C8E6C9
-    style n40 fill:#C8E6C9,stroke:#00C853,stroke-width:4px,stroke-dasharray: 0
+    style n40 fill:#EBFFEB
     style n48 fill:#FFCDD2,stroke:#000000
-    style n50 fill:#FFE0B2
+    style n50 fill:#BBDEFB
     style n51 fill:#BBDEFB
-    style n52 fill:#BBDEFB
-    style s4 fill:#FFF9C4
+    style s4 fill:#FAD9FF
     style s5 fill:#EBFFEB
     style s2 fill:#FAD9FF
-    style s3 fill:#E3F2FD
+    style s3 fill:#FFF9C4
     style s7 stroke:none,fill:transparent
     style s8 fill:#ffe9eb
-    style s9 fill:#fbebd3
+    style s9 fill:#E3F2FD
