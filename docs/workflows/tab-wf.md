@@ -4,7 +4,7 @@
 
 Data is collected from sites and ultimately transferred to the central LORIS Production S3 bucket, where it is subsequently de-identified and staged for ingestion into Lasso (NBDC Data Access Platform). The tabulated data processing workflow is outlined in the diagram below, showing the specific workflows for different data types and identifying the HDCC organization responsible for each processing step. These steps include data capture, de-identification, staging, and ingestion into Lasso.
 
-<object type="image/svg+xml" data="../images/tab-proc-wf.svg" width="100%"></object>
+<object type="image/svg+xml" data="../images/tab-wf.svg" width="100%"></object>
 <small><b>NOTE</b>: <i>Genetics capture currently occurs via Sampled and BAH, but will be changed to only Sampled in the future.</i></small>
 
 <div id="s3buckets-tab" class="table-banner" onclick="toggleCollapse(this)">
@@ -17,47 +17,40 @@ Data is collected from sites and ultimately transferred to the central LORIS Pro
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table class="compact-table">
+<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
     <thead>
       <tr>
-        <th style="width: 5%;">Name</th>
-        <th style="width: 15%;">S3 URL <code>s3://midb-hbcd-</code></th>
-        <th style="width: 30%;">Description</th>
+        <th>Key Name in Diagram</th>
+        <th>S3 URL</th>
       </tr>
     </thead>
     <tbody>
     <tr>
-      <td>LORIS Production</td>
-      <td><code>main-pr/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">LORIS Bucket that receives all tabulated data prior to staging and ingestion</td>
+      <td>Main PR</td>
+      <td><code>s3://midb-hbcd-main-pr/</code></td>
     </tr>
     <tr>
-      <td>LORIS Sandbox</td>
-      <td><code>main-sb/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">LORIS Bucket for non-production system to test data flows on pilot data</td>
+      <td>Sandbox</td>
+      <td><code>s3://midb-hbcd-main-sb/</code></td>
     </tr>
     <tr>
       <td>De-ID</td>
-      <td><code>main-deid/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">De-identified raw BIDS, derivatives, and BrainSwipes data</td>
+      <td><code>s3://midb-hbcd-main-deid/</code></td>
     </tr>
     <tr>
-      <td>De-ID List</td>
-      <td><code>main-pr-deidentification-list/</code></td>
-      <td>Contains de-identified participant list information used for de-identification step.</td>
+      <td>De-ID-List</td>
+      <td><code>s3://midb-hbcd-main-pr-deidentification-list/</code></td>
     </tr>
     <tr>
       <td>Lasso Staging</td>
-      <td><code>lasso-staging/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">Where LORIS deposits data after running data release script for each BR</td>
+      <td><code>s3://midb-hbcd-lasso-staging/</code></td>
     </tr>
     <tr>
-      <td>Lasso Prerelease</td>
-      <td><code>lasso-hdcc-qc-br/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">Contains release version-specific data housed under <code>br{BETA RELEASE#}/hbcd/</code> to be ingested into Lasso</td>
+      <td>Lasso PR</td>
+      <td><code>s3://midb-hbcd-lasso-hdcc-qc-br/</code></td>
     </tr>
-</tbody>
-</table>
+  </tbody>
+  </table>
 </div>
 
 <div id="third-party" class="table-banner" onclick="toggleCollapse(this)">

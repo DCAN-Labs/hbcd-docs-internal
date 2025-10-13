@@ -13,27 +13,23 @@ flowchart LR
         n18["Biospecimens"]
         n19["Genetics"]
   end
- subgraph s1["<b>Production</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a>"]
-        n15@{ label: "<b>LORIS<br>Production</b><br><span style=\"color:\"><code><i>S3:main-pr/</i></code></span>" }
+ subgraph s1["<b>Transfer data to LORIS production bucket</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener>UMN MSI</a>"]
+        n15["<i>S3 Main PR</i>"]
   end
  subgraph s2["<b>Capture</b><br><a href=../../orgcharts/#health-sciences-technology rel=noopener target=_blank>UMN HST</a>"]
-        n20@{ label: "<a href=\"https://sampled.com/\">Sampled</a>" }
+        n20@{ label: "<a href="https://sampled.com/" target="_blank">Sampled</a>" }
         n21["UMN SCE"]
-        n22@{ label: "<a href=\"https://www.usdtl.com/\">USDTL</a>" }
+        n22@{ label: "<a href='https://www.usdtl.com/' target='_blank'>USDTL</a>" }
   end
- subgraph s3["<b>Non-Production</b>"]
-        n23["<b>LORIS<br>Sandbox</b><br><code><i>S3:main-sb/</i></code>"]
+ subgraph s3["<b>Transfer data to non-production LORIS sandbox</b>"]
+        n23["<i>S3 Sandbox</i>"]
   end
- subgraph s4["<b>De-Identification</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a>"]
-        n25["De-ID"]
-        n26["<b>De-ID<br></b><code><i>S3:main-deid/</i></code>"]
+ subgraph s4["<b>De-Identify tabulated data based on de-ID list</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener>UMN MSI</a>"]
+        n26["<i>S3 De-ID</i>"]
   end
  subgraph s5["<b>Release Staging for Lasso</b><br><a href=../../orgcharts/#midb-informatics-hub-msi rel=noopener target=_blank>UMN MSI</a>"]
-        n27["<b>Lasso<br>Staging</b><br><code><i>S3:lasso-<br>staging/</i></code>"]
-        n28@{ label: "<b>Lasso<br>Prerelease<br></b><code><i><span style=\"background-color:\">S3:</span>lasso-<br>hdcc-qc-br/</i></code>" }
-  end
- subgraph s6["<b>NOTE</b>"]
-        legend@{ label: "<b>'S3:'</b> indicates the<br>prefix <span style=\"background-color:lightblue;\">s3://midb-hbcd-<br></span>for S3 bucket names" }
+        n27["<i>S3 Lasso<br>Staging</i>"]
+        n28["<i>S3 Lasso<br>PR</i>"]
   end
     n13 --> n15
     n14 --> n15
@@ -44,30 +40,27 @@ flowchart LR
     n20 --> n21
     n22 --> n21
     n21 --> n15 & n23
-    n15 --> n25
-    n25 --> n26
     n27 --> n28
     n26 --> n27
-    n29["<b>De-ID List<br></b><code><i>S3:main-pr-deidentification-<br>list/</i></code>"] --> n25
     n28 --> n30@{ label: "<a href=\"../../orgcharts/#lasso\" rel=\"noopener\" target=\"_blank\"><b>LASSO</a><br>INGESTION</b>" }
+    n29["<i>S3 De-ID-List</i>"] --> n26
+    n15 --> n26
     n13@{ shape: lean-r}
     n14@{ shape: lean-r}
     n16@{ shape: lean-r}
     n17@{ shape: lean-r}
     n18@{ shape: lean-r}
     n19@{ shape: lean-r}
-    n15@{ shape: disk}
+    n15@{ shape: db}
     n20@{ shape: db}
     n21@{ shape: db}
     n22@{ shape: db}
-    n23@{ shape: disk}
-    n25@{ shape: rect}
-    n26@{ shape: disk}
-    n27@{ shape: disk}
-    n28@{ shape: disk}
-    legend@{ shape: text}
-    n29@{ shape: disk}
-    n30@{ shape: circle}
+    n23@{ shape: db}
+    n26@{ shape: db}
+    n27@{ shape: db}
+    n28@{ shape: db}
+    n30@{ shape: rounded}
+    n29@{ shape: db}
     s4@{ shape: rect}
     s5@{ shape: rect}
     style n13 fill:#FFD600
@@ -81,16 +74,14 @@ flowchart LR
     style n21 fill:#FFD600
     style n22 fill:#FFD600
     style n23 fill:#BBDEFB
-    style n25 fill:#E1BEE7,stroke:#AA00FF,stroke-width:4px,stroke-dasharray: 0
     style n26 fill:#E1BEE7
     style n27 fill:#C8E6C9
     style n28 fill:#C8E6C9
+    style n30 fill:#EBFFEB
     style n29 fill:#E1BEE7
-    style n30 fill:#C8E6C9,stroke:#00C853,stroke-width:4px,stroke-dasharray: 0
     style s4 fill:#FAD9FF
     style s5 fill:#EBFFEB
     style Capture_LORIS fill:#FFF9C4
     style s1 fill:#E3F2FD
     style s2 fill:#FFF9C4
     style s3 fill:#E3F2FD
-    style s6 color:#000000,stroke:#757575

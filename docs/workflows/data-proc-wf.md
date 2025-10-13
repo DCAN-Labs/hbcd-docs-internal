@@ -115,9 +115,10 @@ This section provides an overview of the complete HBCD processing workflows for 
     <tr>
       <td>Main PR</td>
       <td><code>-main-pr/</code></td>
-      <td>
-        LORIS-curated BIDS data for the full HBCD study, including:<br>
+      <td style="word-wrap: break-word; white-space: normal;">
+        LORIS production bucket that receives all tabulated and file-based data for the full HBCD study prior to staging and Lasso ingestion, including:<br>
         <ul>
+          <li><code>phenotype/</code>: Tabulated data</li>
           <li><code>assembly_bids/</code>: Raw BIDS curated by LORIS (DCCIDs used for subject labels)</li>
           <li><code>derivatives/</code>: Re-identified derivatives</li>
           <li><code>reid_brainswipes/</code>: Re-identified BrainSwipes data</li>
@@ -139,12 +140,18 @@ This section provides an overview of the complete HBCD processing workflows for 
     <tr>
       <td>De-Id-List</td>
       <td><code>-main-pr-deidentification-list/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">ID mapping file <code>release_identifiers_YYYYMMDD.csv</code>, re-created daily, showing relationships between the various ID types used in HBCD.</td>
+      <td style="word-wrap: break-word; white-space: normal;">ID mapping file <code>release_identifiers_YYYYMMDD.csv</code>, re-created daily, showing relationships between the various ID types used in HBCD (e.g. contains de-identified participant list information used for de-identification).
+      </td>
+    </tr>
+    <tr>
+      <td>Lasso Staging</td>
+      <td><code>-lasso-staging/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">Where LORIS deposits tabulated data after running data release script for each BR</td>
     </tr>
     <tr>
       <td>Lasso PR**</td>
       <td><code>-lasso-hdcc-qc-br/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">De-identified release version-specific data housed under <code>/br{BETA RELEASE#}/hbcd/</code> prior to Lasso ingestion.</td>
+      <td style="word-wrap: break-word; white-space: normal;">Contains release version-specific data (de-identified) housed under <code>br{BETA RELEASE#}/hbcd/</code> to be ingested into Lasso</td>
     </tr>
     <tr>
       <td>QC Env**</td>
@@ -166,6 +173,11 @@ This section provides an overview of the complete HBCD processing workflows for 
       <td>MRS BIDS</td>
       <td><code>-main-pr-mrs/</code></td>
       <td>MRS data post-BIDS conversion.</td>
+    </tr>
+    <tr>
+      <td>Sandbox</td>
+      <td><code>main-sb/</code></td>
+      <td style="word-wrap: break-word; white-space: normal;">LORIS Bucket for non-production system to test data flows on pilot data</td>
     </tr>
   </tbody>
 </table>
