@@ -44,7 +44,7 @@ Data collected from sites is transferred to the central **LORIS Production S3 bu
     </tr>
     <tr>
       <td>Lasso Staging</td>
-      <td><code>s3://midb-hbcd-lasso-staging/</code></td>
+      <td><code>s3://midb-hbcd-staging/</code></td>
     </tr>
     <tr>
       <td>Lasso PR</td>

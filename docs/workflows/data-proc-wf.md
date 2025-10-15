@@ -145,20 +145,21 @@ This section provides an overview of the complete HBCD processing workflows for 
     </tr>
     <tr>
       <td>Lasso Staging</td>
-      <td><code>-lasso-staging/</code></td>
+      <td><code>-staging/</code></td>
       <td style="word-wrap: break-word; white-space: normal;">Where LORIS deposits tabulated data after running data release script for each BR</td>
     </tr>
     <tr>
-      <td>Lasso PR**</td>
+      <td>Lasso PR*</td>
       <td><code>-lasso-hdcc-qc-br/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">Contains release version-specific data (de-identified) housed under <code>br{BETA RELEASE#}/hbcd/</code> to be ingested into Lasso</td>
+      <td style="word-wrap: break-word; white-space: normal;">Lasso Pre-Release contains release version-specific data (de-identified) housed under <code>br{BETA RELEASE#}/hbcd/</code> to be ingested into Lasso</td>
     </tr>
     <tr>
-      <td>QC Env**</td>
+      <td>QC Env*</td>
       <td><code>-lasso-hdcc-qc-ongoing-dccid/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">Lasso HDCC environment for ongoing QC; mimics the structure of the release buckets, but excludes the br{BETA RELEASE#} prefix. The data contains DCCIDs/PSCIDs and is updated with both release and non-release main study participant data regularly, including:<br>
+      <td style="word-wrap: break-word; white-space: normal;">
+      Lasso HDCC environment for ongoing QC; mimics the structure of the release data deposits, but excludes the br{BETA RELEASE#} prefix. The data contains DCCIDs only and is updated with both release and non-release main study participant data regularly, including:<br>
       <ul>
-        <li>Tabulated data provided by LASSO</li>
+        <li>Tabulated data provided by LORIS to Lasso</li>
         <li>Raw BIDS copied from s3://midb-hbcd-main-pr/assembly_bids</li>
         <li>Re-identified derivatives from s3://midb-hbcd-main-pr/reid_derivatives</li>
       </ul>
@@ -181,7 +182,7 @@ This section provides an overview of the complete HBCD processing workflows for 
     </tr>
   </tbody>
 </table>
-<tfoot>** <i>Lasso PR and QC Env S3 buckets collectively form the <b>Lasso HDCC QC environment</b></i></tfoot>
+<tfoot>* <i>Lasso PR and QC Env S3 buckets collectively form the <b>Lasso HDCC QC environment</b></i></tfoot>
 
 
 <br>
