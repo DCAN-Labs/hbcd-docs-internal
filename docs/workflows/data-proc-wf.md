@@ -1,5 +1,3 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
-
 # HBCD Data Processing Workflows
 
 <div class="pill-center">
@@ -101,7 +99,7 @@ This section provides an overview of the complete HBCD processing workflows for 
 </div>
 </p>
 
-#### S3 Bucket Descriptions
+## S3 Bucket Descriptions
 
 <table class="compact-table" style="width:100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
   <thead>
@@ -183,6 +181,18 @@ This section provides an overview of the complete HBCD processing workflows for 
   </tbody>
 </table>
 <tfoot>* <i>Lasso PR and QC Env S3 buckets collectively form the <b>Lasso HDCC QC environment</b></i></tfoot>
+
+## HBCD VM Staging
+
+See the full diagram for HBCD Staging VMs and associated buckets <a href="../images/HBCDVMsDiagram20251015.png" target="_blank">here</a>. For the Data Release stream, de-identified data flows into the older BR directory (after a copy is pushed to the final BR), and checksum is run at this stage between the previous and new BR data. 
+
+<img style="float: right;" src="../images/HBCDStagingVMsDiagram-01-20251015.png" width="86%"/>
+<img src="../images/HBCDStagingVMs-Diagram-02-20251015.png" width="57%"/>
+
+
+
+
+
 
 
 <br>
