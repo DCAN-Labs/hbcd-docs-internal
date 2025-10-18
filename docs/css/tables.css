@@ -127,10 +127,11 @@ th, td {
 
 /* Compact table with no vertical lines */
 .compact-table-no-vertical-lines {
-  border-collapse: collapse;
   width: 100%;
-  font-size: 0.9em;
-  line-height: 1.2;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 0.9em; /* slightly smaller text */
+  line-height: 1.3;
 }
 .compact-table-no-vertical-lines th,
 .compact-table-no-vertical-lines td {
@@ -144,6 +145,17 @@ th, td {
   padding: 0.1em 0.1em;
   padding-left: 1px;
   padding-right: 1px;
+  line-height: 1.1; 
+}
+.compact-table-no-vertical-lines ul {
+  margin-top: 1rem;
+  line-height: 1;
+  font-size: 1em !important;
+}
+.compact-table-no-vertical-lines li {
+  margin-bottom: 0.4rem;
+  line-height: 1;
+  font-size: 1em !important;
 }
 
 /* Special table with no vertical lines for core concepts on front page - set embedded link styling (a) to not underline text*/
