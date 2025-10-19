@@ -43,7 +43,7 @@
 
 ## HBCD Study Data
 
-### <a href="../../instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics
+### <a href="https://docs.hbcdstudy.org/latest/instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
   <tr>
@@ -93,7 +93,7 @@
 </tbody>
 </table>
 
-### <a href="../../instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
+### <a href="https://docs.hbcdstudy.org/latest/instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
 
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
@@ -114,7 +114,7 @@
 </tbody>
 </table>
 
-### <a href="../../instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language
+### <a href="https://docs.hbcdstudy.org/latest/instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
   <tr>
@@ -140,7 +140,7 @@
 </tbody>
 </table>
 
-### <a href="../../instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use
+### <a href="https://docs.hbcdstudy.org/latest/instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
   <tr>
@@ -174,7 +174,7 @@
 </tbody>
 </table>
 
-### <a href="../../instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging Data
+### <a href="https://docs.hbcdstudy.org/latest/instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging Data
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
   <tr>
