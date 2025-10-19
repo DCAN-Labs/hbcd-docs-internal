@@ -80,7 +80,7 @@
 <tr>
 <td><b>BR20.1</b></td> 
 <td style="word-wrap: break-word; white-space: normal;">
-<b>[2]</b> Erroneous inclusion of Biospec substance use flags <a href="../../instruments/demo/visitinfo/#substance-use-flags">derived from USDTL urine toxicology</a> (<code>su_flag_bio_*</code>) for V02 (urine samples not collected at V02) - will be removed to FIX.
+<b>[2]</b> Erroneous inclusion of Biospec substance use flags derived from USDTL urine toxicology</a> (<code>su_flag_bio_*</code>) for V02 (urine samples not collected at V02) - will be removed to FIX.
 </td>
 </tr>
 <tr>
@@ -189,7 +189,7 @@
   <td><b>TBD</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
   For HBCD imaging data with multiple runs, the <code>run-{X}</code> field may not reflect chronological acquisition order.  
-This affects both <b>raw BIDS and derivatives</b> as well as <b>derivative files converted to HBCD tabulated data</b> (<a href="../../datacuration/overview" target="_blank">see file type details</a>). Despite this, data remain internally consistent — e.g., run IDs match between raw and processed datasets.
+This affects both <b>raw BIDS and derivatives</b> as well as <b>derivative files converted to HBCD tabulated data</b> (<a href="https://docs.hbcdstudy.org/latest/datacuration/overview/">see file type details</a>). Despite this, data remain internally consistent — e.g., run IDs match between raw and processed datasets.
 </td>
 </tr>
 </tbody>
