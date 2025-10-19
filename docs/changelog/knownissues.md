@@ -55,36 +55,36 @@
 <tbody>
 <tr>
   <td rowspan="3">Basic Demographics<br><code>sed_basic_demographics</code></td>
-  <td><b>2.0</b></td> 
+  <td><b>BR20.1</b></td> 
   <td><b>[1]</b> Mother Race (<code>screen_mother_race</code>) contains invalid response option 2 = <i>Hawaiian</i>.</td>
 </tr>
 <tr>
-    <td><b>2.0</b></td> 
+    <td><b>BR20.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
   <b>[2]</b> Child Multi-Race (<code>child_ethnoracial_acs_by_multi_race</code>) coding is a duplicate of Child Multi-Ethnicity (<code>child_ethnoracial_acs_by_multi_ethnicity</code>) and will be removed.
   </td>
 </tr>
 <tr>
-<td><b>2.0</b></td> 
+<td><b>BR20.1</b></td> 
 <td style="word-wrap: break-word; white-space: normal;">
 <b>[3]</b> Child Multi-Race/Ethnicity V01 data will be removed. In the meantime, we do not recommend using V01 data for this variable in analyses.
 </td>
 </tr>
 <tr>
 <td rowspan="3">Visit Information<br><code>par_visit_data</code></td>
-<td><b>2.0</b></td> 
+<td><b>BR20.1</b></td> 
 <td style="word-wrap: break-word; white-space: normal;">
   <b>[1]</b> Participants who did <b>not</b> withdraw from the study (<code>participant_withdrawal</code> = “no”) are assigned a sentinel withdrawal date (<code>participant_withdrawal_date</code>) of <code>12/26/1999</code>. These values will be updated to null for clarity and consistency.
 </td>
 </tr>
 <tr>
-<td><b>2.0</b></td> 
+<td><b>BR20.1</b></td> 
 <td style="word-wrap: break-word; white-space: normal;">
 <b>[2]</b> Erroneous inclusion of Biospec substance use flags <a href="../../instruments/demo/visitinfo/#substance-use-flags">derived from USDTL urine toxicology</a> (<code>su_flag_bio_*</code>) for V02 (urine samples not collected at V02) - will be removed to FIX.
 </td>
 </tr>
 <tr>
-<td><b>2.0</b></td> 
+<td><b>BR20.2</b></td> 
 <td style="word-wrap: break-word; white-space: normal;">
 <b>[3]</b> The TLFB substance use flags (<code>su_flag_tlfb_*</code>) for participants who do not have a Visit 2 have incorrect values of 'no:' these will be corrected to 'null.'
 </td>
@@ -106,7 +106,7 @@
 <tbody>
 <tr>
 <td>Urine toxicology<br><code>bio_bm_biosample_urine</code></td>
-  <td><b>2.0</b></td> 
+  <td><b>BR20.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
   Missing values for urinary cotinine (<code>bio_c_cot_u</code>) were erroneously set to <code>0</code> (N = 18) and will be restored in a future release. In the meantime, users can identify affected records by checking <code>bio_c_nicotine_u</code> for values of <code>3</code> (<code>--invalid</code>).
 </td>
@@ -126,13 +126,13 @@
 <tbody>
 <tr>
   <td rowspan="2">SPM-2<br><code>ncl_cg_spm2__inf</code></td>
-  <td><b>2.0</b></td> 
+  <td><b>BR20.XX</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
   <b>[1]</b> Age fields are not currently included for the SPM-2. Until added, users can refer to corresponding age variables in related datasets for the same time point.
 </td>
 </tr>
 <tr>
-  <td><b>2.0</b></td> 
+  <td><b>BR20.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
   <b>[2]</b> Status Scores are missing for all but one subscale. To be provided in the next release.
 </td>
@@ -152,21 +152,21 @@
 <tbody>
 <tr>
   <td>Pregnancy/Infant Health<br><code>pex_bm_health*</code></td>
-  <td><b>2.1</b></td> 
+  <td><b>R2.1 (BR# TBD)</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
   ICD codes are inconsistently provided, sometimes missing corresponding names/labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a>
 </td>
 </tr>
 <tr>
   <td>APA 1/2<br><code>pex_bm_apa_anger_*</code></td>
-  <td><b>2.0</b></td> 
+  <td><b>BR20.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
   T-scores and total scores are missing in the APA 1/2 for only the Anger subscale.
 </td>
 </tr>
 <tr>
   <td>TLFB<br><code>pex_ch_tlfb</code></td>
-  <td><b>2.0</b></td> 
+  <td><b>BR20.1</b></td> 
   <td style="word-wrap: break-word; white-space: normal;">
   Missing age variable fields (<code>gestational_age</code>, <code>adjusted_age</code>, and <code>candidate_age</code>). Until added, users can refer to corresponding age variables in related datasets for the same time point.
 </td>
