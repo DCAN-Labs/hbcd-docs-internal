@@ -93,7 +93,8 @@ nav:
     - Pending & Updates: changelog/pending.md
     - Exclusions & Filtering: changelog/exclusions.md
     - Known Issues: changelog/knownissues.md
-    - Version History:    
+    - Release Notes/Change Logs:    
+        - Beta Release 20.0: changelog/versions/BR20.0.md
         - Beta Release 15.2: changelog/versions/BR15.2.md
         - Beta Release 15.1: changelog/versions/BR15.1.md
         - Beta Release 15.0: changelog/versions/BR15.md
