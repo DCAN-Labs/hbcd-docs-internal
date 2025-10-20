@@ -1,4 +1,4 @@
-# Release Notes & History: Overview
+# Exclusions & Filtering
 
 ## General Rules Applied to All Data
 
@@ -20,9 +20,11 @@
 
 ## Exclusion Criteria & Filters
   
-## Static Element Exclusions
-Static elements are precisely identified hard-coded elements. Exclusions applied to static elements in the current release are as follows:
+### Static Element Exclusions
+Static elements are precisely identified hard-coded elements, including **participants**, **instruments**, **instrument fields**, etc.
 
-## Dynamic Element Exclusions
+### Dynamic Element Exclusions
 
-In contrast to static elements (e.g. participants, instruments, and instrument fields), which are fixed and consistently structured, dynamic elements refer to data that are programmatically derived, conditionally included, or vary based on participant behavior or system context. These elements may include calculated fields, system-generated metadata, or selectively captured measures such as biospecimens, geocoded data, and direct REDCap submissions. The following filters were applied to exclude specific dynamic elements from this release, based on participant status, visit timing, data completeness, and domain-specific conditions:
+In contrast to static elements, which are fixed and consistently structured, dynamic elements refer to data that are programmatically derived, conditionally included, or vary based on participant behavior or system context. These elements may include calculated fields, system-generated metadata, or selectively captured measures such as biospecimens, geocoded data, and direct REDCap submissions. 
+
+Examples of dynamic filters applied to former releases include filters based on **participant status**, **visit timing**, **data completeness**, and **domain-specific conditions**.

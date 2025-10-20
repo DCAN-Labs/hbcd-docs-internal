@@ -1,5 +1,4 @@
-# Pending & Upcoming Updates
-
+# Pending Updates
 
 ## Pending Field Filters
 
