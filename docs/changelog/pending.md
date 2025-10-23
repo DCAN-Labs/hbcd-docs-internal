@@ -22,7 +22,7 @@
     * Update label for Multiracial option (non-Black)   
     * Change description to indicate that 'Sex' refers to child for `sed_basic_demographics_sex` - Change to "Child sex (Male, Female)"  
 - **Visit Data**  
-    * Remove SU flags from Visit Data  
+    * Remove SU flags (`par_visit_data_su_flag_bio_barb`; `par_visit_data_su_flag_bio_benzo`; `par_visit_data_su_flag_bio_mscrlx`) from Visit Data
     * Set BioSpecimen SU flags at V02 as blank (Urine not collected at V02)
 
 ### File based data
