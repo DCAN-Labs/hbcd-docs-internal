@@ -36,7 +36,7 @@
 - **Demographics**
     - 'Income' data levels merge (Go from 10 levels down to 6 levels)  
     - 'Education' data levels merge (Go from 21 levels down to 6 levels)  
-    - Add selected ‘Roster’ fields  
+    - Add selected ‘Roster’ fields; change label from “gender” to “sex” for selected roster fields
     - Remove the variable names in parentheses that are a part of the description for `sed_bm_demo_roster_001_i_00` & `sed_bm_demo_child_i_roster_002_i_02_i_00` to `sed_bm_demo_child_i_roster_020_i_02_i_00`  
     - Add '(other biological parent)' to description for `sed_bm_demo_herit_i_oth` fields 
 
