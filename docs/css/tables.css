@@ -47,13 +47,13 @@ th, td {
   justify-content: space-between; /* Ensures proper spacing */
   background-color: rgba(0, 102, 255, 0.183);
   border: 1px solid #3333331a;
-  padding: 8px 10px;
+  padding: 1px 10px;
   border-radius: 5px;
   font-family: Lato; 
   color: #474646;
   cursor: pointer;
   width: 100%;
-  line-height: 14px;
+  line-height: 1.0;
   font-weight: bold;
 }
 .table-collapsible-content {
