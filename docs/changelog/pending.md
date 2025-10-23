@@ -11,7 +11,6 @@
 - **Multiple Birth/PNR**: Cleanup and Inclusion/Exclusion lists  
 - **BioSpecimen**  
     * Data Ingestion of USDTL Nails, Urine & Blood Spot Card into LORIS database  
-    * Exclude cases where time between ‘Collection date' and 'Report date' exceed SoP mandated time  
     * For `biosample_urine_bio_c_cot_u`, ensure missings values are not reported as '0'  
 - **Basic Demographics**  
     * Remove `child_ethnoracial_acs_by_multi_race` from Basic Demographics (`sed_basic_demographics`)  
