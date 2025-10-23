@@ -77,6 +77,14 @@
     * 'Blank' fields related to 'QC Flagged' cases (fields with validations)  
     * ‘Blank' fields related to other 'QC Flagged' cases  
 * **Upgrade ‘Instructions’ extraction**
+* **Static and dynamic tables**
+* **GABI**
+* **Maternal blood spot cards**
+* **ERICA** 
+* **Bayley item-level data**
+* **NIH BTB** 
+* **OLINK** 
+
 
 
 <br>
