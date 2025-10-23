@@ -49,8 +49,10 @@
 - **EPDS:** Remove `pex_bm_epds_score`
 - **Pex Health Illness:** ICD labels not imported for `pex_bm_health_preg_i_illness` codes (n=5)
 - **SPM-2:** Missing 'Status score' for each sub scale.(Currently only provided for one sub scale)
-- **TLFB:** Correct ages (Adjusted age and gestational age)
-- **Vancouver Index of Acculturation:** Swap sub-scores
+- **TLFB:**
+    - Correct ages (Adjusted age and gestational age)
+    - Add sub-category fields (cigars, cigarettes, e-cigarettes, beer, wine, etc) 
+- **Vancouver Index of Acculturation:** Swap sub-scores (Currently the 'Mainstream' (American Culture)’ and 'Heritage/Family culture' subscores are flipped)
 
 ### Imaging/EEG
 
