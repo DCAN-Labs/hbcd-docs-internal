@@ -67,6 +67,7 @@
 * Change 'type_var' to 'administrative for 'age' fields  
 * Review cases where 'Missingness' reason is showing as 'Logic Skipped'  
 * FamilyID Inclusion (TBD)
+* Exclusion of MB/PNR profiles that are not clean 
 
 ## Upcoming - Post-Release (2.0/3.0)
 
