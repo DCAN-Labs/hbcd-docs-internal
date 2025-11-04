@@ -90,7 +90,7 @@ For a detailed breakdown of de-identification, CBRAIN pipeline processing, re-id
     </tr>
     <tr>
       <td>De-ID / BrainSwipes</td>
-      <td><code>s3://midb-hbcd-main-deid/brainswipes/</code></td>
+      <td><code>s3://midb-hbcd-main-deid/v2/brainswipes/</code></td>
     </tr>
     <tr>
       <td>Main PR / Derivatives</td>
