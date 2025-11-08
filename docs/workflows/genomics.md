@@ -1,6 +1,3 @@
-
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
-
 # Genomics Workflows
 
 ## IDAT to raw PLINK files

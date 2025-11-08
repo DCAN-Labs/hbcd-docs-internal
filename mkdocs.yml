@@ -83,7 +83,7 @@ nav:
         - Tabulated Data: workflows/tab-wf.md
         - File-Based Data: workflows/fb-data-proc-wf.md
         - Clinical Data Validation: workflows/clinical-wf.md
-        # - Genomics: workflows/genomics.md
+        - Genomics: workflows/genomics.md
     - Release SOP: workflows/release-wf.md
     - MRI Workflows: workflows/mri-issue-wf.md
   - Standards & Curation:
