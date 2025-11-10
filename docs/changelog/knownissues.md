@@ -41,9 +41,13 @@
 </tbody>
 </table>
 
-## HBCD Study Data
+## General
 
-### <a href="https://docs.hbcdstudy.org/latest/instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics
+#### [1] Adjusted Age (<code>age_adjusted</code>) wrong for most instruments (Expected Fix: BR20.1)   
+Caused by inaccurate calculation based on the LMP (EDD/EDC +280 days) instead of the EDD/EDC, which shifts the age upwards by ~40 weeks. Calculation will be corrected, after which outliers are likely caused by incorrectly entered 'Date of Administration'.     
+**Impacted instrument examples (NON-EXHAUSTIVE LIST):** <code>adm_bm_screen</code>, <code>mh_cg_chaos</code>, <code>mh_cg_erica_fcm_adm_3_9m</code>, <code>mh_cg_erica_fcm_3_9m</code>, <code>mh_cg_fad</code>, <code>mh_cg_ibqr</code>, <code>sens_ch_setup</code>, <code>ncl_ch_mlds</code>, <code>ncl_cg_spm2_i_tod</code>, <code>nt_pa_gabi_rcpt</code> (<code>candidate_age</code> also inaccurate), <code>nt_ch_sens_i_qtn_2</code>, <code>ph_cg_pms_i_pags</code>, <code>ph_cg_inq</code>, <code>ph_cg_bisq</code> 
+
+## <a href="https://docs.hbcdstudy.org/latest/instruments/#demo" target="_blank"><i class="fas fa-id-card"></i></a> Demographics
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
   <tr>
@@ -93,7 +97,7 @@
 </tbody>
 </table>
 
-### <a href="https://docs.hbcdstudy.org/latest/instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
+## <a href="https://docs.hbcdstudy.org/latest/instruments/#biospec" target="_blank"><i class="fa fa-vial"></i></a> Biospecimen & Omics
 
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
@@ -114,7 +118,7 @@
 </tbody>
 </table>
 
-### <a href="https://docs.hbcdstudy.org/latest/instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language
+## <a href="https://docs.hbcdstudy.org/latest/instruments/#neurocog" target="_blank"><i class="fa-solid fa-puzzle-piece"></i></a> Neurocognition & Language
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
   <tr>
@@ -140,7 +144,7 @@
 </tbody>
 </table>
 
-### <a href="https://docs.hbcdstudy.org/latest/instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use
+## <a href="https://docs.hbcdstudy.org/latest/instruments/#pex" target="_blank"><i class="fa-solid fa-baby"></i></a> Pregnancy & Exposure, Including Substance Use
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
   <tr>
@@ -174,7 +178,7 @@
 </tbody>
 </table>
 
-### <a href="https://docs.hbcdstudy.org/latest/instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging Data
+## <a href="https://docs.hbcdstudy.org/latest/instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging Data
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
   <tr>
