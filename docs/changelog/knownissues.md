@@ -178,6 +178,28 @@ Caused by inaccurate calculation based on the LMP (EDD/EDC +280 days) instead of
 </tbody>
 </table>
 
+## <a href="https://docs.hbcdstudy.org/latest/instruments/#sed" target="_blank"><i class="fas fa-city"></i></a> Social & Environmental Determinants
+<table class="compact-table-no-vertical-lines">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+  <tr>
+    <th>TABLE/DATA</th>
+    <th style="width: 1%; text-align: center;">FIX</th>
+    <th>KNOWN ISSUE</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>DD Updates</td>
+  <td><b>BR20.1</b></td> 
+  <td style="word-wrap: break-word; white-space: normal;">
+  - To be changed to 'Ordinal': <code>sed_cg_employ_002</code>; <code>sed_cg_hce_007</code> & <code>_008_i_01</code><br>
+  - To be changed to 'Nominal': <code>sed_cg_hce_002</code><br>
+  - 'Description' text for <code>sed_cg_employ_101</code> variables: change “Do you have a partner?” to “Do you have a spouse/partner?”
+</td>
+</tr>
+</tbody>
+</table>
+
 ## <a href="https://docs.hbcdstudy.org/latest/instruments/#mri" target="_blank"><i class="fa fa-brain"></i></a> Imaging Data
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
@@ -198,6 +220,8 @@ This affects both <b>raw BIDS and derivatives</b> as well as <b>derivative files
 </tr>
 </tbody>
 </table>
+
+
 
 
 <br>
