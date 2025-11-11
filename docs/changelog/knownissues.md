@@ -276,7 +276,7 @@
 </thead>
 <tbody>
 <tr>
-<td>sed_bm_demo/demo_child</td>
+<td>sed_bm_demo & sed_bm_demo_child</td>
 <td><b>SME Request:</b> Sex/Gender fields to be removed</td>
 <td>20.1</td>
 </tr>
