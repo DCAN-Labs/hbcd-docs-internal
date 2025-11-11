@@ -137,13 +137,17 @@
 <td>20.2</td>
 </tr>
 <tr>
-<td>ECBQ &amp; IBQR</td>
+<td>IBQR</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Shadow Matrix Error:</b> Missingness reason showing as LOGIC SKIPPED, but missingess is not caused by branching logic. Currently under LORIS review.</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td rowspan="2">ECBQ &amp; IBQR</td>
 <td><b>Remove Variables:</b> administration (all, partial, none) &amp; data_taken</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>IBQR</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Shadow Matrix Error:</b> Missingness reason showing as LOGIC SKIPPED, but missingess is not caused by branching logic. Currently under LORIS review.</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> ~10 participants have both IBQR and ECBQ at V05 (should only have one or the other). Currently under LORIS review.</td>
 <td>TBD</td>
 </tr>
 </tbody>
