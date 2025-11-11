@@ -287,8 +287,8 @@
 <td>20.1</td>
 </tr>
 <tr>
-<td>sed_bm_demo_child__relat_002__01</td>
-<td><b>Remove var:</b> duplicate (confirm which to remove)</td>
+<td>sed_bm_demo_child__roster_001__01</td>
+<td><b>Remove variable</b> (<i>SED request - duplicate of roster_001</i>)</td>
 <td>20.1</td>
 </tr>
 <tr>
