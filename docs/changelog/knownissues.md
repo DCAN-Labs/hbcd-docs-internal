@@ -278,60 +278,72 @@
 <tbody>
 <tr>
 <td>1</td>
-<td>sed_bm_demo & sed_bm_demo_child</td>
-<td><b>SME Request:</b> Sex/Gender fields to be removed</td>
+<td>sed_bm_demo (Adult)</td>
+<td><b>SME Request:</b> Remove Roster Gender fields (<i>based on internal list</i>)</td>
 <td>20.1</td>
 </tr>
 <tr>
 <td>2</td>
 <td>sed_bm_demo_child</td>
-<td><b>SME Request:</b> Remove roster '_table' fields (eg roster_table_13)</td>
+<td><b>SME Request:</b> Remove Roster Gender AND Sex fields (<i>based on internal list</i>)</td>
 <td>20.1</td>
 </tr>
 <tr>
 <td>3</td>
+<td>sed_bm_demo_child</td>
+<td><b>SME Request:</b> Remove Roster '_table' fields (eg <i>roster_table_13</i>)</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>4</td>
 <td>sed_bm_demo_child__roster_001__01</td>
 <td><b>Remove variable</b> (<i>SED request - duplicate of roster_001</i>)</td>
 <td>20.1</td>
 </tr>
 <tr>
-<td>4</td>
-<td>sed_bm_demo_transp_001 & sed_bm_demo_disab_*</td>
-<td><b>Add Variables</b>: transportation and disability</td>
+<td>5</td>
+<td>sed_bm_demo_transp_001</td>
+<td><b>Add Variables</b>: transportation</td>
 <td>20.1</td>
 </tr>
 <tr>
-<td>5</td>
+<td>6</td>
+<td>sed_bm_demo_disab_*</td>
+<td><b>Add Variables</b>: disability</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>7</td>
 <td>sed_cg_employ_002</td>
 <td><b>DD Update:</b> Change type_level to 'Ordinal'</td>
 <td>20.1</td>
 </tr>
 <tr>
-<td>6</td>
+<td>8</td>
 <td>sed_cg_hce_007 & sed_cg_hce_008_i_0</td>
 <td><b>DD Update:</b> Change type_level to 'Ordinal'</td>
 <td>20.1</td>
 </tr>
 <tr>
-<td>7</td>
+<td>9</td>
 <td>sed_cg_hce_002</td>
 <td><b>DD Update:</b> Change type_level to 'Nominal'</td>
 <td>20.1</td>
 </tr>
 <tr>
-<td>8</td>
+<td>10</td>
 <td>sed_cg_employ_101*</td>
  <td style="word-wrap: break-word; white-space: normal;"><b>DD Update:</b> use "spouse/partner" in 'Description': “Do you have a partner?”</td>
 <td>20.1</td>
 </tr>
 <tr>
-<td>9</td>
+<td>11</td>
 <td>sed_*_{ace/car_sf/pedals}_sensitive</td>
 <td><b>Remove 'sensitive' variables across SED tables</b></td>
 <td>20.1</td>
 </tr>
 <tr>
-<td>10</td>
+<td>12</td>
 <td>sed_cg_nsc (Experiences w/ Police)</td>
 <td><b>Remove instrument</b></td>
 <td>TBD</td>
