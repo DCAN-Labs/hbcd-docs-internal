@@ -234,8 +234,8 @@
 </thead>
 <tbody>
 <tr>
-<td>pex_bm_apa_anger_*</td>
-<td><b>Data Correction:</b> Add missing T-scores and total scores to APA 1/2 Anger subscale</td>
+<td>pex_bm_apa_apa2_*</td>
+<td><b>Data Correction:</b> Add missing APA Level 2 scores (<i>all are currently blank</i>)</td>
 <td>20.1</td>
 </tr>
 <tr>
