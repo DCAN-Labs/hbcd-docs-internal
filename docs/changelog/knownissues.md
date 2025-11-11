@@ -293,36 +293,42 @@
 <tbody>
 <tr>
 <td>1</td>
+<td>pex_bm_apa</td>
+<td><b>Data Request:</b> Remove Level 2 data for participants not meeting Level 1 threshold</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>2</td>
 <td>pex_bm_apa_apa2_*</td>
 <td><b>Data Correction:</b> Add missing APA Level 2 scores (<i>all are currently blank</i>)</td>
 <td>20.1</td>
 </tr>
 <tr>
-<td>2</td>
+<td>3</td>
 <td>TLFB</td>
 <td><b>Add Variables:</b> Add all age variable fields</td>
 <td>20.1</td>
 </tr>
 <tr>
-<td>3</td>
+<td>4</td>
 <td>TLFB</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Detailed variable breakdown (e.g. create new subcategories to separate out 'nicotine' from 'cigarettes, e-cigarettes, cigars etc.' & extract frequency for each)</td>
 <td>20.1</td>
 </tr>
 <tr>
-<td>4</td>
+<td>5</td>
 <td>TLFB (PNR)</td>
 <td><b>Data Error:</b> Postnatal Recruits reported in v1 or v2, but should be v3</td>
 <td>20.2</td>
 </tr>
 <tr>
-<td>5</td>
+<td>6</td>
 <td>TLFB (missing V02)</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> TLFB missing for subset of participants at V02. Solution/fix currently unclear.</td>
 <td>20.2</td>
 </tr>
 <tr>
-<td>6</td>
+<td>7</td>
 <td>pex_bm_health</td>
 <td><b>Data Correction:</b> Fix inconsistently provided ICD codes for Pregnancy/Infant Health</td>
 <td>TBD (R3.X)</td>
