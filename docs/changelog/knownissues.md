@@ -282,13 +282,8 @@
 <td>20.1</td>
 </tr>
 <tr>
-<td>sed_bm_demo/demo_child</td>
+<td>sed_bm_demo_child</td>
 <td><b>SME Request:</b> Remove roster variables (eg child_roster_table_13)</td>
-<td>20.1</td>
-</tr>
-<tr>
-<td>sed_bm_demo_child__relat_002__01</td>
-<td><b>Remove var:</b> duplicate (confirm which to remove)</td>
 <td>20.1</td>
 </tr>
 <tr>
