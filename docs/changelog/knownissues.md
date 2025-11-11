@@ -45,7 +45,7 @@
 </tbody>
 </table>
 
-#### <i class="fas fa-id-card"></i> Demographics 
+#### <i class="fas fa-id-card"></i>&nbsp; Demographics 
 
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
@@ -96,7 +96,7 @@
 </tbody>
 </table>
 
-#### <i class="fa fa-people-arrows"></i> Behavior & Caregiver-Child Interaction
+#### <i class="fa fa-people-arrows"></i>&nbsp; Behavior & Caregiver-Child Interaction
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
@@ -119,7 +119,7 @@
 </tbody>
 </table>
 
-#### <i class="fa fa-vial"></i> Biospecimen & Omics
+#### <i class="fa fa-vial"></i>&nbsp; Biospecimen & Omics
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
@@ -142,7 +142,7 @@
 </tbody>
 </table>
 
-#### <i class="fa-solid fa-puzzle-piece"></i> Neurocognition & Language
+#### <i class="fa-solid fa-puzzle-piece"></i>&nbsp; Neurocognition & Language
 
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
@@ -166,7 +166,7 @@
 </tbody>
 </table>
 
-#### <i class="fa fa-heart-pulse"></i> Physical Health
+#### <i class="fa fa-heart-pulse"></i>&nbsp; Physical Health
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
@@ -189,7 +189,7 @@
 </tbody>
 </table>
 
-#### <i class="fa-solid fa-baby"></i> Pregnancy & Exposure, Including Substance Use
+#### <i class="fa-solid fa-baby"></i>&nbsp; Pregnancy & Exposure, Including Substance Use
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
@@ -222,7 +222,7 @@
 </tbody>
 </table>
 
-#### <i class="fas fa-city"></i> Social & Environmental Determinants
+#### <i class="fas fa-city"></i>&nbsp; Social & Environmental Determinants
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
