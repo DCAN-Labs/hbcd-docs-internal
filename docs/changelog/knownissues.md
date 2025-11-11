@@ -283,7 +283,7 @@
 </tr>
 <tr>
 <td>sed_bm_demo_child</td>
-<td><b>SME Request:</b> Remove roster '_table' variables (eg roster_table_13)</td>
+<td><b>SME Request:</b> Remove roster '_table' fields (eg roster_table_13)</td>
 <td>20.1</td>
 </tr>
 <tr>
