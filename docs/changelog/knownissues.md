@@ -107,8 +107,33 @@
 </thead>
 <tbody>
 <tr>
+<td>CHAOS</td>
+<td><b>Scoring Correction:</b> implement scoring, including prorated scores</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>ecPROMIS Peer Relationships</td>
+<td><b>Correct prorated scoring</b></td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>ecPROMIS Self-Reg/Flex</td>
+<td><b>Correct prorated scoring</b></td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>ecPROMIS Ch-CG Rel (&lt;1 yr & 1-5 yr)</td>
+<td><b>Correct prorated scoring</b> (for both versions)</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>MAPS-TL/PROMIS</td>
+<td><b>Workgroup validate prorated scoring</b></td>
+<td>20.1</td>
+</tr>
+<tr>
 <td>ECBQ</td>
-<td><b>Data Correction:</b> Change coding for "Does not apply" to 8 to be consistent with IBQR (currently = 0)</td>
+<td><b>Data Correction:</b> Change coding for "Does not apply" to 8 to be consistent with IBQR</td>
 <td>20.2</td>
 </tr>
 <tr>
@@ -210,6 +235,11 @@
 <td>20.1</td>
 </tr>
 <tr>
+<td>TLFB</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Detailed variable breakdown (e.g. create new subcategories to separate out 'nicotine' from 'cigarettes, e-cigarettes, cigars etc.' & extract frequency for each)</td>
+<td>20.1</td>
+</tr>
+<tr>
 <td>TLFB PNR</td>
 <td><b>Data Error:</b> Postnatal Recruits reported in v1 or v2, but should be v3</td>
 <td>20.2</td>
@@ -243,6 +273,11 @@
 <td>20.1</td>
 </tr>
 <tr>
+<td>sed_bm_demo_child__relat_002__01</td>
+<td><b>Remove var:</b> duplicate (confirm which to remove)</td>
+<td>20.1</td>
+</tr>
+<tr>
 <td>sed_bm_demo_transp_001 & sed_bm_demo_disab_*</td>
 <td><b>Add Variables</b>: transportation and disability</td>
 <td>20.1</td>
@@ -267,7 +302,15 @@
  <td style="word-wrap: break-word; white-space: normal;"><b>DD Update:</b> use "spouse/partner" in 'Description': “Do you have a partner?”</td>
 <td>20.1</td>
 </tr>
+<tr>
+<td>sed_*_{ace/car_sf/pedals}_sensitive</td>
+<td><b>Remove 'sensitive' variables across SED tables</b></td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>sed_cg_nsc (Experiences w/ Police)</td>
+<td><b>Remove instrument</b></td>
+<td>TBD</td>
+</tr>
 </tbody>
 </table>
-
-
