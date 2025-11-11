@@ -152,24 +152,30 @@
 </tr>
 <tr>
 <td>6</td>
-<td>ECBQ</td>
+<td>ECBQ (<code>mh_cg_ecbq</code>)</td>
 <td><b>Data Correction:</b> Change coding for "Does not apply" to 8 to be consistent with IBQR</td>
 <td>20.2</td>
 </tr>
 <tr>
 <td>7</td>
-<td>IBQR</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Shadow Matrix Error:</b> Missingness reason showing as LOGIC SKIPPED, but missingess is not caused by branching logic. Currently under LORIS review.</td>
+<td>ECBQ (<code>mh_cg_ecbq</code>)</td>
+<td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
 <td>TBD</td>
 </tr>
 <tr>
 <td>8</td>
+<td>IBQR (<code>mh_cg_ibqr</code>)</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Shadow Matrix Error:</b> Missingness reason showing as LOGIC SKIPPED, but missingess is not caused by branching logic. Currently under LORIS review.</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>9</td>
 <td>ECBQ &amp; IBQR</td>
 <td><b>Remove Variables:</b> administration (all, partial, none) &amp; data_taken</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>9</td>
+<td>10</td>
 <td>ECBQ &amp; IBQR</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> ~10 participants have both IBQR and ECBQ at V05 (should only have one or the other). Currently under LORIS review.</td>
 <td>TBD</td>
@@ -252,6 +258,18 @@
 <td>BISQ</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Add missing score fields</b>: infant_sleep_score, parent_behavior_score, parent_perception_score, total_score</td>
 <td>20.1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>ecPROMIS PA/Greenspace (<code>ph_cg_pms__pags</code>)</td>
+<td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>4</td>
+<td>ecPROMIS Sleep (<code>ph_cg_pms__sleep</code>)</td>
+<td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
+<td>TBD</td>
 </tr>
 </tbody>
 </table>
@@ -387,6 +405,18 @@
 <td>12</td>
 <td>sed_cg_nsc (Experiences w/ Police)</td>
 <td><b>Remove instrument</b></td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>13</td>
+<td>HOME-21 (<code>sed_cg_home_it</code>)</td>
+<td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>14</td>
+<td>PACES &lt;18 (<code>sed_cg_paces</code>)</td>
+<td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
 <td>TBD</td>
 </tr>
 </tbody>
