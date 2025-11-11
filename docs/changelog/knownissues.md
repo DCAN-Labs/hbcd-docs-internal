@@ -80,6 +80,12 @@
 <td><b>Data Error:</b> Remove invalid response option 2 = <i>Hawaiian</i></td>
 <td>20.1</td>
 </tr>
+<tr>
+<td>4</td>
+<td>rc_mother_income</td>
+<td><b>Data Request:</b> Income data levels change - roll up 10 levels to 6</td>
+<td>20.1</td>
+</tr>
 <tr><td colspan="3"></td></tr>
 <tr><td colspan="3" style="padding: 2px 8px;"><b>Visit Information (<code>par_visit_data</code>)</b></td></tr>
 <tr>
@@ -206,6 +212,12 @@
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Large gaps between collection and analysis dates (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs) for a large number of samples. Next steps: determine whether this reflects a data entry or site-level issue.</td>
 <td>TBD</td>
 </tr>
+<tr>
+<td>3</td>
+<td>Nails/Urine</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Add 'ANALYSIS DATE' for Biospec tables.</td>
+<td>TBD</td>
+</tr>
 </tbody>
 </table>
 
@@ -305,30 +317,36 @@
 </tr>
 <tr>
 <td>3</td>
-<td>TLFB</td>
-<td><b>Add Variables:</b> Add all age variable fields</td>
+<td>pex_bm_epds_score</td>
+<td><b>Remove Variable</b> (duplicate of pex_bm_epds_total_score)</td>
 <td>20.1</td>
 </tr>
 <tr>
 <td>4</td>
 <td>TLFB</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Detailed variable breakdown (e.g. create new subcategories to separate out 'nicotine' from 'cigarettes, e-cigarettes, cigars etc.' & extract frequency for each)</td>
+<td><b>Add Variables:</b> Add all age variable fields</td>
 <td>20.1</td>
 </tr>
 <tr>
 <td>5</td>
+<td>TLFB</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Detailed variable breakdown (e.g. create new subcategories to separate out 'nicotine' from 'cigarettes, e-cigarettes, cigars etc.' & extract frequency for each)</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>6</td>
 <td>TLFB (PNR)</td>
 <td><b>Data Error:</b> Postnatal Recruits reported in v1 or v2, but should be v3</td>
 <td>20.2</td>
 </tr>
 <tr>
-<td>6</td>
+<td>7</td>
 <td>TLFB (missing V02)</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> TLFB missing for subset of participants at V02. Solution/fix currently unclear.</td>
 <td>20.2</td>
 </tr>
 <tr>
-<td>7</td>
+<td>8</td>
 <td>pex_bm_health</td>
 <td><b>Data Correction:</b> Fix inconsistently provided ICD codes for Pregnancy/Infant Health</td>
 <td>TBD (R3.X)</td>
@@ -415,18 +433,24 @@
 </tr>
 <tr>
 <td>12</td>
+<td>Vancouver Index (VIA)</td>
+<td><b>Data Request:</b> Correct flipped question order in English/Spanish versions</td>
+<td>20.1</td>
+</tr>
+<tr>
+<td>13</td>
 <td>sed_cg_nsc (Experiences w/ Police)</td>
 <td><b>Remove instrument</b></td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>13</td>
+<td>14</td>
 <td>HOME-21 (<code>sed_cg_home_it</code>)</td>
 <td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>14</td>
+<td>15</td>
 <td>PACES &lt;18 (<code>sed_cg_paces</code>)</td>
 <td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
 <td>TBD</td>
