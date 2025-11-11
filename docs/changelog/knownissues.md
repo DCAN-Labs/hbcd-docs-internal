@@ -25,20 +25,24 @@
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
   <th style="padding-top: 2px; padding-bottom: 2px">Issue/Update</th>
   <th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>1</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Correct Adjusted Age (<code>age_adjusted</code>) variable across instruments:</b>  inaccurately calculated based on the LMP (EDD +280 days) instead of the EDD (shifts age upwards by ~40 weeks).</td>
 <td>20.1</td>
 </tr>
 <tr>
+<td>2</td>
 <td><b>'Instruction' metadata text may be incomplete/misaligned</b> - <a href="https://docs.hbcdstudy.org/latest/changelog/knownissues/#instruction-metadata-read-carefully">see details</a></td>
 <td>TBD</td>
 </tr>
 <tr>
+<td>3</td>
 <td><b><i class="fa fa-brain"></i> Imaging: Run ID Order Not Chronological</b> - <a href="https://docs.hbcdstudy.org/latest/changelog/knownissues/#imaging-data">see details</a></td>
 <td>TBD</td>
 </tr>
@@ -50,6 +54,7 @@
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
   <th style="padding-top: 2px; padding-bottom: 2px">Table/Variable</th>
   <th style="padding-top: 2px; padding-bottom: 2px">Issue/Update</th>
   <th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
@@ -58,16 +63,19 @@
 <tbody>
 <tr><td colspan="3" style="padding: 2px 8px;"><b>Basic Demographics (<code>sed_basic_demographics</code>)</b></td></tr>
 <tr>
+<td>1</td>
 <td>Child Multi-Ethnicity</td>
 <td><b>Remove:</b> child_ethnoracial_acs_by_multi_ethnicity V01 data</td>
 <td>20.1</td>
 </tr>
 <tr>
+<td>2</td>
 <td>Child Multi-Race</td>
 <td><b>Remove:</b> child_ethnoracial_acs_by_multi_race (duplicate coding of Child Multi-Ethnicity)</td>
 <td>20.1</td>
 </tr>
 <tr>
+<td>3</td>
 <td>screen_mother_race</td>
 <td><b>Data Error:</b> Remove invalid response option 2 = <i>Hawaiian</i></td>
 <td>20.1</td>
@@ -75,21 +83,26 @@
 <tr><td colspan="3"></td></tr>
 <tr><td colspan="3" style="padding: 2px 8px;"><b>Visit Information (<code>par_visit_data</code>)</b></td></tr>
 <tr>
+<td>1</td>
 <td>participant_withdrawal_date</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> Change sentinel value for withdrawal date of participants who did NOT withdraw (<code>12/26/1999</code>) to null</td>
 <td>20.1</td>
 </tr>
 <tr>
+<td>2</td>
 <td>su_flag_bio_*</td>
 <td><b>Remove:</b> SU flags derived from USDTL urine toxicology for V02 (not collected)</td>
 <td>20.1</td>
 </tr>
 <tr>
-<td rowspan="2">su_flag_tlfb_*</td>
+<td>3</td>
+<td>su_flag_tlfb_*</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> Correct erroneous positive TLFB SU flags (e.g. nicotine use reported only weeks 3 & 4, but V01 & V02 'self_report_nicotine'=1)</td>
 <td>20.1</td>
 </tr>
 <tr>
+<td>4</td>
+<td>su_flag_tlfb_*</td>
 <td><b>Data Error:</b> Change TLFB SU flags for participants without a V02 from 'no' to 'null'</td>
 <td>20.2</td>
 </tr>
