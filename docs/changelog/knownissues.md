@@ -141,6 +141,11 @@
 <td><b>Remove Variables:</b> administration (all, partial, none) &amp; data_taken</td>
 <td>TBD</td>
 </tr>
+<tr>
+<td>IBQR</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Shadow Matrix Error:</b> Missingness reason showing as LOGIC SKIPPED, but missingess is not caused by branching logic. Currently under LORIS review.</td>
+<td>TBD</td>
+</tr>
 </tbody>
 </table>
 
@@ -240,8 +245,13 @@
 <td>20.1</td>
 </tr>
 <tr>
-<td>TLFB PNR</td>
+<td>TLFB (PNR)</td>
 <td><b>Data Error:</b> Postnatal Recruits reported in v1 or v2, but should be v3</td>
+<td>20.2</td>
+</tr>
+<tr>
+<td>TLFB (missing V02)</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> TLFB missing for subset of participants at V02. Solution/fix currently unclear.</td>
 <td>20.2</td>
 </tr>
 <tr>
