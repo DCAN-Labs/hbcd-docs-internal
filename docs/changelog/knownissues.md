@@ -188,12 +188,11 @@
 </thead>
 <tbody>
 <tr>
-<td>SPM-2</td>
-<td><b>Add missing status scores</b> missing for all but one subscale</td>
+<td rowspan="2">SPM-2 (<i>Infant version</i> - <code>ncl_cg_spm2__inf</code>)</td>
+<td><b>Add missing status scores</b> that are currently missing for all but one subscale</td>
 <td>20.1</td>
 </tr>
 <tr>
-<td>SPM-2</td>
 <td><b>Add Variables:</b> age fields</td>
 <td>TBD (20.X)</td>
 </tr>
