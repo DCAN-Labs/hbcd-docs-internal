@@ -100,6 +100,7 @@
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
 <th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
 <th style="padding-top: 2px; padding-bottom: 2px">Issue/Update</th>
 <th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
@@ -107,46 +108,56 @@
 </thead>
 <tbody>
 <tr>
+<td>1</td>
 <td>CHAOS</td>
 <td><b>Scoring Correction:</b> implement scoring, including prorated scores</td>
 <td>20.1</td>
 </tr>
 <tr>
+<td>2</td>
 <td>ecPROMIS Peer Relationships</td>
 <td><b>Correct prorated scoring</b></td>
 <td>20.1</td>
 </tr>
 <tr>
+<td>3</td>
 <td>ecPROMIS Self-Reg/Flex</td>
 <td><b>Correct prorated scoring</b></td>
 <td>20.1</td>
 </tr>
 <tr>
-<td>ecPROMIS Ch-CG Rel (&lt;1 yr & 1-5 yr)</td>
-<td><b>Correct prorated scoring</b> (for both versions)</td>
+<td>4</td>
+<td>ecPROMIS Ch-CG Rel</td>
+<td><b>Correct prorated scoring</b> (for both versions: &lt;1 yr & 1-5 yr)</td>
 <td>20.1</td>
 </tr>
 <tr>
+<td>5</td>
 <td>MAPS-TL/PROMIS</td>
 <td><b>Workgroup validate prorated scoring</b></td>
 <td>20.1</td>
 </tr>
 <tr>
+<td>6</td>
 <td>ECBQ</td>
 <td><b>Data Correction:</b> Change coding for "Does not apply" to 8 to be consistent with IBQR</td>
 <td>20.2</td>
 </tr>
 <tr>
+<td>7</td>
 <td>IBQR</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Shadow Matrix Error:</b> Missingness reason showing as LOGIC SKIPPED, but missingess is not caused by branching logic. Currently under LORIS review.</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td rowspan="2">ECBQ &amp; IBQR</td>
+<td>8</td>
+<td>ECBQ &amp; IBQR</td>
 <td><b>Remove Variables:</b> administration (all, partial, none) &amp; data_taken</td>
 <td>TBD</td>
 </tr>
 <tr>
+<td>9</td>
+<td>ECBQ &amp; IBQR</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> ~10 participants have both IBQR and ECBQ at V05 (should only have one or the other). Currently under LORIS review.</td>
 <td>TBD</td>
 </tr>
@@ -157,6 +168,7 @@
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
 <th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
 <th style="padding-top: 2px; padding-bottom: 2px">Issue/Update</th>
 <th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
@@ -164,11 +176,13 @@
 </thead>
 <tbody>
 <tr>
+<td>1</td>
 <td>Urine</td>
 <td><b>Data Error:</b> Missing values for urinary cotinine (<code>bio_c_cot_u</code>) were erroneously set to <code>0</code> (N = 18) and will be restored in a future release.</td>
 <td>20.1</td>
 </tr>
 <tr>
+<td>2</td>
 <td>Nails/Urine</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Large gaps between collection and analysis dates (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs) for a large number of samples. Next steps: determine whether this reflects a data entry or site-level issue.</td>
 <td>TBD</td>
@@ -181,6 +195,7 @@
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
 <th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
 <th style="padding-top: 2px; padding-bottom: 2px">Issue/Update</th>
 <th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
@@ -188,11 +203,14 @@
 </thead>
 <tbody>
 <tr>
-<td rowspan="2">SPM-2 (<i>Infant version</i> - <code>ncl_cg_spm2__inf</code>)</td>
+<td>1</td>
+<td>SPM-2 Infant (<code>ncl_cg_spm2__inf</code>)</td>
 <td><b>Add missing status scores</b> that are currently missing for all but one subscale</td>
 <td>20.1</td>
 </tr>
 <tr>
+<td>2</td>
+<td>SPM-2 Infant (<code>ncl_cg_spm2__inf</code>)</td>
 <td><b>Add Variables:</b> age fields</td>
 <td>TBD (20.X)</td>
 </tr>
@@ -203,6 +221,7 @@
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
 <th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
 <th style="padding-top: 2px; padding-bottom: 2px">Issue/Update</th>
 <th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
@@ -210,11 +229,13 @@
 </thead>
 <tbody>
 <tr>
+<td>1</td>
 <td>BFH</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Add variables:</b> add remaining variables flagged for inclusion (currently only 2 of the 17 present)</td>
 <td>20.1</td>
 </tr>
 <tr>
+<td>2</td>
 <td>BISQ</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Add missing score fields</b>: infant_sleep_score, parent_behavior_score, parent_perception_score, total_score</td>
 <td>20.1</td>
@@ -226,6 +247,7 @@
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
 <th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
 <th style="padding-top: 2px; padding-bottom: 2px">Issue/Update</th>
 <th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
@@ -233,31 +255,37 @@
 </thead>
 <tbody>
 <tr>
+<td>1</td>
 <td>pex_bm_apa_apa2_*</td>
 <td><b>Data Correction:</b> Add missing APA Level 2 scores (<i>all are currently blank</i>)</td>
 <td>20.1</td>
 </tr>
 <tr>
+<td>2</td>
 <td>TLFB</td>
 <td><b>Add Variables:</b> Add all age variable fields</td>
 <td>20.1</td>
 </tr>
 <tr>
+<td>3</td>
 <td>TLFB</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Detailed variable breakdown (e.g. create new subcategories to separate out 'nicotine' from 'cigarettes, e-cigarettes, cigars etc.' & extract frequency for each)</td>
 <td>20.1</td>
 </tr>
 <tr>
+<td>4</td>
 <td>TLFB (PNR)</td>
 <td><b>Data Error:</b> Postnatal Recruits reported in v1 or v2, but should be v3</td>
 <td>20.2</td>
 </tr>
 <tr>
+<td>5</td>
 <td>TLFB (missing V02)</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> TLFB missing for subset of participants at V02. Solution/fix currently unclear.</td>
 <td>20.2</td>
 </tr>
 <tr>
+<td>6</td>
 <td>pex_bm_health</td>
 <td><b>Data Correction:</b> Fix inconsistently provided ICD codes for Pregnancy/Infant Health</td>
 <td>TBD (R3.X)</td>
