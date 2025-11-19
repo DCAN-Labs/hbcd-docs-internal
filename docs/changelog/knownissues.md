@@ -56,10 +56,9 @@
 </tr>
 </thead>
 <tbody>
-<tr><td colspan="3" style="padding: 2px 8px;"><b>Visit Information (<code>par_visit_data</code>)</b></td></tr>
 <tr>
 <td>1</td>
-<td>su_flag_tlfb_*</td>
+<td><code>par_visit_data_su_flag_tlfb_*</code></td>
 <td><b>Data Error:</b> Change TLFB SU flags for participants without a V02 from 'no' to 'null'</td>
 <td>20.2</td>
 </tr>
@@ -282,18 +281,12 @@
 </tr>
 <tr>
 <td>2</td>
-<td>sed_cg_nsc (Experiences w/ Police)</td>
-<td><b>Remove instrument</b></td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>3</td>
 <td>HOME-21 (<code>sed_cg_home_it</code>)</td>
 <td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>4</td>
+<td>3</td>
 <td>PACES &lt;18 (<code>sed_cg_paces</code>)</td>
 <td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
 <td>TBD</td>
