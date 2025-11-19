@@ -96,13 +96,13 @@
 <tr>
 <td>1</td>
 <td>Nails/Urine</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Large gaps between collection and analysis dates (e.g., over 100–300 days, compared to the 30-day limit specified by internal SOPs) for a large number of samples. Next steps: determine whether this reflects a data entry or site-level issue.</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Add 'ANALYSIS DATE' for Biospec tables.</td>
 <td>TBD</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Nails/Urine</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Add 'ANALYSIS DATE' for Biospec tables.</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Large gaps between collection and analysis dates - currently documented as a <a href="https://docs.hbcdstudy.org/latest/instruments/biospec/nails/#warning">Data Warning</a> on central HBCD Docs site. Currently under review by WG to determine next steps.</td>
 <td>TBD</td>
 </tr>
 </tbody>
