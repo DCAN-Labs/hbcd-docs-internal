@@ -239,12 +239,6 @@
 <tbody>
 <tr>
 <td>1</td>
-<td>HOME-21 (<code>sed_cg_home_it</code>)</td>
-<td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>2</td>
 <td>PACES &lt;18 (<code>sed_cg_paces</code>)</td>
 <td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
 <td>TBD</td>
