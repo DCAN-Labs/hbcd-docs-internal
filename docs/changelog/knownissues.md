@@ -44,27 +44,6 @@
 </tbody>
 </table>
 
-#### <i class="fas fa-id-card"></i>&nbsp; Demographics 
-
-<table class="compact-table-no-vertical-lines">
-<thead style="background-color: #ff8a42cc; color: #695541ff;">
-<tr>
-<th style="padding-top: 2px; padding-bottom: 2px">#</th>
-  <th style="padding-top: 2px; padding-bottom: 2px">Table/Variable</th>
-  <th style="padding-top: 2px; padding-bottom: 2px">Issue/Update</th>
-  <th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td><code>par_visit_data_su_flag_tlfb_*</code></td>
-<td><b>Data Error:</b> Change TLFB SU flags for participants without a V02 from 'no' to 'null'</td>
-<td>20.2</td>
-</tr>
-</tbody>
-</table>
-
 #### <i class="fa fa-people-arrows"></i>&nbsp; Behavior & Caregiver-Child Interaction
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
@@ -90,18 +69,12 @@
 </tr>
 <tr>
 <td>3</td>
-<td>IBQR (<code>mh_cg_ibqr</code>)</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Shadow Matrix Error:</b> Missingness reason showing as LOGIC SKIPPED, but missingess is not caused by branching logic. Currently under LORIS review.</td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>4</td>
 <td>ECBQ &amp; IBQR</td>
 <td><b>Remove Variables:</b> administration (all, partial, none) &amp; data_taken</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>5</td>
+<td>4</td>
 <td>ECBQ &amp; IBQR</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> ~10 participants have both IBQR and ECBQ at V05 (should only have one or the other). Currently under LORIS review.</td>
 <td>TBD</td>
