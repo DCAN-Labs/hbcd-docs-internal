@@ -84,36 +84,24 @@
 </tr>
 <tr>
 <td>2</td>
-<td>MAPS-TL/PROMIS</td>
-<td><b>Workgroup validate prorated scoring</b></td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>3</td>
 <td>ECBQ (<code>mh_cg_ecbq</code>)</td>
 <td><b>Data Correction:</b> Change coding for "Does not apply" to 8 to be consistent with IBQR</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>4</td>
-<td>ECBQ (<code>mh_cg_ecbq</code>)</td>
-<td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>5</td>
+<td>3</td>
 <td>IBQR (<code>mh_cg_ibqr</code>)</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Shadow Matrix Error:</b> Missingness reason showing as LOGIC SKIPPED, but missingess is not caused by branching logic. Currently under LORIS review.</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>6</td>
+<td>4</td>
 <td>ECBQ &amp; IBQR</td>
 <td><b>Remove Variables:</b> administration (all, partial, none) &amp; data_taken</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>7</td>
+<td>5</td>
 <td>ECBQ &amp; IBQR</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> ~10 participants have both IBQR and ECBQ at V05 (should only have one or the other). Currently under LORIS review.</td>
 <td>TBD</td>
