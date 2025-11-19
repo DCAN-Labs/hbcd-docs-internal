@@ -146,12 +146,6 @@
 <td style="word-wrap: break-word; white-space: normal;"><b>Add missing score fields</b>: infant_sleep_score, parent_behavior_score, parent_perception_score, total_score</td>
 <td>20.2</td>
 </tr>
-<tr>
-<td>2</td>
-<td>ecPROMIS Sleep (<code>ph_cg_pms__sleep</code>)</td>
-<td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
-<td>TBD</td>
-</tr>
 </tbody>
 </table>
 
