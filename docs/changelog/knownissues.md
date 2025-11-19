@@ -193,18 +193,12 @@
 </tr>
 <tr>
 <td>3</td>
-<td>Growth (<code>ph_ch_anthro</code>)</td>
-<td><b>Data Request:</b> recalculate z-score based on actual DOB</td>
-<td>20.1</td>
-</tr>
-<tr>
-<td>4</td>
 <td>ecPROMIS PA/Greenspace (<code>ph_cg_pms__pags</code>)</td>
 <td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>5</td>
+<td>4</td>
 <td>ecPROMIS Sleep (<code>ph_cg_pms__sleep</code>)</td>
 <td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
 <td>TBD</td>
