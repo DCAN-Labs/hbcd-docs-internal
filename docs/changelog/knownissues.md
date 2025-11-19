@@ -174,23 +174,3 @@
 </tr>
 </tbody>
 </table>
-
-#### <i class="fas fa-city"></i>&nbsp; Social & Environmental Determinants
-<table class="compact-table-no-vertical-lines">
-<thead style="background-color: #ff8a42cc; color: #695541ff;">
-<tr>
-<th style="padding-top: 2px; padding-bottom: 2px">#</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Issue/Update</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>PACES &lt;18 (<code>sed_cg_paces</code>)</td>
-<td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
-<td>TBD</td>
-</tr>
-</tbody>
-</table>
