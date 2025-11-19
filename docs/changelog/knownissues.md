@@ -163,7 +163,7 @@
 <tr>
 <td>1</td>
 <td>TLFB (missing V02)</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> TLFB missing for subset of participants at V02. Solution/fix currently unclear.</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> TLFB missing for subset of participants at V02. Under LORIS review.</td>
 <td>20.2</td>
 </tr>
 <tr>
