@@ -108,27 +108,6 @@
 </tbody>
 </table>
 
-#### <i class="fa-solid fa-puzzle-piece"></i>&nbsp; Neurocognition & Language
-
-<table class="compact-table-no-vertical-lines">
-<thead style="background-color: #ff8a42cc; color: #695541ff;">
-<tr>
-<th style="padding-top: 2px; padding-bottom: 2px">#</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Issue/Update</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>SPM-2 Infant (<code>ncl_cg_spm2__inf</code>)</td>
-<td><b>Add Variables:</b> age fields</td>
-<td>TBD (20.X)</td>
-</tr>
-</tbody>
-</table>
-
 #### <i class="fa fa-heart-pulse"></i>&nbsp; Physical Health
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
