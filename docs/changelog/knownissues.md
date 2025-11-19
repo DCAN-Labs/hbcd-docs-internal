@@ -148,12 +148,6 @@
 </tr>
 <tr>
 <td>2</td>
-<td>ecPROMIS PA/Greenspace (<code>ph_cg_pms__pags</code>)</td>
-<td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>3</td>
 <td>ecPROMIS Sleep (<code>ph_cg_pms__sleep</code>)</td>
 <td><b>Data Error:</b> Add missing score fields (currently under LORIS review)</td>
 <td>TBD</td>
