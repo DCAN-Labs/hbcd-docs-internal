@@ -103,6 +103,15 @@
 <td>TBD (R3.X)</td>
 </tr>
 
+<!-- SED -->
+<tr><td colspan="4"><i class="fas fa-city"></i>&nbsp; <b>Social & Environmental Determinants</b></td></tr>
+<tr>
+  <td>1</td>
+  <td><code>sed_bm_ehits</code></td> 
+  <td style="word-wrap: break-word; white-space: normal;"><code>total_score</code> and <code>score</code> both look like sum scores except former has inaccurate values - currently under review</td>
+  <td>TBD</td>
+</tr>
+
 <!-- IMAGING -->
 <tr><td colspan="4"><i class="fa fa-brain"></i>&nbsp; <b>Imaging</b></td></tr>
 <tr>
