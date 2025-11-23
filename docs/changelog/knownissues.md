@@ -31,10 +31,17 @@
 </thead>
 <tbody>
 <!-- General -->
+<tr><td colspan="4"><b>General</b></td></tr>
 <tr>
 <td>1</td>
 <td>NA- Data Dictionary</td>
 <td>'Instruction' metadata text may be incomplete/misaligned - <a href="https://docs.hbcdstudy.org/latest/changelog/knownissues/#instruction-metadata-read-carefully">see details</a></td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>1</td>
+<td>GA</td>
+<td>Implausible gestational ages in multiple instruments - <a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/18387442075">see details</a></td>
 <td>TBD</td>
 </tr>
 
@@ -79,6 +86,15 @@
 <td>TBD</td>
 </tr>
 
+<!-- Neurocognition & Language -->
+<tr><td colspan="4"><i class="fa-solid fa-puzzle-piece"></i>&nbsp; <b>Neurocognition & Language</b></td></tr>
+<tr>
+<td>1</td>
+<td>CDI</td>
+<td style="word-wrap: break-word; white-space: normal;">Benchmark age, adjusted benchmark age, and adjusted percentile scores missing for the English CDI words and gestures. All percentile scores besides (`ncl_ch_cdiwgen_words_produced_percentile_both`) are incorrectly set to `type_data`=text, but should be integer.</td>
+<td>20.1</td>
+</tr>
+
 <!-- Physical Health -->
 <tr><td colspan="4"><i class="fa fa-heart-pulse"></i>&nbsp; <b>Physical Health</b></td></tr>
 <tr>
@@ -112,14 +128,22 @@
   <td>TBD</td>
 </tr>
 
-<!-- IMAGING -->
-<tr><td colspan="4"><i class="fa fa-brain"></i>&nbsp; <b>Imaging</b></td></tr>
+<!-- EEG & IMAGING-->
+<tr><td colspan="4"><i class="fa fa-brain"></i>&nbsp; <b>EEG & Imaging</b></td></tr>
 <tr>
 <td>1</td>
-<td>General</td>
+<td>EEG</td>
+<td>Missing EEG capping quality variables for V03 (<a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/18386241252">monday.com</a>)</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>1</td>
+<td>MR</td>
 <td>Run ID Order Not Chronological - <a href="https://docs.hbcdstudy.org/latest/changelog/knownissues/#imaging-data">see details</a></td>
 <td>TBD</td>
 </tr>
 </tbody>
 </table>
+
+
 
