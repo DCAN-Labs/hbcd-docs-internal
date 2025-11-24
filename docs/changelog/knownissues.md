@@ -91,7 +91,7 @@
 <tr>
 <td>1</td>
 <td>CDI</td>
-<td style="word-wrap: break-word; white-space: normal;">Benchmark age, adjusted benchmark age, and adjusted percentile scores missing for the English CDI words and gestures. All percentile scores besides (`ncl_ch_cdiwgen_words_produced_percentile_both`) are incorrectly set to `type_data`=text, but should be integer.</td>
+<td style="word-wrap: break-word; white-space: normal;">All percentile scores besides (`ncl_ch_cdiwgen_words_produced_percentile_both`) are incorrectly set to `type_data`=text, but should be integer.</td>
 <td>20.1</td>
 </tr>
 
