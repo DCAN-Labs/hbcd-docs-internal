@@ -68,7 +68,7 @@
 <tr>
 <td>4</td>
 <td>ECBQ &amp; IBQR</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> ~10 participants have both IBQR and ECBQ at V05 (should only have one or the other). Currently under LORIS review.</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> ~10 participants have both IBQR and ECBQ at V05 (should only have one or the other). Currently waiting on WG feedback regarding whether data points should be removed.</td>
 <td>TBD</td>
 </tr>
 <!-- Biospec -->
@@ -92,7 +92,7 @@
 <td>1</td>
 <td>CDI</td>
 <td style="word-wrap: break-word; white-space: normal;">All percentile scores besides (`ncl_ch_cdiwgen_words_produced_percentile_both`) are incorrectly set to `type_data`=text, but should be integer.</td>
-<td>20.1</td>
+<td>20.2</td>
 </tr>
 
 <!-- Physical Health -->
