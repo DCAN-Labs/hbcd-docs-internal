@@ -20,6 +20,8 @@
   </a>
 </div>
 
+### General
+
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
@@ -31,7 +33,6 @@
 </thead>
 <tbody>
 <!-- General -->
-<tr><td colspan="4"><b>General</b></td></tr>
 <tr>
 <td>1</td>
 <td>NA- Data Dictionary</td>
@@ -39,14 +40,72 @@
 <td>TBD</td>
 </tr>
 <tr>
-<td>1</td>
-<td>GA</td>
+<td>2</td>
+<td>Gestational Age (GA)</td>
 <td>Implausible gestational ages in multiple instruments - <a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/18387442075">see details</a></td>
 <td>TBD</td>
 </tr>
+</tbody>
+</table>
 
+### Demographics - *Visit Information*
+
+<table class="compact-table-no-vertical-lines">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fixed Issue/Update</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>par_visit_data</code></td>
+<td>Remove 'protocol_exception' field (3 cases with 'IRB Deviation')</td>
+<td>20.2</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>par_visit_data</code></td>
+<td>Remove open text fields</td>
+<td>20.2</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>par_visit_data</code></td>
+<td>Remove 'participant_withdrawal' and 'participant_withdrawal_reason' fields</td>
+<td>20.2</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>par_visit_data</code></td>
+<td>Remove incorrect 'lol' test entry for 'Reason visit missed'</td>
+<td>20.2</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>par_visit_data</code></td>
+<td>Set 'source' to 'General' across all items and set 'description' to 'Biological Mother' for all SU flag fields</td>
+<td>20.2</td>
+</tr>
+</tbody>
+</table>
+
+### Behavior & Caregiver-Child Interaction
+
+<table class="compact-table-no-vertical-lines">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fixed Issue/Update</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
+</tr>
+</thead>
+<tbody>
 <!-- BCGI -->
-<tr><td colspan="4"><i class="fa fa-people-arrows"></i>&nbsp; <b>Behavior & Caregiver-Child Interaction</b></td></tr>
 <tr>
 <td>1</td>
 <td>CHAOS</td>
@@ -71,8 +130,22 @@
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> ~10 participants have both IBQR and ECBQ at V05 (should only have one or the other). Currently waiting on WG feedback regarding whether data points should be removed.</td>
 <td>TBD</td>
 </tr>
+</tbody>
+</table>
+
+### Biospecimen & Omics
+
+<table class="compact-table-no-vertical-lines">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fixed Issue/Update</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
+</tr>
+</thead>
+<tbody>
 <!-- Biospec -->
-<tr><td colspan="4"><i class="fa fa-vial"></i>&nbsp; <b>Biospecimen & Omics</b></td></tr>
 <tr>
 <td>1</td>
 <td>Nails/Urine</td>
@@ -85,27 +158,65 @@
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Large gaps between collection and analysis dates - currently documented as a <a href="https://docs.hbcdstudy.org/latest/instruments/biospec/nails/#warning">Data Warning</a> on central HBCD Docs site. Currently under review by WG to determine next steps.</td>
 <td>TBD</td>
 </tr>
+</tbody>
+</table>
 
+### Neurocognition & Language
+
+<table class="compact-table-no-vertical-lines">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fixed Issue/Update</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
+</tr>
+</thead>
+<tbody>
 <!-- Neurocognition & Language -->
-<tr><td colspan="4"><i class="fa-solid fa-puzzle-piece"></i>&nbsp; <b>Neurocognition & Language</b></td></tr>
 <tr>
 <td>1</td>
 <td>CDI</td>
 <td style="word-wrap: break-word; white-space: normal;">All percentile scores besides (`ncl_ch_cdiwgen_words_produced_percentile_both`) are incorrectly set to `type_data`=text, but should be integer.</td>
 <td>20.2</td>
 </tr>
+</tbody>
+</table>
 
-<!-- Physical Health -->
-<tr><td colspan="4"><i class="fa fa-heart-pulse"></i>&nbsp; <b>Physical Health</b></td></tr>
+### Physical Health
+
+<table class="compact-table-no-vertical-lines">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fixed Issue/Update</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td>1</td>
 <td>BISQ</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Add missing score fields</b>: infant_sleep_score, parent_behavior_score, parent_perception_score, total_score</td>
 <td>20.2</td>
 </tr>
+</tbody>
+</table>
 
+### Pregnancy & Exposure, Including Substance Use
+
+<table class="compact-table-no-vertical-lines">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fixed Issue/Update</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
+</tr>
+</thead>
+<tbody>
 <!-- PEX -->
-<tr><td colspan="4"><i class="fa-solid fa-baby"></i>&nbsp; <b>Pregnancy & Exposure, Including Substance Use</b></td></tr>
 <tr>
 <td>1</td>
 <td>TLFB (missing V02)</td>
@@ -118,18 +229,42 @@
 <td><b>Data Correction:</b> Fix inconsistently provided ICD codes for Pregnancy/Infant Health</td>
 <td>TBD (R3.X)</td>
 </tr>
+</tbody>
+</table>
 
+### Social & Environmental Determinants
+<table class="compact-table-no-vertical-lines">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fixed Issue/Update</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
+</tr>
+</thead>
+<tbody>
 <!-- SED -->
-<tr><td colspan="4"><i class="fas fa-city"></i>&nbsp; <b>Social & Environmental Determinants</b></td></tr>
 <tr>
   <td>1</td>
   <td><code>sed_bm_ehits</code></td> 
   <td style="word-wrap: break-word; white-space: normal;"><code>total_score</code> and <code>score</code> both look like sum scores except former has inaccurate values - currently under review</td>
   <td>TBD</td>
 </tr>
+</tbody>
+</table>
 
+### EEG & Imaging
+<table class="compact-table-no-vertical-lines">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fixed Issue/Update</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
+</tr>
+</thead>
+<tbody>
 <!-- EEG & IMAGING-->
-<tr><td colspan="4"><i class="fa fa-brain"></i>&nbsp; <b>EEG & Imaging</b></td></tr>
 <tr>
 <td>1</td>
 <td>EEG</td>
