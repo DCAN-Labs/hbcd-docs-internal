@@ -124,12 +124,6 @@
 <td><b>Remove Variables:</b> administration (all, partial, none) &amp; data_taken</td>
 <td>TBD</td>
 </tr>
-<tr>
-<td>4</td>
-<td>ECBQ &amp; IBQR</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> ~10 participants have both IBQR and ECBQ at V05 (should only have one or the other). Currently waiting on WG feedback regarding whether data points should be removed.</td>
-<td>TBD</td>
-</tr>
 </tbody>
 </table>
 
