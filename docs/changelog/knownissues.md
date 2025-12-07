@@ -191,7 +191,7 @@
 <tbody>
 <tr>
 <td>1</td>
-<td>BISQ</td>
+<td>BISQR</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Add missing score fields</b>: infant_sleep_score, parent_behavior_score, parent_perception_score, total_score</td>
 <td>20.2</td>
 </tr>
