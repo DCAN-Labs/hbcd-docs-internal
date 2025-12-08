@@ -201,6 +201,12 @@
 <td style="word-wrap: break-word; white-space: normal;"><b>Add missing score fields</b>: infant_sleep_score, parent_behavior_score, parent_perception_score, total_score</td>
 <td>20.2</td>
 </tr>
+<tr>
+<td>2</td>
+<td>ecPROMIS - Physical Activity</td>
+<td style="word-wrap: break-word; white-space: normal;">Add score fields that are to be excluded from release 2.0 due to incorrect data (documented as known issue on public HBCD Docs site with instructions for users to calculate fields themselves)</td>
+<td>R2.1 patch</td>
+</tr>
 </tbody>
 </table>
 
