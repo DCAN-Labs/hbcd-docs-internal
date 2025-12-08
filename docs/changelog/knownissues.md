@@ -152,6 +152,12 @@
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Large gaps between collection and analysis dates - currently documented as a <a href="https://docs.hbcdstudy.org/latest/instruments/biospec/nails/#warning">Data Warning</a> on central HBCD Docs site. Currently under review by WG to determine next steps.</td>
 <td>TBD</td>
 </tr>
+<tr>
+<td>3</td>
+<td>Urine</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Remove Variables:</b> Remove <code>bio_c_mep_u</code>; <code>bio_c_mep_u_cat</code>; <code>bio_c_mep_unit_u</code> (only keep nmep[normeperidine]).</td>
+<td>TBD</td>
+</tr>
 </tbody>
 </table>
 
