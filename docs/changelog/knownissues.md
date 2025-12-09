@@ -241,13 +241,14 @@
 <td style="word-wrap: break-word; white-space: normal;"><b>SME Request:</b> (1) Order variables in the order of the survey and (2) Remove <i>adjusted age</i>, <i>candidate age</i>, and <i>sequence</i> fields</td>
 <td>20.2</td>
 </tr>
+<tr>
+<td>4</td>
+<td>ASSIST V2</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>SME Request:</b> (1) Order variables in the order of the survey; (2) Remove <i>sequence</i> field; (3) Address blanks and 2 outliers (.47, .55) in <code>candidate_age</code></td>
+<td>20.2</td>
+</tr>
 </tbody>
 </table>
-
-Assist V2
-1- Please remove sequence field
-2- Please order variables in the order of the survey
-3- pex_bm_assistv2_candidate_age has blanks, and also has two outliers (.47, .55) 
 
 ### Social & Environmental Determinants
 <table class="compact-table-no-vertical-lines">
