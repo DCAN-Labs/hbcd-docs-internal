@@ -244,7 +244,13 @@
 <tr>
 <td>4</td>
 <td>ASSIST V2</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>SME Request:</b> (1) Order variables in the order of the survey; (2) Remove <i>sequence</i> field; (3) Address blanks and 2 outliers (.47, .55) in <code>candidate_age</code></td>
+<td style="word-wrap: break-word; white-space: normal;"><b>SME Request:</b> (1) Order variables in the order of the survey; (2) Remove <i>sequence</i> field; (3) Address blanks and 2 outliers (.47, .55) in <i>candidate_age</i></td>
+<td>20.2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>ASSIST V3</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>SME Request:</b> (1) Order variables in the order of the survey; (2) Remove <i>sequence</i> & <i>gestational_age</i> fields; (3) Address why <i>candidate_age</i> is &lt; 3-9 months in some instances</td>
 <td>20.2</td>
 </tr>
 </tbody>
