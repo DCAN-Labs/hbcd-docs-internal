@@ -180,6 +180,13 @@
 <td style="word-wrap: break-word; white-space: normal;">All percentile scores besides (`ncl_ch_cdiwgen_words_produced_percentile_both`) are incorrectly set to `type_data`=text, but should be integer.</td>
 <td>TBD (R2.1)</td>
 </tr>
+<tr>
+<td>2</td>
+<td>MLDS</td>
+<td style="word-wrap: break-word; white-space: normal;">
+Correct 'dictionary' Data Dictionary element to remove erroneous text that appears at end, e.g., "Are there other children being cared for at the same time with your child?Â Â Â Â Â Â." These are coming from the options as coded in REDCap, and will need to be removed. They are not visible on the displayed options, but the HTML leakage is found in LORIS.</td>
+<td>TBD (R2.1)</td>
+</tr>
 </tbody>
 </table>
 
