@@ -88,6 +88,14 @@
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Large gaps between collection and analysis dates - currently documented as a <a href="https://docs.hbcdstudy.org/latest/instruments/biospec/nails/#warning">Data Warning</a> on central HBCD Docs site. Currently under review by WG to determine next steps.</td>
 <td>TBD</td>
 </tr>
+<tr>
+<td>2</td>
+  <td>Urinary Creatinine</td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Address out-of-range values in creatinine results (<code>bio_bm_biosample_urine_results_bio_creat_u</code>)
+  </td>
+    <td><b>R2.1</b></td> 
+</tr>
 </tbody>
 </table>
 
@@ -112,10 +120,25 @@
 </tr>
 <tr>
 <td>2</td>
+  <td>Bayley</td>
+  <td style="word-wrap: break-word; white-space: normal;">13 Bayley administrations that do not have valid scores for all sub-tests (<code>-9999</code>)</td>
+<td>TBD (R2.1)</td>
+  </td>
+</tr>
+<tr>
+<td>3</td>
 <td>MLDS</td>
 <td style="word-wrap: break-word; white-space: normal;">
 Correct 'dictionary' Data Dictionary element to remove erroneous text that appears at end, e.g., "Are there other children being cared for at the same time with your child?Â Â Â Â Â Â." These are coming from the options as coded in REDCap, and will need to be removed. They are not visible on the displayed options, but the HTML leakage is found in LORIS.</td>
 <td>TBD (R2.1)</td>
+</tr>
+<tr>
+<td>4</td>
+  <td>MLDS</td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  The variable "total hours per week of non parental hours" (<code>ncl_ch_mlds_arr_hr_wk</code>) contains implausible values due to data entry errors. The max plausible value for this variable is 168 hours.
+  </td>
+  <td>TBD (R2.1)</td>
 </tr>
 </tbody>
 </table>
