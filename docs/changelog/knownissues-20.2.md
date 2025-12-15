@@ -22,31 +22,7 @@
 
 ### General
 
-<table class="compact-table-no-vertical-lines">
-<thead style="background-color: #ff8a42cc; color: #695541ff;">
-<tr>
-<th style="padding-top: 2px; padding-bottom: 2px">#</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Fixed Issue/Update</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
-</tr>
-</thead>
-<tbody>
-<!-- General -->
-<tr>
-<td>1</td>
-<td>NA- Data Dictionary</td>
-<td>'Instruction' metadata text may be incomplete/misaligned - <a href="https://docs.hbcdstudy.org/latest/changelog/knownissues/#instruction-metadata-read-carefully">see details</a></td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Gestational Age (GA)</td>
-<td>Implausible gestational ages in multiple instruments - <a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/18387442075">see details</a></td>
-<td>TBD</td>
-</tr>
-</tbody>
-</table>
+See issues documented on the beta 2.0 version of the HBCD Docs site [here](https://docs.hbcdstudy.org/2.0/changelog/knownissues/#general).
 
 ### Behavior & Caregiver-Child Interaction
 
