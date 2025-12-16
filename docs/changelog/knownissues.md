@@ -186,8 +186,8 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 </tr>
 <tr>
 <td>4</td>
-<td><code>pex_bm_health_preg__healthhx_002__01</code></td>
-<td>Blank values - remove from R2.0 if not able to resolve in time (currently under LORIS review)</td>
+<td>pex_bm_health_preg</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__healthhx_002__01</code> is blank - remove from R2.0 if not able to resolve (currently under LORIS review)</td>
 <td>TBD</td>
 </tr>
 </tbody>
