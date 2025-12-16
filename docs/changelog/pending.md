@@ -1,10 +1,5 @@
 # Pending Updates
 
-## Upcoming - 20.2
-
-* Additional validation to extract more accurate ‘Date of Administration’ for subset of cases submitted late (not based on ‘time_completion’)  
-* CHAOS prorated scoring
-
 ## Upcoming - Post-Release (2.0/3.0)
 
 * **Brain Rating associated fields**  

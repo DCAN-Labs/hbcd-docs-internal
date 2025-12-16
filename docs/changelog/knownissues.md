@@ -1,3 +1,4 @@
+<p style="text-align: center; font-size: 1.6em;">🚧 <i><b>UNDER CONSTRUCTION</b></i> 🚧 </p>
 
 # Known Issues
 
@@ -22,76 +23,7 @@
 
 ### General
 
-<table class="compact-table-no-vertical-lines">
-<thead style="background-color: #ff8a42cc; color: #695541ff;">
-<tr>
-<th style="padding-top: 2px; padding-bottom: 2px">#</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Fixed Issue/Update</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
-</tr>
-</thead>
-<tbody>
-<!-- General -->
-<tr>
-<td>1</td>
-<td>NA- Data Dictionary</td>
-<td>'Instruction' metadata text may be incomplete/misaligned - <a href="https://docs.hbcdstudy.org/latest/changelog/knownissues/#instruction-metadata-read-carefully">see details</a></td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Gestational Age (GA)</td>
-<td>Implausible gestational ages in multiple instruments - <a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/18387442075">see details</a></td>
-<td>TBD</td>
-</tr>
-</tbody>
-</table>
-
-### Demographics - *Visit Information*
-
-<table class="compact-table-no-vertical-lines">
-<thead style="background-color: #ff8a42cc; color: #695541ff;">
-<tr>
-<th style="padding-top: 2px; padding-bottom: 2px">#</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Fixed Issue/Update</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td><code>par_visit_data</code></td>
-<td>Remove 'protocol_exception' field (3 cases with 'IRB Deviation')</td>
-<td>20.2</td>
-</tr>
-<tr>
-<td>2</td>
-<td><code>par_visit_data</code></td>
-<td>Remove open text fields</td>
-<td>20.2</td>
-</tr>
-<tr>
-<td>3</td>
-<td><code>par_visit_data</code></td>
-<td>Remove 'participant_withdrawal' and 'participant_withdrawal_reason' fields</td>
-<td>20.2</td>
-</tr>
-<tr>
-<td>4</td>
-<td><code>par_visit_data</code></td>
-<td>Remove incorrect 'lol' test entry for 'Reason visit missed'</td>
-<td>20.2</td>
-</tr>
-<tr>
-<td>5</td>
-<td><code>par_visit_data</code></td>
-<td>Set 'source' to 'General' across all items and set 'description' to 'Biological Mother' for all SU flag fields</td>
-<td>20.2</td>
-</tr>
-</tbody>
-</table>
+See issues documented on the beta 2.0 version of the HBCD Docs site [here](https://docs.hbcdstudy.org/2.0/changelog/knownissues/#general).
 
 ### Behavior & Caregiver-Child Interaction
 
@@ -108,22 +40,9 @@
 <!-- BCGI -->
 <tr>
 <td>1</td>
-<td>CHAOS</td>
-<td><b>Scoring Correction:</b> implement scoring, including prorated scores</td>
-<td>20.2</td>
-</tr>
-<tr>
-<td>2</td>
 <td>ECBQ (<code>mh_cg_ecbq</code>)</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Correction:</b> Change coding for "Does not apply" to 8 to be consistent with IBQR (currently noted on instrument page under <a href="https://docs.hbcdstudy.org/2.0/instruments/bcgi/ibqr/#scoring">Scoring Procedures</a>)</td>
 <td>TBD</td>
-</tr>
-<tr>
-<td>3</td>
-<td>ECBQ &amp; IBQR</td>
-<td><b>Remove Variables:</b> administration (all, partial, none) &amp; data_taken</td>
-<td>TBD</td>
-</tr>
 </tbody>
 </table>
 
@@ -143,20 +62,16 @@
 <tr>
 <td>1</td>
 <td>Nails/Urine</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Add 'ANALYSIS DATE' for Biospec tables.</td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Nails/Urine</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Large gaps between collection and analysis dates - currently documented as a <a href="https://docs.hbcdstudy.org/latest/instruments/biospec/nails/#warning">Data Warning</a> on central HBCD Docs site. Currently under review by WG to determine next steps.</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>3</td>
-<td>Urine</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Remove Variables:</b> Remove <code>bio_c_mep_u</code>; <code>bio_c_mep_u_cat</code>; <code>bio_c_mep_unit_u</code> (only keep nmep[normeperidine]).</td>
-<td>TBD</td>
+<td>2</td>
+  <td>Urinary Creatinine</td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  Address out-of-range values in creatinine results (<code>bio_bm_biosample_urine_results_bio_creat_u</code>)
+  </td>
+    <td><b>R2.1</b></td> 
 </tr>
 </tbody>
 </table>
@@ -182,10 +97,25 @@
 </tr>
 <tr>
 <td>2</td>
+  <td>Bayley</td>
+  <td style="word-wrap: break-word; white-space: normal;">13 Bayley administrations that do not have valid scores for all sub-tests (<code>-9999</code>)</td>
+<td>TBD (R2.1)</td>
+  </td>
+</tr>
+<tr>
+<td>3</td>
 <td>MLDS</td>
 <td style="word-wrap: break-word; white-space: normal;">
 Correct 'dictionary' Data Dictionary element to remove erroneous text that appears at end, e.g., "Are there other children being cared for at the same time with your child?Â Â Â Â Â Â." These are coming from the options as coded in REDCap, and will need to be removed. They are not visible on the displayed options, but the HTML leakage is found in LORIS.</td>
 <td>TBD (R2.1)</td>
+</tr>
+<tr>
+<td>4</td>
+  <td>MLDS</td>
+  <td style="word-wrap: break-word; white-space: normal;">
+  The variable "total hours per week of non parental hours" (<code>ncl_ch_mlds_arr_hr_wk</code>) contains implausible values due to data entry errors. The max plausible value for this variable is 168 hours.
+  </td>
+  <td>TBD (R2.1)</td>
 </tr>
 </tbody>
 </table>
@@ -204,12 +134,6 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <tbody>
 <tr>
 <td>1</td>
-<td>BISQ</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Add missing score fields</b>: infant_sleep_score, parent_behavior_score, parent_perception_score, total_score</td>
-<td>20.2</td>
-</tr>
-<tr>
-<td>2</td>
 <td>ecPROMIS - Physical Activity</td>
 <td style="word-wrap: break-word; white-space: normal;">Add score fields that are to be excluded from release 2.0 due to incorrect data (documented as known issue on public HBCD Docs site with instructions for users to calculate fields themselves)</td>
 <td>R2.1 patch</td>
@@ -234,7 +158,7 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <td>1</td>
 <td>TLFB (missing V02)</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> TLFB missing for subset of participants at V02. Under LORIS review.</td>
-<td>20.2</td>
+<td>TBD</td>
 </tr>
 <tr>
 <td>2</td>
@@ -242,55 +166,10 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <td><b>Data Correction:</b> Fix inconsistently provided ICD codes for Pregnancy/Infant Health</td>
 <td>TBD (R3.X)</td>
 </tr>
-<tr>
-<td>3</td>
-<td>ASSIST V1</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>SME Request:</b> (1) Order variables in the order of the survey and (2) Remove <i>adjusted age</i>, <i>candidate age</i>, and <i>sequence</i> fields</td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>4</td>
-<td>ASSIST V2</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>SME Request:</b> (1) Order variables in the order of the survey; (2) Remove <i>sequence</i> field; (3) Address blanks and 2 outliers (.47, .55) in <i>candidate_age</i></td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>5</td>
-<td>ASSIST V3</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>SME Request:</b> (1) Order variables in the order of the survey; (2) Remove <i>sequence</i> & <i>gestational_age</i> fields; (3) Address why <i>candidate_age</i> is &lt; 3-9 months in some instances</td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>6</td>
-<td>DSM5<br>(<i>pex_bm_str__ptsd</i>)</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>SME Request:</b> (1) Remove <i>sequence</i> field (V1-3); (2) Remove <i>candidate_age</i> from V1; (3) Remove <i>gestational_age</i> from V2, V3; (3) Address outliers in <i>candidate_age</i> at V2 & V3</td>
-<td>TBD</td>
-</tr>
 </tbody>
 </table>
 
-### Social & Environmental Determinants
-<table class="compact-table-no-vertical-lines">
-<thead style="background-color: #ff8a42cc; color: #695541ff;">
-<tr>
-<th style="padding-top: 2px; padding-bottom: 2px">#</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Fixed Issue/Update</th>
-<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
-</tr>
-</thead>
-<tbody>
-<!-- SED -->
-<tr>
-  <td>1</td>
-  <td><code>sed_bm_ehits</code></td> 
-  <td style="word-wrap: break-word; white-space: normal;"><code>total_score</code> and <code>score</code> both look like sum scores except former has inaccurate values - currently under review</td>
-  <td>TBD</td>
-</tr>
-</tbody>
-</table>
-
-### EEG & Imaging
+### Imaging
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
@@ -302,12 +181,6 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 </thead>
 <tbody>
 <!-- EEG & IMAGING-->
-<tr>
-<td>1</td>
-<td>EEG</td>
-<td>Missing EEG capping quality variables for V03 (<a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/18386241252">monday.com</a>)</td>
-<td>TBD</td>
-</tr>
 <tr>
 <td>1</td>
 <td>MR</td>
