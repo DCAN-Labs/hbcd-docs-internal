@@ -1,5 +1,3 @@
-<p style="text-align: center; font-size: 1.6em;">🚧 <i><b>UNDER CONSTRUCTION</b></i> 🚧 </p>
-
 # Known Issues
 
 <div class="pill-center">
