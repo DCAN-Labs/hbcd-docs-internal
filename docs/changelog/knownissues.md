@@ -178,6 +178,12 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <td><b>Data Correction:</b> Fix inconsistently provided ICD codes for Pregnancy/Infant Health</td>
 <td>TBD (R3.X)</td>
 </tr>
+<tr>
+<td>3</td>
+<td>TLFB</td>
+<td>PNR cohort reported TLFB on the wrong weeks (versions 1 or 2 instead of 3)</td>
+<td>R2.1 patch</td>
+</tr>
 </tbody>
 </table>
 
