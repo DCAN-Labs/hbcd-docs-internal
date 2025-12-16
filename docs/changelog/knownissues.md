@@ -138,6 +138,12 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <td style="word-wrap: break-word; white-space: normal;">Add score fields that are to be excluded from release 2.0 due to incorrect data (documented as known issue on public HBCD Docs site with instructions for users to calculate fields themselves)</td>
 <td>R2.1 patch</td>
 </tr>
+<tr>
+  <td>1</td>
+  <td>Growth<br><code>ph_ch_anthro</code></td>
+  <td style="word-wrap: break-word; white-space: normal;">Ranges used to filter out-of-range growth measurements are not age-specific, leading to values that are within the valid range, but biologically implausible for the visit age. Filtering methods need to be re-evaluated.</td>
+  <td>R2.1 patch</td>
+</tr>
 </tbody>
 </table>
 
