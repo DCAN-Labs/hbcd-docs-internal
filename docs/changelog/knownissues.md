@@ -168,8 +168,8 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <!-- PEX -->
 <tr>
 <td>1</td>
-<td>TLFB (missing V02)</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> TLFB missing for subset of participants at V02. Under LORIS review.</td>
+<td>TLFB</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> TLFB missing for subset of V02 participants. Under LORIS review (see <a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/9389624562">monday.com</a>)</td>
 <td>TBD</td>
 </tr>
 <tr>
