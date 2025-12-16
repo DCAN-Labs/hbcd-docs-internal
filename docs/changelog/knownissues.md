@@ -184,8 +184,15 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <td>PNR cohort reported TLFB on the wrong weeks (versions 1 or 2 instead of 3)</td>
 <td>R2.1 patch</td>
 </tr>
+<tr>
+<td>4</td>
+<td><code>pex_bm_health_preg__healthhx_002__01</code></td>
+<td>Blank values - remove from R2.0 if not able to resolve in time (currently under LORIS review)</td>
+<td>TBD</td>
+</tr>
 </tbody>
 </table>
+
 
 ### Imaging
 <table class="compact-table-no-vertical-lines">
