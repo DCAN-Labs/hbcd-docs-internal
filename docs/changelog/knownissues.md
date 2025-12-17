@@ -235,7 +235,7 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <tr>
 <td>8</td>
 <td>pex_bm_healthv2_preg</td>
-<td style="word-wrap: break-word; white-space: normal;"><code>exp__pnv_011</code> and <code>exp__pnv_012</code> are mostly blank, but should be fully populated (reports whether they were taking aspirin)</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>exp__pnv_011</code> and <code>exp__pnv_012</code> are mostly blank, but should be fully populated (reports whether they were taking aspirin - currently under LORIS review)</td>
 <td>TBD</td>
 </tr>
 </tbody>
