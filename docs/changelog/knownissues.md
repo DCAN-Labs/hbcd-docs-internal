@@ -216,8 +216,20 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 </tr>
 <tr>
 <td>6</td>
-<td>pex_bm_health_preg</td>
+<td>pex_bm_healthv2_preg</td>
 <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_healthv2_preg__exp__pnv_007__01</code> is entirely blank, which shouldn't be the case for participants who reported that they stopped PNV (currently under LORIS review).</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>6</td>
+<td>pex_bm_healthv2_preg</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_healthv2_preg__exp__pnv_007__01</code> is entirely blank, which shouldn't be the case for participants who reported that they stopped PNV (currently under LORIS review).</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>7</td>
+<td>pex_bm_healthv2_preg</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_healthv2_preg__illness_015__12</code> blank/missing temperature (similar to issue with illnesses at V1 - currently under LORIS review).</td>
 <td>TBD</td>
 </tr>
 </tbody>
