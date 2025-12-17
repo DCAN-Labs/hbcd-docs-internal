@@ -211,12 +211,17 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <tr>
 <td>5</td>
 <td>pex_bm_health_preg</td>
-<td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__illness_003__12</code> is blank. This is the highest temperature for the third illness. Participants would have needed to report on a first and second illness before seeing this item due to branching logic, but these are not in the dataset</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> <code>pex_bm_health_preg__illness_003__12</code> is blank. This is the highest temperature for the third illness. Participants would have needed to report on a first and second illness before seeing this item due to branching logic, but these are not in the dataset (currently under LORIS review).</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>6</td>
+<td>pex_bm_health_preg</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_healthv2_preg__exp__pnv_007__01</code> is entirely blank, which shouldn't be the case for participants who reported that they stopped PNV (currently under LORIS review).</td>
 <td>TBD</td>
 </tr>
 </tbody>
 </table>
-
 
 
 ### Imaging
