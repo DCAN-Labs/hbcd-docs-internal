@@ -232,9 +232,14 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_healthv2_preg__illness_015__12</code> blank/missing temperature (similar to issue with illnesses at V1 - currently under LORIS review).</td>
 <td>TBD</td>
 </tr>
+<tr>
+<td>8</td>
+<td>pex_bm_healthv2_preg</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>exp__pnv_011</code> and <code>exp__pnv_012</code> are mostly blank, but should be fully populated (reports whether they were taking aspirin)</td>
+<td>TBD</td>
+</tr>
 </tbody>
 </table>
-
 
 ### Imaging
 <table class="compact-table-no-vertical-lines">
