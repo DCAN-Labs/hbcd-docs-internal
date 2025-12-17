@@ -23,6 +23,26 @@
 
 See issues documented on the beta 2.0 version of the HBCD Docs site [here](https://docs.hbcdstudy.org/2.0/changelog/knownissues/#general).
 
+### Demographics
+
+<table class="compact-table-no-vertical-lines">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fixed Issue/Update</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Visit Level Data</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>par_visit_data_visit_missed_date</code> variable data is incorrect: dates are inaccurate (e.g. year of 1999 for some) and also cases where a date is provided when a visit was not missed</td>
+<td>R2.1</td>
+</tbody>
+</table>
+
 ### Behavior & Caregiver-Child Interaction
 
 <table class="compact-table-no-vertical-lines">
