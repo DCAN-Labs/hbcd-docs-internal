@@ -218,7 +218,7 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <tr>
 <td>5</td>
 <td>pex_bm_health_preg</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> <code>pex_bm_health_preg__illness_003__12</code> is blank. This is the highest temperature for the third illness. Participants would have needed to report on a first and second illness before seeing this item due to branching logic, but these are not in the dataset (currently under LORIS review).</td>
+<td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> <code>pex_bm_health_preg__illness_003__12</code> is blank, along with all other "highest temperature reported" items.</td>
 <td>TBD</td>
 </tr>
 <tr>
