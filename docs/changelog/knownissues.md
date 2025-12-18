@@ -91,6 +91,13 @@ See issues documented on the beta 2.0 version of the HBCD Docs site [here](https
   </td>
     <td><b>R2.1</b></td> 
 </tr>
+<tr>
+<td>3</td>
+  <td>Nail Weight</td>
+  <td style="word-wrap: break-word; white-space: normal;">Add unit (mg) for <code>nails_results_nail_weight</code> variable
+  </td>
+    <td><b>R2.0</b></td> 
+</tr>
 </tbody>
 </table>
 
