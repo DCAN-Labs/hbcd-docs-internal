@@ -210,37 +210,37 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <td>TBD</td>
 </tr>
 <tr>
-<td>3</td>
+<td>4</td>
 <td>pex_bm_health</td>
 <td><b>Data Correction:</b> Fix inconsistently provided ICD codes for Pregnancy/Infant Health</td>
 <td>TBD (R3.X)</td>
 </tr>
 <tr>
-<td>4</td>
+<td>5</td>
 <td>pex_bm_health_preg</td>
 <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__healthhx_002__01</code> is blank - remove from R2.0 if not able to resolve (currently under LORIS review)</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>5</td>
+<td>6</td>
 <td>pex_bm_health_preg</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> <code>pex_bm_health_preg__illness_003__12</code> is blank, along with all other "highest temperature reported" items.</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>6</td>
+<td>7</td>
 <td>pex_bm_healthv2_preg</td>
 <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_healthv2_preg__exp__pnv_007__01</code> is entirely blank, which shouldn't be the case for participants who reported that they stopped PNV (currently under LORIS review).</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>7</td>
+<td>8</td>
 <td>pex_bm_healthv2_preg</td>
 <td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_healthv2_preg__illness_015__12</code> blank/missing temperature (similar to issue with illnesses at V1 - currently under LORIS review).</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>8</td>
+<td>9</td>
 <td>pex_bm_healthv2_preg</td>
 <td style="word-wrap: break-word; white-space: normal;"><code>exp__pnv_011</code> and <code>exp__pnv_012</code> are mostly blank, but should be fully populated (reports whether they were taking aspirin - currently under LORIS review)</td>
 <td>TBD</td>
