@@ -190,7 +190,7 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 </tr>
 </thead>
 <tbody>
-<!-- PEX -->
+<!-- TLFB -->
 <tr>
 <td>1</td>
 <td>TLFB</td>
@@ -199,15 +199,21 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 </tr>
 <tr>
 <td>2</td>
-<td>pex_bm_health</td>
-<td><b>Data Correction:</b> Fix inconsistently provided ICD codes for Pregnancy/Infant Health</td>
-<td>TBD (R3.X)</td>
+<td>TLFB</td>
+<td>PNR cohort reported TLFB on the wrong weeks (versions 1 or 2 instead of 3)</td>
+<td>R2.1 patch</td>
 </tr>
 <tr>
 <td>3</td>
 <td>TLFB</td>
-<td>PNR cohort reported TLFB on the wrong weeks (versions 1 or 2 instead of 3)</td>
-<td>R2.1 patch</td>
+<td style="word-wrap: break-word; white-space: normal;">All week 8 & 9 V01 variables should be NA (e.g. V01 ‘alc_wine_wk_09’ variable gas 3,458 ‘0’ values). Corrected in prior release and popped back up again in latest</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>3</td>
+<td>pex_bm_health</td>
+<td><b>Data Correction:</b> Fix inconsistently provided ICD codes for Pregnancy/Infant Health</td>
+<td>TBD (R3.X)</td>
 </tr>
 <tr>
 <td>4</td>
