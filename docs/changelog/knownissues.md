@@ -99,17 +99,23 @@ See issues documented on the beta 2.0 version of the HBCD Docs site [here](https
 </tr>
 <tr>
 <td>3</td>
+  <td>Nails</td>
+  <td style="word-wrap: break-word; white-space: normal;">Potentially incorrect values reported for 3 participants for a few variables (currently under LORIS review - see <a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/10820839538">monday.com item</a>)</td>
+    <td>TBD</td> 
+</tr>
+<tr>
+<td>4</td>
   <td>Urinary Creatinine</td>
   <td style="word-wrap: break-word; white-space: normal;">Out-of-range values in creatinine results (<code>bio_creat_u</code>)</td>
   <td><b>R2.1</b></td> 
 </tr>
 <tr>
-<td>4</td>
+<td>5</td>
   <td>Urine</td>
   <td style="word-wrap: break-word; white-space: normal;">Data Error: <code>bio_c_aha_u</code> has random numbers that shouldn't be there (currently under LORIS review)</td>
   <td>TBD</td> 
 </tr>
-<td>5</td>
+<td>6</td>
   <td>Urine</td>
   <td style="word-wrap: break-word; white-space: normal;">Missing <code>bio_c_crs_u_cat</code> (currently under LORIS review)</td>
   <td>TBD</td> 
