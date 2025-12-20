@@ -40,6 +40,13 @@ See issues documented on the beta 2.0 version of the HBCD Docs site [here](https
 <td>Visit Level Data</td>
 <td style="word-wrap: break-word; white-space: normal;"><code>par_visit_data_visit_missed_date</code> variable data is incorrect: dates are inaccurate (e.g. year of 1999 for some) and also cases where a date is provided when a visit was not missed</td>
 <td>R2.1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Visit Level Data<br>TLFB SU Flag</td>
+<td style="word-wrap: break-word; white-space: normal;">TLFB SU flag erroneously includes use during weeks 1 & 2, which are prior to pregnancy and shouldn’t be counted</td>
+<td>TBD</td>
+</tr>
 </tbody>
 </table>
 
