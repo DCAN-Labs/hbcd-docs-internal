@@ -297,7 +297,7 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 </tbody>
 </table>
 
-### Imaging 
+### Imaging & EEG
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
