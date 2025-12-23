@@ -74,6 +74,13 @@ See issues documented on the beta 2.0 version of the HBCD Docs site [here](https
 <td>ECBQ (<code>mh_cg_ecbq</code>)</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Correction:</b> Change coding for "Does not apply" to 8 to be consistent with IBQR (currently noted on instrument page under <a href="https://docs.hbcdstudy.org/2.0/instruments/bcgi/ibqr/#scoring">Scoring Procedures</a>)</td>
 <td>TBD</td>
+</tr>
+<tr>
+<td>2</td>
+<td>CHAOS</td>
+<td style="word-wrap: break-word; white-space: normal;">Round all score field values to whole numbers (prorated scoring occasionally outputs decimal values) and set data type to "integer"</td>
+<td>TBD</td>
+</tr>
 </tbody>
 </table>
 
