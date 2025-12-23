@@ -268,6 +268,19 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <td style="word-wrap: break-word; white-space: normal;"><code>exp__pnv_011</code> and <code>exp__pnv_012</code> are mostly blank, but should be fully populated (reports whether they were taking aspirin - currently under LORIS review)</td>
 <td>TBD</td>
 </tr>
+<!-- APA -->
+<tr>
+<td>10</td>
+<td>APA 1/2</td>
+<td style="word-wrap: break-word; white-space: normal;">Incorrect sum scores for Mania. Issues include adding 5 to every sum score, and prorating scores when no items are missing, etc.</td>
+<td>20.2.1</td>
+</tr>
+<tr>
+<td>11</td>
+<td>APA 1/2</td>
+<td style="word-wrap: break-word; white-space: normal;">Repetitive Behavior subscale missing total sum score variable (only average score available - looks like scoring is being done correctly based on the average score)</td>
+<td>20.2.1</td>
+</tr>
 </tbody>
 </table>
 
