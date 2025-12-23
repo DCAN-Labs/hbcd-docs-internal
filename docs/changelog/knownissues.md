@@ -297,7 +297,7 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 </tbody>
 </table>
 
-### Imaging
+### Imaging 
 <table class="compact-table-no-vertical-lines">
 <thead style="background-color: #ff8a42cc; color: #695541ff;">
 <tr>
@@ -315,8 +315,13 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <td>Run ID Order Not Chronological - <a href="https://docs.hbcdstudy.org/latest/changelog/knownissues/#imaging-data">see details</a></td>
 <td>TBD</td>
 </tr>
+<tr>
+<td>2</td>
+<td>EEG</td>
+<td>Add missing participant data in tabulated MADE derivatives <a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/10835528302">see details</a></td>
+<td>R2.1</td>
+</tr>
 </tbody>
 </table>
-
 
 
