@@ -38,11 +38,17 @@ See issues documented on the beta 2.0 version of the HBCD Docs site [here](https
 <tr>
 <td>1</td>
 <td>Visit Level Data</td>
-<td style="word-wrap: break-word; white-space: normal;"><code>par_visit_data_visit_missed_date</code> variable data is incorrect: dates are inaccurate (e.g. year of 1999 for some) and also cases where a date is provided when a visit was not missed. This data will be removed for 20.2.1.</td>
+<td style="word-wrap: break-word; white-space: normal;">Remove <code>par_visit_data_visit_missed_date</code> (see item 2 below for details)</td>
 <td>20.2.1</td>
 </tr>
 <tr>
 <td>2</td>
+<td>Visit Level Data</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>par_visit_data_visit_missed_date</code> variable data is incorrect: dates are inaccurate (e.g. year of 1999 for some) and also cases where a date is provided when a visit was not missed. Removed from release data until corrected</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>3</td>
 <td>Visit Level Data<br>TLFB SU Flag</td>
 <td style="word-wrap: break-word; white-space: normal;">TLFB SU flag erroneously includes use during weeks 1 & 2, which are prior to pregnancy and shouldn’t be counted</td>
 <td>TBD</td>
