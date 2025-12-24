@@ -181,6 +181,27 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 </tbody>
 </table>
 
+### Novel Tech & Wearables
+
+<table class="compact-table-no-vertical-lines">
+<thead style="background-color: #ff8a42cc; color: #695541ff;">
+<tr>
+<th style="padding-top: 2px; padding-bottom: 2px">#</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Table/Var</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fixed Issue/Update</th>
+<th style="padding-top: 2px; padding-bottom: 2px">Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Biosensor variables</td>
+<td style="word-wrap: break-word; white-space: normal;">Data Dictionary updates for variable descriptions</td>
+<td>TBD</td>
+</tr>
+</tbody>
+</table>
+
 ### Physical Health
 
 <table class="compact-table-no-vertical-lines">
