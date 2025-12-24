@@ -254,42 +254,30 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <tr>
 <td>5</td>
 <td>pex_bm_health_preg</td>
-<td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__healthhx_002__01</code> is blank - remove from R2.0 if not able to resolve (currently under LORIS review)</td>
-<td>TBD</td>
+<td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__healthhx_002__01</code> is blank - to be resolved for 2.0</td>
+<td>20.2.1</td>
 </tr>
 <tr>
 <td>6</td>
-<td>pex_bm_health_preg</td>
+<td>Health V1-Illness</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> <code>pex_bm_health_preg__illness_003__12</code> is blank, along with all other "highest temperature reported" items.</td>
-<td>TBD</td>
+<td>20.2.1</td>
 </tr>
 <tr>
 <td>7</td>
 <td>pex_bm_healthv2_preg</td>
-<td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_healthv2_preg__exp__pnv_007__01</code> is entirely blank, which shouldn't be the case for participants who reported that they stopped PNV (currently under LORIS review).</td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>8</td>
-<td>pex_bm_healthv2_preg</td>
-<td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_healthv2_preg__illness_015__12</code> blank/missing temperature (similar to issue with illnesses at V1 - currently under LORIS review).</td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>9</td>
-<td>pex_bm_healthv2_preg</td>
-<td style="word-wrap: break-word; white-space: normal;"><code>exp__pnv_011</code> and <code>exp__pnv_012</code> are mostly blank, but should be fully populated (reports whether they were taking aspirin - currently under LORIS review)</td>
-<td>TBD</td>
+<td style="word-wrap: break-word; white-space: normal;">Blank fields to be corrected: <code>exp__pnv_007__01</code>; <code>illness_015__12</code>; <code>exp__pnv_{011|012}</code></td>
+<td>20.2.1</td>
 </tr>
 <!-- APA -->
 <tr>
-<td>10</td>
+<td>8</td>
 <td>APA 1/2</td>
 <td style="word-wrap: break-word; white-space: normal;">Incorrect sum scores for Mania. Issues include adding 5 to every sum score, and prorating scores when no items are missing, etc.</td>
 <td>20.2.1</td>
 </tr>
 <tr>
-<td>11</td>
+<td>9</td>
 <td>APA 1/2</td>
 <td style="word-wrap: break-word; white-space: normal;">Repetitive Behavior subscale missing total sum score variable (only average score available - looks like scoring is being done correctly based on the average score)</td>
 <td>20.2.1</td>
