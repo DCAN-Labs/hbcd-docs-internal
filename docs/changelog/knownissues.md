@@ -53,6 +53,12 @@ See issues documented on the beta 2.0 version of the HBCD Docs site [here](https
 <td style="word-wrap: break-word; white-space: normal;">TLFB SU flag erroneously includes use during weeks 1 & 2, which are prior to pregnancy and shouldn’t be counted</td>
 <td>TBD</td>
 </tr>
+<tr>
+<td>4</td>
+<td>Basic Demo</td>
+<td style="word-wrap: break-word; white-space: normal;">ACS Child combined race & ethnicity with multiracial aggregation by ethnicity (<code>child_ethnoracial_acs_by_multi_ethnicity</code>) largely incorrectly coded as '7' (<i>Unknown</i>)</td>
+<td>TBD</td>
+</tr>
 </tbody>
 </table>
 
