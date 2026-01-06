@@ -252,45 +252,9 @@ Based on the processed data QC performed via these dashboards, subject matter ex
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p><b>Lasso Ingestion</b>
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a>
-</span><br>
-Data ready for release is first ingested into Lasso. Errors in ingestion are addressed and the following checks are performed: 
-<ul>
-<li>Ingestion logs are queried to check for skipped sessions and insertion errors</li>
-<li>Quality Assurance (QA) of the file transfer UI and Globus transfer performed</li>
-</ul>
-</p>
-<p><b>Subject Matter Expert (SME) Sign-Off</b>
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a>
-</span>
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#hbcd-workgroups">Workgroups</a>
-</span><br>
-Lasso obtains final sign-off from Workgroups on datasets in their release-ready form, with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a>, via the <a href="https://hbcd-hdcc-qc.lassoinformatics.com/" target="_blank">Lasso Pre-Release System</a>:
-<ul>
-<li>All SMEs review data in Lasso pre-release system and sign off prior to public release  <ul>
-<li>Instrument scoring, mins/maxes/BIV   </li>
-<li>Missingness/Shadow matrix  </li>
-<li>Data dictionary</li>
-<li>Known issues are documented</li>
-</ul>
-</li>
-<li>Biostatistics WG also reviews data and data dictionary in Lasso pre-release system  <ul>
-<li>mins/maxes/BIV  </li>
-<li>Descriptives (means, frequencies)  </li>
-<li>Missingness/Shadow matrix   </li>
-<li>Data dictionary</li>
-<li>Known issues are documented</li>
-</ul>
-</li>
-</ul>
-<div class="img-with-text">
-    <img src="../images/qc/lasso.png" alt="lasso" width="80%" height="auto" class="center">
-    <p style="text-align: center;"><i>Example of Data View on Lasso Pre-Release System</i></p>
-</div>
-</p>
 <p><b>Process Flow for Workgroup & Biostatistics Pre-Release Final QC</b><br>
-See <a href="https://docs.google.com/spreadsheets/d/115wEkULQJqTF-8ABXTimWQN5fF0FTzq5-hwh6RzY_9g/edit?gid=0#gid=0">this spreadsheet</a> or expand section below for the Responsibility Assignment Matrix (RACI) outlining phases of QC and validation of tabulated data and which organizations are responsible.</p>
+See <a href="https://docs.google.com/spreadsheets/d/115wEkULQJqTF-8ABXTimWQN5fF0FTzq5-hwh6RzY_9g/edit?gid=0#gid=0">this spreadsheet</a> or expand section below for the Responsibility Assignment Matrix (RACI) outlining phases of tabulated data QC and validation and which organizations are responsible.</p>
+
 <div id="tab-raci" class="table-banner" onclick="toggleCollapse(this)">
   <span class="text-with-link">
   <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> RACI for Validation & QC of Tabulated Data</span>
@@ -461,6 +425,43 @@ See <a href="https://docs.google.com/spreadsheets/d/115wEkULQJqTF-8ABXTimWQN5fF0
 </tbody>
 </table>
 </div>
+<p><b>Lasso Ingestion</b>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a>
+</span><br>
+Data ready for release is first ingested into Lasso. Errors in ingestion are addressed and the following checks are performed: 
+<ul>
+<li>Ingestion logs are queried to check for skipped sessions and insertion errors</li>
+<li>Quality Assurance (QA) of the file transfer UI and Globus transfer performed</li>
+</ul>
+</p>
+<p><b>Subject Matter Expert (SME) Sign-Off</b>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a>
+</span>
+<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#hbcd-workgroups">Workgroups</a>
+</span><br>
+Lasso obtains final sign-off from Workgroups on datasets in their release-ready form, with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a>, via the <a href="https://hbcd-hdcc-qc.lassoinformatics.com/" target="_blank">Lasso Pre-Release System</a>:
+<ul>
+<li>All SMEs review data in Lasso pre-release system and sign off prior to public release  <ul>
+<li>Instrument scoring, mins/maxes/BIV   </li>
+<li>Missingness/Shadow matrix  </li>
+<li>Data dictionary</li>
+<li>Known issues are documented</li>
+</ul>
+</li>
+<li>Biostatistics WG also reviews data and data dictionary in Lasso pre-release system  <ul>
+<li>mins/maxes/BIV  </li>
+<li>Descriptives (means, frequencies)  </li>
+<li>Missingness/Shadow matrix   </li>
+<li>Data dictionary</li>
+<li>Known issues are documented</li>
+</ul>
+</li>
+</ul>
+<div class="img-with-text">
+    <img src="../images/qc/lasso.png" alt="lasso" width="80%" height="auto" class="center">
+    <p style="text-align: center;"><i>Example of Data View on Lasso Pre-Release System</i></p>
+</div>
+</p>
 </div>
 
 ### MRI & MRS Data
