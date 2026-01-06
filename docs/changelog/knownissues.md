@@ -38,23 +38,11 @@ See issues documented on the beta 2.0 version of the HBCD Docs site [here](https
 <tr>
 <td>1</td>
 <td>Visit Level Data</td>
-<td style="word-wrap: break-word; white-space: normal;">Remove <code>par_visit_data_visit_missed_date</code> (see item 2 below for details)</td>
-<td>20.2.1</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Visit Level Data</td>
 <td style="word-wrap: break-word; white-space: normal;"><code>par_visit_data_visit_missed_date</code> variable data is incorrect: dates are inaccurate (e.g. year of 1999 for some) and also cases where a date is provided when a visit was not missed. Removed from release data until corrected</td>
 <td>TBD</td>
 </tr>
 <tr>
-<td>3</td>
-<td>Visit Level Data<br>TLFB SU Flag</td>
-<td style="word-wrap: break-word; white-space: normal;">TLFB SU flag erroneously includes use during weeks 1 & 2, which are prior to pregnancy and shouldn’t be counted</td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>4</td>
+<td>2</td>
 <td>Basic Demo</td>
 <td style="word-wrap: break-word; white-space: normal;">ACS Child combined race & ethnicity with multiracial aggregation by ethnicity (<code>child_ethnoracial_acs_by_multi_ethnicity</code>) largely incorrectly coded as '7' (<i>Unknown</i>)</td>
 <td>TBD</td>
@@ -79,12 +67,6 @@ See issues documented on the beta 2.0 version of the HBCD Docs site [here](https
 <td>1</td>
 <td>ECBQ (<code>mh_cg_ecbq</code>)</td>
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Correction:</b> Change coding for "Does not apply" to 8 to be consistent with IBQR (currently noted on instrument page under <a href="https://docs.hbcdstudy.org/2.0/instruments/bcgi/ibqr/#scoring">Scoring Procedures</a>)</td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>2</td>
-<td>CHAOS</td>
-<td style="word-wrap: break-word; white-space: normal;">Round all score field values to whole numbers (prorated scoring occasionally outputs decimal values) and set data type to "integer"</td>
 <td>TBD</td>
 </tr>
 </tbody>
@@ -268,46 +250,9 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 </tr>
 <tr>
 <td>3</td>
-<td>TLFB</td>
-<td style="word-wrap: break-word; white-space: normal;">All week 8 & 9 V01 variables should be NA (e.g. V01 ‘alc_wine_wk_09’ variable gas 3,458 ‘0’ values). Corrected in prior release and popped back up again in latest</td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>4</td>
 <td>pex_bm_health</td>
 <td><b>Data Correction:</b> Fix inconsistently provided ICD codes for Pregnancy/Infant Health</td>
 <td>TBD (R3.X)</td>
-</tr>
-<tr>
-<td>5</td>
-<td>pex_bm_health_preg</td>
-<td style="word-wrap: break-word; white-space: normal;"><code>pex_bm_health_preg__healthhx_002__01</code> is blank - to be resolved for 2.0</td>
-<td>20.2.1</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Health V1-Illness</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Data Error:</b> <code>pex_bm_health_preg__illness_003__12</code> is blank, along with all other "highest temperature reported" items.</td>
-<td>20.2.1</td>
-</tr>
-<tr>
-<td>7</td>
-<td>pex_bm_healthv2_preg</td>
-<td style="word-wrap: break-word; white-space: normal;">Blank fields to be corrected: <code>exp__pnv_007__01</code>; <code>illness_015__12</code>; <code>exp__pnv_{011|012}</code></td>
-<td>20.2.1</td>
-</tr>
-<!-- APA -->
-<tr>
-<td>8</td>
-<td>APA 1/2</td>
-<td style="word-wrap: break-word; white-space: normal;">Incorrect sum scores for Mania. Issues include adding 5 to every sum score, and prorating scores when no items are missing, etc.</td>
-<td>20.2.1</td>
-</tr>
-<tr>
-<td>9</td>
-<td>APA 1/2</td>
-<td style="word-wrap: break-word; white-space: normal;">Repetitive Behavior subscale missing total sum score variable (only average score available - looks like scoring is being done correctly based on the average score)</td>
-<td>20.2.1</td>
 </tr>
 </tbody>
 </table>
