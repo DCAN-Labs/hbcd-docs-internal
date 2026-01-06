@@ -976,7 +976,7 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
 
 ### LIBR
 
-The Laureate Institute for Brain Research (LIBR) houses the **Biostatistics** and **Geocoding & Linking External Data** [HBCD Workgroups](#hbcd-workgroups), providing support for the HDCC in the areas of biostatistics, geolocation, and data analysis.
+The Laureate Institute for Brain Research (LIBR) houses the **Biostatistics** and **Geocoding & Linking External Data** [HBCD Workgroups](#hbcd-workgroups), providing support for the HDCC in the areas of biostatistics, geolocation, and data analysis. The Biostatistics WG is furthermore responsible for <a href="../workflows/qc/#pre-release-qc-5-stages" target="_blank">Pre-release QC</a>.
 
 ```mermaid
 flowchart TB
@@ -1014,12 +1014,12 @@ flowchart TB
       <tr>
       <td>Wesley K. Thompson, PhD</td>
       <td style="word-wrap: break-word; white-space: normal;">HDCC Assoc Dir, Biostatistics WG Chair</td>
-      <td style="word-wrap: break-word; white-space: normal;">Provides statistical guidance on study design, analysis, and methods development for HBCD. Co-leads statistical design and maintenance of <span class="tooltip tooltip-left">DEAP 2.0<span class="tooltiptext">the Data Exploration and Analysis Portal 2.0</span></span>. Supports geolocation of participant residences and linkage to external data sources.</td>
+      <td style="word-wrap: break-word; white-space: normal;">Provides statistical guidance on study design, analysis, and methods development for HBCD. Co-leads statistical design and maintenance of <span class="tooltip tooltip-left">DEAP 2.0<span class="tooltiptext">the Data Exploration and Analysis Portal 2.0</span></span>. Supports geolocation of participant residences and linkage to external data sources. Responsible for <a href="../workflows/qc/#pre-release-qc-5-stages" target="_blank">Pre-release QC</a>.</td>
       </tr>
       <tr>
         <td>TBD</td>
         <td style="word-wrap: break-word; white-space: normal;">Biostatistician</td>
-        <td style="word-wrap: break-word; white-space: normal;">Supports the HBCD Biostatistics Workgroup.</td>
+        <td style="word-wrap: break-word; white-space: normal;">Supports the HBCD Biostatistics Workgroup. Responsible for <a href="../workflows/qc/#pre-release-qc-5-stages" target="_blank">Pre-release QC</a></td>
       </tr>
       <tr>
         <td>Chun Fan, PhD</td>

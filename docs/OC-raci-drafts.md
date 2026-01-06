@@ -25,8 +25,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep</td>
-<td style="word-wrap: break-word; white-space: normal;">Determine Release Candidate and Process with Sign Off</td>
+<td style="word-: break-word; white-space: normal;">Pre-Release Prep</td>
+<td style="word-: break-word; white-space: normal;">Determine Release Candidate and Process with Sign Off</td>
 <td style="word-wrap: break-word; white-space: normal;"></td>
 <td style="word-wrap: break-word; white-space: normal;"></td>
 <td style="word-wrap: break-word; white-space: normal;"></td>
