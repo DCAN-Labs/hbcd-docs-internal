@@ -250,6 +250,12 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 </tr>
 <tr>
 <td>3</td>
+<td>TLFB</td>
+<td style="word-wrap: break-word; white-space: normal;">All week 8 & 9 V01 variables should be NA (e.g. V01 ‘alc_wine_wk_09’ variable has 3,458 ‘0’ values). Corrected in prior release and popped back up again in latest</td>
+<td>R2.1 patch</td>
+</tr>
+<tr>
+<td>4</td>
 <td>pex_bm_health</td>
 <td><b>Data Correction:</b> Fix inconsistently provided ICD codes for Pregnancy/Infant Health</td>
 <td>TBD (R3.X)</td>
