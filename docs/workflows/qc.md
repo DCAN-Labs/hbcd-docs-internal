@@ -43,14 +43,24 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 
 ![](images/qc/qc-overview.png)
 
-## HDCC: Validation and QC of Tabulated Data
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px;">
+**Click to expand below to view the Responsibility Assignment Matrix (RACI) outlining phases of QC and validation of tabulated data and which organizations and groups are responsible.**
+
+<div id="tab-raci" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> RACI for Validation & QC of Tabulated Data</span>
+  <a class="anchor-link" href="#tab-raci" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table" style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px;">
 <thead>
   <tr>
-    <th style="word-wrap: break-word; white-space: normal;"></th>
+    <th style="width: 1%; margin-left: 0;"></th>
     <th style="word-wrap: break-word; white-space: normal;">Phase</th>
-    <th style="word-wrap: break-word; white-space: normal;">Org</th>
-    <th style="word-wrap: break-word; white-space: normal;">Responsible Group</th>
+    <th>Responsible Party</th>
     <th style="word-wrap: break-word; white-space: normal;">Activity</th>
     <th style="word-wrap: break-word; white-space: normal;">Inputs</th>
     <th style="word-wrap: break-word; white-space: normal;">Outputs / Artifacts</th>
@@ -61,8 +71,7 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">1a</td>
 <td style="word-wrap: break-word; white-space: normal;">Instrument coding Specification</td>
-<td style="word-wrap: break-word; white-space: normal;">HCAC</td>
-<td style="word-wrap: break-word; white-space: normal;">Work Group (WG)</td>
+<td style="word-wrap: break-word; white-space: normal;">HCAC <span class="tooltip tooltip-left">WG<span class="tooltiptext">Workgroup</span></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Provide instrument specifications and scoring requirements</td>
 <td style="word-wrap: break-word; white-space: normal;">Email, PDF, scoring docs</td>
 <td style="word-wrap: break-word; white-space: normal;">Instrument spec + scoring rules</td>
@@ -71,8 +80,6 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">1b</td>
 <td style="word-wrap: break-word; white-space: normal;">HDCC-Biostats Authoring</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC-Biostats</td>
 <td style="word-wrap: break-word; white-space: normal;">Receive instrument from WG; author scoring code and perform initial validation</td>
 <td style="word-wrap: break-word; white-space: normal;">WG instrument specs</td>
 <td style="word-wrap: break-word; white-space: normal;">Validated scoring code + example outputs</td>
@@ -81,7 +88,6 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">1c</td>
 <td style="word-wrap: break-word; white-space: normal;">Provenance Capture</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC</td>
 <td style="word-wrap: break-word; white-space: normal;">HDCC-Biostats</td>
 <td style="word-wrap: break-word; white-space: normal;">Store scoring code, examples, and validation notes</td>
 <td style="word-wrap: break-word; white-space: normal;">Scoring code, test cases</td>
@@ -91,7 +97,6 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">1d</td>
 <td style="word-wrap: break-word; white-space: normal;">Instrument Build</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC</td>
 <td style="word-wrap: break-word; white-space: normal;">HDCC-LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Implement instrument and scoring logic in data capture system</td>
 <td style="word-wrap: break-word; white-space: normal;">Approved specs + scoring logic</td>
@@ -101,7 +106,6 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">1e</td>
 <td style="word-wrap: break-word; white-space: normal;">Instrument Code Validation (WG)</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC</td>
 <td style="word-wrap: break-word; white-space: normal;">HDCC-Biostats</td>
 <td style="word-wrap: break-word; white-space: normal;">Validate coded instrument and scoring implementation and put ticket into LORIS ticket centre</td>
 <td style="word-wrap: break-word; white-space: normal;">LORIS instrument</td>
@@ -111,17 +115,15 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">1f</td>
 <td style="word-wrap: break-word; white-space: normal;">Formal Instrument Approval</td>
-<td style="word-wrap: break-word; white-space: normal;">HCAC</td>
-<td style="word-wrap: break-word; white-space: normal;">WG</td>
-<td style="word-wrap: break-word; white-space: normal;">Final sign-off on coded instrument and put tickets into HDCC-QC Lasso Ticket Centre with any issues</td>
-<td style="word-wrap: break-word; white-space: normal;">Instrument Validated by WG</td>
+<td style="word-wrap: break-word; white-space: normal;">HCAC <span class="tooltip tooltip-left">WG<span class="tooltiptext">Workgroup</span></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Final sign-off on coded instrument & submit issues via HDCC-QC Lasso Ticket Centre</td>
+<td style="word-wrap: break-word; white-space: normal;">Instrument validated by WG</td>
 <td style="word-wrap: break-word; white-space: normal;">Instrument approval</td>
 <td style="word-wrap: break-word; white-space: normal;">LORIS</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">1g</td>
 <td style="word-wrap: break-word; white-space: normal;">Approval Provenance</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC</td>
 <td style="word-wrap: break-word; white-space: normal;">HDCC-WG Liason</td>
 <td style="word-wrap: break-word; white-space: normal;">Publish signed approvals and version info</td>
 <td style="word-wrap: break-word; white-space: normal;">WG + Biostats sign-off</td>
@@ -131,7 +133,6 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">2</td>
 <td style="word-wrap: break-word; white-space: normal;">Data Collection</td>
-<td style="word-wrap: break-word; white-space: normal;">HCAC</td>
 <td style="word-wrap: break-word; white-space: normal;">HCAC: Site Staff</td>
 <td style="word-wrap: break-word; white-space: normal;">Begin data collection using approved instrument</td>
 <td style="word-wrap: break-word; white-space: normal;">Approved instrument</td>
@@ -141,7 +142,6 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">3a</td>
 <td style="word-wrap: break-word; white-space: normal;">Ongoing QC &ndash; Data Availability</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC</td>
 <td style="word-wrap: break-word; white-space: normal;">HDCC-QC Lasso</td>
 <td style="word-wrap: break-word; white-space: normal;">Data becomes available in ongoing QC environment</td>
 <td style="word-wrap: break-word; white-space: normal;">Collected data</td>
@@ -151,7 +151,6 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">3b</td>
 <td style="word-wrap: break-word; white-space: normal;">Continuous HDCC Biostats QC</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC</td>
 <td style="word-wrap: break-word; white-space: normal;">HDCC-Biostats</td>
 <td style="word-wrap: break-word; white-space: normal;">Run scheduled HDCC-Biostats QC scripts per instrument. Included in QC scripts will be HDCC-Biostats group running scoring algorithm over item level data and comparing to scored fields in Lasso and put tickets into HDCC-QC Lasso Ticket Centre with any issues. Dump run outputs into common repository.</td>
 <td style="word-wrap: break-word; white-space: normal;">Live data</td>
@@ -160,18 +159,16 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">3c</td>
-<td style="word-wrap: break-word; white-space: normal;">Ongoing QC- WG Review (<a class="in-cell-link" href="https://hbcdstudy.atlassian.net/wiki/spaces/SOPS/overview#Work-Group-and-SME-SOP-V.9" target="_blank">see SME QC SOP</a>)</td>
-<td style="word-wrap: break-word; white-space: normal;">HCAC</td>
-<td style="word-wrap: break-word; white-space: normal;">Work Group (WG)</td>
-<td style="word-wrap: break-word; white-space: normal;">Perform ongoing QC in Lasso and put tickets into HDCC-QC Lasso Ticket Centre with any issues</td>
+<td style="word-wrap: break-word; white-space: normal;">Ongoing QC- WG Review (<a class="in-cell-link" href="https://hbcdstudy.atlassian.net/wiki/spaces/SOPS/overview#Work-Group-and-SME-SOP-V.9" target="_blank">SME QC SOP</a>)</td>
+<td style="word-wrap: break-word; white-space: normal;">HCAC <span class="tooltip tooltip-left">WG<span class="tooltiptext">Workgroup</span></span></td>
+<td style="word-wrap: break-word; white-space: normal;">Perform ongoing QC in Lasso & submit issues via HDCC-QC Lasso Ticket Centre</td>
 <td style="word-wrap: break-word; white-space: normal;">QC datasets</td>
 <td style="word-wrap: break-word; white-space: normal;">QC feedback</td>
 <td style="word-wrap: break-word; white-space: normal;">Lasso HDCC-QC</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td style="word-wrap: break-word; white-space: normal;">3d</td>
 <td style="word-wrap: break-word; white-space: normal;">HDCC ticket review and corrections</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC</td>
 <td style="word-wrap: break-word; white-space: normal;">HDCC-LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">All issues are logged in Mondays and reviewed, managed, and corrected weekly at Monday Release Meeting with all release asociated staff</td>
 <td style="word-wrap: break-word; white-space: normal;">HDCC-QC tickets, WG, and HDCC inputs</td>
@@ -181,7 +178,6 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">4a</td>
 <td style="word-wrap: break-word; white-space: normal;">Pre-release - BR Data Available</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC</td>
 <td style="word-wrap: break-word; white-space: normal;">HDCC-LORIS</td>
 <td style="word-wrap: break-word; white-space: normal;">Prepare Beta Release (BR) and filtered datasets (validate against HDCC biostats Ongoing scoring) against gold standard (Dump run outputs into common repository put there by hdcc-biostats group)</td>
 <td style="word-wrap: break-word; white-space: normal;">QC-reviewed data</td>
@@ -191,7 +187,6 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">4b</td>
 <td style="word-wrap: break-word; white-space: normal;">Pre-Release HDCC Biostats QC</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC</td>
 <td style="word-wrap: break-word; white-space: normal;">HDCC-Biostats</td>
 <td style="word-wrap: break-word; white-space: normal;">QC BR dataset and publish release-specific QC R scripts and put tickets into Git with any issues reported in HDCC-QC Lasso Ticket Centre</td>
 <td style="word-wrap: break-word; white-space: normal;">BR dataset</td>
@@ -201,8 +196,7 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">4c</td>
 <td style="word-wrap: break-word; white-space: normal;">Pre-Release WG QC</td>
-<td style="word-wrap: break-word; white-space: normal;">HCAC</td>
-<td style="word-wrap: break-word; white-space: normal;">Work Group (WG)</td>
+<td style="word-wrap: break-word; white-space: normal;">HCAC <span class="tooltip tooltip-left">WG<span class="tooltiptext">Workgroup</span></span></td>
 <td style="word-wrap: break-word; white-space: normal;">QC data in Pre-Release environment</td>
 <td style="word-wrap: break-word; white-space: normal;">BR dataset</td>
 <td style="word-wrap: break-word; white-space: normal;">Final QC feedback</td>
@@ -211,7 +205,6 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">4d</td>
 <td style="word-wrap: break-word; white-space: normal;">Final Provenance Capture</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC</td>
 <td style="word-wrap: break-word; white-space: normal;">HDCC-WG Liason</td>
 <td style="word-wrap: break-word; white-space: normal;">Publish WG sign-off for BR</td>
 <td style="word-wrap: break-word; white-space: normal;">Final approvals</td>
@@ -220,6 +213,7 @@ The following outlines the 5 stages of QC performed for all study data prior to 
 </tr>
 </tbody>
 </table>
+</div>
 
 ### Behavior, Biology, & Environment
 
