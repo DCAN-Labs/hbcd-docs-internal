@@ -69,6 +69,12 @@ See issues documented on the beta 2.0 version of the HBCD Docs site [here](https
 <td style="word-wrap: break-word; white-space: normal;"><b>Data Correction:</b> Change coding for "Does not apply" to 8 to be consistent with IBQR (currently noted on instrument page under <a href="https://docs.hbcdstudy.org/2.0/instruments/bcgi/ibqr/#scoring">Scoring Procedures</a>)</td>
 <td>TBD</td>
 </tr>
+<tr>
+<td>2</td>
+<td>MAPS-TL (<code>mh_cg_mapdb__*</code>)</td>
+<td style="word-wrap: break-word; white-space: normal;">Notes appear in the score field and will be moved to a separate field in the next release.</td>
+<td><b>2.1</b></td>
+</tr>
 </tbody>
 </table>
 
