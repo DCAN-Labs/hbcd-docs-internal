@@ -41,12 +41,6 @@ See issues documented on the beta 2.0 version of the HBCD Docs site [here](https
 <td style="word-wrap: break-word; white-space: normal;"><code>par_visit_data_visit_missed_date</code> variable data is incorrect: dates are inaccurate (e.g. year of 1999 for some) and also cases where a date is provided when a visit was not missed. Removed from release data until corrected</td>
 <td>TBD</td>
 </tr>
-<tr>
-<td>2</td>
-<td>Basic Demo</td>
-<td style="word-wrap: break-word; white-space: normal;">ACS Child combined race & ethnicity with multiracial aggregation by ethnicity (<code>child_ethnoracial_acs_by_multi_ethnicity</code>) largely incorrectly coded as '7' (<i>Unknown</i>)</td>
-<td>TBD</td>
-</tr>
 </tbody>
 </table>
 
