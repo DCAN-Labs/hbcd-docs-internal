@@ -256,12 +256,7 @@ Based on the processed data QC performed via these dashboards, subject matter ex
 See <a href="https://docs.google.com/spreadsheets/d/115wEkULQJqTF-8ABXTimWQN5fF0FTzq5-hwh6RzY_9g/edit?gid=0#gid=0">this spreadsheet</a> or expand section below for the Responsibility Assignment Matrix (RACI) outlining phases of tabulated data QC and validation and which organizations are responsible.</p>
 
 <div id="tab-raci" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
   <span class="table-text"><i class="fas fa-table" style="margin-right: 6px; color: blue;"></i> RACI for Validation & QC of Tabulated Data</span>
-  <a class="anchor-link" href="#tab-raci" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
