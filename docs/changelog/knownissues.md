@@ -91,31 +91,25 @@ Includes: MAPS-TL, SPM-2, IBQR, ECBQ, and EPDS.
 <!-- Biospec -->
 <tr>
 <td>1</td>
-<td>Nails/Urine</td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Data Request:</b> Large gaps between collection and analysis dates - currently documented as a <a href="https://docs.hbcdstudy.org/latest/instruments/biospec/nails/#warning">Data Warning</a> on central HBCD Docs site. Currently under review by WG to determine next steps.</td>
-<td>TBD</td>
-</tr>
-<tr>
-<td>2</td>
   <td>Nail Weight</td>
   <td style="word-wrap: break-word; white-space: normal;">Add unit (mg) for <code>nails_results_nail_weight</code> variable
   </td>
     <td><b>R2.0</b></td> 
 </tr>
 <tr>
-<td>3</td>
+<td>2</td>
   <td>Nails</td>
   <td style="word-wrap: break-word; white-space: normal;">Potentially incorrect values reported for 3 participants for a few variables (currently under LORIS review - see <a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/10820839538">monday.com item</a>)</td>
     <td>TBD</td> 
 </tr>
 <tr>
-<td>4</td>
+<td>3</td>
   <td>Urinary Creatinine</td>
   <td style="word-wrap: break-word; white-space: normal;">Out-of-range values in creatinine results (<code>bio_creat_u</code>)</td>
   <td><b>R2.1</b></td> 
 </tr>
 <tr>
-<td>5</td>
+<td>4</td>
   <td>Urine</td>
   <td style="word-wrap: break-word; white-space: normal;">Data Error: <code>bio_c_aha_u</code> has random numbers that shouldn't be there (currently under LORIS review)</td>
   <td>TBD</td> 
