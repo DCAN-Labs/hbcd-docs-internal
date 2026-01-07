@@ -264,6 +264,12 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <td><b>Data Correction:</b> Fix inconsistently provided ICD codes for Pregnancy/Infant Health</td>
 <td>TBD (R3.X)</td>
 </tr>
+<tr>
+<td>5</td>
+<td>EPDS</td>
+<td>Scoring correction needed - see <a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/10913411203">monday.com item</a> for details</td>
+<td>R2.1 (BR TBD)</td>
+</tr>
 </tbody>
 </table>
 
