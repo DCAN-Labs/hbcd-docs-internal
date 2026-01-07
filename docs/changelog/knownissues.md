@@ -260,12 +260,18 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 </tr>
 <tr>
 <td>4</td>
+<td>TLFB</td>
+<td style="word-wrap: break-word; white-space: normal;">TLFB SU summary flags potentially incorrect (N=283 records) in “mm_substance” fields - see <a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/10915095290">monday.com item</a> for details.</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>5</td>
 <td>pex_bm_health</td>
 <td><b>Data Correction:</b> Fix inconsistently provided ICD codes for Pregnancy/Infant Health</td>
 <td>TBD (R3.X)</td>
 </tr>
 <tr>
-<td>5</td>
+<td>6</td>
 <td>EPDS</td>
 <td>Scoring correction needed - see <a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/10913411203">monday.com item</a> for details</td>
 <td>R2.1 (BR TBD)</td>
