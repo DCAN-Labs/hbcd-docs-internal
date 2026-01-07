@@ -21,11 +21,7 @@
 
 ### General
 
-See issues documented on the beta 2.0 version of the HBCD Docs site [here](https://docs.hbcdstudy.org/2.0/changelog/knownissues/#general). In addition:
-
-#### Several Instruments Missing Adjusted Age
-Includes: MAPS-TL, SPM-2, IBQR, ECBQ, and EPDS.      
-*Expected fix TBD*
+See issues documented on the beta 2.0 version of the HBCD Docs site [here](https://docs.hbcdstudy.org/2.0/changelog/knownissues/#general).
 
 ### Demographics
 
@@ -72,6 +68,18 @@ Includes: MAPS-TL, SPM-2, IBQR, ECBQ, and EPDS.
 <td>MAPS-TL (<code>mh_cg_mapdb__*</code>)</td>
 <td style="word-wrap: break-word; white-space: normal;">Notes appear in the score field and will be moved to a separate field in the next release.</td>
 <td><b>2.1</b></td>
+</tr>
+<tr>
+<td>3</td>
+<td>MAPS-TL (<code>mh_cg_mapdb__*</code>)</td>
+<td style="word-wrap: break-word; white-space: normal;">Missing Adjusted Age</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>4</td>
+<td>IBQ-R/ECBQ</td>
+<td style="word-wrap: break-word; white-space: normal;">Missing Adjusted Age</td>
+<td>TBD</td>
 </tr>
 </tbody>
 </table>
@@ -158,6 +166,12 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
   The variable "total hours per week of non parental hours" (<code>ncl_ch_mlds_arr_hr_wk</code>) contains implausible values due to data entry errors. The max plausible value for this variable is 168 hours.
   </td>
   <td>TBD (R2.1)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>SPM-2</td>
+<td style="word-wrap: break-word; white-space: normal;">Missing Adjusted Age</td>
+<td>TBD</td>
 </tr>
 </tbody>
 </table>
@@ -264,6 +278,12 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <td>EPDS</td>
 <td>Scoring correction needed - see <a href="https://ucsd-actri.monday.com/boards/6045591843/pulses/10913411203">monday.com item</a> for details</td>
 <td>R2.1 (BR TBD)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>EPDS</td>
+<td style="word-wrap: break-word; white-space: normal;">Missing Adjusted Age</td>
+<td>TBD</td>
 </tr>
 </tbody>
 </table>
