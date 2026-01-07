@@ -21,7 +21,11 @@
 
 ### General
 
-See issues documented on the beta 2.0 version of the HBCD Docs site [here](https://docs.hbcdstudy.org/2.0/changelog/knownissues/#general).
+See issues documented on the beta 2.0 version of the HBCD Docs site [here](https://docs.hbcdstudy.org/2.0/changelog/knownissues/#general). In addition:
+
+#### Several Instruments Missing Adjusted Age
+Includes: SPM-2, IBQR, ECBQ, and EPDS.      
+*Expected fix TBD*
 
 ### Demographics
 
