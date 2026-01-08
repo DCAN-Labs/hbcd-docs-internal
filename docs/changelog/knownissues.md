@@ -212,8 +212,8 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
 <tr>
 <td>1</td>
 <td>ecPROMIS - Physical Activity</td>
-<td style="word-wrap: break-word; white-space: normal;">Add score fields that are to be excluded from release 2.0 due to incorrect data (documented as known issue on public HBCD Docs site with instructions for users to calculate fields themselves)</td>
-<td>R2.1 patch</td>
+<td style="word-wrap: break-word; white-space: normal;">Correct and add summary score fields (Summed Score, T-score, and SE): currently excluded from release as they require first re-coding items to a 1 to 5 point scale (documented on 2.0 HBCD Docs site under <a href="https://docs.hbcdstudy.org/2.0/changelog/pending/#21-existing-study-data-updates">Pending Updates</a>)</td>
+<td>2.1</td>
 </tr>
 <tr>
   <td>2</td>
