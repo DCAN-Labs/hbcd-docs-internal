@@ -219,13 +219,13 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
   <td>2</td>
   <td>Growth<br><code>ph_ch_anthro</code></td>
   <td style="word-wrap: break-word; white-space: normal;">Ranges used to filter out-of-range growth measurements are not age-specific, leading to values that are within the valid range, but biologically implausible for the visit age. Filtering methods need to be re-evaluated.</td>
-  <td>R2.1 patch</td>
+  <td>2.1</td>
 </tr>
 <tr>
   <td>3</td>
   <td>BISQ-SF</td>
   <td style="word-wrap: break-word; white-space: normal;">Missing Infant Sleep (IS) sub-scale score</td>
-  <td>R2.1 patch</td>
+  <td>2.1</td>
 </tr>
 </tbody>
 </table>
