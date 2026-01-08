@@ -26,7 +26,6 @@ The release timeline for determination of variables to include in the release, s
 #### Release 3.0 Timeline
 <img src="../images/timeline3.0.png" alt="Release timeline" width="100%" height="auto" class="center">
 
-
 <div class="notification-banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">Useful Links</span>
