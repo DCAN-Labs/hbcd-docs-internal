@@ -225,7 +225,7 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
   <td>3</td>
   <td>BISQ-SF</td>
   <td style="word-wrap: break-word; white-space: normal;">Missing Infant Sleep (IS) sub-scale score</td>
-  <td>TBD</td>
+  <td>2.1</td>
 </tr>
 </tbody>
 </table>
