@@ -227,6 +227,12 @@ Correct 'dictionary' Data Dictionary element to remove erroneous text that appea
   <td style="word-wrap: break-word; white-space: normal;">Missing Infant Sleep (IS) sub-scale score</td>
   <td>2.1</td>
 </tr>
+<tr>
+  <td>4</td>
+  <td>ecPROMIS- Sleep</td>
+  <td style="word-wrap: break-word; white-space: normal;">Missing score fields due to "type data=text" error</td>
+  <td>TBD</td>
+</tr>
 </tbody>
 </table>
 
