@@ -38,13 +38,13 @@
   </a>
 </p>
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSjwgWch-VUNzg8i1fQ_BK7Gnge-qipRQaW-xfdSwykJROjWu8Q9HiRFyeBgtnjK22FsnAPoFS08Vkd/pubhtml?gid=175872847&single=true" width="95%" height="480" frameborder="0"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSjwgWch-VUNzg8i1fQ_BK7Gnge-qipRQaW-xfdSwykJROjWu8Q9HiRFyeBgtnjK22FsnAPoFS08Vkd/pubhtml?gid=175872847&single=true" width="100%" height="480" frameborder="0"></iframe>
 
 
 
-## Known Issues Resolved in Latest Beta Release
+## Resolved Known Issues
 
-**Once Workgroups/SMEs review the data and confirm that a corrected known issue was resolved as expected/to their satisfaction, the "FINAL QC STATUS" column is updated as COMPLETE:**
+**Once Workgroups/SMEs review the data and confirm that a corrected known issue was resolved as expected/to their satisfaction, the "FINAL QC STATUS" column is updated as COMPLETE. Below is a running list of resolved issues, with the most recent issues at the top. Note that this will only go as far back as BR20.2.3 (used for the 2.0 release).**
 
 
 <p style="font-size: 24px; font-weight: bold;">
