@@ -345,7 +345,8 @@ The [MIDB Analytics Hub](https://midb.umn.edu/research/analytics) works in coord
    
 The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://midb.umn.edu/research/informatics) and [Minnesota Supercomputing Institute (MSI)](https://msi.umn.edu/) at UMN provide the following services to the HBCD study: *System Administration*, *Loris Hosting*, *Computing*, *Processing*, and *Data Sharing*.
 
-<p><object type="image/svg+xml" data="msi.svg" width="90%"></object></p>
+<img src="msi.png" alt="MIDB Informatics Hub Org Chart" width="90%" style="display: block; margin: 0; padding: 0;" />
+
 
 <div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.8em; padding: 8px 12px; border: 2px solid #ccc; border-radius: 6px; background-color: #fafafa;">
   <b>Release Architecture Labels:</b>
@@ -414,7 +415,7 @@ The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://
     <td>DevOps Engineer</td>
     <td style="word-wrap: break-word; white-space: normal;">Data engineering, continuous integration and deployment (CI/CD), infrastructure automation, system monitoring, and incident response.</td>
     </tr>
-    <tr>
+    <!-- <tr>
     <td>Timothy Hendrickson</td>
     <td style="word-wrap: break-word; white-space: normal;">MIDB-IG Neuroimaging Informatics Manager</td>
     <td style="word-wrap: break-word; white-space: normal;">Neuroimaging lead: Lead design and oversight of neuroimaging processing implementation.</td>
@@ -423,7 +424,7 @@ The [Masonic Institute for the Developing Brain (MIDB) Informatics Hub](https://
     <td>Erik Lee</td>
     <td>Neuroimaging Analyst</td>
     <td style="word-wrap: break-word; white-space: normal;">Pipeline lead: Lead software developer and processing for HBCD.</td>
-    </tr>
+    </tr> -->
     <tr>
     <td>Monalisa Biles</td>
     <td>Analyst</td>
@@ -1166,13 +1167,11 @@ HBCD Workgroups (WG) that interface heavily with HDCC include the following (the
     <td>Julie Poehlmann-Tynan - julie.poehlmanntynan@wisc.edu<br>
         Rebecca Shlafer - shlaf002@umn.edu</td>
   </tr>
-
-  <!-- Karen Athy-Penrose (HST) -->
   <tr>
     <th>Biospecimens & Omics</th>
     <td>Julie Croff – julie.croff@okstate.edu<br>
         Elinor Sullivan – sullivel@ohsu.edu</td>
-    <td rowspan="2" style="text-align: center"><b>Karen Athy-Penrose</b><br>
+    <td rowspan="2" style="text-align: center"><b>Matt Schmidt</b><br>
       <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;">
         <i class="fas fa-home" style="margin-right: 2px; color: blue;"></i>
         <a href="../../orgcharts/#health-sciences-technology" target="_blank">HST</a>
