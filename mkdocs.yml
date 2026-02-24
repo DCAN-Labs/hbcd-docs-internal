@@ -90,9 +90,8 @@ nav:
     - Software & Analytic Standards: standards/software.md
     - Data Curation Procedures: standards/curation.md
   - Beta Release Notes: 
-    - Pending Updates: changelog/pending.md
     - Exclusions & Filtering: changelog/exclusions.md
-    - Known Issues: changelog/knownissues.md
+    - Known Issues & Pending Updates: changelog/knownissues.md
     - Release Notes/Change Logs:    
         - Beta Release 20.2.3: changelog/versions/BR20.2.3.md
         - Beta Release 20.2.2: changelog/versions/BR20.2.2.md
