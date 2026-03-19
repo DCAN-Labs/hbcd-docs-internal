@@ -8,7 +8,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 TSV= "latest.tsv"
 
-TSV= "/Users/lucifer/vscode_Luci_scripts/HBCD-DOCS/hbcd-docs-dev2.0/hbcd-docs/tools/monday-parse/latest.tsv"
+TSV= "//Users/lucifer/vscode_Luci_scripts/HBCD-DOCS/dev/hbcd-docs/tools/latest.tsv"
 INPUT_MD = "/Users/lucifer/vscode_Luci_scripts/HBCD-DOCS/hbcd-docs-internal/docs/changelog/versions/BR21.0.md"
 
 # FUNCTIONS
