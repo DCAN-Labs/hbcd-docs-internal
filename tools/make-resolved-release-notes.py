@@ -21,31 +21,15 @@ def load_and_filter_tsv(tsv_path):
     "RTDs": "Type",
     "RTDs Text (markdown format)": "Text"})
 
-    # Filter
-
-    # df = df[
-    # (df['Autoparsed?'] == 'Yes') &
-    # (df['RTDs_Status'] == 'Done') &
-    # (df['Status'].isin(['Done', 'Lasso to review and ensure WG knows']))
-    # ]
-    
-
+    # Filter - based on RTDs status columns that Luci fills out ('Autoparsed?' & 'RTDs_Status' as well as 'Status' column. logic below also includes where 'Status' == 'Dev Done')
     df = df[
     (df['Autoparsed?'] == 'Yes') &
     (df['RTDs_Status'] == 'Done') &
     (df['Status'].isin([
         'Done',
-        'Dev Done',
         'Lasso to review and ensure WG knows'
     ]))
-]
-
-    # df = df[df['Autoparsed?'].str.contains('Yes')]
-    # df = df[df['RTDs_Status'].str.contains('Done')]
-    # df = df[df['Status'].str.contains('Done')]
-    # df = df[df['Status'].str.contains('Lasso to review and ensure WG knows')] 
-
-    # Lasso to review and ensure WG knows
+    ]
 
     # Fill missing values and strip whitespace 
     df = df.fillna('')
