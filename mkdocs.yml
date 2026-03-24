@@ -93,7 +93,7 @@ nav:
     - Exclusions & Filtering: changelog/exclusions.md
     - Known Issues & Pending Updates: changelog/knownissues.md
     - Release Notes/Change Logs:    
-        # - Beta Release 21.0.0: changelog/versions/BR21.0.md
+        #- Beta Release 20.5: changelog/versions/BR20.5.md
         - Beta Release 20.2.3: changelog/versions/BR20.2.3.md
         - Beta Release 20.2.2: changelog/versions/BR20.2.2.md
         - Beta Release 20.2: changelog/versions/BR20.2.md

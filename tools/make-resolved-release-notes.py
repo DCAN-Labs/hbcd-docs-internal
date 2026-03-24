@@ -6,10 +6,8 @@ import re
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
-TSV= "latest.tsv"
-
-TSV= "//Users/lucifer/vscode_Luci_scripts/HBCD-DOCS/dev/hbcd-docs/tools/latest.tsv"
-INPUT_MD = "/Users/lucifer/vscode_Luci_scripts/HBCD-DOCS/hbcd-docs-internal/docs/changelog/versions/BR21.0.md"
+TSV= "/Users/lucifer/vscode_Luci_scripts/HBCD-DOCS/dev/hbcd-docs/tools/latest.tsv"
+INPUT_MD = "/Users/lucifer/vscode_Luci_scripts/HBCD-DOCS/hbcd-docs-internal/docs/changelog/versions/BR20.5.0.md"
 
 # FUNCTIONS
 
@@ -24,10 +22,30 @@ def load_and_filter_tsv(tsv_path):
     "RTDs Text (markdown format)": "Text"})
 
     # Filter
-    df = df[df['Autoparsed?'].str.contains('Yes')]
-    df = df[df['RTDs_Status'].str.contains('Done')]
-    df = df[~df['Status'].str.contains('Dev Done')]
-    df = df[df['Status'].str.contains('Done')] # keep Done to make release notes tables
+
+    # df = df[
+    # (df['Autoparsed?'] == 'Yes') &
+    # (df['RTDs_Status'] == 'Done') &
+    # (df['Status'].isin(['Done', 'Lasso to review and ensure WG knows']))
+    # ]
+    
+
+    df = df[
+    (df['Autoparsed?'] == 'Yes') &
+    (df['RTDs_Status'] == 'Done') &
+    (df['Status'].isin([
+        'Done',
+        'Dev Done',
+        'Lasso to review and ensure WG knows'
+    ]))
+]
+
+    # df = df[df['Autoparsed?'].str.contains('Yes')]
+    # df = df[df['RTDs_Status'].str.contains('Done')]
+    # df = df[df['Status'].str.contains('Done')]
+    # df = df[df['Status'].str.contains('Lasso to review and ensure WG knows')] 
+
+    # Lasso to review and ensure WG knows
 
     # Fill missing values and strip whitespace 
     df = df.fillna('')
