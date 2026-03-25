@@ -7,7 +7,7 @@ import re
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
 TSV= "/Users/lucifer/vscode_Luci_scripts/HBCD-DOCS/dev/hbcd-docs/tools/latest.tsv"
-INPUT_MD = "/Users/lucifer/vscode_Luci_scripts/HBCD-DOCS/hbcd-docs-internal/docs/changelog/versions/BR20.5.0.md"
+INPUT_MD = "/Users/lucifer/vscode_Luci_scripts/HBCD-DOCS/hbcd-docs-internal/docs/changelog/versions/BR20.5.md"
 
 # FUNCTIONS
 
@@ -22,13 +22,20 @@ def load_and_filter_tsv(tsv_path):
     "RTDs Text (markdown format)": "Text"})
 
     # Filter - based on RTDs status columns that Luci fills out ('Autoparsed?' & 'RTDs_Status' as well as 'Status' column. logic below also includes where 'Status' == 'Dev Done')
+    # df = df[
+    # (df['Autoparsed?'] == 'Yes') &
+    # (df['RTDs_Status'] == 'Done') &
+    # (df['Status'].isin([
+    #     'Done',
+    #     'Lasso to review and ensure WG knows'
+    # ]))
+    # ]
+
+    # Filter - based on RTDs status columns that Luci fills out ('Autoparsed?' & 'RTDs_Status') and BR = current BR #
     df = df[
     (df['Autoparsed?'] == 'Yes') &
     (df['RTDs_Status'] == 'Done') &
-    (df['Status'].isin([
-        'Done',
-        'Lasso to review and ensure WG knows'
-    ]))
+    (df['BR'] == '20.5')
     ]
 
     # Fill missing values and strip whitespace 
@@ -88,7 +95,7 @@ for _, row in df.iterrows():
     issue_type = row["MappedType"]
     table = row["Table/Topic"]
     summary_md = row["Text"]
-    pr = row["PR"]
+    # pr = row["PR"]
     br = row["BR"]
 
     # Convert Markdown → HTML & strip outer <p>
@@ -99,7 +106,7 @@ for _, row in df.iterrows():
     summary_html = re.sub(r'^<p>(.*)</p>$', r'\1', summary_html, flags=re.DOTALL)
 
     grouped[issue_type].setdefault(domain, []).append(
-        (table, summary_html, pr, br)
+        (table, summary_html, br)
     )
 
 # Generate HTML tables 
@@ -119,8 +126,7 @@ def build_table(data_dict, table_title):
 <tr style="text-decoration: bold; font-size: 1.2em;">
 <th style="width: 18%;">TABLE/TOPIC</th>
 <th>SUMMARY</th>
-<th style='text-align: center;'><span class="tooltip tooltip-left">PR<span class="tooltiptext">Target Public Release</span></span></th>
-<th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Target Beta Release</span></span></th>
+<th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Beta Release</span></span></th>
 </tr>
 </thead>
 <tbody>
@@ -129,11 +135,10 @@ def build_table(data_dict, table_title):
     for domain in sorted(data_dict.keys()):
         table_parts.append(f"""<tr class="{domain_class}"><td colspan="4"><strong>{html.escape(domain)}</strong></td></tr>""")
 
-        for table, summary_html, pr, br in data_dict[domain]:
+        for table, summary_html, br in data_dict[domain]:
             table_parts.append("<tr>")
             table_parts.append(f"<td class='table-cell' style='font-weight: bold;'>{html.escape(str(table))}</td>")
             table_parts.append(f"<td style='word-wrap: break-word; white-space: normal;'>{summary_html}</td>")
-            table_parts.append(f"<td style='text-align: center; font-weight: bold;'>{pr}</td>")
             table_parts.append(f"<td style='text-align: center; font-weight: bold;'>{br}</td>")
             table_parts.append("</tr>")
 
