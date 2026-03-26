@@ -27,6 +27,11 @@
   </a>
 </div>
 
+!!! info "FYI: Known Issues & Updates Across Sites"
+
+    - **This site (Internal):** Tracks issues by **beta release (BR)**. Resolved items remain listed here until SMEs confirm full resolution, so some items may appear both here and in BR release notes (e.g., [BR20.5 Resolved Known Issues & Pending Updates](versions/BR20.5.md#br205-resolved-known-issues-pending-updates)).
+    - **Public site ([HBCD Data Release Docs](https://docs.hbcdstudy.org/)):** Tracks issues by **public release (PR)**. Items resolved in a BR will not appear as resolved on the public site ([here](https://docs.hbcdstudy.org/latest/changelog/issues-updates/)) until the corresponding PR is released.
+
 <!-- BEGIN KNOWN_ISSUES_TABLE -->
 
 
