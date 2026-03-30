@@ -8,12 +8,6 @@
 
 # Known Issues & Pending Updates
 
-<!-- Upcoming - Post-Release (2.0/3.0) - OLD SANTIAGO NOTES from original pending.md page
-* **ecPROMIS PA/GS** (*ph_cg_pms__pags*) - Change option keys from 0->4 to 1->5  
-* **Shadow Matrix - QC Flags** - Add logic to populate Shadow Matrix for:   
-    * 'Blank' fields related to 'QC Flagged' cases (fields with validations)  
-    * ‘Blank' fields related to other 'QC Flagged' cases   -->
-
 <div class="pill-center">
   <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
     <span class="pill-link">
@@ -38,14 +32,12 @@
     - **This site (Internal):** Tracks issues by **beta release (BR)**. Resolved items remain listed here until SMEs confirm full resolution, so some items may appear both here and in BR release notes (e.g., [BR21.0 Resolved Known Issues & Pending Updates](versions/BR21.0.md#br210-resolved-known-issues-pending-updates)).
     - **Public site ([HBCD Data Release Docs](https://docs.hbcdstudy.org/)):** Tracks issues by **public release (PR)**. Items resolved in a BR will not appear as resolved on the public site ([here](https://docs.hbcdstudy.org/latest/changelog/issues-updates/)) until the corresponding PR is released.
 
+## Current Items
 <!-- BEGIN KNOWN_ISSUES_TABLE -->
 
-
-
-## <i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Known Issues
+### <i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Known Issues
 
 <table class="compact-table-no-vertical-lines">
-
     <thead>
     <tr style="text-decoration: bold; font-size: 1.2em;">
     <th>TABLE/TOPIC</th>
@@ -55,7 +47,6 @@
     </tr>
     </thead>
     <tbody>
-    
 <tr class="domain-row-issue"><td colspan="4"><strong>BEHAVIOR &amp; CAREGIVER-CHILD INTERACTION</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MAPS-TL</td>
@@ -152,6 +143,12 @@
 <td style='text-align: center; font-weight: bold;'>3</td>
 <td style='text-align: center; font-weight: bold;'></td>
 </tr>
+<!-- <tr>
+<td class='table-cell' style='font-weight: bold;'>XCP-D</td>
+<td style='word-wrap: break-word; white-space: normal;'>Tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata will be corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code> (currently <code>Resting State fMRI</code>).</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
+</tr> -->
 <tr class="domain-row-issue"><td colspan="4"><strong>NEUROCOGNITION &amp; LANGUAGE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Data Type</td>
@@ -242,12 +239,9 @@
 </tr>
 </tbody></table>
 
-
-
-## <i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Pending Updates
+### <i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Pending Updates
 
 <table class="compact-table-no-vertical-lines">
-
     <thead>
     <tr style="text-decoration: bold; font-size: 1.2em;">
     <th>TABLE/TOPIC</th>
@@ -257,7 +251,6 @@
     </tr>
     </thead>
     <tbody>
-    
 <tr class="domain-row-pending"><td colspan="4"><strong>ADMINISTRATIVE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Study Navigators</td>
@@ -279,6 +272,12 @@
 <td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
+<!-- <tr>
+<td class='table-cell' style='font-weight: bold;'>Olink</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
+</tr> -->
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Urine</td>
 <td style='word-wrap: break-word; white-space: normal;'>Creatinine results (<code>bio_creat_u</code>) are currently excluded from the release due to out-of-range values and will be added once corrected.</td>
@@ -428,3 +427,40 @@
 
 <!-- END KNOWN_ISSUES_TABLE -->
 <br>
+
+## Resolved Items
+
+<div id="resolved" class="table-banner" onclick="toggleCollapse(this)">
+  <span class="text-with-link">
+  <span class="table-text">Included</span>
+  <a class="anchor-link" href="#resolved" title="Copy link">
+  <i class="fa-solid fa-link"></i>
+  </a>
+  </span>
+  <span class="arrow">▸</span>
+</div>
+<div class="table-collapsible-content">
+<table class="compact-table-no-vertical-lines">
+    <thead>
+    <tr style="text-decoration: bold; font-size: 1.2em;">
+    <th>TABLE/TOPIC</th>
+    <th>SUMMARY</th>
+    <th style='text-align: center;'><span class="tooltip tooltip-left">Final BR<span class="tooltiptext">Beta Release</span></span></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="domain-row-pending"><td colspan="4"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
+    <tr>
+    <td class='table-cell' style='font-weight: bold;'>Olink</td>
+    <td style='word-wrap: break-word; white-space: normal;'>Addition of Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy.</td>
+    <td style='text-align: center; font-weight: bold;'>21.0</td>
+    </tr>
+    <tr class="domain-row-pending"><td colspan="4"><strong>MRI</strong></td></tr>
+    <tr>
+    <td class='table-cell' style='font-weight: bold;'>XCP-D</td>
+    <td style='word-wrap: break-word; white-space: normal;'>Tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code> (currently <code>Resting State fMRI</code>).</td>
+    <td style='text-align: center; font-weight: bold;'>21.0</td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
