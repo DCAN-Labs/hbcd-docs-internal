@@ -8,6 +8,12 @@
 
 # Known Issues & Pending Updates
 
+<!-- Upcoming - Post-Release (2.0/3.0) - OLD SANTIAGO NOTES from original pending.md page
+* **ecPROMIS PA/GS** (*ph_cg_pms__pags*) - Change option keys from 0->4 to 1->5  
+* **Shadow Matrix - QC Flags** - Add logic to populate Shadow Matrix for:   
+    * 'Blank' fields related to 'QC Flagged' cases (fields with validations)  
+    * ‘Blank' fields related to other 'QC Flagged' cases   -->
+
 <div class="pill-center">
   <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
     <span class="pill-link">
@@ -90,12 +96,6 @@
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>DEMOGRAPHICS</strong></td></tr>
 <tr>
-<td class='table-cell' style='font-weight: bold;'></td>
-<td style='word-wrap: break-word; white-space: normal;'></td>
-<td style='text-align: center; font-weight: bold;'></td>
-<td style='text-align: center; font-weight: bold;'>21.1</td>
-</tr>
-<tr>
 <td class='table-cell' style='font-weight: bold;'>Basic Demo</td>
 <td style='word-wrap: break-word; white-space: normal;'>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; please exclude these values from analyses until corrected.</td>
 <td style='text-align: center; font-weight: bold;'></td>
@@ -104,7 +104,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Demographics</td>
 <td style='word-wrap: break-word; white-space: normal;'>Variables on the Other Biological Parent are missing from <code>sed_bm_demo</code>.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 <td style='text-align: center; font-weight: bold;'>21.1</td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>EEG</strong></td></tr>
@@ -160,6 +160,12 @@
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>NEUROCOGNITION &amp; LANGUAGE</strong></td></tr>
 <tr>
+<td class='table-cell' style='font-weight: bold;'>Data Type</td>
+<td style='word-wrap: break-word; white-space: normal;'>Summary score variables in the Bayley and CDI are incorrectly classified in the metadata as data type of <code>text</code>, which may cause issues for certain tools and return data in the wrong format.</td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
+<td style='text-align: center; font-weight: bold;'>21.1</td>
+</tr>
+<tr>
 <td class='table-cell' style='font-weight: bold;'>MLDS</td>
 <td style='word-wrap: break-word; white-space: normal;'>Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "√Ç √Ç √Ç √Ç ")</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
@@ -174,7 +180,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Vineland</td>
 <td style='word-wrap: break-word; white-space: normal;'>Subset of variables have a typo in the spelling of "receptive."</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 <td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>PHYSICAL HEALTH</strong></td></tr>
@@ -196,12 +202,6 @@
 <td style='word-wrap: break-word; white-space: normal;'>There are cases where APA Level 2 was administered against gating logic (e.g. for Repetitive Behavior despite there being missing Level 1 responses). As Level 2 administration was not expected, these are not scored (score = "No additional inquiry required") despite having Level 2 item responses present. The Level 2 item-level data will be removed in the future to prevent confusion.</td>
 <td style='text-align: center; font-weight: bold;'>3</td>
 <td style='text-align: center; font-weight: bold;'></td>
-</tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>EPDS</td>
-<td style='word-wrap: break-word; white-space: normal;'>N=2 participants in <code>pex_bm_epds</code> have a biologically implausible adjusted age of -1 at V02. Until corrected, please exclude from analyses.</td>
-<td style='text-align: center; font-weight: bold;'>2.1</td>
-<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>EPDS</td>
@@ -301,7 +301,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>SU Flags</td>
 <td style='word-wrap: break-word; white-space: normal;'>A derived/rolled up substance use flag for Stimulants will be added based on positive instrument-specific Stimulant results.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 <td style='text-align: center; font-weight: bold;'>21.1</td>
 </tr>
 <tr>
@@ -338,7 +338,7 @@
 <tr class="domain-row-pending"><td colspan="4"><strong>MRI</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>BrainSwipes</td>
-<td style='word-wrap: break-word; white-space: normal;'>BrainSwipes will be updated with the most recent QC results, currently available in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='word-wrap: break-word; white-space: normal;'>BrainSwipes QC results will be updated with latest results currently available in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 <td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
@@ -351,7 +351,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Scanner Info</td>
 <td style='word-wrap: break-word; white-space: normal;'>Scanner information (currently available in the scans TSV files within the raw BIDS data as well as all sidecar JSON files) will be provided as tabulated data.</td>
-<td style='text-align: center; font-weight: bold;'></td>
+<td style='text-align: center; font-weight: bold;'>2.1</td>
 <td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr>

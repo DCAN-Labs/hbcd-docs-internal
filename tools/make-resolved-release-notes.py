@@ -7,7 +7,7 @@ import re
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
 TSV= "/Users/lucifer/vscode_Luci_scripts/HBCD-DOCS/dev/hbcd-docs/tools/latest.tsv"
-INPUT_MD = "/Users/lucifer/vscode_Luci_scripts/HBCD-DOCS/hbcd-docs-internal/docs/changelog/versions/BR20.5.md"
+INPUT_MD = "/Users/lucifer/vscode_Luci_scripts/HBCD-DOCS/hbcd-docs-internal/docs/changelog/versions/BR21.0.md"
 
 # FUNCTIONS
 
@@ -21,21 +21,16 @@ def load_and_filter_tsv(tsv_path):
     "RTDs": "Type",
     "RTDs Text (markdown format)": "Text"})
 
-    # Filter - based on RTDs status columns that Luci fills out ('Autoparsed?' & 'RTDs_Status' as well as 'Status' column. logic below also includes where 'Status' == 'Dev Done')
-    # df = df[
-    # (df['Autoparsed?'] == 'Yes') &
-    # (df['RTDs_Status'] == 'Done') &
-    # (df['Status'].isin([
-    #     'Done',
-    #     'Lasso to review and ensure WG knows'
-    # ]))
-    # ]
-
     # Filter - based on RTDs status columns that Luci fills out ('Autoparsed?' & 'RTDs_Status') and BR = current BR #
     df = df[
     (df['Autoparsed?'] == 'Yes') &
     (df['RTDs_Status'] == 'Done') &
-    (df['BR'] == '20.5')
+    (df['BR'] == '21.0') &
+    (df['Status'].isin([
+        'Dev Done',
+        'Done',
+        'Lasso to review and ensure WG knows'
+    ]))
     ]
 
     # Fill missing values and strip whitespace 
