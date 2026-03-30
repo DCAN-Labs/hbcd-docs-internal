@@ -152,12 +152,12 @@
 <td style='text-align: center; font-weight: bold;'>3</td>
 <td style='text-align: center; font-weight: bold;'></td>
 </tr>
-<tr>
+<!-- <tr>
 <td class='table-cell' style='font-weight: bold;'>XCP-D</td>
 <td style='word-wrap: break-word; white-space: normal;'>Tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata will be corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code> (currently <code>Resting State fMRI</code>).</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 <td style='text-align: center; font-weight: bold;'>21.0</td>
-</tr>
+</tr> -->
 <tr class="domain-row-issue"><td colspan="4"><strong>NEUROCOGNITION &amp; LANGUAGE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Data Type</td>
@@ -285,12 +285,12 @@
 <td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
-<tr>
+<!-- <tr>
 <td class='table-cell' style='font-weight: bold;'>Olink</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy.</td>
 <td style='text-align: center; font-weight: bold;'>2.1</td>
 <td style='text-align: center; font-weight: bold;'>21.0</td>
-</tr>
+</tr> -->
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Urine</td>
 <td style='word-wrap: break-word; white-space: normal;'>Creatinine results (<code>bio_creat_u</code>) are currently excluded from the release due to out-of-range values and will be added once corrected.</td>
