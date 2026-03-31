@@ -4,9 +4,55 @@
     max-width: 100% !important;
     flex-grow: 1 !important;
 }
+.br-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 999px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+/* Version-specific styling */
+.br-210 {
+  background-color: #e6f0ff;
+  color: #1a4fb3;
+}
+.br-211 {
+  background-color: #e9f7ef;
+  color: #1e7e34;
+}
+/* TBD */
+.br-tbd {
+  background-color: #f1f3f5;
+  color: #666;
+  font-style: italic;
+}
 </style>
 
-# Resolved Issues & Updates
+<div class="pill-center">
+  <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip">
+        <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
+        <span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span>
+      </span>
+    </span>
+  </a>
+  <a href="../../#transparency" target="_blank" class="pill-link-wrapper">
+    <span class="pill-link">
+      <span class="tooltip">
+        <i class="fa-solid fa-eye" style="color: #6300d3;"></i>
+        <span class="tooltiptext">Transparency<br><i>Click to learn more</i></span>
+      </span>
+    </span>
+  </a>
+</div>
+
+# Resolved Issues & Updates Archive
+
+!!! danger "Resolved Known Issues & Updates"
+    **This page contains a running record of issues and updates verified as RESOLVED by Workgroups/SMEs** (from BR21.0; see prior release notes for earlier records). Until final sign off, items remain listed as ACTIVE in [Known Issues & Pending Updates](knownissues.md). Individual BR release notes may include *provisional* updates that are not yet verified.
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -39,7 +85,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>XCP-D</td>
 <td style='word-wrap: break-word; white-space: normal;'>Tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code> (currently <code>Resting State fMRI</code>).</td>
-<td style='text-align: center;'>21.0</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
 <!-- NCL -->
