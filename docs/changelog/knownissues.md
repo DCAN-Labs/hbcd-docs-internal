@@ -89,7 +89,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Nails</td>
 <td style='word-wrap: break-word; white-space: normal;'>Add unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Nails</td>

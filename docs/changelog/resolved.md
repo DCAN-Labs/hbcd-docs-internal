@@ -65,18 +65,10 @@
 <tbody>
 
 <!-- BIOSPEC -->
-<tr class="domain-row-pending"><td colspan="3"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
+<tr class="domain-row-pending"><td colspan="3"><strong>Biospecimens & Omics</strong></td></tr>
 <tr>
-<td class='table-cell' style='font-weight: bold;'>Nails &amp; Urine</td>
+<td class='table-cell'>Nails & Urine</td>
 <td style='word-wrap: break-word; white-space: normal;'>Data dictionary level values have quotes around them, causing the downloaded to have double quotes (e.g. 1=""positive"").</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
-
-<!-- DEMOGRAPHICS -->
-<tr class="domain-row-pending"><td colspan="4"><strong>DEMOGRAPHICS</strong></td></tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Demographics</td>
-<td style='word-wrap: break-word; white-space: normal;'>The variables <code>sed_bm_demo_residence_{001|002}</code>, present in the prior release, are missing in the current release and will be added back.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
@@ -84,7 +76,7 @@
 <tr class="domain-row-pending"><td colspan="3"><strong>MRI</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>XCP-D</td>
-<td style='word-wrap: break-word; white-space: normal;'>Tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code> (currently <code>Resting State fMRI</code>).</td>
+<td style='word-wrap: break-word; white-space: normal;'>Tabulated XCP-D <span class="tooltip">Myers-Labonte tables<span class="tooltiptext"><code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code></span></span> metadata corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code>.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
@@ -98,6 +90,14 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Vineland</td>
 <td style='word-wrap: break-word; white-space: normal;'>Subset of variables have a typo in the spelling of "receptive."</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
+
+<!-- SED -->
+<tr class="domain-row-pending"><td colspan="4"><strong>Social & Environmental Determinants</strong></td></tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Demographics</td>
+<td style='word-wrap: break-word; white-space: normal;'>The variables <code>sed_bm_demo_residence_{001|002}</code>, present in the prior release, are missing in the current release and will be added back.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 </tbody>
