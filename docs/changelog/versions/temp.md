@@ -66,42 +66,58 @@
 
 <tr class="domain-row-issue"><td colspan="4"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
 <tr>
+<td class='table-cell' style='font-weight: bold;'>Nails</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
+</tr>
+<tr>
 <td class='table-cell' style='font-weight: bold;'>Nails &amp; Urine</td>
 <td style='word-wrap: break-word; white-space: normal;'>Data dictionary level values have quotes around them, causing the downloaded to have double quotes (e.g. 1=""positive"").</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
+</tr>
+<tr class="domain-row-issue"><td colspan="4"><strong>EEG</strong></td></tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>HBCD-MADE</td>
+<td style='word-wrap: break-word; white-space: normal;'>N=3 V04 sessions in the HBCD-MADE derivatives for FACE and MMN tasks are missing corresponding tabulated data. File-based data should therefore be used for analyses. Impacted participant IDs are available via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>MRI</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Raw BIDS</td>
 <td style='word-wrap: break-word; white-space: normal;'>There are 2 corrupted raw BIDS files (V02 bold runs under session-level <code>func/</code> folders of <code>rawdata/</code>) to be resolved. Impacted participant IDs/filepaths are available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>XCP-D</td>
 <td style='word-wrap: break-word; white-space: normal;'>Tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata will be corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code> (currently <code>Resting State fMRI</code>).</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>NEUROCOGNITION &amp; LANGUAGE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MLDS</td>
 <td style='word-wrap: break-word; white-space: normal;'>Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "√Ç √Ç √Ç √Ç ")</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Vineland</td>
 <td style='word-wrap: break-word; white-space: normal;'>Subset of variables have a typo in the spelling of "receptive."</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>SOCIAL &amp; ENVIRONMENTAL DETERMINANTS</strong></td></tr>
 <tr>
+<td class='table-cell' style='font-weight: bold;'>C-PACEs</td>
+<td style='word-wrap: break-word; white-space: normal;'>Summary scores for <code>sed_bm_paces</code> are currently calculated as the sum of individual item responses rather than the average. This will be corrected in a future release. In the meantime, users may compute their own average-based summary scores using the item-level data provided in the dataset.</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
+</tr>
+<tr>
 <td class='table-cell' style='font-weight: bold;'>Demographics</td>
 <td style='word-wrap: break-word; white-space: normal;'>The variables <code>sed_bm_demo_residence_{001|002}</code>, present in the prior release, are missing in the current release and will be added back.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>eHITS</td>
 <td style='word-wrap: break-word; white-space: normal;'>In <code>sed_bm_ehits</code>, participants who did not respond to any questions have a summary score of 0 instead of missing. Until corrected, users should convert these cases to blank/null prior to conducting analyses.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 </tbody></table>
 
@@ -123,49 +139,49 @@
 <tr class="domain-row-pending"><td colspan="4"><strong>ADMINISTRATIVE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Study Navigators</td>
-<td style='word-wrap: break-word; white-space: normal;'>The SUBSTANCE_USE and OTHER checkbox fields are blank and will be populated.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='word-wrap: break-word; white-space: normal;'>The SUBSTANCE_USE and OTHER checkbox fields are blank and will be populated in the next release.</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>BEHAVIOR &amp; CAREGIVER-CHILD INTERACTION</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ERICA</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of the ERICA instrument.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Olink</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>GENERAL</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Sequence Field</td>
 <td style='word-wrap: break-word; white-space: normal;'>The currently included Sequence field is blank across all instruments and will be removed.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>MRI</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>BrainSwipes</td>
 <td style='word-wrap: break-word; white-space: normal;'>BrainSwipes QC results will be updated with latest results currently available in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>NEUROCOGNITION &amp; LANGUAGE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Bayley-4</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of item-level scores.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Vineland</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of language field to <code>ncl_cg_vabs</code>.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>SOCIAL &amp; ENVIRONMENTAL DETERMINANTS</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Child Demo</td>
 <td style='word-wrap: break-word; white-space: normal;'>Household roster will be updated to clarify that counts exclude the main child - see "Household Roster" under the Child Demographics <a href="https://docs.hbcdstudy.org/latest/instruments/SED/demo-ch/#warning">Data Warning</a> for details.</td>
-<td style='text-align: center; font-weight: bold;'>21</td>
+<td style='text-align: center; font-weight: bold;'>21.0</td>
 </tr>
 </tbody></table>
 

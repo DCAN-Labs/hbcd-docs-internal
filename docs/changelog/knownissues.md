@@ -57,6 +57,8 @@
 
 <!-- BEGIN KNOWN_ISSUES_TABLE -->
 
+
+
 ## <i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Known Issues
 
 <table class="compact-table-no-vertical-lines">
@@ -105,7 +107,7 @@
 <tr class="domain-row-issue"><td colspan="4"><strong>DEMOGRAPHICS</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Basic Demo</td>
-<td style='word-wrap: break-word; white-space: normal;'>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; please exclude these values from analyses until corrected.</td>
+<td style='word-wrap: break-word; white-space: normal;'>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
@@ -151,6 +153,11 @@
 <td style='word-wrap: break-word; white-space: normal;'>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>XCP-D</td>
+<td style='word-wrap: break-word; white-space: normal;'>Tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata will be corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code> (currently <code>Resting State fMRI</code>).</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>NEUROCOGNITION &amp; LANGUAGE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Data Type</td>
@@ -164,7 +171,7 @@
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MLDS</td>
-<td style='word-wrap: break-word; white-space: normal;'>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) contains implausible values due to data entry errors. The maximum values is 168 hours: please exclude values greater than 168 from analysis.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) contains implausible values due to data entry errors. The maximum values is 168 hours: exclude values greater than 168 from analysis.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
@@ -213,7 +220,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>C-PACEs</td>
 <td style='word-wrap: break-word; white-space: normal;'>Summary scores for <code>sed_bm_paces</code> are currently calculated as the sum of individual item responses rather than the average. This will be corrected in a future release. In the meantime, users may compute their own average-based summary scores using the item-level data provided in the dataset.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Demographics</td>
@@ -260,6 +267,11 @@
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Olink</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy.</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Urine</td>
 <td style='word-wrap: break-word; white-space: normal;'>Creatinine results (<code>bio_creat_u</code>) are currently excluded from the release due to out-of-range values and will be added once corrected.</td>

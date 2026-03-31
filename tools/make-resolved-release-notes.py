@@ -25,7 +25,7 @@ def load_and_filter_tsv(tsv_path):
     df = df[
     (df['Autoparsed?'] == 'Yes') &
     (df['RTDs_Status'] == 'Done') &
-    (df['BR'] == '21.0') &
+    (df['BR'] == '21') &
     (df['Status'].isin([
         'Dev Done',
         'Done',
