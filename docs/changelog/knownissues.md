@@ -102,11 +102,6 @@
 <td style='word-wrap: break-word; white-space: normal;'>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Demographics</td>
-<td style='word-wrap: break-word; white-space: normal;'>Variables on the Other Biological Parent are missing from <code>sed_bm_demo</code>.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
-</tr>
 <tr class="domain-row-issue"><td colspan="3"><strong>EEG</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>.set files</td>
@@ -197,6 +192,16 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>C-PACEs</td>
 <td style='word-wrap: break-word; white-space: normal;'>Summary scores for <code>sed_bm_paces</code> are currently calculated as the sum of individual item responses rather than the average. This will be corrected in a future release. In the meantime, users may compute their own average-based summary scores using the item-level data provided in the dataset.</td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+</tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Demographics</td>
+<td style='word-wrap: break-word; white-space: normal;'>Variables on the Other Biological Parent are missing from <code>sed_bm_demo</code>.</td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+</tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>Demographics</td>
+<td style='word-wrap: break-word; white-space: normal;'>V01 household income (<code>sed_bm_demo_income_002</code>) missing from adult demographics.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
