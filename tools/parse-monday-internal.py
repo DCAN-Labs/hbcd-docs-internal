@@ -7,7 +7,7 @@ import re
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
 TSV= "../../dev/hbcd-docs/tools/latest.tsv"
-INTERNAL_MD = "../docs/changelog/knownissues.md"
+INTERNAL_MD = "../docs/changelog/knownissues-TEST.md"
 
 # FUNCTIONS
 
@@ -62,15 +62,10 @@ def insert_into_markdown(md_path, combined_html):
     print("Known issues table successfully updated.")
 
 # WORK
-# Load TSV & filter
 df = load_and_filter_tsv(TSV)
 
-# Extra step for internal documentation - remove rows where Status == Done AND BR == 21.0 (since we only want to show known issues/pending updates that are still open for the current BR)  
+# Extra step for internal documentation - remove rows where Status == Done AND BR == 21.0 (only show issues still open for the current BR)  
 df = df[~((df['Status'] == 'Done') & (df['BR'] == '21.0'))]
-
-# Separate out Done items 
-# df = df[~df['Status'].str.contains('Done')]
-# df_done = df[df['Status'].str.contains('Done')]
 
 # Type mapping and sort by (1) domain, (2) table/topic
 df["MappedType"] = df["Type"].apply(map_type)
@@ -88,7 +83,6 @@ for _, row in df.iterrows():
     issue_type = row["MappedType"]
     table = row["Table/Topic"]
     summary_md = row["Text"]
-    pr = row["PR"]
     br = row["BR"]
 
     # Convert Markdown → HTML & strip outer <p>
@@ -99,7 +93,7 @@ for _, row in df.iterrows():
     summary_html = re.sub(r'^<p>(.*)</p>$', r'\1', summary_html, flags=re.DOTALL)
 
     grouped[issue_type].setdefault(domain, []).append(
-        (table, summary_html, pr, br)
+        (table, summary_html, br)
     )
 
 # Generate HTML tables 
@@ -118,7 +112,6 @@ def build_table(data_dict, table_title):
     <tr style="text-decoration: bold; font-size: 1.2em;">
     <th>TABLE/TOPIC</th>
     <th>SUMMARY</th>
-    <th style='text-align: center;'><span class="tooltip tooltip-left">PR<span class="tooltiptext">Target Public Release</span></span></th>
     <th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Target Beta Release</span></span></th>
     </tr>
     </thead>
@@ -128,14 +121,11 @@ def build_table(data_dict, table_title):
     for domain in sorted(data_dict.keys()):
         table_parts.append(f"""<tr class="{domain_class}"><td colspan="4"><strong>{html.escape(domain)}</strong></td></tr>""")
 
-        for table, summary_html, pr, br in data_dict[domain]:
+        for table, summary_html, br in data_dict[domain]:
             table_parts.append("<tr>")
             table_parts.append(f"<td class='table-cell' style='font-weight: bold;'>{html.escape(str(table))}</td>")
             table_parts.append(f"<td style='word-wrap: break-word; white-space: normal;'>{summary_html}</td>")
-            table_parts.append(f"<td style='text-align: center; font-weight: bold;'>{pr}</td>")
-
-            # If internal, include BR column as well
-            table_parts.append(f"<td style='text-align: center; font-weight: bold;'>{br}</td>")
+            table_parts.append(f"<td style='text-align: center;'>{br}</td>")
             table_parts.append("</tr>")
     table_parts.append("</tbody></table>")
     return "\n".join(table_parts)

@@ -51,15 +51,13 @@
   </a>
 </div>
 
-!!! info "FYI: Known Issues & Updates Across Sites"
+!!! info "Current vs. Resolved Issues"
+    **This page lists ACTIVE known issues and pending updates targeted for upcoming beta releases (BR).** Issues are not considered resolved until final review by Workgroups/SMEs. Verified items are archived to [Resolved Known Issues & Updates](resolved.md) (from BR21.0; see prior release notes for earlier records).
+    See the [HBCD Data Release Docs](https://docs.hbcdstudy.org/latest/changelog/issues-updates/) for corresponding target public releases (PR) <span class="tooltip"> <i class="fa-solid fa-circle-info"></i><span class="tooltiptext">Items addressed in a BR are not reflected as resolved publicly until the corresponding PR is released</span></span>
 
-    - **This site (Internal):** Tracks issues by **beta release (BR)**. Resolved items remain listed here until SMEs confirm full resolution, so some items may appear both here and in BR release notes (e.g., [BR21.0 Resolved Known Issues & Pending Updates](versions/BR21.0.md#br210-resolved-known-issues-pending-updates)). A running list of resolved updates and associated final BR is documented under at the end of this page under [Resolved Items](#resolved).
-    - **Public site ([HBCD Data Release Docs](https://docs.hbcdstudy.org/)):** Tracks issues by **public release (PR)**. Items resolved in a BR will not appear as resolved on the public site ([here](https://docs.hbcdstudy.org/latest/changelog/issues-updates/)) until the corresponding PR is released.
-
-## Current Items
 <!-- BEGIN KNOWN_ISSUES_TABLE -->
 
-### <i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Known Issues
+## <i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Known Issues
 
 <table class="compact-table-no-vertical-lines">
     <thead>
@@ -227,7 +225,7 @@
 </tr>
 </tbody></table>
 
-### <i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Pending Updates
+## <i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Pending Updates
 
 <table class="compact-table-no-vertical-lines">
     <thead>
@@ -381,44 +379,5 @@
 </tbody></table>
 
 <!-- END KNOWN_ISSUES_TABLE -->
-
-## Resolved Items
-
-The following items have been verified as successfully resolved by Workgroups/SMEs (*click to expand*):
-
-<div id="resolved" class="table-banner" onclick="toggleCollapse(this)">
-  <span class="text-with-link">
-  <span class="table-text">Resolved Known Issues & Pending Updates</span>
-  <a class="anchor-link" href="#resolved" title="Copy link">
-  <i class="fa-solid fa-link"></i>
-  </a>
-  </span>
-  <span class="arrow">▸</span>
-</div>
-<div class="table-collapsible-content">
-<table class="compact-table-no-vertical-lines">
-    <thead>
-    <tr style="text-decoration: bold; font-size: 1.2em;">
-    <th>TABLE/TOPIC</th>
-    <th>SUMMARY</th>
-    <th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Final Beta Release</span></span></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="domain-row-pending"><td colspan="3"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
-    <tr>
-    <td class='table-cell' style='font-weight: bold;'>Olink</td>
-    <td style='word-wrap: break-word; white-space: normal;'>Addition of Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy.</td>
-    <td style='text-align: center;'><span class="br-pill br-210">21.0</span></td>
-    </tr>
-    <tr class="domain-row-pending"><td colspan="3"><strong>MRI</strong></td></tr>
-    <tr>
-    <td class='table-cell' style='font-weight: bold;'>XCP-D</td>
-    <td style='word-wrap: break-word; white-space: normal;'>Tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code> (currently <code>Resting State fMRI</code>).</td>
-    <td style='text-align: center;'><span class="br-pill br-210">21.0</span></td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
 
   <br>

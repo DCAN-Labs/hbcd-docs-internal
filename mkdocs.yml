@@ -95,11 +95,12 @@ nav:
     - Known Issues & Pending Updates: changelog/knownissues.md
     - Release Notes/Change Logs:    
         - Beta Release 21.0: changelog/versions/BR21.0.md
-        - Beta Release 20.2.3: changelog/versions/BR20.2.3.md
-        - Beta Release 20.2.2: changelog/versions/BR20.2.2.md
-        - Beta Release 20.2: changelog/versions/BR20.2.md
-        - Beta Release 20.1: changelog/versions/BR20.1.md
-        - Beta Release 20.0: changelog/versions/BR20.0.md
+        - BR20X Archive:
+            - Beta Release 20.2.3: changelog/versions/BR2X/BR20.2.3.md
+            - Beta Release 20.2.2: changelog/versions/BR2X/BR20.2.2.md
+            - Beta Release 20.2: changelog/versions/BR2X/BR20.2.md
+            - Beta Release 20.1: changelog/versions/BR2X/BR20.1.md
+            - Beta Release 20.0: changelog/versions/BR2X/BR20.0.md
         - BR1.0 - BR15.2 Archive:
             - Beta Release 15.2: changelog/versions/BR1X/BR15.2.md
             - Beta Release 15.1: changelog/versions/BR1X/BR15.1.md
