@@ -282,7 +282,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Sequence Field</td>
 <td style='word-wrap: break-word; white-space: normal;'>The currently included Sequence field is blank across all instruments and will be removed.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>MRI</strong></td></tr>
 <tr>
