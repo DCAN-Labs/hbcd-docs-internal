@@ -7,7 +7,7 @@ import re
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
 TSV= "../../dev/hbcd-docs/tools/latest.tsv"
-INTERNAL_MD = "../docs/changelog/knownissues-TEST.md"
+INTERNAL_MD = "../docs/changelog/knownissues.md"
 
 # FUNCTIONS
 
@@ -61,8 +61,59 @@ def insert_into_markdown(md_path, combined_html):
         f.write(new_content)
     print("Known issues table successfully updated.")
 
+# Generate HTML tables 
+def build_table(data_dict, table_title):
+    if "Known Issues" in table_title:
+        domain_class = "domain-row-issue"
+    else:
+        domain_class = "domain-row-pending"
+
+    table_parts = []
+
+    table_parts.append(f"\n\n## {table_title}\n")
+    table_parts.append('<table class="compact-table-no-vertical-lines">')
+    table_parts.append("""
+    <thead>
+    <tr style="text-decoration: bold; font-size: 1.2em;">
+    <th>TABLE/TOPIC</th>
+    <th>SUMMARY</th>
+    <th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Target Beta Release</span></span></th>
+    </tr>
+    </thead>
+    <tbody>
+    """)
+
+    for domain in sorted(data_dict.keys()):
+        table_parts.append(f"""<tr class="{domain_class}"><td colspan="4"><strong>{html.escape(domain)}</strong></td></tr>""")
+
+        for table, summary_html, br in data_dict[domain]:
+            table_parts.append("<tr>")
+            table_parts.append(f"<td class='table-cell' style='font-weight: bold;'>{html.escape(str(table))}</td>")
+            table_parts.append(f"<td style='word-wrap: break-word; white-space: normal;'>{summary_html}</td>")
+
+            # Determine pill class based on BR value
+            if str(br).upper() == "TBD":
+                pill_class = "br-pill br-tbd"
+            else:
+                # normalize something like "21.0" -> "210"
+                normalized_br = str(br).replace(".", "")
+                pill_class = f"br-pill br-{normalized_br}"
+
+            table_parts.append(
+                f"<td style='text-align: center;'><span class='{pill_class}'>{html.escape(str(br))}</span></td>"
+            )
+            table_parts.append("</tr>")
+    table_parts.append("</tbody></table>")
+
+    return "\n".join(table_parts)
+
+
+
 # WORK
 df = load_and_filter_tsv(TSV)
+
+# Replace empty BR cells with 'TBD'
+df['BR'] = df['BR'].replace('', 'TBD')   
 
 # Extra step for internal documentation - remove rows where Status == Done AND BR == 21.0 (only show issues still open for the current BR)  
 df = df[~((df['Status'] == 'Done') & (df['BR'] == '21.0'))]
@@ -95,40 +146,6 @@ for _, row in df.iterrows():
     grouped[issue_type].setdefault(domain, []).append(
         (table, summary_html, br)
     )
-
-# Generate HTML tables 
-def build_table(data_dict, table_title):
-    if "Known Issues" in table_title:
-        domain_class = "domain-row-issue"
-    else:
-        domain_class = "domain-row-pending"
-
-    table_parts = []
-
-    table_parts.append(f"\n\n## {table_title}\n")
-    table_parts.append('<table class="compact-table-no-vertical-lines">')
-    table_parts.append("""
-    <thead>
-    <tr style="text-decoration: bold; font-size: 1.2em;">
-    <th>TABLE/TOPIC</th>
-    <th>SUMMARY</th>
-    <th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Target Beta Release</span></span></th>
-    </tr>
-    </thead>
-    <tbody>
-    """)
-
-    for domain in sorted(data_dict.keys()):
-        table_parts.append(f"""<tr class="{domain_class}"><td colspan="4"><strong>{html.escape(domain)}</strong></td></tr>""")
-
-        for table, summary_html, br in data_dict[domain]:
-            table_parts.append("<tr>")
-            table_parts.append(f"<td class='table-cell' style='font-weight: bold;'>{html.escape(str(table))}</td>")
-            table_parts.append(f"<td style='word-wrap: break-word; white-space: normal;'>{summary_html}</td>")
-            table_parts.append(f"<td style='text-align: center;'>{br}</td>")
-            table_parts.append("</tr>")
-    table_parts.append("</tbody></table>")
-    return "\n".join(table_parts)
 
 # Generate known issues and pending tables for internal page
 table_configs = [
