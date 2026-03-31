@@ -205,7 +205,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>eHITS</td>
 <td style='word-wrap: break-word; white-space: normal;'>In <code>sed_bm_ehits</code>, participants who did not respond to any questions have a summary score of 0 instead of missing. Until corrected, users should convert these cases to blank/null prior to conducting analyses.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 </tbody></table>
 
