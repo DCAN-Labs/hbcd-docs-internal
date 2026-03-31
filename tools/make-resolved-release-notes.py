@@ -113,13 +113,13 @@ def build_table(data_dict, table_title):
 
     table_parts = []
 
-    table_parts.append(f"\n\n## {table_title}\n")
+    table_parts.append(f"\n\n### {table_title}\n")
     table_parts.append('<table class="compact-table-no-vertical-lines">')
 
     table_parts.append("""
 <thead>
 <tr style="text-decoration: bold; font-size: 1.2em;">
-<th style="width: 18%;">TABLE/TOPIC</th>
+<th>TABLE/TOPIC</th>
 <th>SUMMARY</th>
 <th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Beta Release</span></span></th>
 </tr>
@@ -143,9 +143,9 @@ def build_table(data_dict, table_title):
 # Generate known issues and pending tables for external and internal pages
 table_configs = [
     ("Issue",
-     '<i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Resolved Known Issues'),
+     '<i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Resolved Issues (*Provisional*) { data-toc-label="Issues" }'),
     ("Pending Update",
-     '<i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Completed Updates'),
+     '<i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Completed Updates (*Provisional*) { data-toc-label="Updates" }'),
 ]
 
 def build_combined_tables():
