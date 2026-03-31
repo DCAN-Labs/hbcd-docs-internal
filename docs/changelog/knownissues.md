@@ -99,11 +99,6 @@
 <td style='word-wrap: break-word; white-space: normal;'>Use <code>bio_bm_biosample_nails_typ_collection_nail_type</code> <em>specimen type</em> table for nail type (<em>results</em> table values are all 4 (Unknown)).</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Nails &amp; Urine</td>
-<td style='word-wrap: break-word; white-space: normal;'>Data dictionary level values have quotes around them, causing the downloaded to have double quotes (e.g. 1=""positive"").</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>DEMOGRAPHICS</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Basic Demo</td>
@@ -153,11 +148,6 @@
 <td style='word-wrap: break-word; white-space: normal;'>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>XCP-D</td>
-<td style='word-wrap: break-word; white-space: normal;'>Tabulated XCP-D Myers-Labonte tables (<code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code>) metadata will be corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code> (currently <code>Resting State fMRI</code>).</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>NEUROCOGNITION &amp; LANGUAGE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Data Type</td>
@@ -166,18 +156,8 @@
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MLDS</td>
-<td style='word-wrap: break-word; white-space: normal;'>Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "√Ç √Ç √Ç √Ç ")</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>MLDS</td>
 <td style='word-wrap: break-word; white-space: normal;'>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) contains implausible values due to data entry errors. The maximum values is 168 hours: exclude values greater than 168 from analysis.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Vineland</td>
-<td style='word-wrap: break-word; white-space: normal;'>Subset of variables have a typo in the spelling of "receptive."</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>PHYSICAL HEALTH</strong></td></tr>
 <tr>
@@ -221,11 +201,6 @@
 <td class='table-cell' style='font-weight: bold;'>C-PACEs</td>
 <td style='word-wrap: break-word; white-space: normal;'>Summary scores for <code>sed_bm_paces</code> are currently calculated as the sum of individual item responses rather than the average. This will be corrected in a future release. In the meantime, users may compute their own average-based summary scores using the item-level data provided in the dataset.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
-</tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Demographics</td>
-<td style='word-wrap: break-word; white-space: normal;'>The variables <code>sed_bm_demo_residence_{001|002}</code>, present in the prior release, are missing in the current release and will be added back.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>eHITS</td>

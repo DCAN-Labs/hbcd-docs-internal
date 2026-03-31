@@ -18,6 +18,7 @@
 </thead>
 <tbody>
 
+<!-- BIOSPEC -->
 <tr class="domain-row-pending"><td colspan="3"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Nails &amp; Urine</td>
@@ -25,13 +26,15 @@
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
-<tr class="domain-row-issue"><td colspan="4"><strong>DEMOGRAPHICS</strong></td></tr>
+<!-- DEMOGRAPHICS -->
+<tr class="domain-row-pending"><td colspan="4"><strong>DEMOGRAPHICS</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Demographics</td>
-<td style='word-wrap: break-word; white-space: normal;'>Variables on the Other Biological Parent are missing from <code>sed_bm_demo</code>.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+<td style='word-wrap: break-word; white-space: normal;'>The variables <code>sed_bm_demo_residence_{001|002}</code>, present in the prior release, are missing in the current release and will be added back.</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
+<!-- MRI -->
 <tr class="domain-row-pending"><td colspan="3"><strong>MRI</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>XCP-D</td>
@@ -39,7 +42,8 @@
 <td style='text-align: center;'>21.0</td>
 </tr>
 
-<tr class="domain-row-issue"><td colspan="4"><strong>NEUROCOGNITION &amp; LANGUAGE</strong></td></tr>
+<!-- NCL -->
+<tr class="domain-row-pending"><td colspan="4"><strong>NEUROCOGNITION &amp; LANGUAGE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MLDS</td>
 <td style='word-wrap: break-word; white-space: normal;'>Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "√Ç √Ç √Ç √Ç ")</td>
