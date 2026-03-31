@@ -54,7 +54,65 @@
 !!! danger "Resolved Known Issues & Updates"
     **This page contains a running record of issues and updates verified as RESOLVED by Workgroups/SMEs** (from BR21.0; see prior release notes for earlier records). Until final sign off, items remain listed as ACTIVE in [Known Issues & Pending Updates](knownissues.md). Individual BR release notes may include *provisional* updates that are not yet verified.
 
-<table class="compact-table-no-vertical-lines">
+
+<!-- <table class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th>Domain</th>
+<th>Table/Topic</th>
+<th>Summary</th>
+<th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Final Beta Release</span></span></th>
+</tr>
+</thead>
+<tbody> -->
+<!-- BIOSPEC -->
+<!-- <tr>
+<td><b>BIO</b></td>
+<td class='table-cell'>Nails & Urine</td>
+<td style='word-wrap: break-word; white-space: normal;'>Remove quotes from level values to prevent double quotes in downloaded data (e.g. 1=""positive"").</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr> -->
+
+<!-- MRI -->
+<!-- <tr>
+<td><b>MRI</b></td>
+<td>XCP-D</td>
+<td style='word-wrap: break-word; white-space: normal;'>Metadata values for <code>sub_domain</code> were corrected to <code>Structural MRI</code> for tabulated XCP-D Myers-Labonte <code>*morph.tsv</code> files.</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr> -->
+
+<!-- NCL -->
+<!-- <tr>
+<td rowspan="2"><b>NCL</b></td>
+<td>MLDS</td>
+<td style='word-wrap: break-word; white-space: normal;'>Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "Â Â Â")</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
+<tr>
+<td>Vineland</td>
+<td style='word-wrap: break-word; white-space: normal;'>Correct subset of variables with typo in the spelling of "receptive."</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr> -->
+
+<!-- SED -->
+<!-- <tr>
+<td><b>SED</b></td>
+<td>Demographics</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add back <code>sed_bm_demo_residence_{001|002}</code> (present in prior release then missing).</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
+
+</tbody>
+</table> -->
+
+
+
+
+
+
+
+
+<!-- <table class="compact-table-no-vertical-lines">
 <thead>
 <tr style="text-decoration: bold; font-size: 1.2em;">
 <th>TABLE/TOPIC</th>
@@ -101,4 +159,4 @@
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 </tbody>
-</table>
+</table> -->

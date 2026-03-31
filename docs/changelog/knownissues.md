@@ -132,8 +132,8 @@
 <tr class="domain-row-issue"><td colspan="3"><strong>MRI</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Raw BIDS</td>
-<td style='word-wrap: break-word; white-space: normal;'>There are 2 corrupted raw BIDS files (V02 bold runs under session-level <code>func/</code> folders of <code>rawdata/</code>) to be resolved. Impacted participant IDs/filepaths are available to DUC-authorized users via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+<td style='word-wrap: break-word; white-space: normal;'>Raw BIDs include 2 corrupted bold runs in V02; view participant IDs/filepaths in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Run ID</td>
