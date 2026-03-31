@@ -83,22 +83,31 @@
 
 <!-- NCL -->
 <tr>
-<td rowspan="2"><b>NCL</b></td>
+<td rowspan="3"><b>NCL</b></td>
 <td>MLDS</td>
 <td style='word-wrap: break-word; white-space: normal;'>Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "Â Â Â")</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 <tr>
-<td>Vineland</td>
+<td rowspan="2">Vineland</td>
 <td style='word-wrap: break-word; white-space: normal;'>Correct subset of variables with typo in the spelling of "receptive."</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
+<tr>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of language field to <code>ncl_cg_vabs</code>.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
 <!-- SED -->
 <tr>
-<td><b>SED</b></td>
+<td rowspan="2"><b>SED</b></td>
 <td>Demographics</td>
 <td style='word-wrap: break-word; white-space: normal;'>Add back <code>sed_bm_demo_residence_{001|002}</code> (present in prior release then missing).</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
+<tr>
+<td>Child Demo</td>
+<td style='word-wrap: break-word; white-space: normal;'>Household roster updated to clarify that counts exclude the main child.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 

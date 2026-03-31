@@ -326,11 +326,6 @@
 <td style='word-wrap: break-word; white-space: normal;'>Set percentile scores in <code>ncl_ch_cdiwgen</code> (with the exception of <code>percentile_both</code>) to data type=integer.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Vineland</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of language field to <code>ncl_cg_vabs</code>.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
 <tr class="domain-row-pending"><td colspan="3"><strong>PHYSICAL HEALTH</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>BISQ-SF</td>
@@ -368,12 +363,7 @@
 <td style='word-wrap: break-word; white-space: normal;'>ICD codes for the <code>pex_bm_health*</code> instrument tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a></td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
-<tr class="domain-row-pending"><td colspan="3"><strong>SOCIAL &amp; ENVIRONMENTAL DETERMINANTS</strong></td></tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Child Demo</td>
-<td style='word-wrap: break-word; white-space: normal;'>Household roster will be updated to clarify that counts exclude the main child - see "Household Roster" under the Child Demographics <a href="https://docs.hbcdstudy.org/latest/instruments/SED/demo-ch/#warning">Data Warning</a> for details.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
+<!-- <tr class="domain-row-pending"><td colspan="3"><strong>SOCIAL &amp; ENVIRONMENTAL DETERMINANTS</strong></td></tr> -->
 </tbody></table>
 
 <!-- END PENDING_TABLE -->
