@@ -129,7 +129,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>HBCD-MADE</td>
 <td style='word-wrap: break-word; white-space: normal;'>N=3 V04 sessions in the HBCD-MADE derivatives for FACE and MMN tasks are missing corresponding tabulated data. File-based data should therefore be used for analyses. Impacted participant IDs are available via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>GENERAL</strong></td></tr>
 <tr>
