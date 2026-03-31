@@ -54,8 +54,7 @@
 !!! danger "Resolved Known Issues & Updates"
     **This page contains a running record of issues and updates verified as RESOLVED by Workgroups/SMEs** (from BR21.0; see prior release notes for earlier records). Until final sign off, items remain listed as ACTIVE in [Known Issues & Pending Updates](knownissues.md). Individual BR release notes may include *provisional* updates that are not yet verified.
 
-
-<!-- <table class="compact-table-no-vertical-lines">
+<table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th>Domain</th>
@@ -64,25 +63,26 @@
 <th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Final Beta Release</span></span></th>
 </tr>
 </thead>
-<tbody> -->
+<tbody>
+
 <!-- BIOSPEC -->
-<!-- <tr>
+<tr>
 <td><b>BIO</b></td>
 <td class='table-cell'>Nails & Urine</td>
 <td style='word-wrap: break-word; white-space: normal;'>Remove quotes from level values to prevent double quotes in downloaded data (e.g. 1=""positive"").</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr> -->
+</tr>
 
 <!-- MRI -->
-<!-- <tr>
+<tr>
 <td><b>MRI</b></td>
 <td>XCP-D</td>
 <td style='word-wrap: break-word; white-space: normal;'>Metadata values for <code>sub_domain</code> were corrected to <code>Structural MRI</code> for tabulated XCP-D Myers-Labonte <code>*morph.tsv</code> files.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr> -->
+</tr>
 
 <!-- NCL -->
-<!-- <tr>
+<tr>
 <td rowspan="2"><b>NCL</b></td>
 <td>MLDS</td>
 <td style='word-wrap: break-word; white-space: normal;'>Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "Â Â Â")</td>
@@ -92,10 +92,10 @@
 <td>Vineland</td>
 <td style='word-wrap: break-word; white-space: normal;'>Correct subset of variables with typo in the spelling of "receptive."</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr> -->
+</tr>
 
 <!-- SED -->
-<!-- <tr>
+<tr>
 <td><b>SED</b></td>
 <td>Demographics</td>
 <td style='word-wrap: break-word; white-space: normal;'>Add back <code>sed_bm_demo_residence_{001|002}</code> (present in prior release then missing).</td>
@@ -103,7 +103,7 @@
 </tr>
 
 </tbody>
-</table> -->
+</table>
 
 
 
@@ -121,24 +121,18 @@
 </tr>
 </thead>
 <tbody>
-
-<!-- BIOSPEC -->
 <tr class="domain-row-pending"><td colspan="3"><strong>Biospecimens & Omics</strong></td></tr>
 <tr>
 <td class='table-cell'>Nails & Urine</td>
 <td style='word-wrap: break-word; white-space: normal;'>Data dictionary level values have quotes around them, causing the downloaded to have double quotes (e.g. 1=""positive"").</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
-
-<!-- MRI -->
 <tr class="domain-row-pending"><td colspan="3"><strong>MRI</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>XCP-D</td>
 <td style='word-wrap: break-word; white-space: normal;'>Tabulated XCP-D <span class="tooltip">Myers-Labonte tables<span class="tooltiptext"><code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code></span></span> metadata corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code>.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
-
-<!-- NCL -->
 <tr class="domain-row-pending"><td colspan="4"><strong>NEUROCOGNITION &amp; LANGUAGE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MLDS</td>
@@ -150,8 +144,6 @@
 <td style='word-wrap: break-word; white-space: normal;'>Subset of variables have a typo in the spelling of "receptive."</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
-
-<!-- SED -->
 <tr class="domain-row-pending"><td colspan="4"><strong>Social & Environmental Determinants</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Demographics</td>
