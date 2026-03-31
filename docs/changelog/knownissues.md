@@ -51,8 +51,8 @@
   </a>
 </div>
 
-!!! warning "Current vs. Resolved Issues"
-    **This page lists ACTIVE known issues and pending updates targeted for upcoming beta releases (BR).** Issues are not considered resolved until final review by Workgroups/SMEs. Verified items are archived to [Resolved Known Issues & Updates](resolved.md) (from BR21.0; see prior release notes for earlier records).
+!!! danger "Current vs. Resolved Issues"
+    **This page lists ACTIVE known issues and pending updates targeted for upcoming beta releases (BR).** Issues are not considered resolved until final review by Workgroups/SMEs. Verified items are archived to [Resolved Issues & Updates](resolved.md) (starting from BR21.0; see prior release notes for earlier records).
     See the [HBCD Data Release Docs](https://docs.hbcdstudy.org/latest/changelog/issues-updates/) for corresponding target public releases (PR) <span class="tooltip"> <i class="fa-solid fa-circle-info"></i><span class="tooltiptext">Items addressed in a BR are not reflected as resolved publicly until the corresponding PR is released</span></span>.
 
 <!-- BEGIN KNOWN_ISSUES_TABLE -->

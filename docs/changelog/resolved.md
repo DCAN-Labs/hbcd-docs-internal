@@ -6,7 +6,7 @@
 }
 </style>
 
-# Resolved Known Issues & Updates
+# Resolved Issues & Updates
 
 <table class="compact-table-no-vertical-lines">
 <thead>
