@@ -75,7 +75,10 @@
 
 <!-- MRI -->
 <tr>
-<td><b>MRI</b></td>
+<td rowspan="2"><b>MRI</b></td>
+<td>BrainSwipes</td>
+<td style='word-wrap: break-word; white-space: normal;'>BrainSwipes QC results will be updated with latest results currently available in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 <td>XCP-D</td>
 <td style='word-wrap: break-word; white-space: normal;'>Metadata values for <code>sub_domain</code> were corrected to <code>Structural MRI</code> for tabulated XCP-D Myers-Labonte <code>*morph.tsv</code> files.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>

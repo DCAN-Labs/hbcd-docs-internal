@@ -283,11 +283,6 @@
 </tr>
 <tr class="domain-row-pending"><td colspan="3"><strong>MRI</strong></td></tr>
 <tr>
-<td class='table-cell' style='font-weight: bold;'>BrainSwipes</td>
-<td style='word-wrap: break-word; white-space: normal;'>BrainSwipes QC results will be updated with latest results currently available in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
-<tr>
 <td class='table-cell' style='font-weight: bold;'>DICOMs</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of source DICOMs for all imaging modalities.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
