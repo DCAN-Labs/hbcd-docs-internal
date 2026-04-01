@@ -206,7 +206,7 @@
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>eHITS</td>
-<td style='word-wrap: break-word; white-space: normal;'>In <code>sed_bm_ehits</code>, participants who did not respond to any questions have a summary score of 0 instead of missing. Until corrected, users should convert these cases to blank/null prior to conducting analyses.</td>
+<td style='word-wrap: break-word; white-space: normal;'>In <code>sed_bm_ehits</code>, participants with no responses are assigned a score of 0 instead of missing; convert to null before analysis.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 </tbody></table>
@@ -290,7 +290,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Scanner Info</td>
 <td style='word-wrap: break-word; white-space: normal;'>Scanner information (currently available in the scans TSV files within the raw BIDS data as well as all sidecar JSON files) will be provided as tabulated data.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Summary Forms</td>
@@ -306,7 +306,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Bayley-4</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of item-level scores.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>CDI</td>
@@ -325,6 +325,11 @@
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
+<td class='table-cell' style='font-weight: bold;'>Growth</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+</tr>
+<tr>
 <td class='table-cell' style='font-weight: bold;'>Vision Screener</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of more fields to <code>ph_ch_vs</code> (current release only includes completion status and overall screening results).</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
@@ -340,11 +345,6 @@
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr class="domain-row-pending"><td colspan="3"><strong>PREGNANCY &amp; EXPOSURE</strong></td></tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Growth</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>PEX Health</td>
 <td style='word-wrap: break-word; white-space: normal;'>ICD codes for the <code>pex_bm_health*</code> instrument tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a></td>
