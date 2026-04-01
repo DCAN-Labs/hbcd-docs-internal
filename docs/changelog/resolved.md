@@ -81,6 +81,14 @@
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
+<!-- MH -->
+<tr>
+<td><b>MH</b></td>
+<td>ERICA</td>
+<td>Addition of the ERICA instrument tables (<code>mh_cg_erica{_rel}_3_9m</code>); raw scores only</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
+
 <!-- NCL -->
 <tr>
 <td rowspan="3"><b>NCL</b></td>

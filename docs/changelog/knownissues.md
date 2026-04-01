@@ -110,7 +110,7 @@
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Age fields</td>
-<td style='word-wrap: break-word; white-space: normal;'>Chronological and adjusted age are inaccurate, falling outside of the expected 3-9 month range, for N=74 participants at V03 due to site data entry errors. Until resolved, exclude age values outside of. the expected range.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Chronological and adjusted age fall outside the expected 3–9 month range for 74 participants (V03) due to site data entry errors. Exclude out-of-range values until corrected.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
@@ -144,7 +144,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Data Type</td>
 <td style='word-wrap: break-word; white-space: normal;'>Summary score variables in the Bayley and CDI are incorrectly classified in the metadata as data type of <code>text</code>, which may cause issues for certain tools and return data in the wrong format.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>MLDS</td>
@@ -213,22 +213,19 @@
 
 <!-- END KNOWN_ISSUES_TABLE -->
 
+
 ### <i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i>  Pending Updates
-
-
 
 <!-- BEGIN PENDING_TABLE -->
 <table class="compact-table-no-vertical-lines">
-
-    <thead>
-    <tr style="text-decoration: bold; font-size: 1.2em;">
-    <th>TABLE/TOPIC</th>
-    <th>SUMMARY</th>
-    <th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Target Beta Release</span></span></th>
-    </tr>
-    </thead>
-    <tbody>
-    
+<thead>
+<tr style="text-decoration: bold; font-size: 1.2em;">
+<th>TABLE/TOPIC</th>
+<th>SUMMARY</th>
+<th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Target Beta Release</span></span></th>
+</tr>
+</thead>
+<tbody>
 <tr class="domain-row-pending"><td colspan="3"><strong>ADMINISTRATIVE</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Study Navigators</td>
@@ -240,11 +237,6 @@
 <td class='table-cell' style='font-weight: bold;'>ECBQ</td>
 <td style='word-wrap: break-word; white-space: normal;'>Change coding for "Does not apply" to 8 to match the IBQ-R.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>ERICA</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of the ERICA instrument.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 <tr class="domain-row-pending"><td colspan="3"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
 <tr>
