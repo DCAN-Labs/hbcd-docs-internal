@@ -54,6 +54,13 @@
 !!! danger "Resolved Known Issues & Updates"
     **This page contains a running record of issues and updates verified as RESOLVED by Workgroups/SMEs** (from BR21.0; see prior release notes for earlier records). Until final sign off, items remain listed as ACTIVE in [Known Issues & Pending Updates](knownissues.md). Individual BR release notes may include *provisional* updates that are not yet verified.
 
+
+<p style="font-size: 1em; color: #555; margin-bottom: 1em;">
+<i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i>&nbsp;= Completed Pending Update &nbsp;&nbsp;&nbsp;&nbsp;
+<i class="fas fa-bug" style="color: #f97316; font-size: 1em;"></i>&nbsp;= Resolved Known Issue
+</p>
+
+
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -64,23 +71,11 @@
 </tr>
 </thead>
 <tbody>
-
 <!-- BIOSPEC -->
 <tr>
 <td><b>BIO</b></td>
 <td class='table-cell'>Nails & Urine</td>
-<td style='word-wrap: break-word; white-space: normal;'>Remove quotes from level values to prevent double quotes in downloaded data (e.g. 1=""positive"").</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
-
-<!-- MRI -->
-<tr>
-<td rowspan="2"><b>MRI</b></td>
-<td>BrainSwipes</td>
-<td style='word-wrap: break-word; white-space: normal;'>BrainSwipes QC results will be updated with latest results currently available in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-<td>XCP-D</td>
-<td style='word-wrap: break-word; white-space: normal;'>Metadata values for <code>sub_domain</code> were corrected to <code>Structural MRI</code> for tabulated XCP-D Myers-Labonte <code>*morph.tsv</code> files.</td>
+<td style='word-wrap: break-word; white-space: normal;'> <i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Remove quotes from level values to prevent double quotes in downloaded data (e.g. 1=""positive"").</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
@@ -88,7 +83,19 @@
 <tr>
 <td><b>MH</b></td>
 <td>ERICA</td>
-<td>Addition of the ERICA instrument tables (<code>mh_cg_erica{_rel}_3_9m</code>); raw scores only</td>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Addition of the ERICA instrument tables (<code>mh_cg_erica{_rel}_3_9m</code>); raw scores only</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
+
+<!-- MRI -->
+<tr>
+<td rowspan="2"><b>MRI</b></td>
+<td>BrainSwipes</td>
+<td style='word-wrap: break-word; white-space: normal;'><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i>  BrainSwipes QC results updated with latest results available in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
+<td>XCP-D</td>
+<td style='word-wrap: break-word; white-space: normal;'><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Metadata values for <code>sub_domain</code> were corrected to <code>Structural MRI</code> for tabulated XCP-D Myers-Labonte <code>*morph.tsv</code> files.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
@@ -96,32 +103,32 @@
 <tr>
 <td rowspan="3"><b>NCL</b></td>
 <td>MLDS</td>
-<td style='word-wrap: break-word; white-space: normal;'>Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "Â Â Â")</td>
+<td style='word-wrap: break-word; white-space: normal;'><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "Â Â Â")</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 <tr>
-<td rowspan="2">Vineland</td>
-<td style='word-wrap: break-word; white-space: normal;'>Correct subset of variables with typo in the spelling of "receptive."</td>
+<td>Vineland</td>
+<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Correct subset of variables with typo in the spelling of "receptive."</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 <tr>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of language field to <code>ncl_cg_vabs</code>.</td>
+<td>Vineland</td>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i>  Addition of language field to <code>ncl_cg_vabs</code>.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
 <!-- SED -->
 <tr>
 <td rowspan="2"><b>SED</b></td>
-<td>Demographics</td>
-<td style='word-wrap: break-word; white-space: normal;'>Add back <code>sed_bm_demo_residence_{001|002}</code> (present in prior release then missing).</td>
+<td>Child Demo</td>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Household roster updated to clarify that counts exclude the main child.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 <tr>
-<td>Child Demo</td>
-<td style='word-wrap: break-word; white-space: normal;'>Household roster updated to clarify that counts exclude the main child.</td>
+<td>Demographics</td>
+<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Add back <code>sed_bm_demo_residence_{001|002}</code> (present in prior release then missing).</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
-
 </tbody>
 </table>
 
