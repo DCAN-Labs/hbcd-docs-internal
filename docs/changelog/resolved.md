@@ -74,8 +74,16 @@
 <!-- BIOSPEC -->
 <tr>
 <td><b>BIO</b></td>
-<td class='table-cell'>Nails & Urine</td>
-<td style='word-wrap: break-word; white-space: normal;'> <i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Remove quotes from level values to prevent double quotes in downloaded data (e.g. 1=""positive"").</td>
+<td>Nails & Urine</td>
+<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Remove quotes from level values to prevent double quotes in downloaded data (e.g. 1=""positive"").</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
+
+<!-- EEG -->
+<tr>
+<td><b>EEG</b></td>
+<td>.set files</td>
+<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Update EEG .set files to include subject release IDs.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
@@ -131,8 +139,6 @@
 </tr>
 </tbody>
 </table>
-
-
 
 
 

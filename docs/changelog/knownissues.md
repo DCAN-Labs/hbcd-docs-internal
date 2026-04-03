@@ -102,12 +102,6 @@
 <td style='word-wrap: break-word; white-space: normal;'>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
-<tr class="domain-row-issue"><td colspan="3"><strong>EEG</strong></td></tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>.set files</td>
-<td style='word-wrap: break-word; white-space: normal;'>Update EEG .set files to include subject release IDs.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
-</tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Age fields</td>
 <td style='word-wrap: break-word; white-space: normal;'>Chronological and adjusted age fall outside the expected 3–9 month range for 74 participants (V03) due to site data entry errors. Exclude out-of-range values until corrected.</td>
