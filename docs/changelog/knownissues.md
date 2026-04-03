@@ -153,7 +153,7 @@
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Growth</td>
-<td style='word-wrap: break-word; white-space: normal;'><a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Ranges used to filter out-of-range growth measurements</a> in <code>ph_ch_anthro</code> are not age-specific, leading to values that are within the valid range, but biologically implausible for the visit age. Filtering methods will be re-evaluated.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Growth (<code>ph_ch_anthro</code>) filter ranges will be updated to be visit-specific, as current ranges allow biologically implausible values (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Range Checks</a>).</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr class="domain-row-issue"><td colspan="3"><strong>PREGNANCY &amp; EXPOSURE</strong></td></tr>
