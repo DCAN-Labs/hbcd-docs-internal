@@ -97,13 +97,18 @@
 
 <!-- MRI -->
 <tr>
-<td rowspan="2"><b>MRI</b></td>
+<td rowspan="3"><b>MRI</b></td>
 <td>BrainSwipes</td>
 <td style='word-wrap: break-word; white-space: normal;'><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i>  BrainSwipes QC results updated with latest results available in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 <td>XCP-D</td>
 <td style='word-wrap: break-word; white-space: normal;'><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Metadata values for <code>sub_domain</code> were corrected to <code>Structural MRI</code> for tabulated XCP-D Myers-Labonte <code>*morph.tsv</code> files.</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
+<tr>
+<td>Raw BIDS</td>
+<td style='word-wrap: break-word; white-space: normal;'><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Resolved 2 corrupted bold runs in V02 raw BIDS (see filepaths in <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>).</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 

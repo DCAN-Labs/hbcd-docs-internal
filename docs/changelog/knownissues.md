@@ -126,11 +126,6 @@
 </tr>
 <tr class="domain-row-issue"><td colspan="3"><strong>MRI</strong></td></tr>
 <tr>
-<td class='table-cell' style='font-weight: bold;'>Raw BIDS</td>
-<td style='word-wrap: break-word; white-space: normal;'>Raw BIDs include 2 corrupted bold runs in V02; view participant IDs/filepaths in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
-<tr>
 <td class='table-cell' style='font-weight: bold;'>Run ID</td>
 <td style='word-wrap: break-word; white-space: normal;'>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
