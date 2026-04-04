@@ -4,19 +4,21 @@ import os
 import markdown
 import re
 
+# ADD WAY TO SPECIFY BR-ONLY?
+
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
-TSV= "../../dev/hbcd-docs/tools/latest.tsv"
+XLSX= "latest.xlsx"
 INTERNAL_MD = "../docs/changelog/knownissues.md"
 
 # FUNCTIONS
 
-def load_and_filter_tsv(tsv_path):
+def load_and_filter_xlsx(xlsx_path):
     """
-    Load TSV file, rename columns, filter rows, fill missing values, and strip whitespace.
+    Load XLSX file, rename columns, filter rows, fill missing values, and strip whitespace.
     """
-    # Load TSV as strings and rename columns 
-    df = pd.read_csv(tsv_path, sep="\t", dtype=str)
+    # Load XLSX as strings and rename columns 
+    df = pd.read_excel(xlsx_path, dtype=str)
     df = df.rename(columns={
     "RTDs": "Type",
     "RTDs Text (markdown format)": "Text"})
@@ -31,7 +33,7 @@ def load_and_filter_tsv(tsv_path):
     return df
 
 def map_type(value):
-    if value == "known_issue":
+    if value == "known_issue" or value == "br_known_issue":
         return "Issue"
     elif value == "pending":
         return "Pending Update"
@@ -70,7 +72,7 @@ def build_table(data_dict, table_title):
 
     table_parts = []
 
-    table_parts.append(f"\n\n## {table_title}\n")
+    table_parts.append(f"\n\n### {table_title}\n")
     table_parts.append('<table class="compact-table-no-vertical-lines">')
     table_parts.append("""
     <thead>
@@ -107,16 +109,15 @@ def build_table(data_dict, table_title):
 
     return "\n".join(table_parts)
 
-
-
 # WORK
-df = load_and_filter_tsv(TSV)
+df = load_and_filter_xlsx(XLSX)
 
 # Replace empty BR cells with 'TBD'
 df['BR'] = df['BR'].replace('', 'TBD')   
 
 # Extra step for internal documentation - remove rows where Status == Done AND BR == 21.0 (only show issues still open for the current BR)  
-df = df[~((df['Status'] == 'Done') & (df['BR'] == '21.0'))]
+# df = df[~((df['Status'] == 'Done') & (df['BR'] == '21.0'))]
+df = df[~(df['RTDs_Status'] == 'Archived to BR')]
 
 # Type mapping and sort by (1) domain, (2) table/topic
 df["MappedType"] = df["Type"].apply(map_type)
@@ -167,6 +168,4 @@ combined_tables_html_int = build_combined_tables()
 
 # Insert Into Markdown
 insert_into_markdown(INTERNAL_MD, combined_tables_html_int)
-
-# df.to_csv('temp.tsv', index=None, na_rep='NA', sep='\t')
 
