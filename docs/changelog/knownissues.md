@@ -273,7 +273,7 @@
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
-<td class='table-cell' style='font-weight: bold;'>VIsit Info</td>
+<td class='table-cell' style='font-weight: bold;'>Visit Info</td>
 <td style='word-wrap: break-word; white-space: normal;'>SU flags will include Nail toxicology results in addition to Urine.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
@@ -323,7 +323,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Bayley-4</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of item-level scores.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>CDI</td>
