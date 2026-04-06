@@ -74,8 +74,13 @@
 <tr class="domain-row-issue"><td colspan="4"><strong>BEHAVIOR &amp; CAREGIVER-CHILD INTERACTION</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ERICA</td>
-<td style='word-wrap: break-word; white-space: normal;'>Remove ERICA variables specified by WG that are normally consortium-wide standard to include (data taken, age fields, and language).</td>
+<td style='word-wrap: break-word; white-space: normal;'>Remove date taken, age, and language fields as specified by WG.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+</tr>
+<tr>
+<td class='table-cell' style='font-weight: bold;'>ERICA</td>
+<td style='word-wrap: break-word; white-space: normal;'>Recalculate all <code>age</code> and <code>date_taken</code> fields using <i>visit date</i> instead of <i>date coded</i>; currently to be excluded from PR2.1.</td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ERICA</td>
