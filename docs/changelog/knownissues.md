@@ -74,7 +74,7 @@
 <tr class="domain-row-issue"><td colspan="4"><strong>BEHAVIOR &amp; CAREGIVER-CHILD INTERACTION</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ERICA</td>
-<td style='word-wrap: break-word; white-space: normal;'>Remove ERICA variables specified by WG (data taken, age fields, and language).</td>
+<td style='word-wrap: break-word; white-space: normal;'>Remove ERICA variables specified by WG that are normally consortium-wide standard to include (data taken, age fields, and language).</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
