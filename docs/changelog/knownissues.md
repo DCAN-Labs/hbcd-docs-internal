@@ -75,7 +75,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ERICA</td>
 <td style='word-wrap: break-word; white-space: normal;'>Remove ERICA variables specified by WG (data taken, age fields, and language).</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ERICA</td>
@@ -101,12 +101,12 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Nails</td>
 <td style='word-wrap: break-word; white-space: normal;'>Add unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Nails</td>
 <td style='word-wrap: break-word; white-space: normal;'>Use <code>bio_bm_biosample_nails_typ_collection_nail_type</code> <em>specimen type</em> table for nail type (<em>results</em> table values are all 4 (Unknown)).</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr class="domain-row-issue"><td colspan="4"><strong>DEMOGRAPHICS</strong></td></tr>
 <tr>
@@ -157,7 +157,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Growth</td>
 <td style='word-wrap: break-word; white-space: normal;'>Remove <code>ph_ch_anthro_002</code>.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Growth</td>
@@ -209,7 +209,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Demographics</td>
 <td style='word-wrap: break-word; white-space: normal;'>Remove erroneously included descriptive fields (e.g. <code>sed_bm_demo_roster_001__00</code>).</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Demographics</td>
@@ -224,7 +224,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>eHITS</td>
 <td style='word-wrap: break-word; white-space: normal;'>In <code>sed_bm_ehits</code>, participants with no responses are assigned a score of 0 instead of missing; convert to null before analysis.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 </tbody></table>
 
