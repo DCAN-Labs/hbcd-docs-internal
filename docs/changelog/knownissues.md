@@ -247,7 +247,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Study Navigators</td>
 <td style='word-wrap: break-word; white-space: normal;'>Populate SUBSTANCE_USE and OTHER checkbox fields.</td>
-<td style='text-align: center;'><span class='br-pill br-21'>21</span></td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>BEHAVIOR &amp; CAREGIVER-CHILD INTERACTION</strong></td></tr>
 <tr>
@@ -259,7 +259,7 @@
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Olink</td>
 <td style='word-wrap: break-word; white-space: normal;'>Addition of Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy.</td>
-<td style='text-align: center;'><span class='br-pill br-21'>21</span></td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Urine</td>
