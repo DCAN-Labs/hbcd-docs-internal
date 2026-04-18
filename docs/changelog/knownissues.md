@@ -248,12 +248,8 @@
     </thead>
     <tbody>
     
-<tr class="domain-row-pending"><td colspan="4"><strong>ADMINISTRATIVE</strong></td></tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Study Navigators</td>
-<td style='word-wrap: break-word; white-space: normal;'>Populate SUBSTANCE_USE and OTHER checkbox fields.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
+<!-- <tr class="domain-row-pending"><td colspan="4"><strong>ADMINISTRATIVE</strong></td></tr> -->
+
 <tr class="domain-row-pending"><td colspan="4"><strong>BEHAVIOR &amp; CAREGIVER-CHILD INTERACTION</strong></td></tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>ECBQ</td>
@@ -261,11 +257,6 @@
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>BIOSPECIMEN &amp; OMICS</strong></td></tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Olink</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
 <tr>
 <td class='table-cell' style='font-weight: bold;'>Urine</td>
 <td style='word-wrap: break-word; white-space: normal;'>Creatinine results (<code>bio_creat_u</code>) are currently excluded from the release due to out-of-range values and will be added once corrected.</td>

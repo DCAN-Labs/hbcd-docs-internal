@@ -71,11 +71,25 @@
 </tr>
 </thead>
 <tbody>
+
+<!-- ADMIN -->
+<tr>
+<td><b>ADMN</b></td>
+<td>Study Navigators</td>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Populate SUBSTANCE_USE and OTHER checkbox fields.</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
+
 <!-- BIOSPEC -->
 <tr>
-<td><b>BIO</b></td>
+<td rowspan="2"><b>BIO</b></td>
 <td>Nails & Urine</td>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Remove quotes from level values to prevent double quotes in downloaded data (e.g. 1=""positive"").</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
+<tr>
+<td>Olink</td>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Addition of Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
