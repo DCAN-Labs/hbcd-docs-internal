@@ -263,6 +263,13 @@
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>DEMOGRAPHICS</strong></td></tr>
+
+<tr>
+<td style='font-weight: bold;'>RESTRUCTURE</td>
+<td style='word-wrap: break-word; white-space: normal;'>The Demographics domain includes 2 tables with derived information grouped into visit-specific data (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/">Visit Info</a>) and general demographics (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/basicdemo/">Basic Demographics</a>). In a future release, these tables will be restructured to instead organize variables as either longitudinal (dynamic measures that change over time) or global (static measures, such as sex assigned at birth and race/ethnicity).</td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+</tr>
+
 <tr>
 <td class='table-cell' style='font-weight: bold;'>SU Flags</td>
 <td style='word-wrap: break-word; white-space: normal;'>A derived/rolled up substance use flag for Stimulants will be added based on positive instrument-specific Stimulant results.</td>
@@ -295,14 +302,14 @@
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr class="domain-row-pending"><td colspan="4"><strong>MRI</strong></td></tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>DICOMs</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of source DICOMs for all imaging modalities.</td>
+<td class='table-cell' style='font-weight: bold;'>Scanner Info</td>
+<td style='word-wrap: break-word; white-space: normal;'>Scanner information must currently be parsed from raw BIDS data (specifically the scans .tsv files), as described <a href="https://docs.hbcdstudy.org/latest/help/faq/#faq-scanner-info">here</a>. Future releases will include a dedicated 'MRI Info' table that summarizes scanner information across participants, similar to the ABCD study (see <a href="https://docs.abcdstudy.org/latest/documentation/imaging/admin.html#mr_y_adm__info">details</a>).</td>
+<!-- as well as other important covariates that should be included when analyzing neuroimaging data  -->
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
-<td class='table-cell' style='font-weight: bold;'>Scanner Info</td>
-<td style='word-wrap: break-word; white-space: normal;'>Scanner information (currently available in the scans TSV files within the raw BIDS data as well as all sidecar JSON files) will be provided as tabulated data.</td>
+<td class='table-cell' style='font-weight: bold;'>Source DICOMs</td>
+<td style='word-wrap: break-word; white-space: normal;'>Addition of source DICOMs for all imaging modalities.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
@@ -369,3 +376,4 @@
 
 
   <br>
+
