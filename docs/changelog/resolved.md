@@ -55,12 +55,11 @@
     **This page contains a running record of issues and updates verified as RESOLVED by Workgroups/SMEs** (from BR21.0; see prior release notes for earlier records). Until final sign off, items remain listed as ACTIVE in [Known Issues & Pending Updates](knownissues.md). Individual BR release notes may include *provisional* updates that are not yet verified.
 
 
+
 <p style="font-size: 1em; color: #555; margin-bottom: 1em;">
 <i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i>&nbsp;= Completed Pending Update &nbsp;&nbsp;&nbsp;&nbsp;
 <i class="fas fa-bug" style="color: #f97316; font-size: 1em;"></i>&nbsp;= Resolved Known Issue
 </p>
-
-
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -72,9 +71,17 @@
 </thead>
 <tbody>
 
+<!-- GENERAL -->
+<tr>
+<td><i>NA/All</i></td>
+<td>Language</td>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Addition of language of administration across all instruments where applicable.</td>
+<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
+
 <!-- ADMIN -->
 <tr>
-<td><b>ADMN</b></td>
+<td><b>ADM</b></td>
 <td>Study Navigators</td>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Populate SUBSTANCE_USE and OTHER checkbox fields.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
@@ -128,32 +135,24 @@
 
 <!-- NCL -->
 <tr>
-<td rowspan="3"><b>NCL</b></td>
+<td rowspan="2"><b>NCL</b></td>
 <td>MLDS</td>
 <td style='word-wrap: break-word; white-space: normal;'><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "Â Â Â")</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 <tr>
 <td>Vineland</td>
-<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Correct subset of variables with typo in the spelling of "receptive."</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
-<tr>
-<td>Vineland</td>
-<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i>  Addition of language field to <code>ncl_cg_vabs</code>.</td>
+<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Correct subset of variables with typo in the spelling of "receptive."<br>
+<i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i>  Addition of language field to <code>ncl_cg_vabs</code>.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
 <!-- SED -->
-<tr>
-<td rowspan="2"><b>SED</b></td>
-<td>Child Demo</td>
-<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Household roster updated to clarify that counts exclude the main child.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
-<tr>
+<tr><td><b>SED</b></td>
 <td>Demographics</td>
-<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Add back <code>sed_bm_demo_residence_{001|002}</code> (present in prior release then missing).</td>
+<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Add back <code>sed_bm_demo_residence_{001|002}</code> (present in prior release then missing).<br>
+<i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Child Demo: Household roster updated to clarify that counts exclude the main child.
+</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 </tbody>
