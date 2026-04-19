@@ -69,16 +69,7 @@ def build_table(domain, rows):
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr style="font-size: 1.1em;">
-<th></th>
-<th>Table/Topic</th>
-<th>Summary</th>
-<th style='text-align: center;'>
-    <span class="tooltip tooltip-left">
-        BR
-        <span class="tooltiptext">Target Beta Release</span>
-    </span>
-</th>
-</tr>
+<th></th><th>Table/Topic</th><th>Summary</th><th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Target Beta Release</span></span></th></tr>
 </thead>
 <tbody>
 """)

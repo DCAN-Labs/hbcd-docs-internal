@@ -33,6 +33,8 @@
 <span class="pill-link"><span class="tooltip"><i class="fa-solid fa-eye" style="color: #6300d3;"></i><span class="tooltiptext">Transparency<br><i>Click to learn more</i></span></span></span></a>
 </div>
 
+<!-- <i>[BR data only]</i> = this means that the issue is not present in public release data, so will not be documented in the HBCD Docs site -->
+
 # Known Issues & Pending Updates
 
 !!! danger "Active Items Only"
@@ -48,6 +50,54 @@
 ---
 
 <!-- BEGIN KNOWN_ISSUES_TABLE -->
+
+
+
+### GENERAL
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr style="font-size: 1.1em;">
+<th></th>
+<th>Table/Topic</th>
+<th>Summary</th>
+<th style='text-align: center;'>
+    <span class="tooltip tooltip-left">
+        BR
+        <span class="tooltiptext">Target Beta Release</span>
+    </span>
+</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
+<td>Implausible GA</td>
+<td style='word-wrap: break-word; white-space: normal;'>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values  for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
+<td>Instruction</td>
+<td style='word-wrap: break-word; white-space: normal;'>The 'instruction' Data Dictionary element is currently blank.</td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
+<td>Multibirth Cohorts</td>
+<td style='word-wrap: break-word; white-space: normal;'>Missing instrument fields for Sibling cohorts will be populated and <em>FamilyID</em> will be incorporated to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
+<td>Sequence Field</td>
+<td style='word-wrap: break-word; white-space: normal;'>The currently included Sequence field is blank across all instruments and will be removed.</td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+</tr>
+</tbody></table>
+
+
 ### BEHAVIOR &amp; CAREGIVER-CHILD INTERACTION
 
 <table class="compact-table-no-vertical-lines">
@@ -69,19 +119,19 @@
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>ERICA</td>
-<td style='word-wrap: break-word; white-space: normal;'>Remove 2 data points specified by WG from the ERICA Codes (3-9M) table.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Per WG, remove 2 data points from the ERICA Codes (3-9M) <i>[BR data only]</i>.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>ERICA</td>
-<td style='word-wrap: break-word; white-space: normal;'>Remove ERICA variables specified by WG that are normally consortium-wide standard to include (data taken, age fields, and language).</td>
+<td style='word-wrap: break-word; white-space: normal;'>Remove date taken, age, and language fields (computed based on <i>date coded</i>) to exclude from patch 2.1 <i>[BR data only]</i>.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>FAD</td>
-<td style='word-wrap: break-word; white-space: normal;'>Incorrect scoring for N=4 V06 participants: Summary scores incorrectly set to <code>0</code> with &lt;3 item responses (should be missing)</td>
+<td style='word-wrap: break-word; white-space: normal;'>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
@@ -93,19 +143,19 @@
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>MAPS-TL (&lt;1yr)</td>
-<td style='word-wrap: break-word; white-space: normal;'>N=4 participants in <code>mh_cg_mapdb__inf</code> had no responses, but were scored 0; until resolved, set to null before analysis.</td>
+<td style='word-wrap: break-word; white-space: normal;'>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
-<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>MAPS-TL (Tod)</td>
-<td style='word-wrap: break-word; white-space: normal;'>Pro-rated scoring is not yet applied for missing responses in the <code>mh_cg_mapdb__tod</code>, resulting in N=16 participants missing scores.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Pro-rated scoring for <code>mh_cg_mapdb__tod</code> not yet implemented; N=16 participants missing scores.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>ecPROMIS Ch-CG Int (Inf)</td>
-<td style='word-wrap: break-word; white-space: normal;'>Incorrect scoring for N=12 V03 participants in <code>mh_cg_pms__cc__inf</code>: Summary scores incorrectly set to <code>0</code> with &lt;3 item responses (should be missing)</td>
+<td>ecPROMIS CC</td>
+<td style='word-wrap: break-word; white-space: normal;'>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
@@ -144,13 +194,13 @@
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Nails</td>
-<td style='word-wrap: break-word; white-space: normal;'>Use <code>bio_bm_biosample_nails_typ_collection_nail_type</code> <em>specimen type</em> table for nail type (<em>results</em> table values are all 4 (Unknown)).</td>
+<td style='word-wrap: break-word; white-space: normal;'>Nail type is <code>4</code> (Unknown) in the main results table (<code>*_nails_results</code>) and should be obtained from the specimen table (<code>*_nails_type</code>) instead.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Urine</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of creatinine results (<code>bio_creat_u</code>).</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add creatinine results (<code>bio_creat_u</code>).</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 </tbody></table>
@@ -200,7 +250,7 @@
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Visit Level Data</td>
+<td>Visit Info</td>
 <td style='word-wrap: break-word; white-space: normal;'>Date of missed visit (<code>visit_missed_date</code>) is currently excluded from the release due to inaccuracies and will be added once corrected.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
@@ -233,57 +283,11 @@
 </tr>
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>HBCD-MADE</td>
-<td style='word-wrap: break-word; white-space: normal;'>N=3 V04 sessions in the HBCD-MADE derivatives for FACE and MMN tasks are missing corresponding tabulated data. File-based data should therefore be used for analyses. Impacted participant IDs are available via the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td>MADE</td>
+<td style='word-wrap: break-word; white-space: normal;'>N=3 V04 session derivatives are missing corresponding tabulated data for FACE/MMN tasks. See <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> for impacted participant IDs.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 </tbody></table>
-
-
-### GENERAL
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr style="font-size: 1.1em;">
-<th></th>
-<th>Table/Topic</th>
-<th>Summary</th>
-<th style='text-align: center;'>
-    <span class="tooltip tooltip-left">
-        BR
-        <span class="tooltiptext">Target Beta Release</span>
-    </span>
-</th>
-</tr>
-</thead>
-<tbody>
-
-<tr>
-<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Implausible GA</td>
-<td style='word-wrap: break-word; white-space: normal;'>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values  for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Instruction</td>
-<td style='word-wrap: break-word; white-space: normal;'>The 'instruction' Data Dictionary element is currently blank.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Multibirth Cohorts</td>
-<td style='word-wrap: break-word; white-space: normal;'>Missing instrument fields for Sibling cohorts will be populated and <em>FamilyID</em> will be incorporated to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Sequence Field</td>
-<td style='word-wrap: break-word; white-space: normal;'>The currently included Sequence field is blank across all instruments and will be removed.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
-</tbody></table>
-
 
 ### MRI
 
@@ -318,13 +322,13 @@
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Source DICOMs</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of source DICOMs for all imaging modalities.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add source DICOMs for all imaging modalities.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Summary Forms</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of MRI 'Scan Session' and 'Data' Summary Forms to release data with information from the MRI technician obtained on day of scan.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add MRI 'Scan Session' and 'Data' Summary Forms to release data with information from the MRI technician obtained on day of scan.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
@@ -369,7 +373,7 @@
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Bayley-4</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of item-level scores.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add item-level scores.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
@@ -426,37 +430,37 @@
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>BISQ-SF</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Growth</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of age-based z-scores to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Z-Scores Excluded</a>).</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add age-based z-scores to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Z-Scores Excluded</a>).</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Growth</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Vision Screener</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of more fields to <code>ph_ch_vs</code> (current release only includes completion status and overall screening results).</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add more fields to <code>ph_ch_vs</code> (current release only includes completion status and overall screening results).</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>ecPROMIS- Sleep</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of summary scores to <code>ph_cg_pms__sleep</code>.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add summary scores to <code>ph_cg_pms__sleep</code>.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>ecPROMIS-PAG</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of summary scores to <code>ph_cg_pms__pags</code>. Until added, scores can be calculated by following the <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documentation.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add summary scores to <code>ph_cg_pms__pags</code>. Until added, scores can be calculated by following the <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documentation.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 </tbody></table>
@@ -489,7 +493,7 @@
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>EPDS</td>
-<td style='word-wrap: break-word; white-space: normal;'>Some V01-V03 records show inconsistencies between item responses and the calculated sum score, including (1) items present, but sum score is null; (2) items null, but sum score is 0.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Inconsistent scoring: (1) item responses present, but score is null (N=1); (2) all items null, but score is <code>0</code> (N≥3).</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
@@ -507,7 +511,7 @@
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>TLFB</td>
-<td style='word-wrap: break-word; white-space: normal;'>Weeks for postnatal recruits were mistakenly reported in the TLFB <strong>versions 1</strong> or <strong>2</strong> instead of <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3"><strong>version 3</strong> adapted for PNR</a>. These will be adjusted to <strong>version 3</strong>.</td>
+<td style='word-wrap: break-word; white-space: normal;'>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a>.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
@@ -525,11 +529,9 @@
 <thead>
 <tr style="font-size: 1.1em;">
 <th></th>
-<th>Table/Topic</th>
+<th>Table</th>
 <th>Summary</th>
-<th style='text-align: center;'>
-    <span class="tooltip tooltip-left">
-        BR
+<th style='text-align: center;'><span class="tooltip tooltip-left">BR
         <span class="tooltiptext">Target Beta Release</span>
     </span>
 </th>
@@ -540,44 +542,42 @@
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>C-PACEs</td>
-<td style='word-wrap: break-word; white-space: normal;'>Summary scores for <code>sed_bm_paces</code> are currently calculated as the sum of individual item responses rather than the average. Until corrected, users may compute their own average-based summary scores using the item-level data provided in the dataset.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Demographics</td>
-<td style='word-wrap: break-word; white-space: normal;'>V01 household income (<code>sed_bm_demo_income_002</code>) missing from adult demographics.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Demographics</td>
-<td style='word-wrap: break-word; white-space: normal;'>Variables on the Other Biological Parent are missing from <code>sed_bm_demo</code>.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Demographics</td>
-<td style='word-wrap: break-word; white-space: normal;'>Remove erroneously included descriptive fields (e.g. <code>sed_bm_demo_roster_001__00</code>).</td>
+<td style='word-wrap: break-word; white-space: normal;'>Summary scores are inaccurate; until corrected, users can compute scores following the provided scoring documentation.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>eHITS</td>
-<td style='word-wrap: break-word; white-space: normal;'>In <code>sed_bm_ehits</code>, participants with no responses are assigned a score of 0 instead of missing; convert to null before analysis.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
-</tr>
+<td style='word-wrap: break-word; white-space: normal;'>Participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td></tr>
+
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Demo</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of household roster fields capturing the sex of listed individuals for both adult &amp; child demographics tables.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add household roster fields capturing the sex of listed individuals (adult &amp; child tables).</td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td></tr>
+
+<tr><td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td><td>Demo</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add V01 household income (<code>income_002</code>) (adult table).</td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+</tr>
+
+<tr><td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
+<td>Demo</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add variables on Other Biological Parent (adult table).</td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+</tr>
+
+<tr><td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
+<td>Demo</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add <code>work_{002–004}_post</code> (worked for pay/≥20/≥35 hours while pregnant) and <code>work_004__01</code> (job held ≥1 month since V01) (adult table).</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
-<tr>
-<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>sed_bm_demo</td>
-<td style='word-wrap: break-word; white-space: normal;'>Addition of following variables: <code>work_002_post</code> (Worked for pay while pregnant), <code>work_003_post</code> (Job held for 20+ hours while pregnant), <code>work_004_post</code> (Worked 35+ hours while pregnant), <code>work_004__01</code> (Job held for 1 month since first study visit).</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+
+<tr><td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
+<td>Demo</td>
+<td style='word-wrap: break-word; white-space: normal;'>Remove descriptive fields (e.g. <code>roster_001__00</code>) - <b>IMPACTS BR 21.0 ONLY</b>.</td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 </tbody></table><!-- END KNOWN_ISSUES_TABLE -->
 
