@@ -50,8 +50,43 @@
 ---
 
 <!-- BEGIN KNOWN_ISSUES_TABLE -->
-### BEHAVIOR &amp; CAREGIVER-CHILD INTERACTION
 
+### General
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr style="font-size: 1.1em;">
+<th></th><th>Table/Topic</th><th>Summary</th><th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Target Beta Release</span></span></th></tr>
+</thead>
+<tbody>
+<tr>
+<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
+<td>Implausible GA</td>
+<td style='word-wrap: break-word; white-space: normal;'>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values  for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
+<td>Instruction</td>
+<td style='word-wrap: break-word; white-space: normal;'>The 'instruction' Data Dictionary element is currently blank.</td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
+<td>Multibirth Cohorts</td>
+<td style='word-wrap: break-word; white-space: normal;'>Missing instrument fields for Sibling cohorts will be populated and <em>FamilyID</em> will be incorporated to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
+<td>Sequence Field</td>
+<td style='word-wrap: break-word; white-space: normal;'>The currently included Sequence field is blank across all instruments and will be removed.</td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+</tr>
+</tbody></table>
+
+
+### Behavior & Child-Caregiver Interaction
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr style="font-size: 1.1em;">
@@ -110,7 +145,7 @@
 </tbody></table>
 
 
-### BIOSPECIMEN &amp; OMICS
+### Biospecimens & Omics
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -140,7 +175,7 @@
 </tbody></table>
 
 
-### DEMOGRAPHICS
+### Demographics
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -206,42 +241,6 @@
 </tbody></table>
 
 
-### GENERAL
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr style="font-size: 1.1em;">
-<th></th><th>Table/Topic</th><th>Summary</th><th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Target Beta Release</span></span></th></tr>
-</thead>
-<tbody>
-
-<tr>
-<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Implausible GA</td>
-<td style='word-wrap: break-word; white-space: normal;'>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values  for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Instruction</td>
-<td style='word-wrap: break-word; white-space: normal;'>The 'instruction' Data Dictionary element is currently blank.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Multibirth Cohorts</td>
-<td style='word-wrap: break-word; white-space: normal;'>Missing instrument fields for Sibling cohorts will be populated and <em>FamilyID</em> will be incorporated to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Sequence Field</td>
-<td style='word-wrap: break-word; white-space: normal;'>The currently included Sequence field is blank across all instruments and will be removed.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
-</tbody></table>
-
-
 ### MRI
 
 <table class="compact-table-no-vertical-lines">
@@ -284,8 +283,7 @@
 </tbody></table>
 
 
-### NEUROCOGNITION &amp; LANGUAGE
-
+### Neurocognition & Language 
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr style="font-size: 1.1em;">
@@ -320,7 +318,7 @@
 </tbody></table>
 
 
-### PHYSICAL HEALTH
+### Physical Health
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -392,8 +390,7 @@
 </tbody></table>
 
 
-### PREGNANCY &amp; EXPOSURE
-
+### Pregnancy & Exposure
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr style="font-size: 1.1em;">
@@ -440,8 +437,7 @@
 </tbody></table>
 
 
-### SOCIAL &amp; ENVIRONMENTAL DETERMINANTS
-
+### Social & Environmental Determinants
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr style="font-size: 1.1em;">
