@@ -95,6 +95,7 @@ nav:
     - Known Issues & Pending Updates: changelog/knownissues.md
     - Resolved Issues/Updates Archive: changelog/resolved.md
     - Release Notes:    
+        - Beta Release 21.1: changelog/versions/BR21.1.md
         - Beta Release 21.0: changelog/versions/BR21.0.md
         - BR20X Archive:
             - Beta Release 20.2.3: changelog/versions/BR2X/BR20.2.3.md

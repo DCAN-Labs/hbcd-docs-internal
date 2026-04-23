@@ -14,7 +14,7 @@
   white-space: nowrap;
 }
 /* Version-specific styling */
-.br-210 {
+.br-212 {
   background-color: #e6f0ff; color: #1a4fb3;
 }
 .br-211 {
@@ -93,13 +93,6 @@
 <th></th><th>Table/Topic</th><th>Summary</th><th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Target Beta Release</span></span></th></tr>
 </thead>
 <tbody>
-
-<tr>
-<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>ERICA</td>
-<td style='word-wrap: break-word; white-space: normal;'>Per WG, remove 2 data points from the ERICA Codes (3-9M) <em>[BR data only]</em>.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>ERICA</td>
@@ -385,7 +378,7 @@
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>ecPROMIS-PAG</td>
 <td style='word-wrap: break-word; white-space: normal;'>Add scores to <code>ph_cg_pms__pags</code>. Until added, scores can be calculated by following the <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documentation.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 </tbody></table>
 
@@ -402,7 +395,7 @@
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>APA 1/2</td>
 <td style='word-wrap: break-word; white-space: normal;'>APA Level 2 was sometimes administered despite unmet gating criteria (e.g., missing Level 1 responses). These cases are not scored (“No additional inquiry required”) even when Level 2 responses are present. Level 2 item data will be removed to avoid confusion.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
@@ -461,7 +454,7 @@
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>eHITS</td>
 <td style='word-wrap: break-word; white-space: normal;'>Participants missing all item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
