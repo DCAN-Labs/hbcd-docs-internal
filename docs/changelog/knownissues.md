@@ -243,7 +243,7 @@
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Age fields</td>
-<td style='word-wrap: break-word; white-space: normal;'>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions due to site entry errors; exclude age values prior to analysis.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions; exclude age values prior to analysis.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
@@ -288,7 +288,7 @@
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Summary Forms</td>
-<td style='word-wrap: break-word; white-space: normal;'>Add MRI 'Scan Session' and 'Data' Summary Forms to release data with information from the MRI technician obtained on day of scan.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Add MRI Scan Session + Data Summary Forms (information from the MRI technician obtained on day of scan).</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>

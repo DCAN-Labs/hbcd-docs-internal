@@ -31,12 +31,22 @@ def load_and_filter_xlsx(xlsx_path):
 
     return df
 
+# TEST NEW LOGIC
+
 def map_type(value):
-    if value == "known_issue" or value == "br_known_issue":
+    if "issue" in value:
         return "Issue"
-    elif value == "pending":
+    elif "pending" in value:
         return "Pending Update"
     return None
+
+
+# def map_type(value):
+#     if value == "known_issue" or value == "br_known_issue":
+#         return "Issue"
+#     elif value == "pending":
+#         return "Pending Update"
+#     return None
 
 def insert_into_markdown(md_path, combined_html):
     START_MARKER = "<!-- BEGIN KNOWN_ISSUES_TABLE -->"
@@ -69,7 +79,10 @@ def build_table(domain, rows):
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr style="font-size: 1.1em;">
-<th></th><th>Table/Topic</th><th>Summary</th><th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Target Beta Release</span></span></th></tr>
+<th></th><th>Table/Topic</th><th>Summary</th>
+<th style='text-align: center;'>
+  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
+</th></tr>
 </thead>
 <tbody>
 """)
@@ -101,11 +114,16 @@ def build_table(domain, rows):
 # WORK
 df = load_and_filter_xlsx(XLSX)
 
-# Replace empty BR cells with 'TBD'
+# Extra steps for internal documentation
+## Remove rows archived to BR - already documented in resolved issues page
+df = df[~(df['RTDs_Status'] == 'Archived to BR')]
+
+## Replace empty BR cells with 'TBD' or assign to PR if present in PR column (add 'R' prefix to indicate it's from PR)
+for idx, row in df.iterrows():
+    if row['BR'] == '' and row['PR'] != '':
+        df.at[idx, 'R'+'BR'] = row['PR']
 df['BR'] = df['BR'].replace('', 'TBD')   
 
-# Extra step for internal documentation - remove rows where Status == Done AND BR == 21.0 (only show issues still open for the current BR)  
-df = df[~(df['RTDs_Status'] == 'Archived to BR')]
 
 # Type mapping and sort by (1) domain, (2) table/topic
 df["MappedType"] = df["Type"].apply(map_type)
