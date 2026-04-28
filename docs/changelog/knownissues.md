@@ -220,12 +220,6 @@
 <td style='word-wrap: break-word; white-space: normal;'>SU flags will include Nail toxicology results in addition to Urine.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
-<tr>
-<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Visit Info</td>
-<td style='word-wrap: break-word; white-space: normal;'>Date of missed visit (<code>visit_missed_date</code>) is currently excluded from the release due to inaccuracies and will be added once corrected.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
 </tbody></table>
 
 
