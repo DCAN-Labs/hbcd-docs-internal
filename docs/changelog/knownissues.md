@@ -117,7 +117,7 @@
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>FAD</td>
 <td style='word-wrap: break-word; white-space: normal;'>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
@@ -141,7 +141,7 @@
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>ECBQ</td>
 <td style='word-wrap: break-word; white-space: normal;'>Change coding for "Does not apply" to 8 to match the IBQ-R.</td>
-<td style='text-align: center;'><span class='pr-pill'>R2.1</span></td>
+<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
@@ -353,7 +353,13 @@
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Growth</td>
-<td style='word-wrap: break-word; white-space: normal;'>Confirm that negative <code>ph_ch_anthro_adjusted_age</code>  data point is accurate.</td>
+<td style='word-wrap: break-word; white-space: normal;'>Negative <code>ph_ch_anthro_adjusted_age</code> data point is incorrect; exclude from analyses until corrected.</td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
+<td>Growth</td>
+<td style='word-wrap: break-word; white-space: normal;'>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
