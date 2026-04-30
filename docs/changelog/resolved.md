@@ -89,7 +89,13 @@
 
 <!-- BIOSPEC -->
 <tr>
-<td rowspan="2"><b>BIO</b></td>
+<td rowspan="3"><b>BIO</b></td>
+<td>Nails</td>
+<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Add unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+</tr>
+
+<tr>
 <td>Nails & Urine</td>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Remove quotes from level values to prevent double quotes in downloaded data (e.g. 1=""positive"").</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
@@ -98,6 +104,16 @@
 <td>Olink</td>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Addition of Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
+</tr>
+
+<!-- DEMO -->
+<tr>
+<td><b>Demo</b></td>
+<td>.set files</td>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i>
+Add <code>work_{002–004}_post</code> and <code>work_004__01</code> (adult table).
+</td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 
 <!-- EEG -->
@@ -147,8 +163,28 @@
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
+<!-- PH -->
+<tr>
+<td rowspan="1"><b>PH</b></td>
+<td>Growth</td>
+<td style='word-wrap: break-word; white-space: normal;'><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> 
+Remove <code>ph_ch_anthro_002</code>
+</td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+</tr>
+
 <!-- SED -->
-<tr><td><b>SED</b></td>
+
+<tr><td rowspan="2"><b>SED</b></td>
+<td>Demographics</td>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> 
+Add V01 household income (<code>income_002</code>) (adult table)
+<br>
+<i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Remove descriptive fields (e.g. <code>roster_001__00</code>) <em>[BR data only]</em>.
+</td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+</tr>
+<tr>
 <td>Demographics</td>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Add back <code>sed_bm_demo_residence_{001|002}</code> (present in prior release then missing).<br>
 <i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Child Demo: Household roster updated to clarify that counts exclude the main child.
