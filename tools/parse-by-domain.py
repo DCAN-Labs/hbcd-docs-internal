@@ -2,6 +2,7 @@ import pandas as pd
 import html
 import os
 import markdown
+import numpy as np
 import re
 
 # ADD WAY TO SPECIFY BR-ONLY?
@@ -93,9 +94,9 @@ def build_table(domain, rows):
     for issue_type, table, summary_html, br in rows:
         table_parts.append("<tr>")
         if issue_type == "Issue":
-            type_label = '<i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i>'
+            type_label = '<i class="fas fa-bug icon-bug"></i>'
         else:
-            type_label = '<i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i>'
+            type_label = '<i class="fa-solid fa-rotate icon-rotate"></i>'
         table_parts.append(f"<td>{type_label}</td>")
         table_parts.append(f"<td>{html.escape(str(table))}</td>")
         table_parts.append(f"<td style='word-wrap: break-word; white-space: normal;'>{summary_html}</td>")
@@ -126,32 +127,16 @@ df = df.drop(['WG'], axis=1)
 ## Remove rows archived to BR - already documented in resolved issues page
 df = df[~(df['RTDs_Status'] == 'Archived to BR')]
 
-## Replace empty BR cells with 'TBD' or assign to PR if present in PR column (add 'R' prefix to indicate it's from PR)
-
+# Prefix PR values
 df.loc[df['PR'] != '', 'PR'] = 'R' + df.loc[df['PR'] != '', 'PR']
+
+# Treat empty strings as NaN and fill BR with PR where missing, then fill remaining with TBD
+df['BR'] = df['BR'].replace('', np.nan)
 df['BR'] = df['BR'].fillna(df['PR'])
+df['BR'] = df['BR'].fillna('TBD')
 
-# df['BR'] = df['BR'].replace('', 'TBD')  
-
-df.to_csv("debug.tsv", sep='\t', index=False)
-
-# for idx, row in df.iterrows():
-#     if row['BR'] != 'TBD':
-#         df['BR'] = 'R' + df['BR']
-
-# df.to_csv("debug.tsv", sep='\t', index=False)
-
-
-'''
-# for idx, row in df.iterrows():
-#     if row['PR'] != '':
-#         df['PR'] = 'R' + df['PR']
-        # df.at[idx, 'R'+'BR'] = row['PR']
-
-
-# df['PR'] = 'R' + df['PR'] 
- 
-
+# Drop PR column for troubleshooting
+df = df.drop(['PR'], axis=1)
 
 
 
@@ -185,9 +170,9 @@ for _, row in df.iterrows():
 # Generate known issues and pending tables for internal page
 table_configs = [
     ("Issue",
-     '<i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Known Issues'),
+     '<i class="fas fa-bug icon-bug"></i> Known Issues'),
     ("Pending Update",
-     '<i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Pending Updates'),
+     '<i class="fa-solid fa-rotate icon-rotate"></i> Pending Updates'),
 ]
 
 def build_combined_tables():
@@ -207,4 +192,3 @@ insert_into_markdown(INTERNAL_MD, combined_tables_html_int)
 
 
 df.to_csv("debug.tsv", sep='\t', index=False)
-'''
