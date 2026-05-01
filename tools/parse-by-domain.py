@@ -10,9 +10,9 @@ import re
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
 XLSX= "latest.xlsx"
-# INTERNAL_MD = "../docs/changelog/knownissues.md"
+INTERNAL_MD = "../docs/changelog/knownissues.md"
 
-INTERNAL_MD = "../docs/changelog/test.md"
+# INTERNAL_MD = "../docs/changelog/test.md"
 
 
 # FUNCTIONS
@@ -101,12 +101,16 @@ def build_table(domain, rows):
         table_parts.append(f"<td>{html.escape(str(table))}</td>")
         table_parts.append(f"<td style='word-wrap: break-word; white-space: normal;'>{summary_html}</td>")
 
+
         # BR styling
         if str(br).upper() == "TBD":
             pill_class = "br-pill br-tbd"
+        elif "R" in str(br).upper():
+            pill_class = "pr-pill"
         else:
             normalized_br = str(br).replace(".", "")
             pill_class = f"br-pill br-{normalized_br}"
+
         table_parts.append(
             f"<td style='text-align: center;'><span class='{pill_class}'>{html.escape(str(br))}</span></td>"
         )
@@ -133,6 +137,7 @@ df.loc[df['PR'] != '', 'PR'] = 'R' + df.loc[df['PR'] != '', 'PR']
 # Treat empty strings as NaN and fill BR with PR where missing, then fill remaining with TBD
 df['BR'] = df['BR'].replace('', np.nan)
 df['BR'] = df['BR'].fillna(df['PR'])
+df['BR'] = df['BR'].replace('', np.nan)
 df['BR'] = df['BR'].fillna('TBD')
 
 # Drop PR column for troubleshooting
@@ -191,4 +196,4 @@ combined_tables_html_int = build_combined_tables()
 insert_into_markdown(INTERNAL_MD, combined_tables_html_int)
 
 
-df.to_csv("debug.tsv", sep='\t', index=False)
+# df.to_csv("debug.tsv", sep='\t', index=False)
