@@ -9,7 +9,10 @@ import re
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
 XLSX= "latest.xlsx"
-INTERNAL_MD = "../docs/changelog/knownissues.md"
+# INTERNAL_MD = "../docs/changelog/knownissues.md"
+
+INTERNAL_MD = "../docs/changelog/test.md"
+
 
 # FUNCTIONS
 
@@ -114,18 +117,46 @@ def build_table(domain, rows):
 # WORK
 df = load_and_filter_xlsx(XLSX)
 
+# Drop unecessary columns (for troubleshooting purposes)
+df = df.drop(['Name'], axis=1)
+df = df.drop(['Status'], axis=1)
+df = df.drop(['WG'], axis=1)
+
 # Extra steps for internal documentation
 ## Remove rows archived to BR - already documented in resolved issues page
 df = df[~(df['RTDs_Status'] == 'Archived to BR')]
 
 ## Replace empty BR cells with 'TBD' or assign to PR if present in PR column (add 'R' prefix to indicate it's from PR)
-for idx, row in df.iterrows():
-    if row['BR'] == '' and row['PR'] != '':
-        df.at[idx, 'R'+'BR'] = row['PR']
-df['BR'] = df['BR'].replace('', 'TBD')   
+
+df.loc[df['PR'] != '', 'PR'] = 'R' + df.loc[df['PR'] != '', 'PR']
+df['BR'] = df['BR'].fillna(df['PR'])
+
+# df['BR'] = df['BR'].replace('', 'TBD')  
+
+df.to_csv("debug.tsv", sep='\t', index=False)
+
+# for idx, row in df.iterrows():
+#     if row['BR'] != 'TBD':
+#         df['BR'] = 'R' + df['BR']
+
+# df.to_csv("debug.tsv", sep='\t', index=False)
 
 
-# Type mapping and sort by (1) domain, (2) table/topic
+'''
+# for idx, row in df.iterrows():
+#     if row['PR'] != '':
+#         df['PR'] = 'R' + df['PR']
+        # df.at[idx, 'R'+'BR'] = row['PR']
+
+
+# df['PR'] = 'R' + df['PR'] 
+ 
+
+
+
+
+# Type mapping and s
+# ort by (1) domain, (2) table/topic
 df["MappedType"] = df["Type"].apply(map_type)
 df = df[df["MappedType"].notna()]
 df = df.sort_values(by=['Domain', 'Table/Topic'])
@@ -174,3 +205,6 @@ def build_combined_tables():
 combined_tables_html_int = build_combined_tables()
 insert_into_markdown(INTERNAL_MD, combined_tables_html_int)
 
+
+df.to_csv("debug.tsv", sep='\t', index=False)
+'''
