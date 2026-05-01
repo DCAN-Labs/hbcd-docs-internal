@@ -80,7 +80,7 @@
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Multibirth Cohorts</td>
 <td style='word-wrap: break-word; white-space: normal;'>Missing instrument fields for Sibling cohorts will be populated and <em>FamilyID</em> will be incorporated to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
@@ -105,7 +105,7 @@
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>ERICA</td>
 <td style='word-wrap: break-word; white-space: normal;'>Remove date taken, age, and language fields (computed based on <em>date coded</em>) to exclude from patch 2.1 <em>[BR data only]</em>.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
@@ -117,7 +117,7 @@
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>FAD</td>
 <td style='word-wrap: break-word; white-space: normal;'>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
@@ -129,13 +129,13 @@
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>MAPS-TL (&lt;1yr)</td>
 <td style='word-wrap: break-word; white-space: normal;'>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>ecPROMIS CC</td>
 <td style='word-wrap: break-word; white-space: normal;'>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
@@ -167,13 +167,7 @@
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Nails</td>
 <td style='word-wrap: break-word; white-space: normal;'>Nail type is <code>4</code> (Unknown) in the main results table (<code>*_nails_results</code>) and should be obtained from the specimen table (<code>*_nails_type</code>).</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Urine</td>
-<td style='word-wrap: break-word; white-space: normal;'>Add creatinine results (<code>bio_creat_u</code>).</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 </tbody></table>
 
@@ -189,7 +183,6 @@
 </th></tr>
 </thead>
 <tbody>
-
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Basic Demo</td>
@@ -206,13 +199,7 @@
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>SU Flags</td>
 <td style='word-wrap: break-word; white-space: normal;'>A derived/rolled up substance use flag for Stimulants will be added based on positive instrument-specific Stimulant results.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Visit Info</td>
-<td style='word-wrap: break-word; white-space: normal;'>SU flags will include Nail toxicology results in addition to Urine.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
 </tr>
 </tbody></table>
 
@@ -232,13 +219,13 @@
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Age fields</td>
 <td style='word-wrap: break-word; white-space: normal;'>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions; exclude age values prior to analysis.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+<td style='text-align: center;'><span class='pr-pill'>R2.1</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>MADE</td>
 <td style='word-wrap: break-word; white-space: normal;'>N=3 V04 session derivatives are missing corresponding tabulated data for FACE/MMN tasks. See <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a> for impacted participant IDs.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+<td style='text-align: center;'><span class='pr-pill'>R2.1</span></td>
 </tr>
 </tbody></table>
 
@@ -272,12 +259,6 @@
 <td>Source DICOMs</td>
 <td style='word-wrap: break-word; white-space: normal;'>Add source DICOMs for all imaging modalities.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Summary Forms</td>
-<td style='word-wrap: break-word; white-space: normal;'>Add MRI Scan Session + Data Summary Forms (information from the MRI technician obtained on day of scan).</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
@@ -317,12 +298,6 @@
 <td style='word-wrap: break-word; white-space: normal;'>Add item-level scores.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
-<!-- <tr>
-<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>CDI</td>
-<td style='word-wrap: break-word; white-space: normal;'>Set percentile scores in <code>ncl_ch_cdiwgen</code> (with the exception of <code>percentile_both</code>) to data type=integer.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr> -->
 </tbody></table>
 
 
@@ -360,12 +335,6 @@
 <td>BISQ-SF</td>
 <td style='word-wrap: break-word; white-space: normal;'>Add Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Growth</td>
-<td style='word-wrap: break-word; white-space: normal;'>Add age-based z-scores to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Z-Scores Excluded</a>).</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
@@ -421,19 +390,19 @@
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Healthv2 Preg</td>
 <td style='word-wrap: break-word; white-space: normal;'>The field for the date when PNV was stopped (<code>pex_bm_healthv2_preg__exp__pnv_007__01</code>) is blank, despite participants having reported stopping.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>Healthv2 Preg</td>
 <td style='word-wrap: break-word; white-space: normal;'>Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>TLFB</td>
 <td style='word-wrap: break-word; white-space: normal;'>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a>.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
@@ -454,23 +423,10 @@
 </th></tr>
 </thead>
 <tbody>
-
-<tr>
-<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>C-PACEs</td>
-<td style='word-wrap: break-word; white-space: normal;'>Summary scores are inaccurate; until corrected, users can compute scores following the provided scoring documentation.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
-</tr>
 <tr>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i></td>
 <td>eHITS</td>
 <td style='word-wrap: break-word; white-space: normal;'>Participants missing all item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i></td>
-<td>Demo</td>
-<td style='word-wrap: break-word; white-space: normal;'>Add variables on Other Biological Parent (adult table).</td>
 <td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
 </tr>
 <tr>

@@ -89,9 +89,14 @@
 
 <!-- BIOSPEC -->
 <tr>
-<td rowspan="3"><b>BIO</b></td>
+<td rowspan="4"><b>BIO</b></td>
 <td>Nails</td>
 <td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Add unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+</tr>
+<tr>
+<td> Urine</td>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Add creatinine results (<code>bio_creat_u</code>).</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 
@@ -108,7 +113,13 @@
 
 <!-- DEMO -->
 <tr>
-<td><b>Demo</b></td>
+<td rowspan="2"><b>Demo</b></td>
+<td>Visit Info</td>
+<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> SU flags will include Nail toxicology results in addition to Urine.</td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+</tr>
+
+<tr>
 <td>.set files</td>
 <td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i>
 Add <code>work_{002–004}_post</code> and <code>work_004__01</code> (adult table).
@@ -134,7 +145,12 @@ Add <code>work_{002–004}_post</code> and <code>work_004__01</code> (adult tabl
 
 <!-- MRI -->
 <tr>
-<td rowspan="3"><b>MRI</b></td>
+<td rowspan="4"><b>MRI</b></td>
+<td>Summary Forms</td>
+<td style='word-wrap: break-word; white-space: normal;'><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Add MRI Scan Session + Data Summary Forms (information from the MRI technician obtained on day of scan).</td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+</tr>
+<tr>
 <td>BrainSwipes</td>
 <td style='word-wrap: break-word; white-space: normal;'><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i>  BrainSwipes QC results updated with latest results available in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
@@ -167,17 +183,25 @@ Add <code>work_{002–004}_post</code> and <code>work_004__01</code> (adult tabl
 <tr>
 <td rowspan="1"><b>PH</b></td>
 <td>Growth</td>
-<td style='word-wrap: break-word; white-space: normal;'><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> 
-Remove <code>ph_ch_anthro_002</code>
+<td style='word-wrap: break-word; white-space: normal;'>
+  <i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i>Remove <code>ph_ch_anthro_002</code><br>
+  <i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Add age-based z-scores to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Z-Scores Excluded</a>).
 </td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 
 <!-- SED -->
 
-<tr><td rowspan="2"><b>SED</b></td>
+<tr><td rowspan="3"><b>SED</b></td>
+<td>C-PACEs</td>
+<td><i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Summary scores are inaccurate; until corrected, users can compute scores following the provided scoring documentation.</td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+</tr>
 <td>Demographics</td>
-<td><i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> 
+<td>
+  <i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> Add variables on Other Biological Parent (adult table).
+  <br>
+  <i class="fa-solid fa-rotate" style="color: #199bd6; margin-right: 0.4em; font-size: 1em;"></i> 
 Add V01 household income (<code>income_002</code>) (adult table)
 <br>
 <i class="fas fa-bug" style="color: #f97316; margin-right: 0.4em; font-size: 1em;"></i> Remove descriptive fields (e.g. <code>roster_001__00</code>) <em>[BR data only]</em>.
@@ -191,6 +215,8 @@ Add V01 household income (<code>income_002</code>) (adult table)
 </td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
+
+
 </tbody>
 </table>
 
