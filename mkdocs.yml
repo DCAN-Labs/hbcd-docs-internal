@@ -86,7 +86,9 @@ nav:
         - Clinical Data Validation: workflows/clinical-wf.md
         - Genomics: workflows/genomics.md
     - Release SOP: workflows/release-wf.md
-    - MRI Workflows: workflows/mri-issue-wf.md
+    - MRI Workflows: 
+        - MR Radiology: workflows/mri/mri-issue-wf.md
+        - Post-Processing QC: workflows/mri/mri-postproc-qc.md
   - Standards & Curation:
     - Software & Analytic Standards: standards/software.md
     - Data Curation Procedures: standards/curation.md

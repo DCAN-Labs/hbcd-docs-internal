@@ -1,7 +1,6 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 <br> 
-Finalize from source doc <a href="https://docs.google.com/document/d/1EYMx3GtJ7oSoum69PHD7lqbE_JUgyvEk/edit?usp=sharing&ouid=113306241090115436408&rtpof=true&sd=true">here</a></p>
-
 # HBCD MR Radiology Workflow: From Site to Radiologist
+
+<!-- Finalize from source doc <a href="https://docs.google.com/document/d/1EYMx3GtJ7oSoum69PHD7lqbE_JUgyvEk/edit?usp=sharing&ouid=113306241090115436408&rtpof=true&sd=true">here</a></p> -->
 
 ## 1. Initial Site Notification
 

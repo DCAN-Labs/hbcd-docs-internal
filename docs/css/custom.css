@@ -4,6 +4,15 @@
 /* red: #be074c */ 
 /* black/gray: #6b6b6b */ 
 
+/* SUBTLE NOTES */
+.subtle-note {
+  color: #6c757d;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+
 /* Pill styling for pillars of HDCC (on overview page and throughout) */
 .pill-center {
   display: flex;
