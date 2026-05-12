@@ -156,9 +156,18 @@
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Basic Demo</td>
-<td style='word-wrap: break-word; white-space: normal;'>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Basic Demo</td>
+<td>
+Remove internal <code>recruitment_site</code> categories only present in data dictionary (<code>30-32</code>: Sampled, USDTL, and BAH)</td>
+<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
+</tr>
+
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>RESTRUCTURE</td>
@@ -316,7 +325,7 @@
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Growth</td>
 <td style='word-wrap: break-word; white-space: normal;'>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
