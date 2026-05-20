@@ -172,7 +172,15 @@ Add <code>work_{002–004}_post</code> and <code>work_004__01</code> (adult tabl
 
 <!-- NCL -->
 <tr>
-<td rowspan="2"><b>NCL</b></td>
+
+<tr>
+<td rowspan="3"><b>NCL</b></td>
+<td>Bayley-4</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Add item-level scores.</td>
+<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
+</tr>
+
+<tr>
 <td>MLDS</td>
 <td style='word-wrap: break-word; white-space: normal;'><i class="fas fa-bug icon-bug"></i>  Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "Â Â Â")</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>

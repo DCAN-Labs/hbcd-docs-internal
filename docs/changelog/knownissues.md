@@ -300,12 +300,6 @@ Remove internal <code>recruitment_site</code> categories only present in data di
 <td style='word-wrap: break-word; white-space: normal;'>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) includes implausible values due to data entry errors. Exclude values &gt;168 hours from analysis.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Bayley-4</td>
-<td style='word-wrap: break-word; white-space: normal;'>Add item-level scores.</td>
-<td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
-</tr>
 </tbody></table>
 
 
