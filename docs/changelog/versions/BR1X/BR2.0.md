@@ -1,4 +1,4 @@
-# Version: v1.1
+# Version: BR 2.0 (v1.1)
 ## New features
 * USDTL Urine results embedded into 'Phenotype' folder as a .tsv
 

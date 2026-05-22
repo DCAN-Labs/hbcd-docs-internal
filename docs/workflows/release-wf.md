@@ -26,11 +26,11 @@ The release timeline for determination of variables to include in the release, s
 #### Release 3.0 Timeline
 <img src="../images/timeline3.0.png" alt="Release timeline" width="100%" height="auto" class="center">
 
-<div class="notification-banner static-banner">
+<div class="banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">Useful Links</span>
 </div>
-<div class="notification-static-content">
+<div class="static-content">
   <ul>
     <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdtnLe3W35SsCjOFksJwnLO9G_D0uokTlZGER_2UBM361C21g/viewform">HBCD Release Docs Measure Documentation Form</a> to submit documentation/"READMEs" for new instruments/measures to be included in a release (<a href="../../internal/readmes" target="_blank">see details</a>)</li>
     <li><a href="https://docs.google.com/spreadsheets/d/171oj0PLLtVgp5OSReBD5J6Ir4U56QQrWEwu92ZwttrM/edit?gid=0#gid=0">Measure Inclusion Form</a> tracking the list of variables to be included in upcoming release</li>
@@ -102,7 +102,7 @@ In addition to deciding which variables to include in the release, the HDCC, HCA
 
 Data filters applied to Release 1.0 are described in detail on the R1.0 Release Notes under [Exclusion Criteria & Filters](https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters).
  
- <div class="notification-banner static-banner">
+ <div class="banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">Status Tracker: View the latest status of filter sign-offs in the <a href="https://docs.google.com/spreadsheets/d/1M_QuEVgUoVAOdzXlY8FMTZvgLRtGUx2ykevUo8iUnr8/edit?usp=sharing">Data Filters Sign Off Form</a></span>
 </div>
@@ -274,7 +274,7 @@ In the event that data issues remain, or new issues are identified in QC of the 
 ## Patch Releases
 
 <p>
-<div class="notification-banner static-banner">
+<div class="banner static-banner">
   <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
   <span class="text">See the procedures for patch release BR15.1, including timelines and responsible parties, <a href="https://docs.google.com/document/d/1rVvzBA7eu_ZuTpD9Mbp_Hg8sTzAYT9R6cp3AGtHNhYg/edit?tab=t.0">here</a>.</span>
 </div>

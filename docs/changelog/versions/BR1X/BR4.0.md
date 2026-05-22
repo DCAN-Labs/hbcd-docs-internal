@@ -1,4 +1,4 @@
-# Version: v1.3
+# Version: BR 4.0 (v1.3)
 ## New features
 * Added 3 new Data Dictionary elements (column headers)   
   * Unit (‘unit’)  

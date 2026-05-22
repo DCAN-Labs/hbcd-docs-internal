@@ -1,4 +1,4 @@
-# Version: BR6
+# Version: BR 6
 
 <p style="font-size: 1.1em">Release date: October 30, 2024</p>
 

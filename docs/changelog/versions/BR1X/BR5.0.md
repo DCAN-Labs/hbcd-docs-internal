@@ -1,4 +1,4 @@
-# Version: v1.4
+# Version: BR 5.0
 ## New features    
 
 <summary><b>Added new Data Dictionary elements (column headers):</b></summary>
@@ -19,11 +19,11 @@
 </ul>
 
 <p>
-<div id="notification-banner" class="notification-banner" onclick="toggleCollapse(this)">
+<div class="banner" onclick="toggleCollapse(this)">
     <span class="text">Two new categories added to 'phenotype' folder & corresponding fields</span>
-  <span class="notification-arrow">▸</span>
+  <span class="arrow">▸</span>
 </div>
-<div class="notification-collapsible-content">
+<div class="collapsible-content">
     <br>
     <b>‘Basic Demographics’ category:</b>
         <ul>

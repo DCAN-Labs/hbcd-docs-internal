@@ -35,10 +35,7 @@ function toggleCollapse(element) {
 function expandCollapsibleById(id) {
   const element = document.getElementById(id);
   
-  if (element && (element.classList.contains('notification-banner') || 
-                  element.classList.contains('table-banner') ||
-                  element.classList.contains('warning-banner') ||
-                  element.classList.contains('alert-banner') ||
+  if (element && (element.classList.contains('table-banner') ||
                   element.classList.contains('source-banner') ||
                   element.classList.contains('ingestion-banner') ||
                   element.classList.contains('preproc-banner') ||

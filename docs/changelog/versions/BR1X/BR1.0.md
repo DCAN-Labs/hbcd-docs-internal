@@ -1,4 +1,4 @@
-# Version: v1.0
+# Version: BR 1.0 (v1.0)
 Total number of unique participants and visits included in first data dump:   
 
 * 1,406 unique participants  

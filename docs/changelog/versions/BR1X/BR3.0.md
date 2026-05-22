@@ -1,4 +1,4 @@
-# Version: v1.2
+# Version: BR 3.0 (v1.2)
 ## New features
 * Added Data Dictionary elements (column headers) to accompanying json files  
 * Added correct interpretation for html leak: ‘=&gt’ to ‘=>’

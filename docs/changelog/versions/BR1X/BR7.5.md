@@ -1,4 +1,4 @@
-# Version: BR7.5
+# Version: BR 7.5
 
 <p style="font-size: 1.1em">Release date: November 19, 2024</p>
 
