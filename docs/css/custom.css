@@ -12,6 +12,21 @@
   font-size: 1.1em;
 }
 
+/* General Pill styling for orgs (UNIQUE TO INTERNAL DOCS)*/
+.org-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  margin: 0 6px;
+  font-size: 0.75em;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: 999px;
+  white-space: nowrap;
+  background-color: #0af0e1a7;
+  position: relative;
+  top: -1px;
+}
 
 /* Pill styling for pillars of HDCC (on overview page and throughout) */
 .pill-center {
@@ -201,4 +216,16 @@ code, pre {
 }
 .button-link:hover {
   background-color: #25ae70; /* background color on hover */
+}
+
+/* KNOWN ISSUES ICONS */
+.icon-rotate {
+  color: #199bd6;
+  margin-right: 0.4em;
+  font-size: 1em;
+}
+.icon-bug {
+  color: #f97316;
+  margin-right: 0.4em;
+  font-size: 1em;
 }

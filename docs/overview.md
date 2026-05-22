@@ -2,7 +2,7 @@
 
 The HDCC is committed to a principled and transparent approach to data sharing. Our data release workflow emphasizes clarity, quality, reproducibility, timeliness, and transparency, drawing on international best practices and customized to the complexities of a large, multi-site longitudinal study (see [References](#references-and-frameworks)).
 
-<table class="overview-table-no-vertical-lines" style="margin: 0 auto;">
+<table class="table-no-vertical-lines">
 <tbody>
 <tr>
 <td>

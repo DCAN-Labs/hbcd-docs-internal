@@ -42,7 +42,6 @@ extra_css:
   - css/hide-sidebar.css
   - css/hoverable_elements.css
   - css/legends.css
-  - css/logos.css
   - css/mermaid.css
   - css/notifications.css
   - css/headers.css
