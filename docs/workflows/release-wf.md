@@ -47,7 +47,7 @@ The release timeline is determined as follows:
 3. Program approves proposed timeline
 4. Feedback is acquired from Workgroups
 
-The form for timeline proposals, feedback, and sign off is currently under construction, but will be linked here when available.
+<!-- The form for timeline proposals, feedback, and sign off is currently under construction, but will be linked here when available. -->
 
 ## Stages of the Release Workflow
 

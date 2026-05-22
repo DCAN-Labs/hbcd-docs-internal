@@ -1,5 +1,3 @@
-<p style="text-align: center; font-size: 1.5em;">🚧 <i>UNDER CONSTRUCTION</i> 🚧 </p>
-
 # Tabulated Data Processing Workflow
 
 Data collected from sites is transferred to the central **LORIS Production S3 bucket**, where it is **de-identified** and **staged for ingestion into Lasso (NBDC Data Access Platform)**. The diagram below outlines the tabulated data processing workflow, showing the steps for each data type and the HDCC group responsible for each stage: **capture**, **de-identification**, **staging**, and **ingestion**.     
@@ -18,7 +16,7 @@ Data collected from sites is transferred to the central **LORIS Production S3 bu
   <span class="arrow">▸</span>
 </div>
 <div class="table-collapsible-content">
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+<table class="table-no-vertical-lines">
     <thead>
       <tr>
         <th>Key Name in Diagram</th>
@@ -72,27 +70,27 @@ Data collected from sites is transferred to the central **LORIS Production S3 bu
 <tbody>
 <tr>
 <td><b>ERICA</b></td>
-<td style="word-wrap: break-word; white-space: normal;">Early Regulation in Context Assessment</td>
+<td>Early Regulation in Context Assessment</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><b>CDI</b></td>
-<td style="word-wrap: break-word; white-space: normal;">The <strong>MacArthur-Bates Communicative Development Inventories</strong>, a widely used tool for assessing early language</td>
+<td><b>CDI</b></td>
+<td>The MacArthur-Bates Communicative Development Inventories, a widely used tool for assessing early language</td>
 </tr>
 <tr>
 <td><b>Bayley</b></td>
-<td style="word-wrap: break-word; white-space: normal;">The <strong>Bayley Scales of Infant and Toddler Development</strong> (licensed via <strong>Pearson</strong>), used to assess cognitive, motor, and language development</td>
+<td>The Bayley Scales of Infant and Toddler Development (licensed via Pearson), used to assess cognitive, motor, and language development</td>
 </tr>
 <tr>
 <td><b>Vineland</b></td>
-<td style="word-wrap: break-word; white-space: normal;">The <strong>Vineland Adaptive Behavior Scales</strong> (licensed via <strong>Pearson</strong>), used to measure adaptive behaviors and daily functioning</td>
+<td>The Vineland Adaptive Behavior Scales (licensed via Pearson), used to measure adaptive behaviors and daily functioning</td>
 </tr>
 <tr>
 <td><b>NIH BTB</b></td>
-<td style="word-wrap: break-word; white-space: normal;">NIH Baby Toolbox</td>
+<td>NIH Baby Toolbox</td>
 </tr>
 <tr>
 <td><b>BISQ-R</b></td>
-<td style="word-wrap: break-word; white-space: normal;">The <strong>Brief Infant Sleep Questionnaire - Revised</strong>, a validated parent-report sleep instrument</td>
+<td>The Brief Infant Sleep Questionnaire - Revised, a validated parent-report sleep instrument</td>
 </tr>
 </tbody>
 </table>
@@ -121,59 +119,59 @@ Data collected from sites is transferred to the central **LORIS Production S3 bu
 </thead>
 <tbody>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Set Up</td>
-<td style="word-wrap: break-word; white-space: normal;">Testing and Validation of questions &amp; scoring</td>
-<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
-<td style="word-wrap: break-word; white-space: normal;">Santiago Torres, Jen Zink, WG Leads</td>
-<td style="word-wrap: break-word; white-space: normal;">Santiago Torres</td>
+<td>Set Up</td>
+<td>Testing and Validation of questions &amp; scoring</td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
+<td>Santiago Torres, Jen Zink, WG Leads</td>
+<td>Santiago Torres</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Data Conversion</td>
-<td style="word-wrap: break-word; white-space: normal;">Add missingness and shadow matrix</td>
-<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#ripple" target="_blank">Ripple</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts" target="_blank">HCAC</a></span></td>
-<td style="word-wrap: break-word; white-space: normal;">Santiago Torres (LORIS), Jen Zink (Lasso), Sauren Ravencroft (Ripple), Stephanie Averill (HCAC)</td>
-<td style="word-wrap: break-word; white-space: normal;">Santiago Torres</td>
+<td>Data Conversion</td>
+<td>Add missingness and shadow matrix</td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#ripple" target="_blank">Ripple</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts" target="_blank">HCAC</a></span></td>
+<td>Santiago Torres (LORIS), Jen Zink (Lasso), Sauren Ravencroft (Ripple), Stephanie Averill (HCAC)</td>
+<td>Santiago Torres</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Data Conversion</td>
-<td style="word-wrap: break-word; white-space: normal;">Re-ID</td>
-<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
-<td style="word-wrap: break-word; white-space: normal;">Sriharshitha Anuganti, Erik Lee</td>
-<td style="word-wrap: break-word; white-space: normal;">Sriharshitha Anuganti</td>
+<td>Data Conversion</td>
+<td>Re-ID</td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+<td>Sriharshitha Anuganti, Erik Lee</td>
+<td>Sriharshitha Anuganti</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Data Readiness for transfer</td>
-<td style="word-wrap: break-word; white-space: normal;">Hot Sheet Population</td>
-<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
-<td style="word-wrap: break-word; white-space: normal;">Erik Lee, Tim Hendrickson, Santiago Torres, Lucille Moore</td>
-<td style="word-wrap: break-word; white-space: normal;">Maren Macgregor-Hannah</td>
+<td>Data Readiness for transfer</td>
+<td>Hot Sheet Population</td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+<td>Erik Lee, Tim Hendrickson, Santiago Torres, Lucille Moore</td>
+<td>Maren Macgregor-Hannah</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Data Ingestion/Transfer</td>
-<td style="word-wrap: break-word; white-space: normal;">Transfer release data to bucket for Lasso to pick up</td>
-<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
-<td style="word-wrap: break-word; white-space: normal;">Sriharshitha Anuganti, Erik Lee</td>
-<td style="word-wrap: break-word; white-space: normal;">Sriharshitha Anuganti</td>
+<td>Data Ingestion/Transfer</td>
+<td>Transfer release data to bucket for Lasso to pick up</td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
+<td>Sriharshitha Anuganti, Erik Lee</td>
+<td>Sriharshitha Anuganti</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Data Ingestion</td>
-<td style="word-wrap: break-word; white-space: normal;">Ingestion to Lasso</td>
-<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
-<td style="word-wrap: break-word; white-space: normal;">Lasso Data Loading Team, Jen Zink, Leigh MacIntyre</td>
-<td style="word-wrap: break-word; white-space: normal;">Laetitia Fesselier</td>
+<td>Data Ingestion</td>
+<td>Ingestion to Lasso</td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
+<td>Lasso Data Loading Team, Jen Zink, Leigh MacIntyre</td>
+<td>Laetitia Fesselier</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">Data QC</td>
-<td style="word-wrap: break-word; white-space: normal;">Review of data and corresponding shadow matrix</td>
-<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#ripple" target="_blank">Ripple</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts" target="_blank">HCAC</a></span></td>
-<td style="word-wrap: break-word; white-space: normal;">WG Leads, Santiago Torres (LORIS), Jen Zink (Lasso), Sauren Ravencroft (Ripple), Stephanie Averill (HCAC)</td>
-<td style="word-wrap: break-word; white-space: normal;">Jen Zink</td>
+<td>Data QC</td>
+<td>Review of data and corresponding shadow matrix</td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#ripple" target="_blank">Ripple</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts" target="_blank">HCAC</a></span></td>
+<td>WG Leads, Santiago Torres (LORIS), Jen Zink (Lasso), Sauren Ravencroft (Ripple), Stephanie Averill (HCAC)</td>
+<td>Jen Zink</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 </tbody>
