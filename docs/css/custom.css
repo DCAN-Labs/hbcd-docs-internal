@@ -31,10 +31,8 @@
   background-color: #f3e9ff;
   color: #4b0082;
   border-radius: 999px;
-  padding: 6px 10px;
+  padding: 1px 1px;
   font-size: 0.9em;
-  font-weight: 800;
-  border: 1px solid #ca9eff;
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
   width: 36px;
   height: 36px;

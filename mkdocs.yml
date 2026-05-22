@@ -36,10 +36,8 @@ extra:
     property: G-95CHYYTVHC
 
 extra_css:
-  - css/alerts.css
   - css/custom.css
   - css/collapsible.css
-  - css/copybox.css
   - css/banners.css
   - css/hide-sidebar.css
   - css/hoverable_elements.css
