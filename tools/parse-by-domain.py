@@ -10,7 +10,9 @@ import re
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
 XLSX= "latest.xlsx"
-INTERNAL_MD = "../docs/changelog/knownissues.md"
+# INTERNAL_MD = "../docs/changelog/knownissues.md"
+INTERNAL_MD = "../docs/changelog/temp.md"
+
 
 # INTERNAL_MD = "../docs/changelog/test.md"
 
@@ -125,7 +127,6 @@ df = load_and_filter_xlsx(XLSX)
 # Drop unecessary columns (for troubleshooting purposes)
 df = df.drop(['Name'], axis=1)
 df = df.drop(['Status'], axis=1)
-df = df.drop(['WG'], axis=1)
 
 # Extra steps for internal documentation
 ## Remove rows archived to BR - already documented in resolved issues page
