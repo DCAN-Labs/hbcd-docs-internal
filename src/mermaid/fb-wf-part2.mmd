@@ -1,0 +1,61 @@
+---
+config:
+  layout: elk
+  look: neo
+  theme: redux
+---
+flowchart TB
+ subgraph s2["Process raw BIDS (CBRAIN)"]
+        n25["<i>S3 De-ID / Derivatives</i>"]
+  end
+ subgraph s3["Re-ID derivatives &amp; BrainSwipes for LORIS"]
+        n28["<i>S3 Main PR / Derivatives</i>"]
+        n46["<i>S3 Main PR / BrainSwipes</i>"]
+  end
+ subgraph s4["BrainSwipes (MRI derivatives QC)"]
+        n33["<i>S3 De-ID / BrainSwipes</i>"]
+  end
+ subgraph s5["Copy release data to Lasso staging env"]
+        n36["<i>S3 Lasso PR</i>"]
+  end
+ subgraph s7["<br>"]
+        n40["<b>LASSO INGESTION</b>"]
+  end
+ subgraph s8["Copy re-ID data to Lasso HDCC (ongoing QC)"]
+        n48["<i>S3 QC Env</i>"]
+  end
+ subgraph s9["De-ID raw BIDS w/ de-ID list"]
+        n50["<i>S3 De-ID / BIDS</i>"]
+  end
+    n25 --> n28 & n36 & n33
+    n28 --> n48
+    n36 --> n40
+    n33 --> n46
+    n50 --> n25
+    n51@{ label: "<b>INPUT 1: Raw BIDS data</b><br><i>S3 Main PR / BIDS<br></i><br><b><span style=\"--tw-scale-x:\">INPUT 2: De-id lists</span><br style=\"--tw-scale-x:\"></b><i style=\"--tw-scale-x:\">S3 De-ID-List</i>" } --> n50
+
+    n25@{ shape: db}
+    n28@{ shape: db}
+    n46@{ shape: db}
+    n33@{ shape: db}
+    n36@{ shape: db}
+    n40@{ shape: rounded}
+    n48@{ shape: db}
+    n50@{ shape: db}
+    n51@{ shape: db}
+    style n25 fill:#E1BEE7
+    style n28 fill:#FFD600
+    style n46 fill:#FFD600
+    style n33 fill:#E1BEE7,color:#000000
+    style n36 fill:#C8E6C9
+    style n40 fill:#EBFFEB
+    style n48 fill:#FFCDD2,stroke:#000000
+    style n50 fill:#BBDEFB
+    style n51 fill:#BBDEFB
+    style s8 fill:#ffe9eb
+    style s4 fill:#FAD9FF
+    style s5 fill:#EBFFEB
+    style s2 fill:#FAD9FF
+    style s3 fill:#FFF9C4
+    style s7 stroke:none,fill:transparent
+    style s9 fill:#E3F2FD

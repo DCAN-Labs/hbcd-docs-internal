@@ -102,7 +102,7 @@
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ERICA</td>
-<td>A future release will include reliability codes integrated into the primary coding dataset. Until then, users must perform this integration manually: <strong>see the ERICA Data Warning for instructions.</strong><br />
+<td>A future release will include reliability codes integrated into the primary coding dataset. Until then, users must perform this integration manually: <strong>see the ERICA <a href="../../instruments/bcgi/erica/#warning">Data Warning</a> for instructions.</strong><br />
 Instructions include cleaning the current files to exclude n=44 participants with incorrect code values (data entry/form errors) and capping <code>b_raw</code> values at 3.0 (n=3 participants). These issues will also be corrected in future release data.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
@@ -137,6 +137,12 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Nails</td>
 <td>Nail type is <code>4</code> (Unknown) in the main results table (<code>*_nails_results</code>) and should be obtained from the specimen table (<code>*_nails_type</code>).</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Blood</td>
+<td>Inclusion of Blood Spot Card Results data from USDTL.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 </tbody></table>
@@ -195,7 +201,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td></td>
+<td>Age fields</td>
 <td>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions (site entry errors); exclude age values prior to analysis.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
@@ -223,7 +229,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Instruction</td>
-<td>The 'instruction' Data Dictionary element is currently blank.</td>
+<td>The 'instruction' data dictionary element is currently blank.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
@@ -258,6 +264,12 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td>Run ID</td>
 <td>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Cook&#x27;s Distance</td>
+<td>Addition Cook's distance values computed for fMRI.</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -301,6 +313,27 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 </tbody></table>
 
 
+### Novel Tech &amp; Wearable Sensors
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr style="font-size: 1.1em;">
+<th></th><th>Table/Topic</th><th>Summary</th>
+<th style='text-align: center;'>
+  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
+</th></tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>GABI</td>
+<td>Addition of raw BIDS data for GABI (infant heart rate).</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+</tbody></table>
+
+
 ### Physical Health
 
 <table class="compact-table-no-vertical-lines">
@@ -316,7 +349,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Growth</td>
-<td>The Data Dictionary element <code>type_data</code> for <code>average_bmi</code> will be corrected to <code>double</code> (currently=<code>character</code>).</td>
+<td>The data dictionary element <code>type_data</code> for <code>average_bmi</code> will be corrected to <code>double</code> (currently=<code>character</code>).</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
@@ -359,7 +392,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ecPROMIS-PAGS</td>
 <td>Add scores to <code>ph_cg_pms__pags</code>. Until added, scores can be calculated by following the <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documentation.</td>
-<td style='text-align: center;'><span class='pr-pill'>R2.1</span></td>
+<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
 </tr>
 </tbody></table>
 
@@ -427,6 +460,12 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 </thead>
 <tbody>
 
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Demo</td>
+<td>Roster was inappropriately collected at V02/V03 for all cohorts and should have been restricted to V02 PNRs and alternate caregiver cohorts; to be excluded.</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>eHITS</td>
