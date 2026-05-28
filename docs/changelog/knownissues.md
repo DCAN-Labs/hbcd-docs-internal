@@ -96,7 +96,7 @@
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ECBQ</td>
-<td>Change coding for "Does not apply" to 8 to match the IBQ-R.</td>
+<td>Change 'Does not apply' index value from '0' to '8' to match the IBQ-R</td>
 <td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
 </tr>
 <tr>
