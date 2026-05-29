@@ -206,7 +206,7 @@ The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN
   
 [HST](https://hst.umn.edu/) at UMN is responsible for: *Data shelter*, *PHI*, *Electronic Health Records (EHR)*, *Ripple Interface*, *Overall Data Management*, *QC Dashboards*, *Ancillary Studies*, and *Third Party Integration*.
 
-***Additional Resources: [HBCD and Secure Computing Environment Governance](../resources/hst-sce-governance)***
+***Additional Resources: [HBCD and Secure Computing Environment Governance](resources/hst-sce-governance.md)***
 
 <p><object type="image/svg+xml" data="hst.svg" width="80%"></object></p>
 
