@@ -386,7 +386,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ecPROMIS- Sleep</td>
 <td>Add <code>ph_cg_pms__sleep</code>  summary scores</td>
-<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
