@@ -54,26 +54,28 @@
 !!! danger "Resolved Known Issues & Updates"
     **This page contains a running record of issues and updates verified as RESOLVED by Workgroups/SMEs** (from BR21.0; see prior release notes for earlier records). Until final sign off, items remain listed as ACTIVE in [Known Issues & Pending Updates](knownissues.md). Individual BR release notes may include *provisional* updates that are not yet verified.
 
-
-
-<p style="font-size: 1em; color: #555; margin-bottom: 1em;">
-<i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i>&nbsp;= Completed Pending Update &nbsp;&nbsp;&nbsp;&nbsp;
-<i class="fas fa-bug" style="color: #f97316; font-size: 1em;"></i>&nbsp;= Resolved Known Issue
+<p style="font-size: 1.2em; color: #555; text-align: center;">
+<i class="fas fa-bug" style="color: #f97316; font-size: 1em;"></i> = Resolved Known Issue &nbsp;&nbsp;&nbsp;
+<i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Completed Pending Update &nbsp;&nbsp;&nbsp;
+<i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.1em;"></i> = Final BR with Fix</i>
 </p>
+
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
 <th>Domain</th>
 <th>Table/Topic</th>
 <th>Summary</th>
-<th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Final Beta Release</span></span></th>
+<th style='text-align: center;'>
+  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
+</th></tr>
 </tr>
 </thead>
 <tbody>
 
 <!-- GENERAL -->
 <tr>
-<td><i>NA/All</i></td>
+<td>NA</td>
 <td>Language</td>
 <td><i class="fa-solid fa-rotate icon-rotate"></i>  Addition of language of administration across all instruments where applicable.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
@@ -81,25 +83,24 @@
 
 <!-- ADMIN -->
 <tr>
-<td><b>ADM</b></td>
+<td>ADM</td>
 <td>Study Navigators</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i>  Populate SUBSTANCE_USE and OTHER checkbox fields.</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Populate SUBSTANCE_USE and OTHER checkbox fields.</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
 <!-- BIOSPEC -->
 <tr>
-<td rowspan="4"><b>BIO</b></td>
+<td rowspan="4">BIO</td>
 <td>Nails</td>
 <td><i class="fas fa-bug icon-bug"></i>  Add unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 <tr>
-<td> Urine</td>
+<td>Urine</td>
 <td><i class="fa-solid fa-rotate icon-rotate"></i>  Add creatinine results (<code>bio_creat_u</code>).</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
-
 <tr>
 <td>Nails & Urine</td>
 <td><i class="fas fa-bug icon-bug"></i>  Remove quotes from level values to prevent double quotes in downloaded data (e.g. 1=""positive"").</td>
@@ -113,9 +114,9 @@
 
 <!-- DEMO -->
 <tr>
-<td rowspan="2"><b>Demo</b></td>
+<td rowspan="2">Demo</td>
 <td>Visit Info</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i>  SU flags will include Nail toxicology results in addition to Urine.</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> SU flags will include Nail toxicology results in addition to Urine.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
 </tr>
 
@@ -129,7 +130,7 @@ Add <code>work_{002–004}_post</code> and <code>work_004__01</code> (adult tabl
 
 <!-- EEG -->
 <tr>
-<td rowspan="2"><b>EEG</b></td>
+<td rowspan="2">EEG</td>
 <td>MADE</td>
 <td><i class="fas fa-bug icon-bug"></i>  N=3 V04 session derivatives are missing corresponding tabulated data for FACE/MMN tasks</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
@@ -142,15 +143,15 @@ Add <code>work_{002–004}_post</code> and <code>work_004__01</code> (adult tabl
 
 <!-- MH -->
 <tr>
-<td><b>MH</b></td>
+<td>MH</td>
 <td>ERICA</td>
-<td><i class="fa-solid fa-rotate icon-rotate"></i>  Addition of the ERICA instrument tables (<code>mh_cg_erica{_rel}_3_9m</code>); raw scores only</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Add the ERICA instrument (<code>mh_cg_erica{_rel}_3_9m</code>); raw scores only</td>
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
 <!-- MRI -->
 <tr>
-<td rowspan="4"><b>MRI</b></td>
+<td rowspan="4">MRI</td>
 <td>Summary Forms</td>
 <td style='word-wrap: break-word; white-space: normal;'><i class="fa-solid fa-rotate icon-rotate"></i>  Add MRI Scan Session + Data Summary Forms (information from the MRI technician obtained on day of scan).</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
@@ -172,9 +173,7 @@ Add <code>work_{002–004}_post</code> and <code>work_004__01</code> (adult tabl
 
 <!-- NCL -->
 <tr>
-
-<tr>
-<td rowspan="3"><b>NCL</b></td>
+<td rowspan="3">NCL</td>
 <td>Bayley-4</td>
 <td><i class="fa-solid fa-rotate icon-rotate"></i> Add item-level scores.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
@@ -194,7 +193,7 @@ Add <code>work_{002–004}_post</code> and <code>work_004__01</code> (adult tabl
 
 <!-- PH -->
 <tr>
-<td rowspan="1"><b>PH</b></td>
+<td rowspan="1">PH</td>
 <td>Growth</td>
 <td style='word-wrap: break-word; white-space: normal;'>
   <i class="fas fa-bug icon-bug"></i> Remove <code>ph_ch_anthro_002</code><br>
@@ -205,7 +204,7 @@ Add <code>work_{002–004}_post</code> and <code>work_004__01</code> (adult tabl
 
 <!-- SED -->
 
-<tr><td rowspan="3"><b>SED</b></td>
+<tr><td rowspan="3">SED</td>
 <td>C-PACEs</td>
 <td><i class="fas fa-bug icon-bug"></i>  Summary scores are inaccurate; until corrected, users can compute scores following the provided scoring documentation.</td>
 <td style='text-align: center;'><span class='br-pill br-211'>21.1</span></td>
@@ -229,52 +228,5 @@ Add V01 household income (<code>income_002</code>) (adult table)
 <td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
 </tr>
 
-
 </tbody>
 </table>
-
-
-
-
-
-
-<!-- <table class="compact-table-no-vertical-lines">
-<thead>
-<tr style="text-decoration: bold; font-size: 1.2em;">
-<th>TABLE/TOPIC</th>
-<th>SUMMARY</th>
-<th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Final Beta Release</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="domain-row-pending"><td colspan="3"><strong>Biospecimens & Omics</strong></td></tr>
-<tr>
-<td class='table-cell'>Nails & Urine</td>
-<td style='word-wrap: break-word; white-space: normal;'>Data dictionary level values have quotes around them, causing the downloaded to have double quotes (e.g. 1=""positive"").</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
-<tr class="domain-row-pending"><td colspan="3"><strong>MRI</strong></td></tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>XCP-D</td>
-<td style='word-wrap: break-word; white-space: normal;'>Tabulated XCP-D <span class="tooltip">Myers-Labonte tables<span class="tooltiptext"><code>img_xcpd_hash-{X}_space-fsLR_seg-MyersLabonte_stat-mean_desc-_morph</code></span></span> metadata corrected to have a <code>sub_domain</code> value of <code>Structural MRI</code>.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
-<tr class="domain-row-pending"><td colspan="4"><strong>NEUROCOGNITION &amp; LANGUAGE</strong></td></tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>MLDS</td>
-<td style='word-wrap: break-word; white-space: normal;'>Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "√Ç √Ç √Ç √Ç ")</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Vineland</td>
-<td style='word-wrap: break-word; white-space: normal;'>Subset of variables have a typo in the spelling of "receptive."</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
-<tr class="domain-row-pending"><td colspan="4"><strong>Social & Environmental Determinants</strong></td></tr>
-<tr>
-<td class='table-cell' style='font-weight: bold;'>Demographics</td>
-<td style='word-wrap: break-word; white-space: normal;'>The variables <code>sed_bm_demo_residence_{001|002}</code>, present in the prior release, are missing in the current release and will be added back.</td>
-<td style='text-align: center;'><span class='br-pill br-210'>21.0</span></td>
-</tr>
-</tbody>
-</table> -->
