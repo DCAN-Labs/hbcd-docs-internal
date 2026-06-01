@@ -186,7 +186,6 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 </tr>
 </tbody></table>
 
-
 ### EEG
 
 <table class="compact-table-no-vertical-lines">
@@ -238,12 +237,22 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td>Missing instrument fields for Sibling cohorts will be populated and <em>FamilyID</em> will be added to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Score text</td>
+<td>Text inappropriately located in score fields where score is missing to be moved to corresponding 'notes' field (impacts SPM-2 and ecPROMIS-PAGS).</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Sequence Field</td>
 <td>The currently included Sequence field is blank across all instruments and will be removed.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
+
+
 </tbody></table>
 
 
@@ -309,6 +318,13 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td>MLDS</td>
 <td>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) includes implausible values due to data entry errors. Exclude values &gt;168 hours from analysis.</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+</tr>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>SPM-2</td>
+<td>Add missing raw and T-scores</td>
+<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
 </tr>
 </tbody></table>
 
