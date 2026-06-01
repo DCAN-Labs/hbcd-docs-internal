@@ -463,9 +463,18 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Demo</td>
+<td>Relationship status was inappropriately collected at V02/V03 for all cohorts and should have been restricted to cases where there was a change in caregiver (i.e. only Alternative Caregiver cohorts should have this field populated). Data for non-ACG cohorts to be excluded.
+</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Demo</td>
 <td>Roster was inappropriately collected at V02/V03 for all cohorts and should have been restricted to V02 PNRs and alternate caregiver cohorts; to be excluded.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
+
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>eHITS</td>
