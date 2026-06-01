@@ -1,6 +1,6 @@
 # Version: BR7
 
-<p style="font-size: 1.1em">Release date: November 12, 2024</p>
+<p style="font-size: 1.1em">Release date: 2024-11-12</p>
 
 ## New Features
 <ul>

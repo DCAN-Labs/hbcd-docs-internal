@@ -1,6 +1,6 @@
 # Version: BR 6.5
 
-<p style="font-size: 1.1em">Release date: November 5, 2024</p>
+<p style="font-size: 1.1em">Release date: 2024-11-05</p>
 
 ## New features
 

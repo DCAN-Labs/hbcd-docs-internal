@@ -1,6 +1,6 @@
 # Version: BR8
 
-<p style="font-size: 1.1em">Release date: November 26, 2024</p>
+<p style="font-size: 1.1em">Release date: 2024-11-26</p>
 
 ## New Features
 <ul>

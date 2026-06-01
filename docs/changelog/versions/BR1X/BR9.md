@@ -1,5 +1,5 @@
 # Version: BR9
-<p style="font-size: 1.1em">Release date: December 26, 2024</p>
+<p style="font-size: 1.1em">Release date: 2024-12-17</p>
 
 ## Bug Fixes
 * **‘0’ to Null:** Fields with '0' values are no longer passed as 'false' (Blank output)
