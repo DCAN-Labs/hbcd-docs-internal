@@ -40,13 +40,15 @@
 # Known Issues & Pending Updates
 
 !!! danger "Active Items Only"
-    **This page lists ACTIVE issues/updates targeted for upcoming BRs, or included in the current BR pending final Workgroup/SME sign-off.** Items are not considered resolved until final review is complete. A running record of verified items is archived to [Resolved Issues & Updates](resolved.md) (from BR21.0; see prior release notes for earlier records). See the [HBCD Data Release Docs](https://docs.hbcdstudy.org/latest/changelog/issues-updates/) for corresponding public releases (PR) <span class="tooltip"> <i class="fa-solid fa-circle-info"></i><span class="tooltiptext">Items addressed in a BR are not reflected as resolved publicly until the corresponding PR is released</span></span>.
+    This page lists ACTIVE issues/pending updates either targeted for upcoming BRs or still pending final Workgroup/SME sign-off. Items are not considered resolved until final review and approval by Workgroup/SME. Note that items addressed in a BR are not reflected as resolved in the [public release documentation](https://docs.hbcdstudy.org/latest/changelog/issues-updates/) until the corresponding PR is released.
+
+    <b>FOR A LIST OF RESOLVED ITEMS, SEE</b> <a href="../resolved-archive.html" target="_blank"><b>Resolved Issues & Updates Archive</b></a>   
 
 ---
 
 <p style="font-size: 1.2em; color: #555; text-align: center; line-height: 2;">
 <i class="fas fa-bug" style="color: #f97316; font-size: 1em;"></i> = Known Issue &nbsp;&nbsp;&nbsp;
-<i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Pending Update<br>
+<i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Pending Update &nbsp;&nbsp;&nbsp;
 <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.1em;"></i> = Target Fix <i>(BR if known, otherwise public R#/TBD)</i>
 </p>
     
