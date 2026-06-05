@@ -77,12 +77,7 @@
 <td>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>MAPS-TL</td>
-<td>Notes appear in the score field in both versions (Infant/Toddlerhood) and will be moved to a separate field.</td>
-<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
-</tr>
+
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>MAPS-TL (&lt;1yr)</td>
@@ -243,7 +238,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Score text</td>
-<td>Text inappropriately located in score fields where score is missing to be moved to corresponding 'notes' field (impacts SPM-2 and ecPROMIS-PAGS).</td>
+<td>Text inappropriately located in score fields where score is missing to be moved to corresponding 'notes' field (impacts ecPROMIS-PAGS; MAPS-TL: SPM-2).</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 
