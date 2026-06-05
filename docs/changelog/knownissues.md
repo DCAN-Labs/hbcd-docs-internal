@@ -39,18 +39,6 @@
 
 # Known Issues & Pending Updates
 
-**Connectivity matrices from individual runs:** Connectivity matrices generated with `--create-matrices 300 600 all` were incorrectly computed separately for each BOLD run rather than the concatenated low-motion timeseries across runs. As a result:
-
-- For concatenated data, only the matrices generated from the full timeseries (`all`) is available
-- Run-specific 300-frame matrices may be present for runs with a sufficient amount of low-motion data
-
-The next release (processed through XCP-D v26.0.3 or later) will include the 300- and 600-frame matrices will generated from concatenated low-motion timeseries across runs, and only a single matrix will be generated per run from all available low-motion frames for that run.
-
-
-
-
-<br><br><br><br>
-
 !!! danger "Active Items Only"
     This page lists ACTIVE issues/pending updates either targeted for upcoming BRs or still pending final Workgroup/SME sign-off. Items are not considered resolved until final review and approval by Workgroup/SME. Note that items addressed in a BR are not reflected as resolved in the [public release documentation](https://docs.hbcdstudy.org/latest/changelog/issues-updates/) until the corresponding PR is released.
 
