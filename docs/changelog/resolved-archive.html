@@ -82,6 +82,14 @@
 </tr>
 
 <!-- DEMO -->
+
+<tr>
+<td>Demo</td>
+<td>Basic Demographics</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Remove internal <code>recruitment_site</code> categories only present in data dictionary (<code>30-32</code>: Sampled, USDTL, and BAH)</td>
+<td>21.2</td>
+</tr>
+
 <tr>
 <td>Demo</td>
 <td>Visit Info</td>
@@ -113,6 +121,20 @@ Add <code>work_{002–004}_post</code> and <code>work_004__01</code> (adult tabl
 </tr>
 
 <!-- MH -->
+ <tr>
+<td>MH</td>
+<td>ECBQ</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Change 'Does not apply' index value from '0' to '8' to match the IBQ-R</td>
+<td>21.2</td>
+</tr>
+
+<tr>
+<td>MH</td>
+<td>ERICA</td>
+<td><i class="fas fa-bug icon-bug"></i> Remove date taken, age, and language fields (computed based on <em>date coded</em>) to exclude from patch 2.1 <em>[BR data only]</em>.</td>
+<td>21.2</td>
+</tr>
+
 <tr>
 <td>MH</td>
 <td>ERICA</td>
@@ -124,25 +146,25 @@ Add <code>work_{002–004}_post</code> and <code>work_004__01</code> (adult tabl
 <tr>
 <td>MRI</td>
 <td>Summary Forms</td>
-<td style='word-wrap: break-word; white-space: normal;'><i class="fa-solid fa-rotate icon-rotate"></i>  Add MRI Scan Session + Data Summary Forms (information from the MRI technician obtained on day of scan).</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>  Add MRI Scan Session + Data Summary Forms (information from the MRI technician obtained on day of scan).</td>
 <td>21.1</td>
 </tr>
 <tr>
 <td>MRI</td>
 <td>BrainSwipes</td>
-<td style='word-wrap: break-word; white-space: normal;'><i class="fa-solid fa-rotate icon-rotate"></i>   BrainSwipes QC results updated with latest results available in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>   BrainSwipes QC results updated with latest results available in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
 <td>21.0</td>
 </tr>
 <tr>
 <td>MRI</td>
 <td>XCP-D</td>
-<td style='word-wrap: break-word; white-space: normal;'><i class="fas fa-bug icon-bug"></i>  Metadata values for <code>sub_domain</code> were corrected to <code>Structural MRI</code> for tabulated XCP-D Myers-Labonte <code>*morph.tsv</code> files.</td>
+<td><i class="fas fa-bug icon-bug"></i>  Metadata values for <code>sub_domain</code> were corrected to <code>Structural MRI</code> for tabulated XCP-D Myers-Labonte <code>*morph.tsv</code> files.</td>
 <td>21.0</td>
 </tr>
 <tr>
 <td>MRI</td>
 <td>Raw BIDS</td>
-<td style='word-wrap: break-word; white-space: normal;'><i class="fas fa-bug icon-bug"></i>  Resolved 2 corrupted bold runs in V02 raw BIDS (see filepaths in <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>).</td>
+<td><i class="fas fa-bug icon-bug"></i>  Resolved 2 corrupted bold runs in V02 raw BIDS (see filepaths in <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>).</td>
 <td>21.0</td>
 </tr>
 
@@ -156,7 +178,7 @@ Add <code>work_{002–004}_post</code> and <code>work_004__01</code> (adult tabl
 <tr>
 <td>NCL</td>
 <td>MLDS</td>
-<td style='word-wrap: break-word; white-space: normal;'><i class="fas fa-bug icon-bug"></i>  Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "Â Â Â")</td>
+<td><i class="fas fa-bug icon-bug"></i>  Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "Â Â Â")</td>
 <td>21.0</td>
 </tr>
 <tr>
@@ -168,14 +190,32 @@ Add <code>work_{002–004}_post</code> and <code>work_004__01</code> (adult tabl
 </tr>
 
 <!-- PH -->
+ <tr>
+<td>PH</td>
+<td>ecPROMIS- Sleep</td>
+<td>
+  <i class="fa-solid fa-rotate icon-rotate"></i>  Add <code>ph_cg_pms__sleep</code>  summary scores
+</td>
+<td>21.2</td>
+</tr>
+
 <tr>
 <td>PH</td>
 <td>Growth</td>
-<td style='word-wrap: break-word; white-space: normal;'>
+<td>
   <i class="fas fa-bug icon-bug"></i> Remove <code>ph_ch_anthro_002</code><br>
   <i class="fa-solid fa-rotate icon-rotate"></i>  Add age-based z-scores to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Z-Scores Excluded</a>).
 </td>
 <td>21.1</td>
+</tr>
+
+
+<!-- PEX -->
+ <tr>
+<td>PEX</td>
+<td>APA 1/2</td>
+<td><i class="fas fa-bug icon-bug"></i> Removed APA L2 item data in cases where L2 was administered despite unmet gating criteria (missing L1 responses and scoring).</td>
+<td>21.2</td>
 </tr>
 
 <!-- SED -->

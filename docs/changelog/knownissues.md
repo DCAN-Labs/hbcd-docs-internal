@@ -67,12 +67,6 @@
 
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>ERICA</td>
-<td>Remove date taken, age, and language fields (computed based on <em>date coded</em>) to exclude from patch 2.1 <em>[BR data only]</em>.</td>
-<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>FAD</td>
 <td>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
@@ -90,18 +84,19 @@
 <td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>ECBQ</td>
-<td>Change 'Does not apply' index value from '0' to '8' to match the IBQ-R</td>
-<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
-</tr>
+
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ERICA</td>
 <td>A future release will include reliability codes integrated into the primary coding dataset. Until then, users must perform this integration manually: <strong>see the ERICA <a href="../../instruments/bcgi/erica/#warning">Data Warning</a> for instructions.</strong><br />
 Instructions include cleaning the current files to exclude n=44 participants with incorrect code values (data entry/form errors) and capping <code>b_raw</code> values at 3.0 (n=3 participants). These issues will also be corrected in future release data.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>ERICA</td>
+<td>Remove <code>locomotor_ability</code> fields from both tables</td>
+<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -157,12 +152,6 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 </thead>
 <tbody>
 
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Basic Demo</td>
-<td>Remove internal <code>recruitment_site</code> categories only present in data dictionary (<code>30-32</code>: Sampled, USDTL, and BAH)</td>
-<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
-</tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Basic Demo</td>
@@ -395,12 +384,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td>Add more fields to <code>ph_ch_vs</code> (current release only includes completion status and overall screening results).</td>
 <td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
 </tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>ecPROMIS- Sleep</td>
-<td>Add <code>ph_cg_pms__sleep</code>  summary scores</td>
-<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
-</tr>
+
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ecPROMIS-PAGS</td>
@@ -422,12 +406,6 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 </thead>
 <tbody>
 
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>APA 1/2</td>
-<td>APA Level 2 was sometimes administered despite unmet gating criteria (e.g., missing Level 1 responses). These cases are not scored (“No additional inquiry required”) even when Level 2 responses are present. Level 2 item data will be removed to avoid confusion.</td>
-<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
-</tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>EPDS</td>
