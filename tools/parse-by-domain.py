@@ -106,12 +106,12 @@ def build_table(domain, rows):
 
         # BR styling
         if str(br).upper() == "TBD":
-            pill_class = "br-pill br-tbd"
+            pill_class = "tbd-pill"
         elif "R" in str(br).upper():
             pill_class = "pr-pill"
         else:
-            normalized_br = str(br).replace(".", "")
-            pill_class = f"br-pill br-{normalized_br}"
+            # normalized_br = str(br).replace(".", "")
+            pill_class = f"br-pill"
 
         table_parts.append(
             f"<td style='text-align: center;'><span class='{pill_class}'>{html.escape(str(br))}</span></td>"

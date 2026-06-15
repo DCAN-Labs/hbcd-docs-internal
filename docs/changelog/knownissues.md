@@ -12,11 +12,13 @@
   border-radius: 999px;
   line-height: 1.4;
   white-space: nowrap;
+  background-color: #e6f0ff; 
+  color: #1a4fb3;
 }
 /* Version-specific styling */
-.br-212 {background-color: #e6f0ff; color: #1a4fb3;}
-.br-211 {background-color: #e9f7ef; color: #1e7e34;}
-.br-tbd {background-color: #f1f3f5; color: #666; font-style: italic;}
+/* .br-x {background-color: #e6f0ff; color: #1a4fb3;} */
+/* .br-x {background-color: #e9f7ef; color: #1e7e34;} */
+/* .br-tbd {background-color: #f1f3f5; color: #666; font-style: italic;} */
 
 .pr-pill {
   display: inline-block;
@@ -27,6 +29,19 @@
   line-height: 1.4;
   white-space: nowrap;
   background-color: #f89781af;
+}
+
+.tbd-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 999px;
+  line-height: 1.4;
+  white-space: nowrap;
+  background-color: #f1f3f5; 
+  color: #666; 
+  font-style: italic;
 }
 </style>
 
@@ -71,7 +86,6 @@
 <td>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
-
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>MAPS-TL (&lt;1yr)</td>
@@ -84,7 +98,12 @@
 <td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
-
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>ECHO</td>
+<td>Addition of the Early Child Care and Education</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ERICA</td>
@@ -95,19 +114,31 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ERICA</td>
-<td>Remove <code>locomotor_ability</code> fields from both tables</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td>Add all age and <code>date_taken</code> fields (currently excluded due to use of coding rather than visit dates).</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ERICA</td>
-<td>Add all age and <code>date_taken</code> fields (currently excluded due to use of coding rather than visit dates).</td>
+<td>Remove <code>locomotor_ability</code> fields from both tables</td>
+<td style='text-align: center;'><span class='br-pill'>30</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>MAPS-EASI</td>
+<td>Addition of the MAPS-EASI- Toddler</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>MAPS-TL (Tod)</td>
 <td>Pro-rated scoring for <code>mh_cg_mapdb__tod</code> not yet implemented; N=16 participants missing scores.</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>MCHAT</td>
+<td>Addition of the Modified Checklist for Autism in Toddlers</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 </tbody></table>
@@ -159,13 +190,19 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>TLFB</td>
+<td>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a></td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+<tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>RESTRUCTURE</td>
 <td>The Demographics domain includes 2 tables with derived information grouped into visit-specific data (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/">Visit Info</a>) and general demographics (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/basicdemo/">Basic Demographics</a>). In a future release, these tables will be restructured to instead organize variables as either longitudinal (dynamic measures that change over time) or global (static measures, such as sex assigned at birth and race/ethnicity).</td>
-<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+<td style='text-align: center;'><span class='br-pill'>30</span></td>
 </tr>
-
 </tbody></table>
+
 
 ### EEG
 
@@ -183,7 +220,13 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Age fields</td>
 <td>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions (site entry errors); exclude age values prior to analysis.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>MADE v1.7.0</td>
+<td>HBCD-MADE derivatives processed through updated version v1.7.0</td>
+<td style='text-align: center;'><span class='br-pill'>30</span></td>
 </tr>
 </tbody></table>
 
@@ -213,27 +256,23 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Score text</td>
+<td>Text inappropriately located in score fields where score is missing to be moved to corresponding 'notes' field (impacts ecPROMIS-PAGS; MAPS-TL; SPM-2).</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+<tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Multibirth Cohorts</td>
 <td>Missing instrument fields for Sibling cohorts will be populated and <em>FamilyID</em> will be added to help identify siblings - <a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/#warning">see details</a>.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
-
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Score text</td>
-<td>Text inappropriately located in score fields where score is missing to be moved to corresponding 'notes' field (impacts ecPROMIS-PAGS; MAPS-TL: SPM-2).</td>
-<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
-</tr>
-
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Sequence Field</td>
 <td>The currently included Sequence field is blank across all instruments and will be removed.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
 </tr>
-
-
 </tbody></table>
 
 
@@ -253,7 +292,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Run ID</td>
 <td>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -265,13 +304,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>QSIRecon</td>
 <td>Tabulated data for QSIRecon (participant data combined across derivative files into single tidy table) will be provided in a future release.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Scanner Info</td>
-<td>Scanner information must currently be parsed from raw BIDS data (specifically the scans .tsv files), as described <a href="https://docs.hbcdstudy.org/latest/help/faq/#faq-scanner-info">here</a>. Future releases will include a dedicated 'MRI Info' table that summarizes scanner information across participants, similar to the ABCD study (<a href="https://docs.abcdstudy.org/latest/documentation/imaging/admin.html#mr_y_adm__info">see details</a>).</td>
-<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -296,16 +329,27 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
+<td>Bayley</td>
+<td>Remove invalid scores of <code>-9999</code>; until resolved, users should remove this participant data prior to analysis.</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
 <td>MLDS</td>
 <td>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) includes implausible values due to data entry errors. Exclude values &gt;168 hours from analysis.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
 </tr>
-
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>CDI-2</td>
+<td>Addition of the MacArthur-Bates CDI-2 Language</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>SPM-2</td>
 <td>Add missing raw and T-scores</td>
-<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
+<td style='text-align: center;'><span class='br-pill'>21.2</span></td>
 </tr>
 </tbody></table>
 
@@ -346,6 +390,12 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Growth</td>
+<td>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'.</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Growth</td>
 <td>The data dictionary element <code>type_data</code> for <code>average_bmi</code> will be corrected to <code>double</code> (currently=<code>character</code>).</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
@@ -356,16 +406,16 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Growth</td>
-<td>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'.</td>
-<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
-</tr>
-<tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>BISQ-SF</td>
 <td>Add Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Child Nutrition</td>
+<td>Addition of the Child Nutrition Questionnaire.</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -375,16 +425,21 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>PEDsQL</td>
+<td>Addition of the PEDsQL</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Vision Screener</td>
 <td>Add more fields to <code>ph_ch_vs</code> (current release only includes completion status and overall screening results).</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
 </tr>
-
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ecPROMIS-PAGS</td>
 <td>Add scores to <code>ph_cg_pms__pags</code>. Until added, scores can be calculated by following the <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documentation.</td>
-<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
+<td style='text-align: center;'><span class='br-pill'>21.2</span></td>
 </tr>
 </tbody></table>
 
@@ -411,19 +466,13 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Healthv2 Preg</td>
 <td>The field for the date when PNV was stopped (<code>pex_bm_healthv2_preg__exp__pnv_007__01</code>) is blank, despite participants having reported stopping.</td>
-<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Healthv2 Preg</td>
 <td>Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank.</td>
-<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>TLFB</td>
-<td>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a>.</td>
-<td style='text-align: center;'><span class='br-pill br-tbd'>TBD</span></td>
+<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -449,28 +498,49 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Demo</td>
-<td>Relationship status was inappropriately collected at V02/V03 for all cohorts and should have been restricted to cases where there was a change in caregiver (i.e. only Alternative Caregiver cohorts should have this field populated). Data for non-ACG cohorts to be excluded.
-</td>
+<td>Relationship status was inappropriately collected at V02/V03 for all cohorts and should have been restricted to cases where there was a change in caregiver (i.e. only Alternative Caregiver cohorts should have this field populated). Data for non-ACG cohorts to be excluded.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
-
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Demo</td>
 <td>Roster was inappropriately collected at V02/V03 for all cohorts and should have been restricted to V02 PNRs and alternate caregiver cohorts; to be excluded.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
-
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>eHITS</td>
 <td>Participants missing all item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='br-pill br-212'>21.2</span></td>
+<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Demo</td>
 <td>Add household roster fields capturing the sex of listed individuals (adult &amp; child tables).</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Demo</td>
+<td>Addition of V6 Adult</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Demo</td>
+<td>Addition of V6 Child</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>GLED</td>
+<td>Addition of Geocoded Linkage from Home and Work Addresses</td>
+<td style='text-align: center;'><span class='br-pill'>30</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Incarceration</td>
+<td>Addition of the Incarceration Questionnaire</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 </tbody></table><!-- END KNOWN_ISSUES_TABLE -->
