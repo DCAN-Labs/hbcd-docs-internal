@@ -632,7 +632,6 @@ Data is selection for manual review based on multivariate prediction and Bayesia
 </tr>
 </tbody>
 </table>
-
 <p><b>Modality-Specific Worfklow Details</b>
 <img src="../images/qc/MRI-QC-WF.png" alt="Tableau" width="80%" height="auto" class="center">
 </p>
@@ -648,33 +647,10 @@ Data is selection for manual review based on multivariate prediction and Bayesia
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>QC is performed on processed MR data using several automated and manual approaches:</p>
-<p><ul><b>AUTOMATED QC</b>
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#mri-subgroups">MRI Workgroups</a>
-</span>
-<table class="table-no-vertical-lines" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
-    <tbody>
-    <tr>
-        <td><strong>QSIPrep pipeline (dMRI)</strong></td>
-        <td style="word-wrap: break-word; white-space: normal;">QSIPrep produces robust QC metrics - see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#dwi-qc">Automated QC for Processed Diffusion Data</a> for details.</td>
-    </tr>
-    <tr>
-        <td><strong>XCP-D pipeline (sMRI/fMRI)</strong></td>
-        <td style="word-wrap: break-word; white-space: normal;">XCP-D produces several QC metrics and visual reports to aid in data evaluation. One key metric is <a href="https://xcp-d.readthedocs.io/en/latest/workflows/#framewise-displacement-calculation-and-thresholding">framewise displacement</a> (FD), which quantifies head motion across the scan. For each run, the amount of low-motion data, based on an FD threshold of 0.3 mm, is calculated. Only runs with at least 210 seconds of low-motion data are retained in the final outputs.</td>
-    </tr>   
-    <tr>
-        <td><strong>MRIQC utility</strong></td>
-        <td style="word-wrap: break-word; white-space: normal;">MRIQC extracts image quality metrics, provided in the release data, from structural and functional MRI - <a href="https://docs.hbcdstudy.org/latest/datacuration/derivatives/#mriqc-mriqc">see details</a>.</td>
-    </tr>    
-</tbody>
-</table>
-</p>
-<p><ul><b>MANUAL QC</b>
+<br>
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/center-for-developmental-neuroimaging">CDNI</a>
 </span>
-<li>BrainSwipes - please see full details <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#brainswipes">here</a>. BrainSwipes results will be included for diffusion MRI in the future.</li>
-</ul>
-</p>
+<p>Visual QC is performed on XCP-D visual reports for structural/functional MRI via BrainSwipes- see full details <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#brainswipes">here</a>. </p>
 </div>
 
 <div id="pre-release-mri" class="pre-release-banner" onclick="toggleCollapse(this)">
@@ -687,32 +663,19 @@ Data is selection for manual review based on multivariate prediction and Bayesia
   <span class="arrow">▸</span>
 </div>
 <div class="collapsible-content">
-<p>Lasso obtains final sign-off from the MRI Workgroups on datasets in their release-ready form, with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a>, via the <a href="https://hbcd-hdcc-qc.lassoinformatics.com/" target="_blank">Lasso Pre-Release System</a>. The following checks are performed:
-</p>
-<p><b>Structural MRI</b>
+<p>Lasso obtains final sign-off from the MRI Workgroups on datasets in their release-ready form, with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a>, via the <a href="https://hbcd-hdcc-qc.lassoinformatics.com/" target="_blank">Lasso Pre-Release System</a>. The following checks are performed. See <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#qc-summary-statistics">QC Summary Statistics</a> on the HBCD Data Release Docs for some findings from these analysis shared with users.</p>
+
+<p><b>Structural & Functional MRI</b>
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/center-for-developmental-neuroimaging">CDNI</a>
 </span><br> 
-Processed structural MRI data, based on <a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">tabulated data</a> derived from XCP-D outputs, were analyzed using R-based scripts. ROI-level measures included:
-<ul>
-<li><strong>Cortical metrics</strong> (Gordon parcellation, 333 ROIs): cortical thickness, surface area, and curvature</li>
-<li><strong>Subcortical metrics</strong> (Freesurfer segmentation, 19 ROIs): volume</li>
-</ul>
-BrainSwipes visual QC outputs were used to assess data quality and its impact on the underlying distributions. We also evaluated associations with demographic variables. Over 90% of data passed BrainSwipes QC, indicating high overall quality. No significant effects of data quality or associations with demographic factors were detected, suggesting either minimal confounding or limited statistical power to detect such effects in the current sample.</p> 
-<p><b>Functional MRI</b>
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/center-for-developmental-neuroimaging">CDNI</a>
-</span><br> 
-QC performed for processed resting-state fMRI (rs-fMRI) data, derived from XCP-D outputs, is performed on both <a href="https://docs.hbcdstudy.org/latest/datacuration/phenotypes/">tabulated</a> and file-based data. Analyses leverage R-based scripts and BrainSwipes QC outputs.</p>
-<p><strong><i>Tabulated Data</i></strong><br>
-We analyzed ALFF and ReHo measures from the Gordon cortical parcellation and Freesurfer subcortical segmentation, covering a total of 352 ROIs. BrainSwipes visual QC was used to assess the proportion of rs-fMRI data meeting quality thresholds and to evaluate its impact on distributional characteristics. The QC metric exhibited a linear trend, supporting its interpretation as a continuous measure. Examining effects of data quality, we find that data quality effects are most minimized when the pass rate for BrainSwipes QC exceeds 70%.</p> 
-<p><strong><i>File-Based Imaging Data</i></strong><br>
-We also analyzed mean ROI-to-ROI functional connectivity maps from the same parcellations (Gordon cortical and Freesurfer subcortical, 352 ROIs). As with tabulated data, BrainSwipes QC outputs were used to assess data quality and its influence on connectivity estimates. A similar linear relationship was observed, and QC effects were minimized when only data with at least a 70% pass rate were included.</p> 
+QC is performed for processed structural/functinal MRI leveraging XCP-D deriatives and BrainSwipes QC outputs. QC procedures are documentation <a href="../mri/mri-postproc-qc/" target="_blank">here</a>.</p>
+
 <p><b>Diffusion MRI</b>
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#hbcd-workgroups">dMRI Workgroup</a></span><br> 
-The dMRI Workgroup checked that automated QC metrics such as the neighboring DWI correlation (NDC) increase in preprocessed data compared to raw data. They also compared the Contrast to Noise Ratio (CNR) for each shell to the CNR values for the ABCC QSIPrep outputs, checking for approximately similar ranges per vendor. Postprocessed (QSIRecon) data was checked to be sure that most bundles were recovered for most scans.</p>
+The dMRI Workgroup checked that automated QC metrics such as the neighboring DWI correlation (NDC) increase in preprocessed data compared to raw data. They also compared the Contrast to Noise Ratio (CNR) for each shell to the CNR values for the ABCC QSIPrep outputs, checking for approximately similar ranges per vendor. Postprocessed (QSIRecon) data was checked to be sure that most bundles were recovered for most scans. See the diffusion <a href="https://docs.hbcdstudy.org/latest/instruments/mri/dmri/#quality-control-summary-statistics">QC Summary Statistics</a> on the HBCD Data Release Docs for a summary provided to users.</p>
 <p><b>Magnetic Resonance Spectroscopy (MRS)</b>
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#hbcd-workgroups">MRS Workgroup</a></span><br> 
 MRS QC is based on tabulated data-derived distributions of Osprey derivatives. R-based scripts examine distributions of MRS-derived measures from tabulated data.</p> 
-<p>See <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#qc-summary-statistics">QC Summary Statistics</a> on the HBCD Data Release Docs for some findings from these analysis shared with users.</p>
 </div>
 
 ### EEG Data

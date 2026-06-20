@@ -86,8 +86,6 @@ nav:
   - Beta Release Notes: 
     - Exclusions & Filtering: changelog/exclusions.md
     - Known Issues & Pending Updates: changelog/knownissues.md
-        # - Current: changelog/knownissues.md
-        # - Resolved Issues Archive: changelog/resolved.md
     - Release Notes:   
         - Release 2.1 Archive: 
             - BR 21.2: changelog/versions/BR21.2.md
