@@ -345,12 +345,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td>Addition of the MacArthur-Bates CDI-2 Language</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>SPM-2</td>
-<td>Add missing raw and T-scores</td>
-<td style='text-align: center;'><span class='br-pill'>21.2</span></td>
-</tr>
+
 </tbody></table>
 
 
