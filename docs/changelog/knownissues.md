@@ -15,11 +15,6 @@
   background-color: #e6f0ff; 
   color: #1a4fb3;
 }
-/* Version-specific styling */
-/* .br-x {background-color: #e6f0ff; color: #1a4fb3;} */
-/* .br-x {background-color: #e9f7ef; color: #1e7e34;} */
-/* .br-tbd {background-color: #f1f3f5; color: #666; font-style: italic;} */
-
 .pr-pill {
   display: inline-block;
   padding: 2px 8px;
@@ -30,7 +25,6 @@
   white-space: nowrap;
   background-color: #f89781af;
 }
-
 .tbd-pill {
   display: inline-block;
   padding: 2px 8px;
@@ -69,6 +63,8 @@
     
 <!-- BEGIN KNOWN_ISSUES_TABLE -->
 ### Behavior &amp; Child-Caregiver Interaction
+
+!!! info "Resolved items are archived to [Resolved Issues & Updates Archive](resolved-archive.html) (domain MH)"
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -146,6 +142,8 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 ### Biospecimens &amp; Omics
 
+!!! info "Resolved items are archived to [Resolved Issues & Updates Archive](resolved-archive.html) (domain BIO)"
+
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr style="font-size: 1.1em;">
@@ -172,6 +170,8 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 
 ### Demographics
+
+!!! info "Resolved items are archived to [Resolved Issues & Updates Archive](resolved-archive.html) (domain Demo)"
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -206,6 +206,8 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 ### EEG
 
+!!! info "Resolved items are archived to [Resolved Issues & Updates Archive](resolved-archive.html) (domain EEG)"
+
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr style="font-size: 1.1em;">
@@ -232,6 +234,8 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 
 ### General
+
+!!! info "Resolved items are archived to [Resolved Issues & Updates Archive](resolved-archive.html) (domain NA)"
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -278,6 +282,8 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 ### MRI
 
+!!! info "Resolved items are archived to [Resolved Issues & Updates Archive](resolved-archive.html) (domain MRI)"
+
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr style="font-size: 1.1em;">
@@ -317,6 +323,8 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 ### Neurocognition &amp; Language
 
+!!! info "Resolved items are archived to [Resolved Issues & Updates Archive](resolved-archive.html) (domain NCL)"
+
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr style="font-size: 1.1em;">
@@ -351,6 +359,8 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 ### Novel Tech &amp; Wearable Sensors
 
+!!! info "Resolved items are archived to [Resolved Issues & Updates Archive](resolved-archive.html) (domain NT)"
+
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr style="font-size: 1.1em;">
@@ -371,6 +381,8 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 
 ### Physical Health
+
+!!! info "Resolved items are archived to [Resolved Issues & Updates Archive](resolved-archive.html) (domain PH)"
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -436,6 +448,8 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 ### Pregnancy &amp; Environmental Exposure
 
+!!! info "Resolved items are archived to [Resolved Issues & Updates Archive](resolved-archive.html) (domain PEX)"
+
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr style="font-size: 1.1em;">
@@ -474,6 +488,8 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 
 
 ### Social &amp; Environmental Determinants
+
+!!! info "Resolved items are archived to [Resolved Issues & Updates Archive](resolved-archive.html) (domain SED)"
 
 <table class="compact-table-no-vertical-lines">
 <thead>
