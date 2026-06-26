@@ -430,12 +430,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td>Add more fields to <code>ph_ch_vs</code> (current release only includes completion status and overall screening results).</td>
 <td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
 </tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>ecPROMIS-PAGS</td>
-<td>Add scores to <code>ph_cg_pms__pags</code>. Until added, scores can be calculated by following the <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documentation.</td>
-<td style='text-align: center;'><span class='br-pill'>21.2</span></td>
-</tr>
+
 </tbody></table>
 
 
