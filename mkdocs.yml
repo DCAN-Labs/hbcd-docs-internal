@@ -88,6 +88,7 @@ nav:
     - Known Issues & Pending Updates: changelog/knownissues.md
     - Release Notes:   
         - Release 2.1 Archive: 
+            - BR 21.3: changelog/versions/BR21.3.md
             - BR 21.2: changelog/versions/BR21.2.md
             - BR 21.1: changelog/versions/BR21.1.md
             - BR 21.0: changelog/versions/BR21.0.md
