@@ -357,7 +357,7 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Vineland</td>
-<td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix.</td>
+<td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix. In addition, the age of one child it outside of the valid bounds for V05.</td>
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 
