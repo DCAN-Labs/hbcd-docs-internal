@@ -354,6 +354,13 @@ Instructions include cleaning the current files to exclude n=44 participants wit
 <td style='text-align: center;'><span class='pr-pill'>R3</span></td>
 </tr>
 
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Vineland</td>
+<td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix.</td>
+<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+</tr>
+
 </tbody></table>
 
 
