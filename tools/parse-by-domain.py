@@ -10,8 +10,7 @@ import re
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
 XLSX= "latest.xlsx"
-# INTERNAL_MD = "../docs/changelog/knownissues.md"
-INTERNAL_MD = "../docs/changelog/temp.md"
+INTERNAL_MD = "../docs/changelog/knownissues.md"
 
 
 # INTERNAL_MD = "../docs/changelog/test.md"
@@ -45,14 +44,6 @@ def map_type(value):
     elif "pending" in value:
         return "Pending Update"
     return None
-
-
-# def map_type(value):
-#     if value == "known_issue" or value == "br_known_issue":
-#         return "Issue"
-#     elif value == "pending":
-#         return "Pending Update"
-#     return None
 
 def insert_into_markdown(md_path, combined_html):
     START_MARKER = "<!-- BEGIN KNOWN_ISSUES_TABLE -->"
@@ -103,7 +94,6 @@ def build_table(domain, rows):
         table_parts.append(f"<td>{html.escape(str(table))}</td>")
         table_parts.append(f"<td>{summary_html}</td>")
 
-
         # BR styling
         if str(br).upper() == "TBD":
             pill_class = "tbd-pill"
@@ -144,10 +134,7 @@ df['BR'] = df['BR'].fillna('TBD')
 # Drop PR column for troubleshooting
 df = df.drop(['PR'], axis=1)
 
-
-
-# Type mapping and s
-# ort by (1) domain, (2) table/topic
+# Type mapping and sort by (1) domain, (2) table/topic
 df["MappedType"] = df["Type"].apply(map_type)
 df = df[df["MappedType"].notna()]
 df = df.sort_values(by=['Domain', 'Table/Topic'])
