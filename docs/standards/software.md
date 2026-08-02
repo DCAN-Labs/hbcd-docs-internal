@@ -1,37 +1,5 @@
 # Software & Analytic Standards
 
-<div class="pill-center">
-  <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
-      <span class="pill-link">
-        <span class="tooltip">
-          <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
-          <span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span>
-        </span>
-      </span>
-  </a>
-  <a href="../../#reproducibility" target="_blank" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip">
-        <i class="fa-solid fa-code-compare" style="color: #6300d3;"></i>
-        <span class="tooltiptext">Reproducibility<br><i>Click to learn more</i></span>
-      </span>
-    </span>
-  </a>
-  <a href="../../#clear-objectives-and-scope" target="_blank" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip"><i class="fa-solid fa-bullseye" style="color: #6300d3;"></i><span class="tooltiptext">Clear objectives & scope<br><i>Click to learn more</i></span></span>
-    </span>
-  </a>
-  <a href="../../#transparency" target="_blank" class="pill-link-wrapper">
-      <span class="pill-link">
-        <span class="tooltip">
-          <i class="fa-solid fa-eye" style="color: #6300d3;"></i>
-          <span class="tooltiptext">Transparency<br><i>Click to learn more</i></span>
-        </span>
-      </span>
-  </a>
-</div>
-
 The following procedures are performed to support transparency, reproducibility, and standard environments for our databases and systems controls:
 
 ## Processing & Analytic Standards

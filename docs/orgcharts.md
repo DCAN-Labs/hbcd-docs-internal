@@ -13,17 +13,6 @@
 
 #  HDCC Structure & Organizational Charts
 
-<div class="pill-center">
-  <a href="../#project-management" target="_blank" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip">
-        <i class="fa-solid fa-diagram-project" style="color: #6300d3;"></i>
-        <span class="tooltiptext">Project Management<br><i>Click to learn more</i></span>
-      </span>
-    </span>
-  </a>
-</div>
-
 ## HDCC Functional Structure
 
 ### Overview

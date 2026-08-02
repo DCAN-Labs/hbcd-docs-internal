@@ -52,19 +52,16 @@ The HDCC is committed to a principled and transparent approach to data sharing. 
 
 ### <span class="pill-link"><i class="fa-solid fa-bullseye" style="color: #6300d3;"></i></span> Clear Objectives and Scope
 
-Each data release begins with a clearly defined scope. We identify which data components will be made publicly available. This includes an organized document of instruments and visits to be released that is signed off by leadership groups across HDCC-HCAC, program, and HBCD Workgroups ([see details](orgcharts.md#hbcd-workgroups)). It is archived and versioned within the Docs pages. 
+Each data release begins with a clearly defined scope to define clear goals and timelines, prevent scope creep, and transparent/clear documentation. Instruments and visits expected in the coming release, along with signoff status from leadership groups (HDCC-HCAC, program, and HBCD Workgroups) are tracked [here](https://docs.google.com/spreadsheets/d/1ABh8u6s4R3jUKUcfj2xA_nRyO1r1kQRVfwDDJRWwVq0/edit?usp=sharing).
 
 * **Metadata and Documentation**: Each release includes standardized metadata, data dictionaries, and explanatory documentation, aligned with BIDS and accompanied by dedicated documentation pages for data and software.
 
 * **Timeline**: Each release will also have an anticipated timeline for all parties to set expectations (see [Release Timeline](workflows/release-wf.md#release-timeline)).
 
-**Why this matters:**  
-Defining clear goals and timelines that are documented, versioned, and available centrally to all parties for transparency. It also helps prevent scope creep and confusion about which data elements are production ready.
-
 
 ### <span class="pill-link"><i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i></span> Data Quality Checks
 
-We use a multi-layered strategy to ensure data accuracy and consistency across all sites and modalities:
+Data quality is foundational for scientific integrity and usability. Multiple validation layers ensure we catch both systemic and isolated issues before public release. Laying out every update, change, and error for all members of the consortium to view can be difficult, but it provides a level of transparency and helps with speed to assure deadlines are met. We use a multi-layered strategy to ensure data accuracy and consistency across all sites and modalities:
 
 * **Automated Validations**: Scripts check for unit consistency, value ranges, flagging of missing data, and adherence to schema at both intake and release stages.
 
@@ -78,25 +75,17 @@ We use a multi-layered strategy to ensure data accuracy and consistency across a
 
 **See full QC procedure details [here](workflows/qc.md).**
 
-**Why this matters:**  
-Data quality is foundational for scientific integrity and usability. Multiple validation layers ensure we catch both systemic and isolated issues before public release. Laying out every update, change, and error for all members of the consortium to view can be difficult, but it provides a level of transparency and helps with speed to assure deadlines are met. 
-
 ### <span class="pill-link"><i class="fa-solid fa-diagram-project" style="color: #6300d3;"></i></span> Project Management
 
-Our release strategy is supported by coordinated project management personnel that unify communication, task tracking, and release milestones:
-Platform Integration: We use Monday.com to manage tasks, tickets, timelines, and dependencies across teams.
+Our release strategy is supported by project managers who unify communication, task tracking, and release milestones to streamline coordination across stakeholders.
 
  - **Roles & Responsibilities**: Each release has assigned leads (e.g., HDCC liaisons, WG coordinators) responsible for sign-offs, QA ownership, and timeline adherence.
  - **Cross-Team Coordination**: HDCC liaisons attend working group meetings, assist with change request templates, and log/track requests through our centralized platform.
  - **Release Readiness Reviews**: Structured workflows ensure that milestones like documentation completion, validation sign-offs, and stakeholder preview periods are met before public release.
 
-**Why this matters:**
-A well-run project management system ensures no detail or dependency is missed, enables visibility across groups, and makes coordination across dozens of stakeholders efficient and predictable.
-
-
 ### <span class="pill-link"><i class="fa-solid fa-code-compare" style="color: #6300d3;"></i></span> Reproducibility
 
-Our data processing workflows are built to be fully reproducible by both internal and external teams:
+Our data processing workflows are built to be fully reproducible by both internal and external teams. Reproducibility is a cornerstone of modern science. It ensures that results derived from HBCD data can be verified, trusted, and extended by the broader research community. Every element of our code base is available for the community to utilize and identify improvements and contribute to improvements of the code base. This ensures high quality packages and modernization with a fast changing scientific landscape. 
 
 * **Reproducible Environments**: We use Docker, Conda, Puppet Orchestration, and Snakemake to containerize and automate our pipelines, ensuring consistency across computing environments.
 
@@ -106,12 +95,10 @@ Our data processing workflows are built to be fully reproducible by both interna
 
 * **Software Documentation**: Each software module is paired with its own documentation page and linked to the associated data release.
 
-**Why this matters:**  
-Reproducibility is a cornerstone of modern science. It ensures that results derived from HBCD data can be verified, trusted, and extended by the broader research community. Every element of our code base is available for the community to utilize and identify improvements and contribute to improvements of the code base. This ensures high quality packages and modernization with a fast changing scientific landscape. 
 
 ### <span class="pill-link"><i class="fa-solid fa-clock" style="color: #6300d3;"></i></span> Timeliness Planning
 
-With the lessons learned from Release 1.0, we are now taking a proactive approach to timeline management and release readiness. The release timeline is now part of the approval process for the defined objectives and scope  (see [Release Timeline](workflows/release-wf.md#release-timeline)). 
+We take a proactive approach to timeline management and release readiness, part of the approval process for the defined objectives and scope (see [Release Timeline](workflows/release-wf.md#release-timeline)). 
 
 * **Early Planning**: Development for a December/January release begins in July, ensuring enough time for quality control, documentation, and stakeholder review.
 
@@ -119,13 +106,13 @@ With the lessons learned from Release 1.0, we are now taking a proactive approac
 
 * **Pre-mortem Reviews**: We are developing pre-mortem sessions to identify potential risks (e.g., missing data, corrupted files) before they can delay a release.
 
-**Why this matters:**  
-Timely releases and thoughtful approved timelines maintain community momentum and fulfill commitments. Early and iterative review avoids last-minute surprises and enables smoother rollout.
+<!-- **Why this matters:**  
+Timely releases and thoughtful approved timelines maintain community momentum and fulfill commitments. Early and iterative review avoids last-minute surprises and enables smoother rollout. -->
 
 
 ### <span class="pill-link"><i class="fa-solid fa-eye" style="color: #6300d3;"></i></span> Transparency
 
-We commit to open and honest communication with all data users:
+Transparency fosters trust and accountability. It empowers users to make informed decisions and strengthens the collaborative feedback loop between data producers and consumers. We commit to open and honest communication with all data users:
 
 * **Changelogs**: Every version or beta release includes detailed notes outlining what changed, what was added, and what limitations remain.
 
@@ -134,9 +121,6 @@ We commit to open and honest communication with all data users:
 * **Feedback Channels**: Users can report problems or request clarifications via the NBDC Data Access Platform Help Center; all tickets are logged, triaged, and tracked in Monday’s.
 
 * Working groups also have access to our HDCC liaison who attends WG meetings, assists with filling our change requests templates (also logged and documented), and directly triages and tracks the change request in our project management platform Monday’s. 
-
-**Why this matters:**  
-Transparency fosters trust and accountability. It empowers users to make informed decisions and strengthens the collaborative feedback loop between data producers and consumers.
 
 ### References and Frameworks
 

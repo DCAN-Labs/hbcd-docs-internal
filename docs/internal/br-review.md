@@ -1,16 +1,5 @@
 # Access Beta Release Data
 
-<div class="pill-center">
-  <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip">
-        <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
-        <span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span>
-      </span>
-    </span>
-  </a>
-</div>
-
 The <b><a href="https://hbcd-hdcc-qc.lassoinformatics.com/" target="_blank">Lasso Pre-Release System</a></b> is used for quality control so that HBCD Consortium members to review their data as it appears on the Lasso or NBDC Data Access Platform prior to inclusion in a release. 
 
 ***HBCD Consortium members are HIGHLY ENCOURAGED to perform a detailed review of their data as soon as it is available so that any issues can be resolved in time before its inclusion in the release data.***

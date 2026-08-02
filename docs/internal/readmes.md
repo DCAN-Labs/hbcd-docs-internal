@@ -1,75 +1,36 @@
-# Study Instrument Documentation ("READMEs")
+# HBCD Instrument Documentation README Instructions
 
-<div class="pill-center">
-  <a href="../../#clear-objectives-and-scope" target="_blank" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip"><i class="fa-solid fa-bullseye" style="color: #6300d3;"></i><span class="tooltiptext">Clear objectives & scope<br><i>Click to learn more</i></span></span>
-    </span>
-  </a>
-</div>
+Each HBCD study instrument has a dedicated README page on the [HBCD Data Release Docs](https://docs.hbcdstudy.org/). These pages are directly generated from the information provided by SMEs via instrument-specific forms. The forms serve as the living source of documentation for each instrument and can be updated over time as documentation evolves across data releases.
 
-## Instrument Documentation ("READMEs") Provided by Workgroups
+## Using the Form
 
-**Each study instrument or measure has its own dedicated page on the [HBCD Data Release Docs](https://docs.hbcdstudy.org/)** that includes documentation of QC issues, responsible use concerns, modifications made to the measure for the HBCD Study, etc. To view these pages, expand the domains under [Study Instruments](https://docs.hbcdstudy.org/latest/instruments/#instruments-by-domain) and click the instrument names listed in the tables.
+!!! warning "Form under active development"
+    These forms are actively being improved to make documentation as easy as possible. If you encounter any issues or have suggestions, please let us know so we can address them quickly.
+    
+### General Guidelines
 
-***Submit new instrument page content to be included in an upcoming release or updates to existing pages as follows:***
+- Each form is pre-populated with existing documentation so you can review, update, or add new content as needed
+- Information submitted through the form is used to generate the instrument's README page on the HBCD Data Release Docs. Please review your changes carefully before submitting a form for a current release
+- **Write for an external research audience.** Focus on helping researchers understand and use the data. Avoid references to HBCD-specific workflows, internal documentation, data management systems, or study operations that would not be meaningful to external users.
 
-#### How to submit new instrument page documentation
+### Submitting a New README
 
-Submit instrument documentation ("README") via the <a href="https://forms.gle/fgXTAkPhZbx2qjoH6">HBCD Release Docs Measure Documentation Form</a>
+If you are creating documentation for a new instrument, your submission will update a **draft version** of the documentation site. Although the draft site is publicly accessible, it is not advertised or linked from the public release. You can revisit this form and update the documentation as many times as you want, so we encourage you to submit the information you have in order to begin building out your webpage. 
 
-#### How to make updates to existing instrument pages
+##### Best Practices
 
-Follow the instructions provided in the first tab of this <a href="https://docs.google.com/document/d/14Bbyr4kwqwM91AGKwi1_Im31e-mkZd1s6wWfCsHMMrA/edit?usp=sharing">centralized collaborative document</a>. This includes instrument pages that are currently published on the main site (see <a href="https://docs.hbcdstudy.org/latest/instruments/#instruments-by-domain">Study Instruments</a>) as well as new instrument pages being constructed based on the google form submissions.</a>
+- Draft longer sections (for example, Instrument Details, Quality Control, and Scoring) outside the form first. If multiple contributors are involved, we recommend collaborating in Google Docs and then copying the finalized text into the form
+- Designate a single person to submit updates for a given instrument, as simultaneous edits may overwrite one another
+- After submission, we will generate the README page and work with you to review and finalize the content as needed.
 
-## General Information: HBCD Study Websites
+### Resources
 
-HBCD Study documentation can be found in the following locations:
+- [README template](https://docs.hbcdstudy.org/2.1/resources/template/): displays structure of each page and purpose of each section
+- Published READMEs: Review current README pages for examples of content and level of detail to include under [Study Instruments](https://docs.hbcdstudy.org/latest/instruments/#instruments-by-domain)
+    
+## Need help?
 
-<table class="compact-table table-no-vertical-lines">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>URL</th>
-      <th>Description</th>
-      <th>Who maintains site</th>
-    </tr>
-  </thead>
-<tbody>
-<tr>
-<td>HBCD Data Release Docs</td>
-<td><a class="in-cell-link" href="https://docs.hbcdstudy.org/latest/" target="_blank">https://docs.hbcdstudy.org/</a></td>
-<td>Data release documentation</td>
-<td colspan="1" rowspan="2">
-<div><a href="../../orgcharts/#center-for-developmental-neuroimaging">CDNI</a></div>
-</td>
-</tr>
-<tr>
-<td>HBCD DCC Docs</td>
-<td><a class="in-cell-link" href="https://hbcd-docs-internal.readthedocs.io/latest/" target="_blank">https://hbcd-docs-internal.readthedocs.io/</a></td>
-<td>Internal HDCC documentation</td>
-</tr>
-<tr>
-<td>NBDC Data Hub site</td>
-<td><a class="in-cell-link" href="https://www.nbdc-datahub.org/" target="_blank">https://www.nbdc-datahub.org/</a></td>
-<td>Main site for NBDC Data Hub</td>
-<td><a href="../../orgcharts/#lasso">Lasso</a></td>
-</tr>
-<tr>
-<td>HBCD Study site</td>
-<td><a class="in-cell-link" href="https://hbcdstudy.org/" target="_blank">https://hbcdstudy.org/</a></td>
-<td>Main site for HBCD Study</td>
-<td><span class="tooltip">HCAC<span class="tooltiptext">HBCD Consortium Administrative Core</span></span></td>
-</tr>
-</tbody>
-</table>
-
-HBCD Consortium members can request updates to any of these sites by submitting a ticket to the [Lasso Help Center](https://nbdc-datashare.lassoinformatics.com/help-center) (select the "Documentation" category when submitting a ticket).
-
-**For [HBCD DCC Docs](https://hbcd-docs-internal.readthedocs.io/), which is the current site you are visiting, we particularly welcome suggestions for additional information/pages to best serve the needs of the HDCC and HBCD Workgroups.**
-
-
-
+Please email Lucille Moore (lmoore@umn.edu), Stephanie Averill (saverill@ucsd.edu), and/or Jen Zink (jzink@lassoinformatics.com) if you have any questions about this form or need guidance! 
 
 
 
