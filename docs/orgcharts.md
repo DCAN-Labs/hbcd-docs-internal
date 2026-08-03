@@ -26,7 +26,7 @@ These org charts emphasize functional structure within the context of HDCC, not 
 <object type="image/svg+xml" data="legend.svg" width="100%"></object>
 
 **Release Architecture Labels**   
-Organizations and/or individuals central to handling stages of the data release for tabulated and/or file-based data are additionally delineated as follows. See the data release responsibility assignment matrices <a href="../workflows/release-wf/#responsibility-assignment-matrices" target="_blank">here</a> for more details.</p> 
+Organizations and/or individuals central to handling stages of the data release for tabulated and/or file-based data are additionally delineated as follows. See the data release responsibility assignment matrices <a href="../workflows/release-wf/#responsibility-assignment-matrices">here</a> for more details.</p> 
 <div style="display: inline-flex; align-items: center; gap: 20px; font-size: 0.9em; padding: 8px 12px; border-radius: 6px; background-color: #fafafa;">
   <div style="display: flex; align-items: center; gap: 6px;">
     <span style="display: inline-block; border-top: 3px dashed #FF1FF4; width: 30px;"></span>
@@ -50,7 +50,7 @@ flowchart TB
     n16["<b>Wesley K.<br>Thompson, PhD</b><br>HDCC Assoc Dir,<br>BioStatistics Chair"] --- n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"]
     n12 --- n16
     n8 --- n19["<b>Nathan Fox, PhD<br></b>HDCC Assoc Dir"]
-    n7 --- n20["<b>Alan Evans</b>, PI<br><b>Samir Das</b><br><a href="https://mcin.ca/about-mcin/" target="_blank">MCIN</a> Assoc Dir"]
+    n7 --- n20["<b>Alan Evans</b>, PI<br><b>Samir Das</b><br><a href="https://mcin.ca/about-mcin/">MCIN</a> Assoc Dir"]
     umn --- reed["<b>Reed McEwan, MS</b><br>Sr Research Dev"]
     n10 --- n22["<b>Chad Sylvester, PhD</b><br>Co-Investigator"]
     n11 --- n18["<b>William P. Fifer, PhD</b><br>Novel Tech &<br>Wearables Co-Chair"]
@@ -947,7 +947,7 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
 
 ### LIBR
 
-The Laureate Institute for Brain Research (LIBR) houses the **Biostatistics** and **Geocoding & Linking External Data** [HBCD Workgroups](#hbcd-workgroups), providing support for the HDCC in the areas of biostatistics, geolocation, and data analysis. The Biostatistics WG is furthermore responsible for <a href="../workflows/qc/#pre-release-qc-5-stages" target="_blank">Pre-release QC</a>.
+The Laureate Institute for Brain Research (LIBR) houses the **Biostatistics** and **Geocoding & Linking External Data** [HBCD Workgroups](#hbcd-workgroups), providing support for the HDCC in the areas of biostatistics, geolocation, and data analysis. The Biostatistics WG is furthermore responsible for <a href="../workflows/qc/#pre-release-qc-5-stages">Pre-release QC</a>.
 
 ```mermaid
 flowchart TB
@@ -986,12 +986,12 @@ flowchart TB
       <tr>
       <td>Wesley K. Thompson, PhD</td>
       <td>HDCC Assoc Dir, Biostatistics WG Chair</td>
-      <td>Provides statistical guidance on study design, analysis, and methods development for HBCD. Co-leads statistical design and maintenance of <span class="tooltip tooltip-left">DEAP 2.0<span class="tooltiptext">the Data Exploration and Analysis Portal 2.0</span></span>. Supports geolocation of participant residences and linkage to external data sources. Responsible for <a href="../workflows/qc/#pre-release-qc-5-stages" target="_blank">Pre-release QC</a>.</td>
+      <td>Provides statistical guidance on study design, analysis, and methods development for HBCD. Co-leads statistical design and maintenance of <span class="tooltip tooltip-left">DEAP 2.0<span class="tooltiptext">the Data Exploration and Analysis Portal 2.0</span></span>. Supports geolocation of participant residences and linkage to external data sources. Responsible for <a href="../workflows/qc/#pre-release-qc-5-stages">Pre-release QC</a>.</td>
       </tr>
       <tr>
         <td>TBD</td>
         <td>Biostatistician</td>
-        <td>Supports the HBCD Biostatistics Workgroup. Responsible for <a href="../workflows/qc/#pre-release-qc-5-stages" target="_blank">Pre-release QC</a></td>
+        <td>Supports the HBCD Biostatistics Workgroup. Responsible for <a href="../workflows/qc/#pre-release-qc-5-stages">Pre-release QC</a></td>
       </tr>
       <tr>
         <td>Chun Fan, PhD</td>

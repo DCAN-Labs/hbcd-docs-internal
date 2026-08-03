@@ -43,7 +43,7 @@
 !!! danger "Active Items Only"
     This page lists ACTIVE issues/pending updates either targeted for upcoming BRs or still pending final Workgroup/SME sign-off. Items are not considered resolved until final review and approval by Workgroup/SME. Note that items addressed in a BR are not reflected as resolved in the [public release documentation](https://docs.hbcdstudy.org/latest/changelog/issues-updates/) until the corresponding PR is released.
 
-    <b>FOR A LIST OF RESOLVED ITEMS, SEE</b> <a href="../resolved-archive.html" target="_blank"><b>Resolved Issues & Updates Archive</b></a>   
+    <b>FOR A LIST OF RESOLVED ITEMS, SEE</b> <a href="../resolved-archive.html"><b>Resolved Issues & Updates Archive</b></a>   
 
 ---
 

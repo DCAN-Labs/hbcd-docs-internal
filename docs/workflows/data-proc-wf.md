@@ -176,7 +176,7 @@ This section provides an overview of the complete HBCD processing workflows for 
     <tr>
       <td>Sandbox</td>
       <td><code>main-sb/</code></td>
-      <td style="word-wrap: break-word; white-space: normal;">LORIS Bucket for non-production system to test data flows on pilot data</td>
+      <td>LORIS Bucket for non-production system to test data flows on pilot data</td>
     </tr>
   </tbody>
 </table>

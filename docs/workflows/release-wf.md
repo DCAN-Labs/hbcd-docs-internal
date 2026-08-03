@@ -6,12 +6,12 @@ This document outlines the staged workflow for selecting, releasing, and validat
 
 <div class="pill-center">
   </a>
-    <a href="../../#clear-objectives-and-scope" target="_blank" class="pill-link-wrapper">
+    <a href="../../#clear-objectives-and-scope" class="pill-link-wrapper">
     <span class="pill-link">
       <span class="tooltip"><i class="fa-solid fa-bullseye" style="color: #6300d3;"></i><span class="tooltiptext">Clear objectives & scope<br><i>Click to learn more</i></span></span>
     </span>
   </a>
-  <a href="../../#timeliness-planning" target="_blank" class="pill-link-wrapper">
+  <a href="../../#timeliness-planning" class="pill-link-wrapper">
     <span class="pill-link">
       <span class="tooltip">
         <i class="fa-solid fa-clock" style="color: #6300d3;"></i>
@@ -32,7 +32,7 @@ The release timeline for determination of variables to include in the release, s
 </div>
 <div class="static-content">
   <ul>
-    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdtnLe3W35SsCjOFksJwnLO9G_D0uokTlZGER_2UBM361C21g/viewform">HBCD Release Docs Measure Documentation Form</a> to submit documentation/"READMEs" for new instruments/measures to be included in a release (<a href="../../internal/readmes" target="_blank">see details</a>)</li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdtnLe3W35SsCjOFksJwnLO9G_D0uokTlZGER_2UBM361C21g/viewform">HBCD Release Docs Measure Documentation Form</a> to submit documentation/"READMEs" for new instruments/measures to be included in a release (<a href="../../internal/readmes">see details</a>)</li>
     <li><a href="https://docs.google.com/spreadsheets/d/171oj0PLLtVgp5OSReBD5J6Ir4U56QQrWEwu92ZwttrM/edit?gid=0#gid=0">Measure Inclusion Form</a> tracking the list of variables to be included in upcoming release</li>
     <li><a href="https://docs.google.com/spreadsheets/d/1YkBeu8PpY2hTDq4_2X2SmI6vYaD6ib9mA-s3h4jALq0/edit?usp=sharing">Release Timeline Sign-Off Form</a></li>
   </ul> 
@@ -54,12 +54,12 @@ The release timeline is determined as follows:
 ### Stage 1: Determine Variables to Include & Data Filters for Release
 
 <div class="pill-center">
-  <a href="../../#clear-objectives-and-scope" target="_blank" class="pill-link-wrapper">
+  <a href="../../#clear-objectives-and-scope" class="pill-link-wrapper">
     <span class="pill-link">
       <span class="tooltip"><i class="fa-solid fa-bullseye" style="color: #6300d3;"></i><span class="tooltiptext">Clear objectives & scope<br><i>Click to learn more</i></span></span>
     </span>
   </a>
-  <a href="../#project-management" target="_blank" class="pill-link-wrapper">
+  <a href="../#project-management" class="pill-link-wrapper">
       <span class="pill-link">
         <span class="tooltip">
           <i class="fa-solid fa-diagram-project" style="color: #6300d3;"></i>
@@ -67,7 +67,7 @@ The release timeline is determined as follows:
         </span>
       </span>
   </a>
-  <a href="../../#timeliness-planning" target="_blank" class="pill-link-wrapper">
+  <a href="../../#timeliness-planning" class="pill-link-wrapper">
     <span class="pill-link">
       <span class="tooltip">
         <i class="fa-solid fa-clock" style="color: #6300d3;"></i>
@@ -111,12 +111,12 @@ Data filters applied to Release 1.0 are described in detail on the R1.0 Release 
 ### Stage 2: Integrate Planned Measures in Beta Releases
 
 <div class="pill-center">
-  <a href="../../#clear-objectives-and-scope" target="_blank" class="pill-link-wrapper">
+  <a href="../../#clear-objectives-and-scope" class="pill-link-wrapper">
     <span class="pill-link">
       <span class="tooltip"><i class="fa-solid fa-bullseye" style="color: #6300d3;"></i><span class="tooltiptext">Clear objectives & scope<br><i>Click to learn more</i></span></span>
     </span>
   </a>
-  <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
+  <a href="../../#data-quality-checks" class="pill-link-wrapper">
       <span class="pill-link">
         <span class="tooltip">
           <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
@@ -124,7 +124,7 @@ Data filters applied to Release 1.0 are described in detail on the R1.0 Release 
         </span>
       </span>
   </a>
-  <a href="../#project-management" target="_blank" class="pill-link-wrapper">
+  <a href="../#project-management" class="pill-link-wrapper">
       <span class="pill-link">
         <span class="tooltip">
           <i class="fa-solid fa-diagram-project" style="color: #6300d3;"></i>
@@ -133,7 +133,7 @@ Data filters applied to Release 1.0 are described in detail on the R1.0 Release 
       </span>
   </a>
   </a>
-  <a href="../../#timeliness-planning" target="_blank" class="pill-link-wrapper">
+  <a href="../../#timeliness-planning" class="pill-link-wrapper">
     <span class="pill-link">
       <span class="tooltip">
         <i class="fa-solid fa-clock" style="color: #6300d3;"></i>
@@ -171,12 +171,12 @@ The HDCC implements the measures marked as INCLUDE and begins the first versione
 
 #### Lasso Ingestion
 
-Once the BR Hot Sheet is finalized, the HDCC sends it to Lasso to initiate BR ingestion, which includes [Lasso ingestion QA](qc.md#pre-release-pheno). After ingestion is complete, the HDCC liaison (Jen Zink) notifies WGs that data are available in Lasso and requests they complete Quality Control (QC) reviews. Lasso obtains final sign-off from Workgroups on datasets in their release-ready form, with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a>, via the <a href="https://hbcd-hdcc-qc.lassoinformatics.com/" target="_blank">Lasso Pre-Release System</a>.
+Once the BR Hot Sheet is finalized, the HDCC sends it to Lasso to initiate BR ingestion, which includes [Lasso ingestion QA](qc.md#pre-release-pheno). After ingestion is complete, the HDCC liaison (Jen Zink) notifies WGs that data are available in Lasso and requests they complete Quality Control (QC) reviews. Lasso obtains final sign-off from Workgroups on datasets in their release-ready form, with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a>, via the <a href="https://hbcd-hdcc-qc.lassoinformatics.com/">Lasso Pre-Release System</a>.
   
 ### Stage 3: Data Quality Issue Identification, Reporting, and Handling  
 
 <div class="pill-center">
-  <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
+  <a href="../../#data-quality-checks" class="pill-link-wrapper">
       <span class="pill-link">
         <span class="tooltip">
           <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
@@ -184,7 +184,7 @@ Once the BR Hot Sheet is finalized, the HDCC sends it to Lasso to initiate BR in
         </span>
       </span>
   </a>
-  <a href="../../#transparency" target="_blank" class="pill-link-wrapper">
+  <a href="../../#transparency" class="pill-link-wrapper">
     <span class="pill-link">
       <span class="tooltip">
         <i class="fa-solid fa-eye" style="color: #6300d3;"></i>
@@ -235,12 +235,12 @@ Issues identified by WGs, analysts, or via LORIS, reported in collaboration with
 ### Stage 4: Data Sign-off and Public Release
 
 <div class="pill-center">
-  <a href="../../#clear-objectives-and-scope" target="_blank" class="pill-link-wrapper">
+  <a href="../../#clear-objectives-and-scope" class="pill-link-wrapper">
     <span class="pill-link">
       <span class="tooltip"><i class="fa-solid fa-bullseye" style="color: #6300d3;"></i><span class="tooltiptext">Clear objectives & scope<br><i>Click to learn more</i></span></span>
     </span>
   </a>
-  <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
+  <a href="../../#data-quality-checks" class="pill-link-wrapper">
       <span class="pill-link">
         <span class="tooltip">
           <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
@@ -248,7 +248,7 @@ Issues identified by WGs, analysts, or via LORIS, reported in collaboration with
         </span>
       </span>
   </a>
-  <a href="../../#transparency" target="_blank" class="pill-link-wrapper">
+  <a href="../../#transparency" class="pill-link-wrapper">
       <span class="pill-link">
         <span class="tooltip">
           <i class="fa-solid fa-eye" style="color: #6300d3;"></i>
@@ -349,7 +349,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
   <td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep</td>
   <td style="word-wrap: break-word; white-space: normal;">Generate Release Candidate IDs for Public Release</td>
-  <td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#health-sciences-technology" target="_blank">UMN HST</a></span></td>
+  <td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#health-sciences-technology">UMN HST</a></span></td>
   <td style="word-wrap: break-word; white-space: normal;">Reed McEwan</td>
   <td style="word-wrap: break-word; white-space: normal;">Reed McEwan</td>
   <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
@@ -357,7 +357,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data QC</td>
 <td style="word-wrap: break-word; white-space: normal;">Review of Dashboards and Completeness</td>
-<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#ripple" target="_blank">Ripple</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts" target="_blank">HCAC</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#loris">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#ripple">Ripple</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts">HCAC</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Santiago Torres (LORIS), Jen Zink (Lasso), Sauren Ravencroft (Ripple), Stephanie Averill (HCAC)</td>
 <td style="word-wrap: break-word; white-space: normal;">WG Leads</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
@@ -365,7 +365,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Pre-Release</td>
 <td style="word-wrap: break-word; white-space: normal;">Sign Off on Release Candidate</td>
-<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
+<td style="word-wrap: break-word; white-space: normal;"><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Jen Zink, WG Leads</td>
 <td style="word-wrap: break-word; white-space: normal;">Damien Fair</td>
 <td style="text-align: center;">-/-</td>
@@ -399,7 +399,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
   <td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep</td>
   <td style="word-wrap: break-word; white-space: normal;">Determine Release Candidate and Process with Sign Off</td>
-  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#washu" target="_blank">WashU</a></span></td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#washu">WashU</a></span></td>
   <td style="word-wrap: break-word; white-space: normal;">MRI WGs, Eric Feczko, Jen Zink</td>
   <td style="word-wrap: break-word; white-space: normal;">Chris Smyser</td>
   <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
@@ -407,7 +407,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data Process</td>
 <td style="word-wrap: break-word; white-space: normal;">De-identification of BIDS data</td>
-<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Sriharshitha Anuganti</td>
 <td style="word-wrap: break-word; white-space: normal;">Sriharshitha Anuganti	</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
@@ -415,7 +415,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data Process</td>
 <td style="word-wrap: break-word; white-space: normal;">Run <a href="https://docs.hbcdstudy.org/latest/instruments/processing/#overview">processing pipelines</a></td>
-<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">CBRAIN</td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
 <td>[<b>C</b>] <span class="tooltip tooltip-left">WG SMEs<span class="tooltiptext">Workgroup Subject Matter Experts</span></span></td>
@@ -423,7 +423,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data Process</td>
 <td style="word-wrap: break-word; white-space: normal;">Transfer <span class="tooltip tooltip-left">derivatives<span class="tooltiptext">processed pipeline outputs</span></span> to LORIS, re-inserting DCCIDs</td>
-<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Harshitha Anuganti, Erik Lee, Tim Hendrickson, Jesse Erdmann</td>
 <td style="word-wrap: break-word; white-space: normal;">Harshitha Anuganti</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
@@ -431,7 +431,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data Process</td>
 <td style="word-wrap: break-word; white-space: normal;">Ingest derivatives into LORIS and create tabulated imaging files</td>
-<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Cecile Madjar, Santiago Torres, Samir Das</td>
 <td style="word-wrap: break-word; white-space: normal;">Cecile Madjar</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
@@ -439,7 +439,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data QC + Action</td>
 <td style="word-wrap: break-word; white-space: normal;">Post-processing QC (Manual & Automated)</td>
-<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#center-for-developmental-neuroimaging" target="_blank">CDNI (UMN)</a></span></td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#center-for-developmental-neuroimaging">CDNI (UMN)</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Michael Anderson</td>
 <td style="word-wrap: break-word; white-space: normal;">Eric Feczko</td>
 <td>[<b>C</b>] Lucille Moore<br>[<b>I</b>] Damien Fair</td>
@@ -447,7 +447,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data Process</td>
 <td style="word-wrap: break-word; white-space: normal;">Move source BIDS to platform</td>
-<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee, Tim Hendrickson, Data Loading Team (Lasso)</td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
@@ -455,7 +455,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data Process</td>
 <td style="word-wrap: break-word; white-space: normal;">Move BIDS phenotype files to platform</td>
-<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Harshitha Anuganti, Erik Lee, Tim Hendrickson, Jesse Erdmann, Data Loading Team (Lasso)</td>
 <td style="word-wrap: break-word; white-space: normal;">Harshitha Anuganti</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
@@ -463,7 +463,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">Data Process</td>
 <td style="word-wrap: break-word; white-space: normal;">Move raw BIDS and derivatives to platform</td>
-<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee, Tim Hendrickson</td>
 <td style="word-wrap: break-word; white-space: normal;">Erik Lee</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
@@ -487,7 +487,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
     <td style="word-wrap: break-word; white-space: normal;">Documentation of Processes</td>
     <td style="word-wrap: break-word; white-space: normal;">Documentation of processes, known issues, etc.</td>
-    <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span><br><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#center-for-developmental-neuroimaging" target="_blank">CDNI</a></span></td>
+    <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span><br><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#center-for-developmental-neuroimaging">CDNI</a></span></td>
     <td style="word-wrap: break-word; white-space: normal;">MRI <span class="tooltip">WG SMEs<span class="tooltiptext">Workgroup Subject Matter Experts</span></span>, HDCC</td>
     <td style="word-wrap: break-word; white-space: normal;">Lucille Moore</td>
     <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
@@ -495,7 +495,7 @@ Below we outline the individuals responsible for various stages of the release a
 <tr>
     <td style="word-wrap: break-word; white-space: normal;">Sign Off</td>
     <td style="word-wrap: break-word; white-space: normal;">SMEs sign off on data</td>
-    <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
+    <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a></span></td>
     <td style="word-wrap: break-word; white-space: normal;">Jen Zink, Eric Feczko</td>
     <td style="word-wrap: break-word; white-space: normal;">Jen Zink</td>
     <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
@@ -527,14 +527,14 @@ Below we outline the individuals responsible for various stages of the release a
 <tbody>
 <tr>
   <td style="word-wrap: break-word; white-space: normal;">Pre-Release Prep: Determine Release Candidate and Process with Sign Off</td>
-  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland">UMD EEG Core</a></span></td>
   <td>Santiago Morales, EEG WG</td>
   <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
   <td>[<b>I</b>] Program</td>
 </tr>
 <tr>
 <td style="word-wrap: break-word; white-space: normal;">QC Pre-release data</td>
-<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD EEG Core</a></span></td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#university-of-maryland">UMD EEG Core</a></span></td>
 <td style="word-wrap: break-word; white-space: normal;">Santiago Morales</td>
 <td style="word-wrap: break-word; white-space: normal;">Nathan Fox</td>
 <td>[<b>I</b>] Program</td>
@@ -594,7 +594,7 @@ Below we outline the individuals responsible for various stages of the release a
 </tr>
 <tr>
 <td>QC & sign off for prerelease data</td>
-<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
+<td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a></span></td>
 <td>Workgroup SMEs</td>
 <td>Jen Zink</td>
 <td style="text-align: center;">-/-</td>
@@ -659,56 +659,56 @@ There are several regular calls where release action items are discussed and tra
 <tr>
   <td><a href="https://docs.google.com/document/d/1CQNtqezeXOiTg_13XIFn0v7u4aymY40JyKAXI4QU4Hk/edit?pli=1&tab=t.0">HDCC Data Release WG</a> <span class="tooltip"><i class="fa-solid fa-star" style="color: blue"></i><span class="tooltiptext">Primary meeting dedicated to discussion of data release items</span></span><br><i>Mondays 11 AM CT</i></td>
   <td>Maren Macgregor-Hannah</td>
-  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso">Lasso</a></td>
 </tr>
 <tr>
   <td style="word-wrap: break-word; white-space: normal;">HBCD Workgroup calls<br>(action items track on<a href="https://ucsd-actri.monday.com/boards/6045591843">Monday.com</a>)<br><i>Time/day varies</i></td>
   <td style="word-wrap: break-word; white-space: normal;">First 10 min of WG calls are dedicated to discussing QC and data releases, facilitated by Jen Zink</td>
-  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#hbcd-workgroups" target="_blank">HBCD Workgroups</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#hbcd-workgroups">HBCD Workgroups</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso">Lasso</a></span></td>
 </tr>
 <tr>
   <td>MRI QC<br><i>Wednesdays 4 PM CT (biweekly)</i></td>
   <td>Don Hagler</td>
   <td>
     <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
-      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span>
+      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris">LORIS</a></span>
     <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
-      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span>
+      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute">JCVI</a></span>
     <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
-      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#health-sciences-technology" target="_blank">HST</a></span>
+      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#health-sciences-technology">HST</a></span>
     <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
-      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">MIDB</a></span>
+      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#midb-informatics-hub-msi">MIDB</a></span>
   </td>
 </tr>
 <tr>
   <td>ABCD-HBCD Release<br><i>Tuesdays 10 AM CT</i></td>
   <td>Deanna Barch</td>
-  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">ABCD team (JCVI)</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute">ABCD team (JCVI)</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso">Lasso</a></span></td>
 </tr>
 <tr>
   <td>ABCD-HBCD Sync<br><i>Thursday 2 PM CT (Biweekly)</i></td>
   <td>Janosch Linkersdoerfer</td>
-  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">ABCD team (JCVI)</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span></td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute">ABCD team (JCVI)</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris">LORIS</a></span></td>
 </tr>
 <tr>
   <td><a href="https://docs.google.com/document/d/1kFCWVpvdSXFVzBajmfffIVk-LhGtFF8KP0Ifv4mJwQg/edit?tab=t.0">HDCC Architecture & Implementation</a><br><i>Tuesdays 3:30 PM CT</i></td>
   <td>Maren Macgregor-Hannah</td>
-  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#washu" target="_blank">WashU</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span></td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso">Lasso</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#washu">WashU</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute">JCVI</a></span></td>
 </tr>
 <tr>
   <td><a href="https://docs.google.com/document/d/1e9sutOlHjfevRgCBVjyl-hy-PxnS5Ee8IVDn8TPyirY/edit?tab=t.0">HBCD LORIS Implementation</a><br><i>Wednesdays 1:30 PM CT</i></td>
   <td>Maren Macgregor-Hannah</td>
-  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span></td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso">Lasso</a></span></td>
 </tr>
 <tr>
   <td><a href="https://docs.google.com/document/d/1_GMbyzbhkEeS1mFHdClFOWjo6V_XC7QHtzTiIT6GUfw/edit?tab=t.0">HDCC IT Workgroup Call</a> <span class="tooltip"><i class="fa-solid fa-circle-info" style="color: blue"></i><span class="tooltiptext">EEG, Biospecimens, and other Workgroups can use this time to review IT needs that sometimes pertain to the release</span></span><br><i>Fridays 3 PM CT</i></td>
   <td>Maren Macgregor-Hannah</td>
-  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso" target="_blank">Lasso</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute" target="_blank">JCVI</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-maryland" target="_blank">UMD</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#libr" target="_blank">LIBR</a></span></td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso">Lasso</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute">JCVI</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-maryland">UMD</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#libr">LIBR</a></span></td>
 </tr>
 <tr>
   <td><a href="https://docs.google.com/document/d/1jGtWPspUv5fJGooBrCUSBMgt91BW40YIMzaa3zO1BQ0/edit?tab=t.0">HDCC/HCAC Biweekly Calls</a><br><i>Friday 2 PM CT (biweekly)</i></td>
   <td>Site monitors</td>
-  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;">HCAC</span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota" target="_blank">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#washu" target="_blank">WashU</a></span></td>
+  <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;">HCAC</span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#washu">WashU</a></span></td>
 </tr>
 <tr>
   <td>EMR<br><i>Mondays 4 PM CT (biweekly)</i></td>
@@ -716,13 +716,13 @@ There are several regular calls where release action items are discussed and tra
   <td>
     <span style="display: inline-block; background-color: #f0f8ff; color: #333;
       border-radius: 12px; padding: 1px 5px; font-size: 1em;
-      border: 1px solid #d0e7ff;"><a href="../../orgcharts/#health-sciences-technology" target="_blank">HST</a></span>
+      border: 1px solid #d0e7ff;"><a href="../../orgcharts/#health-sciences-technology">HST</a></span>
     <span style="display: inline-block; background-color: #f0f8ff; color: #333;
       border-radius: 12px; padding: 1px 5px; font-size: 1em;
-      border: 1px solid #d0e7ff;"><a href="../../orgcharts/#hbcd-workgroups" target="_blank">HBCD Workgroup</a></span>
+      border: 1px solid #d0e7ff;"><a href="../../orgcharts/#hbcd-workgroups">HBCD Workgroup</a></span>
     <span style="display: inline-block; background-color: #f0f8ff; color: #333;
       border-radius: 12px; padding: 1px 5px; font-size: 1em;
-      border: 1px solid #d0e7ff;"><a href="../../orgcharts/#libr" target="_blank">LIBR</a></span>
+      border: 1px solid #d0e7ff;"><a href="../../orgcharts/#libr">LIBR</a></span>
   </td>
 </tr>
 <tr>
@@ -730,11 +730,11 @@ There are several regular calls where release action items are discussed and tra
   <td>Maren Macgregor-Hannah</td>
   <td>
     <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
-      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris" target="_blank">LORIS</a></span>
+      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris">LORIS</a></span>
     <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
-      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#health-sciences-technology" target="_blank">HST</a></span>
+      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#health-sciences-technology">HST</a></span>
     <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
-      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#hbcd-workgroups" target="_blank">HBCD Workgroup</a></span>
+      font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#hbcd-workgroups">HBCD Workgroup</a></span>
     <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px;
       font-size: 1em; border: 1px solid #d0e7ff;">App Devs</span>
   </td>
@@ -759,7 +759,7 @@ There are several regular calls where release action items are discussed and tra
   <td>Storage of all internal documentation and protocols</td>
 </tr>
 <tr>
-  <td><a href="../../orgcharts/#airtable" target="_blank">AirTable</a></td>
+  <td><a href="../../orgcharts/#airtable">AirTable</a></td>
   <td style="word-wrap: break-word; white-space: normal;">Document current protocol, change requests (REDCap or Responsible Conduct request modifications), IRB approvals, initial list of included measures in data releases, QC pages, SC approval, etc. Also used to keep track of staff member item-level access to different working platforms and related required paperworks.</td>
 </tr>
 <tr>
