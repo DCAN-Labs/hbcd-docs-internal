@@ -5,6 +5,8 @@ import re
 import markdown
 import pandas as pd
 
+# Currently this code only generate the table for resolved known issues/pending updates based on a defined BR, using monday.com table data as inputs
+
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
