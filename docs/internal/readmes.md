@@ -4,9 +4,6 @@ Each HBCD Study instrument has a dedicated README page in the [HBCD Data Release
 
 ## Using the Form
 
-!!! warning "README Forms are Under Active Development"
-    These forms are under active development to make things as easy as possible for SMEs - please reach out to use directly with any questions or suggested improvements!
-
 <!-- A separate form link is provided for each instrument and each release. **Forms are pre-populated with existing information for you to modify as needed.** For current release documentation, once you submit changes, the form information is translated to update the README page on the [HBCD Data Release Docs](https://docs.hbcdstudy.org/) site -->
 
 ### General Overview
