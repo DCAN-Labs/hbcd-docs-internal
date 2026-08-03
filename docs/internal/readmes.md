@@ -1,27 +1,32 @@
-# HBCD Instrument Documentation README Instructions
+# How To Submit or Update Instrument READMEs
 
-Each HBCD study instrument has a dedicated README page on the [HBCD Data Release Docs](https://docs.hbcdstudy.org/). These pages are directly generated from the information provided by SMEs via instrument-specific forms. The forms serve as the living source of documentation for each instrument and can be updated over time as documentation evolves across data releases.
+Each HBCD Study instrument has a dedicated README page in the [HBCD Data Release Docs](https://docs.hbcdstudy.org/). README pages are generated from documentation provided by SMEs via interactive forms that can be updated on a rolling basis, whether in preparation for a coming release or to make corrections to current release documentation.
 
 ## Using the Form
 
-!!! warning "Form under active development"
-    These forms are actively being improved to make documentation as easy as possible. If you encounter any issues or have suggestions, please let us know so we can address them quickly.
-    
-### General Guidelines
+!!! warning "README Forms are Under Active Development"
+    These forms are under active development to make things as easy as possible for SMEs - please reach out to use directly with any questions or suggested improvements!
 
-- Each form is pre-populated with existing documentation so you can review, update, or add new content as needed
-- Information submitted through the form is used to generate the instrument's README page on the HBCD Data Release Docs. Please review your changes carefully before submitting a form for a current release
+<!-- A separate form link is provided for each instrument and each release. **Forms are pre-populated with existing information for you to modify as needed.** For current release documentation, once you submit changes, the form information is translated to update the README page on the [HBCD Data Release Docs](https://docs.hbcdstudy.org/) site -->
+
+### General Overview
+
+ - A separate form link is provided for each instrument and each release.
+ - Forms are pre-populated with existing information for you to modify as needed.  
+ - For updates to current release documentation, cnce you submit changes, the form information is translated to update the README page on the [HBCD Data Release Docs](https://docs.hbcdstudy.org/) site
+
+
+### New Instrument READMEs
+
+- New instrument submissions populate a **draft version** of the documentation site. Although the draft site is publicly accessible, it is not linked from the public data release
+- You can return to the form and update your submission at any time, so we encourage you to submit available information early and refine it as documentation develops
+- Prior to publication of the README alongside a new data release, we will do a final review and work with you to make any final edits/polish necessary.
+
+### Best Practice/Suggestions for New READMEs
+
 - **Write for an external research audience.** Focus on helping researchers understand and use the data. Avoid references to HBCD-specific workflows, internal documentation, data management systems, or study operations that would not be meaningful to external users.
-
-### Submitting a New README
-
-If you are creating documentation for a new instrument, your submission will update a **draft version** of the documentation site. Although the draft site is publicly accessible, it is not advertised or linked from the public release. You can revisit this form and update the documentation as many times as you want, so we encourage you to submit the information you have in order to begin building out your webpage. 
-
-##### Best Practices
-
-- Draft longer sections (for example, Instrument Details, Quality Control, and Scoring) outside the form first. If multiple contributors are involved, we recommend collaborating in Google Docs and then copying the finalized text into the form
-- Designate a single person to submit updates for a given instrument, as simultaneous edits may overwrite one another
-- After submission, we will generate the README page and work with you to review and finalize the content as needed.
+- For longer sections (which may include, depending on the measure: *Instrument Details*, *Quality Control*, and *Scoring Procedures*, etc.), we encourage you to enter your initial draft early on to begin building out the page, but then work on additional polish and collaboration outside of the form to avoid loss of work
+- Designate a single person to submit updates for each instrument, as simultaneous edits may overwrite one another.
 
 ### Resources
 
@@ -32,5 +37,6 @@ If you are creating documentation for a new instrument, your submission will upd
 
 Please email Lucille Moore (lmoore@umn.edu), Stephanie Averill (saverill@ucsd.edu), and/or Jen Zink (jzink@lassoinformatics.com) if you have any questions about this form or need guidance! 
 
+<!-- Information submitted through the form is used to generate the instrument's README page on the HBCD Data Release Docs. -->
 
-
+ <!-- - Please review your changes carefully before submitting change form for a current release -->
