@@ -87,11 +87,13 @@ nav:
     - Exclusions & Filtering: changelog/exclusions.md
     - Known Issues & Pending Updates: changelog/knownissues.md
     - Release Notes:   
+        - Release 3.0 Archive: 
+            - BR 30.0: changelog/versions/BR3X/BR30.0.md
         - Release 2.1 Archive: 
-            - BR 21.3: changelog/versions/BR21.3.md
-            - BR 21.2: changelog/versions/BR21.2.md
-            - BR 21.1: changelog/versions/BR21.1.md
-            - BR 21.0: changelog/versions/BR21.0.md
+            - BR 21.3: changelog/versions/BR2X/BR21.3.md
+            - BR 21.2: changelog/versions/BR2X/BR21.2.md
+            - BR 21.1: changelog/versions/BR2X/BR21.1.md
+            - BR 21.0: changelog/versions/BR2X/BR21.0.md
         - Release 2.0 Archive:
             - BR 20.2.3: changelog/versions/BR2X/BR20.2.3.md
             - BR 20.2.2: changelog/versions/BR2X/BR20.2.2.md

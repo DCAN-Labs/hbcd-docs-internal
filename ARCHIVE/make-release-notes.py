@@ -5,16 +5,13 @@ import markdown
 import numpy as np
 import re
 
-# ADD WAY TO SPECIFY BR-ONLY?
-
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
+# DEFINE BR and outputs filepath 
+BR = "30.0"  
+
 XLSX= "latest.xlsx"
-INTERNAL_MD = "../docs/changelog/knownissues.md"
-
-
-# INTERNAL_MD = "../docs/changelog/test.md"
-
+INTERNAL_MD = f"../docs/changelog/versions/BR3X/BR{BR}.md"
 
 # FUNCTIONS
 
@@ -35,8 +32,6 @@ def load_and_filter_xlsx(xlsx_path):
     df = df.apply(lambda col: col.str.strip() if col.dtype == "object" else col)
 
     return df
-
-# TEST NEW LOGIC
 
 def map_type(value):
     if "issue" in value:
@@ -77,14 +72,12 @@ def build_table(domain, rows):
 <thead>
 <tr style="font-size: 1.1em;">
 <th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
+</tr>
 </thead>
 <tbody>
 """)
 
-    for issue_type, table, summary_html, br in rows:
+    for issue_type, table, summary_html in rows:
         table_parts.append("<tr>")
         if issue_type == "Issue":
             type_label = '<i class="fas fa-bug icon-bug"></i>'
@@ -93,19 +86,6 @@ def build_table(domain, rows):
         table_parts.append(f"<td>{type_label}</td>")
         table_parts.append(f"<td>{html.escape(str(table))}</td>")
         table_parts.append(f"<td>{summary_html}</td>")
-
-        # BR styling
-        if str(br).upper() == "TBD":
-            pill_class = "tbd-pill"
-        elif "R" in str(br).upper():
-            pill_class = "pr-pill"
-        else:
-            # normalized_br = str(br).replace(".", "")
-            pill_class = f"br-pill"
-
-        table_parts.append(
-            f"<td style='text-align: center;'><span class='{pill_class}'>{html.escape(str(br))}</span></td>"
-        )
         table_parts.append("</tr>")
     table_parts.append("</tbody></table>")
 
@@ -114,28 +94,19 @@ def build_table(domain, rows):
 # WORK
 df = load_and_filter_xlsx(XLSX)
 
-# Drop unecessary columns (for troubleshooting purposes)
+# Drop unecessary columns (not technically required, but easier if troubleshooting)
 df = df.drop(['Name'], axis=1)
 df = df.drop(['Status'], axis=1)
+df = df.drop(['PR'], axis=1)
 
-# Extra steps for internal documentation
 ## Remove rows archived to BR - already documented in resolved issues page
 df = df[~(df['RTDs_Status'] == 'Archived to BR')]
 
-# Prefix PR values
-df.loc[df['PR'] != '', 'PR'] = 'R' + df.loc[df['PR'] != '', 'PR']
-
-# Treat empty strings as NaN and fill BR with PR where missing, then fill remaining with TBD
-df['BR'] = df['BR'].replace('', np.nan)
-df['BR'] = df['BR'].fillna(df['PR'])
-df['BR'] = df['BR'].replace('', np.nan)
-df['BR'] = df['BR'].fillna('TBD')
-
 # For BR values, if missing "., add it to the end of the string
-df['BR'] = df['BR'].apply(lambda x: str(x) + '.0' if str(x) != 'TBD' and '.' not in str(x) else str(x))
+df['BR'] = df['BR'].apply(lambda x: str(x) + '.0' if '.' not in str(x) else str(x))
 
-# Drop PR column for troubleshooting
-df = df.drop(['PR'], axis=1)
+## Drop all rows except those that match the specified BR 
+df = df[(df['BR'] == BR)]
 
 # Type mapping and sort by (1) domain, (2) table/topic
 df["MappedType"] = df["Type"].apply(map_type)
@@ -150,7 +121,6 @@ for _, row in df.iterrows():
     issue_type = row["MappedType"]
     table = row["Table/Topic"]
     summary_md = row["Text"]
-    br = row["BR"]
 
     # Convert Markdown → HTML & strip outer <p>
     summary_html = markdown.markdown(
@@ -160,7 +130,7 @@ for _, row in df.iterrows():
     summary_html = re.sub(r'^<p>(.*)</p>$', r'\1', summary_html, flags=re.DOTALL)
 
     grouped_by_domain.setdefault(domain, []).append(
-        (issue_type, table, summary_html, br)
+        (issue_type, table, summary_html)
     )
 
 # Generate known issues and pending tables for internal page

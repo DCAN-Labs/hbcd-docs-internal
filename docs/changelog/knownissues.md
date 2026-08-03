@@ -1,7 +1,7 @@
 <style>
 .wy-nav-content {
-    width: 100% !important;
-    max-width: 100% !important;
+    width: 90% !important;
+    max-width: 90% !important;
     flex-grow: 1 !important;
 }
 .br-pill {
@@ -88,7 +88,7 @@
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ECHO</td>
 <td>Addition of the Early Child Care and Education</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -106,25 +106,25 @@
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ERICA</td>
 <td>Remove <code>locomotor_ability</code> fields from both tables</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>MAPS-EASI</td>
 <td>Addition of the MAPS-EASI- Toddler</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>MAPS-TL (Tod)</td>
 <td>Pro-rated scoring for <code>mh_cg_mapdb__tod</code> not yet implemented; N=16 participants missing scores.</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>MCHAT</td>
 <td>Addition of the Modified Checklist for Autism in Toddlers</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 </tbody></table>
 
@@ -177,8 +177,8 @@
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Basic Demo</td>
-<td><code>screen_race_multi__*</code> variables are almost entirely coded as "0"</td>
-<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+<td>The <code>screen_race_multi__*</code> variables are almost entirely coded as '0' and should not be used for analysis. Users interested in race and ethnicity information should instead use the corresponding derived ACS race and ethnicity variable. Values will be corrected in a future release.</td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
@@ -194,9 +194,9 @@
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>RESTRUCTURE</td>
+<td>Restructure</td>
 <td>The Demographics domain includes 2 tables with derived information grouped into visit-specific data (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/">Visit Info</a>) and general demographics (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/basicdemo/">Basic Demographics</a>). In a future release, these tables will be restructured to instead organize variables as either longitudinal (dynamic measures that change over time) or global (static measures, such as sex assigned at birth and race/ethnicity).</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 </tbody></table>
 
@@ -223,7 +223,7 @@
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>MADE v1.7.0</td>
 <td>HBCD-MADE derivatives processed through updated version v1.7.0</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 </tbody></table>
 
@@ -244,7 +244,7 @@
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Implausible GA</td>
 <td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values  for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
@@ -262,7 +262,7 @@
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Multibirth Cohorts</td>
 <td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child. A future release will also populate these fields for sibling records (e.g., HBCD Multiple Birth – Sibling) and include a <code>FamilyID</code> field to identify sibling relationships. Until then, users should obtain family-level values for sibling participants by referencing the corresponding Main Child in the mapping file.</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -334,7 +334,7 @@
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>CDI</td>
 <td>Percentiles incorrectly converted for N=36 cases, resulting in values &gt;100 ('Adjusted Percentile' incorrectly parsed from 'Total Produced' instead of 'Total Produced Percentile-sex (adjusted)')</td>
-<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
@@ -346,19 +346,19 @@
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Vineland</td>
 <td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix. In addition, the age of one child is outside of the valid bounds for V05.</td>
-<td style='text-align: center;'><span class='pr-pill'>R3</span></td>
+<td style='text-align: center;'><span class='pr-pill'>R3.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>CDI-2</td>
 <td>Addition of the MacArthur-Bates CDI-2 Language</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Deferred Imitation</td>
 <td>Addition of instrument: Deferred Imitation Task: Gong and Berry-Go-Round</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 </tbody></table>
 
@@ -379,7 +379,7 @@
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>GABI</td>
 <td>Addition of raw BIDS data for GABI (infant heart rate).</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 </tbody></table>
 
@@ -430,19 +430,19 @@
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Child Nutrition</td>
 <td>Addition of the Child Nutrition Questionnaire.</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Med History V1</td>
 <td>Addition of V06</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>PEDsQL</td>
 <td>Addition of the PEDsQL</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -532,13 +532,13 @@
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Demo</td>
 <td>Addition of V6 Adult</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Demo</td>
 <td>Addition of V6 Child</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -550,7 +550,7 @@
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Incarceration</td>
 <td>Addition of the Incarceration Questionnaire</td>
-<td style='text-align: center;'><span class='br-pill'>30</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
