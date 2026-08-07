@@ -194,7 +194,7 @@
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Static & Dynamic Tables</td>
+<td>Static &amp; Dynamic Tables</td>
 <td>The Demographics domain includes 2 tables with derived information grouped into visit-specific data (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/">Visit Info</a>) and general demographics (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/basicdemo/">Basic Demographics</a>). In a future release, these tables will be restructured to instead organize variables as either longitudinal (dynamic measures that change over time) or global (static measures, such as sex assigned at birth and race/ethnicity).</td>
 <td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
@@ -260,9 +260,15 @@
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Multibirth Cohorts</td>
-<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child. A future release will also populate these fields for sibling records (e.g., HBCD Multiple Birth – Sibling) and include a <code>FamilyID</code> field to identify sibling relationships. Until then, users should obtain family-level values for sibling participants by referencing the corresponding Main Child in the mapping file.</td>
+<td>Blank Fields for Siblings</td>
+<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child and not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants by referencing the corresponding Main Child values (see mapping between Multibirth participants IDs in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>).</td>
 <td style='text-align: center;'><span class='br-pill'>30.0</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>FamilyID</td>
+<td>A <code>FamilyID</code> field will be added to instruments to identify sibling relationships. Until then, sibling ID mapping (Main Child vs Sibling) is provided in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -418,7 +424,7 @@
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Anthropometrics</td>
 <td>Add sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>).</td>
-<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -508,7 +514,7 @@
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Demo</td>
 <td>Relationship status was inappropriately collected at V02/V03 for all cohorts and should have been restricted to cases where there was a change in caregiver (i.e. only Alternative Caregiver cohorts should have this field populated). Data for non-ACG cohorts to be excluded.</td>
-<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
