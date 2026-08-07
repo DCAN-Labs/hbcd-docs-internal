@@ -194,7 +194,7 @@
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Restructure</td>
+<td>Static & Dynamic Tables</td>
 <td>The Demographics domain includes 2 tables with derived information grouped into visit-specific data (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/">Visit Info</a>) and general demographics (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/basicdemo/">Basic Demographics</a>). In a future release, these tables will be restructured to instead organize variables as either longitudinal (dynamic measures that change over time) or global (static measures, such as sex assigned at birth and race/ethnicity).</td>
 <td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
