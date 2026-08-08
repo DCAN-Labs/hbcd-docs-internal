@@ -1072,105 +1072,27 @@ flowchart TB
 
 ## HBCD Workgroups
 
-HBCD Workgroups (WG) that interface heavily with HDCC include the following (the full list of Workgroups can be found on the HBCD Study site [here](https://hbcdstudy.org/workgroups-and-committees/)). In addition to WG chairs (listed below), subject matter experts (**SMEs**) are also critically involved with interfacing with the HDCC - a full list of SMEs and additional Workgroup information can be found on AirTable [here](https://airtable.com/appn4aOIu0MgKDF5I/shrE5KLPOKWinGcWH/tblGJaQwPti6T61J1).
+HBCD Workgroups (WG) that interface heavily with HDCC include the following. The full list of Workgroups, including WG chairs, can be found on the HBCD Study site [here](https://hbcdstudy.org/workgroups-and-committees/). In addition to WG chairs, subject matter experts (**SMEs**) are also critically involved with interfacing with the HDCC - a full list of SMEs and additional Workgroup information can be found on AirTable [here](https://airtable.com/appn4aOIu0MgKDF5I/shrE5KLPOKWinGcWH/tblGJaQwPti6T61J1).
 
-#### WG Chairs & Primary HDCC Liaisons
+##### HDCC Liaisons for Workgroups
 
-Contact emails for Workgroup chairs are available [here](https://hbcdstudy.org/workgroups-and-committees/).
+- **Jen Zink (Lasso):**       
+Behavior and Caregiver-Child Interaction, Biostatistics, Demographics, Neurocognition & Language, Novel Tech & Wearables, Physical Health, Pregnancy & Exposure, Social & Environmental Determinants, Transitions in Care
+- **Matt Schmidt (HST):**     
+Biospecimens & Omics, Geocoding & Linked External Data
+- **Maren Macgregor-Hannah (UMN):**     
+EEG, MRI
 
-<table class="table-no-vertical-lines">
-<thead>
-  <tr>
-    <th>HBCD Workgroup</th>
-    <th>Workgroup Chairs</th>
-  </tr>
-</thead>
-<tbody>
-  <!-- Jen Zink (Lasso) -->
-  <tr style="background-color: #ead4ff;">
-  <td colspan="2"><b>HDCC Liaison: Jen Zink</b> <span class='org-pill'>Lasso</span></td>
-  </tr>
-  <tr>
-  <td>Behavior and Caregiver-Child Interaction</td>
-  <td>Renee Edwards, Beth Planalp
-  </td>
-  </tr>
-  <tr>
-    <td>Biostatistics</td>
-    <td>Wesley Thompson, Yajuan Si</td>
-  </tr>
-  <tr>
-    <td>Demographics</td>
-    <td>Natalie Slopen, Heather Burris, Kathy Cole, Stephanie Engel</td>
-  </tr>
-  <tr>
-    <td>Neurocognition & Language</td>
-    <td>Julie Kable, Alexi Potter</td>
-  </tr>
-  <tr>
-    <td>Novel Tech & Wearables</td>
-    <td>Bill Fifer, Beth Smith</td>
-  </tr>
-  <tr>
-    <td>Physical Health</td>
-    <td>Leigh-Anne Cioffredi, Sara DeMauro</td>
-  </tr>
-  <tr>
-    <td>Pregnancy & Exposure</td>
-    <td>Gretchen Bandoli, Claire Coles, Lynne Smith</td>
-  </tr>
-  <tr>
-    <td>Social & Environmental Determinants</td>
-    <td>Ashley Acheson, Lea Yerby</td>
-  </tr>
-  <tr>
-    <td>Transitions in Care</td>
-    <td>Julie Poehlmann-Tynan, Rebecca Shlafer</td>
-  </tr>
-
-  <!--Matt Schmidt -->
-  <tr style="background-color: #ead4ff;">
-  <td colspan="2"><b>HDCC Liaison: Matt Schmidt</b> <span class='org-pill'>HST</span></td>
-  </tr>
-  <tr>
-    <td>Biospecimens & Omics</td>
-    <td>Julie Croff, Elinor Sullivan</td>
-  </tr>
-  <tr>
-    <td>Geocoding & Linked External Data</td>
-    <td>Chun Fan</td>
-  </tr>
-
-<!-- Maren Macgregor-Hannah (UMN) -->
-<tr style="background-color: #ead4ff;">
-<td colspan="2"><b>HDCC Liaison: Maren Macgregor-Hannah</b> <span class='org-pill'>UMN</span></td>
-</tr>
-  <tr>
-    <td>EEG</td>
-    <td>Nathan Fox, Koraly Perez-Edgar
-    </td>
-  </tr>
-  <tr>
-    <td>Magnetic Resonance Imaging (MRI)</td>
-    <td>Chris Smyser, Anders Dale, Damien Fair</td>
-</tr>
-</tbody>
-</table>
-
-#### MRI Subgroups
+##### MRI Subgroups, Modality Leads, & Vendor SMEs
 
 <table class="compact-table-no-vertical-lines">
-  <caption>Modality Leads and Vendor Subject Matter Experts (SMEs)</caption>
   <thead>
     <tr>
-      <th rowspan="2" style="text-align: center;">Modality</th>
-      <th rowspan="2" style="text-align: center;">Leads</th>
-      <th colspan="3" style="text-align: center;">Vendor SMEs</th>
-    </tr>
-    <tr>
-      <th style="text-align: center;">Siemens</th>
-      <th style="text-align: center;">Philips</th>
-      <th style="text-align: center;">GE</th>
+      <th>Modality</th>
+      <th>Leads</th>
+      <th>Siemens SME</th>
+      <th>Philips SME</th>
+      <th>GE SME</th>
     </tr>
   </thead>
   <tbody>
@@ -1178,15 +1100,19 @@ Contact emails for Workgroup chairs are available [here](https://hbcdstudy.org/w
       <th scope="row">Structural</th>
       <td>Dylan Tisdall, Jed Elison</td>
       <td>Dylan Tisdall</td>
-      <td>Allen Newton</td>
-      <td>Doug Dean</td>
+      <td rowspan="2">Allen Newton</td>
+      <td rowspan="3">Doug Dean</td>
     </tr>
     <tr>
       <th scope="row">Functional</th>
       <td>Jennifer Vannest, Chad Sylvester</td>
       <td>Michael Harms</td>
-      <td>Allen Newton</td>
-      <td>Doug Dean</td>
+    </tr>
+      <tr>
+      <th scope="row">Quantitative</th>
+      <td>Borjan Gagoski, Doug Dean</td>
+      <td>Borjan Gagoski</td>
+      <td>Mary-Kate Manhard</td>
     </tr>
     <tr>
       <th scope="row">Diffusion</th>
@@ -1194,13 +1120,6 @@ Contact emails for Workgroup chairs are available [here](https://hbcdstudy.org/w
       <td>Hao Huang</td>
       <td>Peter van Zilj, Jessica Wisnowski</td>
       <td>Andy Alexander</td>
-    </tr>
-    <tr>
-      <th scope="row">Quantitative</th>
-      <td>Borjan Gagoski, Doug Dean</td>
-      <td>Borjan Gagoski</td>
-      <td>Mary-Kate Manhard</td>
-      <td>Doug Dean</td>
     </tr>
     <tr>
       <th scope="row">Spectroscopy</th>
