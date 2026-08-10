@@ -1,57 +1,64 @@
-!!! warning "UNDER CONSTRUCTION"
-    These workflows are under active development to streamline - please reach out to us directly if changes to your documentation are needed while we polish the worfklows and associated documentation.
+# Instrument README Instructions
 
-# How to Update/Add Instrument READMEs
+Each HBCD Study instrument has a dedicated README page in the **HBCD Data Release Docs [Study Instruments](https://docs.hbcdstudy.org/latest/instruments/) section**. README pages are generated from documentation provided by SMEs via interactive forms that are updated on a rolling basis, whether in preparation for a coming release or to make corrections to current release documentation. 
 
-Each HBCD Study instrument has a dedicated README page in the [HBCD Data Release Docs](https://docs.hbcdstudy.org/). README pages are generated from documentation provided by SMEs via interactive forms that can be updated on a rolling basis, whether in preparation for a coming release or to make corrections to current release documentation.
+## How to Use Forms
 
-## Using the Form
+- SMEs will be provided with a specific form link tied to each instrument README
+- When you load a form, it will be pre-populated with all pre-existing information for the instrument for you to modify as needed
+- **Don't be afraid to hit Submit before you are done updating the form** - the form is meant to be interactive such that you can revisit and update it on a rolling basis. We advise submitting changes whenever you need to step away to ensure your updates are saved
+- A link to the latest README page (or draft README page for future instruments) is provided in the form so you can inspect your changes when they are integrated
 
-<!-- A separate form link is provided for each instrument and each release. **Forms are pre-populated with existing information for you to modify as needed.** For current release documentation, once you submit changes, the form information is translated to update the README page on the [HBCD Data Release Docs](https://docs.hbcdstudy.org/) site -->
+## How to Handle Formatting
 
-### General Overview
+Please keep the formatting of text minimal as most of the formatting is done automatically to keep the README pages consistent across the site. That being said, certainly use bold/italics, embedded links, lists, etc. where needed to enhance the documentation.
 
-- The information in this form is parsed to generate the published README pages. You can modify the form contents after submissions, so feel free to submit the form when you complete larger sections in order to begin building out your README page
-- If multiple people are contributing, consider drafting the content in, for example, Google Docs, before entering it here - multiple conflicting submissions may result in loss of work
-Write for an external research audience. Avoid references to HBCD-specific workflows, internal documentation, data management systems, or study operations that would not help end users understand or use the data.
-After submission, we will generate the page and work with you to help finalize the content as needed
+<div class="infobox" style="background-color: #fff8e1; border-left: 4px solid #ffa500;">
+<i class="fas fa-exclamation-triangle" style="color: #ffa500;"></i>
+&nbsp;<b>Warning: Rich text fields automatically pre-populated with text in Markdown format </b>
+<br><br>
+<p>Currently, whenever a form field is pre-populated, the text is converted to <a href="https://www.markdownguide.org/cheat-sheet/#basic-syntax">Markdown format</a>. We apologize for the inconvenience; until resolved, if you are not comfortable with Markdown, here are short-term solutions:</p>
+<ol>
+<li>Keep your text in a Google doc that you can just copy and paste updated text from</li>
+<li>Use Markdown converters, e.g. copy the Markdown text into this <a href="https://markdowntorichtext.com/">Markdown to rich text converter</a> (or similar utility), convert and copy the resulting rich text back into the form, and make edits from there</li>
+</ol>
+</div>
 
+<!-- **Currently, whenever a form field is pre-populated, the text is converted to [Markdown format](https://www.markdownguide.org/cheat-sheet/#basic-syntax).** We apologize for the inconvenience; until resolved, if you are not comfortable with Markdown, here are short-term solutions:
 
+1. Keep your text in a Google doc that you can just copy and paste updated text from
+2. Use Markdown converters, e.g. copy the Markdown text into this [Markdown to rich text converter](https://markdowntorichtext.com/) (or similar utility), convert and copy the resulting rich text back into the form, and make edits from there -->
 
- - A separate form link is provided for each instrument and each release.
- - Forms are pre-populated with existing information for you to modify as needed.  
- - For updates to current release documentation, cnce you submit changes, the form information is translated to update the README page on the [HBCD Data Release Docs](https://docs.hbcdstudy.org/) site
-
-
-### New Instrument READMEs
-
-- New instrument submissions populate a **draft version** of the documentation site. Although the draft site is publicly accessible, it is not linked from the public data release
-- You can return to the form and update your submission at any time, so we encourage you to submit available information early and refine it as documentation develops
-- Prior to publication of the README alongside a new data release, we will do a final review and work with you to make any final edits/polish necessary.
-
-### Best Practice/Suggestions for New READMEs
+## Best Practice/Recommendations
 
 - **Write for an external research audience.** Focus on helping researchers understand and use the data. Avoid references to HBCD-specific workflows, internal documentation, data management systems, or study operations that would not be meaningful to external users.
 - For longer sections (which may include, depending on the measure: *Instrument Details*, *Quality Control*, and *Scoring Procedures*, etc.), we encourage you to enter your initial draft early on to begin building out the page, but then work on additional polish and collaboration outside of the form to avoid loss of work
 - Designate a single person to submit updates for each instrument, as simultaneous edits may overwrite one another.
 
-### Resources
+## Resources
 
 - [README template](https://docs.hbcdstudy.org/2.1/resources/template/): displays structure of each page and purpose of each section
 - Published READMEs: Review current README pages for examples of content and level of detail to include under [Study Instruments](https://docs.hbcdstudy.org/latest/instruments/#instruments-by-domain)
-    
+
+## How It Works
+
+Each instrument README sources most or all of its contents from a central Airtable repository that stores all instrument README information. This repository is updated and populated via external forms, with a separate link provided to SMEs per instrument. When you load a form, all of the existing information for that instrument will preload the fields.
+<p align="center"><img src="../images/README-workflow.png" alt="README updates workflow" width="700"></p>
+
 ## Need help?
 
 Please email Lucille Moore (lmoore@umn.edu), Stephanie Averill (saverill@ucsd.edu), and/or Jen Zink (jzink@lassoinformatics.com) if you have any questions about this form or need guidance! 
 
-<!-- Information submitted through the form is used to generate the instrument's README page on the HBCD Data Release Docs. -->
-
- <!-- - Please review your changes carefully before submitting change form for a current release -->
-
-<!-- 
-https://airtable.com/app1aAqDsrwdTmK6K/pagVA0APYP8tcRsa9/form
-
-"https://airtable.com/YOUR_FORM_URL_HERE?" & "prefill_Name=" & ENCODE_URL_COMPONENT({Name}) & "&prefill_ID=" & ENCODE_URL_COMPONENT({ID})   
 
 
-"https://airtable.com/appFNIPyVMDEJlCRS/pagVA0APYP8tcRsa9/form?prefill_YourLinkFieldName=" & RECORD_ID() -->
+<!-- ### New Instrument READMEs
+
+- New instrument submissions populate a **draft version** of the documentation site. Although the draft site is publicly accessible, it is not linked from the public data release
+- Prior to publication of the README alongside a new data release, we will do a final review and work with you to make any final edits/polish necessary. -->
+
+<!-- <div class="infobox" style="background-color: #fff8e1; border-left: 4px solid #ffa500;">
+  <i class="fas fa-exclamation-triangle" style="color: #ffa500;"></i>
+    &nbsp;<b>Warning: Simultaneous form submissions may overwrite one another</b>
+    <p>We recommend collaborating on and polishing the content outside of the form first and designating a single person to submit polished, updated text.</b>
+</div> -->
+    

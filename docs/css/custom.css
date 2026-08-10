@@ -382,3 +382,31 @@ code, pre {
   color: #6b7280;
   font-weight: 500;
 }
+
+
+/* =========================================================
+   INFOBOX (distinct from banners)
+========================================================= */
+.infobox {
+  margin: 1.25rem 0;
+  padding: 0.9rem 1.1rem;
+  border-left: 4px solid #199bd6;
+  border-radius: 4px;
+  background: #42a2cf17;
+  color: #2f3742;
+}
+.infobox > strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #263746;
+  font-size: 0.95rem;
+}
+.infobox p {
+  margin: 0;
+}
+.infobox ul,
+.infobox ol {
+  margin-top: 0.3rem !important;
+  margin-bottom: 0 !important;
+  font-size: 0.9em;
+}
