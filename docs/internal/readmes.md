@@ -1,54 +1,76 @@
 # Instrument README Instructions
 
-Each HBCD Study instrument has a dedicated README page in the **HBCD Data Release Docs [Study Instruments](https://docs.hbcdstudy.org/latest/instruments/) section**. README pages are generated from documentation provided by SMEs via interactive forms that are updated on a rolling basis, whether in preparation for a coming release or to make corrections to current release documentation. 
+Each HBCD Study instrument has a README page in the [HBCD Data Release Docs - Study Instruments](https://docs.hbcdstudy.org/latest/instruments/). SMEs use instrument-specific forms to review and update README content for upcoming and current data releases. Form links have already been provided for specific instruments, but all relevant links will be shared with SMEs in the near future.
 
-## How to Use Forms
+## Quick Start
 
-- SMEs will be provided with a specific form link tied to each instrument README
-- When you load a form, it will be pre-populated with all pre-existing information for the instrument for you to modify as needed
-- **Don't be afraid to hit Submit before you are done updating the form** - the form is meant to be interactive such that you can revisit and update it on a rolling basis. We advise submitting changes whenever you need to step away to ensure your updates are saved
-- A link to the latest README page (or draft README page for future instruments) is provided in the form so you can inspect your changes when they are integrated
+1. **Open your instrument-specific form**      
+    The form will be pre-populated with the instrument's existing README information, including a link to the latest README on the site (or draft README on a dev version of the site for a future instrument) 
+1. **Review and update the content**       
+    Write for an external research audience, focusing on information researchers need to understand and use the data.
+1. **Submit changes as needed**     
+    You do not need to finish the entire form before submitting. The form will save your work if you close it prior to saving changes, but we still recommend that you submit whenever you need to step away for a while. 
+1. **Continue revising as needed**     
+    README documentation can be updated on a rolling basis, including corrections to current release documentation.
+1. **Designate a single form submitter**      
+    This is recommended particularly during active update periods as simultaneous form submissions may overwrite one another!
 
-## How to Handle Formatting
+## Content Guidelines
 
-Please keep the formatting of text minimal as most of the formatting is done automatically to keep the README pages consistent across the site. That being said, certainly use bold/italics, embedded links, lists, etc. where needed to enhance the documentation.
+**Keep the audience in mind!!** Avoid references to internal workflows, documentation, data management systems, or study operations unless they are necessary for understanding or using the released data. Imagine what information you would find helpful if you were an external researcher wanting to use this dataset.
 
-<div class="infobox" style="background-color: #fff8e1; border-left: 4px solid #ffa500;">
-<i class="fas fa-exclamation-triangle" style="color: #ffa500;"></i>
-&nbsp;<b>Warning: Rich text fields automatically pre-populated with text in Markdown format </b>
-<br><br>
-<p>Currently, whenever a form field is pre-populated, the text is converted to <a href="https://www.markdownguide.org/cheat-sheet/#basic-syntax">Markdown format</a>. We apologize for the inconvenience; until resolved, if you are not comfortable with Markdown, here are short-term solutions:</p>
-<ol>
-<li>Keep your text in a Google doc that you can just copy and paste updated text from</li>
-<li>Use Markdown converters, e.g. copy the Markdown text into this <a href="https://markdowntorichtext.com/">Markdown to rich text converter</a> (or similar utility), convert and copy the resulting rich text back into the form, and make edits from there</li>
-</ol>
-</div>
+**Draft longer sections outside the form.** For sections such as Instrument Details, consider entering an initial draft in the form and then doing substantial editing or collaborative review outside the form before submitting the polished version. You should generally be able to copy and paste text directly from platforms such as Google Docs into the form and your formatting (e.g. embedded links, bold/italics, etc.) should be preserved.
 
-<!-- **Currently, whenever a form field is pre-populated, the text is converted to [Markdown format](https://www.markdownguide.org/cheat-sheet/#basic-syntax).** We apologize for the inconvenience; until resolved, if you are not comfortable with Markdown, here are short-term solutions:
+**Keep formatting simple.** Much of the formatting is pre-set to maintain consistency across README pages. However, please use bold, italics, links, lists, etc. to improve readability as needed. Note that pre-populated field text will be in [Markdown format](https://www.markdownguide.org/cheat-sheet/#basic-syntax). We are working on solutions for this, but in the meantime, if you're unsure of how to update the text, here are temporary solutions to restore the rich text:
 
-1. Keep your text in a Google doc that you can just copy and paste updated text from
-2. Use Markdown converters, e.g. copy the Markdown text into this [Markdown to rich text converter](https://markdowntorichtext.com/) (or similar utility), convert and copy the resulting rich text back into the form, and make edits from there -->
+- Copy the text directly from the README on HBCD Docs into a Google doc, make your edits, and copy-paste the final text back into the form
+- Copy the form contents into a [Markdown to rich text converter](https://markdowntorichtext.com/), replace the form field contents with the rich text version, and make edits from there
 
-## Best Practice/Recommendations
-
-- **Write for an external research audience.** Focus on helping researchers understand and use the data. Avoid references to HBCD-specific workflows, internal documentation, data management systems, or study operations that would not be meaningful to external users.
-- For longer sections (which may include, depending on the measure: *Instrument Details*, *Quality Control*, and *Scoring Procedures*, etc.), we encourage you to enter your initial draft early on to begin building out the page, but then work on additional polish and collaboration outside of the form to avoid loss of work
-- Designate a single person to submit updates for each instrument, as simultaneous edits may overwrite one another.
 
 ## Resources
 
 - [README template](https://docs.hbcdstudy.org/2.1/resources/template/): displays structure of each page and purpose of each section
 - Published READMEs: Review current README pages for examples of content and level of detail to include under [Study Instruments](https://docs.hbcdstudy.org/latest/instruments/#instruments-by-domain)
 
-## How It Works
-
-Each instrument README sources most or all of its contents from a central Airtable repository that stores all instrument README information. This repository is updated and populated via external forms, with a separate link provided to SMEs per instrument. When you load a form, all of the existing information for that instrument will preload the fields.
-<p align="center"><img src="../images/README-workflow.png" alt="README updates workflow" width="700"></p>
-
 ## Need help?
 
 Please email Lucille Moore (lmoore@umn.edu), Stephanie Averill (saverill@ucsd.edu), and/or Jen Zink (jzink@lassoinformatics.com) if you have any questions about this form or need guidance! 
 
+---
+
+
+### Appendix: README Workflow & Information Storage
+
+Each instrument README sources most or all of its contents from a central Airtable repository that stores all instrument README information. This repository is updated and populated via external forms, with a separate link provided to SMEs per instrument. When you load a form, all of the existing information for that instrument prepopulates the fields.
+<p align="center"><img src="../images/README-workflow.png" alt="README updates workflow" width="700"></p>
+
+
+
+<!-- </a>.
+
+<div class="infobox" style="background-color: #fff8e1; border-left: 4px solid #ffa500;">
+<i class="fas fa-exclamation-triangle" style="color: #ffa500;"></i>
+&nbsp;<b>Tips for handling Markdown</b>
+<br><br>
+<p>Pre-populated field text will be in <a href="https://www.markdownguide.org/cheat-sheet/#basic-syntax">Markdown format</a>. We are working on solutions for this, here are recommendations in the meantime if you are not comfortable with Markdown:</p>
+<ol>
+<li>Keep your text in a Google doc that you copy and paste updated text from directly into the form</li>
+<li>Use Markdown converters, e.g. copy the Markdown text into this <a href="https://markdowntorichtext.com/">Markdown to rich text converter</a> (or similar utility), copy the converted rich text back into the form, and make edits from there</li>
+</ol>
+</div> -->
+
+
+<!-- 
+<div class="infobox" style="background-color: #fff8e1; border-left: 4px solid #ffa500;">
+  <i class="fas fa-exclamation-triangle" style="color: #ffa500;"></i>
+    &nbsp;<b>Simultaneous form submissions may overwrite one another: designate a single form submitter</b>
+</div> -->
+
+
+<!-- **Currently, whenever a form field is pre-populated, the text is converted to [Markdown format](https://www.markdownguide.org/cheat-sheet/#basic-syntax).** We apologize for the inconvenience; until resolved, if you are not comfortable with Markdown, here are short-term solutions:
+
+1. Keep your text in a Google doc that you can just copy and paste updated text from
+2. Use Markdown converters, e.g. copy the Markdown text into this [Markdown to rich text converter](https://markdowntorichtext.com/) (or similar utility), convert and copy the resulting rich text back into the form, and make edits from there -->
 
 
 <!-- ### New Instrument READMEs
@@ -62,3 +84,9 @@ Please email Lucille Moore (lmoore@umn.edu), Stephanie Averill (saverill@ucsd.ed
     <p>We recommend collaborating on and polishing the content outside of the form first and designating a single person to submit polished, updated text.</b>
 </div> -->
     
+
+<!-- ## TL;DR
+
+- You will be provided with form links tied to each instrument README for you to use to make updates
+- 
+-->
