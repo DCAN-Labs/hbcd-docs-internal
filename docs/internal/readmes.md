@@ -15,6 +15,10 @@ Each HBCD Study instrument has a README page in the [HBCD Data Release Docs - St
 1. **Designate a single form submitter**      
     This is recommended particularly during active update periods as simultaneous form submissions may overwrite one another!
 
+Note that not all changes may be possible to make via this form alone (such as larger reorganization, more complex formatting, etc.). Contact the administrators for assistance.
+
+<!-- Note that all [Known Issues and Pending Updates](https://docs.hbcdstudy.org/latest/changelog/issues-updates/) are maintained on a single page separate from the READMEs, so there is not a field to enter text for these items. Issues can be reported via HBCD DCC liaisons or the Help Desk. -->
+
 ## Key Resources
 - [README template](https://docs.hbcdstudy.org/2.1/resources/template/): displays structure of each page and purpose of each section
 - Published READMEs: Review current README pages for examples of content and level of detail to include under [Study Instruments](https://docs.hbcdstudy.org/latest/instruments/#instruments-by-domain)
