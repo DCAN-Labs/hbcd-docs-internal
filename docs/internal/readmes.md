@@ -14,7 +14,6 @@ Each HBCD Study instrument has a README page in the [HBCD Data Release Docs - St
     README documentation can be updated on a rolling basis, including corrections to current release documentation.
 1. **Designate a single form submitter**      
     This is recommended particularly during active update periods as simultaneous form submissions may overwrite one another!
-1. 
 
 ## Key Resources
 - [README template](https://docs.hbcdstudy.org/2.1/resources/template/): displays structure of each page and purpose of each section
