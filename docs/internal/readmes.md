@@ -90,3 +90,16 @@ Each instrument README sources most or all of its contents from a central Airtab
 - You will be provided with form links tied to each instrument README for you to use to make updates
 - 
 -->
+
+<!-- 
+Please keep the formatting of text very minimal as most of the formatting is done automatically to keep the README pages looking consistent across the site. That being said, certainly use bold/italics, embedded links, lists, etc. where needed to enhance the documentation.
+
+Currently, whenever information is pulled to pre-populate rich text fields (including, for example, Instrument Details, QC, Scoring Procedures, etc), it is automatically converted to Markdown format. We apologize for the inconvenience and will resolve this issue shortly.
+
+Until resolved, if you are unfamiliar with Markdown, and/or having trouble understanding how to edit the existing information, you can either work on drafting your content for those more complex sections in a google doc for now and copy-pasting that text directly into these fields or use Markdown converters:
+
+Copy the text into this Markdown to rich text converter or Markdown Live Preview
+Copy the resulting rich text back into this form
+Make your edits from there
+
+Once you submit the form, it will once again be converted back to Markdown format next time you visit the form, so you may have to repeat this process. -->
