@@ -4,8 +4,8 @@ Each HBCD Study instrument has a README page in the [HBCD Data Release Docs - St
 
 ## Quick Start
 
-1. **Open your instrument-specific form**      
-    The form will be pre-populated with the instrument's existing README information, including a link to the latest README on the site (or draft README on a dev version of the site for a future instrument) 
+1. **Open your instrument- AND release-specific form**      
+    The form will be pre-populated with the instrument's existing README information, including a link to the latest README on the site (or draft README on a dev version of the site for a future instrument). 
 1. **Review and update the content**       
     Write for an external research audience, focusing on information researchers need to understand and use the data.
 1. **Submit changes as needed**     
