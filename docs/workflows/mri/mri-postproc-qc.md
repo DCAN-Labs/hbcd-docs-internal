@@ -47,6 +47,8 @@ Outputs include:
 **Code:** [hbcd_qc_fc_analysis.r](https://github.com/DCAN-Labs/NBDC-MRI-Post-Processing-QC/blob/main/scripts/hbcd_qc_fc_analysis.r)       
 **README:** [HBCD QC-FC Analysis](https://github.com/DCAN-Labs/NBDC-MRI-Post-Processing-QC/blob/main/docs/hbcd_qc_fc_analysis.md)
 
+**Results from Release 1.0 data are currently provided in the HBCD Data Release Docs site [here](https://docs.hbcdstudy.org/latest/instruments/mri/fmri/#quality-control-summary-statistics).**
+
 ---
 
 ## Per-Network QC Impact Analysis
