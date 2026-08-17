@@ -1,9 +1,14 @@
 # MRI Pre-Release QC Details
 
-<span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/center-for-developmental-neuroimaging">CDNI</a>
-</span><br> 
+The following [Pre-release QC](../qc.md#pre-release-mri) procedures are performed by the **MRI Post-Processing QC team** (at [CDNI](../../orgcharts.md#center-for-developmental-neuroimaging)) prior to inclusion of processed MRI data in the release pool. Any major results of interest are summarized in the data release notes - see the [MRI QC Summary Statistics on HBCD Docs](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#qc-summary-statistics) for details.
 
-The following [Pre-release QC](../qc.md#pre-release-mri) procedures are performed prior to inclusion of processed MRI data in the release pool. Any major results of interest are summarized in the data release notes - see the [MRI QC Summary Statistics on HBCD Docs](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#qc-summary-statistics) for details.
+## Internal Protocol for Release Sign-Off 
+
+1. The post-proc QC team runs automated analyses (described below) and review the results 
+1. Results (figures and statistics) are emailed to the MRI Workgroup for review and discussed/reviewed at a subsequent MRI Workgroup meeting as needed to obtain SME signoff 
+1. The team meets with relevant SMEs as needed if there are concerns/issues with the data that need to be addressed prior to sign off (note that our team is not as well-equipped to review modalities such as MRS, so feedback from certain subgroups is particularly important)
+1. Documentation is revised as needed
+1. Post-proc QC team provides official sign-off on QC to Lasso
 
 ## XCP-D
 ### Structural Checks
