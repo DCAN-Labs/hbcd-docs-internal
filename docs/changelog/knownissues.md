@@ -104,12 +104,6 @@
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>ERICA</td>
-<td>Remove <code>locomotor_ability</code> fields from both tables</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>MAPS-EASI</td>
 <td>Addition of the MAPS-EASI- Toddler</td>
 <td style='text-align: center;'><span class='br-pill'>30.0</span></td>
