@@ -24,7 +24,7 @@ The reason for this is that documentation may shift between 2.1 and 3.0 releases
 <!-- Note that all [Known Issues and Pending Updates](https://docs.hbcdstudy.org/latest/changelog/issues-updates/) are maintained on a single page separate from the READMEs, so there is not a field to enter text for these items. Issues can be reported via HBCD DCC liaisons or the Help Desk. -->
 
 ## Key Resources
-- [README template](https://docs.hbcdstudy.org/2.1/resources/template/): displays structure of each page and purpose of each section
+- [README template](https://docs.hbcdstudy.org/latest/resources/template/): displays structure of each page and purpose of each section
 - Published READMEs: Review current README pages for examples of content and level of detail to include under [Study Instruments](https://docs.hbcdstudy.org/latest/instruments/#instruments-by-domain)
 
 ## Content Guidelines

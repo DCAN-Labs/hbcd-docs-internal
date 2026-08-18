@@ -219,3 +219,79 @@
   margin-right: 10px;
   color: #199bd6;
 }
+
+/* QC WORKFLOW BANNERS */
+/* Source Banner */
+.source-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures proper spacing */
+  background-color: #85ebe9;
+  border: 1px solid #3333331a;
+  padding: 0 20px;
+  border-radius: 0; /* Make square shaped */
+  font-family: Lato; 
+  color: #3e3e3e;
+  cursor: pointer; 
+  color: white;
+}
+
+/* Ingestion Banner */
+.ingestion-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures proper spacing */
+  background-color: #3fdad8;
+  border: 1px solid #3333331a;
+  padding: 0 20px;
+  border-radius: 0; /* Make square shaped */
+  font-family: Lato; 
+  color: #3e3e3e;
+  cursor: pointer; 
+  color: white;
+}
+
+/* Preproc Banner */
+.preproc-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures proper spacing */
+  background-color: #38c9ef;
+  border: 1px solid #3333331a;
+  padding: 0 20px;
+  border-radius: 0; /* Make square shaped */
+  font-family: Lato; 
+  color: #3e3e3e;
+  cursor: pointer; 
+  color: white;
+}
+
+/* Proc Banner */
+.proc-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures proper spacing */
+  background-color: #2d92d5;
+  border: 1px solid #3333331a;
+  padding: 0 20px;
+  border-radius: 0; /* Make square shaped */
+  font-family: Lato; 
+  color: #3e3e3e;
+  cursor: pointer; 
+  color: white;
+}
+
+/* Pre-release Banner */
+.pre-release-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures proper spacing */
+  background-color: #12538a;
+  border: 1px solid #3333331a;
+  padding: 0 20px;
+  border-radius: 0; /* Make square shaped */
+  font-family: Lato; 
+  color: #3e3e3e;
+  cursor: pointer;
+  color: white;
+}

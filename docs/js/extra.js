@@ -1,14 +1,3 @@
-// Function to make embedded links open new tab when clicked
-document.addEventListener('DOMContentLoaded', function() {
-    // Select all anchor tags with href starting with "http"
-    const externalLinks = document.querySelectorAll('a[href^="http"]:not([target="_blank"])');
-    
-    externalLinks.forEach(function(link) {
-        link.setAttribute('target', '_blank'); 
-        link.setAttribute('rel', 'noopener noreferrer');
-    });
-});
-
 // Collapsible content - new logic
 function toggleNotificationCollapse(banner) {
   const content = banner.nextElementSibling;
@@ -89,50 +78,4 @@ window.addEventListener('hashchange', () => {
   if (hash) {
     expandCollapsibleById(hash);
   }
-});
-
-// Click to copy 
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".copy-button").forEach(function (button) {
-      button.addEventListener("click", function () {
-          const textToCopy = this.previousElementSibling.textContent; // Get the text from the sibling element
-          navigator.clipboard.writeText(textToCopy).then(
-              () => {
-                  button.textContent = "Copied!";
-                  setTimeout(() => (button.textContent = "Copy"), 2000);
-              },
-              () => {
-                  button.textContent = "Error";
-              }
-          );
-      });
-  });
-});
-
-
-// Expand all function for measures overview page 
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleAllBtn = document.getElementById("toggle-all-btn");
-  const banners = document.querySelectorAll(".table-banner");
-  const sections = document.querySelectorAll(".table-collapsible-content");
-
-  toggleAllBtn.addEventListener("click", function () {
-      const allExpanded = Array.from(sections).every(sec => sec.classList.contains("open"));
-
-      banners.forEach(banner => {
-          if (allExpanded) {
-              // If all are expanded, collapse them
-              if (banner.nextElementSibling.classList.contains("open")) {
-                  toggleCollapse(banner);
-              }
-          } else {
-              // If not all are expanded, expand them
-              if (!banner.nextElementSibling.classList.contains("open")) {
-                  toggleCollapse(banner);
-              }
-          }
-      });
-
-      toggleAllBtn.textContent = allExpanded ? "Expand All Sections  ↕️" : "Collapse All Sections ↕️";
-  });
 });
