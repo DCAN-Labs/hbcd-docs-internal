@@ -37,11 +37,10 @@ extra:
 extra_css:
   - css/custom.css
   - css/banners.css
-  - css/hide-sidebar.css
   - css/tables.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
   - https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css
-  - css/reduce-righthand-whitespace.css
+  # - css/reduce-righthand-whitespace.css
 
 plugins:
   - search
@@ -63,24 +62,13 @@ docs_dir: docs
 
 nav: 
   - HDCC Data Release Framework: overview.md
-  - Workflows & SOPs:
-    - HDCC Structure: orgcharts.md
-    - Quality Control Procedures: workflows/qc.md
-    - Data Processing Workflows: 
-        - Overview: workflows/data-proc-wf.md
-        - Tabulated Data: workflows/tab-wf.md
-        - File-Based Data: workflows/fb-data-proc-wf.md
-        - Clinical Data Validation: workflows/clinical-wf.md
-        - Genomics: workflows/genomics.md
-    - Release SOP: workflows/release-wf.md
-    - MRI Workflows: 
-        - MR Radiology: workflows/mri/mri-issue-wf.md
-        - Post-Processing QC: workflows/mri/mri-postproc-qc.md
-  - Standards & Curation:
-    - Software & Analytic Standards: standards/software.md
-    - Data Curation Procedures: standards/curation.md
+
+  - Workgroup Instructions:
+      - Access BR Data: internal/br-review.md
+      - Report Issues: internal/reportissues.md
+      - Instrument README Instructions: internal/readmes.md
+
   - Beta Release Notes: 
-    - Exclusions & Filtering: changelog/exclusions.md
     - Known Issues & Pending Updates: changelog/knownissues.md
     - Resolved Issues Archive: changelog/resolved-archive.html
     - Release Notes:   
@@ -122,10 +110,24 @@ nav:
                 - BR 3.0: changelog/versions/BR1X/BR3.0.md
                 - BR 2.0: changelog/versions/BR1X/BR2.0.md
                 - BR 1.0: changelog/versions/BR1X/BR1.0.md
-  - Workgroup Instructions:
-      - Access BR Data: internal/br-review.md
-      - Report Issues: internal/reportissues.md
-      - Instrument README Instructions: internal/readmes.md
+
+    - Workflows & SOPs:
+      - HDCC Structure: orgcharts.md
+      - Quality Control Procedures: workflows/qc.md
+      - Data Processing Workflows: 
+          - Overview: workflows/data-proc-wf.md
+          - Tabulated Data: workflows/tab-wf.md
+          - File-Based Data: workflows/fb-data-proc-wf.md
+          - Clinical Data Validation: workflows/clinical-wf.md
+          - Genomics: workflows/genomics.md
+      - Release SOP: workflows/release-wf.md
+    - MRI Workflows: 
+        - MR Radiology: workflows/mri/mri-issue-wf.md
+        - Post-Processing QC: workflows/mri/mri-postproc-qc.md
+  - Standards & Curation:
+    - Software & Analytic Standards: standards/software.md
+    - Data Curation Procedures: standards/curation.md
+
   - Resources: 
       - General: resources/index.md  
       - HBCD & SCE Governance: resources/hst-sce-governance.md  

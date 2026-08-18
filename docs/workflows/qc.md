@@ -1,40 +1,5 @@
 # HBCD Quality Control 
 
-<div class="pill-center">
-  <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip">
-        <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
-        <span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span>
-      </span>
-    </span>
-  </a>
-  <a href="../../#project-management" target="_blank" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip">
-        <i class="fa-solid fa-diagram-project" style="color: #6300d3;"></i>
-        <span class="tooltiptext">Project Management<br><i>Click to learn more</i></span>
-      </span>
-    </span>
-  </a>
-  <a href="../../#reproducibility" target="_blank" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip">
-        <i class="fa-solid fa-code-compare" style="color: #6300d3;"></i>
-        <span class="tooltiptext">Reproducibility<br><i>Click to learn more</i></span>
-      </span>
-    </span>
-  </a>
-  <a href="../../#transparency" target="_blank" class="pill-link-wrapper">
-      <span class="pill-link">
-        <span class="tooltip">
-          <i class="fa-solid fa-eye" style="color: #6300d3;"></i>
-          <span class="tooltiptext">Transparency<br><i>Click to learn more</i></span>
-        </span>
-      </span>
-  </a>
-</div>
-
 As part of one of the primary pillars of the **HBCD Data Release Framework**, we have a comprehensive quality control (QC) process that ensures all data released to the public is **accurate**, **consistent**, and **reproducible**. This process is designed to catch errors at multiple stages, from initial data entry through to final public release.
 
 ## Pre-Release QC: 5 Stages

@@ -1,29 +1,5 @@
 # HBCD Data Processing Workflows
 
-<div class="pill-center">
-  <a href="../../#clear-objectives-and-scope" target="_blank" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip"><i class="fa-solid fa-bullseye" style="color: #6300d3;"></i><span class="tooltiptext">Clear objectives & scope<br><i>Click to learn more</i></span></span>
-    </span>
-  </a>
-  <a href="../../#data-quality-checks" target="_blank" class="pill-link-wrapper">
-      <span class="pill-link">
-        <span class="tooltip">
-          <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
-          <span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span>
-        </span>
-      </span>
-  </a>
-  <a href="../../#reproducibility" target="_blank" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip">
-        <i class="fa-solid fa-code-compare" style="color: #6300d3;"></i>
-        <span class="tooltiptext">Reproducibility<br><i>Click to learn more</i></span>
-      </span>
-    </span>
-  </a>
-</div>
-
 This section provides an overview of the complete HBCD processing workflows for both [tabulated data](tab-wf.md) and [file-based data](fb-data-proc-wf.md), detailing key processing steps, data storage locations (on S3 and other systems), and the responsible teams (see [HDCC Structure & Organizational Charts](../orgcharts.md)).
 
 <p>

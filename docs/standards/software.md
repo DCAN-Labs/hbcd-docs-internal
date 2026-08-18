@@ -14,13 +14,9 @@ Integrating new pipelines into HBCD’s file-based data processing workflow invo
 - **Integration & Testing**: Implementation and evaluation against [HBCD Pipeline & Derivative Data Standards](https://docs.hbcdstudy.org/latest/standards/processing/standards/)
 - **Final Review**: Workgroup subject matter experts (SMEs) and leads provide consultation and sign-off
 
-<div class="banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">Integration Status Tracker: View the latest pipeline integration steps and status in the <a href="https://docs.google.com/spreadsheets/d/17jad-Majiveg0vngXDQEpkSrQ7TC08Z_yaGnIr5BN_o/edit?usp=sharing">H-PIP Spreadsheet</a></span>
-</div>
-<br>
+**Integration Status Tracker: View the latest pipeline integration steps and status in the [H-PIP Spreadsheet](https://docs.google.com/spreadsheets/d/17jad-Majiveg0vngXDQEpkSrQ7TC08Z_yaGnIr5BN_o/edit?usp=sharing).**
 
-**HBCD Pipeline Integration Proposal (H-PIP) Stages**
+#### HBCD Pipeline Integration Proposal (H-PIP) Stages
 
 <table class="compact-table-no-vertical-lines">
 <thead>

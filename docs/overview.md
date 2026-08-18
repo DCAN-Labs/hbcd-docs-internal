@@ -2,55 +2,7 @@
 
 The HDCC is committed to a principled and transparent approach to data sharing. Our data release workflow emphasizes clarity, quality, reproducibility, timeliness, and transparency, drawing on international best practices and customized to the complexities of a large, multi-site longitudinal study (see [References](#references-and-frameworks)).
 
-<table class="table-no-vertical-lines">
-<tbody>
-<tr>
-<td>
-  <a href="#clear-objectives-and-scope" class="pill-link-wrapper">
-    <span class="pill-link">
-      <i class="fa-solid fa-bullseye" style="color: #6300d3;"></i></span>
-      </a><span>Clear Objectives and Scope</span>
-  </td>
-  <td>
-  <a href="#data-quality-checks" class="pill-link-wrapper">
-    <span class="pill-link">
-    <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i></span>
-    </a><span>Data Quality Checks</span>
-  </td>
-  <td>
-  <a href="#project-management" class="pill-link-wrapper">
-    <span class="pill-link">
-    <i class="fa-solid fa-diagram-project" style="color: #6300d3;"></i></span>
-  </a><span>Project Management</span>
-  </td>
-</tr>
-<td>
-  <a href="#reproducibility" class="pill-link-wrapper">
-  <span class="pill-link">
-    <i class="fa-solid fa-code-compare" style="color: #6300d3;"></i>
-  </span>
-  </a><span>Reproducibility</span>
-  </td>
-  <td>
-  <a href="#timeliness-planning" class="pill-link-wrapper">
-  <span class="pill-link">
-    <i class="fa-solid fa-clock" style="color: #6300d3;"></i>
-  </span>
-</a><span>Timeliness Planning</span>
-</td>
-<td>
-<a href="#transparency" class="pill-link-wrapper">
-  <span class="pill-link">
-    <i class="fa-solid fa-eye" style="color: #6300d3;"></i>
-  </span>
-</a><span>Transparency</span>
-</td>
-</tr>
-</tbody>
-</table>
-<br>
-
-### <span class="pill-link"><i class="fa-solid fa-bullseye" style="color: #6300d3;"></i></span> Clear Objectives and Scope
+### <i class="fa-solid fa-bullseye" style="color: #6300d3;"></i> Clear Objectives and Scope
 
 Each data release begins with a clearly defined scope to define clear goals and timelines, prevent scope creep, and transparent/clear documentation. Instruments and visits expected in the coming release, along with signoff status from leadership groups (HDCC-HCAC, program, and HBCD Workgroups) are tracked [here](https://docs.google.com/spreadsheets/d/1ABh8u6s4R3jUKUcfj2xA_nRyO1r1kQRVfwDDJRWwVq0/edit?usp=sharing).
 
@@ -59,23 +11,19 @@ Each data release begins with a clearly defined scope to define clear goals and 
 * **Timeline**: Each release will also have an anticipated timeline for all parties to set expectations (see [Release Timeline](workflows/release-wf.md#release-timeline)).
 
 
-### <span class="pill-link"><i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i></span> Data Quality Checks
+### <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i> Data Quality Checks
 
 Data quality is foundational for scientific integrity and usability. Multiple validation layers ensure we catch both systemic and isolated issues before public release. Laying out every update, change, and error for all members of the consortium to view can be difficult, but it provides a level of transparency and helps with speed to assure deadlines are met. We use a multi-layered strategy to ensure data accuracy and consistency across all sites and modalities:
 
 * **Automated Validations**: Scripts check for unit consistency, value ranges, flagging of missing data, and adherence to schema at both intake and release stages.
-
 * **Manual Checks**: Various manual check for various data types are used to supplement the automated validations to detect subtle or edge-case errors.
-
 * **Peer Review**: Data joins and transformations are independently reviewed by a second analyst to verify logic and reproducibility. 
-
 * **Statistical Profiling**: Summary statistics, outlier plots, checking participant-level scoring, are generated to identify unexpected patterns or anomalies in scoring or variable distributions. Done by SMEs and Biostatistics WG via Dashboards, and Lasso Pre-Release System. 
-
 * **Provenance Tracking**: All data are traced from raw intake through every transformation to the final public version using version-controlled pipelines. All release changes and updates are tracked, documented, versioned, and shared for the consortium (see **Beta Release Notes** section in left-hand menu). 
 
 **See full QC procedure details [here](workflows/qc.md).**
 
-### <span class="pill-link"><i class="fa-solid fa-diagram-project" style="color: #6300d3;"></i></span> Project Management
+### <i class="fa-solid fa-diagram-project" style="color: #6300d3;"></i> Project Management
 
 Our release strategy is supported by project managers who unify communication, task tracking, and release milestones to streamline coordination across stakeholders.
 
@@ -83,7 +31,7 @@ Our release strategy is supported by project managers who unify communication, t
  - **Cross-Team Coordination**: HDCC liaisons attend working group meetings, assist with change request templates, and log/track requests through our centralized platform.
  - **Release Readiness Reviews**: Structured workflows ensure that milestones like documentation completion, validation sign-offs, and stakeholder preview periods are met before public release.
 
-### <span class="pill-link"><i class="fa-solid fa-code-compare" style="color: #6300d3;"></i></span> Reproducibility
+### <i class="fa-solid fa-code-compare" style="color: #6300d3;"></i> Reproducibility
 
 Our data processing workflows are built to be fully reproducible by both internal and external teams. Reproducibility is a cornerstone of modern science. It ensures that results derived from HBCD data can be verified, trusted, and extended by the broader research community. Every element of our code base is available for the community to utilize and identify improvements and contribute to improvements of the code base. This ensures high quality packages and modernization with a fast changing scientific landscape. 
 
@@ -96,7 +44,7 @@ Our data processing workflows are built to be fully reproducible by both interna
 * **Software Documentation**: Each software module is paired with its own documentation page and linked to the associated data release.
 
 
-### <span class="pill-link"><i class="fa-solid fa-clock" style="color: #6300d3;"></i></span> Timeliness Planning
+### <i class="fa-solid fa-clock" style="color: #6300d3;"></i> Timeliness Planning
 
 We take a proactive approach to timeline management and release readiness, part of the approval process for the defined objectives and scope (see [Release Timeline](workflows/release-wf.md#release-timeline)). 
 
@@ -106,11 +54,8 @@ We take a proactive approach to timeline management and release readiness, part 
 
 * **Pre-mortem Reviews**: We are developing pre-mortem sessions to identify potential risks (e.g., missing data, corrupted files) before they can delay a release.
 
-<!-- **Why this matters:**  
-Timely releases and thoughtful approved timelines maintain community momentum and fulfill commitments. Early and iterative review avoids last-minute surprises and enables smoother rollout. -->
 
-
-### <span class="pill-link"><i class="fa-solid fa-eye" style="color: #6300d3;"></i></span> Transparency
+### <i class="fa-solid fa-eye" style="color: #6300d3;"></i> Transparency
 
 Transparency fosters trust and accountability. It empowers users to make informed decisions and strengthens the collaborative feedback loop between data producers and consumers. We commit to open and honest communication with all data users:
 

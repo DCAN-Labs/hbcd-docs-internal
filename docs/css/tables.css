@@ -120,10 +120,3 @@ th, td {
   color: #003b56;
   font-weight: 600;
 }
-
-/* SUBTLE class */
-.subtle {
-  font-size: 0.9em;
-  color: #6b7280;
-  font-weight: 400;
-}

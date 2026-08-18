@@ -4,39 +4,17 @@ This document outlines the staged workflow for selecting, releasing, and validat
 
 ## Release Timeline
 
-<div class="pill-center">
-  </a>
-    <a href="../../#clear-objectives-and-scope" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip"><i class="fa-solid fa-bullseye" style="color: #6300d3;"></i><span class="tooltiptext">Clear objectives & scope<br><i>Click to learn more</i></span></span>
-    </span>
-  </a>
-  <a href="../../#timeliness-planning" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip">
-        <i class="fa-solid fa-clock" style="color: #6300d3;"></i>
-        <span class="tooltiptext">Timeliness planning<br><i>Click to learn more</i></span>
-      </span>
-    </span>
-</div>
-<p></p>
-
 The release timeline for determination of variables to include in the release, study instrument documentation (or "READMEs" - [see details](../internal/readmes.md)), final QC of data as available via the [Lasso Pre-Release System](https://hbcd-hdcc-qc.lassoinformatics.com/), etc. is as follows:
 
 #### Release 3.0 Timeline
 <img src="../images/3.0-timeline.png" alt="Release timeline" width="100%" height="auto" class="center">
 
-<div class="banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">Useful Links</span>
-</div>
-<div class="static-content">
-  <ul>
-    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdtnLe3W35SsCjOFksJwnLO9G_D0uokTlZGER_2UBM361C21g/viewform">HBCD Release Docs Measure Documentation Form</a> to submit documentation/"READMEs" for new instruments/measures to be included in a release (<a href="../../internal/readmes">see details</a>)</li>
-    <li><a href="https://docs.google.com/spreadsheets/d/171oj0PLLtVgp5OSReBD5J6Ir4U56QQrWEwu92ZwttrM/edit?gid=0#gid=0">Measure Inclusion Form</a> tracking the list of variables to be included in upcoming release</li>
-    <li><a href="https://docs.google.com/spreadsheets/d/1YkBeu8PpY2hTDq4_2X2SmI6vYaD6ib9mA-s3h4jALq0/edit?usp=sharing">Release Timeline Sign-Off Form</a></li>
-  </ul> 
-</div>
+***Useful Links***
+
+<ul>
+  <li><a href="https://docs.google.com/spreadsheets/d/171oj0PLLtVgp5OSReBD5J6Ir4U56QQrWEwu92ZwttrM/edit?gid=0#gid=0">Measure Inclusion Form</a> tracking the list of variables to be included in upcoming release</li>
+  <li><a href="https://docs.google.com/spreadsheets/d/1YkBeu8PpY2hTDq4_2X2SmI6vYaD6ib9mA-s3h4jALq0/edit?usp=sharing">Release Timeline Sign-Off Form</a></li>
+</ul> 
 
 ### Process for Determination of Release Timeline
 
@@ -53,30 +31,6 @@ The release timeline is determined as follows:
 
 ### Stage 1: Determine Variables to Include & Data Filters for Release
 
-<div class="pill-center">
-  <a href="../../#clear-objectives-and-scope" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip"><i class="fa-solid fa-bullseye" style="color: #6300d3;"></i><span class="tooltiptext">Clear objectives & scope<br><i>Click to learn more</i></span></span>
-    </span>
-  </a>
-  <a href="../#project-management" class="pill-link-wrapper">
-      <span class="pill-link">
-        <span class="tooltip">
-          <i class="fa-solid fa-diagram-project" style="color: #6300d3;"></i>
-          <span class="tooltiptext">Project Management<br><i>Click to learn more</i></span>
-        </span>
-      </span>
-  </a>
-  <a href="../../#timeliness-planning" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip">
-        <i class="fa-solid fa-clock" style="color: #6300d3;"></i>
-        <span class="tooltiptext">Timeliness planning<br><i>Click to learn more</i></span>
-      </span>
-    </span>
-  </a>
-</div>
-
 #### Variable Inclusion Sign-Off
 
 The HCAC PM (Stephanie Averill) collaborates with the HDCC WG Liaison (Jen Zink)  to generate a comprehensive list of potential variables for the upcoming data release.
@@ -88,7 +42,6 @@ The HCAC PM (Stephanie Averill) collaborates with the HDCC WG Liaison (Jen Zink)
 **Release measure inclusion sign off [RACI](#responsibility-assignment-matrices):**
 
 <img src="../images/release-stage1-raci.png" alt="lasso" width="60%" height="auto">
-
 
 #### Data Filters Sign-Off
 
@@ -102,46 +55,9 @@ In addition to deciding which variables to include in the release, the HDCC, HCA
 
 Data filters applied to Release 1.0 are described in detail on the R1.0 Release Notes under [Exclusion Criteria & Filters](https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters).
  
- <div class="banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">Status Tracker: View the latest status of filter sign-offs in the <a href="https://docs.google.com/spreadsheets/d/1M_QuEVgUoVAOdzXlY8FMTZvgLRtGUx2ykevUo8iUnr8/edit?usp=sharing">Data Filters Sign Off Form</a></span>
-</div>
-<br>
+**Status Tracker:** View the latest status of filter sign-offs in the [Data Filters Sign Off Form](https://docs.google.com/spreadsheets/d/1M_QuEVgUoVAOdzXlY8FMTZvgLRtGUx2ykevUo8iUnr8/edit?usp=sharing).
 
 ### Stage 2: Integrate Planned Measures in Beta Releases
-
-<div class="pill-center">
-  <a href="../../#clear-objectives-and-scope" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip"><i class="fa-solid fa-bullseye" style="color: #6300d3;"></i><span class="tooltiptext">Clear objectives & scope<br><i>Click to learn more</i></span></span>
-    </span>
-  </a>
-  <a href="../../#data-quality-checks" class="pill-link-wrapper">
-      <span class="pill-link">
-        <span class="tooltip">
-          <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
-          <span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span>
-        </span>
-      </span>
-  </a>
-  <a href="../#project-management" class="pill-link-wrapper">
-      <span class="pill-link">
-        <span class="tooltip">
-          <i class="fa-solid fa-diagram-project" style="color: #6300d3;"></i>
-          <span class="tooltiptext">Project Management<br><i>Click to learn more</i></span>
-        </span>
-      </span>
-  </a>
-  </a>
-  <a href="../../#timeliness-planning" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip">
-        <i class="fa-solid fa-clock" style="color: #6300d3;"></i>
-        <span class="tooltiptext">Timeliness planning<br><i>Click to learn more</i></span>
-      </span>
-    </span>
-  </a>
-</div>
 
 The HDCC implements the measures marked as INCLUDE and begins the first versioned Beta Release (BR) approximately 1–2 months after the data freeze. *Note: An updated SOP is under development to address scenarios where a measure is marked as “INCLUDE,” but cannot be implemented during the current release.*
 
@@ -174,25 +90,6 @@ The HDCC implements the measures marked as INCLUDE and begins the first versione
 Once the BR Hot Sheet is finalized, the HDCC sends it to Lasso to initiate BR ingestion, which includes [Lasso ingestion QA](qc.md#pre-release-pheno). After ingestion is complete, the HDCC liaison (Jen Zink) notifies WGs that data are available in Lasso and requests they complete Quality Control (QC) reviews. Lasso obtains final sign-off from Workgroups on datasets in their release-ready form, with <a href="https://docs.hbcdstudy.org/latest/changelog/versions/R1/#exclusion-criteria-filters">applied filters</a>, via the <a href="https://hbcd-hdcc-qc.lassoinformatics.com/">Lasso Pre-Release System</a>.
   
 ### Stage 3: Data Quality Issue Identification, Reporting, and Handling  
-
-<div class="pill-center">
-  <a href="../../#data-quality-checks" class="pill-link-wrapper">
-      <span class="pill-link">
-        <span class="tooltip">
-          <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
-          <span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span>
-        </span>
-      </span>
-  </a>
-  <a href="../../#transparency" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip">
-        <i class="fa-solid fa-eye" style="color: #6300d3;"></i>
-        <span class="tooltiptext">Transparency<br><i>Click to learn more</i></span>
-      </span>
-    </span>
-  </a>
-</div>
 
 There are 2 bins of issues with separate pipelines for reporting/handling:
 
@@ -234,30 +131,6 @@ Issues identified by WGs, analysts, or via LORIS, reported in collaboration with
 
 ### Stage 4: Data Sign-off and Public Release
 
-<div class="pill-center">
-  <a href="../../#clear-objectives-and-scope" class="pill-link-wrapper">
-    <span class="pill-link">
-      <span class="tooltip"><i class="fa-solid fa-bullseye" style="color: #6300d3;"></i><span class="tooltiptext">Clear objectives & scope<br><i>Click to learn more</i></span></span>
-    </span>
-  </a>
-  <a href="../../#data-quality-checks" class="pill-link-wrapper">
-      <span class="pill-link">
-        <span class="tooltip">
-          <i class="fa-solid fa-clipboard-check" style="color: #6300d3;"></i>
-          <span class="tooltiptext">Data quality checks<br><i>Click to learn more</i></span>
-        </span>
-      </span>
-  </a>
-  <a href="../../#transparency" class="pill-link-wrapper">
-      <span class="pill-link">
-        <span class="tooltip">
-          <i class="fa-solid fa-eye" style="color: #6300d3;"></i>
-          <span class="tooltiptext">Transparency<br><i>Click to learn more</i></span>
-        </span>
-      </span>
-  </a>
-</div>
-
 When the the second-to-last BR prior to Public Release is loaded in Lasso, the HDCC liaison (Jen Zink) schedules one-on-one sign-off meetings with all WG chairs/SMEs who have measures in the planned release for final QC/review in Lasso. Prior to these meetings, WG chairs/SMEs have pre-QC’ed their data in the latest BR. During these meetings, Jen reviews:
 
 1. Past QC items that have been identified and corrected in previous BRs
@@ -273,12 +146,7 @@ In the event that data issues remain, or new issues are identified in QC of the 
 
 ## Patch Releases
 
-<p>
-<div class="banner static-banner">
-  <span class="emoji"><i class="fa-solid fa-circle-info"></i></span>
-  <span class="text">See the procedures for patch release BR15.1, including timelines and responsible parties, <a href="https://docs.google.com/document/d/1rVvzBA7eu_ZuTpD9Mbp_Hg8sTzAYT9R6cp3AGtHNhYg/edit?tab=t.0">here</a>.</span>
-</div>
-</p>
+<!-- ***See the procedures for patch release BR15.1, including timelines and responsible parties, [here](https://docs.google.com/document/d/1rVvzBA7eu_ZuTpD9Mbp_Hg8sTzAYT9R6cp3AGtHNhYg/edit?tab=t.0).*** -->
 
 Patch releases occur only to address “Known Issues” in the current public data release; they are not intended for releasing additional sessions/visits, protocol elements, or participants. Known issues are either identified via the HDCC, WGs/SMEs, or the scientific community (users of the public release data via the Lasso ticketing system). Once they are identified and reported to HDCC, they are then placed on the centralized Monday Board for prioritization. 
 
