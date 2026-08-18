@@ -40,10 +40,7 @@
 </style>
 # Known Issues & Pending Updates
 
-!!! danger "Active Items Only"
-    This page lists ACTIVE issues/pending updates either targeted for upcoming BRs or still pending final Workgroup/SME sign-off. Items are not considered resolved until final review and approval by Workgroup/SME. Note that items addressed in a BR are not reflected as resolved in the [public release documentation](https://docs.hbcdstudy.org/latest/changelog/issues-updates/) until the corresponding PR is released.
-
-    <b>FOR A LIST OF RESOLVED ITEMS, SEE</b> <a href="../resolved-archive.html"><b>Resolved Issues & Updates Archive</b></a>   
+This page lists ACTIVE issues/pending updates either targeted for upcoming BRs or still pending final Workgroup/SME sign-off. Items are not considered resolved until final review and approval by Workgroup/SME. Note that items addressed in a BR are not reflected as resolved in the [public release documentation](https://docs.hbcdstudy.org/latest/changelog/issues-updates/) until the corresponding PR is released. For a list of resolved items, see [Resolved Issues & Updates Archive](resolved-archive.html).
 
 ---
 
@@ -70,19 +67,19 @@
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>FAD</td>
 <td>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>MAPS-TL (&lt;1yr)</td>
 <td>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>ecPROMIS CC</td>
 <td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -93,7 +90,7 @@
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ERICA</td>
-<td>A future release will include reliability codes integrated into the primary coding dataset. Until then, users must perform this integration manually: see the ERICA Data Warning for instructions.</td>
+<td>A future release will include reliability codes integrated into the primary coding dataset. Until then, users must perform this integration manually: see the ERICA Data Warning for instructions. Instructions include cleaning the current files to exclude n=44 participants with incorrect code values (data entry/form errors), capping <code>b_raw</code> values at 3.0 (n=3 participants), and removing the “Locomotor Ability” field (<code>mh_cg_erica_3_9m_locomotor_ability</code>), which has errors, also to be corrected in the next release.</td>
 <td style='text-align: center;'><span class='br-pill'>30.1</span></td>
 </tr>
 <tr>
@@ -139,7 +136,7 @@
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Nails</td>
 <td>Nail type is <code>4</code> (Unknown) in the main results table (<code>*_nails_results</code>) and should be obtained from the specimen table (<code>*_nails_type</code>).</td>
-<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -238,7 +235,7 @@
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Implausible GA</td>
 <td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values  for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
@@ -255,14 +252,14 @@
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Blank Fields for Siblings</td>
-<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child and not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants by referencing the corresponding Main Child values (see mapping between Multibirth participants IDs in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>).</td>
+<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child, not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants from the corresponding Main Child record. See the participant ID mapping in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
 <td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>FamilyID</td>
 <td>A <code>FamilyID</code> field will be added to instruments to identify sibling relationships. Until then, sibling ID mapping (Main Child vs Sibling) is provided in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -295,7 +292,7 @@
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Cook&#x27;s Distance</td>
 <td>Addition Cook's distance values computed for fMRI.</td>
-<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -346,7 +343,7 @@
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Vineland</td>
 <td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix. In addition, the age of one child is outside of the valid bounds for V05.</td>
-<td style='text-align: center;'><span class='pr-pill'>R3.0</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -469,7 +466,7 @@
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>EPDS</td>
 <td>Inconsistent scoring: (1) item responses present, but score is null (N=1); (2) all items null, but score is <code>0</code> (N≥3).</td>
-<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
