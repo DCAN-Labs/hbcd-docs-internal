@@ -7,13 +7,13 @@ theme:
   collapse_navigation: true
   titles_only: false
   navigation_depth: 4
-  # features:
-  #   - toc.integrate
-  #   - navigation.expand
-  #   - toc.follow
-  #   - navigation.sections
-  #   - header.autohide
-  #   - content.code.annotate
+  features:
+    - toc.integrate
+    - navigation.expand
+    - toc.follow
+    - navigation.sections
+    - header.autohide
+    - content.code.annotate
 
 markdown_extensions:
   - pymdownx.superfences

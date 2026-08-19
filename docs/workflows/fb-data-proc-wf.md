@@ -147,7 +147,7 @@ For a detailed breakdown of de-identification, CBRAIN pipeline processing, re-id
     <th>Location</th>
     <th>Responsible</th>
     <th style="background-color: #ff00088b; width: 10%; text-align: center">Accountable</th>
-    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
+    <th>Consulted/Informed</th>
   </tr>
 </thead>
 <tbody>
@@ -197,7 +197,7 @@ For a detailed breakdown of de-identification, CBRAIN pipeline processing, re-id
   <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#health-sciences-technology" target="_blank">UMN HST</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
   <td>Reed McEwan, Cecile Madjar</td>
   <td>Reed McEwan</td>
-  <td>[<b>C</b>] Helge Zoellner<br>[<b>C</b>] Erik Lee<br>[<b>C</b>] Georg Oeltzschner</td>
+  <td>[<b>C</b>] Helge Zoellner<br>[<b>C</b>] Tanya Pandhi<br>[<b>C</b>] Georg Oeltzschner</td>
 </tr>
 <tr>
 <td>Data QC + Action</td>
@@ -205,7 +205,7 @@ For a detailed breakdown of de-identification, CBRAIN pipeline processing, re-id
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
 <td>Cecile Madjar</td>
 <td>Cecile Madjar</td>
-<td>[<b>C</b>] Erik Lee<br>[<b>C</b>] Lucille Moore<br>[<b>C</b>] Tim Hendrickson</td>
+<td>[<b>C</b>] Tanya Pandhi<br>[<b>C</b>] Lucille Moore</td>
 </tr>
 <tr>
 <td>Data QC + Action</td>
@@ -260,7 +260,7 @@ For a detailed breakdown of de-identification, CBRAIN pipeline processing, re-id
     <th style="width: 5%; text-align: center">Location</th>
     <th style="width: 20%; text-align: center">Responsible</th>
     <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
-    <th style="width: 10%; text-align: center; text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
+    <th>Consulted/Informed</th>
   </tr>
 </thead>
 <tbody>
@@ -316,8 +316,8 @@ For a detailed breakdown of de-identification, CBRAIN pipeline processing, re-id
 <tr>
 <td>Run MADE Pipeline</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
-<td>Erik Lee</td>
-<td>Erik Lee</td>
+<td>Tanya Pandhi</td>
+<td>Tanya Pandhi</td>
 <td>EEG Core</td>
 </tr>
 <tr>
@@ -348,7 +348,7 @@ For a detailed breakdown of de-identification, CBRAIN pipeline processing, re-id
     <th style="width: 5%; text-align: center">Location</th>
     <th style="width: 20%; text-align: center">Responsible</th>
     <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
-    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
+    <th>Consulted/Informed</th>
   </tr>
 </thead>
 <tbody>
@@ -368,7 +368,7 @@ For a detailed breakdown of de-identification, CBRAIN pipeline processing, re-id
 </tr>
 <tr>
 <td>QC of form population</td>
-<td><span class="tooltip">OHSU<span class="tooltiptext">Oregon Health and Science University</span></span></td>
+<td>OHSU</td>
 <td>WG Co-Chairs</td>
 <td>Elinor Sullivan (Co-Chair)</td>
 <td style="text-align: center;">-/-</td>
@@ -422,7 +422,7 @@ For a detailed breakdown of de-identification, CBRAIN pipeline processing, re-id
     <th style="width: 25%; text-align: center">Location</th>
     <th style="width: 20%; text-align: center">Responsible</th>
     <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
-    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
+    <th>Consulted/Informed</th>
   </tr>
 </thead>
 <tbody>
@@ -438,13 +438,13 @@ For a detailed breakdown of de-identification, CBRAIN pipeline processing, re-id
   <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
   <td>Cecile Madjar</td>
   <td>Cecile Madjar</td>
-  <td>[<b>C</b>] Jinseok Oh<br>[<b>C</b>] Beth Smith<br>[<b>C</b>] Erik Lee</td>
+  <td>[<b>C</b>] Jinseok Oh<br>[<b>C</b>] Beth Smith<br>[<b>C</b>] Tanya Pandhi</td>
 </tr>
 <tr>
   <td>Run Axtivity Pipeline</td>
   <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi" target="_blank">UMN MSI</a></span></td>
-  <td>Erik Lee</td>
-  <td>Erik Lee</td>
+  <td>Tanya Pandhi</td>
+  <td>Tanya Pandhi</td>
   <td>[<b>C</b>] Jinseok Oh<br>[<b>C</b>] Beth Smith</td>
 </tr>
 <tr>
@@ -577,7 +577,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 </tr>
 </tbody>
 </table>
-<p><strong>Contacts:</strong> Sriharshitha Anuganti, Erik Lee<br>
+<p><strong>Contacts:</strong> Sriharshitha Anuganti, Tanya Pandhi<br>
 <strong>Frequency:</strong> Daily (PM CST; ensure completion within 24 hours)<br>
 <strong>Inputs:</strong> <code>s3://midb-hbcd-main-pr/assembly_bids</code> (raw BIDS data with DCCIDs)<br>
 <strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code> (with Release Candidate IDs)<br>
@@ -592,7 +592,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 </div>
 <div class="table-collapsible-content">
 <p><strong>Goal:</strong> Make CBRAIN aware of subjects available for processing.<br>
-<strong>Contacts:</strong> Monalisa Bilas, Erik Lee<br>
+<strong>Contacts:</strong> Monalisa Bilas, Tanya Pandhi<br>
 <strong>Frequency:</strong> Daily (&lt;1 hour)<br>
 <strong>Inputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code><br>
 <strong>Outputs:</strong> Internal CBRAIN records indicating existence of subject folder within BIDS directory<br>
@@ -623,7 +623,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 <li>CBRAIN uploads successful job outputs to session-specific folders on S3 and records the corresponding processing tasks and generated file collections internally.</li>
 </ol>
 <p>
-<strong>Contacts:</strong> Erik Lee, Monalisa Bilas<br>
+<strong>Contacts:</strong> Tanya Pandhi, Monalisa Bilas<br>
 <strong>Frequency:</strong> Daily (initial routine &lt;1 hour; processing jobs may take ~1 day)<br>        
 <strong>Inputs:</strong> <code>s3://midb-hbcd-main-deid/assembly_bids</code> (raw BIDS data)<br>
 <strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/derivatives/ses-{V0X}</code> (session-specific subject folders with Release Candidate IDs)<br>
@@ -643,7 +643,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 </div>
 <div class="table-collapsible-content">
 <p><strong>Goal:</strong> Preserve CBRAIN processing logs for failed tasks before the jobs are deleted (a few weeks after completion). Logs from successful jobs are already archived in the <code>.cbrain</code> logs included with the S3 outputs. Note that CBRAIN only transfers outputs to S3 for successful jobs.<br>
-<strong>Contacts:</strong> Monalisa Bilas, Erik Lee<br>
+<strong>Contacts:</strong> Monalisa Bilas, Tanya Pandhi<br>
 <strong>Frequency:</strong> Daily (&lt;1 hour)<br>
 <strong>Inputs:</strong> CBRAIN task directories stored on MSI under <code>/scratch.global</code><br>
 <strong>Outputs:</strong> <code>s3://midb-hbcd-main-deid/cbrain_std_logs/</code> (Files named <code>{CBRAIN_Task_ID}.&lt;out|err&gt;.out</code>)<br>
@@ -668,7 +668,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 <li>If files counts are the same, compare the <code>loris-versionid</code> of the de-id files to ensure they match</li>
 <li>If session counts or <code>loris-versionid</code> mismatch, delete all associated derivatives, CBRAIN task records, and raw BIDS data. The next time the query scripts are run that look for new subjects to process, the processing will be re-initiated for these subjects.</li>
 </ol>
-<p><strong>Contacts:</strong> Erik Lee, Monalisa Bilas<br>
+<p><strong>Contacts:</strong> Tanya Pandhi, Monalisa Bilas<br>
 <strong>Frequency:</strong> Daily (runtime varies by data volume)<br>
 <ul>
 <strong>Inputs:</strong>
@@ -711,7 +711,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
 </tr>
 </tbody>
 </table>
-<p><strong>Contacts:</strong> Sriharshitha Anuganti, Erik Lee<br>
+<p><strong>Contacts:</strong> Sriharshitha Anuganti, Tanya Pandhi<br>
 <strong>Frequency:</strong> Runs daily<br>
 <strong>Inputs:</strong> <code>s3://midb-hbcd-main-deid/derivatives</code> (de-identified derivatives)<br>
 <strong>Outputs:</strong> <code>s3://midb-hbcd-main-pr/reid_derivatives</code> (re-identified derivatives)</p>
@@ -744,7 +744,7 @@ Incoming session data (MRI including initial scans and rescans, EEG, Axivity, GA
   </li>
   <li>If the number of files or timestamps differ, delete the corresponding re-identified data from <code>s3://midb-hbcd-main-pr</code>.</li>
 </ul>
-<p><strong>Contacts:</strong> Sriharshitha Anuganti, Monalisa Bilas, Erik Lee<br>
+<p><strong>Contacts:</strong> Sriharshitha Anuganti, Monalisa Bilas, Tanya Pandhi<br>
 <strong>Frequency:</strong> Daily<br>
 <strong>Inputs:</strong> <code>s3://midb-hbcd-main-pr/reid_derivatives</code> and <code>s3://midb-hbcd-main-deid/derivatives</code><br>
 <strong>Outputs:</strong> N/A<br>

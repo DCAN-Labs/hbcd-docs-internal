@@ -542,7 +542,7 @@ Ripple is a data-driven innovative web-based technology that allows groups to co
 
 
 ### J. Craig Venter Institute 
-The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for [raw MRI data quality control](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc) and acquisition QC via MRI phantom data. In addition, JCVI oversees [FIONA](#fiona) deployment as well as [REDCap](#redcap), [DEAP](#deap), and the <span class="tooltip">RBA<span class="tooltiptext">results-based accountability</span></span> Dashboards.
+The [J. Craig Venter Institute](https://www.jcvi.org/) (JCVI) is responsible for [raw MRI data quality control](https://docs.hbcdstudy.org/latest/instruments/mri/qc/#raw-mr-data-qc) and acquisition QC via MRI phantom data. In addition, JCVI oversees [FIONA](#fiona) deployment as well as [REDCap](#redcap), [DEAP](#deap), and the RBA (results-based accountability) Dashboards.
 
 <p><object type="image/svg+xml" data="jcvi.svg" width="90%"></object></p>
 
@@ -986,7 +986,7 @@ flowchart TB
       <tr>
       <td>Wesley K. Thompson, PhD</td>
       <td>HDCC Assoc Dir, Biostatistics WG Chair</td>
-      <td>Provides statistical guidance on study design, analysis, and methods development for HBCD. Co-leads statistical design and maintenance of <span class="tooltip tooltip-left">DEAP 2.0<span class="tooltiptext">the Data Exploration and Analysis Portal 2.0</span></span>. Supports geolocation of participant residences and linkage to external data sources. Responsible for <a href="../workflows/qc/#pre-release-qc-5-stages">Pre-release QC</a>.</td>
+      <td>Provides statistical guidance on study design, analysis, and methods development for HBCD. Co-leads statistical design and maintenance of DEAP 2.0 (Data Exploration and Analysis Portal). Supports geolocation of participant residences and linkage to external data sources. Responsible for <a href="../workflows/qc/#pre-release-qc-5-stages">Pre-release QC</a>.</td>
       </tr>
       <tr>
         <td>TBD</td>
@@ -996,7 +996,7 @@ flowchart TB
       <tr>
         <td>Chun Fan, PhD</td>
         <td>Gecoding & Linking External Data WG Chair</td>
-        <td>Co-leads HDCC efforts in curating and analyzing imaging, genomic, and geolocation exposure data. Supports expansion of <span class="tooltip tooltip-left">DEAP 2.0<span class="tooltiptext">the Data Exploration and Analysis Portal 2.0</span></span> for high-dimensional genomic, imaging, and exposure data analysis and harmonization with external studies, including development of a probabilistic ontology for cross-study comparisons.</td>
+        <td>Co-leads HDCC efforts in curating and analyzing imaging, genomic, and geolocation exposure data. Supports expansion of DEAP 2.0 for high-dimensional genomic, imaging, and exposure data analysis and harmonization with external studies, including development of a probabilistic ontology for cross-study comparisons.</td>
       </tr>
       <tr>
         <td>Wenjie Zheng, PhD</td>

@@ -21,44 +21,37 @@ Integrating new pipelines into HBCD’s file-based data processing workflow invo
 <table class="compact-table-no-vertical-lines">
 <thead>
   <th>Stage</th>
-  <th>Description/Actions</th>
   <th>Responsible Group(s)</th>
   <th>Requirements</th>
 </thead>
 <tbody>
     <tr>
-        <td>1. Approval</td>
-        <td style="word-wrap: break-word; white-space: normal;">Senior stakeholder approves H-PIP testing via MRI WG consensus. Define scope and request initial timeline.</td>
+        <td>1. Approval: Senior stakeholder approves H-PIP testing via MRI WG consensus. Define scope and request initial timeline.</td>
         <td>Senior stakeholder &amp; MRI WG</td>
         <td>&mdash;</td>
     </tr>
     <tr>
-        <td>2. Scoping</td>
-        <td style="word-wrap: break-word; white-space: normal;">Refine proposed timeline and scope for integration.</td>
+        <td>2. Scoping of integration and timeline </td>
         <td>Informatics Core &amp; Developers</td>
         <td>&mdash;</td>
     </tr>
     <tr>
-        <td>3. Integration</td>
-        <td style="word-wrap: break-word; white-space: normal;">Pipeline integrated within Informatics Core.</td>
-        <td style="word-wrap: break-word; white-space: normal;">Erik Lee, Tim Hendrickson, Sriharshitha Anuganti, pipeline developers</td>
+        <td>3. Pipeline integration</td>
+        <td>Tanya Pandhi, Sriharshitha Anuganti, pipeline developers</td>
         <td>• Containerized<br>• BIDSified<br>• Independent per-session processing<br>• NMIND bronze certified</td>
     </tr>
     <tr>
         <td>4. Testing</td>
-        <td style="word-wrap: break-word; white-space: normal;">Pipeline tested</td>
-        <td style="word-wrap: break-word; white-space: normal;"><span class="tooltip">FAB (Eric Feczko's Lab)</i><span class="tooltiptext">Eric Feczko (PI), Begim Fayzullobekova, rae McCollum, Jacob Lundquist, Michael Anderson</span></span></td>
+        <td>FAB (Eric Feczko's Lab)</td>
         <td>• Validity<br>• Reliability<br>• Analytic reproducibility</td>
     </tr>
     <tr>
-        <td>5. Review</td>
-        <td style="word-wrap: break-word; white-space: normal;">Findings presented to MRI WG for sign-off.</td>
+        <td>5. Review: findings presented to MRI QG for sign-off</td>
         <td>MRI WG</td>
         <td>&mdash;</td>
     </tr>
     <tr>
     <td>6. SME Consult</td>
-    <td style="word-wrap: break-word; white-space: normal;">Findings presented to SME WG for additional consultation and final approval.</td>
     <td>SME WG</td>
     <td>&mdash;</td>
     </tr>

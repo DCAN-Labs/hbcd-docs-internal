@@ -42,7 +42,7 @@ HBCD Study documentation can be found in the following locations:
 <td>HBCD Study site</td>
 <td><a class="in-cell-link" href="https://hbcdstudy.org/">https://hbcdstudy.org/</a></td>
 <td>Main site for HBCD Study</td>
-<td><span class="tooltip">HCAC<span class="tooltiptext">HBCD Consortium Administrative Core</span></span></td>
+<td>HCAC (HBCD Consortium Administrative Core)</td>
 </tr>
 </tbody>
 </table>

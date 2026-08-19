@@ -259,14 +259,14 @@ Below we outline the individuals responsible for various stages of the release a
 <td>Run <a href="https://docs.hbcdstudy.org/latest/instruments/processing/#overview">processing pipelines</a></td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span></td>
 <td>CBRAIN</td>
-<td>Erik Lee</td>
-<td>[<b>C</b>] <span class="tooltip tooltip-left">WG SMEs<span class="tooltiptext">Workgroup Subject Matter Experts</span></span></td>
+<td>Tanya Pandhi</td>
+<td>[<b>C</b>] SMEs</td>
 </tr>
 <tr>
 <td>Data Process</td>
-<td>Transfer <span class="tooltip tooltip-left">derivatives<span class="tooltiptext">processed pipeline outputs</span></span> to LORIS, re-inserting DCCIDs</td>
+<td>Transfer derivatives to LORIS, re-inserting DCCIDs</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span></td>
-<td>Harshitha Anuganti, Erik Lee, Tim Hendrickson, Jesse Erdmann</td>
+<td>Harshitha Anuganti, Tanya Pandhi, Jesse Erdmann</td>
 <td>Harshitha Anuganti</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
@@ -290,15 +290,15 @@ Below we outline the individuals responsible for various stages of the release a
 <td>Data Process</td>
 <td>Move source BIDS to platform</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span></td>
-<td>Erik Lee, Tim Hendrickson, Data Loading Team (Lasso)</td>
-<td>Erik Lee</td>
+<td>Tanya Pandhi, Data Loading Team (Lasso)</td>
+<td>Tanya Pandhi</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 <tr>
 <td>Data Process</td>
 <td>Move BIDS phenotype files to platform</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span></td>
-<td>Harshitha Anuganti, Erik Lee, Tim Hendrickson, Jesse Erdmann, Data Loading Team (Lasso)</td>
+<td>Harshitha Anuganti, Tanya Pandhi, Jesse Erdmann, Data Loading Team (Lasso)</td>
 <td>Harshitha Anuganti</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
@@ -306,15 +306,15 @@ Below we outline the individuals responsible for various stages of the release a
 <td>Data Process</td>
 <td>Move raw BIDS and derivatives to platform</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span></td>
-<td>Erik Lee, Tim Hendrickson</td>
-<td>Erik Lee</td>
+<td>Tanya Pandhi</td>
+<td>Tanya Pandhi</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 <tr>
 <td>Data QC + Action</td>
 <td>SMEs review data</td>
 <td>Various</td>
-<td>MRI <span class="tooltip">WG SMEs<span class="tooltiptext">Workgroup Subject Matter Experts</span></span>, Jen Zink</td>
+<td>MRI SMEs, Jen Zink</td>
 <td>Eric Feczko</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
@@ -322,15 +322,15 @@ Below we outline the individuals responsible for various stages of the release a
     <td>Data QC + Action</td>
     <td>Data corrections</td>
     <td>Various</td>
-    <td>Erik Feczko, Jen Zink, Erik Lee, Tim Hendrickson</td>
-    <td>Erik Lee</td>
+    <td>Erik Feczko, Jen Zink, Tanya Pandhi</td>
+    <td>Tanya Pandhi</td>
     <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
 <tr>
     <td>Documentation of Processes</td>
     <td>Documentation of processes, known issues, etc.</td>
     <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span><br><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#center-for-developmental-neuroimaging">CDNI</a></span></td>
-    <td>MRI <span class="tooltip">WG SMEs<span class="tooltiptext">Workgroup Subject Matter Experts</span></span>, HDCC</td>
+    <td>MRI SMEs, HDCC</td>
     <td>Lucille Moore</td>
     <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
@@ -400,7 +400,7 @@ There are several regular calls where release action items are discussed and tra
 </thead>
 <tbody>
 <tr>
-  <td><a href="https://docs.google.com/document/d/1CQNtqezeXOiTg_13XIFn0v7u4aymY40JyKAXI4QU4Hk/edit?pli=1&tab=t.0">HDCC Data Release WG</a> <span class="tooltip"><i class="fa-solid fa-star" style="color: blue"></i><span class="tooltiptext">Primary meeting dedicated to discussion of data release items</span></span><br><i>Mondays 11 AM CT</i></td>
+  <td><a href="https://docs.google.com/document/d/1CQNtqezeXOiTg_13XIFn0v7u4aymY40JyKAXI4QU4Hk/edit?pli=1&tab=t.0">HDCC Data Release WG</a><br><i>Mondays 11 AM CT</i></td>
   <td>Maren Macgregor-Hannah</td>
   <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso">Lasso</a></td>
 </tr>
@@ -444,7 +444,7 @@ There are several regular calls where release action items are discussed and tra
   <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-minnesota">UMN</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso">Lasso</a></span></td>
 </tr>
 <tr>
-  <td><a href="https://docs.google.com/document/d/1_GMbyzbhkEeS1mFHdClFOWjo6V_XC7QHtzTiIT6GUfw/edit?tab=t.0">HDCC IT Workgroup Call</a> <span class="tooltip"><i class="fa-solid fa-circle-info" style="color: blue"></i><span class="tooltiptext">EEG, Biospecimens, and other Workgroups can use this time to review IT needs that sometimes pertain to the release</span></span><br><i>Fridays 3 PM CT</i></td>
+  <td><a href="https://docs.google.com/document/d/1_GMbyzbhkEeS1mFHdClFOWjo6V_XC7QHtzTiIT6GUfw/edit?tab=t.0">HDCC IT Workgroup Call</a> (EEG, Biospecimens, and other WGs)<br><i>Fridays 3 PM CT</i></td>
   <td>Maren Macgregor-Hannah</td>
   <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#lasso">Lasso</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#loris">LORIS</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#j-craig-venter-institute">JCVI</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#university-of-maryland">UMD</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><a href="../../orgcharts/#libr">LIBR</a></span></td>
 </tr>

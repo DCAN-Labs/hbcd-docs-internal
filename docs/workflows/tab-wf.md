@@ -109,12 +109,12 @@ Data collected from sites is transferred to the central **LORIS Production S3 bu
 <table class="compact-table">
 <thead>
   <tr>
-    <th style="width: 15%; text-align: center">Study Stage</th>
-    <th style="width: 20%; text-align: center">Step</th>
-    <th style="width: 25%; text-align: center">Location</th>
-    <th style="width: 20%; text-align: center">Responsible</th>
-    <th style="background-color: #ff00088b; width: 20%; text-align: center">Accountable</th>
-    <th style="text-align: center"><span class="tooltip tooltip-left"><b>C</b><span class="tooltiptext">Consulted</span></span>/<span class="tooltip tooltip-left"><b>I</b><span class="tooltiptext">Informed</span></span></th>
+    <th>Study Stage</th>
+    <th>Step</th>
+    <th>Location</th>
+    <th>Responsible</th>
+    <th style="background-color: #ff00088b;">Accountable</th>
+    <th>Consulted/Informed</th>
   </tr>
 </thead>
 <tbody>
@@ -138,7 +138,7 @@ Data collected from sites is transferred to the central **LORIS Production S3 bu
 <td>Data Conversion</td>
 <td>Re-ID</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span></td>
-<td>Sriharshitha Anuganti, Erik Lee</td>
+<td>Sriharshitha Anuganti, Tanya Pandhi</td>
 <td>Sriharshitha Anuganti</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
@@ -146,7 +146,7 @@ Data collected from sites is transferred to the central **LORIS Production S3 bu
 <td>Data Readiness for transfer</td>
 <td>Hot Sheet Population</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span></td>
-<td>Erik Lee, Tim Hendrickson, Santiago Torres, Lucille Moore</td>
+<td>Tanya Pandhi, Santiago Torres, Lucille Moore</td>
 <td>Maren Macgregor-Hannah</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>
@@ -154,7 +154,7 @@ Data collected from sites is transferred to the central **LORIS Production S3 bu
 <td>Data Ingestion/Transfer</td>
 <td>Transfer release data to bucket for Lasso to pick up</td>
 <td><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#midb-informatics-hub-msi">UMN MSI</a></span><span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 1em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 3px; color: blue;"></i><a href="../../orgcharts/#lasso">Lasso</a></span></td>
-<td>Sriharshitha Anuganti, Erik Lee</td>
+<td>Sriharshitha Anuganti, Tanya Pandhi</td>
 <td>Sriharshitha Anuganti</td>
 <td style="text-align: center; word-wrap: break-word; white-space: normal;">-/-</td>
 </tr>

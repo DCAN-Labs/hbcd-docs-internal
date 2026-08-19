@@ -44,7 +44,7 @@ To enforce completeness without violating participant autonomy, we treat all fie
 <ol>
 <i>Implementation Steps:</i>
 <li>For every field (except calculated fields or system-generated timestamps), ensure there is a valid value recorded.</li>
-<li>Include explicit <span class="tooltip">non-answer choices<span class="tooltiptext">-999 = "Don’t know"<br> -888 = "Refused to answer"<br> -777 = "Not applicable"</span></span> in all multiple choice or dropdown fields.</li>
+<li>Include explicit non-answer choices (-999 = "Don’t know"<br> -888 = "Refused to answer"<br> -777 = "Not applicable") in all multiple choice or dropdown fields.</li>
 <li>Limit use of open text fields to ensure consistency, support downstream coding, and reduce manual data cleaning.</li>
 </ol>
 <i>Rules Applied:</i>
@@ -66,7 +66,7 @@ To enforce completeness without violating participant autonomy, we treat all fie
 </ol>
 </p>
 <p><strong>Handling of Special Codes in Standardized method</strong><br>
-All non-response fields are confirmed to be using <span class="tooltip">standardized special codes<span class="tooltiptext">-999 = Don’t know<br> -888 = Refused to answer<br> -777 = Not applicable</span></span>. In addition, checks are made to ensure that these codes are not used in computed or date fields.</p>
+All non-response fields are confirmed to be using standardized special codes (-999 = Don’t know; -888 = Refused to answer; -777 = Not applicable). In addition, checks are made to ensure that these codes are not used in computed or date fields.</p>
 <p><b>Branching Logic Enforcement</b>
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#redcap">REDCap</a>
 </span><br>
@@ -144,7 +144,7 @@ All variable names are parsed and validated against naming rules outlined <a hre
 <tbody>
 <tr>
   <td><b>Outlier identification</b></td>
-  <td>Workgroups (via Tableau and <span class="tooltip">DQT<span class="tooltiptext">Dictionary Query Tool</span></span>)</td>
+  <td>Workgroups (via Tableau and Lasso Query Tool)</td>
 </tr>
 <tr>
   <td><b>Data entry corrections</b></td>
@@ -152,10 +152,10 @@ All variable names are parsed and validated against naming rules outlined <a hre
 </tr>
 <tr>
   <td><b>Answer distribution and missingness checks</b></td>
-  <td>Workgroups (via Tableau and <span class="tooltip">DQT<span class="tooltiptext">Dictionary Query Tool</span></span>)</td>
+  <td>Workgroups (via Tableau and Lasso Query Tool)</td>
 </tr>
 <tr>
-  <td><span class="tooltip"><b>Complex scoring not handled in REDCap</b><span class="tooltiptext">e.g. look up tables</span></span></td>
+  <td><b>Complex scoring not handled in REDCap (e.g. look up tables)</td>
   <td>LORIS</td>
 </tr>
 </tbody>
@@ -240,147 +240,147 @@ See <a href="https://docs.google.com/spreadsheets/d/115wEkULQJqTF-8ABXTimWQN5fF0
 <tbody>
 <tr>
 <td style="word-wrap: break-word; white-space: normal; margin-left: 0;"><b>1a</b></td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Instrument coding Specification</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HCAC <span class="tooltip tooltip-left">WG<span class="tooltiptext">Workgroup</span></span></td>
-<td style="word-wrap: break-word; white-space: normal;">Provide instrument specifications & scoring requirements</td>
-<td style="word-wrap: break-word; white-space: normal;">Email, PDF, scoring docs</td>
-<td style="word-wrap: break-word; white-space: normal;">Instrument spec + scoring rules</td>
-<td style="word-wrap: break-word; white-space: normal;">Confluence</td>
+<td><b>Instrument coding Specification</b></td>
+<td>HCAC, WG</td>
+<td>Provide instrument specifications & scoring requirements</td>
+<td>Email, PDF, scoring docs</td>
+<td>Instrument spec + scoring rules</td>
+<td>Confluence</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">1b</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC-Biostats Authoring</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC-Biostats</td>
-<td style="word-wrap: break-word; white-space: normal;">Receive instrument from WG; author scoring code and perform initial validation</td>
-<td style="word-wrap: break-word; white-space: normal;">WG instrument specs</td>
-<td style="word-wrap: break-word; white-space: normal;">Validated scoring code + example outputs</td>
-<td style="word-wrap: break-word; white-space: normal;">Git (code) + Confluence</td>
+<td>1b</td>
+<td>HDCC-Biostats Authoring</td>
+<td>HDCC-Biostats</td>
+<td>Receive instrument from WG; author scoring code and perform initial validation</td>
+<td>WG instrument specs</td>
+<td>Validated scoring code + example outputs</td>
+<td>Git (code) + Confluence</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">1c</td>
-<td style="word-wrap: break-word; white-space: normal;">Provenance Capture</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC-Biostats</td>
-<td style="word-wrap: break-word; white-space: normal;">Store scoring code, examples, and validation notes</td>
-<td style="word-wrap: break-word; white-space: normal;">Scoring code, test cases</td>
-<td style="word-wrap: break-word; white-space: normal;">Versioned code + validation record</td>
-<td style="word-wrap: break-word; white-space: normal;">Git + Confluence</td>
+<td>1c</td>
+<td>Provenance Capture</td>
+<td>HDCC-Biostats</td>
+<td>Store scoring code, examples, and validation notes</td>
+<td>Scoring code, test cases</td>
+<td>Versioned code + validation record</td>
+<td>Git + Confluence</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">1d</td>
-<td style="word-wrap: break-word; white-space: normal;">Instrument Build</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC-LORIS</td>
-<td style="word-wrap: break-word; white-space: normal;">Implement instrument and scoring logic in data capture system</td>
-<td style="word-wrap: break-word; white-space: normal;">Approved specs + scoring logic</td>
-<td style="word-wrap: break-word; white-space: normal;">Coded instrument and scoring</td>
-<td style="word-wrap: break-word; white-space: normal;">LORIS</td>
+<td>1d</td>
+<td>Instrument Build</td>
+<td>HDCC-LORIS</td>
+<td>Implement instrument and scoring logic in data capture system</td>
+<td>Approved specs + scoring logic</td>
+<td>Coded instrument and scoring</td>
+<td>LORIS</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">1e</td>
-<td style="word-wrap: break-word; white-space: normal;">Instrument Code Validation (WG)</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC-Biostats</td>
-<td style="word-wrap: break-word; white-space: normal;">Validate coded instrument and scoring implementation; submit to LORIS ticket centre</td>
-<td style="word-wrap: break-word; white-space: normal;">LORIS instrument</td>
-<td style="word-wrap: break-word; white-space: normal;">QC feedback / approval</td>
-<td style="word-wrap: break-word; white-space: normal;">LORIS</td>
+<td>1e</td>
+<td>Instrument Code Validation (WG)</td>
+<td>HDCC-Biostats</td>
+<td>Validate coded instrument and scoring implementation; submit to LORIS ticket centre</td>
+<td>LORIS instrument</td>
+<td>QC feedback / approval</td>
+<td>LORIS</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">1f</td>
-<td style="word-wrap: break-word; white-space: normal;">Formal Instrument Approval</td>
-<td style="word-wrap: break-word; white-space: normal;">HCAC <span class="tooltip tooltip-left">WG<span class="tooltiptext">Workgroup</span></span></td>
-<td style="word-wrap: break-word; white-space: normal;">Final sign-off on coded instrument; submit issues via HDCC-QC Lasso Ticket Centre</td>
-<td style="word-wrap: break-word; white-space: normal;">Instrument validated by WG</td>
-<td style="word-wrap: break-word; white-space: normal;">Instrument approval</td>
-<td style="word-wrap: break-word; white-space: normal;">LORIS</td>
+<td>1f</td>
+<td>Formal Instrument Approval</td>
+<td>HCAC, WG</td>
+<td>Final sign-off on coded instrument; submit issues via HDCC-QC Lasso Ticket Centre</td>
+<td>Instrument validated by WG</td>
+<td>Instrument approval</td>
+<td>LORIS</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">1g</td>
-<td style="word-wrap: break-word; white-space: normal;">Approval Provenance</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC-WG Liason</td>
-<td style="word-wrap: break-word; white-space: normal;">Publish signed approvals and version info</td>
-<td style="word-wrap: break-word; white-space: normal;">WG + Biostats sign-off</td>
-<td style="word-wrap: break-word; white-space: normal;">Immutable approval record</td>
-<td style="word-wrap: break-word; white-space: normal;">Confluence</td>
+<td>1g</td>
+<td>Approval Provenance</td>
+<td>HDCC-WG Liason</td>
+<td>Publish signed approvals and version info</td>
+<td>WG + Biostats sign-off</td>
+<td>Immutable approval record</td>
+<td>Confluence</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><b>2</b></td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Data Collection</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HCAC: Site Staff</td>
-<td style="word-wrap: break-word; white-space: normal;">Begin data collection using approved instrument</td>
-<td style="word-wrap: break-word; white-space: normal;">Approved instrument</td>
-<td style="word-wrap: break-word; white-space: normal;">Raw study data</td>
-<td style="word-wrap: break-word; white-space: normal;">LORIS</td>
+<td><b>2</b></td>
+<td><b>Data Collection</b></td>
+<td>HCAC: Site Staff</td>
+<td>Begin data collection using approved instrument</td>
+<td>Approved instrument</td>
+<td>Raw study data</td>
+<td>LORIS</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><b>3a</b></td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Ongoing QC- Data Availability</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC-QC Lasso</td>
-<td style="word-wrap: break-word; white-space: normal;">Data becomes available in ongoing QC environment</td>
-<td style="word-wrap: break-word; white-space: normal;">Collected data</td>
-<td style="word-wrap: break-word; white-space: normal;">QC-ready dataset</td>
-<td style="word-wrap: break-word; white-space: normal;">Lasso Ongoing QC</td>
+<td><b>3a</b></td>
+<td><b>Ongoing QC- Data Availability</b></td>
+<td>HDCC-QC Lasso</td>
+<td>Data becomes available in ongoing QC environment</td>
+<td>Collected data</td>
+<td>QC-ready dataset</td>
+<td>Lasso Ongoing QC</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">3b</td>
-<td style="word-wrap: break-word; white-space: normal;">Continuous HDCC Biostats QC</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC-Biostats</td>
-<td style="word-wrap: break-word; white-space: normal;">Run scheduled HDCC-Biostats QC scripts per instrument, including execution of scoring algorithm over item-level data to compare to scored fields in Lasso. Submit issues via HDCC-QC Lasso Ticket Centre. Dump run outputs into common repository.</td>
-<td style="word-wrap: break-word; white-space: normal;">Live data</td>
-<td style="word-wrap: break-word; white-space: normal;">QC metrics, flags, logs</td>
-<td style="word-wrap: break-word; white-space: normal;">Git (code) + Lasso HDCC-QC</td>
+<td>3b</td>
+<td>Continuous HDCC Biostats QC</td>
+<td>HDCC-Biostats</td>
+<td>Run scheduled HDCC-Biostats QC scripts per instrument, including execution of scoring algorithm over item-level data to compare to scored fields in Lasso. Submit issues via HDCC-QC Lasso Ticket Centre. Dump run outputs into common repository.</td>
+<td>Live data</td>
+<td>QC metrics, flags, logs</td>
+<td>Git (code) + Lasso HDCC-QC</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">3c</td>
-<td style="word-wrap: break-word; white-space: normal;">Ongoing QC- WG Review (<a class="in-cell-link" href="https://hbcdstudy.atlassian.net/wiki/spaces/SOPS/overview#Work-Group-and-SME-SOP-V.9" target="_blank">SME QC SOP</a>)</td>
-<td style="word-wrap: break-word; white-space: normal;">HCAC <span class="tooltip tooltip-left">WG<span class="tooltiptext">Workgroup</span></span></td>
-<td style="word-wrap: break-word; white-space: normal;">Perform ongoing QC in Lasso. Submit issues via HDCC-QC Lasso Ticket Centre</td>
-<td style="word-wrap: break-word; white-space: normal;">QC datasets</td>
-<td style="word-wrap: break-word; white-space: normal;">QC feedback</td>
-<td style="word-wrap: break-word; white-space: normal;">Lasso HDCC-QC</td>
+<td>3c</td>
+<td>Ongoing QC- WG Review (<a class="in-cell-link" href="https://hbcdstudy.atlassian.net/wiki/spaces/SOPS/overview#Work-Group-and-SME-SOP-V.9" target="_blank">SME QC SOP</a>)</td>
+<td>HCAC, WG</td>
+<td>Perform ongoing QC in Lasso. Submit issues via HDCC-QC Lasso Ticket Centre</td>
+<td>QC datasets</td>
+<td>QC feedback</td>
+<td>Lasso HDCC-QC</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">3d</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC ticket review and corrections</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC-LORIS</td>
-<td style="word-wrap: break-word; white-space: normal;">All issues are logged in Monday.com and reviewed, managed, and corrected weekly at Monday Release Meeting with all release-associated staff</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC-QC tickets, WG, and HDCC inputs</td>
-<td style="word-wrap: break-word; white-space: normal;">Corrected and closed tickets</td>
-<td style="word-wrap: break-word; white-space: normal;">&nbsp;</td>
+<td>3d</td>
+<td>HDCC ticket review and corrections</td>
+<td>HDCC-LORIS</td>
+<td>All issues are logged in Monday.com and reviewed, managed, and corrected weekly at Monday Release Meeting with all release-associated staff</td>
+<td>HDCC-QC tickets, WG, and HDCC inputs</td>
+<td>Corrected and closed tickets</td>
+<td>&nbsp;</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;"><b>4a</b></td>
-<td style="word-wrap: break-word; white-space: normal;"><b>Pre-release- BR Data Available</b></td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC-LORIS</td>
-<td style="word-wrap: break-word; white-space: normal;">Prepare <span class="tooltip tooltip-left">BR<span class="tooltiptext">Beta Release</span></span>  and filtered datasets (validate against HDCC biostats Ongoing scoring) against gold standard. Dump run outputs into common repository put there by hdcc-biostats group.</td>
-<td style="word-wrap: break-word; white-space: normal;">QC-reviewed data</td>
-<td style="word-wrap: break-word; white-space: normal;">BR dataset</td>
-<td style="word-wrap: break-word; white-space: normal;">Lasso HDCC-QC</td>
+<td><b>4a</b></td>
+<td><b>Pre-release- BR Data Available</b></td>
+<td>HDCC-LORIS</td>
+<td>Prepare Beta Release and filtered datasets (validate against HDCC biostats Ongoing scoring) against gold standard. Dump run outputs into common repository put there by hdcc-biostats group.</td>
+<td>QC-reviewed data</td>
+<td>BR dataset</td>
+<td>Lasso HDCC-QC</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">4b</td>
-<td style="word-wrap: break-word; white-space: normal;">Pre-Release HDCC Biostats QC</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC-Biostats</td>
-<td style="word-wrap: break-word; white-space: normal;">QC BR dataset and publish release-specific QC R scripts. Submit issues reported in HDCC-QC Lasso Ticket Centre to Git</td>
-<td style="word-wrap: break-word; white-space: normal;">BR dataset</td>
-<td style="word-wrap: break-word; white-space: normal;">Release-tagged QC code</td>
-<td style="word-wrap: break-word; white-space: normal;">Git (per-instrument folders)</td>
+<td>4b</td>
+<td>Pre-Release HDCC Biostats QC</td>
+<td>HDCC-Biostats</td>
+<td>QC BR dataset and publish release-specific QC R scripts. Submit issues reported in HDCC-QC Lasso Ticket Centre to Git</td>
+<td>BR dataset</td>
+<td>Release-tagged QC code</td>
+<td>Git (per-instrument folders)</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">4c</td>
-<td style="word-wrap: break-word; white-space: normal;">Pre-Release WG QC</td>
-<td style="word-wrap: break-word; white-space: normal;">HCAC <span class="tooltip tooltip-left">WG<span class="tooltiptext">Workgroup</span></span></td>
-<td style="word-wrap: break-word; white-space: normal;">QC data in Pre-Release environment</td>
-<td style="word-wrap: break-word; white-space: normal;">BR dataset</td>
-<td style="word-wrap: break-word; white-space: normal;">Final QC feedback</td>
-<td style="word-wrap: break-word; white-space: normal;">Lasso HDCC-QC</td>
+<td>4c</td>
+<td>Pre-Release WG QC</td>
+<td>HCAC, WG</td>
+<td>QC data in Pre-Release environment</td>
+<td>BR dataset</td>
+<td>Final QC feedback</td>
+<td>Lasso HDCC-QC</td>
 </tr>
 <tr>
-<td style="word-wrap: break-word; white-space: normal;">4d</td>
-<td style="word-wrap: break-word; white-space: normal;">Final Provenance Capture</td>
-<td style="word-wrap: break-word; white-space: normal;">HDCC-WG Liason</td>
-<td style="word-wrap: break-word; white-space: normal;">Publish WG sign-off for BR</td>
-<td style="word-wrap: break-word; white-space: normal;">Final approvals</td>
-<td style="word-wrap: break-word; white-space: normal;">Release provenance record</td>
-<td style="word-wrap: break-word; white-space: normal;">Confluence</td>
+<td>4d</td>
+<td>Final Provenance Capture</td>
+<td>HDCC-WG Liason</td>
+<td>Publish WG sign-off for BR</td>
+<td>Final approvals</td>
+<td>Release provenance record</td>
+<td>Confluence</td>
 </tr>
 </tbody>
 </table>
@@ -533,70 +533,7 @@ A complete imaging session consists of the following valid series:
 <span style="display: inline-block; background-color: #f0f8ff; color: #333; border-radius: 12px; padding: 1px 5px; font-size: 0.9em; border: 1px solid #d0e7ff;"><i class="fas fa-users" style="margin-right: 6px; color: blue;"></i><a href="../../orgcharts/#j-craig-venter-institute">JCVI</a>
 </span>
 </p>
-<p><b>AUTOMATED QC</b> (see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#automated-qc">HBCD Data Release Docs</a> for full details)</p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
-<thead>
-<tr>
-    <th style="width: 20%; text-align: center;">Modality</th>
-    <th style="width: 80%; text-align: center;">QC Procedures</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">Structural (T1w, T2w, qMRI)</td>
-<td style="word-wrap: break-word; white-space: normal;">• Deep learning model estimates motion artifacts<br />• Signal-to-noise ratio (SNR) computed</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">dMRI</td>
-<td style="word-wrap: break-word; white-space: normal;">• Framewise displacement (FD) for head motion<br />• Head motion estimated via <span class="tooltip">registration to tensor-synthesized images<span class="tooltiptext">accounts for contrast differences across orientations</span></span> (<a href="https://doi.org/10.1002/hbm.20619">Hagler et al. 2009</a>)<br />• Identification of <span class="tooltip">dark slices<span class="tooltiptext">artifacts caused by abrupt head movements</span></span> via RMS difference between raw and tensor-fitted data<br />• Total slices and frames with motion artifacts calculated<br />• Metrics for line artifacts and field-of-view (FOV) cutoff</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">fMRI</td>
-<td style="word-wrap: break-word; white-space: normal;">• FD for head motion (average FD and seconds with FD &lt; 0.2 mm, 0.3 mm, 0.4 mm) (<a href="https://doi.org/10.1016/j.neuroimage.2011.10.018">Power et al., 2012</a>)<br />• Metrics for line artifacts and FOV cutoff<br />• <span class="tooltip">FWHM<span class="tooltiptext">Full width half max () spatial smoothness</span></span> and <span class="tooltip">tSNR<span class="tooltiptext">temporal SNR</span></span> computed after motion correction (<a href="https://doi.org/10.1016/j.neuroimage.2005.01.007">Triantafyllou et al. 2005</a>)</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">Field Maps</td>
-<td style="word-wrap: break-word; white-space: normal;">• Metrics for line artifacts and FOV cutoff</td>
-</tr>
-<tr>
-<td style="word-wrap: break-word; white-space: normal;">All Modalities</td>
-<td style="word-wrap: break-word; white-space: normal;">• SNR computed where applicable</td>
-</tr>
-</tbody>
-</table>
-<p><b>MANUAL QC</b> (see <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/#manual-review">HBCD Data Release Docs</a> for full details)<br>
-Data is selection for manual review based on multivariate prediction and Bayesian classifier. Manual review involves scoring images based on severity of the following artifacts:
-</p>
-<table style="width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 14px">
-<thead>
-<tr>
-    <th style="width: 20%; text-align: center;">Modality</th>
-    <th style="width: 80%; text-align: center;">QC Procedures</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>T1w, T2w</td>
-<td style="word-wrap: break-word; white-space: normal;"> • Scored for <strong>motion artifacts</strong> (e.g., ripples, blurring) on a 0-3 scale (0 = none, 3 = severe)<br> • Other documented issues include intensity inhomogeneity and <span class="tooltip">ghosting<span class="tooltiptext">faint displaced copy of anatomy due to slices outside FOV</span></span></td>
-</tr>
-<tr>
-<td>qMRI</td>
-<td style="word-wrap: break-word; white-space: normal;"> • Same artifact scoring as above (0 - 3)<br> • Inspection of derived data (parametric maps, ROI analysis, and quantitative comparisons for 3D-QALAS)</td>
-</tr>
-<tr>
-<td>B1 field maps</td>
-<td style="word-wrap: break-word; white-space: normal;"> • Visual inspection and overall QC only; used for bias field correction of qMRI scans.</td>
-</tr>
-<tr>
-<td>SVS localizer scans (MRS)</td>
-<td style="word-wrap: break-word; white-space: normal;"> • Visual inspection and overall QC only; used to define ROI for spectroscopy.</td>
-</tr>
-<tr>
-<td>dMRI, fMRI, field maps</td>
-<td style="word-wrap: break-word; white-space: normal;"> • Scored for susceptibility artifacts, FOV cutoff, and <span class="tooltip">line artifacts<span class="tooltiptext">horizontal lines present in the sagittal view, including dark slice-frame and interleaved sliced offset</span></span>.<br> • Susceptibility issues include <span class="tooltip">signal dropout<span class="tooltiptext">Consistent with prior infant fMRI using posterior-anterior (PA) acquisitions, signal dropout is commonly noted in the posterior occipital cortex</span></span>, signal bunching, and warping.</td>
-</tr>
-</tbody>
-</table>
+<p>Includes automated and manual QC as described in the <a href="https://docs.hbcdstudy.org/latest/instruments/mri/qc/">HBCD Data Release Docs</a>.</p>
 <p><b>Modality-Specific Worfklow Details</b>
 <img src="../images/qc/MRI-QC-WF.png" alt="Tableau" width="80%" height="auto" class="center">
 </p>

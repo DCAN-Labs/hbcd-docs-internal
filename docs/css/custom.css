@@ -101,72 +101,6 @@ code, pre {
   font-size: 1em;
 }
 
-/* TOOLTIPS */
-.tooltip {
-    position: relative;
-    cursor: help;
-    border-bottom: 1px dotted #555;
-    color: teal;
-    font-weight: 500;
-    line-height: inherit;
-}
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 200px;
-    max-width: 90vw;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 4px;
-    border-radius: 4px;
-    position: absolute;
-    transition: opacity 0.2s;
-    opacity: 0;
-    z-index: 1000;
-    white-space: normal;
-    overflow-wrap: break-word;
-    font-size: 12px;
-    line-height: 1.2;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 5px;
-}
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-.tooltip:hover {
-    color: rgb(0, 207, 207);
-    border-bottom: 1px dotted #0056b3;
-}
-.tooltip-left .tooltiptext {
-    top: 50%;
-    right: 100%;
-    transform: translateY(-50%);
-    margin-right: 5px;
-}
-.tooltip-right .tooltiptext {
-    top: 50%;
-    left: 100%;
-    transform: translateY(-50%);
-    margin-left: 5px;
-}
-.tooltip-bottom .tooltiptext {
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 5px;
-}
-.tooltip-top .tooltiptext {
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 5px;
-}
-
-
-
 /* RELEASE NOTES */
 /* RELEASE DATE BANNER */
 .release-banner {
@@ -266,4 +200,22 @@ code, pre {
   margin-top: 0.3rem !important;
   margin-bottom: 0 !important;
   font-size: 0.9em;
+}
+
+
+/* Shrink the width of the right-hand floating TOC */
+.wy-nav-content {
+  max-width: 90% !important;
+}
+/* Adjust the right-hand TOC width */
+.rst-content .toc {
+  width: 200px !important;
+  right: 0 !important;
+  font-size: 90%;
+}
+/* Push the main content over so it doesn’t overlap */
+@media (min-width: 1000px) {
+  .wy-nav-content {
+    margin-right: 195px; 
+  }
 }

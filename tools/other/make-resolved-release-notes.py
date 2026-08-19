@@ -121,7 +121,7 @@ def build_table(data_dict, table_title):
 <tr style="text-decoration: bold; font-size: 1.2em;">
 <th>TABLE/TOPIC</th>
 <th>SUMMARY</th>
-<th style='text-align: center;'><span class="tooltip tooltip-left">BR<span class="tooltiptext">Beta Release</span></span></th>
+<th>BR</th>
 </tr>
 </thead>
 <tbody>
