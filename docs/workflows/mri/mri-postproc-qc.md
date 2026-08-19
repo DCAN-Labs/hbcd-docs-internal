@@ -1,6 +1,6 @@
 # MRI Pre-Release QC Details
 
-The following [Pre-release QC](../qc.md#pre-release-mri) procedures are performed by the **MRI Post-Processing QC team** (at [CDNI](../../orgcharts.md#center-for-developmental-neuroimaging)) prior to inclusion of processed MRI data in the release pool. Any major results of interest are summarized in the data release notes - see the [fMRI QC Summary Statistics on HBCD Docs](https://docs.hbcdstudy.org/latest/instruments/mri/fmri/#quality-control-summary-statistics) for details.
+The following [Pre-release QC](../qc.md#pre-release-mri) procedures are performed by the **MRI Post-Processing QC team** (at [CDNI](../../orgcharts.md#center-for-developmental-neuroimaging)) for processed MRI data included in the release pool. Any major results of interest are summarized in the data release notes - see the [fMRI QC Summary Statistics on HBCD Docs](https://docs.hbcdstudy.org/latest/instruments/mri/fmri/#quality-control-summary-statistics) for details. Scripts used to perform post-processing QC are all housed within the [NBDC-MRI-Post-Processing-QC](https://github.com/DCAN-Labs/NBDC-MRI-Post-Processing-QC/) GitHub repository.
 
 ## Internal Protocol for Release Sign-Off 
 

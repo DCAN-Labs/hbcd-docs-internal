@@ -289,6 +289,12 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
 </tr>
 <tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>dMRI metadata</td>
+<td><code>LargeDelta</code> and <code>SmallDelta</code> in the sidecars currently are set to vendor-specific values (which aren't always correct because the models have their own values) and ﻿will be updated to reflect accurate values.﻿ ﻿</td>
+<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
+</tr>
+<tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Cook&#x27;s Distance</td>
 <td>Addition Cook's distance values computed for fMRI.</td>
