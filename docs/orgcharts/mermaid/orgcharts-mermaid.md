@@ -6,11 +6,6 @@
 }
 </style>
 
-<div class="admonition warning">
-  <p class="admonition-title">Warning</p>
-  <p>SVG images may not display correctly in Safari. It is recommended to view this page in Chrome or Firefox.</p>
-</div>
-
 #  HDCC Structure & Organizational Charts
 
 ## HDCC Functional Structure
@@ -65,7 +60,6 @@ The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN
   </div>
 </div>
 
-<p>
 <div id="cdni-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-users"></i></span>
   <span class="text-with-link">
@@ -114,7 +108,7 @@ The Center for Developmental NeuroImaging ([CDNI](https://cdni.umn.edu/)) at UMN
 </tbody>
 </table>
 </div>
-</p>
+
 
 #### Health Sciences Technology
   
@@ -874,19 +868,7 @@ FIONA (Flash-memory based Input/Output Network Appliances) is a high-performance
 
 The Laureate Institute for Brain Research (LIBR) houses the **Biostatistics** and **Geocoding & Linking External Data** [HBCD Workgroups](#hbcd-workgroups), providing support for the HDCC in the areas of biostatistics, geolocation, and data analysis. The Biostatistics WG is furthermore responsible for <a href="../workflows/qc/#pre-release-qc-5-stages">Pre-release QC</a>.
 
-```mermaid
-flowchart TB
-    n16["<b>Wesley K. Thompson, PhD</b><br>HDCC Assoc Dir, Biostatistics Chair"] --- n20(["<b>Biostatistics</b>"])
-    n20 --- n18["<b>[TBD]</b><br>Biostatistician"]
-    n17["<b>Chun Fan, PhD</b><br>Geolocation Chair"] --- n21(["<b>Geocoding</b>"])
-    n21 --- n19["<b>Wenjie Zheng, PhD</b><br>Geocoding Developer"]
-    style n16 fill:#BBDEFB,stroke:#2962FF,stroke-width:4px
-    style n20 fill:#E1BEE7,stroke:#AA00FF
-    style n18 fill:#BBDEFB,stroke:#2962FF
-    style n17 fill:#BBDEFB,stroke:#2962FF
-    style n21 stroke:#AA00FF,fill:#E1BEE7
-    style n19 fill:#BBDEFB,stroke:#2962FF
-```
+<img src="libr.png" width="50%"/>
 
 <div id="libr-rr" class="table-banner" onclick="toggleCollapse(this)">
   <span class="emoji"><i class="fas fa-users"></i></span>
