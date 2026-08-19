@@ -43,7 +43,9 @@ Please email Lucille Moore (lmoore@umn.edu), Stephanie Averill (saverill@ucsd.ed
 
 ---
 
-### Appendix: README Workflow & Information Storage
+## Appendix
+
+### README Workflow & Information Storage
 
 Each instrument README sources most or all of its contents from a central Airtable repository that stores all instrument README information. This repository is updated and populated via external forms, with a separate link provided to SMEs per instrument. When you load a form, all of the existing information for that instrument prepopulates the fields.
 <p align="center"><img src="../images/README-workflow.png" alt="README updates workflow" width="700"></p>
