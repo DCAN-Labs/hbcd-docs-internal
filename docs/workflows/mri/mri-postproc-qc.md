@@ -10,6 +10,17 @@ The following [Pre-release QC](../qc.md#pre-release-mri) procedures are performe
 1. Documentation is revised as needed
 1. Post-proc QC team provides official sign-off on QC to Lasso
 
+## Outlier Detection
+
+A QMD file is used to read in tabulated data:
+
+- QSIRecon (Diffusion)
+- OSPREY (MRS)
+- XCP-D (Structural/Functional)
+- BIBSNet (Structural)
+
+The QMD file identifies outliers, or null values, flags subject IDs/sessions, and writes them to an output file.
+
 ## XCP-D
 ### Structural Checks
 Tabulated XCP-D pipeline derivatives are analyzed using R-based scripts. ROI-level measures include:
