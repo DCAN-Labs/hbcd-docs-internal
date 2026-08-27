@@ -7,9 +7,11 @@ This document outlines the staged workflow for selecting, releasing, and validat
 The release timeline for determination of variables to include in the release, study instrument documentation (or "READMEs" - [see details](../internal/readmes.md)), final QC of data as available via the [Lasso Pre-Release System](https://hbcd-hdcc-qc.lassoinformatics.com/), etc. is as follows:
 
 #### Release 3.0 Timeline
+<!-- <img src="../images/3.0-timeline-old.png" alt="Release timeline" width="100%" height="auto" class="center"> -->
+
 <img src="../images/3.0-timeline.png" alt="Release timeline" width="100%" height="auto" class="center">
 
-***Useful Links***
+#### Useful Links
 
 <ul>
   <li><a href="https://docs.google.com/spreadsheets/d/171oj0PLLtVgp5OSReBD5J6Ir4U56QQrWEwu92ZwttrM/edit?gid=0#gid=0">Measure Inclusion Form</a> tracking the list of variables to be included in upcoming release</li>
