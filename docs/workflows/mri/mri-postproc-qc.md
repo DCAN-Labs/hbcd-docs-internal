@@ -2,6 +2,25 @@
 
 The following [Pre-release QC](../qc.md#pre-release-mri) procedures are performed by the **MRI Post-Processing QC team** (at [CDNI](../../orgcharts.md#center-for-developmental-neuroimaging)) for processed MRI data included in the release pool. Any major results of interest are summarized in the data release notes - see the [fMRI QC Summary Statistics on HBCD Docs](https://docs.hbcdstudy.org/latest/instruments/mri/fmri/#quality-control-summary-statistics) for details. Scripts used to perform post-processing QC are all housed within the [NBDC-MRI-Post-Processing-QC](https://github.com/DCAN-Labs/NBDC-MRI-Post-Processing-QC/) GitHub repository.
 
+## Quick Reference - S3 Buckets & Data Sources for QC
+
+Currently, the post-processing MRI QC group sources de-identified data directly from the Lasso PR bucket containing deidentified data that are directly sourced to include in the public release: `s3://midb-hbcd-lasso-hdcc-qc-br/`.       
+*In the future, workflows will be developed to instead work on reidentified data maintained by LORIS for data QC.*
+
+**Raw BIDS Data**       
+*Includes: fieldmaps, scans TSV files with raw MR QC metrics provided by JCVI (located within [session folders](https://docs.hbcdstudy.org/latest/datacuration/file-based-data/#raw-bids)), etc.*       
+Bucket path: `s3://midb-hbcd-lasso-hdcc-qc-br/frozen_files/rawdata/`
+
+**Derivatives**     
+*Includes: processed pipelines outputs, e.g. XCP-D derivatives*             
+Bucket path: `s3://midb-hbcd-lasso-hdcc-qc-br/br{BETA RELEASE#}/hbcd/`
+
+**Phenotypic/tabulated data**      
+*Includes: tabulated MRI pipeline derivatives, demographics, behavioral data, etc.*           
+Bucket path: `s3://midb-hbcd-lasso-hdcc-qc-br/br30.0/hbcd/rawdata/phenotypes/` *(download entire folder)* 
+
+---
+
 ## Internal Protocol for Release Sign-Off 
 
 1. The post-proc QC team runs automated analyses (described below) and review the results 
@@ -10,7 +29,11 @@ The following [Pre-release QC](../qc.md#pre-release-mri) procedures are performe
 1. Documentation is revised as needed
 1. Post-proc QC team provides official sign-off on QC to Lasso
 
-## Outlier Detection
+---
+
+## Analyses Performed 
+
+### Outlier Detection
 
 A QMD file is used to read in tabulated data:
 
@@ -21,8 +44,8 @@ A QMD file is used to read in tabulated data:
 
 The QMD file identifies outliers, or null values, flags subject IDs/sessions, and writes them to an output file.
 
-## XCP-D
-### Structural Checks
+### XCP-D
+#### Structural Checks
 Tabulated XCP-D pipeline derivatives are analyzed using R-based scripts. ROI-level measures include:
 
 - Cortical metrics (Gordon parcellation, 333 ROIs): cortical thickness, surface area, and curvature
@@ -30,12 +53,12 @@ Tabulated XCP-D pipeline derivatives are analyzed using R-based scripts. ROI-lev
 
 BrainSwipes visual QC outputs are used to assess data quality and its impact on the underlying distributions. We also evaluate associations with demographic variables. Over 90% of data passed BrainSwipes QC, indicating high overall quality. No significant effects of data quality or associations with demographic factors have been detected, suggesting either minimal confounding or limited statistical power to detect such effects in the current sample.
 
-### Functional Checks
+#### Functional Checks
 From the **tabulated XCP-D derivatives**, we analyze ALFF and ReHo measures from the Gordon cortical parcellation and Freesurfer subcortical segmentation, covering a total of 352 ROIs. BrainSwipes visual QC is used to assess the proportion of rs-fMRI data meeting quality thresholds and evaluate its impact on distributional characteristics. The QC metric exhibited a linear trend, supporting its interpretation as a continuous measure. Examining effects of data quality, we find that data quality effects are most minimized when the pass rate for BrainSwipes QC exceeds 70%.
 
 We also analyze mean ROI-to-ROI functional connectivity maps from the same parcellations (Gordon cortical and Freesurfer subcortical, 352 ROIs) in the **file-based data**. As with tabulated data, BrainSwipes QC outputs were used to assess data quality and its influence on connectivity estimates. A similar linear relationship was observed, and QC effects were minimized when only data with at least a 70% pass rate were included.
 
-## BME-X 
+### BME-X 
 
 We evaluate image enhancement effects and association between BME-X QI and manual QC ratings. Manual visual QC is performed for all T1/T2 structural data pre- and post-BME-X enhancement to evaluate:
 
@@ -49,7 +72,7 @@ We evaluate image enhancement effects and association between BME-X QI and manua
 
 ---
 
-## HBCD QC-FC Summary Analysis
+### HBCD QC-FC Summary Analysis
 
 We evaluate whether scan quality, as quantified by BrainSwipes QC summary score, meaningfully changes functional connectivity (FC) estimates in HBCD resting-state fMRI data. The script loads BrainSwipes QC scores and Gordon FC matrices (`.pconn.nii`) for a selected session, then evaluates how functional connectivity differs between high- and low-quality runs across multiple QC thresholds (0.9–0.1). Summary measures include within-network FC, between-network FC, and network distinctness (within-network FC - between-network FC). 
 
@@ -67,7 +90,7 @@ Outputs include:
 
 ---
 
-## Per-Network QC Impact Analysis
+### Per-Network QC Impact Analysis
 
 We also evaluate the association between scan quality (BrainSwipes QC scores) and *network-level* FC metrics (including network distinctness and within-network mean FC) to identify networks most affected by scan quality. The script evaluates the relationship between QC and FC metrics per-network, ranks the networks by effect size, and flags those that display FDR-significant QC effects. The script computes and plots the following for each metric:
 
