@@ -16,11 +16,11 @@ Bucket path: `s3://midb-hbcd-lasso-hdcc-qc-br/frozen_files/rawdata/`
 
 **Derivatives**     
 *Includes: processed pipelines outputs, e.g. XCP-D derivatives*             
-Bucket path: `s3://midb-hbcd-lasso-hdcc-qc-br/br{BETA RELEASE#}/hbcd/`
+Bucket path: `s3://midb-hbcd-lasso-hdcc-qc-br/br{BETA RELEASE#}/hbcd/derivatives/`
 
 **Phenotypic/tabulated data**      
 *Includes: tabulated MRI pipeline derivatives, demographics, behavioral data, etc.*           
-Bucket path: `s3://midb-hbcd-lasso-hdcc-qc-br/br30.0/hbcd/rawdata/phenotypes/` *(download entire folder)* 
+Bucket path: `s3://midb-hbcd-lasso-hdcc-qc-br/br{BETA RELEASE#}/hbcd/rawdata/phenotypes/` *(download entire folder)* 
 
 ---
 
