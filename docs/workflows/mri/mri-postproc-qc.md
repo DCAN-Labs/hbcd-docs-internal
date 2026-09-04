@@ -20,7 +20,7 @@ Bucket path: `s3://midb-hbcd-lasso-hdcc-qc-br/br{BETA RELEASE#}/hbcd/derivatives
 
 **Phenotypic/tabulated data**      
 *Includes: tabulated MRI pipeline derivatives, demographics, behavioral data, etc.*           
-Bucket path: `s3://midb-hbcd-lasso-hdcc-qc-br/br{BETA RELEASE#}/hbcd/rawdata/phenotypes/` *(download entire folder)* 
+Bucket path: `s3://midb-hbcd-lasso-hdcc-qc-br/br{BETA RELEASE#}/hbcd/rawdata/phenotype/` *(download entire folder)* 
 
 ---
 
