@@ -4,6 +4,9 @@ The following [Pre-release QC](../qc.md#pre-release-mri) procedures are performe
 
 ## Quick Reference - S3 Buckets & Data Sources for QC
 
+!!! warning "Confirm that data required is available before download"
+    Please slack Tanya P. in the `#hbcd` CDNI slack channel prior to downloading data to confirm that the data that you need is available. Remember to specify exactly what data you are looking for, e.g. "deidentified BR 30.0 raw BIDS/derivatives/tabulated data."
+
 Currently, the post-processing MRI QC group sources de-identified data directly from the Lasso PR bucket containing deidentified data that are directly sourced to include in the public release: `s3://midb-hbcd-lasso-hdcc-qc-br/`.       
 *In the future, workflows will be developed to instead work on reidentified data maintained by LORIS for data QC.*
 
