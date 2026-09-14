@@ -128,14 +128,10 @@
   </style>
 </head>
 <body>
-<h2>Resolved Issues & Updates Archive</h2>
-<p>
-<b>This page contains a running record of issues and updates verified as RESOLVED by Workgroups/SMEs</b> (BR21.0 forward; see release notes for earlier records). Until final sign off, items remain listed as ACTIVE in <a href="knownissues/">Known Issues & Pending Updates</a>. Note that individual BR release notes may include provisional updates that are not yet verified.
-</p>
+  <h2>Resolved Issues & Updates Archive</h2>
 
-<p style="font-size: 1.1em; color: #555; text-align: center;">
-<i class="fas fa-bug" style="color: #f97316; font-size: 1em;"></i> = Resolved Known Issue &nbsp;&nbsp;&nbsp;
-<i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Completed Pending Update</p>
+<p>Running record of resolved issues/updates based on final signoff from SMEs (BR21.0 forward; see release notes for earlier records).</p>
+<div style="margin: 1.25rem 0;"> <a href="knownissues/" class="archive-return-button"> <i class="fa-solid fa-arrow-left"></i> Return to Known Issues page </a> </div>
 
 <div class="archive-controls" aria-label="Archive filters">
   <div class="archive-controls-row">
@@ -155,18 +151,23 @@
       <option value="">All releases</option>
     </select>
 
+    <!-- ARCHIVE TYPE -->
     <select id="archive-type" aria-label="Filter by type">
       <option value="">All types</option>
       <option value="issue">Resolved Known Issues</option>
       <option value="update">Completed Pending Updates</option>
     </select>
-
     <button id="archive-reset" type="button">Clear filters</button>
   </div>
-
   <div id="archive-status" class="archive-status" aria-live="polite"></div>
 </div>
 
+<p style="color: #555; text-align: center;">
+<i class="fas fa-bug" style="color: #f97316;"></i> = Resolved Known Issue &nbsp;&nbsp;&nbsp;
+<i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Completed Pending Update</p>
+
+
+<!-- TABLE -->
 <table id="archive-table" class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -208,10 +209,6 @@
 <td><i class="fa-solid fa-rotate icon-rotate"></i> Addition of V06</td>
 <td>30.0</td>
 </tr>
-
-
-
-
 
 <!-- GENERAL -->
 
