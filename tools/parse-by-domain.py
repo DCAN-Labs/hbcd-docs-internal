@@ -5,8 +5,6 @@ import markdown
 import numpy as np
 import re
 
-# ADD WAY TO SPECIFY BR-ONLY?
-
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
 XLSX= "latest.xlsx"

@@ -12,7 +12,7 @@ resolved_html = f"../docs/changelog/resolved-archive.html"
 
 domain_mapping = {
     "Administrative": "ADM",
-    "All Data / General": "NA",
+    "All Data / General": "All/NA",
     "Behavior & Child-Caregiver Interaction": "MH",
     "Biospecimens & Omics": "BIO",
     "Demographics": "Demo",

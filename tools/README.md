@@ -9,6 +9,10 @@
 ## `parse-by-domain.py`
 This updates the known issues page based on the `latest.xlsx` file
 
+## `parse-by-domain-html.py`
+
+Generates html instead of inserting into md file - this is what I want to use next, just need to replace known issues page
+
 ## `make-release-notes.py`
 
 - This generates the Resolved Known Issues section for a BR release notes file
