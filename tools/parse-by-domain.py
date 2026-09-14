@@ -75,9 +75,7 @@ def build_table(domain, rows):
 <thead>
 <tr style="font-size: 1.1em;">
 <th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
+<th>Target</th></tr>
 </thead>
 <tbody>
 """)

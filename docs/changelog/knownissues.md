@@ -48,8 +48,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 
 <p style="font-size: 1.2em; color: #555; text-align: center; line-height: 2;">
 <i class="fas fa-bug" style="color: #f97316; font-size: 1em;"></i> = Known Issue &nbsp;&nbsp;&nbsp;
-<i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Pending Update &nbsp;&nbsp;&nbsp;
-<i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.1em;"></i> = Target Fix <i>(BR if known, otherwise public R#/TBD)</i>
+<i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Pending Update
 </p>
   
 !!! warning "Lasso Prerelease Platform Dashboard error"
@@ -63,9 +62,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <thead>
 <tr style="font-size: 1.1em;">
 <th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
+<th>Target</th></tr>
 </thead>
 <tbody>
 
@@ -120,9 +117,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <thead>
 <tr style="font-size: 1.1em;">
 <th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
+<th>Target</th></tr>
 </thead>
 <tbody>
 
@@ -189,9 +184,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <thead>
 <tr style="font-size: 1.1em;">
 <th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
+<th>Target</th></tr>
 </thead>
 <tbody>
 
@@ -216,9 +209,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <thead>
 <tr style="font-size: 1.1em;">
 <th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
+<th>Target</th></tr>
 </thead>
 <tbody>
 
@@ -261,9 +252,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <thead>
 <tr style="font-size: 1.1em;">
 <th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
+<th>Target</th></tr>
 </thead>
 <tbody>
 
@@ -282,9 +271,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <thead>
 <tr style="font-size: 1.1em;">
 <th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
+<th>Target</th></tr>
 </thead>
 <tbody>
 
@@ -333,9 +320,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <thead>
 <tr style="font-size: 1.1em;">
 <th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
+<th>Target</th></tr>
 </thead>
 <tbody>
 
@@ -378,9 +363,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <thead>
 <tr style="font-size: 1.1em;">
 <th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
+<th>Target</th></tr>
 </thead>
 <tbody>
 
@@ -441,9 +424,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <thead>
 <tr style="font-size: 1.1em;">
 <th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
+<th>Target</th></tr>
 </thead>
 <tbody>
 
@@ -480,9 +461,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <thead>
 <tr style="font-size: 1.1em;">
 <th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
+<th>Target</th></tr>
 </thead>
 <tbody>
 
