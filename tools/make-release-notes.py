@@ -11,7 +11,7 @@ import pandas as pd
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # DEFINE BR AND OUTPUT FILEPATH
-BR = "30.0"
+BR = "30.1"
 
 XLSX = "latest.xlsx"
 INTERNAL_MD = f"../docs/changelog/versions/BR3X/BR{BR}.md"

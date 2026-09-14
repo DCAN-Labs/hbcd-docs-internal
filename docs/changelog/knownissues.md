@@ -39,6 +39,8 @@
 }
 </style>
 # Known Issues & Pending Updates
+!!! info "Resolved Issues Archive"
+    See the [Resolved Issues Archive](resolved-archive.html) for a running list of all previously resolved issues and updates.
 
 This page lists ACTIVE issues/pending updates either targeted for upcoming BRs or still pending final Workgroup/SME sign-off. Items are not considered resolved until final review and approval by Workgroup/SME. Note that items addressed in a BR are not reflected as resolved in the [public release documentation](https://docs.hbcdstudy.org/latest/changelog/issues-updates/) until the corresponding PR is released. For a list of resolved items, see [Resolved Issues & Updates Archive](resolved-archive.html).
 
@@ -55,6 +57,63 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 
 
 <!-- BEGIN KNOWN_ISSUES_TABLE -->
+### All Data / General
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr style="font-size: 1.1em;">
+<th></th><th>Table/Topic</th><th>Summary</th>
+<th style='text-align: center;'>
+  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
+</th></tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Implausible GA</td>
+<td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values  for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
+<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Incorrect JSONs</td>
+<td>Metadata field values were corrected for several instruments, but are not yet corrected in the JSON files. IN PARTICULAR, PLEASE CHECK <code>type_data</code> CAREFULLY as an incorrect data type may impact analyses. Impacted instruments include: <strong>APA 1/2</strong>, <strong>Bayley-4</strong>, and <strong>EEG Form-2</strong>. See details in <a href="../release-notes/#data-warning">Release Notes</a>.</td>
+<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Instruction</td>
+<td>The 'instruction' data dictionary element is currently blank.</td>
+<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Score text</td>
+<td>Text inappropriately located in score fields where score is missing to be moved to corresponding 'notes' field (impacts ecPROMIS-PAGS; MAPS-TL; SPM-2).</td>
+<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Blank Fields for Siblings</td>
+<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child, not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants from the corresponding Main Child record. See the participant ID mapping in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>FamilyID</td>
+<td>A <code>FamilyID</code> field will be added to instruments to identify sibling relationships. Until then, sibling ID mapping (Main Child vs Sibling) is provided in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Sequence Field</td>
+<td>The currently included Sequence field is blank across all instruments and will be removed.</td>
+<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
+</tr>
+</tbody></table>
+
+
 ### Behavior &amp; Child-Caregiver Interaction
 
 <table class="compact-table-no-vertical-lines">
@@ -89,7 +148,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ECHO</td>
 <td>Addition of the Early Child Care and Education</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
+<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -140,7 +199,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Nails</td>
 <td>Nail type is <code>4</code> (Unknown) in the main results table (<code>*_nails_results</code>) and should be obtained from the specimen table (<code>*_nails_type</code>).</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -179,7 +238,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>TLFB</td>
 <td>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a></td>
-<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
+<td style='text-align: center;'><span class='pr-pill'>R3.0</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
@@ -213,63 +272,6 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td>Age fields</td>
 <td>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions (site entry errors); exclude age values prior to analysis.</td>
 <td style='text-align: center;'><span class='br-pill'>30.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>MADE v1.7.0</td>
-<td>HBCD-MADE derivatives processed through updated version v1.7.0</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
-</tr>
-</tbody></table>
-
-
-### General
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr style="font-size: 1.1em;">
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
-</thead>
-<tbody>
-
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Implausible GA</td>
-<td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values  for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
-<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Instruction</td>
-<td>The 'instruction' data dictionary element is currently blank.</td>
-<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Score text</td>
-<td>Text inappropriately located in score fields where score is missing to be moved to corresponding 'notes' field (impacts ecPROMIS-PAGS; MAPS-TL; SPM-2).</td>
-<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Blank Fields for Siblings</td>
-<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child, not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants from the corresponding Main Child record. See the participant ID mapping in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>FamilyID</td>
-<td>A <code>FamilyID</code> field will be added to instruments to identify sibling relationships. Until then, sibling ID mapping (Main Child vs Sibling) is provided in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Sequence Field</td>
-<td>The currently included Sequence field is blank across all instruments and will be removed.</td>
-<td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
 </tr>
 </tbody></table>
 
@@ -308,13 +310,19 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>QSIRecon</td>
 <td>Tabulated data for QSIRecon (participant data combined across derivative files into single tidy table) will be provided in a future release.</td>
+<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Raw QC Metrics</td>
+<td>Raw MR data QC metrics provided in the raw BIDS SCANS TSV files will be combined into a single table across participants/sessions.</td>
 <td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Source DICOMs</td>
-<td>Add source DICOMs for all imaging modalities.</td>
-<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
+<td>fmap QC</td>
+<td>Additional QC fields added to the scans TSV files related to line artifacts in fmaps (<code>line2_*</code>)</td>
+<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
 </tr>
 </tbody></table>
 
@@ -353,39 +361,12 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Vineland</td>
 <td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix. In addition, the age of one child is outside of the valid bounds for V05.</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>CDI-2</td>
-<td>Addition of the MacArthur-Bates CDI-2 Language</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Deferred Imitation</td>
 <td>Addition of instrument: Deferred Imitation Task: Gong and Berry-Go-Round</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
-</tr>
-</tbody></table>
-
-
-### Novel Tech &amp; Wearable Sensors
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr style="font-size: 1.1em;">
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th style='text-align: center;'>
-  <i class="fa-solid fa-location-crosshairs" style="color: #489000; font-size: 1.3em;"></i>
-</th></tr>
-</thead>
-<tbody>
-
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>GABI</td>
-<td>Addition of raw BIDS data for GABI (infant heart rate).</td>
 <td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 </tbody></table>
@@ -437,12 +418,6 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Child Nutrition</td>
 <td>Addition of the Child Nutrition Questionnaire.</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Med History V1</td>
-<td>Addition of V06</td>
 <td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
