@@ -4,8 +4,9 @@ import os
 import markdown
 import numpy as np
 import re
+from utils import load_and_filter_xlsx_resolved
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))   
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 XLSX= "data/latest.xlsx"
 # Populate resolved html page
@@ -29,38 +30,6 @@ domain_mapping = {
 }
 
 # FUNCTIONS
-def load_and_filter_xlsx(xlsx_path, sheet_id, sheet_gid):
-    """
-    Load XLSX file, rename columns, filter rows, fill missing values, and strip whitespace.
-    """
-    # df_monday = pd.read_excel(xlsx_path, dtype=str, usecols=['PR', 'BR', 'Domain', 'Type', 'RTDs', 'Table/Topic', 'Autoparsed?', 'ID'])
-    df_monday = pd.read_excel(xlsx_path, dtype=str)
-    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_gid}"
-    df_gsheet = pd.read_csv(url, usecols=['ID', 'Text']) 
-
-    df = pd.merge(df_monday, df_gsheet, on='ID', how='left')  
-
-    # Filter - only include items with RTDs == "Add to archive"
-    df = df[df['RTDs'] == 'Add to archive']
-
-    # Specify columns to keep
-    columns_to_keep = ['ID', 'Text', 'Final BR', 'Domain', 'Table/Topic', 'Type']
-    df = df[columns_to_keep]
-
-    df = df.rename(columns={
-    "Text": "Summary"})
-
-    # Map domain values using the domain_mapping dictionary
-    df["Domain"] = df["Domain"].replace(domain_mapping)
-
-    # Fill missing values and strip whitespace 
-    df = df.fillna('')
-    df = df.apply(lambda col: col.str.strip() if col.dtype == "object" else col)
-
-    df.to_csv(f"data/test.csv", index=False)  
-
-    return df
-
 type_icons = {
     "known_issue": '<i class="fas fa-bug icon-bug"></i>',
     "pending": '<i class="fa-solid fa-rotate icon-rotate"></i>',
@@ -143,7 +112,13 @@ def insert_at_top_of_table(html_path, rows_html):
     print("Resolved archive table successfully updated.")
 
 # WORK
-df = load_and_filter_xlsx(XLSX, sheet_id, sheet_gid)
+df = load_and_filter_xlsx_resolved(XLSX, sheet_id, sheet_gid, domain_mapping)
+df = df[df['RTDs'] == 'Add to archive']
+df = df.rename(columns={"Text": "Summary"})
+
+# Map domain values using the domain_mapping dictionary
+df["Domain"] = df["Domain"].replace(domain_mapping)
+
 # df.to_csv("debug.csv", index=False)
 
 existing_summaries = get_existing_summaries(resolved_html)

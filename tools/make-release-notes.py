@@ -7,15 +7,13 @@ import pandas as pd
 
 # Currently this code only generate the table for resolved known issues/pending updates based on a defined BR, using monday.com table data as inputs
 
-
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # DEFINE BR AND OUTPUT FILEPATH
 BR = "30.1"
 
-XLSX = "latest.xlsx"
+XLSX = "data/latest.xlsx"
 INTERNAL_MD = f"../docs/changelog/versions/BR3X/BR{BR}.md"
-
 
 # FUNCTIONS
 

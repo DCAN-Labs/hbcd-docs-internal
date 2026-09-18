@@ -4,7 +4,8 @@ import os
 import markdown
 import numpy as np
 import re
-from datetime import datetime 
+from datetime import datetime
+from utils import load_and_filter
 
 # NEW VERSION OF parse-by-domains.py that parses text documenting issues from a separate google sheet and matches issue based on ID#
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
@@ -17,31 +18,6 @@ sheet_gid = "0"
 INTERNAL_MD = "../docs/changelog/knownissues.md"
 
 # FUNCTIONS
-
-def load_and_filter_xlsx(xlsx_path, sheet_id, sheet_gid):
-    """
-    Load XLSX file, rename columns, filter rows, fill missing values, and strip whitespace.
-    """
-    df_monday = pd.read_excel(xlsx_path, dtype=str, usecols=['PR', 'BR', 'Domain', 'Type', 'RTDs', 'Table/Topic', 'Autoparsed?', 'ID'])
-
-    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_gid}"
-    df_gsheet = pd.read_csv(url, usecols=['ID', 'Text']) 
-
-    df = pd.merge(df_monday, df_gsheet, on='ID', how='left')  
-
-    # Filter - only include items marked for autoparsing
-    df = df[df['Autoparsed?'].str.contains('Yes')]
-
-    # Fill missing values and strip whitespace 
-    df = df.fillna('')
-    df = df.apply(lambda col: col.str.strip() if col.dtype == "object" else col)
-
-    # df_gsheet.to_csv("gsheet.csv", index=False)
-    # Generate merge.csv for local record
-    current_datetime = datetime.now().strftime("%Y-%m-%d")
-    df.to_csv(f"data/merge_{current_datetime}.csv", index=False)  
-
-    return df
 
 def map_type(value):
     if "issue" in value:
@@ -127,7 +103,7 @@ def build_table(domain, rows):
 
 # WORK
 
-df = load_and_filter_xlsx(XLSX, sheet_id, sheet_gid)
+df = load_and_filter(XLSX, sheet_id, sheet_gid)
 
 # Extra steps for internal documentation: Remove rows archived to BR - already documented in resolved issues page
 df = df[~(df['RTDs'] == 'Archived to BR')]
