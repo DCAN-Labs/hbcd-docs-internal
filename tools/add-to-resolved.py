@@ -8,7 +8,12 @@ import re
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
 XLSX= "data/latest.xlsx"
+# Populate resolved html page
 resolved_html = f"../docs/changelog/resolved-archive.html"
+
+# Parse text describing issue from google sheet
+sheet_id = "1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc"
+sheet_gid = "0"
 
 domain_mapping = {
     "Administrative": "ADM",
@@ -24,20 +29,26 @@ domain_mapping = {
 }
 
 # FUNCTIONS
-def load_and_filter_xlsx(xlsx_path):
+def load_and_filter_xlsx(xlsx_path, sheet_id, sheet_gid):
     """
     Load XLSX file, rename columns, filter rows, fill missing values, and strip whitespace.
     """
-    df = pd.read_excel(xlsx_path, dtype=str)
-    df = df.rename(columns={
-    "RTDs Text (markdown format)": "Summary"})
+    # df_monday = pd.read_excel(xlsx_path, dtype=str, usecols=['PR', 'BR', 'Domain', 'Type', 'RTDs', 'Table/Topic', 'Autoparsed?', 'ID'])
+    df_monday = pd.read_excel(xlsx_path, dtype=str)
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_gid}"
+    df_gsheet = pd.read_csv(url, usecols=['ID', 'Text']) 
 
-    # Filter - only include items with RTDs_Status == "Archived to BR"
-    df = df[df['RTDs_Status'] == 'Archived to BR']
+    df = pd.merge(df_monday, df_gsheet, on='ID', how='left')  
+
+    # Filter - only include items with RTDs == "Add to archive"
+    df = df[df['RTDs'] == 'Add to archive']
 
     # Specify columns to keep
-    columns_to_keep = ['Domain', 'Table/Topic', 'Type',  'Summary', 'Final BR']
+    columns_to_keep = ['ID', 'Text', 'Final BR', 'Domain', 'Table/Topic', 'Type']
     df = df[columns_to_keep]
+
+    df = df.rename(columns={
+    "Text": "Summary"})
 
     # Map domain values using the domain_mapping dictionary
     df["Domain"] = df["Domain"].replace(domain_mapping)
@@ -45,6 +56,8 @@ def load_and_filter_xlsx(xlsx_path):
     # Fill missing values and strip whitespace 
     df = df.fillna('')
     df = df.apply(lambda col: col.str.strip() if col.dtype == "object" else col)
+
+    df.to_csv(f"data/test.csv", index=False)  
 
     return df
 
@@ -64,7 +77,7 @@ def normalize_text(text):
 
 def get_existing_summaries(html_path):
     """
-    Pull the plain-text Summary content already present in the resolved
+    Pull the Text content already present in the resolved (summarizing issue)
     archive table (3rd <td> of each row) so we can skip re-adding items.
     """
     with open(html_path, "r", encoding="utf-8") as f:
@@ -130,7 +143,7 @@ def insert_at_top_of_table(html_path, rows_html):
     print("Resolved archive table successfully updated.")
 
 # WORK
-df = load_and_filter_xlsx(XLSX)
+df = load_and_filter_xlsx(XLSX, sheet_id, sheet_gid)
 # df.to_csv("debug.csv", index=False)
 
 existing_summaries = get_existing_summaries(resolved_html)
