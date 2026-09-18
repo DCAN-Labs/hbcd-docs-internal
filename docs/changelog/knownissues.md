@@ -242,7 +242,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td></td>
+<td>Tabulated XCP-D</td>
 <td>All 0s for numeric values in tabulated XCP-D derivatives</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
