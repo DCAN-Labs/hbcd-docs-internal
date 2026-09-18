@@ -165,7 +165,7 @@ def insert_into_markdown(md_path, table_html):
     with open(md_path, "w", encoding="utf-8") as file:
         file.write(new_content)
 
-    print("Known issues table successfully updated.")
+    print(f"Release notes populated for BR {BR}")
 
 
 # WORK
