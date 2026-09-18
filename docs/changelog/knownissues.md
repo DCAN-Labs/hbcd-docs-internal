@@ -4,40 +4,8 @@
     max-width: 90% !important;
     flex-grow: 1 !important;
 }
-.br-pill {
-  display: inline-block;
-  padding: 2px 8px;
-  font-size: 0.75em;
-  font-weight: 600;
-  border-radius: 999px;
-  line-height: 1.4;
-  white-space: nowrap;
-  background-color: #e6f0ff; 
-  color: #1a4fb3;
-}
-.pr-pill {
-  display: inline-block;
-  padding: 2px 8px;
-  font-size: 0.75em;
-  font-weight: 600;
-  border-radius: 999px;
-  line-height: 1.4;
-  white-space: nowrap;
-  background-color: #f89781af;
-}
-.tbd-pill {
-  display: inline-block;
-  padding: 2px 8px;
-  font-size: 0.75em;
-  font-weight: 600;
-  border-radius: 999px;
-  line-height: 1.4;
-  white-space: nowrap;
-  background-color: #f1f3f5; 
-  color: #666; 
-  font-style: italic;
-}
 </style>
+
 # Known Issues & Pending Updates
 !!! info "Resolved Issues Archive"
     See the [Resolved Issues Archive](resolved-archive.html) for a running list of all previously resolved issues and updates.

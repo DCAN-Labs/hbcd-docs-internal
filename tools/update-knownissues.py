@@ -4,23 +4,30 @@ import os
 import markdown
 import numpy as np
 import re
+from datetime import datetime 
 
+# NEW VERSION OF parse-by-domains.py that parses text documenting issues from a separate google sheet and matches issue based on ID#
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
-XLSX= "latest.xlsx"
+XLSX= "data/latest.xlsx"
+# Parse text describing issue from google sheet
+sheet_id = "1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc"
+sheet_gid = "0"
+# Populate known issues page
 INTERNAL_MD = "../docs/changelog/knownissues.md"
-
 
 # FUNCTIONS
 
-def load_and_filter_xlsx(xlsx_path):
+def load_and_filter_xlsx(xlsx_path, sheet_id, sheet_gid):
     """
     Load XLSX file, rename columns, filter rows, fill missing values, and strip whitespace.
     """
-    df = pd.read_excel(xlsx_path, dtype=str)
-    df = df.rename(columns={
-    "RTDs": "Type",
-    "RTDs Text (markdown format)": "Text"})
+    df_monday = pd.read_excel(xlsx_path, dtype=str, usecols=['PR', 'BR', 'Domain', 'Type', 'RTDs', 'Table/Topic', 'Autoparsed?', 'ID'])
+
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_gid}"
+    df_gsheet = pd.read_csv(url, usecols=['ID', 'Text']) 
+
+    df = pd.merge(df_monday, df_gsheet, on='ID', how='left')  
 
     # Filter - only include items marked for autoparsing
     df = df[df['Autoparsed?'].str.contains('Yes')]
@@ -29,9 +36,12 @@ def load_and_filter_xlsx(xlsx_path):
     df = df.fillna('')
     df = df.apply(lambda col: col.str.strip() if col.dtype == "object" else col)
 
-    return df
+    # df_gsheet.to_csv("gsheet.csv", index=False)
+    # Generate merge.csv for local record
+    current_datetime = datetime.now().strftime("%Y-%m-%d")
+    df.to_csv(f"data/merge_{current_datetime}.csv", index=False)  
 
-# TEST NEW LOGIC
+    return df
 
 def map_type(value):
     if "issue" in value:
@@ -105,15 +115,11 @@ def build_table(domain, rows):
     return "\n".join(table_parts)
 
 # WORK
-df = load_and_filter_xlsx(XLSX)
 
-# Drop unecessary columns (for troubleshooting purposes)
-df = df.drop(['Name'], axis=1)
-df = df.drop(['Status'], axis=1)
+df = load_and_filter_xlsx(XLSX, sheet_id, sheet_gid)
 
-# Extra steps for internal documentation
-## Remove rows archived to BR - already documented in resolved issues page
-df = df[~(df['RTDs_Status'] == 'Archived to BR')]
+# Extra steps for internal documentation: Remove rows archived to BR - already documented in resolved issues page
+df = df[~(df['RTDs'] == 'Archived to BR')]
 
 # Prefix PR values
 df.loc[df['PR'] != '', 'PR'] = 'R' + df.loc[df['PR'] != '', 'PR']

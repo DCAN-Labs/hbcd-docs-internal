@@ -89,7 +89,7 @@ code, pre {
   margin-right: auto;
 }
 
-/* KNOWN ISSUES ICONS */
+/* KNOWN ISSUES PAGE */
 .icon-rotate {
   color: #199bd6;
   margin-right: 0.4em;
@@ -99,6 +99,38 @@ code, pre {
   color: #f97316;
   margin-right: 0.4em;
   font-size: 1em;
+}
+.br-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 999px;
+  line-height: 1.4;
+  white-space: nowrap;
+  background-color: #e6f0ff; 
+  color: #1a4fb3;
+}
+.pr-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 999px;
+  line-height: 1.4;
+  white-space: nowrap;
+  background-color: #f89781af;
+}
+.tbd-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 999px;
+  line-height: 1.4;
+  white-space: nowrap;
+  background-color: #f1f3f5; 
+  color: #666; 
 }
 
 /* RELEASE NOTES */
