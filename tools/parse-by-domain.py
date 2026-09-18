@@ -11,9 +11,6 @@ XLSX= "latest.xlsx"
 INTERNAL_MD = "../docs/changelog/knownissues.md"
 
 
-# INTERNAL_MD = "../docs/changelog/test.md"
-
-
 # FUNCTIONS
 
 def load_and_filter_xlsx(xlsx_path):

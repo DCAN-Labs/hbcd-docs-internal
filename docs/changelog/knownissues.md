@@ -69,7 +69,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Implausible GA</td>
-<td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values  for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
+<td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
 <td style='text-align: center;'><span class='br-pill'>30.2</span></td>
 </tr>
 <tr>
@@ -237,12 +237,6 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td>Harmonize participant status and withdrawal fields</td>
 <td style='text-align: center;'><span class='br-pill'>30.1</span></td>
 </tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Static &amp; Dynamic Tables</td>
-<td>The Demographics domain includes 2 tables with derived information grouped into visit-specific data (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/visitinfo/">Visit Info</a>) and general demographics (<a href="https://docs.hbcdstudy.org/latest/instruments/demo/basicdemo/">Basic Demographics</a>). In a future release, these tables will be restructured to instead organize variables as either longitudinal (dynamic measures that change over time) or global (static measures, such as sex assigned at birth and race/ethnicity).</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
-</tr>
 </tbody></table>
 
 
@@ -284,7 +278,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>dMRI metadata</td>
-<td><code>LargeDelta</code> and <code>SmallDelta</code> in the sidecars currently are set to vendor-specific values (which aren't always correct because the models have their own values) and ﻿will be updated to reflect accurate values.﻿ ﻿</td>
+<td><code>LargeDelta</code> and <code>SmallDelta</code> in the sidecars currently are set to vendor-specific values (which aren't always correct because the models have their own values) and will be updated to reflect accurate values.</td>
 <td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
 </tr>
 <tr>
@@ -292,6 +286,12 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td>Cook&#x27;s Distance</td>
 <td>Addition Cook's distance values computed for fMRI.</td>
 <td style='text-align: center;'><span class='br-pill'>30.0</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Postprocessing</td>
+<td>Addition of individual functional network maps (generated with template matching) and <a href="https://modelarrayio.readthedocs.io/en/latest/">ModelArray</a> outputs for XCP-D for efficient voxel-wise statistical modeling.</td>
+<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -307,9 +307,15 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Scanner info</td>
+<td>Scanner metadata, currently available within the raw BIDS Scans TSV files, will be additionally provided within the tabulated data for ease of access (see <a href="#infobbox">Participant Derived</a> domain info on this page).</td>
+<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>fmap QC</td>
 <td>Additional QC fields added to the scans TSV files related to line artifacts in fmaps (<code>line2_*</code>)</td>
-<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
 </tr>
 </tbody></table>
 
@@ -449,7 +455,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>PEX Health</td>
-<td>ICD codes for the <code>pex_bm_health*</code>  tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a></td>
+<td>ICD codes for the <code>pex_bm_health*</code> tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a></td>
 <td style='text-align: center;'><span class='br-pill'>30.1</span></td>
 </tr>
 </tbody></table>
@@ -492,13 +498,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Demo</td>
-<td>Addition of V6 Adult</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Demo</td>
-<td>Addition of V6 Child</td>
+<td>Addition of V6 Adult and V6 Child Demographics</td>
 <td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
