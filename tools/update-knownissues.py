@@ -83,18 +83,8 @@ def build_table(domain, rows):
         table_parts.append(f"<td>{type_label}</td>")
         table_parts.append(f"<td>{html.escape(str(table))}</td>")
         table_parts.append(f"<td>{summary_html}</td>")
-
-        # BR styling
-        if str(br).upper() == "TBD":
-            pill_class = "tbd-pill"
-        elif "R" in str(br).upper():
-            pill_class = "pr-pill"
-        else:
-            # normalized_br = str(br).replace(".", "")
-            pill_class = f"br-pill"
-
         table_parts.append(
-            f"<td style='text-align: center;'><span class='{pill_class}'>{html.escape(str(br))}</span></td>"
+            f"<td style='text-align: center;'><span class='pill'>{html.escape(str(br))}</span></td>"
         )
         table_parts.append("</tr>")
     table_parts.append("</tbody></table>")
@@ -102,7 +92,6 @@ def build_table(domain, rows):
     return "\n".join(table_parts)
 
 # WORK
-
 df = load_and_filter(XLSX, sheet_id, sheet_gid)
 
 # Extra steps for internal documentation: Remove rows archived to BR - already documented in resolved issues page

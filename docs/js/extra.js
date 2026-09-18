@@ -79,3 +79,29 @@ window.addEventListener('hashchange', () => {
     expandCollapsibleById(hash);
   }
 });
+
+
+// Function to vary pill colors based on value of pill
+function colorForValue(value) {
+  if (value === 'TBD') {
+    return '#888';
+  }
+
+  // Create a consistent number from the value
+  let hash = 0;
+
+  for (const char of value) {
+    hash = ((hash << 5) - hash) + char.charCodeAt(0);
+    hash |= 0;
+  }
+
+  // Convert that number into a hue
+  const hue = Math.abs(hash) % 360;
+
+  return `hsl(${hue}, 70%, 50%)`;
+}
+
+document.querySelectorAll('.pill').forEach(pill => {
+  const value = pill.textContent.trim();
+  pill.style.backgroundColor = colorForValue(value);
+});

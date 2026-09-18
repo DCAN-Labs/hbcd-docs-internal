@@ -4,6 +4,7 @@ import re
 
 import markdown
 import pandas as pd
+from utils import load_and_filter
 
 # Currently this code only generate the table for resolved known issues/pending updates based on a defined BR, using monday.com table data as inputs
 
@@ -12,46 +13,14 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 # DEFINE BR AND OUTPUT FILEPATH
 BR = "30.1"
 
-XLSX = "data/latest.xlsx"
+XLSX= "data/latest.xlsx"
+# Parse text describing issue from google sheet
+sheet_id = "1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc"
+sheet_gid = "0"
+# Populate known issues page
 INTERNAL_MD = f"../docs/changelog/versions/BR3X/BR{BR}.md"
 
 # FUNCTIONS
-
-def load_and_filter_xlsx(xlsx_path):
-    """
-    Load the XLSX file, rename columns, filter rows, fill missing
-    values, and strip whitespace.
-    """
-    df = pd.read_excel(xlsx_path, dtype=str)
-
-    df = df.rename(
-        columns={
-            "RTDs": "Type",
-            "RTDs Text (markdown format)": "Text",
-        }
-    )
-
-    # Only include items marked for autoparsing.
-    df = df[
-        df["Autoparsed?"].str.contains(
-            "Yes",
-            case=False,
-            na=False,
-        )
-    ]
-
-    # Fill missing values and strip whitespace.
-    df = df.fillna("")
-    df = df.apply(
-        lambda column: (
-            column.str.strip()
-            if column.dtype == "object"
-            else column
-        )
-    )
-
-    return df
-
 
 def map_type(value):
     """
@@ -66,7 +35,6 @@ def map_type(value):
         return "Pending Update"
 
     return None
-
 
 def markdown_to_html(value):
     """
@@ -85,7 +53,6 @@ def markdown_to_html(value):
         flags=re.DOTALL,
     )
 
-
 def get_type_icon(issue_type):
     """
     Define icons for issues and pending updates.
@@ -94,7 +61,6 @@ def get_type_icon(issue_type):
         return '<i class="fas fa-bug icon-bug"></i>'
 
     return '<i class="fa-solid fa-rotate icon-rotate"></i>'
-
 
 def build_table(rows):
     """
@@ -203,22 +169,22 @@ def insert_into_markdown(md_path, table_html):
 
 
 # WORK
-df = load_and_filter_xlsx(XLSX)
+df = load_and_filter(XLSX, sheet_id, sheet_gid)
 
-# Remove rows already documented on the resolved issues page.
-df = df[df["RTDs_Status"] != "Archived to BR"]
+# Extra step for release notes: only keep rows where Final BR == {BR}
+df = df[~(df['Final BR'] == BR)]
 
 # Normalize BR values, such as "30" to "30.0".
-df["BR"] = df["BR"].apply(
-    lambda value: (
-        f"{value}.0"
-        if "." not in str(value)
-        else str(value)
-    )
-)
+# df["BR"] = df["BR"].apply(
+#     lambda value: (
+#         f"{value}.0"
+#         if "." not in str(value)
+#         else str(value)
+#     )
+# )
 
 # Keep only rows matching the specified BR.
-df = df[df["BR"] == BR]
+# df = df[df["BR"] == BR]
 
 # Map the issue type and remove unsupported types.
 df["MappedType"] = df["Type"].apply(map_type)
