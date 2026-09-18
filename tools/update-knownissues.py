@@ -120,6 +120,7 @@ df = load_and_filter_xlsx(XLSX, sheet_id, sheet_gid)
 
 # Extra steps for internal documentation: Remove rows archived to BR - already documented in resolved issues page
 df = df[~(df['RTDs'] == 'Archived to BR')]
+df = df[~(df['RTDs'] == 'Add to archive')]
 
 # Prefix PR values
 df.loc[df['PR'] != '', 'PR'] = 'R' + df.loc[df['PR'] != '', 'PR']

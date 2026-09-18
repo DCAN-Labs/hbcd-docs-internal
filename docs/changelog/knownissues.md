@@ -38,7 +38,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Implausible GA</td>
 <td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
-<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
@@ -135,12 +135,6 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>MAPS-TL (Tod)</td>
 <td>Pro-rated scoring for <code>mh_cg_mapdb__tod</code> not yet implemented; N=16 participants missing scores.</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>MCHAT</td>
-<td>Addition of the Modified Checklist for Autism in Toddlers</td>
 <td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 </tbody></table>
@@ -320,13 +314,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Vineland</td>
 <td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix. In addition, the age of one child is outside of the valid bounds for V05.</td>
-<td style='text-align: center;'><span class='br-pill'>30.2</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Deferred Imitation</td>
-<td>Addition of instrument: Deferred Imitation Task: Gong and Berry-Go-Round</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
+<td style='text-align: center;'><span class='br-pill'>30.1</span></td>
 </tr>
 </tbody></table>
 
@@ -370,18 +358,6 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td>BISQ-SF</td>
 <td>Add Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>.</td>
 <td style='text-align: center;'><span class='tbd-pill'>TBD</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Child Nutrition</td>
-<td>Addition of the Child Nutrition Questionnaire.</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>PEDsQL</td>
-<td>Addition of the PEDsQL</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -465,21 +441,9 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Demo</td>
-<td>Addition of V6 Adult and V6 Child Demographics</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>GLED</td>
 <td>Addition of Geocoded Linkage from Home and Work Addresses</td>
 <td style='text-align: center;'><span class='br-pill'>30.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Incarceration</td>
-<td>Addition of the Incarceration Questionnaire</td>
-<td style='text-align: center;'><span class='br-pill'>30.0</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>

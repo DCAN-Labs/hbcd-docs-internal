@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resolved Issues & Updates Archive</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" href="../css/tables.css">
+  <style>
+    body {
+      margin: 3rem;
+      font-family: sans-serif;
+    }
+    .compact-table-no-vertical-lines th:nth-child(4),
+    .compact-table-no-vertical-lines td:nth-child(4) {
+    text-align: center;
+    }
+    /* Archive controls */
+    .archive-controls {
+      margin: 1.5rem 0 0.75rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #f8f9fa;
+    }
+
+    .archive-controls-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+    }
+
+    .archive-search {
+      flex: 1 1 280px;
+      min-width: 220px;
+    }
+
+    .archive-controls input,
+    .archive-controls select,
+    .archive-controls button {
+      box-sizing: border-box;
+      height: 38px;
+      border: 1px solid #cfd4da;
+      border-radius: 5px;
+      background: white;
+      padding: 0 0.75rem;
+      font: inherit;
+      font-size: 0.9rem;
+    }
+
+    .archive-controls input:focus,
+    .archive-controls select:focus,
+    .archive-controls button:focus {
+      outline: 2px solid rgba(25, 155, 214, 0.25);
+      border-color: #199bd6;
+    }
+
+    .archive-controls button {
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .archive-controls button:hover {
+      background: #f1f3f5;
+    }
+
+    .archive-status {
+      margin-top: 0.65rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .archive-sort {
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    .archive-sort:hover {
+      text-decoration: underline;
+    }
+
+    .archive-sort::after {
+      content: " ↕";
+      color: #999;
+      font-size: 0.8em;
+    }
+
+    .archive-sort.sorted-asc::after {
+      content: " ↑";
+      color: #199bd6;
+    }
+
+    .archive-sort.sorted-desc::after {
+      content: " ↓";
+      color: #199bd6;
+    }
+
+    .archive-empty {
+      display: none;
+      padding: 2rem 1rem;
+      text-align: center;
+      color: #777;
+      font-size: 0.95rem;
+    }
+
+    .archive-highlight {
+      background: #fff3cd;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 700px) {
+      .archive-controls-row {
+        align-items: stretch;
+      }
+
+      .archive-controls input,
+      .archive-controls select,
+      .archive-controls button {
+        width: 100%;
+      }
+
+      .archive-search {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Resolved Issues & Updates Archive</h2>
+
+<p>Running record of resolved issues/updates based on final signoff from SMEs (BR21.0 forward; see release notes for earlier records).</p>
+<div style="margin: 1.25rem 0;"> <a href="knownissues/" class="archive-return-button"> <i class="fa-solid fa-arrow-left"></i> Return to Known Issues page </a> </div>
+
+<div class="archive-controls" aria-label="Archive filters">
+  <div class="archive-controls-row">
+    <input
+      id="archive-search"
+      class="archive-search"
+      type="search"
+      placeholder="Search table, topic, or summary..."
+      aria-label="Search archive"
+    >
+
+    <select id="archive-domain" aria-label="Filter by domain">
+      <option value="">All domains</option>
+    </select>
+
+    <select id="archive-br" aria-label="Filter by release">
+      <option value="">All releases</option>
+    </select>
+
+    <!-- ARCHIVE TYPE -->
+    <select id="archive-type" aria-label="Filter by type">
+      <option value="">All types</option>
+      <option value="issue">Resolved Known Issues</option>
+      <option value="update">Completed Pending Updates</option>
+    </select>
+    <button id="archive-reset" type="button">Clear filters</button>
+  </div>
+  <div id="archive-status" class="archive-status" aria-live="polite"></div>
+</div>
+
+<p style="color: #555; text-align: center;">
+<i class="fas fa-bug" style="color: #f97316;"></i> = Resolved Known Issue &nbsp;&nbsp;&nbsp;
+<i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Completed Pending Update</p>
+
+
+<!-- TABLE -->
+<table id="archive-table" class="compact-table-no-vertical-lines">
+<thead>
+<tr>
+<th class="archive-sort" data-sort="domain" width="5%">Domain</th>
+<th class="archive-sort" data-sort="topic">Table/Topic</th>
+<th class="archive-sort" data-sort="summary" width="60%">Summary</th>
+<th class="archive-sort" data-sort="br">BR</th></tr>
+</thead>
+<tbody>
+
+<!-- BR30.0 -->
+<tr>
+<td>NT</td>
+<td>GABI</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Addition of raw BIDS data for GABI (infant heart rate).</td>
+<td>30.0</td>
+</tr>
+<tr>
+<td>EEG</td>
+<td>MADE v1.7.0</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> HBCD-MADE derivatives processed through updated version v1.7.0</td>
+<td>30.0</td>
+</tr>
+<tr>
+<td>MRI</td>
+<td>Source DICOMs</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Add source DICOMs for all imaging modalities.</td>
+<td>30.0</td>
+</tr>
+<tr>
+<td>NCL</td>
+<td>CDI-2</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Addition of the MacArthur-Bates CDI-2 Language</td>
+<td>30.0</td>
+</tr>
+<tr>
+<td>PH</td>
+<td>Med History V1</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Addition of V06</td>
+<td>30.0</td>
+</tr>
+
+
+<!-- BR30.0 -->
+<tr data-type="update">
+<td>NT</td>
+<td>GABI</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Addition of raw BIDS data for GABI (infant heart rate).</td>
+<td>30.0</td>
+</tr>
+<tr data-type="update">
+<td>EEG</td>
+<td>MADE v1.7.0</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> HBCD-MADE derivatives processed through updated version v1.7.0</td>
+<td>30.0</td>
+</tr>
+<tr data-type="update">
+<td>MRI</td>
+<td>Source DICOMs</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Add source DICOMs for all imaging modalities.</td>
+<td>30.0</td>
+</tr>
+<tr data-type="update">
+<td>NCL</td>
+<td>CDI-2</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Addition of the MacArthur-Bates CDI-2 Language</td>
+<td>30.0</td>
+</tr>
+<tr data-type="update">
+<td>PH</td>
+<td>Med History V1</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Addition of V06</td>
+<td>30.0</td>
+</tr>
+
+<!-- GENERAL -->
+
+<tr data-type="update">
+<td>NA</td>
+<td>Language</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Addition of language of administration across all instruments where applicable.</td>
+<td>21.0</td>
+</tr>
+
+<!-- ADMIN -->
+<tr data-type="update">
+<td>ADM</td>
+<td>Study Navigators</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Populate SUBSTANCE_USE and OTHER checkbox fields.</td>
+<td>21.0</td>
+</tr>
+
+<!-- BIOSPEC -->
+<tr data-type="issue">
+<td>BIO</td>
+<td>Nails</td>
+<td><i class="fas fa-bug icon-bug"></i>  Add unit (mg) for <code>nails_results_nail_weight</code> variable.</td>
+<td>21.1</td>
+</tr>
+<tr data-type="update">
+<td>BIO</td>
+<td>Urine</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>  Add creatinine results (<code>bio_creat_u</code>).</td>
+<td>21.1</td>
+</tr>
+<tr data-type="issue">
+<td>BIO</td>
+<td>Nails & Urine</td>
+<td><i class="fas fa-bug icon-bug"></i>  Remove quotes from level values to prevent double quotes in downloaded data (e.g. 1=""positive"").</td>
+<td>21.0</td>
+</tr>
+<tr data-type="update">
+<td>BIO</td>
+<td>Olink</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>  Addition of Olink Explore 384 Inflammation 1 Panel, proteomics measure of maternal inflammation during pregnancy</td>
+<td>21.0</td>
+</tr>
+
+<!-- DEMO -->
+
+<tr data-type="update">
+<td>Demo</td>
+<td>Basic Demographics</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Remove internal <code>recruitment_site</code> categories only present in data dictionary (<code>30-32</code>: Sampled, USDTL, and BAH)</td>
+<td>21.2</td>
+</tr>
+
+<tr data-type="update">
+<td>Demo</td>
+<td>Visit Info</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Derived/rolled up substance use flag for Stimulants added based on positive instrument-specific Stimulant results.</td>
+<td>21.1</td>
+</tr>
+<tr data-type="update">
+<td>Demo</td>
+<td>Visit Info</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> SU flags will include Nail toxicology results in addition to Urine.</td>
+<td>21.1</td>
+</tr>
+<tr data-type="update">
+<td>Demo</td>
+<td>.set files</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> 
+Add <code>work_{002–004}_post</code> and <code>work_004__01</code> (adult table).
+</td>
+<td>21.1</td>
+</tr>
+
+<!-- EEG -->
+<tr data-type="issue">
+<td>EEG</td>
+<td>MADE</td>
+<td><i class="fas fa-bug icon-bug"></i>  N=3 V04 session derivatives are missing corresponding tabulated data for FACE/MMN tasks</td>
+<td>21.1</td>
+</tr>
+<tr data-type="issue">
+<td>EEG</td>
+<td>.set files</td>
+<td><i class="fas fa-bug icon-bug"></i>  Update EEG .set files to include subject release IDs.</td>
+<td>21.0</td>
+</tr>
+
+<!-- MH -->
+<tr data-type="update">
+<td>MH</td>
+<td>ECBQ</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Change 'Does not apply' index value from '0' to '8' to match the IBQ-R</td>
+<td>21.2</td>
+</tr>
+
+<tr data-type="update">
+<td>MH</td>
+<td>ERICA</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Remove <code>locomotor_ability</code> fields from both tables</td>
+<td>30.0</td>
+</tr>
+
+<tr data-type="issue">
+<td>MH</td>
+<td>ERICA</td>
+<td><i class="fas fa-bug icon-bug"></i> Remove date taken, age, and language fields (computed based on <em>date coded</em>) to exclude from patch 2.1 <em>[BR data only]</em>.</td>
+<td>21.2</td>
+</tr>
+
+<tr data-type="update">
+<td>MH</td>
+<td>ERICA</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Add the ERICA instrument (<code>mh_cg_erica{_rel}_3_9m</code>); raw scores only</td>
+<td>21.0</td>
+</tr>
+
+<!-- MRI -->
+<tr data-type="update">
+<td>MRI</td>
+<td>Summary Forms</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>  Add MRI Scan Session + Data Summary Forms (information from the MRI technician obtained on day of scan).</td>
+<td>21.1</td>
+</tr>
+<tr data-type="update">
+<td>MRI</td>
+<td>BrainSwipes</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i>   BrainSwipes QC results updated with latest results available in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td>21.0</td>
+</tr>
+<tr data-type="issue">
+<td>MRI</td>
+<td>XCP-D</td>
+<td><i class="fas fa-bug icon-bug"></i>  Metadata values for <code>sub_domain</code> were corrected to <code>Structural MRI</code> for tabulated XCP-D Myers-Labonte <code>*morph.tsv</code> files.</td>
+<td>21.0</td>
+</tr>
+<tr data-type="issue">
+<td>MRI</td>
+<td>Raw BIDS</td>
+<td><i class="fas fa-bug icon-bug"></i>  Resolved 2 corrupted bold runs in V02 raw BIDS (see filepaths in <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>).</td>
+<td>21.0</td>
+</tr>
+
+<!-- NCL -->
+
+<tr data-type="update">
+<td>NCL</td>
+<td>SPM-2</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Add missing raw and T-scores</td>
+<td>21.2</td>
+</tr>
+
+
+<tr data-type="update">
+<td>NCL</td>
+<td>Bayley-4</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Add item-level scores.</td>
+<td>21.1</td>
+</tr>
+<tr data-type="issue">
+<td>NCL</td>
+<td>MLDS</td>
+<td><i class="fas fa-bug icon-bug"></i>  Correct Data Dictionary 'description' element to remove erroneous text that appears at end (e.g., "Â Â Â")</td>
+<td>21.0</td>
+</tr>
+<tr data-type="issue">
+<td>NCL</td>
+<td>Vineland</td>
+<td><i class="fas fa-bug icon-bug"></i>  Correct subset of variables with typo in the spelling of "receptive."<br>
+<i class="fa-solid fa-rotate icon-rotate"></i>   Addition of language field to <code>ncl_cg_vabs</code>.</td>
+<td>21.0</td>
+</tr>
+
+<!-- PH -->
+<tr data-type="update">
+<td>PH</td>
+<td>ecPROMIS-PAGS</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> Add scores to <code>ph_cg_pms__pags</code> (users instructed to follow <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/ecpromis-pags/#scoring">Scoring Procedures</a> documentation in the meantime).</td>
+<td>21.2</td>
+</tr>
+
+<tr data-type="update">
+<td>PH</td>
+<td>ecPROMIS- Sleep</td>
+<td>
+  <i class="fa-solid fa-rotate icon-rotate"></i>  Add <code>ph_cg_pms__sleep</code>  summary scores
+</td>
+<td>21.2</td>
+</tr>
+
+<tr data-type="issue">
+<td>PH</td>
+<td>Growth</td>
+<td>
+  <i class="fas fa-bug icon-bug"></i> Remove <code>ph_ch_anthro_002</code><br>
+  <i class="fa-solid fa-rotate icon-rotate"></i>  Add age-based z-scores to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Z-Scores Excluded</a>).
+</td>
+<td>21.1</td>
+</tr>
+
+
+<!-- PEX -->
+<tr data-type="issue">
+<td>PEX</td>
+<td>APA 1/2</td>
+<td><i class="fas fa-bug icon-bug"></i> Removed APA L2 item data in cases where L2 was administered despite unmet gating criteria (missing L1 responses and scoring).</td>
+<td>21.2</td>
+</tr>
+
+<!-- SED -->
+
+<tr data-type="issue">
+<td>SED</td>
+<td>C-PACEs</td>
+<td><i class="fas fa-bug icon-bug"></i>  Summary scores are inaccurate; until corrected, users can compute scores following the provided scoring documentation.</td>
+<td>21.1</td>
+</tr>
+<tr data-type="issue">
+<td>SED</td>
+<td>Demographics</td>
+<td>
+  <i class="fa-solid fa-rotate icon-rotate"></i>  Add variables on Other Biological Parent (adult table).
+  <br>
+  <i class="fa-solid fa-rotate icon-rotate"></i>  
+Add V01 household income (<code>income_002</code>) (adult table)
+<br>
+<i class="fas fa-bug icon-bug"></i>  Remove descriptive fields (e.g. <code>roster_001__00</code>) <em>[BR data only]</em>.
+</td>
+<td>21.1</td>
+</tr>
+<tr data-type="issue">
+<td>SED</td>
+<td>Demographics</td>
+<td><i class="fas fa-bug icon-bug"></i>  Add back <code>sed_bm_demo_residence_{001|002}</code> (present in prior release then missing).<br>
+<i class="fa-solid fa-rotate icon-rotate"></i>  Child Demo: Household roster updated to clarify that counts exclude the main child.
+</td>
+<td>21.0</td>
+</tr>
+
+</tbody>
+</table>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const table = document.getElementById("archive-table");
+  const tbody = table.querySelector("tbody");
+  const rows = Array.from(tbody.querySelectorAll("tr"));
+
+  const searchInput = document.getElementById("archive-search");
+  const domainSelect = document.getElementById("archive-domain");
+  const brSelect = document.getElementById("archive-br");
+  const typeSelect = document.getElementById("archive-type");
+  const resetButton = document.getElementById("archive-reset");
+  const status = document.getElementById("archive-status");
+
+  // Build filter options from the existing table.
+  const domains = [...new Set(rows.map(row => row.cells[0]?.textContent.trim()).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+
+  const releases = [...new Set(rows.map(row => row.cells[3]?.textContent.trim()).filter(Boolean))]
+    .sort((a, b) => b.localeCompare(a, undefined, { numeric: true }));
+
+  domains.forEach(value => {
+    domainSelect.add(new Option(value, value));
+  });
+
+  releases.forEach(value => {
+    brSelect.add(new Option(value, value));
+  });
+
+  let sortColumn = null;
+  let sortDirection = "asc";
+
+  function normalize(value) {
+    return value.toLowerCase().replace(/\s+/g, " ").trim();
+  }
+
+  function applyFilters() {
+    const search = normalize(searchInput.value);
+    const domain = domainSelect.value;
+    const br = brSelect.value;
+    const type = typeSelect.value;
+
+    let visible = 0;
+
+    rows.forEach(row => {
+      const domainValue = row.cells[0]?.textContent.trim() || "";
+      const topicValue = row.cells[1]?.textContent.trim() || "";
+      const summaryValue = row.cells[2]?.textContent.trim() || "";
+      const brValue = row.cells[3]?.textContent.trim() || "";
+
+      const matchesSearch =
+        !search ||
+        normalize(topicValue).includes(search) ||
+        normalize(summaryValue).includes(search);
+
+      const matchesDomain = !domain || domainValue === domain;
+      const matchesBr = !br || brValue === br;
+      const matchesType = !type || row.dataset.type === type;
+
+      const show = matchesSearch && matchesDomain && matchesBr && matchesType;
+
+      row.style.display = show ? "" : "none";
+      if (show) visible++;
+    });
+
+    status.textContent =
+      `Showing ${visible} of ${rows.length} record${rows.length === 1 ? "" : "s"}.`;
+  }
+
+  function sortRows(column) {
+    if (sortColumn === column) {
+      sortDirection = sortDirection === "asc" ? "desc" : "asc";
+    } else {
+      sortColumn = column;
+      sortDirection = "asc";
+    }
+
+    const index = {
+      domain: 0,
+      topic: 1,
+      summary: 2,
+      br: 3
+    }[column];
+
+    rows.sort((a, b) => {
+      const aValue = a.cells[index]?.textContent.trim() || "";
+      const bValue = b.cells[index]?.textContent.trim() || "";
+
+      // Numeric-aware sorting works well for releases such as 21.0, 21.1, 30.0.
+      const aNum = parseFloat(aValue);
+      const bNum = parseFloat(bValue);
+
+      let comparison;
+      if (column === "br" && !Number.isNaN(aNum) && !Number.isNaN(bNum)) {
+        comparison = aNum - bNum;
+      } else {
+        comparison = aValue.localeCompare(bValue, undefined, {
+          numeric: true,
+          sensitivity: "base"
+        });
+      }
+
+      return sortDirection === "asc" ? comparison : -comparison;
+    });
+
+    rows.forEach(row => tbody.appendChild(row));
+
+    document.querySelectorAll(".archive-sort").forEach(header => {
+      header.classList.remove("sorted-asc", "sorted-desc");
+    });
+
+    const activeHeader = document.querySelector(
+      `.archive-sort[data-sort="${column}"]`
+    );
+
+    if (activeHeader) {
+      activeHeader.classList.add(
+        sortDirection === "asc" ? "sorted-asc" : "sorted-desc"
+      );
+    }
+
+    applyFilters();
+  }
+
+  [searchInput, domainSelect, brSelect, typeSelect].forEach(control => {
+    control.addEventListener("input", applyFilters);
+    control.addEventListener("change", applyFilters);
+  });
+
+  resetButton.addEventListener("click", function () {
+    searchInput.value = "";
+    domainSelect.value = "";
+    brSelect.value = "";
+    typeSelect.value = "";
+    applyFilters();
+  });
+
+  document.querySelectorAll(".archive-sort").forEach(header => {
+    header.addEventListener("click", function () {
+      sortRows(header.dataset.sort);
+    });
+    header.setAttribute("role", "button");
+    header.setAttribute("tabindex", "0");
+    header.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        sortRows(header.dataset.sort);
+      }
+    });
+  });
+
+  // Newest release first by default.
+  sortRows("br");
+  if (sortDirection === "asc") {
+    sortRows("br");
+  }
+});
+</script>
+
+</body>
+</html>

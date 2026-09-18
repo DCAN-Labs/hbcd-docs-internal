@@ -1,3 +1,10 @@
+UPDATE ADD TO RESOLVED so that it checks based on ID instead 
+
+
+
+
+
+
 # README - How to use autoparsing code for known issues and updates
 
 https://docs.google.com/spreadsheets/d/1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc/edit?usp=sharing
