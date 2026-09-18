@@ -50,6 +50,17 @@ def map_type(value):
         return "Pending Update"
     return None
 
+def target_sort_key(br):
+    """Sort Target (BR) values numerically ascending, with TBD sorted last."""
+    br = str(br)
+    if br.upper() == "TBD":
+        return (1, 0.0)
+    numeric_part = br[1:] if br.upper().startswith("R") else br
+    try:
+        return (0, float(numeric_part))
+    except ValueError:
+        return (0, numeric_part)
+
 def insert_into_markdown(md_path, combined_html):
     START_MARKER = "<!-- BEGIN KNOWN_ISSUES_TABLE -->"
     END_MARKER = "<!-- END KNOWN_ISSUES_TABLE -->"
@@ -176,8 +187,8 @@ def build_combined_tables():
 
     for domain in sorted(grouped_by_domain.keys()):
         rows = grouped_by_domain[domain]
-        # Sort within domain
-        rows = sorted(rows, key=lambda x: (x[0], x[1]))  # (type, table)
+        # Sort within domain by Target (BR), then type, then Table/Topic
+        rows = sorted(rows, key=lambda x: (target_sort_key(x[3]), x[0], x[1]))
         tables.append(build_table(domain, rows))
 
     return "\n\n".join(tables)
