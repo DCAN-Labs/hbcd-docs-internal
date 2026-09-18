@@ -64,7 +64,7 @@ def get_type_icon(issue_type):
 
 def build_table(rows):
     """
-    Build a two-column table divided by full-width domain rows.
+    Build an ID/Table-Topic/Summary table divided by full-width domain rows.
 
     Rows must already be sorted by domain.
     """
@@ -73,6 +73,7 @@ def build_table(rows):
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
+<th>ID</th>
 <th>Table/Topic</th>
 <th>Summary</th>
 </tr>
@@ -83,14 +84,14 @@ def build_table(rows):
 
     current_domain = None
 
-    for issue_type, domain, table, summary_html in rows:
+    for issue_type, domain, issue_id, table, summary_html in rows:
         # Insert a full-width domain row when the domain changes.
         if domain != current_domain:
             table_parts.extend(
                 [
                     '<tr class="domain-row">',
                     (
-                        f'<td colspan="2">'
+                        f'<td colspan="3">'
                         f"<strong>{html.escape(str(domain))}</strong>"
                         f"</td>"
                     ),
@@ -104,6 +105,7 @@ def build_table(rows):
         table_parts.extend(
             [
                 "<tr>",
+                f"<td>{html.escape(str(issue_id))}</td>",
                 (
                     f"<td>{type_icon} "
                     f"{html.escape(str(table))}</td>"
@@ -220,6 +222,7 @@ table_rows = [
     (
         row["MappedType"],
         row["Domain"],
+        row["ID"],
         row["Table/Topic"],
         row["SummaryHTML"],
     )
