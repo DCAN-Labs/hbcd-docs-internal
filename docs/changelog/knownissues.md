@@ -19,8 +19,8 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <i class="fa-solid fa-rotate" style="color: #199bd6; font-size: 1em;"></i> = Pending Update
 </p>
   
-!!! warning "Lasso Prerelease Platform Dashboard error"
-    Lasso prerelease platform issue: Note that the demographics dashbaords are not populating due to the removal of the basic demographics and the replacement with the static/dynamic tables. This will be fixed in the next beta release.
+<!-- !!! warning "Lasso Prerelease Platform Dashboard error"
+    Lasso prerelease platform issue: Note that the demographics dashbaords are not populating due to the removal of the basic demographics and the replacement with the static/dynamic tables. This will be fixed in the next beta release. -->
 
 
 <!-- BEGIN KNOWN_ISSUES_TABLE -->

@@ -4,7 +4,7 @@ import os
 import markdown
 import numpy as np
 import re
-from utils import load_and_filter_xlsx_resolved
+from utils import load_and_filter
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
@@ -24,6 +24,7 @@ domain_mapping = {
     "Demographics": "Demo",
     "Neurocognition & Language": "NCL",
     "Novel Tech & Wearable Sensors": "NT",
+    "Participant Derived": "PAR",
     "Physical Health": "PH",
     "Pregnancy & Environmental Exposure": "PEX",
     "Social & Environmental Determinants": "SED"
@@ -112,7 +113,7 @@ def insert_at_top_of_table(html_path, rows_html):
     print("Resolved archive table successfully updated.")
 
 # WORK
-df = load_and_filter_xlsx_resolved(XLSX, sheet_id, sheet_gid, domain_mapping)
+df = load_and_filter(XLSX, sheet_id, sheet_gid)
 df = df[df['RTDs'] == 'Add to archive']
 df = df.rename(columns={"Text": "Summary"})
 
