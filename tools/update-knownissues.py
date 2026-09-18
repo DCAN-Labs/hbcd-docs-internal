@@ -101,17 +101,17 @@ df = df[~(df['RTDs'] == 'Add to archive')]
 # Prefix PR values
 df.loc[df['PR'] != '', 'PR'] = 'R' + df.loc[df['PR'] != '', 'PR']
 
-# Treat empty strings as NaN and fill BR with PR where missing, then fill remaining with TBD
+# Build Target column: Final BR first, then fill blanks with BR, then PR, then TBD
+df['Final BR'] = df['Final BR'].replace('', np.nan)
 df['BR'] = df['BR'].replace('', np.nan)
-df['BR'] = df['BR'].fillna(df['PR'])
-df['BR'] = df['BR'].replace('', np.nan)
-df['BR'] = df['BR'].fillna('TBD')
+df['PR'] = df['PR'].replace('', np.nan)
+df['BR'] = df['Final BR'].fillna(df['BR']).fillna(df['PR']).fillna('TBD')
 
 # For BR values, if missing "., add it to the end of the string
 df['BR'] = df['BR'].apply(lambda x: str(x) + '.0' if str(x) != 'TBD' and '.' not in str(x) else str(x))
 
-# Drop PR column for troubleshooting
-df = df.drop(['PR'], axis=1)
+# Drop PR and Final BR columns for troubleshooting
+df = df.drop(['PR', 'Final BR'], axis=1)
 
 # Type mapping and sort by (1) domain, (2) table/topic
 df["MappedType"] = df["Type"].apply(map_type)

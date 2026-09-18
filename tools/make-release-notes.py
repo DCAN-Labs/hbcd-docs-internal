@@ -6,7 +6,7 @@ import markdown
 import pandas as pd
 from utils import load_and_filter
 
-# Currently this code only generate the table for resolved known issues/pending updates based on a defined BR, using monday.com table data as inputs
+# Generates release notes based on Final BR column
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 

@@ -39,12 +39,6 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>Implausible GA</td>
-<td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>Incorrect JSONs</td>
 <td>Metadata field values were corrected for several instruments, but are not yet corrected in the JSON files. IN PARTICULAR, PLEASE CHECK <code>type_data</code> CAREFULLY as an incorrect data type may impact analyses. Impacted instruments include: <strong>APA 1/2</strong>, <strong>Bayley-4</strong>, and <strong>EEG Form-2</strong>. See details in <a href="../release-notes/#data-warning">Release Notes</a>.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
@@ -54,6 +48,12 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td>FamilyID</td>
 <td>A <code>FamilyID</code> field will be added to instruments to identify sibling relationships. Until then, sibling ID mapping (Main Child vs Sibling) is provided in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Implausible GA</td>
+<td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
@@ -90,36 +90,36 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>FAD</td>
 <td>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='pill'>30.0</span></td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>MAPS-TL (&lt;1yr)</td>
 <td>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='pill'>30.0</span></td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>ecPROMIS CC</td>
 <td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='pill'>30.0</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>MAPS-EASI</td>
-<td>Addition of the MAPS-EASI- Toddler</td>
-<td style='text-align: center;'><span class='pill'>30.0</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>MAPS-TL (Tod)</td>
-<td>Pro-rated scoring for <code>mh_cg_mapdb__tod</code> not yet implemented; N=16 participants missing scores.</td>
-<td style='text-align: center;'><span class='pill'>30.0</span></td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ERICA</td>
 <td>A future release will include reliability codes integrated into the primary coding dataset. Until then, users must perform this integration manually: see the ERICA Data Warning for instructions. Instructions include cleaning the current files to exclude n=44 participants with incorrect code values (data entry/form errors), capping <code>b_raw</code> values at 3.0 (n=3 participants), and removing the “Locomotor Ability” field (<code>mh_cg_erica_3_9m_locomotor_ability</code>), which has errors, also to be corrected in the next release.</td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>MAPS-EASI</td>
+<td>Addition of the MAPS-EASI- Toddler</td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>MAPS-TL (Tod)</td>
+<td>Pro-rated scoring for <code>mh_cg_mapdb__tod</code> not yet implemented; N=16 participants missing scores.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr>
@@ -181,13 +181,13 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Basic Demo</td>
-<td>The <code>screen_race_multi__*</code> variables are almost entirely coded as '0' and should not be used for analysis. Users interested in race and ethnicity information should instead use the corresponding derived ACS race and ethnicity variable. Values will be corrected in a future release.</td>
-<td style='text-align: center;'><span class='pill'>30.0</span></td>
+<td>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Basic Demo</td>
-<td>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
+<td>The <code>screen_race_multi__*</code> variables are almost entirely coded as '0' and should not be used for analysis. Users interested in race and ethnicity information should instead use the corresponding derived ACS race and ethnicity variable. Values will be corrected in a future release.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr>
@@ -213,7 +213,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Age fields</td>
 <td>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions (site entry errors); exclude age values prior to analysis.</td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
+<td style='text-align: center;'><span class='pill'>R3.1</span></td>
 </tr>
 </tbody></table>
 
@@ -230,9 +230,9 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Cook&#x27;s Distance</td>
-<td>Addition Cook's distance values computed for fMRI.</td>
-<td style='text-align: center;'><span class='pill'>30.0</span></td>
+<td>QSIRecon</td>
+<td>Tabulated data for QSIRecon (participant data combined across derivative files into single tidy table) will be provided in a future release.</td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -241,10 +241,16 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td></td>
+<td>All 0s for numeric values in tabulated XCP-D derivatives</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>fmap QC</td>
-<td>Additional QC fields added to the scans TSV files related to line artifacts in fmaps (<code>line2_*</code>)</td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
+<td>Cook&#x27;s Distance</td>
+<td>Addition Cook's distance values computed for fMRI.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -254,8 +260,8 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>QSIRecon</td>
-<td>Tabulated data for QSIRecon (participant data combined across derivative files into single tidy table) will be provided in a future release.</td>
+<td>fmap QC</td>
+<td>Additional QC fields added to the scans TSV files related to line artifacts in fmaps (<code>line2_*</code>)</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr>
@@ -297,14 +303,14 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>Vineland</td>
-<td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix. In addition, the age of one child is outside of the valid bounds for V05.</td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
+<td>Bayley</td>
+<td>Remove invalid scores of <code>-9999</code>; until resolved, users should remove this participant data prior to analysis.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>Bayley</td>
-<td>Remove invalid scores of <code>-9999</code>; until resolved, users should remove this participant data prior to analysis.</td>
+<td>Vineland</td>
+<td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix. In addition, the age of one child is outside of the valid bounds for V05.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr>
@@ -379,7 +385,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>EPDS</td>
 <td>Inconsistent scoring: (1) item responses present, but score is null (N=1); (2) all items null, but score is <code>0</code> (N≥3).</td>
-<td style='text-align: center;'><span class='pill'>30.0</span></td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
@@ -426,26 +432,26 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Demo</td>
-<td>Add household roster fields capturing the sex of listed individuals (adult &amp; child tables).</td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>GLED</td>
 <td>Addition of Geocoded Linkage from Home and Work Addresses</td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>TIC Questionnaire</td>
-<td>Addition of TIC Questionnaire table</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Demo</td>
 <td>Relationship status was inappropriately collected at V02/V03 for all cohorts and should have been restricted to cases where there was a change in caregiver (i.e. only Alternative Caregiver cohorts should have this field populated). Data for non-ACG cohorts to be excluded.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Demo</td>
+<td>Add household roster fields capturing the sex of listed individuals (adult &amp; child tables).</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>TIC Questionnaire</td>
+<td>Addition of TIC Questionnaire table</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 </tbody></table><!-- END KNOWN_ISSUES_TABLE -->
