@@ -13,7 +13,7 @@ def load_and_filter(xlsx_path, sheet_id, sheet_gid):
     df = pd.merge(df_monday, df_gsheet, on='ID', how='left')
 
     # Strip "ID-" from ID (save space in tables)
-    df["ID"] = df["ID"].str.strip("ID-")
+    # df["ID"] = df["ID"].str.strip("ID-")
 
     # Filter - only include items marked for autoparsing
     df = df[df['Autoparsed?'].str.contains('Yes')]
