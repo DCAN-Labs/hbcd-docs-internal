@@ -37,6 +37,20 @@ def target_sort_key(br):
     except ValueError:
         return (0, numeric_part)
 
+# def target_sort_key(br):
+#     """Sort Target values numerically ascending, with unknown values and TBD last."""
+#     br = str(br).strip()
+
+#     if br.upper() == "TBD":
+#         return (2, 0.0)
+
+#     numeric_part = br[1:] if br.upper().startswith("R") else br
+
+#     try:
+#         return (0, float(numeric_part))
+#     except ValueError:
+#         return (1, 0.0)
+
 def insert_into_markdown(md_path, combined_html):
     START_MARKER = "<!-- BEGIN KNOWN_ISSUES_TABLE -->"
     END_MARKER = "<!-- END KNOWN_ISSUES_TABLE -->"
@@ -97,6 +111,9 @@ df = load_and_filter(XLSX, sheet_id, sheet_gid)
 # Extra steps for internal documentation: Remove rows archived to BR - already documented in resolved issues page
 df = df[~(df['RTDs'] == 'Archived to BR')]
 df = df[~(df['RTDs'] == 'Add to archive')]
+
+# Replace unknown BR values with TBD for display purposes
+df['Final BR'] = df['Final BR'].replace('unknown', 'TBD')
 
 # Prefix PR values
 df.loc[df['PR'] != '', 'PR'] = 'R' + df.loc[df['PR'] != '', 'PR']
@@ -164,3 +181,5 @@ insert_into_markdown(INTERNAL_MD, combined_tables_html_int)
 
 
 # df.to_csv("debug.tsv", sep='\t', index=False)
+
+
