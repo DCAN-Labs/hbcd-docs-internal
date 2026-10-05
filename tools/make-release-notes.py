@@ -11,7 +11,7 @@ from utils import load_and_filter
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # DEFINE BR AND OUTPUT FILEPATH
-BR = "30.1"
+BR = "30.2"
 
 XLSX= "data/latest.xlsx"
 # Parse text describing issue from google sheet
