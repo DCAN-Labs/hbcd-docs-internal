@@ -62,14 +62,29 @@ def get_type_icon(issue_type):
 
     return '<i class="fa-solid fa-rotate icon-rotate"></i>'
 
-def build_table(rows):
-    """
-    Build an ID/Table-Topic/Summary table divided by full-width domain rows.
+def build_domain_sections(rows):
+    sections = []
+    current_domain = None
+    table_parts = []
 
-    Rows must already be sorted by domain.
-    """
-    table_parts = [
-        """
+    def close_table():
+        if table_parts:
+            table_parts.extend([
+                "</tbody>",
+                "</table>",
+            ])
+            sections.append("\n".join(table_parts))
+
+    for issue_type, domain, issue_id, table, summary_html in rows:
+        if domain != current_domain:
+            if current_domain is not None:
+                close_table()
+            current_domain = domain
+            sections.append(
+                f"#### {html.escape(str(domain))}"
+            )
+            table_parts = [
+                """
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
@@ -80,28 +95,9 @@ def build_table(rows):
 </thead>
 <tbody>
 """
-    ]
-
-    current_domain = None
-
-    for issue_type, domain, issue_id, table, summary_html in rows:
-        # Insert a full-width domain row when the domain changes.
-        if domain != current_domain:
-            table_parts.extend(
-                [
-                    '<tr class="domain-row">',
-                    (
-                        f'<td colspan="3">'
-                        f"<strong>{html.escape(str(domain))}</strong>"
-                        f"</td>"
-                    ),
-                    "</tr>",
-                ]
-            )
-            current_domain = domain
+            ]
 
         type_icon = get_type_icon(issue_type)
-
         table_parts.extend(
             [
                 "<tr>",
@@ -114,16 +110,10 @@ def build_table(rows):
                 "</tr>",
             ]
         )
+    if current_domain is not None:
+        close_table()
 
-    table_parts.extend(
-        [
-            "</tbody>",
-            "</table>",
-        ]
-    )
-
-    return "\n".join(table_parts)
-
+    return "\n\n".join(sections)
 
 def insert_into_markdown(md_path, table_html):
     """
@@ -174,7 +164,7 @@ def insert_into_markdown(md_path, table_html):
 df = load_and_filter(XLSX, sheet_id, sheet_gid)
 
 # Extra step for release notes: only keep rows where Final BR == {BR}
-df = df[~(df['Final BR'] == BR)]
+df = df[(df['Final BR'] == BR)]
 
 # Normalize BR values, such as "30" to "30.0".
 # df["BR"] = df["BR"].apply(
@@ -184,9 +174,6 @@ df = df[~(df['Final BR'] == BR)]
 #         else str(value)
 #     )
 # )
-
-# Keep only rows matching the specified BR.
-# df = df[df["BR"] == BR]
 
 # Map the issue type and remove unsupported types.
 df["MappedType"] = df["Type"].apply(map_type)
@@ -229,6 +216,6 @@ table_rows = [
     for _, row in df.iterrows()
 ]
 
-# Generate and insert the table.
-combined_table_html = build_table(table_rows)
-insert_into_markdown(INTERNAL_MD, combined_table_html)
+# Generate and insert domain subsections.
+domain_sections = build_domain_sections(table_rows)
+insert_into_markdown(INTERNAL_MD, domain_sections)
