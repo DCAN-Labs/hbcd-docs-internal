@@ -2,18 +2,12 @@ import pandas as pd
 from datetime import datetime
 
 
-def load_and_filter(xlsx_path, sheet_id, sheet_gid):
+def load_and_filter(xlsx_path):
     """
     Load XLSX file, merge in google sheet issue text, filter to autoparsed
     rows, fill missing values, and strip whitespace.
     """
-    df_monday = pd.read_excel(xlsx_path, dtype=str)
-    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_gid}"
-    df_gsheet = pd.read_csv(url, usecols=['ID', 'Text'])
-    df = pd.merge(df_monday, df_gsheet, on='ID', how='left')
-
-    # Strip "ID-" from ID (save space in tables)
-    # df["ID"] = df["ID"].str.strip("ID-")
+    df = pd.read_excel(xlsx_path, dtype=str)
 
     # Filter - only include items marked for autoparsing
     df = df[df['Autoparsed?'].str.contains('Yes')]

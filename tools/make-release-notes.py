@@ -10,14 +10,9 @@ from utils import load_and_filter
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-# DEFINE BR AND OUTPUT FILEPATH
+# DEFINE BR AND INPUT/OUTPUT FILEPATHS
 BR = "30.2"
-
 XLSX= "data/latest.xlsx"
-# Parse text describing issue from google sheet
-sheet_id = "1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc"
-sheet_gid = "0"
-# Populate known issues page
 INTERNAL_MD = f"../docs/changelog/versions/BR3X/BR{BR}.md"
 
 # FUNCTIONS
@@ -88,9 +83,9 @@ def build_domain_sections(rows):
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th>ID</th>
-<th>Table/Topic</th>
-<th>Summary</th>
+<th width="5%">ID</th>
+<th width="18%">Table/Topic</th>
+<th width="77%">Summary</th>
 </tr>
 </thead>
 <tbody>
@@ -161,19 +156,17 @@ def insert_into_markdown(md_path, table_html):
 
 
 # WORK
-df = load_and_filter(XLSX, sheet_id, sheet_gid)
+df = pd.read_excel(XLSX, dtype=str)
 
-# Extra step for release notes: only keep rows where Final BR == {BR}
+# Filter - only include items marked for autoparsing and where Final BR == {BR}
+df = df[df['Autoparsed?'].str.contains('Yes')]
 df = df[(df['Final BR'] == BR)]
 
-# Normalize BR values, such as "30" to "30.0".
-# df["BR"] = df["BR"].apply(
-#     lambda value: (
-#         f"{value}.0"
-#         if "." not in str(value)
-#         else str(value)
-#     )
-# )
+# Fill missing values and strip whitespace
+df = df.fillna('')
+df = df.apply(lambda col: col.str.strip() if col.dtype == "object" else col)
+
+# df.to_csv(f"test.csv", index=False)
 
 # Map the issue type and remove unsupported types.
 df["MappedType"] = df["Type"].apply(map_type)
