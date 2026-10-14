@@ -109,8 +109,8 @@ def build_table(domain, rows):
 df = load_and_filter(XLSX, sheet_id, sheet_gid)
 
 # Extra steps for internal documentation: Remove rows archived to BR - already documented in resolved issues page
-df = df[~(df['RTDs'] == 'Archived to BR')]
-df = df[~(df['RTDs'] == 'Add to archive')]
+df = df[~(df['Autoparsed?'] == 'Archived to BR')]
+df = df[~(df['Autoparsed?'] == 'Add to archive')]
 
 # Replace unknown BR values with TBD for display purposes
 df['Final BR'] = df['Final BR'].replace('unknown', 'TBD')
