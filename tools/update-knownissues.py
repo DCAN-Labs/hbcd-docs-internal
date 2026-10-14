@@ -1,10 +1,10 @@
-import pandas as pd
 import html
 import os
 import markdown
 import numpy as np
 import re
 from utils import load_and_filter
+from utils import map_type
 
 # NEW VERSION OF parse-by-domains.py that parses text documenting issues from a separate google sheet and matches issue based on ID#
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
@@ -13,13 +13,6 @@ XLSX= "data/latest.xlsx"
 INTERNAL_MD = "../docs/changelog/knownissues.md"
 
 # FUNCTIONS
-
-def map_type(value):
-    if "issue" in value:
-        return "Issue"
-    elif "pending" in value:
-        return "Pending Update"
-    return None
 
 def target_sort_key(br):
     """Sort Target (BR) values numerically ascending, with TBD sorted last."""
@@ -69,13 +62,13 @@ def build_table(domain, rows):
 <tbody>
 """)
 
-    for issue_type, table, summary_html, br in rows:
+    for issue_type, issue_id, table, summary_html, br in rows:
         table_parts.append("<tr>")
         if issue_type == "Issue":
             type_label = '<i class="fas fa-bug icon-bug"></i>'
         else:
             type_label = '<i class="fa-solid fa-rotate icon-rotate"></i>'
-        table_parts.append(f"<td>{type_label}</td>")
+        table_parts.append(f"<td>{type_label} {html.escape(str(issue_id))}</td>")
         table_parts.append(f"<td>{html.escape(str(table))}</td>")
         table_parts.append(f"<td>{summary_html}</td>")
         table_parts.append(
@@ -89,12 +82,8 @@ def build_table(domain, rows):
 # WORK
 df = load_and_filter(XLSX)
 
-# Extra steps for internal documentation: Remove rows archived to BR - already documented in resolved issues page
-df = df[~(df['Autoparsed?'] == 'Archived to BR')]
-df = df[~(df['Autoparsed?'] == 'Add to archive')]
-
-# Replace unknown BR values with TBD for display purposes
-df['Final BR'] = df['Final BR'].replace('unknown', 'TBD')
+# Remove rows archived to BR - already documented in resolved issues page
+df = df[~(df['Autoparsed?'] == 'ARCHIVED')]
 
 # Prefix PR values
 df.loc[df['PR'] != '', 'PR'] = 'R' + df.loc[df['PR'] != '', 'PR']
@@ -105,16 +94,13 @@ df['BR'] = df['BR'].replace('', np.nan)
 df['PR'] = df['PR'].replace('', np.nan)
 df['BR'] = df['Final BR'].fillna(df['BR']).fillna(df['PR']).fillna('TBD')
 
-# For BR values, if missing "., add it to the end of the string
+# For BR values, if missing ".0", add it to the end of the string
 df['BR'] = df['BR'].apply(lambda x: str(x) + '.0' if str(x) != 'TBD' and '.' not in str(x) else str(x))
-
-# Drop PR and Final BR columns for troubleshooting
-df = df.drop(['PR', 'Final BR'], axis=1)
 
 # Type mapping and sort by (1) domain, (2) table/topic
 df["MappedType"] = df["Type"].apply(map_type)
 df = df[df["MappedType"].notna()]
-df = df.sort_values(by=['Domain', 'Table/Topic'])
+df = df.sort_values(by=['BR', 'Domain', 'Table/Topic'])
 
 # Build grouped structure (by domain only)
 grouped_by_domain = {}
@@ -122,6 +108,7 @@ grouped_by_domain = {}
 for _, row in df.iterrows():
     domain = row["Domain"]
     issue_type = row["MappedType"]
+    issue_id = row["ID"]
     table = row["Table/Topic"]
     summary_md = row["Text"]
     br = row["BR"]
@@ -134,7 +121,7 @@ for _, row in df.iterrows():
     summary_html = re.sub(r'^<p>(.*)</p>$', r'\1', summary_html, flags=re.DOTALL)
 
     grouped_by_domain.setdefault(domain, []).append(
-        (issue_type, table, summary_html, br)
+        (issue_type, issue_id, table, summary_html, br)
     )
 
 # Generate known issues and pending tables for internal page
