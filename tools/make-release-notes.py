@@ -1,13 +1,13 @@
 import html
 import os
-import re
 
-import markdown
-import pandas as pd
 from utils import load_and_filter
+from utils import map_type
+from utils import get_type_icon
+from utils import markdown_to_html
+from utils import insert_into_markdown
 
 # Generates release notes based on Final BR column
-
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # DEFINE BR AND INPUT/OUTPUT FILEPATHS
@@ -15,47 +15,7 @@ BR = "30.2"
 XLSX= "data/latest.xlsx"
 INTERNAL_MD = f"../docs/changelog/versions/BR3X/BR{BR}.md"
 
-# FUNCTIONS
-
-def map_type(value):
-    """
-    Convert the source RTDs type to the label used in the table.
-    """
-    value = str(value).lower()
-
-    if "issue" in value:
-        return "Issue"
-
-    if "pending" in value:
-        return "Pending Update"
-
-    return None
-
-def markdown_to_html(value):
-    """
-    Convert Markdown to HTML and remove an outer paragraph wrapper
-    when present.
-    """
-    converted = markdown.markdown(
-        str(value),
-        extensions=["extra", "sane_lists"],
-    )
-
-    return re.sub(
-        r"^<p>(.*)</p>$",
-        r"\1",
-        converted,
-        flags=re.DOTALL,
-    )
-
-def get_type_icon(issue_type):
-    """
-    Define icons for issues and pending updates.
-    """
-    if issue_type == "Issue":
-        return '<i class="fas fa-bug icon-bug"></i>'
-
-    return '<i class="fa-solid fa-rotate icon-rotate"></i>'
+# FUNCTIONS (unique to release notes generation)
 
 def build_domain_sections(rows):
     sections = []
@@ -83,9 +43,9 @@ def build_domain_sections(rows):
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr>
-<th width="5%">ID</th>
-<th width="18%">Table/Topic</th>
-<th width="77%">Summary</th>
+<th>Type & ID</th>
+<th>Measure/Topic</th>
+<th>Summary</th>
 </tr>
 </thead>
 <tbody>
@@ -96,11 +56,8 @@ def build_domain_sections(rows):
         table_parts.extend(
             [
                 "<tr>",
-                f"<td>{html.escape(str(issue_id))}</td>",
-                (
-                    f"<td>{type_icon} "
-                    f"{html.escape(str(table))}</td>"
-                ),
+                f"<td>{type_icon} {html.escape(str(issue_id))}</td>",
+                f"<td>{html.escape(str(table))}</td>",
                 f"<td>{summary_html}</td>",
                 "</tr>",
             ]
@@ -108,63 +65,13 @@ def build_domain_sections(rows):
     if current_domain is not None:
         close_table()
 
-    return "\n\n".join(sections)
-
-def insert_into_markdown(md_path, table_html):
-    """
-    Replace the content between the known-issues table markers.
-    """
-    start_marker = "<!-- BEGIN KNOWN_ISSUES_TABLE -->"
-    end_marker = "<!-- END KNOWN_ISSUES_TABLE -->"
-
-    with open(md_path, "r", encoding="utf-8") as file:
-        content = file.read()
-
-    start_index = content.find(start_marker)
-    end_index = content.find(end_marker)
-
-    if start_index == -1 or end_index == -1:
-        raise ValueError(
-            "Could not find the known-issues table markers in "
-            f"{md_path}."
-        )
-
-    if end_index < start_index:
-        raise ValueError(
-            "The known-issues table end marker appears before "
-            "the start marker."
-        )
-
-    end_index += len(end_marker)
-
-    replacement = (
-        f"{start_marker}\n"
-        f"{table_html}\n"
-        f"{end_marker}"
-    )
-
-    new_content = (
-        content[:start_index]
-        + replacement
-        + content[end_index:]
-    )
-
-    with open(md_path, "w", encoding="utf-8") as file:
-        file.write(new_content)
-
-    print(f"Release notes populated for BR {BR}")
-
+    return "\n".join(sections)
 
 # WORK
-df = pd.read_excel(XLSX, dtype=str)
+df = load_and_filter(XLSX)
 
-# Filter - only include items marked for autoparsing and where Final BR == {BR}
-df = df[df['Autoparsed?'].str.contains('Yes')]
+# Filter - only include items where Final BR == {BR}
 df = df[(df['Final BR'] == BR)]
-
-# Fill missing values and strip whitespace
-df = df.fillna('')
-df = df.apply(lambda col: col.str.strip() if col.dtype == "object" else col)
 
 # df.to_csv(f"test.csv", index=False)
 
@@ -175,19 +82,10 @@ df = df[df["MappedType"].notna()]
 # Convert summary Markdown to HTML.
 df["SummaryHTML"] = df["Text"].apply(markdown_to_html)
 
-# Control the order in which issue types appear within each domain.
-type_sort_order = {
-    "Issue": 0,
-    "Pending Update": 1,
-}
-
-df["TypeSortOrder"] = df["MappedType"].map(type_sort_order)
-
-# Sort by domain, issue type, and table/topic.
+# Sort by domain, and table/topic.
 df = df.sort_values(
     by=[
         "Domain",
-        "TypeSortOrder",
         "Table/Topic",
     ],
     key=lambda column: (
@@ -212,3 +110,5 @@ table_rows = [
 # Generate and insert domain subsections.
 domain_sections = build_domain_sections(table_rows)
 insert_into_markdown(INTERNAL_MD, domain_sections)
+print(f"Release notes populated for BR {BR}")
+
