@@ -1,156 +1,114 @@
-import pandas as pd
 import html
 import os
-import markdown
-import numpy as np
-import re
+
 from utils import load_and_filter
 from utils import map_type
+from utils import get_type_icon
+from utils import markdown_to_html
+from utils import insert_into_markdown
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))   
+# Generates release notes based on Final BR column
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
+# DEFINE BR AND INPUT/OUTPUT FILEPATHS
+BR = "30.2"
 XLSX= "data/latest.xlsx"
-INTERNAL_MD = "../docs/changelog/knownissues.md"
+INTERNAL_MD = f"../docs/changelog/versions/BR3X/BR{BR}.md"
 
-# FUNCTIONS
+# FUNCTIONS (unique to release notes generation)
 
-def target_sort_key(br):
-    """Sort Target (BR) values numerically ascending, with TBD sorted last."""
-    br = str(br)
-    if br.upper() == "TBD":
-        return (1, 0.0)
-    numeric_part = br[1:] if br.upper().startswith("R") else br
-    try:
-        return (0, float(numeric_part))
-    except ValueError:
-        return (0, numeric_part)
-
-def insert_into_markdown(md_path, combined_html):
-    START_MARKER = "<!-- BEGIN KNOWN_ISSUES_TABLE -->"
-    END_MARKER = "<!-- END KNOWN_ISSUES_TABLE -->"
-
-    with open(md_path, "r", encoding="utf-8") as f:
-        content = f.read()
-
-    start_index = content.find(START_MARKER)
-    end_index = content.find(END_MARKER)
-    end_index += len(END_MARKER)
-
-    new_content = (
-        content[:start_index]
-        + START_MARKER
-        + combined_html
-        + END_MARKER
-        + content[end_index:]
-    )
-    with open(md_path, "w", encoding="utf-8") as f:
-        f.write(new_content)
-    print("Known issues table successfully updated.")
-
-# Generate HTML tables 
-def build_table(domain, rows):
+def build_domain_sections(rows):
+    sections = []
+    current_domain = None
     table_parts = []
 
-    table_parts.append(f"\n### {html.escape(domain)}")
-    table_parts.append("""
+    def close_table():
+        if table_parts:
+            table_parts.extend([
+                "</tbody>",
+                "</table>",
+            ])
+            sections.append("\n".join(table_parts))
+
+    for issue_type, domain, issue_id, table, summary_html in rows:
+        if domain != current_domain:
+            if current_domain is not None:
+                close_table()
+            current_domain = domain
+            sections.append(
+                f"#### {html.escape(str(domain))}"
+            )
+            table_parts = [
+                """
 <table class="compact-table-no-vertical-lines">
 <thead>
-<tr style="font-size: 1.1em;">
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th>Target</th></tr>
+<tr>
+<th>Type & ID</th>
+<th>Measure/Topic</th>
+<th>Summary</th>
+</tr>
 </thead>
 <tbody>
-""")
+"""
+            ]
 
-    for issue_type, table, summary_html, br in rows:
-        table_parts.append("<tr>")
-        if issue_type == "Issue":
-            type_label = '<i class="fas fa-bug icon-bug"></i>'
-        else:
-            type_label = '<i class="fa-solid fa-rotate icon-rotate"></i>'
-        table_parts.append(f"<td>{type_label}</td>")
-        table_parts.append(f"<td>{html.escape(str(table))}</td>")
-        table_parts.append(f"<td>{summary_html}</td>")
-        table_parts.append(
-            f"<td style='text-align: center;'><span class='pill'>{html.escape(str(br))}</span></td>"
+        type_icon = get_type_icon(issue_type)
+        table_parts.extend(
+            [
+                "<tr>",
+                f"<td>{type_icon} {html.escape(str(issue_id))}</td>",
+                f"<td>{html.escape(str(table))}</td>",
+                f"<td>{summary_html}</td>",
+                "</tr>",
+            ]
         )
-        table_parts.append("</tr>")
-    table_parts.append("</tbody></table>")
+    if current_domain is not None:
+        close_table()
 
-    return "\n".join(table_parts)
+    return "\n".join(sections)
 
 # WORK
 df = load_and_filter(XLSX)
 
-# Extra steps for internal documentation: Remove rows archived to BR - already documented in resolved issues page
-df = df[~(df['Autoparsed?'] == 'ARCHIVED TO BR')]
-df = df[~(df['Autoparsed?'] == 'Add to archive')]
+# Filter - only include items where Final BR == {BR}
+df = df[(df['Final BR'] == BR)]
 
-# Prefix PR values
-df.loc[df['PR'] != '', 'PR'] = 'R' + df.loc[df['PR'] != '', 'PR']
+# df.to_csv(f"test.csv", index=False)
 
-# Build Target column: Final BR first, then fill blanks with BR, then PR, then TBD
-df['Final BR'] = df['Final BR'].replace('', np.nan)
-df['BR'] = df['BR'].replace('', np.nan)
-df['PR'] = df['PR'].replace('', np.nan)
-df['BR'] = df['Final BR'].fillna(df['BR']).fillna(df['PR']).fillna('TBD')
-
-# For BR values, if missing "., add it to the end of the string
-df['BR'] = df['BR'].apply(lambda x: str(x) + '.0' if str(x) != 'TBD' and '.' not in str(x) else str(x))
-
-# Drop PR and Final BR columns for troubleshooting
-df = df.drop(['PR', 'Final BR'], axis=1)
-
-# Type mapping and sort by (1) domain, (2) table/topic
+# Map the issue type and remove unsupported types.
 df["MappedType"] = df["Type"].apply(map_type)
 df = df[df["MappedType"].notna()]
-df = df.sort_values(by=['Domain', 'Table/Topic'])
 
-# Build grouped structure (by domain only)
-grouped_by_domain = {}
+# Convert summary Markdown to HTML.
+df["SummaryHTML"] = df["Text"].apply(markdown_to_html)
 
-for _, row in df.iterrows():
-    domain = row["Domain"]
-    issue_type = row["MappedType"]
-    table = row["Table/Topic"]
-    summary_md = row["Text"]
-    br = row["BR"]
+# Sort by domain, and table/topic.
+df = df.sort_values(
+    by=[
+        "Domain",
+        "Table/Topic",
+    ],
+    key=lambda column: (
+        column.str.lower()
+        if column.dtype == "object"
+        else column
+    ),
+)
 
-    # Convert Markdown → HTML & strip outer <p>
-    summary_html = markdown.markdown(
-        summary_md,
-        extensions=["extra", "sane_lists"]
+# Prepare rows for the combined table.
+table_rows = [
+    (
+        row["MappedType"],
+        row["Domain"],
+        row["ID"],
+        row["Table/Topic"],
+        row["SummaryHTML"],
     )
-    summary_html = re.sub(r'^<p>(.*)</p>$', r'\1', summary_html, flags=re.DOTALL)
-
-    grouped_by_domain.setdefault(domain, []).append(
-        (issue_type, table, summary_html, br)
-    )
-
-# Generate known issues and pending tables for internal page
-table_configs = [
-    ("Issue",
-     '<i class="fas fa-bug icon-bug"></i> Known Issues'),
-    ("Pending Update",
-     '<i class="fa-solid fa-rotate icon-rotate"></i> Pending Updates'),
+    for _, row in df.iterrows()
 ]
 
-def build_combined_tables():
-    tables = []
-
-    for domain in sorted(grouped_by_domain.keys()):
-        rows = grouped_by_domain[domain]
-        # Sort within domain by Target (BR), then type, then Table/Topic
-        rows = sorted(rows, key=lambda x: (target_sort_key(x[3]), x[0], x[1]))
-        tables.append(build_table(domain, rows))
-
-    return "\n\n".join(tables)
-
-# Make table and insert into markdown
-combined_tables_html_int = build_combined_tables()
-insert_into_markdown(INTERNAL_MD, combined_tables_html_int)
-
-
-# df.to_csv("debug.tsv", sep='\t', index=False)
-
+# Generate and insert domain subsections.
+domain_sections = build_domain_sections(table_rows)
+insert_into_markdown(INTERNAL_MD, domain_sections)
+print(f"Release notes populated for BR {BR}")
 
