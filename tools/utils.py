@@ -17,8 +17,8 @@ def load_and_filter(xlsx_path):
     df = df.apply(lambda col: col.str.strip() if col.dtype == "object" else col)
 
     # Generate merge.csv for local record
-    current_datetime = datetime.now().strftime("%Y-%m-%d")
-    df.to_csv(f"data/merge_{current_datetime}.csv", index=False)
+    # current_datetime = datetime.now().strftime("%Y-%m-%d")
+    # df.to_csv(f"data/merge_{current_datetime}.csv", index=False)
 
     return df
 

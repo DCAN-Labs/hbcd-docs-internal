@@ -2,7 +2,6 @@ import pandas as pd
 import html
 import os
 import markdown
-import numpy as np
 import re
 from utils import load_and_filter
 
@@ -113,7 +112,7 @@ def insert_at_top_of_table(html_path, rows_html):
     print("Resolved archive table successfully updated.")
 
 # WORK
-df = load_and_filter(XLSX, sheet_id, sheet_gid)
+df = load_and_filter(XLSX)
 df = df[df['Autoparsed?'] == 'Add to archive']
 df = df.rename(columns={"Text": "Summary"})
 

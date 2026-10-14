@@ -2,3 +2,4 @@
 scratch/
 .venv/
 .claude/
+tools/__pycache__/

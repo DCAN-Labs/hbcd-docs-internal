@@ -148,26 +148,20 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>Implausible GA</td>
-<td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>Score text</td>
 <td>Text inappropriately located in score fields where score is missing to be moved to corresponding 'notes' field (impacts ecPROMIS-PAGS; MAPS-TL; SPM-2).</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Instruction</td>
-<td>The 'instruction' data dictionary element is currently blank.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Concatenation</td>
+<td>MRI, EEG and Axtivity derivative concatenation run directly on the de-ID bucket instead of the re-ID bucket</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Blank Fields for Siblings</td>
-<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child, not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants from the corresponding Main Child record. See the participant ID mapping in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Implausible GA</td>
+<td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks).</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 <tr>
@@ -177,10 +171,22 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 <tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Instruction</td>
+<td>The 'instruction' data dictionary element is currently blank.</td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Blank Fields for Siblings</td>
+<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child, not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants from the corresponding Main Child record. See the participant ID mapping in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
+</tr>
+<tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Sequence Field</td>
 <td>The currently included Sequence field is blank across all instruments and will be removed.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
 
@@ -197,14 +203,26 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
+<td>FAD</td>
+<td>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
 <td>ecPROMIS CC</td>
 <td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>CHAOS</td>
+<td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>ERICA</td>
-<td>A future release will include reliability codes integrated into the primary coding dataset. Until then, users must perform this integration manually: see the ERICA Data Warning for instructions. Instructions include cleaning the current files to exclude n=44 participants with incorrect code values (data entry/form errors), capping <code>b_raw</code> values at 3.0 (n=3 participants), and removing the “Locomotor Ability” field (<code>mh_cg_erica_3_9m_locomotor_ability</code>), which has errors, also to be corrected in the next release.</td>
+<td>Reliability codes integrated into the primary coding dataset and no longer requires manual user generation (see <a href="https://docs.hbcdstudy.org/r2.1/instruments/bcgi/erica/#data-warning">2.1 data warning</a> for details).</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr>
@@ -215,26 +233,50 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>ECHO</td>
-<td>Addition of the Early Child Care and Education</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>FAD</td>
-<td>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
+<td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>MAPS-TL (&lt;1yr)</td>
-<td>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>IBQ-R &amp; ECBQ</td>
+<td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>MAPS-TL (Tod)</td>
 <td>Pro-rated scoring for <code>mh_cg_mapdb__tod</code> not yet implemented; N=16 participants missing scores.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>MAPS-TL, ecPROMIS</td>
+<td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>MAPS-TL (&lt;1yr)</td>
+<td>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>MAPS-EASI</td>
+<td>Merge <code>total_score</code> and <code>prorated_score</code> fields into a new <code>summary_score</code> field and remove.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>V03 age &gt;1.5y</td>
+<td>Resolve age for small number of V03 participants in MAPS-TL and ecPROMIS over 1.5 years old.</td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>ECHO</td>
+<td>Addition of the Early Child Care and Education</td>
 <td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
@@ -262,6 +304,18 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td>Nail type is <code>4</code> (Unknown) in the main results table (<code>*_nails_results</code>) and should be obtained from the specimen table (<code>*_nails_type</code>).</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>USDTL Blood</td>
+<td>Convert values of 999 to null. Users must do this manually until resolved prior to analysis.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>BAP</td>
+<td>Biospecimen timestamps for BAP data flow.</td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
+</tr>
 </tbody></table>
 
 
@@ -277,15 +331,9 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>Basic Demo</td>
-<td>N=14 participants in <code>sed_basic_demographics</code> have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
 <td>TLFB</td>
 <td>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a></td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
@@ -310,7 +358,7 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Age fields</td>
 <td>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions (site entry errors); exclude age values prior to analysis.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
 
@@ -338,6 +386,18 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Summary Forms</td>
+<td>Fixed Sequence numbering in <code>mri_ra_chkl_data</code> to increment for <code>start_time</code> fields.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Tabulated XCP-D</td>
+<td>Resolved tabulation error resulting in all 0s for tabulated XCP-D numeric fields.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Cook&#x27;s Distance</td>
 <td>Addition Cook's distance values computed for fMRI.</td>
@@ -345,38 +405,44 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>ModelArray</td>
+<td>Addition of <a href="https://modelarrayio.readthedocs.io/en/latest/">ModelArray</a> outputs derived from XCP-D and QSIRecon.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>XCP-D</td>
+<td>New XCP-D pipeline outputs (processed with version 26.2.0) and updated hashes as a result.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>fmap QC</td>
-<td>Additional QC fields added to the scans TSV files related to line artifacts in fmaps (<code>line2_*</code>)</td>
+<td>Frames containing line artifacts are removed from functional raw BIDS fmap files (in cases where the fmap file passes QC and is therefore used for data processing). Removed frames are documented in the scans TSV metadata files (see fields containing <code>line2_*</code>).</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Run ID</td>
 <td>The <code>run-{X}</code> field may not reflect chronological acquisition order. While this affects both <strong>raw BIDS and derivatives</strong>, data remain internally consistent (i.e. run IDs match between raw and processed datasets).</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
-</tr>
-<tr>
-<td><i class="fas fa-bug icon-bug"></i></td>
-<td>Tabulated XCP-D</td>
-<td>All 0s for numeric values in tabulated XCP-D derivatives</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>dMRI metadata</td>
 <td><code>LargeDelta</code> and <code>SmallDelta</code> in the sidecars currently are set to vendor-specific values (which aren't always correct because the models have their own values) and will be updated to reflect accurate values.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Raw QC Metrics</td>
 <td>Raw MR data QC metrics provided in the raw BIDS SCANS TSV files will be combined into a single table across participants/sessions.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Postprocessing</td>
-<td>Addition of individual functional network maps (generated with template matching) and <a href="https://modelarrayio.readthedocs.io/en/latest/">ModelArray</a> outputs for XCP-D for efficient voxel-wise statistical modeling.</td>
+<td>ReproTM</td>
+<td>Addition of individual functional network maps generated with template matching via ReproTM pipeline.</td>
 <td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
@@ -400,20 +466,134 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>Vineland</td>
-<td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix. In addition, the age of one child is outside of the valid bounds for V05.</td>
+<td>CDI</td>
+<td>Exclude open text fields.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>CDI</td>
+<td>Include <code>total_produced_percentile_both</code> and <code>total_produced_percentile_both_adjusted</code>.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>MLDS</td>
-<td>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) includes implausible values due to data entry errors. Exclude values &gt;168 hours from analysis.</td>
+<td>Vineland</td>
+<td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix. In addition, the age of one child is outside of the valid bounds for V05.</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Bayley</td>
 <td>Remove invalid scores of <code>-9999</code>; until resolved, users should remove this participant data prior to analysis.</td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>MLDS</td>
+<td>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) includes implausible values due to data entry errors. Exclude values &gt;168 hours from analysis.</td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
+</tr>
+</tbody></table>
+
+
+### Novel Tech &amp; Wearable Sensors
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr style="font-size: 1.1em;">
+<th></th><th>Table/Topic</th><th>Summary</th>
+<th>Target</th></tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>Axivity</td>
+<td>Addition of concatenated Axivity table.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>GABI</td>
+<td>Exclusion of <code>setup_004_status</code> from <code>nt_pa_gabi</code> instrument (GABI setup)</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+</tbody></table>
+
+
+### Participant Derived
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr style="font-size: 1.1em;">
+<th></th><th>Table/Topic</th><th>Summary</th>
+<th>Target</th></tr>
+</thead>
+<tbody>
+
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>All tables</td>
+<td><ul>
+<li>Static &amp; Dynamic: updated Domain &amp; Source </li>
+<li>Dynamic: addition of visit missed and visit missed reason to <code>par_gd_dyn</code></li>
+<li>Static table: [1] Resolve inconsistent use of 'Unknown' in the derived ACS variables, [2] Exclude non valid recruitment sites</li>
+</ul></td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Cannabis flag</td>
+<td>Fixed description of Rolled up cannabis flag.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Static table</td>
+<td>Resolve inaccurate no response values for <code>par_gd_stc_acs_child_race_multi___0</code> (“Child race [multi-select] White”).</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>GAD</td>
+<td>Correct static gestational age at delivery.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>MAD</td>
+<td>Correct static maternal age at delivery.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Static table</td>
+<td>N=14 participants have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>ACGs SU flag</td>
+<td>Remove substance use survey for ACGs.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>SU flags</td>
+<td>Make substance use flags in dynamic table cumulative.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>ADI</td>
+<td>ADI in Static table (<code>par_gd_stc_adi_national_prcn</code>) is present, but completely unpopulated.</td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Static table</td>
+<td>AOU race checkbox/constructed-variable inconsistency.</td>
 <td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
@@ -432,19 +612,31 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Anthropometrics</td>
+<td>Inclusion of <code>average_bmi</code>, <code>bmi_for_length_girls_z_score</code>, and <code>bmi_for_length_boys_z_score</code> fields.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Anthropometrics</td>
 <td>Growth (<code>ph_ch_anthro</code>) filter ranges will be updated to be visit-specific, as current ranges allow biologically implausible values (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Range Checks</a>).</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Anthropometrics</td>
-<td>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
+<td>Convert implausible z scores outside of range +/-4 to null.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Medical History</td>
+<td>Remove <code>ecls</code> string in the <code>ph_cg__medhist</code> instrument table name.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Anthropometrics</td>
-<td>The data dictionary element <code>type_data</code> for <code>average_bmi</code> will be corrected to <code>double</code> (currently=<code>character</code>).</td>
+<td>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'.</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 <tr>
@@ -457,13 +649,13 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>BISQ-SF</td>
 <td>Add Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>Vision Screener</td>
 <td>Add more fields to <code>ph_ch_vs</code> (current release only includes completion status and overall screening results).</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
 
@@ -480,21 +672,39 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
-<td>Healthv2 Preg</td>
-<td>The field for the date when PNV was stopped (<code>pex_bm_healthv2_preg__exp__pnv_007__01</code>) is blank, despite participants having reported stopping.</td>
+<td>ACG SU data</td>
+<td>Remove ACG substance use survey data.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>TLFB</td>
+<td>Remove emails present in <code>user_completion</code> field.</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 <tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Healthv2 Preg</td>
+<td>The field for the date when PNV was stopped (<code>pex_bm_healthv2_preg__exp__pnv_007__01</code>) is blank, despite participants having reported stopping.</td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Healthv2 Preg</td>
 <td>Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>TLFB</td>
+<td>Source for TLFB should be Biological Mother, not Child.</td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>PEX Health</td>
 <td>ICD codes for the <code>pex_bm_health*</code> tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a></td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
 
@@ -516,9 +726,21 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>TIC Questionnaire</td>
+<td>Addition of TIC Questionnaire table</td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
+</tr>
+<tr>
 <td><i class="fas fa-bug icon-bug"></i></td>
 <td>Demo</td>
 <td>Relationship status was inappropriately collected at V02/V03 for all cohorts and should have been restricted to cases where there was a change in caregiver (i.e. only Alternative Caregiver cohorts should have this field populated). Data for non-ACG cohorts to be excluded.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>Incarceration</td>
+<td>Remove Incarceration Questionnaire (sample sizes currently too small, sensititive info included, etc.)</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr>
@@ -529,21 +751,33 @@ This page lists ACTIVE issues/pending updates either targeted for upcoming BRs o
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>TIC Questionnaire</td>
-<td>Addition of TIC Questionnaire table</td>
+<td>HOME-21</td>
+<td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>HOME-21</td>
+<td>Emotional support subscale not calculated for V04 and V06.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr>
+<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
+<td>TIC</td>
+<td>Add Transition in Care flags.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr>
+<td><i class="fas fa-bug icon-bug"></i></td>
+<td>eHITs</td>
+<td>Sum score of null instead of 25 in cases where all items have score of 5.</td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 <tr>
 <td><i class="fa-solid fa-rotate icon-rotate"></i></td>
 <td>GLED</td>
 <td>Addition of Geocoded Linkage from Home and Work Addresses</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
-</tr>
-<tr>
-<td><i class="fa-solid fa-rotate icon-rotate"></i></td>
-<td>Incarceration</td>
-<td>Remove Incarceration Questionnaire (sample sizes currently too small, sensititive info included, etc.)</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table><!-- END KNOWN_ISSUES_TABLE -->
 

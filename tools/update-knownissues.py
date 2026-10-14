@@ -4,17 +4,12 @@ import os
 import markdown
 import numpy as np
 import re
-from datetime import datetime
 from utils import load_and_filter
 
 # NEW VERSION OF parse-by-domains.py that parses text documenting issues from a separate google sheet and matches issue based on ID#
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
 XLSX= "data/latest.xlsx"
-# Parse text describing issue from google sheet
-sheet_id = "1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc"
-sheet_gid = "0"
-# Populate known issues page
 INTERNAL_MD = "../docs/changelog/knownissues.md"
 
 # FUNCTIONS
@@ -36,20 +31,6 @@ def target_sort_key(br):
         return (0, float(numeric_part))
     except ValueError:
         return (0, numeric_part)
-
-# def target_sort_key(br):
-#     """Sort Target values numerically ascending, with unknown values and TBD last."""
-#     br = str(br).strip()
-
-#     if br.upper() == "TBD":
-#         return (2, 0.0)
-
-#     numeric_part = br[1:] if br.upper().startswith("R") else br
-
-#     try:
-#         return (0, float(numeric_part))
-#     except ValueError:
-#         return (1, 0.0)
 
 def insert_into_markdown(md_path, combined_html):
     START_MARKER = "<!-- BEGIN KNOWN_ISSUES_TABLE -->"
@@ -106,7 +87,7 @@ def build_table(domain, rows):
     return "\n".join(table_parts)
 
 # WORK
-df = load_and_filter(XLSX, sheet_id, sheet_gid)
+df = load_and_filter(XLSX)
 
 # Extra steps for internal documentation: Remove rows archived to BR - already documented in resolved issues page
 df = df[~(df['Autoparsed?'] == 'Archived to BR')]
