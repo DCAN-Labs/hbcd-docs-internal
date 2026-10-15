@@ -67,7 +67,7 @@ def build_table(domain, rows):
         row_attrs = ' data-known-issue-row data-resolved="true" hidden' if is_resolved else ' data-known-issue-row data-resolved="false"'
         table_parts.append(f"<tr{row_attrs}>")
         if is_resolved:
-            type_label = '<i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i>'
+            type_label = '<i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved"></i>'
         elif issue_type == "Issue":
             type_label = '<i class="fas fa-bug icon-bug"></i>'
         else:

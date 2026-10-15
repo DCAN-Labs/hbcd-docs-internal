@@ -24,13 +24,8 @@
   gap: 0.6rem;
   align-items: center;
 }
-.archive-search-row {
-  margin-bottom: 0.75rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid #e3e6ea;
-}
 .archive-search {
-  flex: 1 1 100%;
+  flex: 1 1 280px;
   min-width: 220px;
 }
 .archive-controls input,
@@ -123,31 +118,26 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 
 ---
 
-<div class="archive-controls" aria-label="Known issues filters">
-  <div class="archive-controls-row archive-search-row">
+<div class="archive-controls">
+  <div class="archive-controls-row">
     <input
       id="ki-search"
       class="archive-search"
       type="search"
       placeholder="Search table/topic or summary..."
-      aria-label="Search known issues"
     >
-  </div>
-  <div class="archive-controls-row archive-filter-row">
-    <select id="ki-domain" aria-label="Filter by domain">
+    <select id="ki-domain">
       <option value="">Domain</option>
     </select>
-    <select id="ki-target" aria-label="Filter by target release">
+    <select id="ki-target">
       <option value="">Target</option>
     </select>
-    <div id="ki-type" class="archive-checks" role="group" aria-label="Filter by type">
-      <label><input type="checkbox" value="issue"> Known Issues</label>
-      <label><input type="checkbox" value="update"> Pending Updates</label>
-      <label><input type="checkbox" value="resolved"> Resolved</label>
+    <div class="archive-checks">
+      <label><input id="ki-show-resolved" type="checkbox"> Show resolved items</label>
     </div>
     <button id="ki-reset" type="button">Clear filters</button>
   </div>
-  <div id="ki-status" class="archive-status" aria-live="polite"></div>
+  <div id="ki-status" class="archive-status"></div>
 </div>
 
 <div id="ki-empty" class="archive-empty">No matching issues or updates found.</div>
@@ -157,7 +147,7 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <p style="font-size: 1.2em; color: #555; text-align: center; line-height: 2;">
   <i class="fas fa-bug" style="color: #f97316;"></i> = Known Issue &nbsp;&nbsp;&nbsp;
   <i class="fa-solid fa-rotate" style="color: #199bd6;"></i> = Pending Update &nbsp;&nbsp;&nbsp;
-  <i class="fa-solid fa-circle-check" style="color: #2e7d32;"></i> = Resolved
+  <i class="fa-solid fa-circle-check" style="color: #24AE70;"></i> = Resolved
 </p>
 
 
@@ -203,7 +193,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-692</td>
+<td><i class="fa-solid fa-circle-check icon-resolved" title="Resolved"></i> ID-692</td>
 <td>Concatenation</td>
 <td>MRI, EEG and Axtivity derivative concatenation run directly on the de-ID bucket instead of the re-ID bucket</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
@@ -261,7 +251,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-69</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-69</td>
 <td>MCHAT</td>
 <td>Addition of the Modified Checklist for Autism in Toddlers</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
@@ -279,7 +269,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-68</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-68</td>
 <td>MAPS-EASI</td>
 <td>Addition of the MAPS-EASI- Toddler</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
@@ -407,7 +397,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-655</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-655</td>
 <td>MADE v1.7.0</td>
 <td>HBCD-MADE derivatives processed through updated version v1.7.0</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
@@ -435,7 +425,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-657</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-657</td>
 <td>Source DICOMs</td>
 <td>Add source DICOMs for all imaging modalities.</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
@@ -529,19 +519,19 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-63</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-63</td>
 <td>Deferred Imitation</td>
 <td>Addition of instrument: Deferred Imitation Task: Gong and Berry-Go-Round</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-661</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-661</td>
 <td>CDI-2</td>
 <td>Addition of the MacArthur-Bates CDI-2 Language</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-78</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-78</td>
 <td>CDI</td>
 <td>Percentiles incorrectly converted for N=36 cases, resulting in values &gt;100 ('Adjusted Percentile' incorrectly parsed from 'Total Produced' instead of 'Total Produced Percentile-sex (adjusted)')</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
@@ -593,7 +583,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-654</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-654</td>
 <td>GABI</td>
 <td>Addition of raw BIDS data for GABI (infant heart rate).</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
@@ -627,7 +617,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-81</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-81</td>
 <td>Static table</td>
 <td>The <code>screen_race_multi__*</code> variables are almost entirely coded as '0' and should not be used for analysis. Users interested in race and ethnicity information should instead use the corresponding derived ACS race and ethnicity variable. Values will be corrected in a future release.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
@@ -725,19 +715,19 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-62</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-62</td>
 <td>Child Nutrition</td>
 <td>Addition of the Child Nutrition Questionnaire.</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-662</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-662</td>
 <td>Med History V1</td>
 <td>Addition of V06</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-70</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-70</td>
 <td>PEDsQL</td>
 <td>Addition of the PEDsQL</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
@@ -807,7 +797,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-46</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-46</td>
 <td>EPDS</td>
 <td>Inconsistent scoring: (1) item responses present, but score is null (N=1); (2) all items null, but score is <code>0</code> (N≥3).</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
@@ -871,25 +861,25 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-64</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-64</td>
 <td>Demo</td>
 <td>Addition of V6 Adult and V6 Child Demographics</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-67</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-67</td>
 <td>Incarceration</td>
 <td>Addition of the Incarceration Questionnaire</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-38</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-38</td>
 <td>eHITS</td>
 <td>Participants missing all item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved" aria-label="Resolved"></i> ID-60</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-60</td>
 <td>Demo</td>
 <td>Roster was inappropriately collected at V02/V03 for all cohorts and should have been restricted to V02 PNRs and alternate caregiver cohorts; to be excluded.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
@@ -963,12 +953,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
     const search = document.getElementById("ki-search");
     const domain = document.getElementById("ki-domain");
     const target = document.getElementById("ki-target");
-    const type = document.getElementById("ki-type");
+    const showResolved = document.getElementById("ki-show-resolved");
     const reset = document.getElementById("ki-reset");
     const status = document.getElementById("ki-status");
     const empty = document.getElementById("ki-empty");
 
-    if (!search || !domain || !target || !type || !reset) return;
+    if (!search || !domain || !target || !showResolved || !reset) return;
     if (search.dataset.filtersInitialized === "true") return;
 
     search.dataset.filtersInitialized = "true";
@@ -1096,9 +1086,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
       const query = normalize(search.value);
       const selectedDomain = domain.value;
       const selectedTarget = target.value;
-      const selectedTypes = Array.from(
-        type.querySelectorAll("input:checked")
-      ).map(function (box) { return box.value; });
+      const showResolvedItems = showResolved.checked;
 
       let visibleCount = 0;
 
@@ -1112,14 +1100,13 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
         const matchesTarget =
           !selectedTarget || record.target === selectedTarget;
 
-        const matchesType =
-          !selectedTypes.length || selectedTypes.includes(record.type);
+        const matchesResolved = showResolvedItems || !record.resolved;
 
         const visible =
           matchesSearch &&
           matchesDomain &&
           matchesTarget &&
-          matchesType;
+          matchesResolved;
 
         record.row.hidden = !visible;
 
@@ -1146,7 +1133,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
     search.addEventListener("input", applyFilters);
 
-    [domain, target, type].forEach(function (control) {
+    [domain, target, showResolved].forEach(function (control) {
       control.addEventListener("change", applyFilters);
     });
 
@@ -1154,9 +1141,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
       search.value = "";
       domain.value = "";
       target.value = "";
-      type.querySelectorAll("input").forEach(function (box) {
-        box.checked = false;
-      });
+      showResolved.checked = false;
 
       applyFilters();
     });

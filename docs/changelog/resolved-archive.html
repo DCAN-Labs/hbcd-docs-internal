@@ -133,33 +133,32 @@
 <p>Running record of resolved issues/updates based on final signoff from SMEs (BR21.0 forward; see release notes for earlier records).</p>
 <div style="margin: 1.25rem 0;"> <a href="knownissues/" class="archive-return-button"> <i class="fa-solid fa-arrow-left"></i> Return to Known Issues page </a> </div>
 
-<div class="archive-controls" aria-label="Archive filters">
+<div class="archive-controls">
   <div class="archive-controls-row">
     <input
       id="archive-search"
       class="archive-search"
       type="search"
       placeholder="Search table, topic, or summary..."
-      aria-label="Search archive"
     >
 
-    <select id="archive-domain" aria-label="Filter by domain">
+    <select id="archive-domain">
       <option value="">All domains</option>
     </select>
 
-    <select id="archive-br" aria-label="Filter by release">
+    <select id="archive-br">
       <option value="">All releases</option>
     </select>
 
     <!-- ARCHIVE TYPE -->
-    <select id="archive-type" aria-label="Filter by type">
+    <select id="archive-type">
       <option value="">All types</option>
       <option value="issue">Resolved Known Issues</option>
       <option value="update">Completed Pending Updates</option>
     </select>
     <button id="archive-reset" type="button">Clear filters</button>
   </div>
-  <div id="archive-status" class="archive-status" aria-live="polite"></div>
+  <div id="archive-status" class="archive-status"></div>
 </div>
 
 <p style="color: #555; text-align: center;">
