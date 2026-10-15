@@ -73,10 +73,11 @@ def build_domain_sections(rows):
 # WORK
 df = load_and_filter(sheet_id, sheet_gid)
 
+# Save local copy for versioning
+df.to_csv("data/latest-gsheet-derived.tsv", sep='\t', index=False)
+
 # Filter - only include items where Final BR == {BR}
 df = df[(df['Final BR'] == BR)]
-
-# df.to_csv(f"test.csv", index=False)
 
 # Map the issue type and remove unsupported types.
 df["MappedType"] = df["Type"].apply(map_type)
