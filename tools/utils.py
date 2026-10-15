@@ -4,13 +4,11 @@ import pandas as pd
 from datetime import datetime
 
 
-def load_and_filter(xlsx_path):
-    """
-    Load XLSX file, merge in google sheet issue text, filter to autoparsed
-    rows, fill missing values, and strip whitespace.
-    """
-    df = pd.read_excel(xlsx_path, dtype=str)
+def load_and_filter(sheet_id, sheet_gid):
 
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_gid}"
+    df = pd.read_csv(url, dtype=str) 
+    
     # Fill missing values and strip whitespace
     df = df.fillna('')
     df = df.apply(lambda col: col.str.strip() if col.dtype == "object" else col)

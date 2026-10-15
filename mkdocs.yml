@@ -21,7 +21,8 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.details
   - attr_list
-  - admonition   
+  - admonition
+  - md_in_html # markdown used within html blocks can be rendered
   - toc:
       permalink: '🔗'
 

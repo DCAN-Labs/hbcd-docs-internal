@@ -5,10 +5,11 @@ import numpy as np
 import re
 from utils import load_and_filter
 
-# NEW VERSION OF parse-by-domains.py that parses text documenting issues from a separate google sheet and matches issue based on ID#
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
-XLSX= "data/latest.xlsx"
+# https://docs.google.com/spreadsheets/d/1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc/edit?gid=0#gid=0
+sheet_id = "1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc"
+sheet_gid = "0"
 INTERNAL_MD = "../docs/changelog/knownissues.md"
 
 # FUNCTIONS
@@ -51,15 +52,17 @@ def insert_into_markdown(md_path, combined_html):
         + END_MARKER
         + content[end_index:]
     )
+
     with open(md_path, "w", encoding="utf-8") as f:
         f.write(new_content)
     print("Known issues table successfully updated.")
 
 # Generate HTML tables 
+
 def build_table(domain, rows):
     table_parts = []
 
-    table_parts.append(f"<h3>{html.escape(domain)}</h3>")
+    table_parts.append(f"### {html.escape(str(domain))}")
     table_parts.append("""
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -92,15 +95,18 @@ def build_table(domain, rows):
     return "\n".join(table_parts)
 
 # WORK
-df = load_and_filter(XLSX)
+df = load_and_filter(sheet_id, sheet_gid)
 
-# for rows where df['Autoparsed?'] == 'ARCHIVE', set the 'type' to 'resolved' so that the row is hidden by default and can be revealed by the page filter
+# Save local copy for versioning
+df.to_csv("data/latest-gsheet-derived.tsv", sep='\t', index=False)
+
+# for rows where df['Autoparsed?'] == 'ARCHIVE', set the 'type' to 'resolved'
 df.loc[df['Autoparsed?'] == 'ARCHIVE', 'Type'] = 'resolved'
 
 # Prefix PR values
 df.loc[df['PR'] != '', 'PR'] = 'R' + df.loc[df['PR'] != '', 'PR']
 
-# Build Target column: Final BR first, then fill blanks with BR, then PR, then TBD
+# Build Target column: Final BR first, then fill blanks with BR, then PR, then TBD if still blank
 df['Final BR'] = df['Final BR'].replace('', np.nan)
 df['BR'] = df['BR'].replace('', np.nan)
 df['PR'] = df['PR'].replace('', np.nan)
@@ -193,6 +199,6 @@ combined_tables_html_int = build_combined_tables()
 insert_into_markdown(INTERNAL_MD, combined_tables_html_int)
 
 
-# df.to_csv("debug.tsv", sep='\t', index=False)
+
 
 

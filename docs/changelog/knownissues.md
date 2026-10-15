@@ -151,7 +151,9 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 </p>
 
 
-<!-- BEGIN KNOWN_ISSUES_TABLE --><div class="known-issues" data-known-issues markdown="1">
+<!-- BEGIN KNOWN_ISSUES_TABLE -->
+
+<div class="known-issues" data-known-issues markdown="1">
 
 <style>.known-issues [hidden] { display: none !important; }</style>
 
@@ -169,7 +171,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 <div data-known-issue-domain markdown="1">
 
-<h3>All Data / General</h3>
+### All Data / General
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -239,7 +241,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 <div data-known-issue-domain markdown="1">
 
-<h3>Behavior &amp; Child-Caregiver Interaction</h3>
+### Behavior &amp; Child-Caregiver Interaction
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -345,7 +347,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 <div data-known-issue-domain markdown="1">
 
-<h3>Biospecimens &amp; Omics</h3>
+### Biospecimens &amp; Omics
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -357,7 +359,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 <tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-44</td>
-<td>Blood</td>
+<td>Blood PEth</td>
 <td>Inclusion of Blood Spot Card Results data from USDTL.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
@@ -369,7 +371,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-693</td>
-<td>USDTL Blood</td>
+<td>Blood PEth</td>
 <td>Convert values of 999 to null. Users must do this manually until resolved prior to analysis.</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
@@ -385,7 +387,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 <div data-known-issue-domain markdown="1">
 
-<h3>EEG</h3>
+### EEG
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -413,7 +415,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 <div data-known-issue-domain markdown="1">
 
-<h3>MRI</h3>
+### MRI
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -507,7 +509,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 <div data-known-issue-domain markdown="1">
 
-<h3>Neurocognition &amp; Language</h3>
+### Neurocognition &amp; Language
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -571,7 +573,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 <div data-known-issue-domain markdown="1">
 
-<h3>Novel Tech &amp; Wearable Sensors</h3>
+### Novel Tech &amp; Wearable Sensors
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -605,7 +607,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 <div data-known-issue-domain markdown="1">
 
-<h3>Participant Derived</h3>
+### Participant Derived
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -625,9 +627,9 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><i class="fas fa-bug icon-bug"></i> ID-106</td>
 <td>All tables</td>
 <td><ul>
-<li>Static &amp; Dynamic: updated Domain &amp; Source </li>
-<li>Dynamic: addition of visit missed and visit missed reason to <code>par_gd_dyn</code></li>
-<li>Static table: [1] Resolve inconsistent use of 'Unknown' in the derived ACS variables, [2] Exclude non valid recruitment sites</li>
+<li>Updated Domain &amp; Source </li>
+<li>Addition of visit missed and visit missed reason to Dynamic table <code>par_gd_dyn</code></li>
+<li>Static table: Resolve inconsistent use of 'Unknown' in  derived ACS variables and exclude non-valid recruitment sites</li>
 </ul></td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
@@ -703,7 +705,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 <div data-known-issue-domain markdown="1">
 
-<h3>Physical Health</h3>
+### Physical Health
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -785,7 +787,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 <div data-known-issue-domain markdown="1">
 
-<h3>Pregnancy &amp; Environmental Exposure</h3>
+### Pregnancy &amp; Environmental Exposure
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -849,7 +851,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 <div data-known-issue-domain markdown="1">
 
-<h3>Social &amp; Environmental Determinants</h3>
+### Social &amp; Environmental Determinants
 
 <table class="compact-table-no-vertical-lines">
 <thead>
@@ -1066,7 +1068,8 @@ sections.forEach(function (section) {
       const section = row.closest("[data-known-issue-domain]");
       const heading = section ? section.querySelector("h3") : null;
 
-      const domainName = heading ? heading.textContent.trim() : "";
+      // Exclude the 🔗 permalink anchor that MkDocs appends inside headings.
+      const domainName = heading ? getText(heading).replace(/\s*🔗$/, "") : "";
       const targetName = cells[3] ? cells[3].textContent.trim() : "";
 
       // Support explicit type metadata if the generator provides it.
