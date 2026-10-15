@@ -7,8 +7,9 @@ from utils import load_and_filter
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-XLSX= "data/latest.xlsx"
-# Populate resolved html page
+# https://docs.google.com/spreadsheets/d/1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc/edit?gid=0#gid=0
+sheet_id = "1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc"
+sheet_gid = "0"
 resolved_html = f"../docs/changelog/resolved-archive.html"
 
 # Parse text describing issue from google sheet
@@ -112,7 +113,7 @@ def insert_at_top_of_table(html_path, rows_html):
     print("Resolved archive table successfully updated.")
 
 # WORK
-df = load_and_filter(XLSX)
+df = load_and_filter(sheet_id, sheet_gid)
 df = df[df['Autoparsed?'] == 'Add to archive']
 df = df.rename(columns={"Text": "Summary"})
 

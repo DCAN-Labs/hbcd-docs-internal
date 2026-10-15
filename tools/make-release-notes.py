@@ -12,7 +12,10 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # DEFINE BR AND INPUT/OUTPUT FILEPATHS
 BR = "30.2"
-XLSX= "data/latest.xlsx"
+
+# https://docs.google.com/spreadsheets/d/1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc/edit?gid=0#gid=0
+sheet_id = "1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc"
+sheet_gid = "0"
 INTERNAL_MD = f"../docs/changelog/versions/BR3X/BR{BR}.md"
 
 # FUNCTIONS (unique to release notes generation)
@@ -68,7 +71,7 @@ def build_domain_sections(rows):
     return "\n".join(sections)
 
 # WORK
-df = load_and_filter(XLSX)
+df = load_and_filter(sheet_id, sheet_gid)
 
 # Filter - only include items where Final BR == {BR}
 df = df[(df['Final BR'] == BR)]
