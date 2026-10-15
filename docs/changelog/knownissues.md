@@ -1,7 +1,7 @@
 <style>
 .wy-nav-content {
     width: 100% !important;
-    max-width:100% !important;
+    max-width: 100% !important;
     flex-grow: 1 !important;
 }
 .compact-table-no-vertical-lines td:first-child,
@@ -151,8 +151,7 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 </p>
 
 
-<!-- BEGIN KNOWN_ISSUES_TABLE -->
-<div class="known-issues" data-known-issues markdown="1">
+<!-- BEGIN KNOWN_ISSUES_TABLE --><div class="known-issues" data-known-issues markdown="1">
 
 <style>.known-issues [hidden] { display: none !important; }</style>
 
@@ -193,7 +192,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check icon-resolved" title="Resolved"></i> ID-692</td>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-692</td>
 <td>Concatenation</td>
 <td>MRI, EEG and Axtivity derivative concatenation run directly on the de-ID bucket instead of the re-ID bucket</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
@@ -872,6 +871,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Addition of the Incarceration Questionnaire</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
 </tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-71</td>
+<td>TIC Questionnaire</td>
+<td>Addition of TIC Questionnaire table</td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-38</td>
 <td>eHITS</td>
@@ -882,12 +887,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-60</td>
 <td>Demo</td>
 <td>Roster was inappropriately collected at V02/V03 for all cohorts and should have been restricted to V02 PNRs and alternate caregiver cohorts; to be excluded.</td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-71</td>
-<td>TIC Questionnaire</td>
-<td>Addition of TIC Questionnaire table</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
@@ -1004,6 +1003,60 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
     const sections = Array.from(
       container.querySelectorAll("[data-known-issue-domain]")
     );
+
+    // Compare text alphabetically, ignoring case, with natural number ordering.
+// For example, 30.2 sorts before 30.10.
+const collator = new Intl.Collator("en", {
+  numeric: true,
+  sensitivity: "base"
+});
+
+function getText(element) {
+  return element
+    ? element.textContent.replace(/\s+/g, " ").trim()
+    : "";
+}
+
+// Sort the domain sections alphabetically by heading.
+sections.sort(function (a, b) {
+  return collator.compare(
+    getText(a.querySelector("h3")),
+    getText(b.querySelector("h3"))
+  );
+});
+
+sections.forEach(function (section) {
+  container.appendChild(section);
+
+  // Sort each table independently, including hidden resolved rows.
+  section.querySelectorAll("table").forEach(function (table) {
+    Array.from(table.tBodies).forEach(function (tbody) {
+      const rows = Array.from(tbody.rows).filter(function (row) {
+        return row.matches("[data-known-issue-row]");
+      });
+
+      rows.sort(function (a, b) {
+        // Primary sort: Target (fourth column).
+        const targetComparison = collator.compare(
+          getText(a.cells[3]),
+          getText(b.cells[3])
+        );
+
+        if (targetComparison !== 0) return targetComparison;
+
+        // Secondary sort: Table/Topic (second column).
+        return collator.compare(
+          getText(a.cells[1]),
+          getText(b.cells[1])
+        );
+      });
+
+      rows.forEach(function (row) {
+        tbody.appendChild(row);
+      });
+    });
+  });
+});
 
     // Include hidden rows so resolved items can be revealed.
     const records = Array.from(

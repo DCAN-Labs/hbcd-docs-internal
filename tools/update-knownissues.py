@@ -4,15 +4,23 @@ import markdown
 import numpy as np
 import re
 from utils import load_and_filter
-from utils import map_type
 
 # NEW VERSION OF parse-by-domains.py that parses text documenting issues from a separate google sheet and matches issue based on ID#
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
 XLSX= "data/latest.xlsx"
-INTERNAL_MD = "../docs/changelog/knownissues-alt.md"
+INTERNAL_MD = "../docs/changelog/knownissues.md"
 
 # FUNCTIONS
+
+def map_type(value):
+    if "issue" in value:
+        return "Issue"
+    elif "pending" in value:
+        return "Pending Update"
+    elif "resolved" in value:
+        return "Resolved"
+    return None
 
 def target_sort_key(br):
     """Sort Target (BR) values numerically ascending, with TBD sorted last."""
@@ -67,7 +75,7 @@ def build_table(domain, rows):
         row_attrs = ' data-known-issue-row data-resolved="true" hidden' if is_resolved else ' data-known-issue-row data-resolved="false"'
         table_parts.append(f"<tr{row_attrs}>")
         if is_resolved:
-            type_label = '<i class="fa-solid fa-circle-check" style="color: #2e7d32;" title="Resolved"></i>'
+            type_label = '<i class="fa-solid fa-circle-check icon-resolved"></i>'
         elif issue_type == "Issue":
             type_label = '<i class="fas fa-bug icon-bug"></i>'
         else:
@@ -86,10 +94,8 @@ def build_table(domain, rows):
 # WORK
 df = load_and_filter(XLSX)
 
-# Remove rows archived to BR - already documented in resolved issues page.
-# ARCHIVE rows are included but hidden by default; the page filter reveals them.
-df['Autoparsed?'] = df['Autoparsed?'].fillna('').astype(str).str.strip().str.upper()
-df = df[df['Autoparsed?'] != 'ARCHIVED']
+# for rows where df['Autoparsed?'] == 'ARCHIVE', set the 'type' to 'resolved' so that the row is hidden by default and can be revealed by the page filter
+df.loc[df['Autoparsed?'] == 'ARCHIVE', 'Type'] = 'resolved'
 
 # Prefix PR values
 df.loc[df['PR'] != '', 'PR'] = 'R' + df.loc[df['PR'] != '', 'PR']
