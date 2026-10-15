@@ -5,6 +5,8 @@ import markdown
 import re
 from utils import load_and_filter
 
+## NOTE: this script will need to be re-written, or simply adapted to create release notes-like table to add to archive page?
+
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # https://docs.google.com/spreadsheets/d/1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc/edit?gid=0#gid=0
