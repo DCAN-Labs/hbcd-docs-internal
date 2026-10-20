@@ -151,9 +151,7 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 </p>
 
 
-<!-- BEGIN KNOWN_ISSUES_TABLE -->
-
-<div class="known-issues" data-known-issues markdown="1">
+<!-- BEGIN KNOWN_ISSUES_TABLE --><div class="known-issues" data-known-issues markdown="1">
 
 <style>.known-issues [hidden] { display: none !important; }</style>
 
@@ -181,6 +179,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </thead>
 <tbody>
 
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-22</td>
+<td>Blank Fields for Siblings</td>
+<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child, not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants from the corresponding Main Child record. See the participant ID mapping in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
+<td style='text-align: center;'><span class='pill'>30.0</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-83</td>
 <td>Incorrect JSONs</td>
@@ -229,12 +233,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>The currently included Sequence field is blank across all instruments and will be removed.</td>
 <td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-22</td>
-<td>Blank Fields for Siblings</td>
-<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child, not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants from the corresponding Main Child record. See the participant ID mapping in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
-</tr>
 </tbody></table>
 
 </div>
@@ -251,6 +249,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </thead>
 <tbody>
 
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-686</td>
+<td>V03 age &gt;1.5y</td>
+<td>Resolve age for small number of V03 participants in MAPS-TL and ecPROMIS over 1.5 years old.</td>
+<td style='text-align: center;'><span class='pill'>R3.0</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-69</td>
 <td>MCHAT</td>
@@ -330,12 +334,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-686</td>
-<td>V03 age &gt;1.5y</td>
-<td>Resolve age for small number of V03 participants in MAPS-TL and ecPROMIS over 1.5 years old.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-146</td>
 <td>ECHO</td>
 <td>Addition of the Early Child Care and Education</td>
@@ -358,6 +356,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-687</td>
+<td>BAP</td>
+<td>Biospecimen timestamps for BAP data flow.</td>
+<td style='text-align: center;'><span class='pill'>R3.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-44</td>
 <td>Blood PEth</td>
 <td>Inclusion of Blood Spot Card Results data from USDTL.</td>
@@ -375,12 +379,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Convert values of 999 to null. Users must do this manually until resolved prior to analysis.</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-687</td>
-<td>BAP</td>
-<td>Biospecimen timestamps for BAP data flow.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
-</tr>
 </tbody></table>
 
 </div>
@@ -397,17 +395,17 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </thead>
 <tbody>
 
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-55</td>
+<td>Age fields</td>
+<td>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions (site entry errors); exclude age values prior to analysis.</td>
+<td style='text-align: center;'><span class='pill'>R3.1</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-655</td>
 <td>MADE v1.7.0</td>
 <td>HBCD-MADE derivatives processed through updated version v1.7.0</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-55</td>
-<td>Age fields</td>
-<td>Chronological and adjusted age fall outside of 3-9 months in N=74 V03 sessions (site entry errors); exclude age values prior to analysis.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
 
@@ -425,6 +423,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </thead>
 <tbody>
 
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-681</td>
+<td>ReproTM</td>
+<td>Addition of individual functional network maps generated with template matching via ReproTM pipeline.</td>
+<td style='text-align: center;'><span class='pill'>R3.1</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-657</td>
 <td>Source DICOMs</td>
@@ -453,12 +457,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><i class="fas fa-bug icon-bug"></i> ID-73</td>
 <td>Summary Forms</td>
 <td>Fixed Sequence numbering in <code>mri_ra_chkl_data</code> to increment for <code>start_time</code> fields.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-28</td>
-<td>Cook&#x27;s Distance</td>
-<td>Addition Cook's distance values computed for fMRI.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
@@ -498,9 +496,9 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-681</td>
-<td>ReproTM</td>
-<td>Addition of individual functional network maps generated with template matching via ReproTM pipeline.</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-28</td>
+<td>Cook&#x27;s Distance</td>
+<td>Addition Cook's distance values computed for fMRI.</td>
 <td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
@@ -538,6 +536,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-54</td>
+<td>Bayley</td>
+<td>Remove invalid scores of <code>-9999</code>; until resolved, users should remove this participant data prior to analysis.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-93</td>
 <td>CDI</td>
 <td>Exclude open text fields.</td>
@@ -559,12 +563,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><i class="fas fa-bug icon-bug"></i> ID-119</td>
 <td>MLDS</td>
 <td>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) includes implausible values due to data entry errors. Exclude values &gt;168 hours from analysis.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-54</td>
-<td>Bayley</td>
-<td>Remove invalid scores of <code>-9999</code>; until resolved, users should remove this participant data prior to analysis.</td>
 <td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
@@ -617,6 +615,24 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </thead>
 <tbody>
 
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-37</td>
+<td>TLFB</td>
+<td>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a></td>
+<td style='text-align: center;'><span class='pill'>R3.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-675</td>
+<td>ADI</td>
+<td>ADI in Static table (<code>par_gd_stc_adi_national_prcn</code>) is present, but completely unpopulated.</td>
+<td style='text-align: center;'><span class='pill'>R3.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-79</td>
+<td>Visit Info</td>
+<td>Harmonize participant status and withdrawal fields</td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-81</td>
 <td>Static table</td>
@@ -629,7 +645,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><ul>
 <li>Updated Domain &amp; Source </li>
 <li>Addition of visit missed and visit missed reason to Dynamic table <code>par_gd_dyn</code></li>
-<li>Static table: Resolve inconsistent use of 'Unknown' in  derived ACS variables and exclude non-valid recruitment sites</li>
+<li>Static table: Resolve inconsistent use of 'Unknown' in derived ACS variables and exclude non-valid recruitment sites</li>
 </ul></td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
@@ -643,6 +659,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><i class="fas fa-bug icon-bug"></i> ID-678</td>
 <td>Static table</td>
 <td>Resolve inaccurate no response values for <code>par_gd_stc_acs_child_race_multi___0</code> (“Child race [multi-select] White”).</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-679</td>
+<td>Static table</td>
+<td>AOU race checkbox/constructed-variable inconsistency.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
@@ -674,30 +696,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>ACGs SU flag</td>
 <td>Remove substance use survey for ACGs.</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-37</td>
-<td>TLFB</td>
-<td>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a></td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-675</td>
-<td>ADI</td>
-<td>ADI in Static table (<code>par_gd_stc_adi_national_prcn</code>) is present, but completely unpopulated.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-679</td>
-<td>Static table</td>
-<td>AOU race checkbox/constructed-variable inconsistency.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-79</td>
-<td>Visit Info</td>
-<td>Harmonize participant status and withdrawal fields</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
 
@@ -797,6 +795,18 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </thead>
 <tbody>
 
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-683</td>
+<td>TLFB</td>
+<td>Source for TLFB should be Biological Mother, not Child.</td>
+<td style='text-align: center;'><span class='pill'>R3.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-43</td>
+<td>PEX Health</td>
+<td>ICD codes for the <code>pex_bm_health*</code> tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a></td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-46</td>
 <td>EPDS</td>
@@ -833,18 +843,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Select participants (N=8) were recruited postnatally, but not administered the V1 portion of the TLFB. When this was recognized, the participants were administered the TLFB at the next in-person visit, resulting in a longer recall period than specified in the protocol.</td>
 <td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-683</td>
-<td>TLFB</td>
-<td>Source for TLFB should be Biological Mother, not Child.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-43</td>
-<td>PEX Health</td>
-<td>ICD codes for the <code>pex_bm_health*</code> tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a></td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
-</tr>
 </tbody></table>
 
 </div>
@@ -861,6 +859,18 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </thead>
 <tbody>
 
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-668</td>
+<td>Incarceration</td>
+<td>Remove Incarceration Questionnaire (sample sizes currently too small, sensititive info included, etc.)</td>
+<td style='text-align: center;'><span class='pill'>R3.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-670</td>
+<td>eHITS</td>
+<td>Sum score of null instead of 25 in cases where all items have score of 5.</td>
+<td style='text-align: center;'><span class='pill'>R3.0</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-64</td>
 <td>Demo</td>
@@ -872,6 +882,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Incarceration</td>
 <td>Addition of the Incarceration Questionnaire</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-66</td>
+<td>GLED</td>
+<td>Addition of Geocoded Linkage from Home and Work Addresses</td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-71</td>
@@ -898,12 +914,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-668</td>
-<td>Incarceration</td>
-<td>Remove Incarceration Questionnaire (sample sizes currently too small, sensititive info included, etc.)</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-50</td>
 <td>Demo</td>
 <td>Add household roster fields capturing the sex of listed individuals (adult &amp; child tables).</td>
@@ -926,18 +936,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>TIC</td>
 <td>Add Transition in Care flags.</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-670</td>
-<td>eHITS</td>
-<td>Sum score of null instead of 25 in cases where all items have score of 5.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-66</td>
-<td>GLED</td>
-<td>Addition of Geocoded Linkage from Home and Work Addresses</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
 
