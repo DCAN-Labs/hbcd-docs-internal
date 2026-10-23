@@ -18,4 +18,4 @@ Follow these steps to set up your Lasso Pre-Release System account:
 Navigate to [Lasso Pre-Release System](https://hbcd-hdcc-qc.lassoinformatics.com/), click `Institutional Sign In`, and sign in via your institution credentials.
 
 ### Step 3 - Email Lasso to complete account setup
-Email Jen Zink at Lasso to provide your username and state that you have completed these steps to gain access to the Lasso Pre-Release System. Jen will follow up with specific onboarding instructions (e.g. granting download access if you are already on the DUC).
+Send your username and email to Jen Zink at Lasso and state that you have completed these steps to gain access to the Lasso Pre-Release System. Jen will follow up with specific onboarding instructions as needed.
