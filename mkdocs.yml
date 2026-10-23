@@ -51,39 +51,38 @@ plugins:
 docs_dir: docs
 
 nav: 
-  - Home: index.md
+  # - Home: index.md
 
-  - Workgroup Instructions:
-      - Access BR Data: internal/br-review.md
-      - Report Issues: internal/reportissues.md
-      - Instrument README Instructions: internal/readmes.md
+  - Workgroup Guides:
+      - Access Beta Release Data: internal/br-review.md
+      - Report Data Issues: internal/reportissues.md
+      - Data Release Documentation: internal/readmes.md
 
-  - Beta Release Notes: 
-    - Issues & Pending Updates: changelog/knownissues.md
-    - Release Notes:   
-        - Release 3.0: 
-            - BR 30.2: changelog/versions/BR3X/BR30.2.md
-            - BR 30.1: changelog/versions/BR3X/BR30.1.md
-            - BR 30.0: changelog/versions/BR3X/BR30.0.md
-        - Archive: changelog/versions/archive.md
+  - Beta Releases: 
+    - Known Issues & Pending Updates: changelog/knownissues.md
+    - Release 3.0:    
+        - BR 30.2: changelog/versions/BR3X/BR30.2.md
+        - BR 30.1: changelog/versions/BR3X/BR30.1.md
+        - BR 30.0: changelog/versions/BR3X/BR30.0.md
+    - Release Archive: changelog/versions/archive.md
+  - Quality Control: 
+      - Five Stages of QC: workflows/qc.md
+      - MRI Post-Processing QC: workflows/mri/mri-postproc-qc.md
   - Workflows & SOPs:
-    - HDCC Structure: orgcharts.md
-    - Quality Control Procedures: workflows/qc.md
-    - MRI Workflows: 
-        - MR Radiology: workflows/mri/mri-issue-wf.md
-        - Post-Processing QC: workflows/mri/mri-postproc-qc.md
-    - Data Processing Workflows: 
+    - Data Processing: 
           - Overview: workflows/data-proc-wf.md
           - Tabulated Data: workflows/tab-wf.md
           - File-Based Data: workflows/fb-data-proc-wf.md
           - Clinical Data Validation: workflows/clinical-wf.md
           - Genomics: workflows/genomics.md
-    - Release SOP: workflows/release-wf.md
+    - MR Radiology: workflows/mri/mri-issue-wf.md    
+    - Data Release SOP: workflows/release-wf.md
 
   - Standards & Curation:
     - Software & Analytic Standards: standards/software.md
     - Data Curation Procedures: standards/curation.md
 
-  - Resources: 
-      - General: resources/index.md  
+  - Resources & Governance: 
+      - HDCC Structure: orgcharts.md 
       - HBCD & SCE Governance: resources/hst-sce-governance.md  
+      - General Resources: resources/index.md 

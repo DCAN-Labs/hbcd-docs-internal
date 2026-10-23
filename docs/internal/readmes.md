@@ -1,8 +1,8 @@
-# Instrument README Instructions
+# Data Release Documentation
 
 Each HBCD Study instrument has a README page in the [HBCD Data Release Docs - Study Instruments](https://docs.hbcdstudy.org/latest/instruments/). SMEs use instrument-specific forms to review and update README content for upcoming and current data releases. Form links have already been provided for specific instruments, but all relevant links will be shared with SMEs in the near future.
 
-## Quick Start
+## How to Submit Measure READMEs - Quick Start
 
 1. **Open your instrument- AND release-specific form**      
     The form will be pre-populated with the instrument's existing README information, including a link to the latest README on the site (or draft README on a dev version of the site for a future instrument). 
@@ -16,10 +16,6 @@ Each HBCD Study instrument has a README page in the [HBCD Data Release Docs - St
     This is recommended particularly during active update periods as simultaneous form submissions may overwrite one another!
 
 Note that not all changes may be possible to make via this form alone (such as larger reorganization, more complex formatting, etc.). Contact the administrators for assistance.
-
-<!-- 
-Documentation may shift between the current and next release, so updates for the next release are only accepted closer to the release date to prevent divergence in documentation.
- Note that all [Known Issues and Pending Updates](https://docs.hbcdstudy.org/latest/changelog/issues-updates/) are maintained on a single page separate from the READMEs, so there is not a field to enter text for these items. Issues can be reported via HBCD DCC liaisons or the Help Desk. -->
 
 ## Key Resources
 - [README template](https://docs.hbcdstudy.org/latest/resources/template/): displays structure of each page and purpose of each section
@@ -35,7 +31,6 @@ Documentation may shift between the current and next release, so updates for the
 
 - Copy the text directly from the README on HBCD Docs into a Google doc, make your edits, and copy-paste the final text back into the form
 - Copy the form contents into a [Markdown to rich text converter](https://markdowntorichtext.com/), replace the form field contents with the rich text version, and make edits from there
-
 
 ## Need help?
 
