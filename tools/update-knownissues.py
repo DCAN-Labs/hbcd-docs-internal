@@ -97,6 +97,9 @@ def build_table(domain, rows):
 # WORK
 df = load_and_filter(sheet_id, sheet_gid)
 
+# Filter out rows where Autoparse? equals On hold
+df=df[df['Autoparsed?'] != 'On hold']
+
 # Save local copy for versioning
 df.to_csv("data/latest-gsheet-derived.tsv", sep='\t', index=False)
 

@@ -180,19 +180,13 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-22</td>
-<td>Blank Fields for Siblings</td>
-<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child, not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants from the corresponding Main Child record. See the participant ID mapping in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
-<td style='text-align: center;'><span class='pill'>30.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-83</td>
 <td>Incorrect JSONs</td>
 <td>Metadata field values were corrected for several instruments, but are not yet corrected in the JSON files. IN PARTICULAR, PLEASE CHECK <code>type_data</code> CAREFULLY as an incorrect data type may impact analyses. Impacted instruments include: <strong>APA 1/2</strong>, <strong>Bayley-4</strong>, and <strong>EEG Form-2</strong>. See details in <a href="../release-notes/#data-warning">Release Notes</a>.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-36</td>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-36</td>
 <td>Score text</td>
 <td>Text inappropriately located in score fields where score is missing to be moved to corresponding 'notes' field (impacts ecPROMIS-PAGS; MAPS-TL; SPM-2).</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
@@ -216,12 +210,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-121</td>
-<td>Instruction</td>
-<td>Instruction text in each form's metadata is automatically extracted from the most recent <code>instruction</code> field in the REDCap Data Dictionary (based on field order). Because this process is automated, it may produce the following issues: (1) If an instruction spans multiple fields, only the last portion will be captured and/or (2) Some fields may display text intended for a previous section. Until this is corrected, please refer to original forms for accurate instruction text.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-142</td>
 <td>Instruction</td>
 <td>The 'instruction' data dictionary element is currently blank.</td>
@@ -231,6 +219,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-110</td>
 <td>Sequence Field</td>
 <td>The currently included Sequence field is blank across all instruments and will be removed.</td>
+<td style='text-align: center;'><span class='pill'>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-115</td>
+<td>Sibling cohort</td>
+<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child, not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants from the corresponding Main Child record. See the participant ID mapping in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>.</td>
 <td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 </tbody></table>
@@ -262,15 +256,15 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-24</td>
-<td>FAD</td>
-<td>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-27</td>
 <td>ecPROMIS CC</td>
 <td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis.</td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-24</td>
+<td>FAD</td>
+<td>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
@@ -298,21 +292,9 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-26</td>
-<td>MAPS-TL (Tod)</td>
-<td>Pro-rated scoring for <code>mh_cg_mapdb__tod</code> not yet implemented; N=16 participants missing scores.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-45</td>
 <td>ERICA</td>
 <td>Add all age and <code>date_taken</code> fields (currently excluded due to use of coding rather than visit dates).</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-89</td>
-<td>FAD</td>
-<td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
@@ -321,10 +303,22 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-89</td>
+<td>FAD</td>
+<td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-30</td>
 <td>MAPS-TL (&lt;1yr)</td>
 <td>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-26</td>
+<td>MAPS-TL (Tod)</td>
+<td>Pro-rated scoring for <code>mh_cg_mapdb__tod</code> not yet implemented; N=16 participants missing scores.</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
@@ -454,15 +448,9 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-73</td>
-<td>Summary Forms</td>
-<td>Fixed Sequence numbering in <code>mri_ra_chkl_data</code> to increment for <code>start_time</code> fields.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-59</td>
 <td>fmap QC</td>
-<td>Frames containing line artifacts are removed from functional raw BIDS fmap files (in cases where the fmap file passes QC and is therefore used for data processing). Removed frames are documented in the scans TSV metadata files (see fields containing <code>line2_*</code>).</td>
+<td>Frames containing line artifacts are removed from functional raw BIDS fmap files (in cases where the fmap file passes QC and is therefore used for data processing). Removed frames are documented in the relevant field map sidecar JSONs for which frame removal occurred. Three additional raw data QC fields used to identify frames to remove are now documented in the scans TSV metadata files (see fields containing <code>line2_*</code>). Finally, impacted sessions have been reprocessed post-frame removal.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
@@ -476,6 +464,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>XCP-D</td>
 <td>New XCP-D pipeline outputs (processed with version 26.2.0) and updated hashes as a result.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-73</td>
+<td>Summary Forms</td>
+<td>Fixed Sequence numbering in <code>mri_ra_chkl_data</code> to increment for <code>start_time</code> fields.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-128</td>
@@ -588,15 +582,15 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-58</td>
-<td>Axivity</td>
-<td>Addition of concatenated Axivity table.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-691</td>
 <td>GABI</td>
 <td>Exclusion of <code>setup_004_status</code> from <code>nt_pa_gabi</code> instrument (GABI setup)</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-58</td>
+<td>Axivity</td>
+<td>Addition of concatenated Axivity table.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 </tbody></table>
@@ -640,7 +634,13 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-106</td>
+<td><i class="fas fa-bug icon-bug"></i> ID-679</td>
+<td>Static table</td>
+<td>AOU race checkbox/constructed-variable inconsistency.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-106</td>
 <td>All tables</td>
 <td><ul>
 <li>Updated Domain &amp; Source </li>
@@ -650,27 +650,15 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-669</td>
-<td>Cannabis flag</td>
-<td>Fixed description of Rolled up cannabis flag.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-678</td>
-<td>Static table</td>
-<td>Resolve inaccurate no response values for <code>par_gd_stc_acs_child_race_multi___0</code> (“Child race [multi-select] White”).</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-679</td>
-<td>Static table</td>
-<td>AOU race checkbox/constructed-variable inconsistency.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-34</td>
 <td>Static table</td>
 <td>N=14 participants have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-669</td>
+<td>Cannabis flag</td>
+<td>Fixed description of Rolled up cannabis flag.</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
@@ -732,18 +720,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-19</td>
-<td>Medical History</td>
-<td>Remove <code>ecls</code> string in the <code>ph_cg__medhist</code> instrument table name.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-47</td>
-<td>Anthropometrics</td>
-<td>Inclusion of <code>average_bmi</code>, <code>bmi_for_length_girls_z_score</code>, and <code>bmi_for_length_boys_z_score</code> fields.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-48</td>
 <td>Anthropometrics</td>
 <td>Growth (<code>ph_ch_anthro</code>) filter ranges will be updated to be visit-specific, as current ranges allow biologically implausible values (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Range Checks</a>).</td>
@@ -756,9 +732,21 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-19</td>
+<td>Medical History</td>
+<td>Remove <code>ecls</code> string in the <code>ph_cg__medhist</code> instrument table name.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-33</td>
 <td>Anthropometrics</td>
 <td>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-47</td>
+<td>Anthropometrics</td>
+<td>Inclusion of <code>average_bmi</code>, <code>bmi_for_length_girls_z_score</code>, and <code>bmi_for_length_boys_z_score</code> fields.</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
@@ -837,12 +825,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank.</td>
 <td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-144</td>
-<td>TLFB</td>
-<td>Select participants (N=8) were recruited postnatally, but not administered the V1 portion of the TLFB. When this was recognized, the participants were administered the TLFB at the next in-person visit, resulting in a longer recall period than specified in the protocol.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
-</tr>
 </tbody></table>
 
 </div>
@@ -859,12 +841,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </thead>
 <tbody>
 
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-668</td>
-<td>Incarceration</td>
-<td>Remove Incarceration Questionnaire (sample sizes currently too small, sensititive info included, etc.)</td>
-<td style='text-align: center;'><span class='pill'>R3.0</span></td>
-</tr>
 <tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-670</td>
 <td>eHITS</td>
@@ -908,27 +884,33 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-53</td>
-<td>Demo</td>
-<td>Relationship status was inappropriately collected at V02/V03 for all cohorts and should have been restricted to cases where there was a change in caregiver (i.e. only Alternative Caregiver cohorts should have this field populated). Data for non-ACG cohorts to be excluded.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-50</td>
-<td>Demo</td>
-<td>Add household roster fields capturing the sex of listed individuals (adult &amp; child tables).</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-99</td>
 <td>HOME-21</td>
 <td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-53</td>
+<td>Demo</td>
+<td>Relationship status was inappropriately collected at V02/V03 for all cohorts and should have been restricted to cases where there was a change in caregiver (i.e. only Alternative Caregiver cohorts should have this field populated). Data for non-ACG cohorts to be excluded.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-666</td>
 <td>HOME-21</td>
 <td>Emotional support subscale not calculated for V04 and V06.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-668</td>
+<td>Incarceration</td>
+<td>Remove Incarceration Questionnaire (sample sizes currently too small, sensititive info included, etc.)</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-50</td>
+<td>Demo</td>
+<td>Add household roster fields capturing the sex of listed individuals (adult &amp; child tables).</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
