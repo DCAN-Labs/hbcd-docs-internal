@@ -358,7 +358,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-44</td>
 <td>Blood PEth</td>
-<td>Inclusion of Blood Spot Card Results data from USDTL.</td>
+<td>Address issue of incorrect cleaning practices at sites that affect test results PEth.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
