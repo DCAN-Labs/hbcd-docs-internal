@@ -859,12 +859,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Addition of the Incarceration Questionnaire</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-71</td>
-<td>TIC Questionnaire</td>
-<td>Addition of TIC Questionnaire table</td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
-</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-38</td>
 <td>eHITS</td>
@@ -875,6 +869,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-60</td>
 <td>Demo</td>
 <td>Roster was inappropriately collected at V02/V03 for all cohorts and should have been restricted to V02 PNRs and alternate caregiver cohorts; to be excluded.</td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-71</td>
+<td>TIC Questionnaire</td>
+<td>Addition of TIC Questionnaire table</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
