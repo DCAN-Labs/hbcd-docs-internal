@@ -2,12 +2,15 @@ import html
 import os
 import markdown
 import numpy as np
+import pandas as pd
 import re
 from utils import load_and_filter
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))   
 
 # https://docs.google.com/spreadsheets/d/1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc/edit?gid=0#gid=0
+
+BR_latest = "30.2"
 sheet_id = "1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc"
 sheet_gid = "0"
 INTERNAL_MD = "../docs/changelog/knownissues.md"
@@ -108,6 +111,10 @@ df.loc[df['Autoparsed?'] == 'ARCHIVE', 'Type'] = 'resolved'
 
 # Prefix PR values
 df.loc[df['PR'] != '', 'PR'] = 'R' + df.loc[df['PR'] != '', 'PR']
+
+# Clear BR values at or below the latest release.
+br_numeric = pd.to_numeric(df['BR'], errors='coerce')
+df.loc[br_numeric <= float(BR_latest), 'BR'] = ''
 
 # Build Target column: Final BR first, then fill blanks with BR, then PR, then TBD if still blank
 df['Final BR'] = df['Final BR'].replace('', np.nan)

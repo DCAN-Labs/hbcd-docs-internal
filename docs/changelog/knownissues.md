@@ -350,16 +350,16 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-44</td>
+<td>Blood PEth</td>
+<td>Address issue of incorrect cleaning practices at sites that affect test results PEth.</td>
+<td style='text-align: center;'><span class='pill'>R3.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-687</td>
 <td>BAP</td>
 <td>Biospecimen timestamps for BAP data flow.</td>
 <td style='text-align: center;'><span class='pill'>R3.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-44</td>
-<td>Blood PEth</td>
-<td>Address issue of incorrect cleaning practices at sites that affect test results PEth.</td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-42</td>
@@ -511,6 +511,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </thead>
 <tbody>
 
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-54</td>
+<td>Bayley</td>
+<td>Remove invalid scores of <code>-9999</code>; until resolved, users should remove this participant data prior to analysis.</td>
+<td style='text-align: center;'><span class='pill'>R3.0</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-63</td>
 <td>Deferred Imitation</td>
@@ -528,12 +534,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>CDI</td>
 <td>Percentiles incorrectly converted for N=36 cases, resulting in values &gt;100 ('Adjusted Percentile' incorrectly parsed from 'Total Produced' instead of 'Total Produced Percentile-sex (adjusted)')</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-54</td>
-<td>Bayley</td>
-<td>Remove invalid scores of <code>-9999</code>; until resolved, users should remove this participant data prior to analysis.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-93</td>
@@ -622,22 +622,22 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>R3.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-679</td>
+<td>Static table</td>
+<td>AOU race checkbox/constructed-variable inconsistency.</td>
+<td style='text-align: center;'><span class='pill'>R3.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-79</td>
 <td>Visit Info</td>
 <td>Harmonize participant status and withdrawal fields</td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
+<td style='text-align: center;'><span class='pill'>R3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-81</td>
 <td>Static table</td>
 <td>The <code>screen_race_multi__*</code> variables are almost entirely coded as '0' and should not be used for analysis. Users interested in race and ethnicity information should instead use the corresponding derived ACS race and ethnicity variable. Values will be corrected in a future release.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-679</td>
-<td>Static table</td>
-<td>AOU race checkbox/constructed-variable inconsistency.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-106</td>
@@ -793,7 +793,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-43</td>
 <td>PEX Health</td>
 <td>ICD codes for the <code>pex_bm_health*</code> tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a></td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
+<td style='text-align: center;'><span class='pill'>R3.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-46</td>
@@ -841,6 +841,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </thead>
 <tbody>
 
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-66</td>
+<td>GLED</td>
+<td>Addition of Geocoded Linkage from Home and Work Addresses</td>
+<td style='text-align: center;'><span class='pill'>R3.0</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-64</td>
 <td>Demo</td>
@@ -852,12 +858,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Incarceration</td>
 <td>Addition of the Incarceration Questionnaire</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-66</td>
-<td>GLED</td>
-<td>Addition of Geocoded Linkage from Home and Work Addresses</td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-71</td>
