@@ -100,14 +100,14 @@ def build_table(domain, rows):
 # WORK
 df = load_and_filter(sheet_id, sheet_gid)
 
-# Filter out rows where Autoparse? equals On hold
-df=df[df['Autoparsed?'] != 'On hold']
+# Filter out rows where "Status on RTDs" equals On hold
+df=df[df['Status on RTDs'] != 'On hold']
 
 # Save local copy for versioning
 df.to_csv("data/latest-gsheet-derived.tsv", sep='\t', index=False)
 
-# for rows where df['Autoparsed?'] == 'ARCHIVE', set the 'type' to 'resolved'
-df.loc[df['Autoparsed?'] == 'ARCHIVE', 'Type'] = 'resolved'
+# for rows where df['Status on RTDs'] == 'Resolved', set the 'type' to 'resolved'
+df.loc[df['Status on RTDs'] == 'Resolved', 'Type'] = 'resolved'
 
 # Prefix PR values
 df.loc[df['PR'] != '', 'PR'] = 'R' + df.loc[df['PR'] != '', 'PR']
@@ -140,7 +140,7 @@ for _, row in df.iterrows():
     table = row["Table/Topic"]
     summary_md = row["Text"]
     br = row["BR"]
-    is_resolved = row["Autoparsed?"] == "ARCHIVE"
+    is_resolved = row["Status on RTDs"] == "Resolved"
 
     # Convert Markdown → HTML & strip outer <p>
     summary_html = markdown.markdown(

@@ -432,7 +432,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-108</td>
 <td>Scanner info</td>
-<td>Scanner metadata, currently available within the raw BIDS Scans TSV files, will be additionally provided within the tabulated data for ease of access (see <a href="#infobbox">Participant Derived</a> domain info on this page).</td>
+<td>Add a table with scanner metadata extracted from raw BIDS JSON files for easier access.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
