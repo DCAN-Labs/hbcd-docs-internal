@@ -438,7 +438,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-86</td>
 <td>QSIRecon</td>
-<td>Tabulated data for QSIRecon (participant data combined across derivative files into single tidy table) will be provided in a future release.</td>
+<td>Provide tabulated QSIRecon derivatives.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
