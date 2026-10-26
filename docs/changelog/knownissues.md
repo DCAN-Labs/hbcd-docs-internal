@@ -356,7 +356,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>R3.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-44</td>
+<td><i class="fas fa-bug icon-bug"></i> ID-44</td>
 <td>Blood PEth</td>
 <td>Address issue of incorrect cleaning practices at sites that affect test results PEth.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
@@ -368,7 +368,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-693</td>
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-693</td>
 <td>Blood PEth</td>
 <td>Convert values of 999 to null. Users must do this manually until resolved prior to analysis.</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
