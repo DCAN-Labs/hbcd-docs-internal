@@ -563,7 +563,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 </div>
 
-<div data-known-issue-domain markdown="1">
+<div data-known-issue-domain markdown="1" hidden>
 
 ### Novel Tech &amp; Wearable Sensors
 
@@ -581,16 +581,16 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Addition of raw BIDS data for GABI (infant heart rate).</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-691</td>
-<td>GABI</td>
-<td>Exclusion of <code>setup_004_status</code> from <code>nt_pa_gabi</code> instrument (GABI setup)</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-58</td>
 <td>Axivity</td>
 <td>Addition of concatenated Axivity table.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-691</td>
+<td>GABI</td>
+<td>Exclusion of <code>setup_004_status</code> from <code>nt_pa_gabi</code> instrument (GABI setup)</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 </tbody></table>
