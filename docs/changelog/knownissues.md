@@ -841,12 +841,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </thead>
 <tbody>
 
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-670</td>
-<td>eHITS</td>
-<td>Sum score of null instead of 25 in cases where all items have score of 5.</td>
-<td style='text-align: center;'><span class='pill'>R3.0</span></td>
-</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-64</td>
 <td>Demo</td>
@@ -889,16 +883,16 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-670</td>
+<td>eHITS</td>
+<td>Sum score of null instead of 25 in cases where all items have score of 5.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-53</td>
 <td>Demo</td>
 <td>Relationship status was inappropriately collected at V02/V03 for all cohorts and should have been restricted to cases where there was a change in caregiver (i.e. only Alternative Caregiver cohorts should have this field populated). Data for non-ACG cohorts to be excluded.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-666</td>
-<td>HOME-21</td>
-<td>Emotional support subscale not calculated for V04 and V06.</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
@@ -917,6 +911,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-694</td>
 <td>TIC</td>
 <td>Add Transition in Care flags.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-666</td>
+<td>HOME-21</td>
+<td>Emotional support subscale not calculated for V04 and V06.</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 </tbody></table>
