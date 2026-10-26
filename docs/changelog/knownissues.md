@@ -180,6 +180,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-110</td>
+<td>Sequence Field</td>
+<td>The currently included Sequence field is blank across all instruments and will be removed.</td>
+<td style='text-align: center;'><span class='pill'>R4.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-83</td>
 <td>Incorrect JSONs</td>
 <td>Metadata field values were corrected for several instruments, but are not yet corrected in the JSON files. IN PARTICULAR, PLEASE CHECK <code>type_data</code> CAREFULLY as an incorrect data type may impact analyses. Impacted instruments include: <strong>APA 1/2</strong>, <strong>Bayley-4</strong>, and <strong>EEG Form-2</strong>. See details in <a href="../release-notes/#data-warning">Release Notes</a>.</td>
@@ -213,12 +219,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><i class="fas fa-bug icon-bug"></i> ID-142</td>
 <td>Instruction</td>
 <td>The 'instruction' data dictionary element is currently blank.</td>
-<td style='text-align: center;'><span class='pill'>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-110</td>
-<td>Sequence Field</td>
-<td>The currently included Sequence field is blank across all instruments and will be removed.</td>
 <td style='text-align: center;'><span class='pill'>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
@@ -274,12 +274,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-100</td>
-<td>CHAOS</td>
-<td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-101</td>
 <td>IBQ-R &amp; ECBQ</td>
 <td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
@@ -300,6 +294,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-92</td>
 <td>MAPS-TL, ecPROMIS</td>
+<td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-100</td>
+<td>CHAOS</td>
 <td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
