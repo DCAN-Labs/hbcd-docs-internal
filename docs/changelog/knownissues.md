@@ -286,12 +286,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-45</td>
-<td>ERICA</td>
-<td>Add all age and <code>date_taken</code> fields (currently excluded due to use of coding rather than visit dates).</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-92</td>
 <td>MAPS-TL, ecPROMIS</td>
 <td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
@@ -301,6 +295,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-100</td>
 <td>CHAOS</td>
 <td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-45</td>
+<td>ERICA</td>
+<td>Add all age and <code>date_taken</code> fields (currently excluded due to use of coding rather than visit dates).</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
