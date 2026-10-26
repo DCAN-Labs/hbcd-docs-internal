@@ -255,16 +255,16 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Addition of the Modified Checklist for Autism in Toddlers</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-27</td>
-<td>ecPROMIS CC</td>
-<td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis.</td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
-</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-24</td>
 <td>FAD</td>
 <td>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis.</td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-27</td>
+<td>ecPROMIS CC</td>
+<td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
