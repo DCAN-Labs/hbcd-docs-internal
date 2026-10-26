@@ -116,7 +116,7 @@ def insert_at_top_of_table(html_path, rows_html):
 
 # WORK
 df = load_and_filter(sheet_id, sheet_gid)
-df = df[df['Autoparsed?'] == 'Add to archive']
+df = df[df['Status on RTDs'] == 'Resolved']
 df = df.rename(columns={"Text": "Summary"})
 
 # Map domain values using the domain_mapping dictionary
