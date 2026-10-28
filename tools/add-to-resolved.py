@@ -24,9 +24,9 @@ domain_mapping = {
     "Behavior & Child-Caregiver Interaction": "MH",
     "Biospecimens & Omics": "BIO",
     "Demographics": "Demo",
+    "HBCD General": "PAR",
     "Neurocognition & Language": "NCL",
     "Novel Tech & Wearable Sensors": "NT",
-    "Participant Derived": "PAR",
     "Physical Health": "PH",
     "Pregnancy & Environmental Exposure": "PEX",
     "Social & Environmental Determinants": "SED"

@@ -407,6 +407,98 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 <div data-known-issue-domain markdown="1">
 
+### HBCD General
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr style="font-size: 1.1em;">
+<th></th><th>Table/Topic</th><th>Summary</th>
+<th>Target</th></tr>
+</thead>
+<tbody>
+
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-37</td>
+<td>TLFB</td>
+<td>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a></td>
+<td style='text-align: center;'><span class='pill'>R3.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-675</td>
+<td>ADI</td>
+<td>ADI in Static table (<code>par_gd_stc_adi_national_prcn</code>) is present, but completely unpopulated.</td>
+<td style='text-align: center;'><span class='pill'>R3.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-679</td>
+<td>Static table</td>
+<td>AOU race checkbox/constructed-variable inconsistency.</td>
+<td style='text-align: center;'><span class='pill'>R3.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-79</td>
+<td>Visit Info</td>
+<td>Harmonize participant status and withdrawal fields</td>
+<td style='text-align: center;'><span class='pill'>R3.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-81</td>
+<td>Static table</td>
+<td>The <code>screen_race_multi__*</code> variables are almost entirely coded as '0' and should not be used for analysis. Users interested in race and ethnicity information should instead use the corresponding derived ACS race and ethnicity variable. Values will be corrected in a future release.</td>
+<td style='text-align: center;'><span class='pill'>30.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-106</td>
+<td>All tables</td>
+<td><ul>
+<li>Updated Domain &amp; Source </li>
+<li>Addition of visit missed and visit missed reason to Dynamic table <code>par_gd_dyn</code></li>
+<li>Static table: Resolve inconsistent use of 'Unknown' in derived ACS variables and exclude non-valid recruitment sites</li>
+</ul></td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-34</td>
+<td>Static table</td>
+<td>N=14 participants have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-669</td>
+<td>Cannabis flag</td>
+<td>Fixed description of Rolled up cannabis flag.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-676</td>
+<td>MAD</td>
+<td>Correct static maternal age at delivery.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fas fa-bug icon-bug"></i> ID-677</td>
+<td>GAD</td>
+<td>Correct static gestational age at delivery.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-671</td>
+<td>SU flags</td>
+<td>Make substance use flags in dynamic table cumulative.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-688</td>
+<td>ACGs SU flag</td>
+<td>Remove substance use survey for ACGs.</td>
+<td style='text-align: center;'><span class='pill'>30.3</span></td>
+</tr>
+</tbody></table>
+
+</div>
+
+<div data-known-issue-domain markdown="1">
+
 ### MRI
 
 <table class="compact-table-no-vertical-lines">
@@ -592,98 +684,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>GABI</td>
 <td>Exclusion of <code>setup_004_status</code> from <code>nt_pa_gabi</code> instrument (GABI setup)</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-</tbody></table>
-
-</div>
-
-<div data-known-issue-domain markdown="1">
-
-### HBCD General
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr style="font-size: 1.1em;">
-<th></th><th>Table/Topic</th><th>Summary</th>
-<th>Target</th></tr>
-</thead>
-<tbody>
-
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-37</td>
-<td>TLFB</td>
-<td>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a></td>
-<td style='text-align: center;'><span class='pill'>R3.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-675</td>
-<td>ADI</td>
-<td>ADI in Static table (<code>par_gd_stc_adi_national_prcn</code>) is present, but completely unpopulated.</td>
-<td style='text-align: center;'><span class='pill'>R3.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-679</td>
-<td>Static table</td>
-<td>AOU race checkbox/constructed-variable inconsistency.</td>
-<td style='text-align: center;'><span class='pill'>R3.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-79</td>
-<td>Visit Info</td>
-<td>Harmonize participant status and withdrawal fields</td>
-<td style='text-align: center;'><span class='pill'>R3.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-81</td>
-<td>Static table</td>
-<td>The <code>screen_race_multi__*</code> variables are almost entirely coded as '0' and should not be used for analysis. Users interested in race and ethnicity information should instead use the corresponding derived ACS race and ethnicity variable. Values will be corrected in a future release.</td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-106</td>
-<td>All tables</td>
-<td><ul>
-<li>Updated Domain &amp; Source </li>
-<li>Addition of visit missed and visit missed reason to Dynamic table <code>par_gd_dyn</code></li>
-<li>Static table: Resolve inconsistent use of 'Unknown' in derived ACS variables and exclude non-valid recruitment sites</li>
-</ul></td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-34</td>
-<td>Static table</td>
-<td>N=14 participants have a Maternal Age at V01 of 0; exclude these values from analyses until corrected.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-669</td>
-<td>Cannabis flag</td>
-<td>Fixed description of Rolled up cannabis flag.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-676</td>
-<td>MAD</td>
-<td>Correct static maternal age at delivery.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-677</td>
-<td>GAD</td>
-<td>Correct static gestational age at delivery.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-671</td>
-<td>SU flags</td>
-<td>Make substance use flags in dynamic table cumulative.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-688</td>
-<td>ACGs SU flag</td>
-<td>Remove substance use survey for ACGs.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 </tbody></table>
 
