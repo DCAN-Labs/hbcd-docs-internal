@@ -109,7 +109,7 @@
 }
 </style>
 
-# Known Issues & Pending Updates
+# Known Issues & Updates
 
 This page documents issues associated with the next public data release, including open known issues and pending updates, and resolved issues/updates. Items are not marked as resolved until final review and approval by Workgroups/SMEs. Items relevant to currently available release data are also documented in the public-facing [HBCD Data Release Docs](https://docs.hbcdstudy.org/latest/changelog/issues-updates/). 
 
@@ -146,7 +146,7 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 
 <p style="font-size: 1.2em; color: #555; text-align: center; line-height: 2;">
   <i class="fas fa-bug" style="color: #f97316;"></i> = Known Issue &nbsp;&nbsp;&nbsp;
-  <i class="fa-solid fa-rotate" style="color: #199bd6;"></i> = Pending Update &nbsp;&nbsp;&nbsp;
+  <i class="fa-solid fa-rotate" style="color: #199bd6;"></i> = Planned Improvement &nbsp;&nbsp;&nbsp;
   <i class="fa-solid fa-circle-check" style="color: #24AE70;"></i> = Resolved
 </p>
 
@@ -165,7 +165,7 @@ container.querySelectorAll(&#x27;[data-known-issue-domain]&#x27;).forEach(sectio
 container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
     !!container.querySelector(&#x27;[data-known-issue-row]:not([hidden])&#x27;);"> Show resolved issues</label></p>
 
-<p data-known-issues-empty role="status" hidden>No issues or pending updates match the current filter.</p>
+<p data-known-issues-empty role="status" hidden>No issues or updates match the current filter.</p>
 
 <div data-known-issue-domain markdown="1">
 
@@ -273,24 +273,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Addition of the MAPS-EASI- Toddler</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-101</td>
-<td>IBQ-R &amp; ECBQ</td>
-<td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-21</td>
-<td>ERICA</td>
-<td>Reliability codes integrated into the primary coding dataset and no longer requires manual user generation (see <a href="https://docs.hbcdstudy.org/r2.1/instruments/bcgi/erica/#data-warning">2.1 data warning</a> for details).</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-92</td>
-<td>MAPS-TL, ecPROMIS</td>
-<td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-100</td>
 <td>CHAOS</td>
@@ -306,6 +288,24 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-89</td>
 <td>FAD</td>
+<td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-101</td>
+<td>IBQ-R &amp; ECBQ</td>
+<td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-21</td>
+<td>ERICA</td>
+<td>Reliability codes integrated into the primary coding dataset and no longer requires manual user generation (see <a href="https://docs.hbcdstudy.org/r2.1/instruments/bcgi/erica/#data-warning">2.1 data warning</a> for details).</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-92</td>
+<td>MAPS-TL, ecPROMIS</td>
 <td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
@@ -429,8 +429,8 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Add source DICOMs for all imaging modalities.</td>
 <td style='text-align: center;'><span class='pill'>30.0</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-108</td>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-108</td>
 <td>Scanner info</td>
 <td>Add a table with scanner metadata extracted from raw BIDS JSON files for easier access.</td>
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
@@ -447,8 +447,8 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Resolved tabulation error resulting in all 0s for tabulated XCP-D numeric fields.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-59</td>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-59</td>
 <td>fmap QC</td>
 <td>Frames containing line artifacts are removed from functional raw BIDS fmap files (in cases where the fmap file passes QC and is therefore used for data processing). Removed frames are documented in the relevant field map sidecar JSONs for which frame removal occurred. Three additional raw data QC fields used to identify frames to remove are now documented in the scans TSV metadata files (see fields containing <code>line2_*</code>). Finally, impacted sessions have been reprocessed post-frame removal.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>

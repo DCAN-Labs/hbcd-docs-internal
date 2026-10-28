@@ -21,7 +21,7 @@ def map_type(value):
     if "issue" in value:
         return "Issue"
     elif "pending" in value:
-        return "Pending Update"
+        return "Update"
     elif "resolved" in value:
         return "Resolved"
     return None
@@ -153,12 +153,12 @@ for _, row in df.iterrows():
         (issue_type, issue_id, table, summary_html, br, is_resolved)
     )
 
-# Generate known issues and pending tables for internal page
+# Generate known issues and updates tables for internal page
 table_configs = [
     ("Issue",
      '<i class="fas fa-bug icon-bug"></i> Known Issues'),
-    ("Pending Update",
-     '<i class="fa-solid fa-rotate icon-rotate"></i> Pending Updates'),
+    ("Update",
+     '<i class="fa-solid fa-rotate icon-rotate"></i> Updates'),
 ]
 
 def build_combined_tables():
@@ -189,7 +189,7 @@ container.querySelector('[data-known-issues-empty]').hidden =
     empty_hidden = " hidden" if has_open_issues else ""
     tables.append(
         f'<p data-known-issues-empty role="status"{empty_hidden}>'
-        'No issues or pending updates match the current filter.</p>'
+        'No issues or updates match the current filter.</p>'
     )
 
     for domain in sorted(grouped_by_domain.keys()):
