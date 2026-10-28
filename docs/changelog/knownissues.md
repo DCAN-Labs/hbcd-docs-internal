@@ -436,12 +436,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-86</td>
-<td>QSIRecon</td>
-<td>Provide tabulated QSIRecon derivatives.</td>
-<td style='text-align: center;'><span class='pill'>30.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><i class="fas fa-bug icon-bug"></i> ID-667</td>
 <td>Tabulated XCP-D</td>
 <td>Resolved tabulation error resulting in all 0s for tabulated XCP-D numeric fields.</td>
@@ -451,6 +445,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-59</td>
 <td>fmap QC</td>
 <td>Frames containing line artifacts are removed from functional raw BIDS fmap files (in cases where the fmap file passes QC and is therefore used for data processing). Removed frames are documented in the relevant field map sidecar JSONs for which frame removal occurred. Three additional raw data QC fields used to identify frames to remove are now documented in the scans TSV metadata files (see fields containing <code>line2_*</code>). Finally, impacted sessions have been reprocessed post-frame removal.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-86</td>
+<td>QSIRecon</td>
+<td>Provide tabulated QSIRecon derivatives.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
