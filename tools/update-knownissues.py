@@ -13,7 +13,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 BR_latest = "30.2"
 sheet_id = "1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc"
 sheet_gid = "0"
-INTERNAL_MD = "../docs/changelog/knownissues.md"
+INTERNAL_MD = "../docs/changelog/knownissues-ALT.md"
 
 # FUNCTIONS
 
@@ -70,27 +70,24 @@ def build_table(domain, rows):
 <table class="compact-table-no-vertical-lines">
 <thead>
 <tr style="font-size: 1.1em;">
-<th></th><th>Table/Topic</th><th>Summary</th>
+<th>Status</th><th>Table/Topic</th><th>Summary</th>
 <th>Target</th></tr>
 </thead>
 <tbody>
 """)
 
-    for issue_type, issue_id, table, summary_html, br, is_resolved in rows:
+    for issue_type, issue_id, table, summary_html, br, is_resolved, status in rows:
+        status_pill_style = "pill open" if status == "Open" else "pill review" if status == "Review" else "pill resolved" if status == "Resolved" else "pill"
         # Keep resolved rows in the page so readers can reveal them.
         row_attrs = ' data-known-issue-row data-resolved="true" hidden' if is_resolved else ' data-known-issue-row data-resolved="false"'
         table_parts.append(f"<tr{row_attrs}>")
-        if is_resolved:
-            type_label = '<i class="fa-solid fa-circle-check icon-resolved"></i>'
-        elif issue_type == "Issue":
-            type_label = '<i class="fas fa-bug icon-bug"></i>'
-        else:
-            type_label = '<i class="fa-solid fa-rotate icon-rotate"></i>'
-        table_parts.append(f"<td>{type_label} {html.escape(str(issue_id))}</td>")
-        table_parts.append(f"<td>{html.escape(str(table))}</td>")
-        table_parts.append(f"<td>{summary_html}</td>")
         table_parts.append(
-            f"<td style='text-align: center;'><span class='pill'>{html.escape(str(br))}</span></td>"
+            f"<td><span class='{status_pill_style}'>{html.escape(str(status))}</span></td>"
+        )
+        table_parts.append(f"<td>{html.escape(str(table))}</td>")
+        table_parts.append(f"<td>{summary_html} (<b>{html.escape(str(issue_id))}</b>)</td>")
+        table_parts.append(
+            f"<td style='text-align: center;'><span class=pill>{html.escape(str(br))}</span></td>"
         )
         table_parts.append("</tr>")
     table_parts.append("</tbody></table>")
@@ -140,7 +137,8 @@ for _, row in df.iterrows():
     table = row["Table/Topic"]
     summary_md = row["Text"]
     br = row["BR"]
-    is_resolved = row["Status on RTDs"] == "Resolved"
+    status = row["Status on RTDs"]
+    is_resolved = status == "Resolved"
 
     # Convert Markdown → HTML & strip outer <p>
     summary_html = markdown.markdown(
@@ -150,7 +148,7 @@ for _, row in df.iterrows():
     summary_html = re.sub(r'^<p>(.*)</p>$', r'\1', summary_html, flags=re.DOTALL)
 
     grouped_by_domain.setdefault(domain, []).append(
-        (issue_type, issue_id, table, summary_html, br, is_resolved)
+        (issue_type, issue_id, table, summary_html, br, is_resolved, status)
     )
 
 # Generate known issues and updates tables for internal page

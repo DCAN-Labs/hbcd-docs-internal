@@ -60,6 +60,8 @@ nav:
 
   - Beta Releases: 
     - Known Issues & Pending Updates: changelog/knownissues.md
+    - Known Issues & Pending Updates-DEV: changelog/knownissues-DEV.md
+
     - Release 3.0:    
         - BR 30.2: changelog/versions/BR3X/BR30.2.md
         - BR 30.1: changelog/versions/BR3X/BR30.1.md
