@@ -100,8 +100,8 @@ def build_table(domain, rows):
 # WORK
 df = load_and_filter(sheet_id, sheet_gid)
 
-# Filter out rows where "Status on RTDs" equals On hold
-df=df[df['Status on RTDs'] != 'On hold']
+# Filter out rows where "Status on RTDs" equals Excluded
+df=df[df['Status on RTDs'] != 'Excluded']
 
 # Save local copy for versioning
 df.to_csv("data/latest-gsheet-derived.tsv", sep='\t', index=False)

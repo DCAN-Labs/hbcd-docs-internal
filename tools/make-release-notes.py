@@ -31,7 +31,7 @@ def build_domain_sections(rows):
                 "</tbody>",
                 "</table>",
             ])
-            sections.append("\n".join(table_parts))
+            sections.append("\n\n".join(table_parts))
 
     for issue_type, domain, issue_id, table, summary_html in rows:
         if domain != current_domain:
@@ -68,7 +68,7 @@ def build_domain_sections(rows):
     if current_domain is not None:
         close_table()
 
-    return "\n".join(sections)
+    return "\n\n".join(sections)
 
 # WORK
 df = load_and_filter(sheet_id, sheet_gid)

@@ -280,6 +280,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-101</td>
+<td>IBQ-R &amp; ECBQ</td>
+<td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-45</td>
 <td>ERICA</td>
 <td>Add all age and <code>date_taken</code> fields (currently excluded due to use of coding rather than visit dates).</td>
@@ -288,12 +294,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-89</td>
 <td>FAD</td>
-<td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-101</td>
-<td>IBQ-R &amp; ECBQ</td>
 <td>Shift item values to start with value of 1 instead of 0 for normalization.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
@@ -448,6 +448,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-685</td>
+<td>XCP-D</td>
+<td>New XCP-D pipeline outputs (processed with version 26.2.0) and updated hashes as a result.</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-86</td>
 <td>QSIRecon</td>
 <td>Provide tabulated QSIRecon derivatives.</td>
@@ -457,12 +463,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><i class="fa-solid fa-rotate icon-rotate"></i> ID-680</td>
 <td>ModelArray</td>
 <td>Addition of <a href="https://modelarrayio.readthedocs.io/en/latest/">ModelArray</a> outputs derived from XCP-D and QSIRecon.</td>
-<td style='text-align: center;'><span class='pill'>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fa-solid fa-rotate icon-rotate"></i> ID-685</td>
-<td>XCP-D</td>
-<td>New XCP-D pipeline outputs (processed with version 26.2.0) and updated hashes as a result.</td>
 <td style='text-align: center;'><span class='pill'>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
@@ -599,7 +599,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 <div data-known-issue-domain markdown="1">
 
-### Participant Derived
+### HBCD General
 
 <table class="compact-table-no-vertical-lines">
 <thead>
