@@ -132,6 +132,7 @@ grouped_by_domain = {}
 
 for _, row in df.iterrows():
     domain = row["Domain"]
+    # issue_type = row["MappedType"]
     issue_id = row["ID"]
     table = row["Table/Topic"]
     summary_md = row["Text"]
@@ -191,7 +192,6 @@ container.querySelector('[data-known-issues-empty]').hidden =
 
     for domain in sorted(grouped_by_domain.keys()):
         rows = grouped_by_domain[domain]
-        
         # Sort within domain by Target (BR), then type, then Table/Topic
         rows = sorted(rows, key=lambda x: (target_sort_key(x[4]), x[0], x[1]))
         domain_hidden = "" if any(not row[5] for row in rows) else " hidden"
