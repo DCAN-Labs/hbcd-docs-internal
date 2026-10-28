@@ -124,7 +124,7 @@ code, pre {
   font-size: 0.9em;
   background-color: #f97316 !important;
 }
-.pill.review {
+.pill.pending {
   display: inline-block;
   padding: 2px 8px;
   border-radius: 999px;

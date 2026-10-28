@@ -13,18 +13,18 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 BR_latest = "30.2"
 sheet_id = "1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc"
 sheet_gid = "0"
-INTERNAL_MD = "../docs/changelog/knownissues-ALT.md"
+INTERNAL_MD = "../docs/changelog/knownissues.md"
 
 # FUNCTIONS
 
-def map_type(value):
-    if "issue" in value:
-        return "Issue"
-    elif "pending" in value:
-        return "Update"
-    elif "resolved" in value:
-        return "Resolved"
-    return None
+# def map_type(value):
+#     if "issue" in value:
+#         return "Issue"
+#     elif "pending" in value:
+#         return "Update"
+#     elif "resolved" in value:
+#         return "Resolved"
+#     return None
 
 def target_sort_key(br):
     """Sort Target (BR) values numerically ascending, with TBD sorted last."""
@@ -71,13 +71,13 @@ def build_table(domain, rows):
 <thead>
 <tr style="font-size: 1.1em;">
 <th>Status</th><th>Table/Topic</th><th>Summary</th>
-<th>Target</th></tr>
+<th>BR</th></tr>
 </thead>
 <tbody>
 """)
 
-    for issue_type, issue_id, table, summary_html, br, is_resolved, status in rows:
-        status_pill_style = "pill open" if status == "Open" else "pill review" if status == "Review" else "pill resolved" if status == "Resolved" else "pill"
+    for issue_id, table, summary_html, br, is_resolved, status in rows:
+        status_pill_style = "pill open" if status == "Open" else "pill pending" if status == "Pending" else "pill resolved" if status == "Resolved" else "pill"
         # Keep resolved rows in the page so readers can reveal them.
         row_attrs = ' data-known-issue-row data-resolved="true" hidden' if is_resolved else ' data-known-issue-row data-resolved="false"'
         table_parts.append(f"<tr{row_attrs}>")
@@ -123,16 +123,15 @@ df['BR'] = df['Final BR'].fillna(df['BR']).fillna(df['PR']).fillna('TBD')
 df['BR'] = df['BR'].apply(lambda x: str(x) + '.0' if str(x) != 'TBD' and '.' not in str(x) else str(x))
 
 # Type mapping and sort by (1) domain, (2) table/topic
-df["MappedType"] = df["Type"].apply(map_type)
-df = df[df["MappedType"].notna()]
-df = df.sort_values(by=['BR', 'Domain', 'Table/Topic'])
+# df["MappedType"] = df["Type"].apply(map_type)
+# df = df[df["MappedType"].notna()]
+# df = df.sort_values(by=['BR', 'Domain', 'Table/Topic'])
 
 # Build grouped structure (by domain only)
 grouped_by_domain = {}
 
 for _, row in df.iterrows():
     domain = row["Domain"]
-    issue_type = row["MappedType"]
     issue_id = row["ID"]
     table = row["Table/Topic"]
     summary_md = row["Text"]
@@ -148,7 +147,7 @@ for _, row in df.iterrows():
     summary_html = re.sub(r'^<p>(.*)</p>$', r'\1', summary_html, flags=re.DOTALL)
 
     grouped_by_domain.setdefault(domain, []).append(
-        (issue_type, issue_id, table, summary_html, br, is_resolved, status)
+        (issue_id, table, summary_html, br, is_resolved, status)
     )
 
 # Generate known issues and updates tables for internal page
@@ -192,6 +191,7 @@ container.querySelector('[data-known-issues-empty]').hidden =
 
     for domain in sorted(grouped_by_domain.keys()):
         rows = grouped_by_domain[domain]
+        
         # Sort within domain by Target (BR), then type, then Table/Topic
         rows = sorted(rows, key=lambda x: (target_sort_key(x[4]), x[0], x[1]))
         domain_hidden = "" if any(not row[5] for row in rows) else " hidden"

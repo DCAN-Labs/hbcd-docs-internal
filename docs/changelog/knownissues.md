@@ -134,10 +134,10 @@
 
 # Known Issues & Updates
 
-This page documents issues associated with the next public data release, including open known issues and pending updates, and resolved issues/updates. Items are not marked as resolved until final review and approval by Workgroups/SMEs. Items relevant to currently available release data are also documented in the public-facing [HBCD Data Release Docs](https://docs.hbcdstudy.org/latest/changelog/issues-updates/). 
+This page documents issues associated with the next public data release, including open known issues and pending updates, and resolved issues/updates. Items are not marked as resolved until final review and approval by Workgroups/SMEs. Items relevant to currently available release data are also documented in the public-facing [HBCD Data Release Docs](https://docs.hbcdstudy.org/latest/changelog/issues-updates/). See the [Resolved Issues Archive](resolved-archive.html) for a running list of items associated with prior releases.
 
-
-See the [Resolved Issues Archive](resolved-archive.html) for a running list of items associated with prior releases.
+!!! danger "Issue Status "Pending""
+    Items labeled with "Pending" have been resolved by the HDCC and require final review and sign-off from Workgroups/SMEs to confirm successful implementation. Final sign-off is required prior to inclusion in the public release, so please review these ASAP.
 
 ---
 
@@ -152,7 +152,7 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
     <select id="ki-status-filter" aria-label="Filter by status">
       <option value="">Status</option>
       <option value="open">Open</option>
-      <option value="review">Review</option>
+      <option value="pending">Pending</option>
       <option value="resolved">Resolved</option>
     </select>
     <select id="ki-domain">
@@ -172,9 +172,19 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 
 <style>.known-issues [hidden] { display: none !important; }</style>
 
-<p data-known-issues-empty role="status" hidden>No issues or updates match the current filter.</p>
+<p><label><input type="checkbox" autocomplete="off" onchange="const container = this.closest(&#x27;[data-known-issues]&#x27;);
+container.querySelectorAll(&#x27;[data-known-issue-row][data-resolved=&quot;true&quot;]&#x27;).forEach(row =&gt; {
+    row.hidden = !this.checked;
+});
+container.querySelectorAll(&#x27;[data-known-issue-domain]&#x27;).forEach(section =&gt; {
+    section.hidden = !section.querySelector(&#x27;[data-known-issue-row]:not([hidden])&#x27;);
+});
+container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
+    !!container.querySelector(&#x27;[data-known-issue-row]:not([hidden])&#x27;);"> Show resolved issues</label></p>
 
-<div data-known-issue-domain markdown="1">
+<p data-known-issues-empty role="status">No issues or updates match the current filter.</p>
+
+<div data-known-issue-domain markdown="1" hidden>
 
 ### All Data / General
 
@@ -182,7 +192,7 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <thead>
 <tr style="font-size: 1.1em;">
 <th>Status</th><th>Table/Topic</th><th>Summary</th>
-<th>Target</th></tr>
+<th>BR</th></tr>
 </thead>
 <tbody>
 
@@ -193,10 +203,34 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <td style='text-align: center;'><span class=pill>R4.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill review'>Review</span></td>
+<td><span class='pill open'>Open</span></td>
+<td>Sibling cohort</td>
+<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child, not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants from the corresponding Main Child record. See the participant ID mapping in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>. (<b>ID-115</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Instruction</td>
+<td>The 'instruction' data dictionary element is currently blank. (<b>ID-142</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Implausible GA</td>
+<td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks). (<b>ID-32</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill pending'>Pending</span></td>
 <td>Incorrect JSONs</td>
 <td>Metadata field values were corrected for several instruments, but are not yet corrected in the JSON files. IN PARTICULAR, PLEASE CHECK <code>type_data</code> CAREFULLY as an incorrect data type may impact analyses. Impacted instruments include: <strong>APA 1/2</strong>, <strong>Bayley-4</strong>, and <strong>EEG Form-2</strong>. See details in <a href="../release-notes/#data-warning">Release Notes</a>. (<b>ID-83</b>)</td>
 <td style='text-align: center;'><span class=pill>30.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>FamilyID</td>
+<td>A <code>FamilyID</code> field will be added to instruments to identify sibling relationships. Until then, sibling ID mapping (Main Child vs Sibling) is provided in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>. (<b>ID-84</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
@@ -210,35 +244,11 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <td>MRI, EEG and Axtivity derivative concatenation run directly on the de-ID bucket instead of the re-ID bucket (<b>ID-692</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Implausible GA</td>
-<td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks). (<b>ID-32</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>FamilyID</td>
-<td>A <code>FamilyID</code> field will be added to instruments to identify sibling relationships. Until then, sibling ID mapping (Main Child vs Sibling) is provided in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>. (<b>ID-84</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Instruction</td>
-<td>The 'instruction' data dictionary element is currently blank. (<b>ID-142</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Sibling cohort</td>
-<td>Family-level (i.e., non-child-specific) instrument fields are currently populated only for the Main Child, not sibling records (e.g., HBCD Multiple Birth – Sibling). Until resolved, users should obtain family-level values for sibling participants from the corresponding Main Child record. See the participant ID mapping in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>. (<b>ID-115</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
-</tr>
 </tbody></table>
 
 </div>
 
-<div data-known-issue-domain markdown="1">
+<div data-known-issue-domain markdown="1" hidden>
 
 ### Behavior &amp; Child-Caregiver Interaction
 
@@ -246,39 +256,51 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <thead>
 <tr style="font-size: 1.1em;">
 <th>Status</th><th>Table/Topic</th><th>Summary</th>
-<th>Target</th></tr>
+<th>BR</th></tr>
 </thead>
 <tbody>
 
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>ECHO</td>
+<td>Addition of the Early Child Care and Education (<b>ID-146</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill pending'>Pending</span></td>
+<td>ERICA</td>
+<td>Reliability codes integrated into the primary coding dataset and no longer requires manual user generation (see <a href="https://docs.hbcdstudy.org/r2.1/instruments/bcgi/erica/#data-warning">2.1 data warning</a> for details). (<b>ID-21</b>)</td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>MAPS-TL (Tod)</td>
+<td>Pro-rated scoring for <code>mh_cg_mapdb__tod</code> not yet implemented; N=16 participants missing scores. (<b>ID-26</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>MAPS-TL (&lt;1yr)</td>
+<td>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis. (<b>ID-30</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>MAPS-EASI</td>
+<td>Merge <code>total_score</code> and <code>prorated_score</code> fields into a new <code>summary_score</code> field and remove. (<b>ID-52</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>V03 age &gt;1.5y</td>
 <td>Resolve age for small number of V03 participants in MAPS-TL and ecPROMIS over 1.5 years old. (<b>ID-686</b>)</td>
 <td style='text-align: center;'><span class=pill>R3.0</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
-<td>MCHAT</td>
-<td>Addition of the Modified Checklist for Autism in Toddlers (<b>ID-69</b>)</td>
-<td style='text-align: center;'><span class=pill>30.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
-<td>FAD</td>
-<td>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis. (<b>ID-24</b>)</td>
-<td style='text-align: center;'><span class=pill>30.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
-<td>ecPROMIS CC</td>
-<td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis. (<b>ID-27</b>)</td>
-<td style='text-align: center;'><span class=pill>30.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
-<td>MAPS-EASI</td>
-<td>Addition of the MAPS-EASI- Toddler (<b>ID-68</b>)</td>
-<td style='text-align: center;'><span class=pill>30.1</span></td>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill pending'>Pending</span></td>
+<td>MAPS-TL, ecPROMIS</td>
+<td>Shift item values to start with value of 1 instead of 0 for normalization. (<b>ID-92</b>)</td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
@@ -294,9 +316,33 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
+<td>FAD</td>
+<td>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis. (<b>ID-24</b>)</td>
+<td style='text-align: center;'><span class=pill>30.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>ecPROMIS CC</td>
+<td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis. (<b>ID-27</b>)</td>
+<td style='text-align: center;'><span class=pill>30.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
 <td>ERICA</td>
 <td>Add all age and <code>date_taken</code> fields (currently excluded due to use of coding rather than visit dates). (<b>ID-45</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>MAPS-EASI</td>
+<td>Addition of the MAPS-EASI- Toddler (<b>ID-68</b>)</td>
+<td style='text-align: center;'><span class=pill>30.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>MCHAT</td>
+<td>Addition of the Modified Checklist for Autism in Toddlers (<b>ID-69</b>)</td>
+<td style='text-align: center;'><span class=pill>30.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
@@ -304,47 +350,11 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <td>Shift item values to start with value of 1 instead of 0 for normalization. (<b>ID-89</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill review'>Review</span></td>
-<td>ERICA</td>
-<td>Reliability codes integrated into the primary coding dataset and no longer requires manual user generation (see <a href="https://docs.hbcdstudy.org/r2.1/instruments/bcgi/erica/#data-warning">2.1 data warning</a> for details). (<b>ID-21</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill review'>Review</span></td>
-<td>MAPS-TL, ecPROMIS</td>
-<td>Shift item values to start with value of 1 instead of 0 for normalization. (<b>ID-92</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>MAPS-TL (&lt;1yr)</td>
-<td>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis. (<b>ID-30</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>MAPS-TL (Tod)</td>
-<td>Pro-rated scoring for <code>mh_cg_mapdb__tod</code> not yet implemented; N=16 participants missing scores. (<b>ID-26</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>MAPS-EASI</td>
-<td>Merge <code>total_score</code> and <code>prorated_score</code> fields into a new <code>summary_score</code> field and remove. (<b>ID-52</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>ECHO</td>
-<td>Addition of the Early Child Care and Education (<b>ID-146</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
-</tr>
 </tbody></table>
 
 </div>
 
-<div data-known-issue-domain markdown="1">
+<div data-known-issue-domain markdown="1" hidden>
 
 ### Biospecimens &amp; Omics
 
@@ -352,10 +362,16 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <thead>
 <tr style="font-size: 1.1em;">
 <th>Status</th><th>Table/Topic</th><th>Summary</th>
-<th>Target</th></tr>
+<th>BR</th></tr>
 </thead>
 <tbody>
 
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Nails</td>
+<td>Nail type is <code>4</code> (Unknown) in the main results table (<code>*_nails_results</code>) and should be obtained from the specimen table (<code>*_nails_type</code>). (<b>ID-42</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>Blood PEth</td>
@@ -370,21 +386,21 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
-<td>Nails</td>
-<td>Nail type is <code>4</code> (Unknown) in the main results table (<code>*_nails_results</code>) and should be obtained from the specimen table (<code>*_nails_type</code>). (<b>ID-42</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
 <td>Blood PEth</td>
 <td>Convert values of 999 to null. Users must do this manually until resolved prior to analysis. (<b>ID-693</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill'>TO DO</span></td>
+<td>Nails</td>
+<td> (<b>ID-700</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 </tbody></table>
 
 </div>
 
-<div data-known-issue-domain markdown="1">
+<div data-known-issue-domain markdown="1" hidden>
 
 ### EEG
 
@@ -392,7 +408,7 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <thead>
 <tr style="font-size: 1.1em;">
 <th>Status</th><th>Table/Topic</th><th>Summary</th>
-<th>Target</th></tr>
+<th>BR</th></tr>
 </thead>
 <tbody>
 
@@ -412,7 +428,7 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 
 </div>
 
-<div data-known-issue-domain markdown="1">
+<div data-known-issue-domain markdown="1" hidden>
 
 ### HBCD General
 
@@ -420,50 +436,10 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <thead>
 <tr style="font-size: 1.1em;">
 <th>Status</th><th>Table/Topic</th><th>Summary</th>
-<th>Target</th></tr>
+<th>BR</th></tr>
 </thead>
 <tbody>
 
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>TLFB</td>
-<td>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a> (<b>ID-37</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>ADI</td>
-<td>ADI in Static table (<code>par_gd_stc_adi_national_prcn</code>) is present, but completely unpopulated. (<b>ID-675</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Static table</td>
-<td>AOU race checkbox/constructed-variable inconsistency. (<b>ID-679</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Visit Info</td>
-<td>Harmonize participant status and withdrawal fields (<b>ID-79</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
-<td>Static table</td>
-<td>The <code>screen_race_multi__*</code> variables are almost entirely coded as '0' and should not be used for analysis. Users interested in race and ethnicity information should instead use the corresponding derived ACS race and ethnicity variable. Values will be corrected in a future release. (<b>ID-81</b>)</td>
-<td style='text-align: center;'><span class=pill>30.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
-<td>All tables</td>
-<td><ul>
-<li>Updated Domain &amp; Source </li>
-<li>Addition of visit missed and visit missed reason to Dynamic table <code>par_gd_dyn</code></li>
-<li>Static table: Resolve inconsistent use of 'Unknown' in derived ACS variables and exclude non-valid recruitment sites</li>
-</ul> (<b>ID-106</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>Static table</td>
@@ -472,9 +448,27 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
+<td>TLFB</td>
+<td>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a> (<b>ID-37</b>)</td>
+<td style='text-align: center;'><span class=pill>R3.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
 <td>Cannabis flag</td>
 <td>Fixed description of Rolled up cannabis flag. (<b>ID-669</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>SU flags</td>
+<td>Make substance use flags in dynamic table cumulative. (<b>ID-671</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>ADI</td>
+<td>ADI in Static table (<code>par_gd_stc_adi_national_prcn</code>) is present, but completely unpopulated. (<b>ID-675</b>)</td>
+<td style='text-align: center;'><span class=pill>R3.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
@@ -490,9 +484,9 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
-<td>SU flags</td>
-<td>Make substance use flags in dynamic table cumulative. (<b>ID-671</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
+<td>Static table</td>
+<td>AOU race checkbox/constructed-variable inconsistency. (<b>ID-679</b>)</td>
+<td style='text-align: center;'><span class=pill>R3.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
@@ -500,11 +494,33 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <td>Remove substance use survey for ACGs. (<b>ID-688</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Visit Info</td>
+<td>Harmonize participant status and withdrawal fields (<b>ID-79</b>)</td>
+<td style='text-align: center;'><span class=pill>R3.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>All tables</td>
+<td><ul>
+<li>Updated Domain &amp; Source </li>
+<li>Addition of visit missed and visit missed reason to Dynamic table <code>par_gd_dyn</code></li>
+<li>Static table: Resolve inconsistent use of 'Unknown' in derived ACS variables and exclude non-valid recruitment sites</li>
+</ul> (<b>ID-106</b>)</td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>Static table</td>
+<td>The <code>screen_race_multi__*</code> variables are almost entirely coded as '0' and should not be used for analysis. Users interested in race and ethnicity information should instead use the corresponding derived ACS race and ethnicity variable. Values will be corrected in a future release. (<b>ID-81</b>)</td>
+<td style='text-align: center;'><span class=pill>30.1</span></td>
+</tr>
 </tbody></table>
 
 </div>
 
-<div data-known-issue-domain markdown="1">
+<div data-known-issue-domain markdown="1" hidden>
 
 ### MRI
 
@@ -512,64 +528,10 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <thead>
 <tr style="font-size: 1.1em;">
 <th>Status</th><th>Table/Topic</th><th>Summary</th>
-<th>Target</th></tr>
+<th>BR</th></tr>
 </thead>
 <tbody>
 
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>ReproTM</td>
-<td>Addition of individual functional network maps generated with template matching via ReproTM pipeline. (<b>ID-681</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
-<td>Source DICOMs</td>
-<td>Add source DICOMs for all imaging modalities. (<b>ID-657</b>)</td>
-<td style='text-align: center;'><span class=pill>30.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
-<td>Scanner info</td>
-<td>Add a table with scanner metadata extracted from raw BIDS JSON files for easier access. (<b>ID-108</b>)</td>
-<td style='text-align: center;'><span class=pill>30.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill review'>Review</span></td>
-<td>Tabulated XCP-D</td>
-<td>Resolved tabulation error resulting in all 0s for tabulated XCP-D numeric fields. (<b>ID-667</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
-<td>fmap QC</td>
-<td>Frames containing line artifacts are removed from functional raw BIDS fmap files (in cases where the fmap file passes QC and is therefore used for data processing). Removed frames are documented in the relevant field map sidecar JSONs for which frame removal occurred. Three additional raw data QC fields used to identify frames to remove are now documented in the scans TSV metadata files (see fields containing <code>line2_*</code>). Finally, impacted sessions have been reprocessed post-frame removal. (<b>ID-59</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
-<td>XCP-D</td>
-<td>New XCP-D pipeline outputs (processed with version 26.2.0) and updated hashes as a result. (<b>ID-685</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
-<td>QSIRecon</td>
-<td>Provide tabulated QSIRecon derivatives. (<b>ID-86</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill review'>Review</span></td>
-<td>ModelArray</td>
-<td>Addition of <a href="https://modelarrayio.readthedocs.io/en/latest/">ModelArray</a> outputs derived from XCP-D and QSIRecon. (<b>ID-680</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Summary Forms</td>
-<td>Fixed Sequence numbering in <code>mri_ra_chkl_data</code> to increment for <code>start_time</code> fields. (<b>ID-73</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>Run ID</td>
@@ -594,11 +556,65 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <td>Addition Cook's distance values computed for fMRI. (<b>ID-28</b>)</td>
 <td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill pending'>Pending</span></td>
+<td>Tabulated XCP-D</td>
+<td>Resolved tabulation error resulting in all 0s for tabulated XCP-D numeric fields. (<b>ID-667</b>)</td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill pending'>Pending</span></td>
+<td>ModelArray</td>
+<td>Addition of <a href="https://modelarrayio.readthedocs.io/en/latest/">ModelArray</a> outputs derived from XCP-D and QSIRecon. (<b>ID-680</b>)</td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>ReproTM</td>
+<td>Addition of individual functional network maps generated with template matching via ReproTM pipeline. (<b>ID-681</b>)</td>
+<td style='text-align: center;'><span class=pill>R3.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Summary Forms</td>
+<td>Fixed Sequence numbering in <code>mri_ra_chkl_data</code> to increment for <code>start_time</code> fields. (<b>ID-73</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>Scanner info</td>
+<td>Add a table with scanner metadata extracted from raw BIDS JSON files for easier access. (<b>ID-108</b>)</td>
+<td style='text-align: center;'><span class=pill>30.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>fmap QC</td>
+<td>Frames containing line artifacts are removed from functional raw BIDS fmap files (in cases where the fmap file passes QC and is therefore used for data processing). Removed frames are documented in the relevant field map sidecar JSONs for which frame removal occurred. Three additional raw data QC fields used to identify frames to remove are now documented in the scans TSV metadata files (see fields containing <code>line2_*</code>). Finally, impacted sessions have been reprocessed post-frame removal. (<b>ID-59</b>)</td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>Source DICOMs</td>
+<td>Add source DICOMs for all imaging modalities. (<b>ID-657</b>)</td>
+<td style='text-align: center;'><span class=pill>30.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>XCP-D</td>
+<td>New XCP-D pipeline outputs (processed with version 26.2.0) and updated hashes as a result. (<b>ID-685</b>)</td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>QSIRecon</td>
+<td>Provide tabulated QSIRecon derivatives. (<b>ID-86</b>)</td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
 </tbody></table>
 
 </div>
 
-<div data-known-issue-domain markdown="1">
+<div data-known-issue-domain markdown="1" hidden>
 
 ### Neurocognition &amp; Language
 
@@ -606,15 +622,27 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <thead>
 <tr style="font-size: 1.1em;">
 <th>Status</th><th>Table/Topic</th><th>Summary</th>
-<th>Target</th></tr>
+<th>BR</th></tr>
 </thead>
 <tbody>
 
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
+<td>MLDS</td>
+<td>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) includes implausible values due to data entry errors. Exclude values &gt;168 hours from analysis. (<b>ID-119</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
 <td>Bayley</td>
 <td>Remove invalid scores of <code>-9999</code>; until resolved, users should remove this participant data prior to analysis. (<b>ID-54</b>)</td>
 <td style='text-align: center;'><span class=pill>R3.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Vineland</td>
+<td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix. In addition, the age of one child is outside of the valid bounds for V05. (<b>ID-80</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
@@ -646,18 +674,6 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <td>Include <code>total_produced_percentile_both</code> and <code>total_produced_percentile_both_adjusted</code>. (<b>ID-95</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Vineland</td>
-<td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix. In addition, the age of one child is outside of the valid bounds for V05. (<b>ID-80</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>MLDS</td>
-<td>Total non-parental hours/week (<code>ncl_ch_mlds_arr_hr_wk</code>) includes implausible values due to data entry errors. Exclude values &gt;168 hours from analysis. (<b>ID-119</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
-</tr>
 </tbody></table>
 
 </div>
@@ -670,21 +686,21 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <thead>
 <tr style="font-size: 1.1em;">
 <th>Status</th><th>Table/Topic</th><th>Summary</th>
-<th>Target</th></tr>
+<th>BR</th></tr>
 </thead>
 <tbody>
 
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
-<td>GABI</td>
-<td>Addition of raw BIDS data for GABI (infant heart rate). (<b>ID-654</b>)</td>
-<td style='text-align: center;'><span class=pill>30.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
 <td>Axivity</td>
 <td>Addition of concatenated Axivity table. (<b>ID-58</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>GABI</td>
+<td>Addition of raw BIDS data for GABI (infant heart rate). (<b>ID-654</b>)</td>
+<td style='text-align: center;'><span class=pill>30.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
@@ -696,7 +712,7 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 
 </div>
 
-<div data-known-issue-domain markdown="1">
+<div data-known-issue-domain markdown="1" hidden>
 
 ### Physical Health
 
@@ -704,10 +720,58 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <thead>
 <tr style="font-size: 1.1em;">
 <th>Status</th><th>Table/Topic</th><th>Summary</th>
-<th>Target</th></tr>
+<th>BR</th></tr>
 </thead>
 <tbody>
 
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Vision Screener</td>
+<td>Add more fields to <code>ph_ch_vs</code> (current release only includes completion status and overall screening results). (<b>ID-109</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>BISQ-SF</td>
+<td>Add Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>. (<b>ID-134</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Medical History</td>
+<td>Remove <code>ecls</code> string in the <code>ph_cg__medhist</code> instrument table name. (<b>ID-19</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Anthropometrics</td>
+<td>Add sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>). (<b>ID-20</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Anthropometrics</td>
+<td>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'. (<b>ID-33</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Anthropometrics</td>
+<td>Inclusion of <code>average_bmi</code>, <code>bmi_for_length_girls_z_score</code>, and <code>bmi_for_length_boys_z_score</code> fields. (<b>ID-47</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Anthropometrics</td>
+<td>Growth (<code>ph_ch_anthro</code>) filter ranges will be updated to be visit-specific, as current ranges allow biologically implausible values (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Range Checks</a>). (<b>ID-48</b>)</td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill pending'>Pending</span></td>
+<td>Anthropometrics</td>
+<td>Convert implausible z scores outside of range +/-4 to null. (<b>ID-673</b>)</td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
 <td>Child Nutrition</td>
@@ -726,59 +790,11 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <td>Addition of the PEDsQL (<b>ID-70</b>)</td>
 <td style='text-align: center;'><span class=pill>30.0</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Anthropometrics</td>
-<td>Growth (<code>ph_ch_anthro</code>) filter ranges will be updated to be visit-specific, as current ranges allow biologically implausible values (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Range Checks</a>). (<b>ID-48</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill review'>Review</span></td>
-<td>Anthropometrics</td>
-<td>Convert implausible z scores outside of range +/-4 to null. (<b>ID-673</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Medical History</td>
-<td>Remove <code>ecls</code> string in the <code>ph_cg__medhist</code> instrument table name. (<b>ID-19</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Anthropometrics</td>
-<td>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'. (<b>ID-33</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Anthropometrics</td>
-<td>Inclusion of <code>average_bmi</code>, <code>bmi_for_length_girls_z_score</code>, and <code>bmi_for_length_boys_z_score</code> fields. (<b>ID-47</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Anthropometrics</td>
-<td>Add sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>). (<b>ID-20</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Vision Screener</td>
-<td>Add more fields to <code>ph_ch_vs</code> (current release only includes completion status and overall screening results). (<b>ID-109</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>BISQ-SF</td>
-<td>Add Infant Sleep (IS) sub-scale score to <code>ph_cg_bisq</code>. (<b>ID-134</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
-</tr>
 </tbody></table>
 
 </div>
 
-<div data-known-issue-domain markdown="1">
+<div data-known-issue-domain markdown="1" hidden>
 
 ### Pregnancy &amp; Environmental Exposure
 
@@ -786,15 +802,21 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <thead>
 <tr style="font-size: 1.1em;">
 <th>Status</th><th>Table/Topic</th><th>Summary</th>
-<th>Target</th></tr>
+<th>BR</th></tr>
 </thead>
 <tbody>
 
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
-<td>TLFB</td>
-<td>Source for TLFB should be Biological Mother, not Child. (<b>ID-683</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
+<td>Healthv2 Preg</td>
+<td>The field for the date when PNV was stopped (<code>pex_bm_healthv2_preg__exp__pnv_007__01</code>) is blank, despite participants having reported stopping. (<b>ID-137</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Healthv2 Preg</td>
+<td>Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank. (<b>ID-138</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
@@ -802,11 +824,11 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <td>ICD codes for the <code>pex_bm_health*</code> tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a> (<b>ID-43</b>)</td>
 <td style='text-align: center;'><span class=pill>R3.0</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
-<td>EPDS</td>
-<td>Inconsistent scoring: (1) item responses present, but score is null (N=1); (2) all items null, but score is <code>0</code> (N≥3). (<b>ID-46</b>)</td>
-<td style='text-align: center;'><span class=pill>30.1</span></td>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>TLFB</td>
+<td>Source for TLFB should be Biological Mother, not Child. (<b>ID-683</b>)</td>
+<td style='text-align: center;'><span class=pill>R3.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
@@ -820,23 +842,17 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <td>Remove ACG substance use survey data. (<b>ID-689</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Healthv2 Preg</td>
-<td>The field for the date when PNV was stopped (<code>pex_bm_healthv2_preg__exp__pnv_007__01</code>) is blank, despite participants having reported stopping. (<b>ID-137</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Healthv2 Preg</td>
-<td>Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank. (<b>ID-138</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>EPDS</td>
+<td>Inconsistent scoring: (1) item responses present, but score is null (N=1); (2) all items null, but score is <code>0</code> (N≥3). (<b>ID-46</b>)</td>
+<td style='text-align: center;'><span class=pill>30.1</span></td>
 </tr>
 </tbody></table>
 
 </div>
 
-<div data-known-issue-domain markdown="1">
+<div data-known-issue-domain markdown="1" hidden>
 
 ### Social &amp; Environmental Determinants
 
@@ -844,27 +860,39 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 <thead>
 <tr style="font-size: 1.1em;">
 <th>Status</th><th>Table/Topic</th><th>Summary</th>
-<th>Target</th></tr>
+<th>BR</th></tr>
 </thead>
 <tbody>
 
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Demo</td>
+<td>Add household roster fields capturing the sex of listed individuals (adult &amp; child tables). (<b>ID-50</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Demo</td>
+<td>Relationship status was inappropriately collected at V02/V03 for all cohorts and should have been restricted to cases where there was a change in caregiver (i.e. only Alternative Caregiver cohorts should have this field populated). Data for non-ACG cohorts to be excluded. (<b>ID-53</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>GLED</td>
 <td>Addition of Geocoded Linkage from Home and Work Addresses (<b>ID-66</b>)</td>
 <td style='text-align: center;'><span class=pill>R3.0</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
-<td>Demo</td>
-<td>Addition of V6 Adult and V6 Child Demographics (<b>ID-64</b>)</td>
-<td style='text-align: center;'><span class=pill>30.0</span></td>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>HOME-21</td>
+<td>Emotional support subscale not calculated for V04 and V06. (<b>ID-666</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
-<td>Incarceration</td>
-<td>Addition of the Incarceration Questionnaire (<b>ID-67</b>)</td>
-<td style='text-align: center;'><span class=pill>30.0</span></td>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>TIC</td>
+<td>Add Transition in Care flags. (<b>ID-694</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
@@ -880,9 +908,9 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
-<td>TIC Questionnaire</td>
-<td>Addition of TIC Questionnaire table (<b>ID-71</b>)</td>
-<td style='text-align: center;'><span class=pill>30.1</span></td>
+<td>Demo</td>
+<td>Addition of V6 Adult and V6 Child Demographics (<b>ID-64</b>)</td>
+<td style='text-align: center;'><span class=pill>30.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
@@ -892,39 +920,27 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
+<td>Incarceration</td>
+<td>Addition of the Incarceration Questionnaire (<b>ID-67</b>)</td>
+<td style='text-align: center;'><span class=pill>30.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
 <td>eHITS</td>
 <td>Sum score of null instead of 25 in cases where all items have score of 5. (<b>ID-670</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
+<td>TIC Questionnaire</td>
+<td>Addition of TIC Questionnaire table (<b>ID-71</b>)</td>
+<td style='text-align: center;'><span class=pill>30.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
 <td>HOME-21</td>
 <td>Shift item values to start with value of 1 instead of 0 for normalization. (<b>ID-99</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Demo</td>
-<td>Relationship status was inappropriately collected at V02/V03 for all cohorts and should have been restricted to cases where there was a change in caregiver (i.e. only Alternative Caregiver cohorts should have this field populated). Data for non-ACG cohorts to be excluded. (<b>ID-53</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>HOME-21</td>
-<td>Emotional support subscale not calculated for V04 and V06. (<b>ID-666</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Demo</td>
-<td>Add household roster fields capturing the sex of listed individuals (adult &amp; child tables). (<b>ID-50</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>TIC</td>
-<td>Add Transition in Care flags. (<b>ID-694</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 </tbody></table>
 
@@ -1067,7 +1083,7 @@ See the [Resolved Issues Archive](resolved-archive.html) for a running list of i
 
     // Click a column header (Status, Table/Topic, Target) to sort every
     // table by that column; click again to reverse.
-    const statusRank = { open: 0, review: 1, resolved: 2 };
+    const statusRank = { open: 0, pending: 1, resolved: 2 };
     const sortColumns = { 0: "status", 1: "topic", 3: "target" };
     const allHeaders = [];
 
