@@ -878,6 +878,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class='pill'>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
+<td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-668</td>
+<td>Incarceration</td>
+<td>Remove Incarceration Questionnaire (sample sizes currently too small, sensititive info included, etc.)</td>
+<td style='text-align: center;'><span class='pill'>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
 <td><i class="fa-solid fa-circle-check icon-resolved"></i> ID-670</td>
 <td>eHITS</td>
 <td>Sum score of null instead of 25 in cases where all items have score of 5.</td>
@@ -899,12 +905,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><i class="fas fa-bug icon-bug"></i> ID-666</td>
 <td>HOME-21</td>
 <td>Emotional support subscale not calculated for V04 and V06.</td>
-<td style='text-align: center;'><span class='pill'>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><i class="fas fa-bug icon-bug"></i> ID-668</td>
-<td>Incarceration</td>
-<td>Remove Incarceration Questionnaire (sample sizes currently too small, sensititive info included, etc.)</td>
 <td style='text-align: center;'><span class='pill'>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
