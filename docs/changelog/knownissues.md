@@ -503,11 +503,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
 <td>All tables</td>
-<td><ul>
-<li>Updated Domain &amp; Source </li>
-<li>Addition of visit missed and visit missed reason to Dynamic table <code>par_gd_dyn</code></li>
-<li>Static table: Resolve inconsistent use of 'Unknown' in derived ACS variables and exclude non-valid recruitment sites</li>
-</ul> (<b>ID-106</b>)</td>
+<td>Update Domain &amp; Source; Add visit missed and reason to Dynamic table (<code>par_gd_dyn</code>); Resolve inconsistent use of “Unknown” in derived ACS variables and exclude non-valid recruitment sites for Static table (<code>par_gd_stc</code>). (<b>ID-106</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
@@ -763,7 +759,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>Anthropometrics</td>
-<td>Growth (<code>ph_ch_anthro</code>) filter ranges will be updated to be visit-specific, as current ranges allow biologically implausible values (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Range Checks</a>). (<b>ID-48</b>)</td>
+<td>Filter ranges will be updated to be visit-specific as current ranges allow biologically implausible values (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Range Checks</a>). (<b>ID-48</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
