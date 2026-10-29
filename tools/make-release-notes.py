@@ -13,7 +13,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 BR = "30.2"
 sheet_id = "1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc"
 sheet_gid = "0"
-INTERNAL_MD = f"../docs/changelog/versions/BR3X/BR{BR}-ALT.md"
+INTERNAL_MD = f"../docs/changelog/versions/BR3X/BR{BR}.md"
 
 # FUNCTIONS
 

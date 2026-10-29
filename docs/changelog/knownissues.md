@@ -757,7 +757,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>Anthropometrics</td>
 <td>Filter ranges will be updated to be visit-specific as current ranges allow biologically implausible values (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Range Checks</a>). (<b>ID-48</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
