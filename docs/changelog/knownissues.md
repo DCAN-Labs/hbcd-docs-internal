@@ -548,12 +548,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
-<td>Tabulated XCP-D</td>
-<td>Resolved tabulation error resulting in all 0s for tabulated XCP-D numeric fields. (<b>ID-667</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill pending'>Pending</span></td>
 <td>ModelArray</td>
 <td>Addition of <a href="https://modelarrayio.readthedocs.io/en/latest/">ModelArray</a> outputs derived from XCP-D and QSIRecon. (<b>ID-680</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
@@ -587,6 +581,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Source DICOMs</td>
 <td>Add source DICOMs for all imaging modalities. (<b>ID-657</b>)</td>
 <td style='text-align: center;'><span class=pill>30.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>Tabulated XCP-D</td>
+<td>Resolved tabulation error resulting in all 0s for tabulated XCP-D numeric fields. (<b>ID-667</b>)</td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
