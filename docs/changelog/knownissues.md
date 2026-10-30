@@ -424,6 +424,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>HBCD-MADE derivatives processed through updated version v1.7.0 (<b>ID-655</b>)</td>
 <td style='text-align: center;'><span class=pill>30.0</span></td>
 </tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>HBCD ECG</td>
+<td>Inaugural inclusion of ECG data processed through <a href="https://github.com/DCAN-Labs/HBCD_ECG_pipeline">HBCD ECG pipeline</a>. (<b>ID-75</b>)</td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
 </tbody></table>
 
 </div>
