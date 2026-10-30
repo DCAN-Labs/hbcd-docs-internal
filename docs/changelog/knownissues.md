@@ -376,7 +376,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill open'>Open</span></td>
 <td>Blood PEth</td>
 <td>Address issue of incorrect cleaning practices at sites that affect test results PEth. (<b>ID-44</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
