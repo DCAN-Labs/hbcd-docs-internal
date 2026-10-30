@@ -296,12 +296,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Resolve age for small number of V03 participants in MAPS-TL and ecPROMIS over 1.5 years old. (<b>ID-686</b>)</td>
 <td style='text-align: center;'><span class=pill>R3.0</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill pending'>Pending</span></td>
-<td>MAPS-TL, ecPROMIS</td>
-<td>Shift item values to start with value of 1 instead of 0 for normalization. (<b>ID-92</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
 <td>CHAOS</td>
@@ -348,6 +342,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill resolved'>Resolved</span></td>
 <td>FAD</td>
 <td>Shift item values to start with value of 1 instead of 0 for normalization. (<b>ID-89</b>)</td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>MAPS-TL, ecPROMIS</td>
+<td>Shift item values to start with value of 1 instead of 0 for normalization. (<b>ID-92</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
 </tr>
 </tbody></table>
@@ -487,12 +487,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Static table</td>
 <td>AOU race checkbox/constructed-variable inconsistency. (<b>ID-679</b>)</td>
 <td style='text-align: center;'><span class=pill>R3.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>ACGs SU flag</td>
-<td>Remove substance use survey for ACGs. (<b>ID-688</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
