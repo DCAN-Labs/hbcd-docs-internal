@@ -215,7 +215,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>Implausible GA</td>
 <td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks). (<b>ID-32</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
@@ -227,7 +227,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>30.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>FamilyID</td>
 <td>A <code>FamilyID</code> field will be added to instruments to identify sibling relationships. Until then, sibling ID mapping (Main Child vs Sibling) is provided in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>. (<b>ID-84</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
@@ -273,19 +273,19 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>MAPS-TL (Tod)</td>
 <td>Pro-rated scoring for <code>mh_cg_mapdb__tod</code> not yet implemented; N=16 participants missing scores. (<b>ID-26</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>MAPS-TL (&lt;1yr)</td>
 <td>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis. (<b>ID-30</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>MAPS-EASI</td>
 <td>Merge <code>total_score</code> and <code>prorated_score</code> fields into a new <code>summary_score</code> field and remove. (<b>ID-52</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
@@ -367,13 +367,13 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>Nails</td>
 <td>Nail type is <code>4</code> (Unknown) in the main results table (<code>*_nails_results</code>) and should be obtained from the specimen table (<code>*_nails_type</code>). (<b>ID-42</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>Blood PEth</td>
 <td>Address issue of incorrect cleaning practices at sites that affect test results PEth. (<b>ID-44</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
@@ -385,7 +385,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>R3.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>Blood PEth</td>
 <td>Convert values of 999 to null. Users must do this manually until resolved prior to analysis. (<b>ID-693</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
@@ -447,7 +447,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>Static table</td>
 <td>N=14 participants have a Maternal Age at V01 of 0; exclude these values from analyses until corrected. (<b>ID-34</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
@@ -459,13 +459,13 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>R3.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>Cannabis flag</td>
 <td>Fixed description of Rolled up cannabis flag. (<b>ID-669</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>SU flags</td>
 <td>Make substance use flags in dynamic table cumulative. (<b>ID-671</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
@@ -477,13 +477,13 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>MAD</td>
 <td>Correct static maternal age at delivery. (<b>ID-676</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>GAD</td>
 <td>Correct static gestational age at delivery. (<b>ID-677</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
@@ -565,7 +565,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>R3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>Fieldmaps</td>
 <td> (<b>ID-701</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
@@ -589,13 +589,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>R3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>TBD</span></td>
-<td></td>
-<td> (<b>ID-711</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>Summary Forms</td>
 <td>Fixed Sequence numbering in <code>mri_ra_chkl_data</code> to increment for <code>start_time</code> fields. (<b>ID-73</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
@@ -665,7 +659,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>R3.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>Vineland</td>
 <td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix. In addition, the age of one child is outside of the valid bounds for V05. (<b>ID-80</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
@@ -763,7 +757,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>Medical History</td>
 <td>Remove <code>ecls</code> string in the <code>ph_cg__medhist</code> instrument table name. (<b>ID-19</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
@@ -781,7 +775,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>Anthropometrics</td>
 <td>Inclusion of <code>average_bmi</code>, <code>bmi_for_length_girls_z_score</code>, and <code>bmi_for_length_boys_z_score</code> fields. (<b>ID-47</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
@@ -851,19 +845,19 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>TLFB</td>
 <td>Source for TLFB should be Biological Mother, not Child. (<b>ID-683</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>TLFB</td>
 <td>Remove emails present in <code>user_completion</code> field. (<b>ID-684</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>ACG SU data</td>
 <td>Remove ACG substance use survey data. (<b>ID-689</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
@@ -891,13 +885,13 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>Demo</td>
 <td>Add household roster fields capturing the sex of listed individuals (adult &amp; child tables). (<b>ID-50</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>Demo</td>
 <td>Relationship status was inappropriately collected at V02/V03 for all cohorts and should have been restricted to cases where there was a change in caregiver (i.e. only Alternative Caregiver cohorts should have this field populated). Data for non-ACG cohorts to be excluded. (<b>ID-53</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
@@ -909,19 +903,19 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>R3.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>HOME-21</td>
 <td>Emotional support subscale not calculated for V04 and V06. (<b>ID-666</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>TIC</td>
 <td>Add Transition in Care flags. (<b>ID-694</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>Experiences w/ police</td>
 <td>Remove the Experience with Police instrument. (<b>ID-703</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
