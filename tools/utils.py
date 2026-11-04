@@ -6,7 +6,7 @@ from datetime import datetime
 
 def load_and_filter(sheet_id, sheet_gid):
 
-    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_gid}"
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_gid}&headers=1"
     df = pd.read_csv(url, dtype=str) 
     
     # Fill missing values and strip whitespace

@@ -318,7 +318,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill resolved'>Resolved</span></td>
 <td>ecPROMIS CC</td>
 <td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis. (<b>ID-27</b>)</td>
-<td style='text-align: center;'><span class=pill>30.1</span></td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
@@ -474,7 +474,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill open'>Open</span></td>
 <td>ADI</td>
 <td>ADI in Static table (<code>par_gd_stc_adi_national_prcn</code>) is present, but completely unpopulated. (<b>ID-675</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
+<td style='text-align: center;'><span class=pill>3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
@@ -492,7 +492,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill open'>Open</span></td>
 <td>Static table</td>
 <td>AOU race checkbox/constructed-variable inconsistency. (<b>ID-679</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
@@ -563,6 +563,36 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>ReproTM</td>
 <td>Addition of individual functional network maps generated with template matching via ReproTM pipeline. (<b>ID-681</b>)</td>
 <td style='text-align: center;'><span class=pill>R3.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Fieldmaps</td>
+<td> (<b>ID-701</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>T1w/T2w</td>
+<td>Provide information on whether a T1w, T2w, or both T1w and T2w were used for MRI processing in tabulated form. (<b>ID-708</b>)</td>
+<td style='text-align: center;'><span class=pill>R3.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill pending'>Pending</span></td>
+<td>V04/V06</td>
+<td>Addition of processed V04 and V06 data with only T1w present (this is sufficient for this age range, T2w is not required). (<b>ID-709</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Anat-only</td>
+<td>Addition of processed derivatives for all MRI sessions missing functional data (with high quality anatomical data present). (<b>ID-710</b>)</td>
+<td style='text-align: center;'><span class=pill>R3.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill'>TBD</span></td>
+<td></td>
+<td> (<b>ID-711</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
@@ -742,13 +772,13 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill open'>Open</span></td>
 <td>Anthropometrics</td>
 <td>Add sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>). (<b>ID-20</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
+<td style='text-align: center;'><span class=pill>3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>Anthropometrics</td>
 <td>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'. (<b>ID-33</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
+<td style='text-align: center;'><span class=pill>3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
@@ -818,13 +848,13 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill open'>Open</span></td>
 <td>PEX Health</td>
 <td>ICD codes for the <code>pex_bm_health*</code> tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a> (<b>ID-43</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
+<td style='text-align: center;'><span class=pill>3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>TLFB</td>
 <td>Source for TLFB should be Biological Mother, not Child. (<b>ID-683</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
@@ -890,6 +920,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Add Transition in Care flags. (<b>ID-694</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Experiences w/ police</td>
+<td>Remove the Experience with Police instrument. (<b>ID-703</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
 <td>eHITS</td>
@@ -937,6 +973,52 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>HOME-21</td>
 <td>Shift item values to start with value of 1 instead of 0 for normalization. (<b>ID-99</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
+</tbody></table>
+
+</div>
+
+<div data-known-issue-domain markdown="1" hidden>
+
+### UNSURE
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr style="font-size: 1.1em;">
+<th>Status</th><th>Table/Topic</th><th>Summary</th>
+<th>BR</th></tr>
+</thead>
+<tbody>
+
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill'>TBD</span></td>
+<td></td>
+<td> (<b>ID-704</b>)</td>
+<td style='text-align: center;'><span class=pill>3.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill'>TBD</span></td>
+<td></td>
+<td> (<b>ID-705</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill'>TBD</span></td>
+<td></td>
+<td> (<b>ID-706</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill'>TBD</span></td>
+<td></td>
+<td> (<b>ID-707</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill'>TBD</span></td>
+<td></td>
+<td> (<b>ID-712</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 </tbody></table>
 
