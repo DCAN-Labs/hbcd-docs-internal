@@ -245,7 +245,7 @@ def group_issues_by_domain(df, release=False):
 df = load_and_filter(sheet_id, sheet_gid)
 
 # Filter out rows where "Status on RTDs" equals Excluded
-df=df[df['Status on RTDs'] != 'Excluded']
+df=df[df['Status on RTDs'] != 'Stuck/Excluded']
 
 # Save local copy for versioning
 df.to_csv("data/latest-gsheet-derived.tsv", sep='\t', index=False)

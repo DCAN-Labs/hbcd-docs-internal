@@ -231,12 +231,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>Stuck/Excluded</span></td>
-<td>Instruction</td>
-<td>Instruction text in each form's metadata is automatically extracted from the most recent <code>instruction</code> field in the REDCap Data Dictionary (based on field order). Because this process is automated, it may produce the following issues: (1) If an instruction spans multiple fields, only the last portion will be captured and/or (2) Some fields may display text intended for a previous section. Until this is corrected, please refer to original forms for accurate instruction text. (<b>ID-121</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>Instruction</td>
 <td>The 'instruction' data dictionary element is currently blank. (<b>ID-142</b>)</td>
@@ -323,12 +317,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>ERICA</td>
 <td>ERICA derived 3-9m - exclude list of fields provided by WG (<code>{con|dir|global_score|irb|irr|pos|res|soc}_*</code>). (<b>ID-715</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>Stuck/Excluded</span></td>
-<td>ERICA</td>
-<td>not sure yet (<b>ID-717</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
@@ -496,7 +484,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill open'>Open</span></td>
 <td>TLFB</td>
 <td>PNR data were incorrectly reported using TLFB versions 1/2 and will be updated to <a href="https://docs.hbcdstudy.org/latest/instruments/pregexp/su/tlfb/#v3">version 3 specific to PNR</a> (<b>ID-37</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
@@ -599,12 +587,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>R3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>Stuck/Excluded</span></td>
-<td></td>
-<td> (<b>ID-701</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>T1w/T2w</td>
 <td>Provide information on whether a T1w, T2w, or both T1w and T2w were used for MRI processing in tabulated form. (<b>ID-708</b>)</td>
@@ -702,7 +684,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill open'>Open</span></td>
 <td>Bayley</td>
 <td>Remove invalid scores of <code>-9999</code>; until resolved, users should remove this participant data prior to analysis. (<b>ID-54</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
@@ -818,13 +800,13 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill open'>Open</span></td>
 <td>Anthropometrics</td>
 <td>Add sex-specific birth weight to <code>ph_ch_anthro</code> (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Sex-Specific Birthweight for GA</a>). (<b>ID-20</b>)</td>
-<td style='text-align: center;'><span class=pill>3.1</span></td>
+<td style='text-align: center;'><span class=pill>R3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>Anthropometrics</td>
 <td>Adjusted age contains N=303 "unknown missing" values that are also missing 'Date of Administration'. (<b>ID-33</b>)</td>
-<td style='text-align: center;'><span class=pill>3.1</span></td>
+<td style='text-align: center;'><span class=pill>R3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
@@ -891,16 +873,10 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>Stuck/Excluded</span></td>
-<td>TLFB</td>
-<td>Select participants (N=8) were recruited postnatally, but not administered the V1 portion of the TLFB. When this was recognized, the participants were administered the TLFB at the next in-person visit, resulting in a longer recall period than specified in the protocol. (<b>ID-144</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>PEX Health</td>
 <td>ICD codes for the <code>pex_bm_health*</code> tables are inconsistently provided, sometimes missing corresponding names/labels. For example, medication names are present for the <em>Health V1- Medications</em>, while the <em>Health V2- Pregnancy</em> instrument only has medication codes without corresponding labels. Until resolved, users can use external packages to merge ICD labels if needed: <a href="https://www.stata.com/features/overview/icd/">Stata</a>, <a href="https://hcup-us.ahrq.gov/toolssoftware/ccsr/dxccsr.jsp">SAS</a>, <a href="https://www.rdocumentation.org/packages/icd/versions/3.3">R</a> (<b>ID-43</b>)</td>
-<td style='text-align: center;'><span class=pill>3.1</span></td>
+<td style='text-align: center;'><span class=pill>R3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
@@ -953,12 +929,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Demo</td>
 <td>Relationship status was inappropriately collected at V02/V03 for all cohorts and should have been restricted to cases where there was a change in caregiver (i.e. only Alternative Caregiver cohorts should have this field populated). Data for non-ACG cohorts to be excluded. (<b>ID-53</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>Stuck/Excluded</span></td>
-<td>GLED</td>
-<td>Addition of Geocoded Linkage from Home and Work Addresses (<b>ID-66</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
@@ -1046,7 +1016,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill'>TBD</span></td>
 <td></td>
 <td> (<b>ID-704</b>)</td>
-<td style='text-align: center;'><span class=pill>3.1</span></td>
+<td style='text-align: center;'><span class=pill>R3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill'>TBD</span></td>
