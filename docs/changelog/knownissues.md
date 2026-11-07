@@ -186,6 +186,28 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 
 <div data-known-issue-domain markdown="1" hidden>
 
+### Administrative
+
+<table class="compact-table-no-vertical-lines">
+<thead>
+<tr style="font-size: 1.1em;">
+<th>Status</th><th>Table/Topic</th><th>Summary</th>
+<th>BR</th></tr>
+</thead>
+<tbody>
+
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill pending'>Pending</span></td>
+<td>Screening</td>
+<td>Remove <code>adm_bm_screen</code> table. (<b>ID-713</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+</tbody></table>
+
+</div>
+
+<div data-known-issue-domain markdown="1" hidden>
+
 ### All Data / General
 
 <table class="compact-table-no-vertical-lines">
@@ -209,6 +231,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
+<td><span class='pill'>Stuck/Excluded</span></td>
+<td>Instruction</td>
+<td>Instruction text in each form's metadata is automatically extracted from the most recent <code>instruction</code> field in the REDCap Data Dictionary (based on field order). Because this process is automated, it may produce the following issues: (1) If an instruction spans multiple fields, only the last portion will be captured and/or (2) Some fields may display text intended for a previous section. Until this is corrected, please refer to original forms for accurate instruction text. (<b>ID-121</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>Instruction</td>
 <td>The 'instruction' data dictionary element is currently blank. (<b>ID-142</b>)</td>
@@ -218,7 +246,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill pending'>Pending</span></td>
 <td>Implausible GA</td>
 <td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks). (<b>ID-32</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
@@ -228,8 +256,8 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
-<td>FamilyID</td>
-<td>A <code>FamilyID</code> field will be added to instruments to identify sibling relationships. Until then, sibling ID mapping (Main Child vs Sibling) is provided in the <a href="https://hbcd-docs-private.lassoinformatics.com/#download">HBCD Private Release Notes</a>. (<b>ID-84</b>)</td>
+<td>FamilyPregnacyID</td>
+<td><code>FamilyPregnacyID</code> added to Static table (<code>par_gd_stc_family_preg_id</code>) to denote the family pregnancy based on pregnancies tied to the biological mother. (<b>ID-84</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
@@ -282,7 +310,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill pending'>Pending</span></td>
 <td>MAPS-TL (&lt;1yr)</td>
 <td>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis. (<b>ID-30</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
@@ -291,10 +319,16 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>V03 age &gt;1.5y</td>
-<td>Resolve age for small number of V03 participants in MAPS-TL and ecPROMIS over 1.5 years old. (<b>ID-686</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
+<td><span class='pill pending'>Pending</span></td>
+<td>ERICA</td>
+<td>ERICA derived 3-9m - exclude list of fields provided by WG (<code>{con|dir|global_score|irb|irr|pos|res|soc}_*</code>). (<b>ID-715</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill'>Stuck/Excluded</span></td>
+<td>ERICA</td>
+<td>not sure yet (<b>ID-717</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
@@ -318,7 +352,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill resolved'>Resolved</span></td>
 <td>ecPROMIS CC</td>
 <td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis. (<b>ID-27</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
@@ -379,22 +413,28 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>BAP</td>
-<td>Biospecimen timestamps for BAP data flow. (<b>ID-687</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
 <td>Blood PEth</td>
 <td>Convert values of 999 to null. Users must do this manually until resolved prior to analysis. (<b>ID-693</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>TO DO</span></td>
+<td><span class='pill open'>Open</span></td>
 <td>Nails</td>
-<td> (<b>ID-700</b>)</td>
+<td>Nails ethanol coding error. (<b>ID-700</b>)</td>
 <td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>All</td>
+<td>Push all blank codes as -999 (versus 999) to avoid confusion with actual values. (<b>ID-718</b>)</td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill'>TBD</span></td>
+<td></td>
+<td> (<b>ID-719</b>)</td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 </tbody></table>
 
@@ -450,7 +490,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill pending'>Pending</span></td>
 <td>Static table</td>
 <td>N=14 participants have a Maternal Age at V01 of 0; exclude these values from analyses until corrected. (<b>ID-34</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
@@ -474,25 +514,19 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill open'>Open</span></td>
 <td>ADI</td>
 <td>ADI in Static table (<code>par_gd_stc_adi_national_prcn</code>) is present, but completely unpopulated. (<b>ID-675</b>)</td>
-<td style='text-align: center;'><span class=pill>3.1</span></td>
+<td style='text-align: center;'><span class=pill>R3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
 <td>MAD</td>
 <td>Correct static maternal age at delivery. (<b>ID-676</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
 <td>GAD</td>
 <td>Correct static gestational age at delivery. (<b>ID-677</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Static table</td>
-<td>AOU race checkbox/constructed-variable inconsistency. (<b>ID-679</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
@@ -504,6 +538,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill resolved'>Resolved</span></td>
 <td>All tables</td>
 <td>Update Domain &amp; Source; Add visit missed and reason to Dynamic table (<code>par_gd_dyn</code>); Resolve inconsistent use of “Unknown” in derived ACS variables and exclude non-valid recruitment sites for Static table (<code>par_gd_stc</code>). (<b>ID-106</b>)</td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>Static table</td>
+<td>AOU race checkbox/constructed-variable inconsistency. (<b>ID-679</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
@@ -553,22 +593,16 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill pending'>Pending</span></td>
-<td>ModelArray</td>
-<td>Addition of <a href="https://modelarrayio.readthedocs.io/en/latest/">ModelArray</a> outputs derived from XCP-D and QSIRecon. (<b>ID-680</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>ReproTM</td>
 <td>Addition of individual functional network maps generated with template matching via ReproTM pipeline. (<b>ID-681</b>)</td>
 <td style='text-align: center;'><span class=pill>R3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill pending'>Pending</span></td>
-<td>Fieldmaps</td>
+<td><span class='pill'>Stuck/Excluded</span></td>
+<td></td>
 <td> (<b>ID-701</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
+<td style='text-align: center;'><span class=pill>R3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
@@ -587,6 +621,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Anat-only</td>
 <td>Addition of processed derivatives for all MRI sessions missing functional data (with high quality anatomical data present). (<b>ID-710</b>)</td>
 <td style='text-align: center;'><span class=pill>R3.1</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>ModelArrayIO</td>
+<td>Final checks to confirm outputs are as expected. (<b>ID-722</b>)</td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
@@ -616,6 +656,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill resolved'>Resolved</span></td>
 <td>Tabulated XCP-D</td>
 <td>Resolved tabulation error resulting in all 0s for tabulated XCP-D numeric fields. (<b>ID-667</b>)</td>
+<td style='text-align: center;'><span class=pill>30.2</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>ModelArrayIO</td>
+<td>Addition of <a href="https://modelarrayio.readthedocs.io/en/latest/">ModelArray</a> outputs derived from XCP-D and QSIRecon. (<b>ID-680</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
@@ -710,6 +756,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </thead>
 <tbody>
 
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>GAD</td>
+<td>Exclude gestational age from infant sensor questionnaires (no V01 included). (<b>ID-705</b>)</td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
 <td>Axivity</td>
@@ -783,13 +835,13 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
 <td>Anthropometrics</td>
-<td>Filter ranges will be updated to be visit-specific as current ranges allow biologically implausible values (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Range Checks</a>). (<b>ID-48</b>)</td>
-<td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill pending'>Pending</span></td>
-<td>Anthropometrics</td>
 <td>Convert implausible z scores outside of range +/-4 to null. (<b>ID-673</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>Anthropometrics</td>
+<td>Filter ranges will be updated to be visit-specific as current ranges allow biologically implausible values (see <a href="https://docs.hbcdstudy.org/latest/instruments/physhealth/growth/#warning">Range Checks</a>). (<b>ID-48</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
@@ -836,6 +888,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill open'>Open</span></td>
 <td>Healthv2 Preg</td>
 <td>Note that items about aspirin use (<code>pex_bm_healthv2_preg__exp__pnv_{011|012}</code>) are largely blank. (<b>ID-138</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill'>Stuck/Excluded</span></td>
+<td>TLFB</td>
+<td>Select participants (N=8) were recruited postnatally, but not administered the V1 portion of the TLFB. When this was recognized, the participants were administered the TLFB at the next in-person visit, resulting in a longer recall period than specified in the protocol. (<b>ID-144</b>)</td>
 <td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
@@ -897,7 +955,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill'>Stuck/Excluded</span></td>
 <td>GLED</td>
 <td>Addition of Geocoded Linkage from Home and Work Addresses (<b>ID-66</b>)</td>
 <td style='text-align: center;'><span class=pill>R3.0</span></td>
@@ -993,25 +1051,31 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill'>TBD</span></td>
 <td></td>
-<td> (<b>ID-705</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>TBD</span></td>
-<td></td>
 <td> (<b>ID-706</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>TBD</span></td>
-<td></td>
-<td> (<b>ID-707</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill'>TBD</span></td>
 <td></td>
 <td> (<b>ID-712</b>)</td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill pending'>Pending</span></td>
+<td></td>
+<td> (<b>ID-716</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill'>TBD</span></td>
+<td></td>
+<td> (<b>ID-720</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill'>TBD</span></td>
+<td></td>
+<td> (<b>ID-721</b>)</td>
 <td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 </tbody></table>
