@@ -313,10 +313,28 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>MCHAT</td>
+<td>Move from V07a to V07 (n=4). Add dynamic filter to remove M-CHAT entries at V07a. (<b>ID-706</b>)</td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
 <td>ERICA</td>
 <td>ERICA derived 3-9m - exclude list of fields provided by WG (<code>{con|dir|global_score|irb|irr|pos|res|soc}_*</code>). (<b>ID-715</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>ERICA</td>
+<td>Update the logic to exclude REDCap surveys that are <em>in progress</em>, <em>partial</em>, or <em>none</em>. (<b>ID-717</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>ECBQ</td>
+<td>ECBQ scores of 8 ("Does not apply") are not being labeled as missing. Summary scores are computed for sessions that have too many missing item responses (see <a href="https://docs.hbcdstudy.org/latest/instruments/bcgi/ibqr/#scoring">scoring procedures</a>). (<b>ID-721</b>)</td>
+<td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
@@ -419,9 +437,9 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>TBD</span></td>
-<td></td>
-<td> (<b>ID-719</b>)</td>
+<td><span class='pill open'>Open</span></td>
+<td>All</td>
+<td>Convert all cases where ethanol is QNS to -999 ETOH. (<b>ID-719</b>)</td>
 <td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 </tbody></table>
@@ -611,6 +629,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Tabulated derivatives</td>
+<td>Regenerate tabulated MRI pipeline derivatives (for structural and functional MRI) to include newly processed V04/V06 data (T1w-only derivatives added to BR30.3). (<b>ID-727</b>)</td>
+<td style='text-align: center;'><span class=pill>R3.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
 <td>Summary Forms</td>
 <td>Fixed Sequence numbering in <code>mri_ra_chkl_data</code> to increment for <code>start_time</code> fields. (<b>ID-73</b>)</td>
@@ -687,6 +711,21 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>Deferred Imitation</td>
+<td>(1) Potentially remove forms set to <code>Complete/All</code> despite missing data entry (pending confirmation after further review). 
+ (2) Review Delay values of '0' for 'Minutes' and why Delay values are missing. 
+ (3) Backpopulate <code>Language</code> field with default value of <code>English</code> for instances administered prior to 2026-10-31 (leadership approval required). 
+ (4) Investigate why unchecked checkbox in form is not reflected in field. (<b>ID-712</b>)</td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill pending'>Pending</span></td>
+<td>Deferred Imitation</td>
+<td>Exclude <code>ncl_ch_di__v06_003_length_delay</code>. (<b>ID-728</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
 <td>Vineland</td>
 <td>The Coping Skills, Domestic, and Written subscales are not administered at V05 because children are too young. However, for some participants, the missing reason is incorrectly coded as "Logic skipped" or "Unknown" in the shadow matrix. In addition, the age of one child is outside of the valid bounds for V05. (<b>ID-80</b>)</td>
@@ -738,6 +777,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 </thead>
 <tbody>
 
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>GABI</td>
+<td>Change <code>nt_pa_gabi_rcpt</code> to <code>nt_ch_gabi_rcpt</code> to accurately label source/respondent. (<b>ID-704</b>)</td>
+<td style='text-align: center;'><span class=pill>R3.1</span></td>
+</tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>GAD</td>
@@ -1013,24 +1058,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>TBD</span></td>
-<td></td>
-<td> (<b>ID-704</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>TBD</span></td>
-<td></td>
-<td> (<b>ID-706</b>)</td>
-<td style='text-align: center;'><span class=pill>30.4</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>TBD</span></td>
-<td></td>
-<td> (<b>ID-712</b>)</td>
-<td style='text-align: center;'><span class=pill>30.4</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
 <td></td>
 <td> (<b>ID-716</b>)</td>
@@ -1040,12 +1067,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill'>TBD</span></td>
 <td></td>
 <td> (<b>ID-720</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>TBD</span></td>
-<td></td>
-<td> (<b>ID-721</b>)</td>
 <td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 </tbody></table>
