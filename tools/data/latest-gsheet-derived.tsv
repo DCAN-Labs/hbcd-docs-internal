@@ -27,7 +27,7 @@ Cleanup crew: Inclusion of family pregnancy ID	3	30.1	30.3	ID-84	Dan Duhon	Famil
 [DATA ERROR]- home 21	3	30	30.3	ID-666	Santiago Torres Gomez	HOME-21	Emotional support subscale not calculated for V04 and V06.	Dev Done	Pending	internal_known_issue	Social & Environmental Determinants
 [DATA ERROR]- alcohol/cannabis (?) flag in dynamic table, Biospecimen	3	30.2	30.3	ID-669	Santiago Torres Gomez	Cannabis flag	Fixed description of Rolled up cannabis flag.	Dev Done	Pending	internal_known_issue	HBCD General
 [DATA ERROR]- substance use flags in dynamic table	3	30.2	30.3	ID-671	Santiago Torres Gomez	SU flags	Make substance use flags in dynamic table cumulative.	Dev Done	Pending	internal_pending_update	HBCD General
-[DATA UPDATE]- blank out implausible z scores in anthro data	3	30.2	30.3	ID-673	Jen Zink	Anthropometrics	Convert implausible z scores outside of range +/-4 to null.	Lasso review and ensure WG knows	Pending	known_issue	Physical Health
+[DATA UPDATE]- blank out implausible z scores in anthro data	3	30.2	30.3	ID-673	Jen Zink	Anthropometrics	Convert implausible z scores outside of range +/-4 to null.	Done	Resolved	known_issue	Physical Health
 [DATA ERROR]- static table ADI	3.1	30.1		ID-675	Santiago Torres Gomez	ADI	ADI in Static table (`par_gd_stc_adi_national_prcn`) is present, but completely unpopulated.	Patch	Open	internal_known_issue	HBCD General
 [DATA ERROR]- static maternal age at delivery	3		30.4	ID-676	Dan Duhon	MAD	Correct static maternal age at delivery.	ETL to review	Pending	internal_known_issue	HBCD General
 [DATA ERROR] - static gestational age	3		30.4	ID-677	Dan Duhon	GAD	Correct static gestational age at delivery.	ETL to review	Pending	internal_known_issue	HBCD General
