@@ -301,6 +301,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
+<td><span class='pill open'>Open</span></td>
+<td>ecPROMIS CC</td>
+<td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis. (<b>ID-27</b>)</td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
 <td>MAPS-TL (&lt;1yr)</td>
 <td>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis. (<b>ID-30</b>)</td>
@@ -353,12 +359,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>FAD</td>
 <td>N=4 V06 participants with &lt;3 item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis. (<b>ID-24</b>)</td>
 <td style='text-align: center;'><span class=pill>30.1</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="true" hidden>
-<td><span class='pill resolved'>Resolved</span></td>
-<td>ecPROMIS CC</td>
-<td>N=12 V03 participants with &lt;3 item responses are incorrectly scored as <code>0</code> in <code>mh_cg_pms__cc__inf</code>; set values to null prior to analysis. (<b>ID-27</b>)</td>
-<td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
@@ -859,12 +859,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Inclusion of <code>average_bmi</code>, <code>bmi_for_length_girls_z_score</code>, and <code>bmi_for_length_boys_z_score</code> fields. (<b>ID-47</b>)</td>
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill pending'>Pending</span></td>
-<td>Anthropometrics</td>
-<td>Convert implausible z scores outside of range +/-4 to null. (<b>ID-673</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
 <td>Anthropometrics</td>
@@ -882,6 +876,12 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>Med History V1</td>
 <td>Addition of V06 (<b>ID-662</b>)</td>
 <td style='text-align: center;'><span class=pill>30.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="true" hidden>
+<td><span class='pill resolved'>Resolved</span></td>
+<td>Anthropometrics</td>
+<td>Convert implausible z scores outside of range +/-4 to null. (<b>ID-673</b>)</td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
