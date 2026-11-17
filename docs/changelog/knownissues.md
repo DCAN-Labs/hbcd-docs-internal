@@ -237,7 +237,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill pending'>Pending</span></td>
+<td><span class='pill open'>Open</span></td>
 <td>Implausible GA</td>
 <td>A small subset of participants have implausible <code>gestational_age</code> (V01 only) values for one or more instrument. Until corrected, review GA distribution to exclude outliers from analysis (should be positive and generally &lt; 45 weeks). (<b>ID-32</b>)</td>
 <td style='text-align: center;'><span class=pill>30.4</span></td>
@@ -307,7 +307,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill pending'>Pending</span></td>
+<td><span class='pill open'>Open</span></td>
 <td>MAPS-TL (&lt;1yr)</td>
 <td>N=4 participants with no item responses are incorrectly scored as <code>0</code>; set values to null prior to analysis. (<b>ID-30</b>)</td>
 <td style='text-align: center;'><span class=pill>30.4</span></td>
@@ -319,10 +319,10 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>MCHAT</td>
 <td>Move from V07a to V07 (n=4). Add dynamic filter to remove M-CHAT entries at V07a. (<b>ID-706</b>)</td>
-<td style='text-align: center;'><span class=pill>30.4</span></td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
@@ -331,16 +331,16 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>ERICA</td>
 <td>Update the logic to exclude REDCap surveys that are <em>in progress</em>, <em>partial</em>, or <em>none</em>. (<b>ID-717</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>ECBQ</td>
 <td>ECBQ scores of 8 ("Does not apply") are not being labeled as missing. Summary scores are computed for sessions that have too many missing item responses (see <a href="https://docs.hbcdstudy.org/latest/instruments/bcgi/ibqr/#scoring">scoring procedures</a>). (<b>ID-721</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="true" hidden>
 <td><span class='pill resolved'>Resolved</span></td>
@@ -431,16 +431,16 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>TBD</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>All</td>
 <td>Push all blank codes as -999 (versus 999) to avoid confusion with actual values. (<b>ID-718</b>)</td>
-<td style='text-align: center;'><span class=pill>30.4</span></td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
+<td><span class='pill pending'>Pending</span></td>
 <td>All</td>
 <td>Convert all cases where ethanol is QNS to -999 ETOH. (<b>ID-719</b>)</td>
-<td style='text-align: center;'><span class=pill>30.4</span></td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 </tbody></table>
 
@@ -493,7 +493,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <tbody>
 
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill pending'>Pending</span></td>
+<td><span class='pill open'>Open</span></td>
 <td>Static table</td>
 <td>N=14 participants have a Maternal Age at V01 of 0; exclude these values from analyses until corrected. (<b>ID-34</b>)</td>
 <td style='text-align: center;'><span class=pill>30.4</span></td>
@@ -523,13 +523,13 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td style='text-align: center;'><span class=pill>R3.1</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill pending'>Pending</span></td>
+<td><span class='pill open'>Open</span></td>
 <td>MAD</td>
 <td>Correct static maternal age at delivery. (<b>ID-676</b>)</td>
 <td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
-<td><span class='pill pending'>Pending</span></td>
+<td><span class='pill open'>Open</span></td>
 <td>GAD</td>
 <td>Correct static gestational age at delivery. (<b>ID-677</b>)</td>
 <td style='text-align: center;'><span class=pill>30.4</span></td>
@@ -620,19 +620,13 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill open'>Open</span></td>
 <td>Anat-only</td>
 <td>Addition of processed derivatives for all MRI sessions missing functional data (with high quality anatomical data present). (<b>ID-710</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.1</span></td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill open'>Open</span></td>
 <td>ModelArrayIO</td>
 <td>Final checks to confirm outputs are as expected. (<b>ID-722</b>)</td>
 <td style='text-align: center;'><span class=pill>30.4</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill open'>Open</span></td>
-<td>Tabulated derivatives</td>
-<td>Regenerate tabulated MRI pipeline derivatives (for structural and functional MRI) to include newly processed V04/V06 data (T1w-only derivatives added to BR30.3). (<b>ID-727</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
@@ -1061,13 +1055,25 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill pending'>Pending</span></td>
 <td></td>
 <td> (<b>ID-716</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill'>TBD</span></td>
 <td></td>
 <td> (<b>ID-720</b>)</td>
 <td style='text-align: center;'><span class=pill>TBD</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill'>TBD</span></td>
+<td></td>
+<td> (<b>ID-729</b>)</td>
+<td style='text-align: center;'><span class=pill>R3.0</span></td>
+</tr>
+<tr data-known-issue-row data-resolved="false">
+<td><span class='pill'>TBD</span></td>
+<td></td>
+<td> (<b>ID-730</b>)</td>
+<td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 </tbody></table>
 
