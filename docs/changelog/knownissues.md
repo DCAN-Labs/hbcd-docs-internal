@@ -428,7 +428,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill open'>Open</span></td>
 <td>Nails</td>
 <td>Nails ethanol coding error. (<b>ID-700</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
