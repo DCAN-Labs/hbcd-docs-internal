@@ -12,12 +12,11 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # https://docs.google.com/spreadsheets/d/1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc/edit?gid=0#gid=0
 
-BR_latest = "30.1"
+BR_latest = "30.0"
 sheet_id = "1P6QFJaZjb-F5roWkzQXkoGFW1E95t9rge6RfNmmKozc"
 sheet_gid = "0"
 ISSUES_MD = "../docs/changelog/knownissues.md"
 RELEASENOTES_MD = f"../docs/changelog/versions/BR3X/BR{BR_latest}.md"
-
 
 
 # FUNCTIONS
