@@ -428,7 +428,7 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td><span class='pill open'>Open</span></td>
 <td>Nails</td>
 <td>Nails ethanol coding error. (<b>ID-700</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
+<td style='text-align: center;'><span class=pill>30.3</span></td>
 </tr>
 <tr data-known-issue-row data-resolved="false">
 <td><span class='pill pending'>Pending</span></td>
@@ -1034,46 +1034,6 @@ container.querySelector(&#x27;[data-known-issues-empty]&#x27;).hidden =
 <td>HOME-21</td>
 <td>Shift item values to start with value of 1 instead of 0 for normalization. (<b>ID-99</b>)</td>
 <td style='text-align: center;'><span class=pill>30.2</span></td>
-</tr>
-</tbody></table>
-
-</div>
-
-<div data-known-issue-domain markdown="1" hidden>
-
-### UNSURE
-
-<table class="compact-table-no-vertical-lines">
-<thead>
-<tr style="font-size: 1.1em;">
-<th>Status</th><th>Table/Topic</th><th>Summary</th>
-<th>BR</th></tr>
-</thead>
-<tbody>
-
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill pending'>Pending</span></td>
-<td></td>
-<td> (<b>ID-716</b>)</td>
-<td style='text-align: center;'><span class=pill>30.3</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>TBD</span></td>
-<td></td>
-<td> (<b>ID-720</b>)</td>
-<td style='text-align: center;'><span class=pill>TBD</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>TBD</span></td>
-<td></td>
-<td> (<b>ID-729</b>)</td>
-<td style='text-align: center;'><span class=pill>R3.0</span></td>
-</tr>
-<tr data-known-issue-row data-resolved="false">
-<td><span class='pill'>TBD</span></td>
-<td></td>
-<td> (<b>ID-730</b>)</td>
-<td style='text-align: center;'><span class=pill>30.4</span></td>
 </tr>
 </tbody></table>
 

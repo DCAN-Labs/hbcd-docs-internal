@@ -46,12 +46,9 @@ MRI: Addition of T1-only processed V04 & V06 data	3		30.3	ID-709	Tanya Pandhi	V0
  (4) Investigate why unchecked checkbox in form is not reflected in field."	Active	Open	internal_pending_update	Neurocognition & Language
 [DATA ERRORS] - deferred imitation remove field	3		30.3	ID-728	Santiago Torres Gomez	Deferred Imitation	Exclude `ncl_ch_di__v06_003_length_delay`.	Dev Done	Pending	internal_pending_update	Neurocognition & Language
 [EXCLUDE FIELDS] - ERICA derived 3-9m	3		30.3	ID-715		ERICA	ERICA derived 3-9m - exclude list of fields provided by WG (`{con|dir|global_score|irb|irr|pos|res|soc}_*`).	Dev Done	Pending	internal_pending_update	Behavior & Child-Caregiver Interaction
-Static table not loading demographic screener data (screen mother race/ethnicity)			30.3	ID-716				Dev Done	Pending	TBD	UNSURE
 Participants due to REDCap examiner not being REDCap			30.3	ID-717	Santiago Torres Gomez	ERICA	Update the logic to exclude REDCap surveys that are *in progress*, *partial*, or *none*.	Dev Done	Pending	internal_known_issue	Behavior & Child-Caregiver Interaction
 [SCORING ERROR]- ECBQ			30.4	ID-721	Santiago Torres Gomez	ECBQ	"ECBQ scores of 8 (""Does not apply"") are not being labeled as missing. Summary scores are computed for sessions that have too many missing item responses (see [scoring procedures](https://docs.hbcdstudy.org/latest/instruments/bcgi/ibqr/#scoring))."	Active	Open	internal_known_issue	Behavior & Child-Caregiver Interaction
 ModelArray checks			30.4	ID-722	Tanya Pandhi, Lucille Moore	ModelArrayIO	Final checks to confirm outputs are as expected.	Dev Done	Open	internal_pending_update	MRI
-[DATA ERRORS]- TLFB QC feedback	3			ID-729	Santiago Torres Gomez			Patch	TBD	TBD	UNSURE
-[QC Feedback]- Dynamic Table Substance Flags clarifications			30.4	ID-730	Santiago Torres Gomez			Active	TBD	TBD	UNSURE
 MRI: anat-only processing	3		30.4	ID-710	Tanya Pandhi	Anat-only	Addition of processed derivatives for all MRI sessions missing functional data (with high quality anatomical data present).	Dev Done	Open	pending_update	MRI
 [DATA REQUEST]- revise formatting of vision screener files				ID-109	Santiago Torres Gomez	Vision Screener	Add more fields to `ph_ch_vs` (current release only includes completion status and overall screening results).	Active	Open	pending_update	Physical Health
 Remove 'sequence' field from all tables in Lasso	4			ID-110	Jen Zink	Sequence Field	The currently included Sequence field is blank across all instruments and will be removed.	Not started yet	Open	pending_update	All Data / General
@@ -71,7 +68,6 @@ Participant status and withdrawal field harmonization	3.1	30.1		ID-79	Dan Duhon,
 Bayley invalid subscores (-9999) (parameter-based filtering)				ID-54	Santiago Torres Gomez	Bayley	Remove invalid scores of `-9999`; until resolved, users should remove this participant data prior to analysis.	Patch	Open	known_issue	Neurocognition & Language
 [DATA ERRROR]- nails ethanol coding error - Biospecimen		30.3		ID-700	Santiago Torres Gomez	Nails	Nails ethanol coding error.	Waiting on WG feedback	Open	internal_known_issue	Biospecimens & Omics
 [IMAGING] Add Cook's distance to tabulated imaging data				ID-28	Jen Zink	Cook's Distance	Addition Cook's distance values computed for fMRI.	DR Agnostic	Open	pending_update	MRI
-Clean up crew: MB, PNR for 4.0 ages				ID-720				New; needs discussion	TBD	TBD	UNSURE
 MRI tabulated: T1, T2, T1+T2 used for processing	3.1			ID-708	Cecile Madjar, Tanya Pandhi, Lucille Moore	T1w/T2w	Provide information on whether a T1w, T2w, or both T1w and T2w were used for MRI processing in tabulated form.	Not started yet	Open	pending_update	MRI
 Gabi raw BIDs	3	30	30	ID-654	Cecile Madjar, Harshitha Anuganti, Jesse Erdmann	GABI	Addition of raw BIDS data for GABI (infant heart rate).	Done	Resolved	pending_update	Novel Tech & Wearable Sensors
 MADE v1.7.0	3	30	30	ID-655	Tanya Pandhi	MADE v1.7.0	HBCD-MADE derivatives processed through updated version v1.7.0	Done	Resolved	pending_update	EEG
